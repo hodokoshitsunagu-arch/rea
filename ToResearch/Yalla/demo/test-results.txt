@@ -1,0 +1,334 @@
+TAP version 13
+# Subtest: YAL01 正常闭环
+ok 1 - YAL01 正常闭环
+  ---
+  duration_ms: 0.874958
+  type: 'test'
+  ...
+# Subtest: YAL01 核心边界
+ok 2 - YAL01 核心边界
+  ---
+  duration_ms: 0.312958
+  type: 'test'
+  ...
+# Subtest: YAL01 不重复结算或消费资格
+ok 3 - YAL01 不重复结算或消费资格
+  ---
+  duration_ms: 0.120375
+  type: 'test'
+  ...
+# Subtest: YAL01 重置独立与不可未知操作
+ok 4 - YAL01 重置独立与不可未知操作
+  ---
+  duration_ms: 0.155042
+  type: 'test'
+  ...
+# Subtest: YAL02 正常闭环
+ok 5 - YAL02 正常闭环
+  ---
+  duration_ms: 0.124042
+  type: 'test'
+  ...
+# Subtest: YAL02 核心边界
+ok 6 - YAL02 核心边界
+  ---
+  duration_ms: 0.051875
+  type: 'test'
+  ...
+# Subtest: YAL02 补充分支 1
+ok 7 - YAL02 补充分支 1
+  ---
+  duration_ms: 0.0495
+  type: 'test'
+  ...
+# Subtest: YAL02 不重复结算或消费资格
+ok 8 - YAL02 不重复结算或消费资格
+  ---
+  duration_ms: 0.08475
+  type: 'test'
+  ...
+# Subtest: YAL02 重置独立与不可未知操作
+ok 9 - YAL02 重置独立与不可未知操作
+  ---
+  duration_ms: 0.143166
+  type: 'test'
+  ...
+# Subtest: YAL03 正常闭环
+ok 10 - YAL03 正常闭环
+  ---
+  duration_ms: 0.091667
+  type: 'test'
+  ...
+# Subtest: YAL03 核心边界
+ok 11 - YAL03 核心边界
+  ---
+  duration_ms: 0.046167
+  type: 'test'
+  ...
+# Subtest: YAL03 补充分支 1
+ok 12 - YAL03 补充分支 1
+  ---
+  duration_ms: 0.029959
+  type: 'test'
+  ...
+# Subtest: YAL03 补充分支 2
+ok 13 - YAL03 补充分支 2
+  ---
+  duration_ms: 0.031208
+  type: 'test'
+  ...
+# Subtest: YAL03 不重复结算或消费资格
+ok 14 - YAL03 不重复结算或消费资格
+  ---
+  duration_ms: 0.043125
+  type: 'test'
+  ...
+# Subtest: YAL03 重置独立与不可未知操作
+ok 15 - YAL03 重置独立与不可未知操作
+  ---
+  duration_ms: 0.077542
+  type: 'test'
+  ...
+# Subtest: YAL04 正常闭环
+ok 16 - YAL04 正常闭环
+  ---
+  duration_ms: 0.054875
+  type: 'test'
+  ...
+# Subtest: YAL04 核心边界
+ok 17 - YAL04 核心边界
+  ---
+  duration_ms: 0.038625
+  type: 'test'
+  ...
+# Subtest: YAL04 补充分支 1
+ok 18 - YAL04 补充分支 1
+  ---
+  duration_ms: 0.021292
+  type: 'test'
+  ...
+# Subtest: YAL04 不重复结算或消费资格
+ok 19 - YAL04 不重复结算或消费资格
+  ---
+  duration_ms: 0.037833
+  type: 'test'
+  ...
+# Subtest: YAL04 重置独立与不可未知操作
+ok 20 - YAL04 重置独立与不可未知操作
+  ---
+  duration_ms: 0.0785
+  type: 'test'
+  ...
+# Subtest: YAL05 正常闭环
+ok 21 - YAL05 正常闭环
+  ---
+  duration_ms: 0.0415
+  type: 'test'
+  ...
+# Subtest: YAL05 核心边界
+ok 22 - YAL05 核心边界
+  ---
+  duration_ms: 0.033334
+  type: 'test'
+  ...
+# Subtest: YAL05 重置独立与不可未知操作
+ok 23 - YAL05 重置独立与不可未知操作
+  ---
+  duration_ms: 0.087208
+  type: 'test'
+  ...
+# Subtest: YAL06 正常闭环
+ok 24 - YAL06 正常闭环
+  ---
+  duration_ms: 0.041958
+  type: 'test'
+  ...
+# Subtest: YAL06 核心边界
+ok 25 - YAL06 核心边界
+  ---
+  duration_ms: 0.031042
+  type: 'test'
+  ...
+# Subtest: YAL06 不重复结算或消费资格
+ok 26 - YAL06 不重复结算或消费资格
+  ---
+  duration_ms: 0.036417
+  type: 'test'
+  ...
+# Subtest: YAL06 重置独立与不可未知操作
+ok 27 - YAL06 重置独立与不可未知操作
+  ---
+  duration_ms: 0.074083
+  type: 'test'
+  ...
+# Subtest: YAL07 正常闭环
+ok 28 - YAL07 正常闭环
+  ---
+  duration_ms: 0.049084
+  type: 'test'
+  ...
+# Subtest: YAL07 核心边界
+ok 29 - YAL07 核心边界
+  ---
+  duration_ms: 0.039958
+  type: 'test'
+  ...
+# Subtest: YAL07 不重复结算或消费资格
+ok 30 - YAL07 不重复结算或消费资格
+  ---
+  duration_ms: 0.043958
+  type: 'test'
+  ...
+# Subtest: YAL07 重置独立与不可未知操作
+ok 31 - YAL07 重置独立与不可未知操作
+  ---
+  duration_ms: 0.078042
+  type: 'test'
+  ...
+# Subtest: YAL08 正常闭环
+ok 32 - YAL08 正常闭环
+  ---
+  duration_ms: 0.050334
+  type: 'test'
+  ...
+# Subtest: YAL08 核心边界
+ok 33 - YAL08 核心边界
+  ---
+  duration_ms: 0.03975
+  type: 'test'
+  ...
+# Subtest: YAL08 补充分支 1
+ok 34 - YAL08 补充分支 1
+  ---
+  duration_ms: 0.022375
+  type: 'test'
+  ...
+# Subtest: YAL08 重置独立与不可未知操作
+ok 35 - YAL08 重置独立与不可未知操作
+  ---
+  duration_ms: 0.102042
+  type: 'test'
+  ...
+# Subtest: YAL09 正常闭环
+ok 36 - YAL09 正常闭环
+  ---
+  duration_ms: 0.054208
+  type: 'test'
+  ...
+# Subtest: YAL09 核心边界
+ok 37 - YAL09 核心边界
+  ---
+  duration_ms: 0.0615
+  type: 'test'
+  ...
+# Subtest: YAL09 重置独立与不可未知操作
+ok 38 - YAL09 重置独立与不可未知操作
+  ---
+  duration_ms: 0.07975
+  type: 'test'
+  ...
+# Subtest: YAL10 正常闭环
+ok 39 - YAL10 正常闭环
+  ---
+  duration_ms: 0.071208
+  type: 'test'
+  ...
+# Subtest: YAL10 核心边界
+ok 40 - YAL10 核心边界
+  ---
+  duration_ms: 0.032042
+  type: 'test'
+  ...
+# Subtest: YAL10 补充分支 1
+ok 41 - YAL10 补充分支 1
+  ---
+  duration_ms: 0.021292
+  type: 'test'
+  ...
+# Subtest: YAL10 补充分支 2
+ok 42 - YAL10 补充分支 2
+  ---
+  duration_ms: 0.021167
+  type: 'test'
+  ...
+# Subtest: YAL10 重置独立与不可未知操作
+ok 43 - YAL10 重置独立与不可未知操作
+  ---
+  duration_ms: 0.084416
+  type: 'test'
+  ...
+# Subtest: YAL11 正常闭环
+ok 44 - YAL11 正常闭环
+  ---
+  duration_ms: 0.056083
+  type: 'test'
+  ...
+# Subtest: YAL11 核心边界
+ok 45 - YAL11 核心边界
+  ---
+  duration_ms: 0.036708
+  type: 'test'
+  ...
+# Subtest: YAL11 补充分支 1
+ok 46 - YAL11 补充分支 1
+  ---
+  duration_ms: 0.033042
+  type: 'test'
+  ...
+# Subtest: YAL11 不重复结算或消费资格
+ok 47 - YAL11 不重复结算或消费资格
+  ---
+  duration_ms: 0.035083
+  type: 'test'
+  ...
+# Subtest: YAL11 重置独立与不可未知操作
+ok 48 - YAL11 重置独立与不可未知操作
+  ---
+  duration_ms: 0.25375
+  type: 'test'
+  ...
+# Subtest: YAL12 正常闭环
+ok 49 - YAL12 正常闭环
+  ---
+  duration_ms: 0.060708
+  type: 'test'
+  ...
+# Subtest: YAL12 核心边界
+ok 50 - YAL12 核心边界
+  ---
+  duration_ms: 0.075417
+  type: 'test'
+  ...
+# Subtest: YAL12 重置独立与不可未知操作
+ok 51 - YAL12 重置独立与不可未知操作
+  ---
+  duration_ms: 0.125583
+  type: 'test'
+  ...
+# Subtest: YAL10 无主题时间推进保持空主题，首申请与过期后新申请可达
+ok 52 - YAL10 无主题时间推进保持空主题，首申请与过期后新申请可达
+  ---
+  duration_ms: 0.054209
+  type: 'test'
+  ...
+# Subtest: YAL10 免费主题过期后付费新申请拒审只退当次金币，不恢复旧免费次数
+ok 53 - YAL10 免费主题过期后付费新申请拒审只退当次金币，不恢复旧免费次数
+  ---
+  duration_ms: 0.040333
+  type: 'test'
+  ...
+# Subtest: YAL10 付费主题过期后免费新申请拒审不退旧金币，仅退当次免费次数
+ok 54 - YAL10 付费主题过期后免费新申请拒审不退旧金币，仅退当次免费次数
+  ---
+  duration_ms: 0.027291
+  type: 'test'
+  ...
+1..54
+# tests 54
+# suites 0
+# pass 54
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 45.9205

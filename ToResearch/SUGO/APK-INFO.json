@@ -1,0 +1,56 @@
+{
+  "app": "SUGO",
+  "regions": "LATAM; SEA",
+  "package": "com.voicemaker.android",
+  "version": "2.52.0.1",
+  "version_code": 326,
+  "selected_file": "SUGO-2.52.0.1.apk",
+  "source": "Official website",
+  "source_page": "https://www.sugo.com/mobile",
+  "retrieved_at": "2026-10-13T07:48:31.348255+00:00",
+  "checks": {
+    "zip_crc": "passed",
+    "manifest_package_match": true,
+    "manifest_version": "read from downloaded APK",
+    "android_runtime": "not tested",
+    "publisher_signature": "not cryptographically verified"
+  },
+  "files": [
+    {
+      "path": "SUGO-2.52.0.1.apk",
+      "bytes": 202100621,
+      "sha256": "24e683f9dce6d6dd83a53dc4d84768a36bb2e96f63173ba2abcaec8052673ae2",
+      "sha1": "60f80392b4c6f965d313a5a91ef295cbef2c4bfa",
+      "manifest": {
+        "package": "com.voicemaker.android",
+        "versionName": "2.52.0.1",
+        "versionCode": 326,
+        "split": null
+      }
+    }
+  ],
+  "compared_sources": [
+    {
+      "source_page": "https://www.sugo.com/mobile",
+      "file": "SUGO-2.52.0.1.apk",
+      "identity": {
+        "package": "com.voicemaker.android",
+        "versionName": "2.52.0.1",
+        "versionCode": 326,
+        "split": null
+      }
+    },
+    {
+      "source_page": "https://apkpure.net/sugo/com.voicemaker.android/download",
+      "file": "source-comparison/SUGO-2.52.0.0.xapk",
+      "identity": {
+        "package": "com.voicemaker.android",
+        "versionName": "2.52.0.0",
+        "versionCode": 325,
+        "split": null
+      }
+    }
+  ],
+  "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+  "mirror_advertised_date": "Oct 1, 2026"
+}

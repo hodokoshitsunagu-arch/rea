@@ -1,0 +1,62 @@
+[
+  {
+    "file": "AndroidManifest.decoded.xml",
+    "bytes": 90101,
+    "sha256": "63eff61a21179787a648b9fdf3863604c71aebe4f148d0e656b37c6ef09b4ed2"
+  },
+  {
+    "file": "GameProtos.proto",
+    "bytes": 2887,
+    "sha256": "48286b4354984891ef914b4c2bc4e92c4181199b1d7d7bfc0c94970600b19526"
+  },
+  {
+    "file": "archive-members.json",
+    "bytes": 624674,
+    "sha256": "79f499ef06fa7845a3d5b6b01c34e1be47e7e023dfbadb376c30cea444f87450"
+  },
+  {
+    "file": "class-descriptors.json",
+    "bytes": 11098145,
+    "sha256": "f305ec9cca45ceb5c0fca4cfad7a96fca7743556eee7ea5976e79560460d15e1"
+  },
+  {
+    "file": "evidence-index.json",
+    "bytes": 1144,
+    "sha256": "d873ae89a689a11ce3e723b8c2da56aece0f8eac569f0efd99e259c48d5c58c9"
+  },
+  {
+    "file": "extract-dex-resource-candidates.py",
+    "bytes": 2584,
+    "sha256": "b6e926a4ef44129ff3c1c638febe38a2ec24ae6891f955faaeeb204a9af43e84"
+  },
+  {
+    "file": "feature-ledger.json",
+    "bytes": 3089,
+    "sha256": "cb2944623dea2e4fc2af5c50c147011a3055d92e47557c534fe3fb1db6f4f345"
+  },
+  {
+    "file": "package-candidates.json",
+    "bytes": 8310828,
+    "sha256": "bb758072f34d382a2ffb324f8e85f01b8fd6d712e99de3646edef016be49c4e7"
+  },
+  {
+    "file": "rea-hotpick-class.json",
+    "bytes": 8761,
+    "sha256": "7e2f875525f77a71f15358ad244bad25e9444473c6b99c0a60ee13a0ab93b787"
+  },
+  {
+    "file": "rea-hotpick-config.json",
+    "bytes": 12315,
+    "sha256": "642099afdb3c17eb4319d12e3083ef20382acacde80559e6a27e89230361af90"
+  },
+  {
+    "file": "rea-package.json",
+    "bytes": 196424,
+    "sha256": "049d144a3f6003948e7cb8ea893a73c372f662eaf2430e2f619745168e3be9e8"
+  },
+  {
+    "file": "selected-feature-resources.json",
+    "bytes": 13170,
+    "sha256": "b72e32c99e52ed98ff1fc681f5f944fcdded1137b4f51d2b84c3b747fb5e136c"
+  }
+]

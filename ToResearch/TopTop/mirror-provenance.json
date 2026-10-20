@@ -1,0 +1,121 @@
+{
+  "app": "TopTop",
+  "requested_regions": "MENA",
+  "expected_package": "com.game.friends.android",
+  "source_kind": "third-party mirror APKPure",
+  "source_page": "https://apkpure.net/toptop/com.game.friends.android/download",
+  "page_title": "Download TopTop: Games&amp;Chat 3.27.3 APK for Android - Free and Safe Download",
+  "download_url": "https://d.apkpure.net/b/XAPK/com.game.friends.android?version=latest",
+  "final_url": "https://data.winudf.com/XAPK/Y29tLmdhbWUuZnJpZW5kcy5hbmRyb2lkXzMwMjcwMDNfY2VjYmI3NjM?_p=Y29tLmdhbWUuZnJpZW5kcy5hbmRyb2lk&filename=TopTop%3A+Games%26Chat_3.27.3_APKPure.xapk&full_size=242311437&is_hot=false&k=REDACTED&package_name=com.game.friends.android&source=web&token=REDACTED",
+  "retrieved_at": "2026-10-13T07:53:30.477177+00:00",
+  "file": "TopTop-3.27.3.xapk",
+  "bytes": 242311437,
+  "sha256": "a5f9e540433efe408767ecbf00c86f623120b6001cfbdb33f29450de600a9a9c",
+  "zip_crc": "passed",
+  "archive_manifest": {
+    "xapk_version": 2,
+    "package_name": "com.game.friends.android",
+    "name": "TopTop",
+    "locales_name": {
+      "ar": "TopTop",
+      "en": "TopTop",
+      "fr": "TopTop",
+      "tr": "TopTop"
+    },
+    "version_code": "3027003",
+    "version_name": "3.27.3",
+    "min_sdk_version": "29",
+    "target_sdk_version": "36",
+    "permissions": [
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.CHANGE_WIFI_STATE",
+      "android.permission.INTERNET",
+      "android.permission.SCHEDULE_EXACT_ALARM",
+      "android.permission.USE_EXACT_ALARM",
+      "com.game.friends.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "com.google.android.gms.permission.AD_ID",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.WRITE_SETTINGS",
+      "android.permission.CHANGE_NETWORK_STATE",
+      "android.permission.CHANGE_CONFIGURATION",
+      "android.permission.READ_MEDIA_AUDIO",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.DETECT_SCREEN_CAPTURE",
+      "android.permission.VIBRATE",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.READ_PHONE_STATE",
+      "com.google.android.providers.gsf.permission.READ_GSERVICES",
+      "android.permission.WAKE_LOCK",
+      "android.permission.MODIFY_AUDIO_SETTINGS",
+      "android.permission.CAMERA",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FLASHLIGHT",
+      "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+      "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+      "android.permission.GET_ACCOUNTS",
+      "android.permission.AUTHENTICATE_ACCOUNTS",
+      "android.permission.WRITE_SYNC_SETTINGS",
+      "android.permission.MANAGE_ACCOUNTS",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "com.google.android.c2dm.permission.RECEIVE",
+      "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+      "android.permission.ACCESS_ADSERVICES_AD_ID",
+      "android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE",
+      "android.permission.ACCESS_ADSERVICES_TOPICS",
+      "com.android.vending.BILLING",
+      "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+      "com.samsung.android.mapsagent.permission.READ_APP_INFO",
+      "com.google.android.apps.photos.permission.GOOGLE_PHOTOS",
+      "com.game.friends.android.permission.PROCESS_PUSH_MSG",
+      "com.game.friends.android.permission.PUSH_PROVIDER",
+      "com.sec.android.provider.badge.permission.READ",
+      "com.sec.android.provider.badge.permission.WRITE",
+      "com.htc.launcher.permission.READ_SETTINGS",
+      "com.htc.launcher.permission.UPDATE_SHORTCUT",
+      "com.sonyericsson.home.permission.BROADCAST_BADGE",
+      "com.sonymobile.home.permission.PROVIDER_INSERT_BADGE",
+      "com.anddoes.launcher.permission.UPDATE_COUNT",
+      "com.majeur.launcher.permission.UPDATE_BADGE",
+      "com.huawei.android.launcher.permission.CHANGE_BADGE",
+      "com.huawei.android.launcher.permission.READ_SETTINGS",
+      "com.huawei.android.launcher.permission.WRITE_SETTINGS",
+      "android.permission.READ_APP_BADGE",
+      "com.oppo.launcher.permission.READ_SETTINGS",
+      "com.oppo.launcher.permission.WRITE_SETTINGS",
+      "me.everything.badger.permission.BADGE_COUNT_READ",
+      "me.everything.badger.permission.BADGE_COUNT_WRITE"
+    ],
+    "split_configs": [
+      "config.armeabi_v7a",
+      "topinnergame"
+    ],
+    "total_size": 242300846,
+    "icon": "icon.png",
+    "split_apks": [
+      {
+        "file": "com.game.friends.android.apk",
+        "id": "base"
+      },
+      {
+        "file": "config.armeabi_v7a.apk",
+        "id": "config.armeabi_v7a"
+      },
+      {
+        "file": "topinnergame.apk",
+        "id": "topinnergame"
+      }
+    ]
+  },
+  "extracted_apks": [
+    "com.game.friends.android.apk",
+    "config.armeabi_v7a.apk",
+    "topinnergame.apk"
+  ],
+  "latest_scope": "Newest version advertised by live APKPure download page on retrieval date; staged Google Play release not verified",
+  "final_url_redacted_transport_credentials": [
+    "k",
+    "token"
+  ]
+}

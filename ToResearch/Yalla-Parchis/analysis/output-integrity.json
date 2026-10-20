@@ -1,0 +1,62 @@
+[
+  {
+    "file": "AndroidManifest.decoded.xml",
+    "bytes": 35085,
+    "sha256": "899d131e6d262984bf097af729bfb77d6ebf64e7cdb4592f7cd331aff47e6068"
+  },
+  {
+    "file": "archive-members.json",
+    "bytes": 278757,
+    "sha256": "1a21554863dfbbb65207b56a26938ec9f4b96255ed7c1fdd96d5dca446769e24"
+  },
+  {
+    "file": "class-descriptors.json",
+    "bytes": 5827158,
+    "sha256": "85f20281b7d9bc07f0c8ce2bf3ef2cbbfbfd43d95a0a6320690adbb7e3fca987"
+  },
+  {
+    "file": "evidence-index.json",
+    "bytes": 347,
+    "sha256": "8c204630fc0f09634c0db1e2676525f927b2450aeb1e183f69e04e967754bb4b"
+  },
+  {
+    "file": "extract-dex-resource-candidates.py",
+    "bytes": 2584,
+    "sha256": "b6e926a4ef44129ff3c1c638febe38a2ec24ae6891f955faaeeb204a9af43e84"
+  },
+  {
+    "file": "extract-unity-text.py",
+    "bytes": 1325,
+    "sha256": "54067ca358ce3cc8bb955318bf867d7810163e46bbcdef1636b2d4574f75d8bb"
+  },
+  {
+    "file": "feature-ledger.json",
+    "bytes": 3061,
+    "sha256": "f20da4554c47d3e5401f123305dbf7bde104fad7daeddcd31049d36542dc4c57"
+  },
+  {
+    "file": "il2cpp-string-literals.json",
+    "bytes": 5592573,
+    "sha256": "767ed425e4ba2cbd3e4dace03ba31efb5753833160b5b7cc79bb34e00529f204"
+  },
+  {
+    "file": "package-candidates.json",
+    "bytes": 1047027,
+    "sha256": "be2b0b2d9cdda3102dc92b198e228af0882cf9835b86ef180dac1ef3a54b5a1b"
+  },
+  {
+    "file": "rea-package.json",
+    "bytes": 80549,
+    "sha256": "873ef84b719725af61df3ab9e80a78e45e3889d0ea92f65b2a20250f60b3eb93"
+  },
+  {
+    "file": "selected-feature-resources.json",
+    "bytes": 12265,
+    "sha256": "b28f688605e26af814aba72aa4e9ac3245cbf70d07843a69faea7a6d5015a238"
+  },
+  {
+    "file": "unity-text-assets.json",
+    "bytes": 866296,
+    "sha256": "e1184d7486fe5c1c3958fb19231d28bcb7b19fbe37f2d1a64996b74e2ae3235e"
+  }
+]

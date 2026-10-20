@@ -1,0 +1,506 @@
+{
+  "app": "17LIVE",
+  "package": "com.machipopo.media17",
+  "version": "2.253.1.0",
+  "scope": "partial static",
+  "items": [
+    {
+      "id": "L1701",
+      "categories": [
+        "游戏",
+        "社交",
+        "玩法"
+      ],
+      "name": "PK竞争+双边共斗任务",
+      "core_loop": "组队设题/时长→礼物竞争→双方共同做随机任务→双边奖励",
+      "distinctive": "对抗得分与跨阵营合作在同一PK内叠加",
+      "rules": {
+        "资源": "1 gift point=1 PK point；任务有评论/赞/礼物",
+        "时序": "任务完成后礼物仍加PK点；一方投降结束共斗"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:1999",
+          "offset": 115122,
+          "quote": "Gifting will accumulate PK Points regardless of whether it’s during a mission.\nEven after the mission is completed, users can continue sending gifts to help boost your PK score and earn rewards! (1 gift point = 1 PK point)"
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:3494",
+          "offset": 182206,
+          "quote": "Random missions (such as comments, likes, or various gifts) will appear during the PK!\nViewers from both livestreams can work together to complete them and earn even more PK Points!"
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:4404",
+          "offset": 217148,
+          "quote": "The PK co-op mission has ended since the opponent has surrendered."
+        }
+      ],
+      "unknowns": [
+        "匹配、任务随机、真实奖励",
+        "胜负结算"
+      ],
+      "replica_scope": "已有双边PK任务demo；下一步选任务模板及倒计时",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "已有"
+    },
+    {
+      "id": "L1702",
+      "categories": [
+        "社交",
+        "权益"
+      ],
+      "name": "Army分级订阅与专属直播",
+      "core_loop": "订某主播Army→按阶级进入专属场→失效即停权益",
+      "distinctive": "权益绑定主播关系与订阅rank而非全站VIP",
+      "rules": {
+        "门槛": "只在对应主播直播享权益且订阅有效",
+        "回报": "徽章、专属礼物、Front Row、弹幕；专属直播可限制rank",
+        "规则": "一文案写level4及以上，另一%s为配置"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:764",
+          "offset": 68835,
+          "quote": "Army perks are only available when your subscription is active."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:765",
+          "offset": 68901,
+          "quote": "Army privilege can only be enjoyed in this livestream, it doesn't work on other streamers."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:755",
+          "offset": 68250,
+          "quote": "Army exclusive livestream requires army level 4 and above."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:1924",
+          "offset": 112551,
+          "quote": "Gain access to Army-only streams. Note that some Army-only streams may be restricted by Army rank."
+        }
+      ],
+      "unknowns": [
+        "各地区/阶级矩阵、价格",
+        "4级与配置适用"
+      ],
+      "replica_scope": "频道×有效期×阶级权限表，不套统一4级到所有地区",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "L1703",
+      "categories": [
+        "社交",
+        "权益"
+      ],
+      "name": "赠送Army30天与限制",
+      "core_loop": "用户赠朋友Army→30天固定身份→到期结束",
+      "distinctive": "代买支持关系且避免把受赠者带入自动续费",
+      "rules": {
+        "时序": "赠订30天且不自动续费",
+        "限制": "赠订不能升级"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:483",
+          "offset": 56639,
+          "quote": "A gifted Army subscription gives your friend a 30-day membership to %s's Army and won't auto-renew."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:1992",
+          "offset": 114835,
+          "quote": "Gifted Army memberships do not auto-renew and cannot be upgraded."
+        }
+      ],
+      "unknowns": [
+        "赠送资格、重复赠送与叠加",
+        "退款"
+      ],
+      "replica_scope": "赠送资格凭证、固定到期与升级限制",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "L1704",
+      "categories": [
+        "社交",
+        "权益",
+        "玩法"
+      ],
+      "name": "Army自定义身份与表情",
+      "core_loop": "主播自定义Army/rank命名→审核后生效→成员使用专属emoji",
+      "distinctive": "组织名称和成员表达围绕主播塑造",
+      "rules": {
+        "时序": "名称需批准后生效",
+        "门槛": "Army成员可在此主播直播使用其自制emoji"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:1391",
+          "offset": 92998,
+          "quote": "Customize your Army with a unique name. You can even name your ranks! Names will go into effect once they've been approved."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:761",
+          "offset": 68519,
+          "quote": "Army members will be able to access custom emojis created by the streamer and use them in streamer's live stream chat."
+        }
+      ],
+      "unknowns": [
+        "emoji数量/审核",
+        "改名频率"
+      ],
+      "replica_scope": "组织/rank编辑审核与专属emoji门控",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "L1705",
+      "categories": [
+        "权益",
+        "玩法"
+      ],
+      "name": "Army Call-in专属连线",
+      "core_loop": "Army专属直播内→实时语音/视频Call-in→选择摄像头",
+      "distinctive": "订阅专属内容内还有面对面互动通道",
+      "rules": {
+        "回报": "Army直播内实时语音/视频Call-in",
+        "规则": "可选择开/关相机；另Group Calls在Army-exclusive被禁"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:2377",
+          "offset": 137532,
+          "quote": "Introducing Army Call in!\nYou can now enjoy real-time voice or video calls with streamers during Army livestreams for a more interactive experience."
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140a6b",
+          "resource_name": "call_in_viewer_request_permission_des",
+          "string_index": 8817,
+          "offset": 429055,
+          "quote": "Go to Settings > 17LIVE and enable microphone and camera access. When joining a call-in, you can choose whether to turn on your camera."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:2062",
+          "offset": 117576,
+          "quote": "Group Calls are disabled in Army-exclusive streams."
+        }
+      ],
+      "unknowns": [
+        "Call-in与Group Call协议差异",
+        "等级、人数、主持控制"
+      ],
+      "replica_scope": "资格→申请→接入的状态原型，区分Call-in和Group Call",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "L1706",
+      "categories": [
+        "权益",
+        "社交",
+        "玩法"
+      ],
+      "name": "Guardian独占七日竞价守护",
+      "core_loop": "观众出价→最高价成唯一Guardian→他人加价抢位/本人续时",
+      "distinctive": "主播关系身份具唯一性、期限和可竞争所有权",
+      "rules": {
+        "门槛": "每主播同时一位Guardian",
+        "时序": "七天；任何人可更高价竞标；本人可竞价延长",
+        "资源": "最高价确认后消费Baby Coins；只对对应主播生效"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f14118b",
+          "resource_name": "guardian_rule_1_txt",
+          "string_index": 8189,
+          "offset": 409953,
+          "quote": "Each streamer has ONE Guardian Knight"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f14118c",
+          "resource_name": "guardian_rule_2_txt",
+          "string_index": 11999,
+          "offset": 550652,
+          "quote": "The Knight will be committed to guarding the beloved streamer in SEVEN days"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f14118e",
+          "resource_name": "guardian_rule_4_txt",
+          "string_index": 7017,
+          "offset": 367260,
+          "quote": "Anyone can offer a higher price to bid for Knight honor at any time."
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f14118f",
+          "resource_name": "guardian_rule_5_txt",
+          "string_index": 7923,
+          "offset": 399632,
+          "quote": "Current Knight can also bid to extend their time as Guardian Knight"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1406a9",
+          "resource_name": "app_containers_Guardian_consume_reminder",
+          "string_index": 9152,
+          "offset": 447934,
+          "quote": "If you tap \"Bid\" and you are the highest bidder, the corresponding amount of Baby Coins will be consumed."
+        }
+      ],
+      "unknowns": [
+        "被抢退款、续期叠加",
+        "竞价最小增幅"
+      ],
+      "replica_scope": "本地竞价、所有者替换、七日有效期，不接支付",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "L1707",
+      "categories": [
+        "权益",
+        "玩法"
+      ],
+      "name": "入场动画按身份优先级择一",
+      "core_loop": "用户排序Army/Guardian/Premium动画→进房→播放最高适用者",
+      "distinctive": "多种权益冲突有显式顺序且按当前房主资格判断",
+      "rules": {
+        "规则": "可开关并拖拽排序；多个打开只播最高匹配动画"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:346",
+          "offset": 45993,
+          "quote": "1. Once you've set an Entry Animation and enter a stream room, everyone in the room including the streamer will see the animation.\n2. You can toggle each Entry Animation off and on.\n3. Press and hold to drag and drop Entry Animations in your preferred order.\n4. If you've toggled on multiple Entry Animations, the animation highest on the list will be shown when you enter stream rooms.\n\nFor example if your Entry Animations are ordered with Army at the top, followed by Guardian and then Premium, the following will happen:\n1. If you enter a stream room and you subscribe to that streamer's Army, the Army Entry Animation will play.\n2. If you enter a stream room and you do not subscribe to that streamer's Army, but you are their Guardian, the Guardian Entry Animation will play.\n3. If you enter a stream room and you are not a member of the streamer's Army nor their Guardian, the Premium Entry Animation will play."
+        }
+      ],
+      "unknowns": [
+        "去重/冷却及动画资源",
+        "权限失效即时性"
+      ],
+      "replica_scope": "排序+关系匹配的入场预览，使用原创动效",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "L1708",
+      "categories": [
+        "游戏",
+        "玩法"
+      ],
+      "name": "Lucky Bag共享保底",
+      "core_loop": "多人抽同一随机袋→共享累计次数→触发GP大奖",
+      "distinctive": "保底属于袋而不是单个送礼者",
+      "rules": {
+        "资源": "各奖按概率抽取",
+        "规则": "距GP次数基于袋自身，由所有gift senders累计"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f141626",
+          "resource_name": "lucky_bag_ceiling_desc",
+          "string_index": 12080,
+          "offset": 559098,
+          "quote": "The number of times left before guaranteed prize (GP) is based on the lucky bag per se, which is accumulated by all gift senders."
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f14162a",
+          "resource_name": "lucky_bag_detail_description",
+          "string_index": 12099,
+          "offset": 560871,
+          "quote": "The reward is based on the probability of each draw; the actual outcome may vary depending on each draw and your luck. To learn more about lucky bag, please check the %s."
+        }
+      ],
+      "unknowns": [
+        "袋scope/重置、阈值、权重",
+        "概率动态配置"
+      ],
+      "replica_scope": "共享计数+抽取+GP触发模拟，参数不冒充原值",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "L1709",
+      "categories": [
+        "游戏",
+        "社交",
+        "玩法"
+      ],
+      "name": "Random Rush集物开箱活动",
+      "core_loop": "观众买Lucky Bag获物件→满足箱内物件清单→主播领奖",
+      "distinctive": "随机袋消费转成多人共集物件目标",
+      "rules": {
+        "资源": "不同活动物件需求不同",
+        "回报": "等级1-5对应不同ultimate prizes；清单全满足主播获奖"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:475",
+          "offset": 55463,
+          "quote": "A Random Rush Event is a box event where viewers can satisfy the required items in the box by purchasing Lucky Bags. When the requirements are all met, the streamer will win an awesome prize!\n\nThe required items will be different in each Random Rush Event. Ranging from levels 1 to 5, Random Rush Events have different ultimate prizes.\n\nThe Random Rush Event is a new fun event to get support from your fans. Come and join us!"
+        }
+      ],
+      "unknowns": [
+        "各level清单、物件重复处理",
+        "结算时机"
+      ],
+      "replica_scope": "原型共集物件看板与动态需求目标，抽取配置自设",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "L1710",
+      "categories": [
+        "游戏",
+        "社交"
+      ],
+      "name": "Draw & Guess直播互动",
+      "core_loop": "主播开画猜→观众猜→AI给规则提示答案",
+      "distinctive": "直播评论成为互动猜题输入候选",
+      "rules": {
+        "直接文案": "Interactive Games包含Draw & Guess；AI handles rules/hints/answers"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:4063",
+          "offset": 202678,
+          "quote": "Spice up streams with Interactive Games! Play Draw & Guess and Quiz Game with viewers. AI handles everything: rules, hints, answers. Just have fun with your community."
+        }
+      ],
+      "unknowns": [
+        "输入渠道、回合、计分、AI/题库",
+        "画布同步"
+      ],
+      "replica_scope": "可做选题/绘画/猜题局；参数及AI用本地重构标识",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "L1711",
+      "categories": [
+        "游戏",
+        "社交"
+      ],
+      "name": "Quiz Game主题直播问答",
+      "core_loop": "选问题theme→开Quiz→观众参与→提示/答案",
+      "distinctive": "直播主题可由主播控制，自动主持是文案承诺",
+      "rules": {
+        "门槛": "先select question theme",
+        "资源": "AI规则、提示与答案文案"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:3806",
+          "offset": 191114,
+          "quote": "Select a question theme for the Quiz game"
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:4063",
+          "offset": 202678,
+          "quote": "Spice up streams with Interactive Games! Play Draw & Guess and Quiz Game with viewers. AI handles everything: rules, hints, answers. Just have fun with your community."
+        }
+      ],
+      "unknowns": [
+        "判题、参与资格、分数、超时",
+        "是否实际AI"
+      ],
+      "replica_scope": "先做主题题库与本地判题，不声称恢复AI",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "L1712",
+      "categories": [
+        "权益",
+        "玩法"
+      ],
+      "name": "Army贡献榜按订阅天摊分",
+      "core_loop": "买Army订阅→按总价/天数日摊→纳入收/送礼榜",
+      "distinctive": "一次买长订不会全额集中算在购买日",
+      "rules": {
+        "公式": "Army Subscription/subscription days",
+        "示例": "196554 coins/90天=每日2184，尾差到期更新"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:347",
+          "offset": 46916,
+          "quote": "1. The coins listed on the Army Leaderboard include Received Gifts and Sent Gifts.\n2. Calculation: Army Subscription/subscription days. \nFor example, when a user purchases a 3-month/90-day Captain Army Subscription on 12/15 for 196,554 Baby Coins, the daily Baby Coins of 2,184 will be updated on the leaderboard (the daily decimals will be updated when the Army Subscription is due)"
+        }
+      ],
+      "unknowns": [
+        "赠订/跨日取消、尾差精度",
+        "榜计时区"
+      ],
+      "replica_scope": "订阅摊分账本和榜单日汇总",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    }
+  ]
+}

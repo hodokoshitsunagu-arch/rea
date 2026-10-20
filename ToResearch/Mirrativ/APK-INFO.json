@@ -1,0 +1,90 @@
+{
+  "app": "Mirrativ",
+  "regions": "Japan",
+  "package": "com.dena.mirrativ",
+  "version": "11.92.1",
+  "version_code": 43253,
+  "selected_file": "Mirrativ-11.92.1.xapk",
+  "source": "APKPure mirror",
+  "source_page": "https://apkpure.net/mirrativ/com.dena.mirrativ/download",
+  "retrieved_at": "2026-10-13T07:57:51.704040+00:00",
+  "checks": {
+    "zip_crc": "passed",
+    "manifest_package_match": true,
+    "manifest_version": "read from downloaded APK",
+    "android_runtime": "not tested",
+    "publisher_signature": "not cryptographically verified",
+    "published_archive_sha1_match": true
+  },
+  "files": [
+    {
+      "path": "Mirrativ-11.92.1.xapk",
+      "bytes": 315936429,
+      "sha256": "99c154d8391f86348cc5e514b89c7a6a70ac656660f0f6939f882fd330eb7242",
+      "sha1": "40d2f6c55cf26fe1d67e3582762e08459ea428d0",
+      "manifest": null
+    },
+    {
+      "path": "apks/com.dena.mirrativ.apk",
+      "bytes": 138993690,
+      "sha256": "47fdad48fc045719b3e942c87d03d12058ed0d572705efa80890fe0b38eeffc9",
+      "sha1": "e5d87b2112c9e5c8c9f0d84fb84b983016564277",
+      "manifest": {
+        "package": "com.dena.mirrativ",
+        "versionName": "11.92.1",
+        "versionCode": 43253,
+        "split": null
+      }
+    },
+    {
+      "path": "apks/config.arm64_v8a.apk",
+      "bytes": 174831914,
+      "sha256": "ab64ba39e65d071c5b75f427117abd196a19b9784821ff73eeaaf5251abe1b59",
+      "sha1": "b12d4db541831dada7c5441d5c0e9f42cdce90d8",
+      "manifest": {
+        "package": "com.dena.mirrativ",
+        "versionName": null,
+        "versionCode": 43253,
+        "split": "config.arm64_v8a"
+      }
+    },
+    {
+      "path": "apks/config.en.apk",
+      "bytes": 127186,
+      "sha256": "a204cf39353ed012d7c08f31412ea9e256faf87ee1a4dc93569d034f598d59aa",
+      "sha1": "b147b6f5cdb9356996fb2fa3132bf6e3f8eda9f7",
+      "manifest": {
+        "package": "com.dena.mirrativ",
+        "versionName": null,
+        "versionCode": 43253,
+        "split": "config.en"
+      }
+    },
+    {
+      "path": "apks/config.mdpi.apk",
+      "bytes": 1851243,
+      "sha256": "a9bbff958eec245186fae800197dc8fc86ff9a1b6ef92a71c2e1c8e3fe5a5a4d",
+      "sha1": "261c9a05251df08c4f7668d3cb2d414342556600",
+      "manifest": {
+        "package": "com.dena.mirrativ",
+        "versionName": null,
+        "versionCode": 43253,
+        "split": "config.mdpi"
+      }
+    }
+  ],
+  "compared_sources": [
+    {
+      "source_page": "https://apkpure.net/mirrativ/com.dena.mirrativ/download",
+      "file": "Mirrativ-11.92.1.xapk",
+      "identity": {
+        "package": "com.dena.mirrativ",
+        "versionName": "11.92.1",
+        "versionCode": 43253,
+        "split": null
+      }
+    }
+  ],
+  "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+  "mirror_advertised_date": "Last updated on Oct 7, 2026"
+}

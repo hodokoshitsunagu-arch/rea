@@ -1,0 +1,77 @@
+{
+  "app": "Pococha",
+  "regions": "Japan",
+  "package": "com.dena.pokota",
+  "version": "7.36.0",
+  "version_code": 7360000,
+  "selected_file": "Pococha-7.36.0.xapk",
+  "source": "APKPure mirror",
+  "source_page": "https://apkpure.net/pococha/com.dena.pokota/download",
+  "retrieved_at": "2026-10-13T07:58:15.025370+00:00",
+  "checks": {
+    "zip_crc": "passed",
+    "manifest_package_match": true,
+    "manifest_version": "read from downloaded APK",
+    "android_runtime": "not tested",
+    "publisher_signature": "not cryptographically verified"
+  },
+  "files": [
+    {
+      "path": "Pococha-7.36.0.xapk",
+      "bytes": 202629527,
+      "sha256": "ccb8139a7ae6657182d1fa7c72e59f155b6863e64db3407178275b59aadc099d",
+      "sha1": "d8baff6059012cc35336fd917bf750a5d93b7180",
+      "manifest": null
+    },
+    {
+      "path": "apks/com.dena.pokota.apk",
+      "bytes": 113825068,
+      "sha256": "0de7478f2a347464e34727de59a104d2137633325f0aafafd95f91dee5279be9",
+      "sha1": "9e82f80e58107ec4133740a6b95ce2132bf8d560",
+      "manifest": {
+        "package": "com.dena.pokota",
+        "versionName": "7.36.0",
+        "versionCode": 7360000,
+        "split": null
+      }
+    },
+    {
+      "path": "apks/config.arm64_v8a.apk",
+      "bytes": 86333143,
+      "sha256": "d4273331ccf1baa1345beb86d50df83177ad7c580f743f4ddccb964dc3caee27",
+      "sha1": "31b34ee670f07cc8ffc50184ac53f1a86a9a7a87",
+      "manifest": {
+        "package": "com.dena.pokota",
+        "versionName": null,
+        "versionCode": 7360000,
+        "split": "config.arm64_v8a"
+      }
+    },
+    {
+      "path": "apks/config.mdpi.apk",
+      "bytes": 2368219,
+      "sha256": "da6582bdf5ae53cbe18ce937644b946597e451fb0f5dcc571f2c96c3e7274d06",
+      "sha1": "45219e870ebd080cf81e179c809af0cc2680c61a",
+      "manifest": {
+        "package": "com.dena.pokota",
+        "versionName": null,
+        "versionCode": 7360000,
+        "split": "config.mdpi"
+      }
+    }
+  ],
+  "compared_sources": [
+    {
+      "source_page": "https://apkpure.net/pococha/com.dena.pokota/download",
+      "file": "Pococha-7.36.0.xapk",
+      "identity": {
+        "package": "com.dena.pokota",
+        "versionName": "7.36.0",
+        "versionCode": 7360000,
+        "split": null
+      }
+    }
+  ],
+  "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+  "mirror_advertised_date": "Oct 13, 2026"
+}

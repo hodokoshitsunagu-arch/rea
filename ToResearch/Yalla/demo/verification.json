@@ -1,0 +1,889 @@
+{
+  "input_hashes": {
+    "features.mjs": "f429f3bbdd80c37c5b64af2e433a33f379dad3afa664c247e172a04667458443",
+    "features.test.mjs": "7d0bafa54c5575215b0810e73a5d594985e8ca14ed8dd3212c62dc2194c04259",
+    "index.html": "83b4335a63ac014670c9edbe6e04bb21ad957972fa5a1efed60b9c7987351a72",
+    "modules.json": "6dee6d4e2ffe5ffa633070e32eb77ffd1eb1ae99a2a672416c648c9766473df7",
+    "ui.mjs": "9a2e3cffa34b392b1e11432bea2c2bd141e0ea944bd05255c28f4a546596bf88"
+  },
+  "app": "Yalla",
+  "module_count": 12,
+  "checks": [
+    {
+      "app": "Yalla",
+      "id": "YAL01",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL02",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a8\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL03",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL04",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL05",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL06",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL07",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL08",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL09",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL10",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL11",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL12",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL01",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YAL01-mobile.png"
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL02",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a8\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YAL02-mobile.png"
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL03",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YAL03-mobile.png"
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL04",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YAL04-mobile.png"
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL05",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YAL05-mobile.png"
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL06",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YAL06-mobile.png"
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YAL07-mobile.png"
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL08",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YAL08-mobile.png"
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL09",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YAL09-mobile.png"
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL10",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YAL10-mobile.png"
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL11",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YAL11-mobile.png"
+    },
+    {
+      "app": "Yalla",
+      "id": "YAL12",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YAL12-mobile.png"
+    }
+  ],
+  "passed": true,
+  "scope": "Local core-loop UI verification; no original APK/RTC/backend/payment/human verification."
+}

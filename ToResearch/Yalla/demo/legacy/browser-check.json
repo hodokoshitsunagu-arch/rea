@@ -1,0 +1,8 @@
+{
+  "url": "http://127.0.0.1:8767/",
+  "desktop": "loaded, scenario and advance clicked",
+  "mobile": "390x844 loaded, reset and scenario clicked",
+  "overflow": false,
+  "pageErrors": [],
+  "desktopText": "包体证据驱动 · 本地模拟 · 无 RTC / 无真实资产\n\nYalla · Speed Battle 宝箱争夺\n\n游戏礼物贡献 → 队伍胜负 → 胜队贡献榜奖励\n\n直接证据：resources.arsc [9212] 胜队 TOP 1–4 可分享宝箱点数。礼物10点、6回合、每3回合+5、均分均为重构参数。\n\n阶段 playing / 回合 1\n\n红队 30 · 蓝队 10 · 宝箱 40\n\nAmal · 队1 · 20贡献\n\nNour · 队1 · 10贡献\n\nLina · 队2 · 10贡献\n\nOmar · 队2 · 0贡献\n\nAmal 贡献礼物\nNour 贡献礼物\nLina 贡献礼物\nOmar 贡献礼物\n推进一回合\n载入固定演示场景\n重置\nAmal 送出模拟游戏礼物 +10\nAmal 送出模拟游戏礼物 +10\nNour 送出模拟游戏礼物 +10\nLina 送出模拟游戏礼物 +10\n查看证据、推断和未知边界"
+}

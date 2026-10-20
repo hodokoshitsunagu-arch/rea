@@ -1,0 +1,89 @@
+{
+  "app": "WePlay-JP",
+  "regions": "Japan",
+  "package": "com.wejoy.weplay.jp",
+  "version": "6.12.0",
+  "version_code": 61207,
+  "selected_file": "WePlay-JP-6.12.0.xapk",
+  "source": "APKPure mirror",
+  "source_page": "https://apkpure.net/weplay-jp/com.wejoy.weplay.jp/download",
+  "retrieved_at": "2026-10-13T07:57:48.805963+00:00",
+  "checks": {
+    "zip_crc": "passed",
+    "manifest_package_match": true,
+    "manifest_version": "read from downloaded APK",
+    "android_runtime": "not tested",
+    "publisher_signature": "not cryptographically verified"
+  },
+  "files": [
+    {
+      "path": "WePlay-JP-6.12.0.xapk",
+      "bytes": 274603920,
+      "sha256": "dff5d4ba6e61c706ccf54f7483c8f7d644ae08a94b389ca82ad0dc28eea7204b",
+      "sha1": "d8ed3ad33d7cd2e1a9c2f3d32a51a1578d35df1d",
+      "manifest": null
+    },
+    {
+      "path": "apks/com.wejoy.weplay.jp.apk",
+      "bytes": 118052369,
+      "sha256": "9b86689be30cc4e3dbb4a16ef268a6ac5ca275f58c37ed41cd073c3b89884e3a",
+      "sha1": "3cba05c0561aed71e05c075c1e23889294264778",
+      "manifest": {
+        "package": "com.wejoy.weplay.jp",
+        "versionName": "6.12.0",
+        "versionCode": 61207,
+        "split": null
+      }
+    },
+    {
+      "path": "apks/config.arm64_v8a.apk",
+      "bytes": 71663454,
+      "sha256": "6425f1ee1dd87fc196f776ab5dd91d73ab789341dd4c5aafe4dc8e5b2b2fd75d",
+      "sha1": "4b3a69d9af24fd5730b44adae825b4132e04d29c",
+      "manifest": {
+        "package": "com.wejoy.weplay.jp",
+        "versionName": null,
+        "versionCode": 61207,
+        "split": "config.arm64_v8a"
+      }
+    },
+    {
+      "path": "apks/config.mdpi.apk",
+      "bytes": 857774,
+      "sha256": "f1f2073ff59fb844225da3e6f3ff22d6e50d61ffdffc47198f8656f7d6385767",
+      "sha1": "fa153db787fcf200367df7b946a2ed15220233e8",
+      "manifest": {
+        "package": "com.wejoy.weplay.jp",
+        "versionName": null,
+        "versionCode": 61207,
+        "split": "config.mdpi"
+      }
+    },
+    {
+      "path": "apks/wepie_asset_pack.apk",
+      "bytes": 84003672,
+      "sha256": "ac03a1f7c05abae36e57a6f1e4c9d572578d56e47236f1031178c62384f891e9",
+      "sha1": "87bc2df1c87bd626a069a152ee19ec2113efdace",
+      "manifest": {
+        "package": "com.wejoy.weplay.jp",
+        "versionName": null,
+        "versionCode": 61207,
+        "split": "wepie_asset_pack"
+      }
+    }
+  ],
+  "compared_sources": [
+    {
+      "source_page": "https://apkpure.net/weplay-jp/com.wejoy.weplay.jp/download",
+      "file": "WePlay-JP-6.12.0.xapk",
+      "identity": {
+        "package": "com.wejoy.weplay.jp",
+        "versionName": "6.12.0",
+        "versionCode": 61207,
+        "split": null
+      }
+    }
+  ],
+  "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+  "mirror_advertised_date": "Oct 9, 2026"
+}

@@ -1,0 +1,1172 @@
+{
+  "app": "HeeSay",
+  "scope": "local reconstruction from fixed feature catalog",
+  "catalog_count": 14,
+  "implemented_count": 14,
+  "original_runtime_verified": false,
+  "source_catalog": "analysis/feature-catalog.json",
+  "items": [
+    {
+      "id": "HEE01",
+      "title": "守护资格、Top1 Couple 与积分到期",
+      "evidence_strength": "B明确资源规则",
+      "source_rules": {
+        "门槛": "GMT+0单日2500Beans",
+        "时序": "点7天有效，第8日0点扣除；榜延迟1–2分钟",
+        "资源": "1Bean=1守护点",
+        "回报": "Top1 Couple身份"
+      },
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10180,
+          "offset": 588508,
+          "quote": "1. In the VOICE room, send gifts worth 2,500 beans to a voicer within a single day(00:00:00 - 24:00:00, GMT+0), you will become his guardian. \n2. The TOP 1 guardian and the voicer become a couple. \n3. Each voicer can have multiple guardians, and each user can also guard multiple voicers. \n(The data may be a 1-2 minutes delay in updating.)"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10161,
+          "offset": 584393,
+          "quote": "1 Bean = 1 Guardian Point\nThe validity period of the guardian points is 7 days. You can send gifts to your guardian voicer to increase your guardian points. The guardian points will be deducted at 00:00:00 (GMT+0) on the 8th day after it is obtained."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 15391,
+          "offset": 807285,
+          "quote": "Top 1 guardian will be displayed on the voice mini profile of the guarded voicer."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 15855,
+          "offset": 822659,
+          "quote": "Warning! You will lose the guardian of %2$s. Send him %1$s beans as gifts today and to keep guarding.\n(V5.3.4 and above)"
+        }
+      ],
+      "source_loop": "单日2500Beans成为守护→滚动七日积分争Top1→投射Couple",
+      "local_fill": "固定2500/3000Beans样本；2分钟延迟是源范围内测试值；积分逐笔7天到期，资格失效公式未知不推断",
+      "implemented_scope": "守护双账本和滚动到期；专属操作：阿澄赠2500Beans成为守护 → 米拉赠3000Beans争Top1 → 推进2分钟榜单延迟 → 推进至第8日GMT+0零点",
+      "implemented_actions": [
+        {
+          "key": "giftA",
+          "label": "阿澄赠2500Beans成为守护"
+        },
+        {
+          "key": "giftB",
+          "label": "米拉赠3000Beans争Top1"
+        },
+        {
+          "key": "sync",
+          "label": "推进2分钟榜单延迟"
+        },
+        {
+          "key": "expiry",
+          "label": "推进至第8日GMT+0零点"
+        }
+      ],
+      "unknowns": [
+        "同分",
+        "资格失效需要补量文案但精确公式未知"
+      ],
+      "normal_loop": [
+        "giftA",
+        "sync",
+        "giftB",
+        "sync",
+        "expiry"
+      ],
+      "mechanism_guard": "sync",
+      "guard_state": {},
+      "expected_result": {
+        "day": 8,
+        "couple": null
+      },
+      "validation": {
+        "node_tests": "passed: 4 tests per ID",
+        "browser": "not yet verified by module owner",
+        "real_provider": "not executed",
+        "device": "not executed",
+        "human_experience": "not verified",
+        "focused_regression": "passed: dedicated producer-boundary regression test"
+      },
+      "completion": "catalog ID mechanism experiment implemented; full original product behavior remains partial",
+      "regression_fix": "积分到期重算时使旧待同步榜身份失效（pending=null）；giftA→expiry→sync拒绝旧同步，不会复活过期Couple，新积分事件才可生成新待同步身份。"
+    },
+    {
+      "id": "HEE02",
+      "title": "Chat Spark 到 Soulmate 徽章",
+      "evidence_strength": "B明确资源规则",
+      "source_rules": {
+        "门槛": "已点燃Chat Spark；一天互赠>10Beans",
+        "时序": "单日",
+        "资源": "聊天火花/双方赠礼",
+        "回报": "Soulmate徽章"
+      },
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10562,
+          "offset": 622700,
+          "quote": "After igniting the Chat Spark, exchange gifts worth over 10 beans in one day to unlock the Soulmate badge, representing a closer relationship."
+        }
+      ],
+      "source_loop": "点燃聊天火花→一天互送超过10Beans→Soulmate徽章",
+      "local_fill": "点燃事件手动注入；选择双方各>10分支，合计/各自歧义保留；徽章跨日保留为本地选择",
+      "implemented_scope": "关系进阶模型；专属操作：注入Chat Spark已点燃事件 → 阿澄向米拉送11Beans → 米拉向阿澄送11Beans → 核验同一天互赠门槛 → GMT+0进入新一天",
+      "implemented_actions": [
+        {
+          "key": "spark",
+          "label": "注入Chat Spark已点燃事件"
+        },
+        {
+          "key": "giftA",
+          "label": "阿澄向米拉送11Beans"
+        },
+        {
+          "key": "giftB",
+          "label": "米拉向阿澄送11Beans"
+        },
+        {
+          "key": "unlock",
+          "label": "核验同一天互赠门槛"
+        },
+        {
+          "key": "day",
+          "label": "GMT+0进入新一天"
+        }
+      ],
+      "unknowns": [
+        "Chat Spark点燃与熄灭",
+        "双方各10还是合计"
+      ],
+      "normal_loop": [
+        "spark",
+        "giftA",
+        "giftB",
+        "unlock",
+        "day"
+      ],
+      "mechanism_guard": "unlock",
+      "guard_state": {},
+      "expected_result": {
+        "soulmate": true,
+        "day": 2
+      },
+      "validation": {
+        "node_tests": "passed: 4 tests per ID",
+        "browser": "not yet verified by module owner",
+        "real_provider": "not executed",
+        "device": "not executed",
+        "human_experience": "not verified"
+      },
+      "completion": "catalog ID mechanism experiment implemented; full original product behavior remains partial"
+    },
+    {
+      "id": "HEE03",
+      "title": "Fan Club 取最高等级奖励",
+      "evidence_strength": "B明确资源规则",
+      "source_rules": {
+        "门槛": "加入Fan Club",
+        "时序": "每日赠礼奖励",
+        "资源": "粉丝点/等级",
+        "回报": "最高等级团奖励；进所属主播房才显徽章"
+      },
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 15098,
+          "offset": 788536,
+          "quote": "The higher level your Fan Badge reaches, the more Fan Club Exclusive Gifts you can get every day. If you join multiple Fan Clubs, you'll get the highest level one's bonus."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 16008,
+          "offset": 830356,
+          "quote": "Worn badges will only be shown when you get into the Fan Club owner's LIVE room. If you remove the badge or you enter another host's LIVE room, it will not be shown."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10565,
+          "offset": 623289,
+          "quote": "After quitting the Fan Club, your privileges, level and Fan Points will be lost and cannot be recovered. Are you sure you want to quit the Fan Club?"
+        }
+      ],
+      "source_loop": "加入多主播粉丝团→提高徽章等级→领取最高团奖励",
+      "local_fill": "粉丝点20和每10一级本地配置；奖励只标等级，退出不可恢复未造账户数据",
+      "implemented_scope": "多粉丝团奖励去重模型；专属操作：加入主播A粉丝团Lv1 → 加入主播B粉丝团Lv1 → 给B贡献本地20粉丝点升Lv3 → 领取当天最高团等级奖励 → 进入所属主播B房展示徽章 → 进入无所属团主播C房",
+      "implemented_actions": [
+        {
+          "key": "joinA",
+          "label": "加入主播A粉丝团Lv1"
+        },
+        {
+          "key": "joinB",
+          "label": "加入主播B粉丝团Lv1"
+        },
+        {
+          "key": "giftB",
+          "label": "给B贡献本地20粉丝点升Lv3"
+        },
+        {
+          "key": "reward",
+          "label": "领取当天最高团等级奖励"
+        },
+        {
+          "key": "roomB",
+          "label": "进入所属主播B房展示徽章"
+        },
+        {
+          "key": "outside",
+          "label": "进入无所属团主播C房"
+        }
+      ],
+      "unknowns": [
+        "粉丝点生产",
+        "退出不可恢复",
+        "奖励内容"
+      ],
+      "normal_loop": [
+        "joinA",
+        "joinB",
+        "giftB",
+        "reward",
+        "roomB",
+        "outside"
+      ],
+      "mechanism_guard": "reward",
+      "guard_state": {},
+      "expected_result": {
+        "badge": null,
+        "room": "主播C"
+      },
+      "validation": {
+        "node_tests": "passed: 4 tests per ID",
+        "browser": "not yet verified by module owner",
+        "real_provider": "not executed",
+        "device": "not executed",
+        "human_experience": "not verified"
+      },
+      "completion": "catalog ID mechanism experiment implemented; full original product behavior remains partial"
+    },
+    {
+      "id": "HEE04",
+      "title": "Family Starship 月度保级",
+      "evidence_strength": "B明确资源规则",
+      "source_rules": {
+        "门槛": "Lv1月保15000容量10；Lv2升级150000/月保60000容量15",
+        "时序": "下月提高保级门槛，GMT+0每月清月值",
+        "资源": "Monthly与Overall Force",
+        "回报": "等级、容量、权益"
+      },
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 13176,
+          "offset": 719600,
+          "quote": "Monthly Safe Force: The Monthly Force required to keep your Starship safe at the current level. The Monthly Safe Force challenge at each level is different. If your Monthly Force fails to meet the Level's Monthly Safe Force requirement, your Starship will be downgraded in the next month and your Overall Force will fall to the Attacked point."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 15641,
+          "offset": 814087,
+          "quote": "Upgrade: After earning enough Overall Force, you will be able to upgrade your Starship.\n\nWhen upgraded, your Starship will unlock a higher member capacity and other perks, but also have to meet a higher Monthly Safe Force requirement. The higher Monthly Safe Force requirement starts in the next month.\n\nIf you choose not to upgrade, the Monthly Safe Force requirement will remain the same, but you won't be able to grow your Starship with more new members and other perks."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 15030,
+          "offset": 783370,
+          "quote": "The Monthly Safe Force of Level 1 Starship is '15000', and the Member Capacity is 10."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 15038,
+          "offset": 783959,
+          "quote": "The Upgrade Force of Level 2 Starship is '150000', the Monthly Safe Force is '60000', and the Member Capacity is 15."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 14086,
+          "offset": 752379,
+          "quote": "Rankings will be sorted according to the current Monthly Force, which will be counted from 0:00 (GMT+0) on the 1st of this month and automatically emptied for the following month."
+        }
+      ],
+      "source_loop": "成员做任务加Force→选择升级→下一月保级→失败降级减总力",
+      "local_fill": "15000/150000/60000/容量10与15源规则；升级扣Overall、失败扣门槛为本地公式，未知原降级扣总力",
+      "implemented_scope": "组织成长与风险沙盘；专属操作：任务注入150000 Force样本 → 选择用150000 Overall升级Lv2 → GMT+0月末结算与清月值",
+      "implemented_actions": [
+        {
+          "key": "task",
+          "label": "任务注入150000 Force样本"
+        },
+        {
+          "key": "upgrade",
+          "label": "选择用150000 Overall升级Lv2"
+        },
+        {
+          "key": "month",
+          "label": "GMT+0月末结算与清月值"
+        }
+      ],
+      "unknowns": [
+        "当前Family与Starship是否双体系",
+        "任务分",
+        "降级恢复公式"
+      ],
+      "normal_loop": [
+        "task",
+        "upgrade",
+        "month",
+        "month"
+      ],
+      "mechanism_guard": "upgrade",
+      "guard_state": {},
+      "expected_result": {
+        "level": 1,
+        "capacity": 10,
+        "month": 3
+      },
+      "validation": {
+        "node_tests": "passed: 4 tests per ID",
+        "browser": "not yet verified by module owner",
+        "real_provider": "not executed",
+        "device": "not executed",
+        "human_experience": "not verified"
+      },
+      "completion": "catalog ID mechanism experiment implemented; full original product behavior remains partial"
+    },
+    {
+      "id": "HEE05",
+      "title": "家族双域管理员与创建存续条件",
+      "evidence_strength": "B明确资源规则",
+      "source_rules": {
+        "门槛": "资源有财富Lv9创建与主播等级优惠两套门槛；30天>10人文案",
+        "时序": "创建许可证/招募期",
+        "资源": "家族资格/管理员身份",
+        "回报": "管理招募、奖励、群公告"
+      },
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 14765,
+          "offset": 773399,
+          "quote": "Starship Admin privileges consist of two parts Starship related:\nApproval of applications for joining the Starship, kicking out members, inviting members to join, and issuing Starship rewards, editing the starship bulletin\nGroup chat related:\nGroup chat member invitation, member joining application, group chat removing member, editing group profile/announcement"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10207,
+          "offset": 597691,
+          "quote": "1.1 When you choose to create a Family, you will automatically become the Leader of the Family, with the authority to publish family announcements, manage family members, and more.\n\n1.2 The Family Leader and Members can complete family tasks to accumulate Family Force and elevate the family level. If the family you create or join does not meet the platform's required power level for maintenance, your family downgraded. If your family consistently fails to meet the minimum (Level 1) maintenance requirements, it may be automatically disbanded.\n\n1.3 Within 30 days of creation, each Family must ensure that the number of members exceeds 10, otherwise, it will be automatically disbanded. Once disbanded, the family cannot be restored."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 16096,
+          "offset": 836883,
+          "quote": "You can only create a family if your wealth level in live streaming/voice rooms is 9 or higher."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 14953,
+          "offset": 779027,
+          "quote": "Tap the \"Build\" button below to create the Starship of your own.\n\nNew Commander Special Offer:\n\nIf you are a host above Lv.10, you can build your first Family Starship for FREE.\n\nIf you are a host between Lv.5 - Lv.9, you can build your first family Starship right now at a discounted price, or choose to build for free after reaching Lv.10.\n\nTip: If you haven't reached Lv.5 yet, we recommend that you board an existing Family Starship to explore the space."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 93492,
+          "offset": 5417898,
+          "quote": "The created family must have more than %1$s members within 10 days, or it will be automatically disbanded if the requirement is not met."
+        }
+      ],
+      "source_loop": "创建/加入→族务与群管理角色→招募达标维持存续",
+      "local_fill": "明示新Family财富Lv9+本地选择30天>10路径；10/30天和旧Starship冲突不合并，角色授权为本地补齐",
+      "implemented_scope": "先分家族产品路径再复刻；专属操作：模拟财富Lv9 → 走财富Lv9新Family路径创建 → 族务管理员编辑家族公告 → 群管理员编辑群聊公告 → 独立授予群管理员 → 招募10成员使总人数11 → 到本地30天招募截止 → 查看旧Starship创建资格样本",
+      "implemented_actions": [
+        {
+          "key": "eligible",
+          "label": "模拟财富Lv9"
+        },
+        {
+          "key": "create",
+          "label": "走财富Lv9新Family路径创建"
+        },
+        {
+          "key": "familyBulletin",
+          "label": "族务管理员编辑家族公告"
+        },
+        {
+          "key": "chatAnnouncement",
+          "label": "群管理员编辑群聊公告"
+        },
+        {
+          "key": "chatAdmin",
+          "label": "独立授予群管理员"
+        },
+        {
+          "key": "recruit",
+          "label": "招募10成员使总人数11"
+        },
+        {
+          "key": "deadline",
+          "label": "到本地30天招募截止"
+        },
+        {
+          "key": "starship",
+          "label": "查看旧Starship创建资格样本"
+        }
+      ],
+      "unknowns": [
+        "10天/30天人数文案冲突",
+        "旧Starship与新Family适用",
+        "当前服务器门槛"
+      ],
+      "normal_loop": [
+        "eligible",
+        "create",
+        "familyBulletin",
+        "chatAdmin",
+        "chatAnnouncement",
+        "recruit",
+        "deadline",
+        "starship"
+      ],
+      "mechanism_guard": "create",
+      "guard_state": {},
+      "expected_result": {
+        "created": true,
+        "members": 11,
+        "chatAdmin": true
+      },
+      "validation": {
+        "node_tests": "passed: 4 tests per ID",
+        "browser": "not yet verified by module owner",
+        "real_provider": "not executed",
+        "device": "not executed",
+        "human_experience": "not verified"
+      },
+      "completion": "catalog ID mechanism experiment implemented; full original product behavior remains partial"
+    },
+    {
+      "id": "HEE06",
+      "title": "RICH 保级失败冻结不降级",
+      "evidence_strength": "B明确资源规则",
+      "source_rules": {
+        "门槛": "维护EXP",
+        "时序": "有效期末",
+        "资源": "RICH EXP",
+        "回报": "保级权益；失败等级保留但冻结"
+      },
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 12511,
+          "offset": 697254,
+          "quote": "If your RICH level does not change during the validity period, it will be recalculated at the end of the period. \n\na. If you successfully maintain your level, the required maintenance EXP will be deducted, and the validity period for your current level will restart. \n\nb. If you fail to maintain your level, a portion of the maintenance EXP will be deducted (your level will not be downgraded), and your RICH level and privileges will be frozen until the maintenance requirement is met."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 15546,
+          "offset": 811355,
+          "quote": "Unfortunately, your RICH level failed to maintain and has been frozen.\nOnce you earn the required EXP again, your level will immediately unfreeze and your exclusive privileges will be restored."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 11281,
+          "offset": 653015,
+          "quote": "Congratulations on maintaining your RICH level!\nYour RICH level has entered a new cycle. Enjoy your exclusive privileges!"
+        }
+      ],
+      "source_loop": "积EXP→周期重算→达标扣维护EXP并重启→失败冻结→补EXP解冻",
+      "local_fill": "维护100、失败部分扣25、每事件50和解冻扣100全是本地参数；冻结不降级源规则",
+      "implemented_scope": "冻结保级状态机；专属操作：积累本地50EXP → 有效期结束维护重算",
+      "implemented_actions": [
+        {
+          "key": "earn",
+          "label": "积累本地50EXP"
+        },
+        {
+          "key": "end",
+          "label": "有效期结束维护重算"
+        }
+      ],
+      "unknowns": [
+        "部分扣除比例",
+        "阈值和周期",
+        "VIP是否独立"
+      ],
+      "normal_loop": [
+        "earn",
+        "end",
+        "earn",
+        "earn"
+      ],
+      "mechanism_guard": "end",
+      "guard_state": {
+        "frozen": true
+      },
+      "expected_result": {
+        "level": 3,
+        "frozen": false,
+        "exp": 25,
+        "cycle": 2
+      },
+      "validation": {
+        "node_tests": "passed: 4 tests per ID",
+        "browser": "not yet verified by module owner",
+        "real_provider": "not executed",
+        "device": "not executed",
+        "human_experience": "not verified"
+      },
+      "completion": "catalog ID mechanism experiment implemented; full original product behavior remains partial"
+    },
+    {
+      "id": "HEE07",
+      "title": "匿名观播对主播可见",
+      "evidence_strength": "B明确资源规则",
+      "source_rules": {
+        "门槛": "匿名观看资格",
+        "时序": "观播时",
+        "资源": "匿名开关",
+        "回报": "观众不能打开真实主页，主播能识别"
+      },
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10559,
+          "offset": 622241,
+          "quote": "After enabling Anonymous Viewing, your personal avatar and nickname in the live will be replaced with an anonymous avatar and a mystery nickname, and others will not be able to access your profile.\nYour real identity is only visible to the host."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 13202,
+          "offset": 720587,
+          "quote": "Mr. Mystery entered this LIVE Room. Guess who he is! (You can activate mystery mode when your wealth level reaches Lv. 8)"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 13449,
+          "offset": 727527,
+          "quote": "No one will be able to see your profile and Wealth Level Badge in the LIVE room."
+        }
+      ],
+      "source_loop": "启用Anonymous Viewing→观众看神秘头像昵称→主播仍见真身份",
+      "local_fill": "资格直接注入，不把财富Lv8神秘模式合并；房管可见性保留未知",
+      "implemented_scope": "观众/主播可见性矩阵；专属操作：授予Anonymous Viewing模拟资格 → 开启/关闭匿名观看 → 切换主播视角识别真实身份 → 切换普通观众视角 → 当前视角打开主页",
+      "implemented_actions": [
+        {
+          "key": "eligible",
+          "label": "授予Anonymous Viewing模拟资格"
+        },
+        {
+          "key": "toggle",
+          "label": "开启/关闭匿名观看"
+        },
+        {
+          "key": "host",
+          "label": "切换主播视角识别真实身份"
+        },
+        {
+          "key": "audience",
+          "label": "切换普通观众视角"
+        },
+        {
+          "key": "profile",
+          "label": "当前视角打开主页"
+        }
+      ],
+      "unknowns": [
+        "财富Lv8神秘模式是否同一路径",
+        "房管可见性"
+      ],
+      "normal_loop": [
+        "eligible",
+        "toggle",
+        "host",
+        "profile",
+        "audience"
+      ],
+      "mechanism_guard": "toggle",
+      "guard_state": {},
+      "expected_result": {
+        "profileAccess": false,
+        "anonymous": true
+      },
+      "validation": {
+        "node_tests": "passed: 4 tests per ID",
+        "browser": "not yet verified by module owner",
+        "real_provider": "not executed",
+        "device": "not executed",
+        "human_experience": "not verified"
+      },
+      "completion": "catalog ID mechanism experiment implemented; full original product behavior remains partial"
+    },
+    {
+      "id": "HEE08",
+      "title": "幸运礼物按实际收币算榜",
+      "evidence_strength": "B明确资源规则",
+      "source_rules": {
+        "门槛": "Lucky Gift",
+        "时序": "奖励立即到账",
+        "资源": "礼物Beans、接收Coins",
+        "回报": "宣称最高500倍Beans；财富/魅力按实际Coins"
+      },
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10190,
+          "offset": 591536,
+          "quote": "1. Send a Lucky Gift to automatically enter the draw for a chance to win up to 500× the gift's value in Beans.\n\nExample: If you send a Lucky Gift worth 100 Beans and hit the 500× multiplier, you'll win 50,000 Beans.\n\n\n\n2. When you send a Lucky Gift, the recipient receives a percentage of its value in Coins. The exact amount is shown in the gift details.\n\n\n\n3. Any Beans won from a Lucky Gift are credited to your HeeSay account immediately.\n\n\n\n4. Gift-related stats, such as Wealth Points, are calculated based on the number of Coins the recipient actually receives.\n\nExample: If you send a Lucky Gift worth 1,000 Beans and the recipient receives 100 Coins, you will earn 0.1 Wealth Point.\n\n\n\n5. Recipient-related stats, such as Charm Points, are calculated based on the actual number of Coins received."
+        }
+      ],
+      "source_loop": "送幸运礼物→发送者抽Beans→接收者得部分Coins→按实际Coins统计榜",
+      "local_fill": "1000Beans→100Coins→0.1财富点采用源示例；0倍结果手动注入非概率；魅力仅记录Coin源值，比例未知",
+      "implemented_scope": "双币账本可先复刻，抽取算法待补；专属操作：送1000Beans幸运礼物（100Coins样本） → 注入已知抽取样本：0倍奖励 → 重置本地赠礼资产至1000Beans",
+      "implemented_actions": [
+        {
+          "key": "gift",
+          "label": "送1000Beans幸运礼物（100Coins样本）"
+        },
+        {
+          "key": "result",
+          "label": "注入已知抽取样本：0倍奖励"
+        },
+        {
+          "key": "fund",
+          "label": "重置本地赠礼资产至1000Beans"
+        }
+      ],
+      "unknowns": [
+        "概率/每礼物兑换率",
+        "不同币种单位"
+      ],
+      "normal_loop": [
+        "gift",
+        "result"
+      ],
+      "mechanism_guard": "result",
+      "guard_state": {},
+      "expected_result": {
+        "recipientCoins": 100,
+        "wealthPoints": 0.1,
+        "drawPending": false
+      },
+      "validation": {
+        "node_tests": "passed: 4 tests per ID",
+        "browser": "not yet verified by module owner",
+        "real_provider": "not executed",
+        "device": "not executed",
+        "human_experience": "not verified"
+      },
+      "completion": "catalog ID mechanism experiment implemented; full original product behavior remains partial"
+    },
+    {
+      "id": "HEE09",
+      "title": "宝箱任务排除特定礼物",
+      "evidence_strength": "B明确资源规则",
+      "source_rules": {
+        "门槛": "二级宝箱开启",
+        "时序": "本场直播",
+        "资源": "1Bean=1点；地图1张1点且上限下发；排除Lucky/Bag/Flying Comments",
+        "回报": "任务完成与宝箱奖励"
+      },
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10573,
+          "offset": 624019,
+          "quote": "After the Level 2 treasure box starts, collect %1$s to complete the mission. \n Points acquisition method: \n - 1 bean = 1 point. Only counts gift consumption. Not including map, lucky gift, bag gift and flying comments.\n - 1 map = 1 point. This box can accumulate up to %2$s points through maps."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 13914,
+          "offset": 747462,
+          "quote": "Points acquisition method: \n - 1 bean = 1 point. Only counts gift consumption. Not including map, lucky gift, bag gift and flying comments.\n - 1 map = 1 point. This box can accumulate up to %1$s points through maps."
+        }
+      ],
+      "source_loop": "开二级宝箱→收指定积分→进入房间奖励竞争",
+      "local_fill": "目标12/地图上限2为下发字段本地值；严格按来源统计，奖励竞争未补造",
+      "implemented_scope": "按来源统计的共同目标；专属操作：开始Lv2宝箱任务 → 普通礼物消耗10Beans → 幸运/袋/飞评礼物消耗不计点 → 赠送1地图记1点至本地上限2 → 完成共同目标领取资格",
+      "implemented_actions": [
+        {
+          "key": "open",
+          "label": "开始Lv2宝箱任务"
+        },
+        {
+          "key": "ordinary",
+          "label": "普通礼物消耗10Beans"
+        },
+        {
+          "key": "excluded",
+          "label": "幸运/袋/飞评礼物消耗不计点"
+        },
+        {
+          "key": "map",
+          "label": "赠送1地图记1点至本地上限2"
+        },
+        {
+          "key": "claim",
+          "label": "完成共同目标领取资格"
+        }
+      ],
+      "unknowns": [
+        "奖励池/竞争胜者",
+        "地图消耗与赠送语义"
+      ],
+      "normal_loop": [
+        "open",
+        "excluded",
+        "ordinary",
+        "map",
+        "map",
+        "map",
+        "claim"
+      ],
+      "mechanism_guard": "claim",
+      "guard_state": {},
+      "expected_result": {
+        "points": 12,
+        "mapPoints": 2,
+        "claimed": true
+      },
+      "validation": {
+        "node_tests": "passed: 4 tests per ID",
+        "browser": "not yet verified by module owner",
+        "real_provider": "not executed",
+        "device": "not executed",
+        "human_experience": "not verified"
+      },
+      "completion": "catalog ID mechanism experiment implemented; full original product behavior remains partial"
+    },
+    {
+      "id": "HEE10",
+      "title": "Card Battle 分阶段揭牌",
+      "evidence_strength": "B明确资源规则",
+      "source_rules": {
+        "门槛": "人数/参与次数门槛占位",
+        "时序": "倒计时揭牌",
+        "资源": "3常规卡+1秘密卡",
+        "回报": "高分队赢"
+      },
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10336,
+          "offset": 609604,
+          "quote": "4. Each team in the game will have 3 regular cards and 1 secret card. The second regular card will be revealed after a %1$s-minute countdown, and the third regular card will be revealed at the end of the countdown."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10333,
+          "offset": 609249,
+          "quote": "4. After the game countdown ends, the team with the higher points wins and the winning team members will receive additional bean rewards."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10401,
+          "offset": 614493,
+          "quote": "6. After the game countdown ends, the team with the higher points wins and the winning team members will receive additional bean rewards."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10437,
+          "offset": 617571,
+          "quote": "9. Starting conditions of the game: The game can be successfully started when the total number of players participating in the game in this round is greater than 10 times, and each team has at least one player."
+        }
+      ],
+      "source_loop": "三常规卡+秘密卡→中途揭第二张→结束揭第三张→比队分",
+      "local_fill": "卡值2/3/4与1/2/3、本地中点事件均演示参数；只做揭牌与比较，秘密卡购买/合成/赔率不造",
+      "implemented_scope": "仅揭牌节奏与信息公开矩阵；专属操作：A队参加一次 → B队参加一次 → 超过10次且双队有人才开局 → 推进揭第二张卡的倒计时 → 结束揭第三张并比较样本队分",
+      "implemented_actions": [
+        {
+          "key": "joinA",
+          "label": "A队参加一次"
+        },
+        {
+          "key": "joinB",
+          "label": "B队参加一次"
+        },
+        {
+          "key": "start",
+          "label": "超过10次且双队有人才开局"
+        },
+        {
+          "key": "mid",
+          "label": "推进揭第二张卡的倒计时"
+        },
+        {
+          "key": "end",
+          "label": "结束揭第三张并比较样本队分"
+        }
+      ],
+      "unknowns": [
+        "卡分/概率",
+        "秘密卡购买合成",
+        "结算赔率"
+      ],
+      "normal_loop": [
+        "joinA",
+        "joinB",
+        "joinA",
+        "joinA",
+        "joinA",
+        "joinA",
+        "joinA",
+        "joinA",
+        "joinA",
+        "joinA",
+        "joinA",
+        "start",
+        "mid",
+        "end"
+      ],
+      "mechanism_guard": "start",
+      "guard_state": {},
+      "expected_result": {
+        "phase": "ended",
+        "visibleCards": 3,
+        "secretVisible": false
+      },
+      "validation": {
+        "node_tests": "passed: 4 tests per ID",
+        "browser": "not yet verified by module owner",
+        "real_provider": "not executed",
+        "device": "not executed",
+        "human_experience": "not verified"
+      },
+      "completion": "catalog ID mechanism experiment implemented; full original product behavior remains partial"
+    },
+    {
+      "id": "HEE11",
+      "title": "Hot Pick 与跨房PK互斥",
+      "evidence_strength": "C结构或入口候选",
+      "source_rules": {
+        "门槛": "配置开关",
+        "时序": "end_seconds/time_config",
+        "资源": "score_config",
+        "回报": "评分活动，胜者奖励未知"
+      },
+      "evidence_refs": [
+        {
+          "file": "analysis/rea-hotpick-config.json",
+          "selector": "VoiceHotPickConfig",
+          "observation": "is_hot_pick_open/is_show_hot_pick/is_show_hot_pick_btn/end_seconds/score_config/time_config字段",
+          "evidence_id": "ev_826546cf807536187f3f1343323f2d254ed74d2dc083ef65335c7120b94156da"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 11042,
+          "offset": 644036,
+          "value": "Can’t start cross-room PK during Hot Pick",
+          "quote": "Can’t start cross-room PK during Hot Pick"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 15302,
+          "offset": 803694,
+          "value": "This room will end the King battle and switch to Hot Pick.",
+          "quote": "This room will end the King battle and switch to Hot Pick."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 16394,
+          "offset": 857007,
+          "value": "You’re in a PK now. Can’t start Hot Pick.",
+          "quote": "You’re in a PK now. Can’t start Hot Pick."
+        }
+      ],
+      "source_loop": "服务器配置开放/显示/按钮→进入Hot Pick→禁止跨房PK",
+      "local_fill": "C级仅协议字段、可见性与互斥实验；60秒本地配置，不补造Hot Pick分数或胜负",
+      "implemented_scope": "仅活动互斥与可见性模型；专属操作：打开开放/显示/按钮三独立配置 → 只隐藏Hot Pick按钮 → 进入跨房PK → 进入Hot Pick入口实验 → 推进配置end_seconds至活动结束",
+      "implemented_actions": [
+        {
+          "key": "configure",
+          "label": "打开开放/显示/按钮三独立配置"
+        },
+        {
+          "key": "hide",
+          "label": "只隐藏Hot Pick按钮"
+        },
+        {
+          "key": "pk",
+          "label": "进入跨房PK"
+        },
+        {
+          "key": "hotpick",
+          "label": "进入Hot Pick入口实验"
+        },
+        {
+          "key": "end",
+          "label": "推进配置end_seconds至活动结束"
+        }
+      ],
+      "unknowns": [
+        "分数来源和rank_type",
+        "完整胜负规则"
+      ],
+      "normal_loop": [
+        "configure",
+        "hotpick",
+        "end",
+        "pk",
+        "end"
+      ],
+      "mechanism_guard": "hotpick",
+      "guard_state": {},
+      "expected_result": {
+        "phase": "idle",
+        "end_seconds": 0
+      },
+      "validation": {
+        "node_tests": "passed: 4 tests per ID",
+        "browser": "not yet verified by module owner",
+        "real_provider": "not executed",
+        "device": "not executed",
+        "human_experience": "not verified"
+      },
+      "completion": "catalog ID mechanism experiment implemented; full original product behavior remains partial"
+    },
+    {
+      "id": "HEE12",
+      "title": "Doodle 月榜排除上月Top10",
+      "evidence_strength": "B明确资源规则",
+      "source_rules": {
+        "门槛": "非排除涂鸦可参与，不限制创作时间",
+        "时序": "GMT+0下月1日结算，1–3日展示",
+        "资源": "每作品月人气",
+        "回报": "月榜；上月前10下月排除"
+      },
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10905,
+          "offset": 640143,
+          "quote": "Besides the Doodles excluded, Doodles created at any time are able to participate in the monthly ranking of Popularity. The Popularity level of each Doodle will expire next month."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 15068,
+          "offset": 786149,
+          "quote": "The calculation of Monthly Popularity ends at 00:00:00 (GMT+0) on the 1st of the following month. The rankings will be shown during the 1st-3th of the each month. The top 10 Doodles on the Popularity ranking each month will be excluded in the next month's ranking."
+        }
+      ],
+      "source_loop": "发布涂鸦→人气竞榜→月初结榜→Top10下月排除",
+      "local_fill": "两作品沙盘，同分按本地ID先后；人气10/20样本；排除仅下一月为本地解释，未推断奖项",
+      "implemented_scope": "作品榜轮换机制；专属操作：为旧作注入人气事件10点 → 为新作注入人气事件20点 → GMT+0下月1日00:00结榜 → 推进到每月4日关闭展示",
+      "implemented_actions": [
+        {
+          "key": "likeOld",
+          "label": "为旧作注入人气事件10点"
+        },
+        {
+          "key": "likeNew",
+          "label": "为新作注入人气事件20点"
+        },
+        {
+          "key": "month",
+          "label": "GMT+0下月1日00:00结榜"
+        },
+        {
+          "key": "fourth",
+          "label": "推进到每月4日关闭展示"
+        }
+      ],
+      "unknowns": [
+        "人气生产和奖项",
+        "排除期是否仅一月"
+      ],
+      "normal_loop": [
+        "likeOld",
+        "likeNew",
+        "month",
+        "fourth"
+      ],
+      "mechanism_guard": "likeOld",
+      "guard_state": {},
+      "expected_result": {
+        "month": 2,
+        "displayWindow": false
+      },
+      "validation": {
+        "node_tests": "passed: 4 tests per ID",
+        "browser": "not yet verified by module owner",
+        "real_provider": "not executed",
+        "device": "not executed",
+        "human_experience": "not verified"
+      },
+      "completion": "catalog ID mechanism experiment implemented; full original product behavior remains partial"
+    },
+    {
+      "id": "HEE13",
+      "title": "游戏票的失败补偿 Lucky Points",
+      "evidence_strength": "B明确资源规则",
+      "source_rules": {
+        "门槛": "每张游戏票使用",
+        "时序": "结果后",
+        "资源": "Lucky Points",
+        "回报": "赢1输3平0，兑换用途未核实"
+      },
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 12993,
+          "offset": 713075,
+          "quote": "Lucky Points: For every game ticket used, you can get 1 lucky point for winning, 3 lucky points for not winning, and no points for a draw."
+        }
+      ],
+      "source_loop": "消费游戏票→赢得1点/输3点/平0→累计Lucky Points",
+      "local_fill": "结果手动输入，不补造具体游戏；1/3/0为源值，兑换/退款未知",
+      "implemented_scope": "结果补偿积分层；专属操作：使用一张模拟游戏票 → 注入赢局：Lucky Points+1 → 注入输局：Lucky Points+3 → 注入平局：Lucky Points+0",
+      "implemented_actions": [
+        {
+          "key": "use",
+          "label": "使用一张模拟游戏票"
+        },
+        {
+          "key": "win",
+          "label": "注入赢局：Lucky Points+1"
+        },
+        {
+          "key": "loss",
+          "label": "注入输局：Lucky Points+3"
+        },
+        {
+          "key": "draw",
+          "label": "注入平局：Lucky Points+0"
+        }
+      ],
+      "unknowns": [
+        "适用游戏",
+        "点数用途",
+        "退款结果"
+      ],
+      "normal_loop": [
+        "use",
+        "win",
+        "use",
+        "loss",
+        "use",
+        "draw"
+      ],
+      "mechanism_guard": "win",
+      "guard_state": {},
+      "expected_result": {
+        "tickets": 0,
+        "luckyPoints": 4
+      },
+      "validation": {
+        "node_tests": "passed: 4 tests per ID",
+        "browser": "not yet verified by module owner",
+        "real_provider": "not executed",
+        "device": "not executed",
+        "human_experience": "not verified"
+      },
+      "completion": "catalog ID mechanism experiment implemented; full original product behavior remains partial"
+    },
+    {
+      "id": "HEE14",
+      "title": "徽章槽位按展示域分权",
+      "evidence_strength": "B明确资源规则",
+      "source_rules": {
+        "门槛": "持有徽章",
+        "时序": "佩戴时",
+        "资源": "六徽章槽",
+        "回报": "第一枚跨场景展示，其余主页展示"
+      },
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10218,
+          "offset": 600271,
+          "quote": "1.The badge worn first is displayed on both the personal homepage and other badge display locations in the LIVE room\n2.Badges worn in positions 2-6 are only displayed on the personal homepage\n3.Up to 6 badges can be worn at the same time"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10566,
+          "offset": 623442,
+          "quote": "After successfully wearing it, the badge will be displayed on your homepage, LIVE room information card, etc"
+        }
+      ],
+      "source_loop": "装备最多六徽章→第一枚房间+主页展示→其余仅主页",
+      "local_fill": "七枚样本徽章；重排与卸载后顺移为本地补齐；六槽展示域为源规则",
+      "implemented_scope": "徽章展示优先级；专属操作：装备下一枚持有徽章 → 将最后一枚提到第一槽 → 卸下第一槽并重排",
+      "implemented_actions": [
+        {
+          "key": "equip",
+          "label": "装备下一枚持有徽章"
+        },
+        {
+          "key": "reorder",
+          "label": "将最后一枚提到第一槽"
+        },
+        {
+          "key": "remove",
+          "label": "卸下第一槽并重排"
+        }
+      ],
+      "unknowns": [
+        "不同徽章专属规则",
+        "粉丝徽章与普通徽章交互"
+      ],
+      "normal_loop": [
+        "equip",
+        "equip",
+        "equip",
+        "equip",
+        "equip",
+        "equip",
+        "reorder",
+        "remove"
+      ],
+      "mechanism_guard": "reorder",
+      "guard_state": {},
+      "expected_result": {
+        "roomBadge": "星星"
+      },
+      "validation": {
+        "node_tests": "passed: 4 tests per ID",
+        "browser": "not yet verified by module owner",
+        "real_provider": "not executed",
+        "device": "not executed",
+        "human_experience": "not verified"
+      },
+      "completion": "catalog ID mechanism experiment implemented; full original product behavior remains partial"
+    }
+  ],
+  "local_node_test_count": 57
+}

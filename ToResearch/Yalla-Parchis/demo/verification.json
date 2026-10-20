@@ -1,0 +1,1598 @@
+{
+  "input_hashes": {
+    "app.mjs": "55c58cb1ef9abbec9eff62b1546522631736d63cd4ce5f49328354c0fb09ff72",
+    "features.test.mjs": "4af18c34be0a8b3eb25345186f8addca929f0c67a141defb9562ce609e0ccd60",
+    "index.html": "de54cb9626a76338350ab184aebcf16b651e72c24d536d93f76c88256c53a671",
+    "model.mjs": "951191d1b1fa6d0ad29956c2165c10a673037a630200d1f59ac4b5d6fc17c7a6",
+    "modules.json": "c9a73b65ecc5a8bd9215de6d1b77bb313747c45244db9a4d41f9fc25b4c3826e",
+    "package.json": "18d5995fb218921933532eee24f652e8b1fe890a9c763f439b72423adf78216a",
+    "style.css": "f2cc9a8605c24fe9c052560d762f1e34e10107d5aced069ede235f42423f4cb1"
+  },
+  "app": "Yalla-Parchis",
+  "module_count": 15,
+  "checks": [
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH01",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"roll5\"]",
+          "expected_text": "输入骰子5+2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exit\"]",
+          "expected_text": "用5点出巢一子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"move\"]",
+          "expected_text": "将余下骰额给首子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rollDouble\"]",
+          "expected_text": "输入双5"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exit\"]",
+          "expected_text": "用5点出巢一子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exit\"]",
+          "expected_text": "用5点出巢一子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rollDouble\"]",
+          "expected_text": "输入双5"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"move\"]",
+          "expected_text": "将余下骰额给首子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"move\"]",
+          "expected_text": "将余下骰额给首子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rollDouble\"]",
+          "expected_text": "输入双5"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"exit\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH02",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"double\"]",
+          "expected_text": "输入双数并触发拆障义务"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"split\"]",
+          "expected_text": "首子移动2格拆路障"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"opponent\"]",
+          "expected_text": "对手尝试穿越格4"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"opponent\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH03",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"capture\"]",
+          "expected_text": "移动4格捕获对手"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bonus\"]",
+          "expected_text": "把20步奖励分配给第二子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]",
+          "expected_text": "首子精确进入本地40格终点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finishBonus\"]",
+          "expected_text": "第二子消费10步终点奖励"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"bonus\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH04",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"own\"]",
+          "expected_text": "自己一枚棋子到终点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"own\"]",
+          "expected_text": "自己一枚棋子到终点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"own\"]",
+          "expected_text": "自己一枚棋子到终点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"own\"]",
+          "expected_text": "自己一枚棋子到终点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"assist\"]",
+          "expected_text": "代队友走完一枚"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"assist\"]",
+          "expected_text": "代队友走完一枚"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"assist\"]",
+          "expected_text": "代队友走完一枚"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"assist\"]",
+          "expected_text": "代队友走完一枚"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"assist\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH05",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"level\"]",
+          "expected_text": "达到玩家Lv4"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"promote\"]",
+          "expected_text": "每周结算前20%晋升"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "开启新一周"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"star\"]",
+          "expected_text": "结算传奇前40名拿星"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "开启新一周"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bottom\"]",
+          "expected_text": "输入后20%并结算降级"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"promote\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH06",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"win\"]",
+          "expected_text": "注入胜局获得宝箱"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"win\"]",
+          "expected_text": "注入胜局获得宝箱"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"pass\"]",
+          "expected_text": "授予模拟Event Pass"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "开箱/通行证串行排队"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hour\"]",
+          "expected_text": "推进本地60分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hour\"]",
+          "expected_text": "推进本地60分钟"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"hour\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH07",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"helpA\"]",
+          "expected_text": "好友阿宁协助减20分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"helpB\"]",
+          "expected_text": "好友米拉协助减20分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"midnight\"]",
+          "expected_text": "推进GMT-5午夜"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]",
+          "expected_text": "推进剩余解锁时间"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"helpB\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH08",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"vip\"]",
+          "expected_text": "模拟VIP2有效订阅"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"elite\"]",
+          "expected_text": "创建Elite房邀请VIP2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "以VIP观众身份观战发特效弹幕"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"kick\"]",
+          "expected_text": "房主踢出模拟访客"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "模拟订阅到期"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"elite\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH09",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]",
+          "expected_text": "加入房间Member Club"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "完成会员任务（本地10贡献）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "完成会员任务（本地10贡献）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"window1\"]",
+          "expected_text": "推进GMT-5 01:00夜间统计窗口"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "统计窗口更新贡献排名快照"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"settle\"]",
+          "expected_text": "结算本地周榜Top3样本"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "GMT-5新周清贡献窗口"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH10",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]",
+          "expected_text": "模拟花20钻开通30天Baron"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"near\"]",
+          "expected_text": "推进至到期前12小时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"login\"]",
+          "expected_text": "模拟当天登录"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"renew\"]",
+          "expected_text": "检查12小时续费窗口"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "推进至当前到期"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"renew\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH11",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]",
+          "expected_text": "与好友互动（本地10点）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进1天并检查停滞"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进1天并检查停滞"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进1天并检查停滞"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"unknownConfig\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH12",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftA\"]",
+          "expected_text": "阿澄送指定玫瑰1朵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "推进5分钟发布Sponsor"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "米拉送指定玫瑰1朵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "推进5分钟发布Sponsor"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "米拉送指定玫瑰1朵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "推进5分钟发布Sponsor"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "GMT-5周一开始新周"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH13",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"topup\"]",
+          "expected_text": "注入模拟充值10点/10币"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"freeze\"]",
+          "expected_text": "注入Royal冻结状态"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"topup\"]",
+          "expected_text": "注入模拟充值10点/10币"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"restore\"]",
+          "expected_text": "注入Royal解冻状态"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exchange\"]",
+          "expected_text": "兑换本地10币装扮"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"exchange\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH14",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"merge\"]",
+          "expected_text": "拖放合并前两颗同类水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"drop\"]",
+          "expected_text": "顶部落下Lv2水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"merge\"]",
+          "expected_text": "拖放合并前两颗同类水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"revive\"]",
+          "expected_text": "清顶部水果复活一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exit\"]",
+          "expected_text": "退出保存布局"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"update\"]",
+          "expected_text": "手动更新排行榜样本"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"update\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH15",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]",
+          "expected_text": "选择模拟奖励：主题皮肤"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"register\"]",
+          "expected_text": "两位新用户注册邀请码"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"level2\"]",
+          "expected_text": "阿宁玩到Lv2核验"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"second\"]",
+          "expected_text": "小云玩到Lv2核验"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "限时领取本地奖励"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"register\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"level2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"register\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"level2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH01",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"roll5\"]",
+          "expected_text": "输入骰子5+2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exit\"]",
+          "expected_text": "用5点出巢一子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"move\"]",
+          "expected_text": "将余下骰额给首子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rollDouble\"]",
+          "expected_text": "输入双5"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exit\"]",
+          "expected_text": "用5点出巢一子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exit\"]",
+          "expected_text": "用5点出巢一子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rollDouble\"]",
+          "expected_text": "输入双5"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"move\"]",
+          "expected_text": "将余下骰额给首子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"move\"]",
+          "expected_text": "将余下骰额给首子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rollDouble\"]",
+          "expected_text": "输入双5"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"exit\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YPH01-mobile.png"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH02",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"double\"]",
+          "expected_text": "输入双数并触发拆障义务"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"split\"]",
+          "expected_text": "首子移动2格拆路障"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"opponent\"]",
+          "expected_text": "对手尝试穿越格4"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"opponent\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YPH02-mobile.png"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH03",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"capture\"]",
+          "expected_text": "移动4格捕获对手"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bonus\"]",
+          "expected_text": "把20步奖励分配给第二子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]",
+          "expected_text": "首子精确进入本地40格终点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finishBonus\"]",
+          "expected_text": "第二子消费10步终点奖励"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"bonus\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YPH03-mobile.png"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH04",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"own\"]",
+          "expected_text": "自己一枚棋子到终点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"own\"]",
+          "expected_text": "自己一枚棋子到终点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"own\"]",
+          "expected_text": "自己一枚棋子到终点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"own\"]",
+          "expected_text": "自己一枚棋子到终点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"assist\"]",
+          "expected_text": "代队友走完一枚"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"assist\"]",
+          "expected_text": "代队友走完一枚"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"assist\"]",
+          "expected_text": "代队友走完一枚"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"assist\"]",
+          "expected_text": "代队友走完一枚"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"assist\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YPH04-mobile.png"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH05",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"level\"]",
+          "expected_text": "达到玩家Lv4"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"promote\"]",
+          "expected_text": "每周结算前20%晋升"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "开启新一周"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"star\"]",
+          "expected_text": "结算传奇前40名拿星"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "开启新一周"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bottom\"]",
+          "expected_text": "输入后20%并结算降级"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"promote\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YPH05-mobile.png"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH06",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"win\"]",
+          "expected_text": "注入胜局获得宝箱"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"win\"]",
+          "expected_text": "注入胜局获得宝箱"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"pass\"]",
+          "expected_text": "授予模拟Event Pass"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "开箱/通行证串行排队"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hour\"]",
+          "expected_text": "推进本地60分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hour\"]",
+          "expected_text": "推进本地60分钟"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"hour\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YPH06-mobile.png"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"helpA\"]",
+          "expected_text": "好友阿宁协助减20分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"helpB\"]",
+          "expected_text": "好友米拉协助减20分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"midnight\"]",
+          "expected_text": "推进GMT-5午夜"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]",
+          "expected_text": "推进剩余解锁时间"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"helpB\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YPH07-mobile.png"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH08",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"vip\"]",
+          "expected_text": "模拟VIP2有效订阅"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"elite\"]",
+          "expected_text": "创建Elite房邀请VIP2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "以VIP观众身份观战发特效弹幕"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"kick\"]",
+          "expected_text": "房主踢出模拟访客"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "模拟订阅到期"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"elite\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YPH08-mobile.png"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH09",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]",
+          "expected_text": "加入房间Member Club"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "完成会员任务（本地10贡献）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "完成会员任务（本地10贡献）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"window1\"]",
+          "expected_text": "推进GMT-5 01:00夜间统计窗口"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "统计窗口更新贡献排名快照"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"settle\"]",
+          "expected_text": "结算本地周榜Top3样本"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "GMT-5新周清贡献窗口"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YPH09-mobile.png"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH10",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]",
+          "expected_text": "模拟花20钻开通30天Baron"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"near\"]",
+          "expected_text": "推进至到期前12小时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"login\"]",
+          "expected_text": "模拟当天登录"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"renew\"]",
+          "expected_text": "检查12小时续费窗口"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "推进至当前到期"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"renew\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YPH10-mobile.png"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH11",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]",
+          "expected_text": "与好友互动（本地10点）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进1天并检查停滞"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进1天并检查停滞"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进1天并检查停滞"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"unknownConfig\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YPH11-mobile.png"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH12",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftA\"]",
+          "expected_text": "阿澄送指定玫瑰1朵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "推进5分钟发布Sponsor"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "米拉送指定玫瑰1朵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "推进5分钟发布Sponsor"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "米拉送指定玫瑰1朵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "推进5分钟发布Sponsor"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "GMT-5周一开始新周"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YPH12-mobile.png"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH13",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"topup\"]",
+          "expected_text": "注入模拟充值10点/10币"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"freeze\"]",
+          "expected_text": "注入Royal冻结状态"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"topup\"]",
+          "expected_text": "注入模拟充值10点/10币"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"restore\"]",
+          "expected_text": "注入Royal解冻状态"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exchange\"]",
+          "expected_text": "兑换本地10币装扮"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"exchange\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YPH13-mobile.png"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH14",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"merge\"]",
+          "expected_text": "拖放合并前两颗同类水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"drop\"]",
+          "expected_text": "顶部落下Lv2水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"merge\"]",
+          "expected_text": "拖放合并前两颗同类水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"revive\"]",
+          "expected_text": "清顶部水果复活一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exit\"]",
+          "expected_text": "退出保存布局"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"update\"]",
+          "expected_text": "手动更新排行榜样本"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"update\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YPH14-mobile.png"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "id": "YPH15",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]",
+          "expected_text": "选择模拟奖励：主题皮肤"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"register\"]",
+          "expected_text": "两位新用户注册邀请码"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"level2\"]",
+          "expected_text": "阿宁玩到Lv2核验"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"second\"]",
+          "expected_text": "小云玩到Lv2核验"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "限时领取本地奖励"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"register\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"level2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"register\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"level2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YPH15-mobile.png"
+    }
+  ],
+  "passed": true,
+  "scope": "Local core-loop UI verification; no original APK/RTC/backend/payment/human verification."
+}

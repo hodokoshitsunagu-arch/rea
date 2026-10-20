@@ -1,0 +1,775 @@
+{
+  "app": "Pococha",
+  "count": 11,
+  "items": [
+    {
+      "id": "POC01",
+      "source_rules": {
+        "门槛": "Core Family需Core Fan及以上申请",
+        "时序": "连续10天没看自动退出；核心Family另有月末低于Core Fan退群"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13012b",
+          "resource_name": "core_fan_family_enter_condition",
+          "string_index": 2653,
+          "offset": 182918,
+          "quote": "Core Fans and above can send a request"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13012c",
+          "resource_name": "core_fan_family_kickout_condition",
+          "string_index": 3007,
+          "offset": 192418,
+          "quote": "No views for 10 consecutive days, or the user is below Core Fan level by the end of the month"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13059c",
+          "resource_name": "open_family_kickout_condition",
+          "string_index": 3006,
+          "offset": 192383,
+          "quote": "No views for 10 consecutive days"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "inactiveDays": 10
+        },
+        "actions": [
+          {
+            "action": "core",
+            "participant_action": "模拟成为Core Fan"
+          },
+          {
+            "action": "apply",
+            "participant_action": "申请Family"
+          },
+          {
+            "action": "watch",
+            "participant_action": "观看重置连续未看天数"
+          },
+          {
+            "action": "tenDays",
+            "participant_action": "连续10天未观看"
+          },
+          {
+            "action": "loseCore",
+            "participant_action": "模拟失去Core Fan"
+          },
+          {
+            "action": "monthEnd",
+            "participant_action": "月末资格检查"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: POC01 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "核心资格积分、观看计日时区",
+        "例外"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "POC02",
+      "source_rules": {
+        "门槛": "FamilyChannelPermissionType与Separate Assistants and Fan Noise资源",
+        "资源": "成员邀请有限，数值未给"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/package-string-evidence.json",
+          "id": "com.dena.pokota.apk:classes.dex:string:15688",
+          "offset": 6727531,
+          "quote": "Lcom/dena/pokota/model/multi_channel_family/FamilyChannelPermissionType;"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1304c3",
+          "resource_name": "multi_channel_family_channel_permission_assistant_yell_label_title",
+          "string_index": 3209,
+          "offset": 197596,
+          "quote": "Separate Assistants and Fan Noise"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1304e8",
+          "resource_name": "multi_channel_family_family_add_member_invite_desciption_label_title",
+          "string_index": 3296,
+          "offset": 201088,
+          "quote": "There is a limit to Family invites. For more details, check \"Help\"."
+        }
+      ],
+      "evidence_strength": "C",
+      "local_choices": {
+        "parameters": {
+          "inviteLimit": 2
+        },
+        "actions": [
+          {
+            "action": "role",
+            "participant_action": "选择模拟角色"
+          },
+          {
+            "action": "invite",
+            "participant_action": "邀请Family成员"
+          },
+          {
+            "action": "post",
+            "participant_action": "发送频道消息"
+          },
+          {
+            "action": "remove",
+            "participant_action": "Owner移除成员"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: POC02 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "具体权限枚举、邀请数量",
+        "成员等级判定"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "POC03",
+      "source_rules": {
+        "门槛": "不同意则不能使用助手功能，其他观看/直播不受影响",
+        "回报": "日志含动作、时间、助手/目标账户；仅Family owner可见"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1301f8",
+          "resource_name": "family_assistant_log_action_consent_dialog_content",
+          "string_index": 3682,
+          "offset": 219325,
+          "quote": "アシスタントとして行った操作（例：コメント管理、ユーザー対応、ファミリー管理等）に関する情報は、ファミリーオーナーであるライバーに対して「アシスタントログ」として表示されます。\n表示される情報には、当該行動の内容や実施日時、アシスタントおよび対象ユーザーに関するアカウント情報（ニックネームやアイコン等）が含まれます。\nこれらは、ライバーによるファミリー運営の透明性と信頼性確保を目的としたものであり、ファミリーオーナーにのみ限定的に提供されます。\n今後、機能拡張に伴い、表示される項目が追加・変更される可能性があります。\n\n※アシスタントとしての活動には、行動履歴の可視化についての同意が必要です。\n同意されない場合は、アシスタント機能をご利用いただくことはできませんが、配信・視聴等の他の機能は引き続きご利用いただけます。同意される場合は「同意して続ける」を押してください。"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "retentionDays": 90
+        },
+        "actions": [
+          {
+            "action": "agree",
+            "participant_action": "助手同意操作日志"
+          },
+          {
+            "action": "decline",
+            "participant_action": "撤回日志同意"
+          },
+          {
+            "action": "operate",
+            "participant_action": "助手治理操作"
+          },
+          {
+            "action": "role",
+            "participant_action": "选择查看角色"
+          },
+          {
+            "action": "logs",
+            "participant_action": "查看操作日志"
+          },
+          {
+            "action": "watch",
+            "participant_action": "普通观看"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动",
+        "boundary_fix": "仅Family Owner取得治理日志投影；切换至助手/粉丝立即清除可见快照，UI通过visibleState过滤原logs与治理事件轨迹。所有者原记录保留，可重新查询。"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: POC03 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "具体日志事件列表、保存期"
+      ],
+      "validation": {
+        "node": "passed normal-loop, immutable guard, owner-boundary regression and reset",
+        "browser": "根代理待复验本轮修正"
+      }
+    },
+    {
+      "id": "POC04",
+      "source_rules": {
+        "门槛": "Core Fan等条件",
+        "时序": "3个月一次；%s之后大家可见"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130206",
+          "resource_name": "family_board_message_title",
+          "string_index": 3712,
+          "offset": 221904,
+          "quote": "コアファンなどの条件を満たすと、3ヶ月に1回、ファミリーボードにメッセージを残すことができます。\nメッセージは、%1$s以降みんなで見ることができます。\n"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "quarterDays": 90,
+          "revealDay": 90
+        },
+        "actions": [
+          {
+            "action": "core",
+            "participant_action": "模拟Core Fan资格"
+          },
+          {
+            "action": "write",
+            "participant_action": "写季度留言"
+          },
+          {
+            "action": "submit",
+            "participant_action": "提交季度留言"
+          },
+          {
+            "action": "reveal",
+            "participant_action": "达到公开日期"
+          },
+          {
+            "action": "quarter",
+            "participant_action": "进入下个季度"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: POC04 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "其他资格、周期锚点、修改删除"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "POC05",
+      "source_rules": {
+        "资源": "rankMeterCurrentPoint/rankMeterPoints字段；休息保护关联"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/package-string-evidence.json",
+          "id": "com.dena.pokota.apk:classes4.dex:string:2721",
+          "offset": 6378432,
+          "quote": ", rankMeterCurrentPoint="
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1307a1",
+          "resource_name": "rest_day_home_holiday_ticket_description",
+          "string_index": 2805,
+          "offset": 186464,
+          "quote": "Freezes your Rank Meter so you can take time off as needed."
+        }
+      ],
+      "evidence_strength": "C",
+      "local_choices": {
+        "parameters": {
+          "protectThreshold": 100,
+          "upThreshold": 200
+        },
+        "actions": [
+          {
+            "action": "support",
+            "participant_action": "写入本地应援点"
+          },
+          {
+            "action": "protect",
+            "participant_action": "模拟休息保护"
+          },
+          {
+            "action": "settle",
+            "participant_action": "周期结算契约"
+          },
+          {
+            "action": "period",
+            "participant_action": "开始新周期"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: POC05 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "真实计分、等级变化阈值与周期"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "POC06",
+      "source_rules": {
+        "门槛": "需设置月休息；休息日不能开播",
+        "时序": "开始前10分钟仍可改；到点后动态延迟自动结束",
+        "回报": "休息日Rank不变；不能同时Freeze Pass"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "com.dena.pokota.apk:resources.arsc:pool:12:string:2373",
+          "offset": 175837,
+          "quote": "- You cannot broadcast on a Rest Day. \n- Your Rank will not change on a Rest Day. \n- You cannot use a Freeze Pass and Rest Day at the same time. \n- You can change a Rest Day’s settings until 10 minutes before it starts. \n- If a Rest Day starts while you are broadcasting, the broadcast will end automatically after a fixed amount of time."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "startMinute": 60,
+          "autoEndDelay": 2,
+          "monthlyMinimum": 1
+        },
+        "actions": [
+          {
+            "action": "schedule",
+            "participant_action": "设置月休息日"
+          },
+          {
+            "action": "change",
+            "participant_action": "开始前10分钟修改"
+          },
+          {
+            "action": "start",
+            "participant_action": "主播开播"
+          },
+          {
+            "action": "advance",
+            "participant_action": "推进到休息日"
+          },
+          {
+            "action": "delay",
+            "participant_action": "推进自动结束延迟"
+          },
+          {
+            "action": "freeze",
+            "participant_action": "尝试同日Freeze Pass"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: POC06 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "月最低天数、延迟终止秒数",
+        "不同模式适用"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "POC07",
+      "source_rules": {
+        "资源": "Freeze Pass",
+        "回报": "冻结Rank Meter",
+        "门槛": "与Rest Day不能同时使用"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1307a1",
+          "resource_name": "rest_day_home_holiday_ticket_description",
+          "string_index": 2805,
+          "offset": 186464,
+          "quote": "Freezes your Rank Meter so you can take time off as needed."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "com.dena.pokota.apk:resources.arsc:pool:12:string:2373",
+          "offset": 175837,
+          "quote": "- You cannot broadcast on a Rest Day. \n- Your Rank will not change on a Rest Day. \n- You cannot use a Freeze Pass and Rest Day at the same time. \n- You can change a Rest Day’s settings until 10 minutes before it starts. \n- If a Rest Day starts while you are broadcasting, the broadcast will end automatically after a fixed amount of time."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "passes": 1
+        },
+        "actions": [
+          {
+            "action": "freeze",
+            "participant_action": "使用Freeze Pass"
+          },
+          {
+            "action": "support",
+            "participant_action": "应援尝试改变Meter"
+          },
+          {
+            "action": "rest",
+            "participant_action": "尝试设置Rest Day"
+          },
+          {
+            "action": "end",
+            "participant_action": "结束冻结周期"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: POC07 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "券获取/有效期",
+        "能否直播/赚收益"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "POC08",
+      "source_rules": {
+        "时序": "计时停后发评论重启",
+        "回报": "连续观看可能出现Super/Hyper PocoBox"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1305fb",
+          "resource_name": "pocobox_howto_count_stop_description",
+          "string_index": 3291,
+          "offset": 200652,
+          "quote": "The countdown has stopped.\nComment to restart it."
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1305f4",
+          "resource_name": "pocobox_detail_label_description",
+          "string_index": 3394,
+          "offset": 203966,
+          "quote": "Watching consecutively could get you\nSuper or even Hyper PocoBoxes!"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "boxSeconds": 180,
+          "superAfter": 2
+        },
+        "actions": [
+          {
+            "action": "start",
+            "participant_action": "进入连续观看"
+          },
+          {
+            "action": "watch",
+            "participant_action": "持续观看一分钟"
+          },
+          {
+            "action": "pause",
+            "participant_action": "计时停止"
+          },
+          {
+            "action": "comment",
+            "participant_action": "发送评论续计时"
+          },
+          {
+            "action": "claim",
+            "participant_action": "开启PocoBox"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: POC08 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "计时长度、停止条件、掉率、币奖",
+        "升级是概率提示"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "POC09",
+      "source_rules": {
+        "资源": "Coin；Baby/Petit/Normal/Mega资源名",
+        "回报": "对应限定应援道具；升级保留原级物件"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1305cb",
+          "resource_name": "poco_knight_confirm_dialog_coin_text",
+          "string_index": 3359,
+          "offset": 202986,
+          "quote": "Use %1$s Coins\nto become %2$s's\n%3$s?"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1305e4",
+          "resource_name": "poco_knight_update_dialog_body_text",
+          "string_index": 2317,
+          "offset": 173503,
+          "quote": "%1$sアイテムを\n%2$sつ獲得できます。\n%3$sのアイテムはそのまま使えます。"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1305d6",
+          "resource_name": "poco_knight_mega_item_description",
+          "string_index": 4126,
+          "offset": 246221,
+          "quote": "限定アイテム「ボクたちならできる！」で\nライバーを応援しよう！"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "prices": [
+            10,
+            20,
+            30,
+            40
+          ],
+          "levels": [
+            "Baby",
+            "Petit",
+            "Normal",
+            "Mega"
+          ]
+        },
+        "actions": [
+          {
+            "action": "upgrade",
+            "participant_action": "升级Knight"
+          },
+          {
+            "action": "use",
+            "participant_action": "使用限定应援道具"
+          },
+          {
+            "action": "upgradeNext",
+            "participant_action": "升级到下一档"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动",
+        "boundary_fix": "parametersFor拥有四档Knight价格/名称解释；价格必须有限正数，等级必须整数。价格与档位仍为本地重构参数，不声称原定价。"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: POC09 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "价格、身份期限、道具数量和消耗"
+      ],
+      "validation": {
+        "node": "passed normal-loop, immutable guard, owner-boundary regression and reset",
+        "browser": "根代理待复验本轮修正"
+      }
+    },
+    {
+      "id": "POC10",
+      "source_rules": {
+        "回报": "Flexi每月35小时time diamond；Premier75小时",
+        "门槛": "首次直播21日后才申请；有审核及动态申请窗",
+        "时序": "Flexi改Premier会降低stage"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1307ee",
+          "resource_name": "settings_user_rank_mode_page_mode_description_flexi",
+          "string_index": 4091,
+          "offset": 244479,
+          "quote": "週に2〜3日の配信ならこちら！時間ダイヤは月間35時間分獲得可能。自分のペースで配信したい方向けのモードです。"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1307ef",
+          "resource_name": "settings_user_rank_mode_page_mode_description_premier",
+          "string_index": 4092,
+          "offset": 244640,
+          "quote": "週に4〜5日配信できるあなたにぴったり！時間ダイヤを月間75時間分獲得可能。思う存分配信したい方におすすめです。"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.pokota.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1307ed",
+          "resource_name": "settings_user_rank_mode_page_description",
+          "string_index": 3588,
+          "offset": 212061,
+          "quote": "※「フレキシモード」から「プレミアモード」へ変更するとステージが下がります。併せて詳細をご確認ください。\n※モード変更できるのは%1$s〜%2$sです。\n※モード変更の申請は、初配信から21日経過後に可能となります。\n※申請後に審査を行うため、反映までにお時間をいただく場合があります。"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "ageDays": 21,
+          "stageLoss": 1,
+          "diamondPerHour": 10
+        },
+        "actions": [
+          {
+            "action": "age",
+            "participant_action": "首次直播满21日"
+          },
+          {
+            "action": "apply",
+            "participant_action": "申请模式"
+          },
+          {
+            "action": "approve",
+            "participant_action": "模拟审核通过"
+          },
+          {
+            "action": "stream",
+            "participant_action": "直播一小时"
+          },
+          {
+            "action": "switch",
+            "participant_action": "Flexi改Premier"
+          },
+          {
+            "action": "closeWindow",
+            "participant_action": "关闭申请窗口"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: POC10 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "Diamond倍率、Stage降幅",
+        "适用地区"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "POC11",
+      "source_rules": {
+        "回报": "应援计入Audition event points",
+        "限制": "此模式无time diamond和engagement diamond"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "com.dena.pokota.apk:resources.arsc:pool:12:string:3697",
+          "offset": 221088,
+          "quote": "オーディションイベントのイベントポイントに応援が反映されます。本モードを選択中の配信では、時間ダイヤ・盛り上がりダイヤは獲得できません。"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "eventMultiplier": 1,
+          "timePerHour": 10,
+          "engagementMultiplier": 1
+        },
+        "actions": [
+          {
+            "action": "mode",
+            "participant_action": "切换收益模式"
+          },
+          {
+            "action": "support",
+            "participant_action": "观众应援"
+          },
+          {
+            "action": "hour",
+            "participant_action": "直播一小时"
+          },
+          {
+            "action": "end",
+            "participant_action": "结束活动模式"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: POC11 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "切换窗口、积分和奖励",
+        "是否所有选拔适用"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    }
+  ],
+  "validation_summary": {
+    "node_tests": 25,
+    "passed": 25,
+    "legacy_tests": "passed",
+    "browser": "affected modules require root revalidation after owner-boundary fixes",
+    "original_runtime": "not executed"
+  }
+}

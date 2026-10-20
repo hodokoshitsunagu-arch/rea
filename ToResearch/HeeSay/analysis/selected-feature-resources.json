@@ -1,0 +1,404 @@
+[
+  {
+    "member": "resources.arsc",
+    "index": 10161,
+    "offset": 584393,
+    "value": "1 Bean = 1 Guardian Point\nThe validity period of the guardian points is 7 days. You can send gifts to your guardian voicer to increase your guardian points. The guardian points will be deducted at 00:00:00 (GMT+0) on the 8th day after it is obtained."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 10180,
+    "offset": 588508,
+    "value": "1. In the VOICE room, send gifts worth 2,500 beans to a voicer within a single day(00:00:00 - 24:00:00, GMT+0), you will become his guardian. \n2. The TOP 1 guardian and the voicer become a couple. \n3. Each voicer can have multiple guardians, and each user can also guard multiple voicers. \n(The data may be a 1-2 minutes delay in updating.)"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 10822,
+    "offset": 637136,
+    "value": "Back VOICE PARTY"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 11042,
+    "offset": 644036,
+    "value": "Can’t start cross-room PK during Hot Pick"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 14716,
+    "offset": 771516,
+    "value": "Sorry, your room mode does not meet the requirements and your qualification for this VOICE PARTY show has been cancelled."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 14745,
+    "offset": 772592,
+    "value": "Special notice: the show time of your room in VOICE PARTY has been extended. Details can be found in the party list."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 15302,
+    "offset": 803694,
+    "value": "This room will end the King battle and switch to Hot Pick."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 15714,
+    "offset": 818663,
+    "value": "VOICE PARTY"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 15715,
+    "offset": 818677,
+    "value": "VOICE PARTY: The party show in this room has been cancelled."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 15716,
+    "offset": 818740,
+    "value": "VOICE PARTY: The show time in this room has been extended. Please continue to support your favorite voicer."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 16394,
+    "offset": 857007,
+    "value": "You’re in a PK now. Can’t start Hot Pick."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 18238,
+    "offset": 960524,
+    "value": "VOICE PARTY: このルームでのショーはキャンセルされました。"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 18239,
+    "offset": 960606,
+    "value": "VOICE PARTY: このルームでのショータイムが延長されました。引き続きお気に入りのライバーを応援してください。"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 18240,
+    "offset": 960761,
+    "value": "VOICE PARTYに戻る"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 22614,
+    "offset": 1210127,
+    "value": "特別お知らせ: あなたのルームのVOICE PARTYショータイムが延長されました。詳細はパーティーリストでご確認ください。"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 22728,
+    "offset": 1219387,
+    "value": "申し訳ありませんが、ルームモードが参加要件を満たしていないため、VOICE PARTYへの参加資格が取り消されました。"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 31957,
+    "offset": 2050057,
+    "value": "ไม่สามารถเริ่ม PK ข้ามห้องระหว่าง Hot Pick ได้"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 32524,
+    "offset": 2098054,
+    "value": "Hot Pick环节无法发起跨房pk"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 32605,
+    "offset": 2101679,
+    "value": "VOICE PARTY：该房间的演出已取消。"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 32606,
+    "offset": 2101726,
+    "value": "VOICE PARTY：该房间的演出时间已延长，继续支持你喜欢的主播吧。"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 34841,
+    "offset": 2190577,
+    "value": "很抱歉，由于你的房间模式不符合，被取消本次VOICE PARTY的演出资格。"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 36432,
+    "offset": 2251495,
+    "value": "特别通知：你的房间在VOICE PARTY中的演出时间被延长，详情可通过节目单查看。"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 37732,
+    "offset": 2296241,
+    "value": "返回VOICE PARTY"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 41433,
+    "offset": 2534897,
+    "value": "Không thể bắt đầu PK xuyên phòng trong Hot Pick"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 44429,
+    "offset": 2693494,
+    "value": "Đang PK! Không thể bắt đầu Hot Pick."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 48048,
+    "offset": 2848055,
+    "value": "1 Bean = 1 Guardian Point\nMasa berlaku poin guardian adalah 7 hari. Anda dapat mengirim hadiah ke voicer guardian Anda untuk meningkatkan poin guardian Anda. Poin guardian akan dikurangi pada pukul 00:00:00 (GMT+0) pada hari ke-8 setelah diperoleh."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 48443,
+    "offset": 2892094,
+    "value": "Anda sekarang dalam PK. Tidak dapat memulai Hot Pick."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 50503,
+    "offset": 2994590,
+    "value": "Kembali ke VOICE PARTY"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 51004,
+    "offset": 3018169,
+    "value": "Maaf, mode ruangan Anda tidak memenuhi persyaratan dan kualifikasi Anda untuk acara VOICE PARTY ini telah dibatalkan."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 51665,
+    "offset": 3044038,
+    "value": "Pemberitahuan khusus: waktu pertunjukan ruangan Anda di VOICE PARTY telah diperpanjang. Detailnya dapat ditemukan di daftar party."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 53221,
+    "offset": 3119390,
+    "value": "Tidak dapat memulai PK lintas ruangan selama Hot Pick"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 53477,
+    "offset": 3129962,
+    "value": "VOICE PARTY: Acara pesta di ruangan ini telah dibatalkan."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 53478,
+    "offset": 3130022,
+    "value": "VOICE PARTY:: Waktu acara di ruangan ini telah diperpanjang. Harap terus dukung pengisi suara favorit Anda."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 55112,
+    "offset": 3243260,
+    "value": "VOICE PARTY: 이 방의 쇼 타임이 연장되었습니다. 좋아하는 BJ를 계속 응원해 주세요."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 55113,
+    "offset": 3243370,
+    "value": "VOICE PARTY: 이 방의 파티 쇼는 취소되었습니다."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 55114,
+    "offset": 3243433,
+    "value": "VOICE PARTY로 가기"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 59250,
+    "offset": 3446381,
+    "value": "죄송합니다. 사용자님의 방 모드가 조건에 부합하지 않은 관계로 VOICE PARTY 쇼 참가 자격이 취소되었습니다."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 59997,
+    "offset": 3484361,
+    "value": "특별 공지: VOICE PARTY에서 사용자님의 방 쇼 타임이 연장되었습니다. 자세한 내용은 파티 목록에서 확인할 수 있습니다."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 72036,
+    "offset": 4121585,
+    "value": "Atrás VOICE PARTY"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 72066,
+    "offset": 4122255,
+    "value": "Aviso especial: Se ha ampliado la duración del espectáculo de tu sala en VOICE PARTY. Puedes encontrar más información en la lista de grupos."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 73547,
+    "offset": 4193784,
+    "value": "Estás en un PK ahora. No puedes iniciar Hot Pick."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 74373,
+    "offset": 4230535,
+    "value": "Lo sentimos, el modo de tu sala no cumple con los requisitos y tu participación en este espectáculo de VOICE PARTY ha sido cancelada."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 74920,
+    "offset": 4258217,
+    "value": "No se puede iniciar PK entre salas durante Hot Pick"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 76597,
+    "offset": 4335469,
+    "value": "VOICE PARTY: El espectáculo de esta sala ha sido cancelado."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 79381,
+    "offset": 4483673,
+    "value": "Aviso especial: o horário do show da sua sala na VOICE PARTY foi estendido. Detalhes podem ser encontrados na lista de festas."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 80152,
+    "offset": 4515878,
+    "value": "Desculpe, seu modo room não atende aos requisitos e sua qualificação para este show VOICE PARTY foi cancelada."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 81790,
+    "offset": 4579258,
+    "value": "Não é possível iniciar PK entre salas durante o modo de Hot Pick"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 83639,
+    "offset": 4678671,
+    "value": "VOICE PARTY: O horário do show nesta sala foi estendido. Por favor, continue apoiando seu dublador favorito."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 83640,
+    "offset": 4678783,
+    "value": "VOICE PARTY: O show da festa nesta sala foi cancelado."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 83840,
+    "offset": 4687971,
+    "value": "Você está em uma PK agora. Não é possível iniciar o modo de Hot Pick."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 84042,
+    "offset": 4703793,
+    "value": "Voltar VOICE PARTY"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 87553,
+    "offset": 4902571,
+    "value": "PK між кімнатами не можна ініціювати в сеансі Hot Pick"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 87580,
+    "offset": 4904566,
+    "value": "VOICE PARTY: Вистави в цій кімнаті скасовано."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 87581,
+    "offset": 4904641,
+    "value": "VOICE PARTY: час виступу в цій кімнаті подовжено. Продовжуйте підтримувати свого улюбленого ведучого."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 88376,
+    "offset": 4984719,
+    "value": "Вибачте, оскільки модель вашої кімнати не відповідає вимогам, вас дискваліфікували від участі в цій VOICE PARTY."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 90630,
+    "offset": 5173434,
+    "value": "Повернутися до VOICE PARTY"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 91511,
+    "offset": 5258755,
+    "value": "Спеціальне повідомлення: час виступу вашої кімнати у VOICE PARTY подовжено. Подробиці можна знайти в списку програм."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 93422,
+    "offset": 5414718,
+    "value": "Hot Pick環節無法發起跨房pk"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 93498,
+    "offset": 5418227,
+    "value": "VOICE PARTY：該房間的演出已取消。"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 93499,
+    "offset": 5418274,
+    "value": "VOICE PARTY：該房間的演出時間已延長，繼續支持你喜歡的主播。"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 95164,
+    "offset": 5486328,
+    "value": "很抱歉，由於你的房間模式不符合，被取消這次VOICE PARTY的演出資格。"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 96521,
+    "offset": 5543304,
+    "value": "特別通知：你的房間在VOICE PARTY中的演出時間延長，詳情可透過節目單查看。"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 99476,
+    "offset": 5726316,
+    "value": "VOICE PARTY: Выступления в этом зале отменены."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 99477,
+    "offset": 5726393,
+    "value": "VOICE PARTY: время выступления в этой комнате продлено. Продолжайте поддерживать своего любимого ведущего."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 99887,
+    "offset": 5770000,
+    "value": "Вернуться в VOICE PARTY"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 100991,
+    "offset": 5877203,
+    "value": "Извините, поскольку модель вашей комнаты не соответствует требованиям, вы были дисквалифицированы от участия в этой VOICE PARTY."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 102052,
+    "offset": 5977646,
+    "value": "Особое примечание: время выступления вашей комнаты в VOICE PARTY продлено. Подробности можно найти в списке программ."
+  }
+]

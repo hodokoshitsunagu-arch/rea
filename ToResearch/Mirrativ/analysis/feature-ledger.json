@@ -1,0 +1,39 @@
+{
+  "app": "Mirrativ",
+  "artifact_sha256": "47fdad48fc045719b3e942c87d03d12058ed0d572705efa80890fe0b38eeffc9",
+  "rea_package_evidence_id": "ev_b7dd7e849b94abbab1f663eff125b1afc769b70432bdd9cba5365b2b96043b40",
+  "features": [
+    {
+      "question": "语聊 / 联动通话与联动直播",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "CollabInvited/Requested/Accepted/Closed/ReceivedPeer 事件族；资源邀请、断线等待、取消及streaming/talk类型",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "存在静态状态表示；完整竞态、最大人数、RTC协议未知"
+    },
+    {
+      "question": "社交 / Emomo 共场",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "CollabAvatarManager、UnityCommand$SetCollabo / SetCollaboGiftAvatarModel、EmomoClosetEquipShopAvatars",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "Unity形象装扮与联动候选；原始渲染动作和资产授权未恢复"
+    },
+    {
+      "question": "游戏 / Live Game双侧任务",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "REA LiveGameMission 字段 condition、player、viewer、coinBoost；LiveGameConnected/Playing/Ended 事件族",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "支持主播和观众分别携带任务信息，奖励计算与触发条件未知"
+    },
+    {
+      "question": "游戏 / Emomo Mahjong",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "EmomoMahjongMemberAvatar(sResponse)、SetEmomoMahjongAvatarModel",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "仅建立相关契约存在，麻将规则/房间玩法/执行逻辑未恢复"
+    }
+  ]
+}

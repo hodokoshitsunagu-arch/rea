@@ -1,0 +1,468 @@
+{
+  "app": "TopTop",
+  "modules": [
+    {
+      "id": "TOP01",
+      "title": "保底价关系竞拍",
+      "implemented_scope": "保留现有关系拍卖demo，补两类保底配置。；CF20/其他40保底，最高单价胜、亲密10，扣款仅模拟；退费/同价未恢复。",
+      "limitations": [
+        "竞价聚合/步长、退费、时限、同价与亲密公式未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    },
+    {
+      "id": "TOP02",
+      "title": "CF衰减与CP/Deep Bond升级树",
+      "implemented_scope": "关系树、衰减策略、解除7天冷却模拟。；每10亲密升1级、CF日减2为自定；CP/Bond不衰减、9/100上限、7天冷却按文案。",
+      "limitations": [
+        "衰减公式/间隔、等级阈值、建立条件与最大关系数未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        }
+      ]
+    },
+    {
+      "id": "TOP03",
+      "title": "关系信物类型与失效修复",
+      "implemented_scope": "信物账本、类型门禁与无重复成长修复。；信物原价20、成长10；修复10且不重复亲密/魅力；转出戒锁不得修复为本地清晰选择。",
+      "limitations": [
+        "具体售价、每日上限、哪些转移失效、修复后有效期未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        }
+      ]
+    },
+    {
+      "id": "TOP04",
+      "title": "双人限定关系卡墙",
+      "implemented_scope": "双人共享卡墙、去重与重复奖励账本。；星光卡原价20、各成长10、重复去重但成长；半价展示仅亲密/花点50%，不加魅力。",
+      "limitations": [
+        "卡稀有度、获得任务、可展示时效、退CP后卡处理未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ]
+    },
+    {
+      "id": "TOP05",
+      "title": "部落火箭共同燃料与返航分奖",
+      "implemented_scope": "贡献/航程/返航模型，参数自定；不把旧箱规则套火箭。；2燃料发射、100里航程、到站再10秒/补燃料、每贡献5奖励自定；未供阿绿不给。",
+      "limitations": [
+        "燃料成本、航程、奖励公式、最低贡献与发射条件未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ]
+    },
+    {
+      "id": "TOP06",
+      "title": "部落干部资产与成员任务回报",
+      "implemented_scope": "干部能力与任务归属模型，不含基础群功能。；资产50、分10、quest族长5币/1道具为参数；干部三权限分离。",
+      "limitations": [
+        "角色名称、级别/人数、审批、账本审计、任务定义未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ]
+    },
+    {
+      "id": "TOP07",
+      "title": "幸运号码礼物抽奖",
+      "implemented_scope": "无真实资产的号码抽奖；概率/中奖后时窗参数标自定。；号码1..3、幸运3、每礼5币、中奖后1小时结束/奖品2小时；确定性试号非原概率。",
+      "limitations": [
+        "号码空间、概率、同号、多次中奖/结束时窗与剩余礼物退款未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node正常/guard/退款与生命周期回归通过；最新浏览器复验待根任务",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ],
+      "regression_fix": "奖品有效期推进须存在中奖人与prizeExpires；未中奖保持活动开放，不凭未建立的奖品时钟关闭活动。"
+    },
+    {
+      "id": "TOP08",
+      "title": "武器PK与任务/护盾候选",
+      "implemented_scope": "先补小游戏模块/方法，暂只做机制线框。；仅Weapon PK+mission和shield保护他人资源；一次盾消耗/任务全自定，无Lv5或原攻击计分。",
+      "limitations": [
+        "武器表、升级、攻击/保护、任务、时限、PK计分未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ]
+    },
+    {
+      "id": "TOP09",
+      "title": "战斗游戏5级解锁League",
+      "implemented_scope": "共享解锁状态与联赛概念；赛制需另证。；战斗A/B为未知游戏占位、每动作一级本地参数；Lv5资格已恢复，赛制只设计不执行。",
+      "limitations": [
+        "哪些游戏计入、EXP、联赛分段、赛季时长/匹配/奖励未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ]
+    },
+    {
+      "id": "TOP10",
+      "title": "公开正式比赛游戏名片",
+      "implemented_scope": "公开/私房统计过滤与能力卡；不复刻未知匹配算法。；名片展示场数/胜场作为补齐统计；日期和私人排除按文案，不恢复匹配算法。",
+      "limitations": [
+        "具体统计指标、匹配评分、卡片生成门槛未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    },
+    {
+      "id": "TOP11",
+      "title": "游戏Club固定类型与专属房",
+      "implemented_scope": "固定类型Club与游戏房成员门禁；非普通群聊。；Ludo仅示例类型未恢复官方Club全集；申请/批准局部契约、固定类型/成员门禁按文案。",
+      "limitations": [
+        "各类型、等级/容量、创建权限和房间玩法限制未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    },
+    {
+      "id": "TOP12",
+      "title": "VIP竞技门禁与高阶临时封房",
+      "implemented_scope": "权益矩阵与1小时阻入计时；本地模拟。；VIP16仅本地房主可踢作为防歧义补齐；60分钟按文案，竞技规则未知不模拟。",
+      "limitations": [
+        "费用、具体房局差异、踢人是否有角色条件、抗滥用覆盖未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    },
+    {
+      "id": "TOP13",
+      "title": "贵族称号启用与匿名入房",
+      "implemented_scope": "多称号能力优先级与匿名展示，不承诺隐私安全。；爵位名称/级别自定、结转全额为未恢复条件补齐；匿名只本地他人视图。",
+      "limitations": [
+        "级别列表、购买价格/有效期、匿名真实边界、点数结转条件未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    }
+  ]
+}

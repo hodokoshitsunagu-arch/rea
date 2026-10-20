@@ -1,0 +1,66 @@
+{
+  "app": "Yalla-Parchis",
+  "regions": "Spanish; Portuguese",
+  "package": "com.yalla.yallaparchisi",
+  "version": "1.5.3",
+  "version_code": 191,
+  "selected_file": "Yalla-Parchis-1.5.3.xapk",
+  "source": "APKPure mirror",
+  "source_page": "https://apkpure.net/yalla-parchis/com.yalla.yallaparchisi/download",
+  "retrieved_at": "2026-10-13T07:59:43.048070+00:00",
+  "checks": {
+    "zip_crc": "passed",
+    "manifest_package_match": true,
+    "manifest_version": "read from downloaded APK",
+    "android_runtime": "not tested",
+    "publisher_signature": "not cryptographically verified",
+    "published_archive_sha1_match": true
+  },
+  "files": [
+    {
+      "path": "Yalla-Parchis-1.5.3.xapk",
+      "bytes": 183838705,
+      "sha256": "ea8e63bab3821ef19660c774059dc64282a9d27fe53a08c0f795ad52ccc562c1",
+      "sha1": "6ec2ac1ae9512b948d4786b93d4a8902d84d9b58",
+      "manifest": null
+    },
+    {
+      "path": "apks/com.yalla.yallaparchisi.apk",
+      "bytes": 124178341,
+      "sha256": "619075f46880c04b14b6ffc299557431404270e429a9a17b5476398bd532bd51",
+      "sha1": "f4ebc5c68fa841a76f2268c7129b3cc87f300389",
+      "manifest": {
+        "package": "com.yalla.yallaparchisi",
+        "versionName": "1.5.3",
+        "versionCode": 191,
+        "split": null
+      }
+    },
+    {
+      "path": "apks/config.arm64_v8a.apk",
+      "bytes": 59583561,
+      "sha256": "1fd044075a38687b47c4f88d3372a46c59cae80acfcb85d59daef60a7456b0ce",
+      "sha1": "9484a84301a610aaa0bc6a5bda002ce3bf22ad70",
+      "manifest": {
+        "package": "com.yalla.yallaparchisi",
+        "versionName": null,
+        "versionCode": 191,
+        "split": "config.arm64_v8a"
+      }
+    }
+  ],
+  "compared_sources": [
+    {
+      "source_page": "https://apkpure.net/yalla-parchis/com.yalla.yallaparchisi/download",
+      "file": "Yalla-Parchis-1.5.3.xapk",
+      "identity": {
+        "package": "com.yalla.yallaparchisi",
+        "versionName": "1.5.3",
+        "versionCode": 191,
+        "split": null
+      }
+    }
+  ],
+  "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+  "mirror_advertised_date": "Sep 23, 2026"
+}

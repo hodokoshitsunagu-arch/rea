@@ -1,0 +1,19 @@
+{
+  "app": "Mirrativ",
+  "engine": "Chrome controlled headless browser",
+  "desktop": "1280x900",
+  "mobile": "390x844",
+  "scenario": [
+    "邀请联动",
+    "搭档接受",
+    "主播 · 游戏任务 +1",
+    "模拟断线",
+    "重新连接"
+  ],
+  "observedState": "connected · Emomo Emomo Nao · 主播任务 1/3 · 观众任务 0/3 · 未结算",
+  "reset": "passed",
+  "mobileHorizontalOverflow": false,
+  "pageErrors": [],
+  "originalAndroidRuntime": "not tested",
+  "humanVisualAcceptance": "not performed"
+}

@@ -1,0 +1,637 @@
+{
+  "app": "MICO",
+  "scope": "local simulation, not recovered runtime",
+  "items": [
+    {
+      "id": "MIC01",
+      "title": "武器升级双倍与淘汰复活团队PK",
+      "evidence_strength": "B",
+      "original_rules": "武器Lv5礼物2倍PK；复活礼物即时恢复；淘汰触发离麦后不能再上；换队重算、退出清个人分。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8467,
+          "text": "Blue Team has upgraded their weapon to Lv. 5, during which sending gifts will increase 2x PK points"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10312,
+          "text": "Red Team has upgraded their weapon to Lv. 5, during which sending gifts will increase 2x PK points"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 7725,
+          "text": "%s has been eliminated! Send a Revival Gift to revive them instantly so that they can continue earning PK points."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9442,
+          "text": "If you leave the mic when elimination is triggered, you cannot take the mic again in this team battle. Are you sure you want to leave the mic?"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9445,
+          "text": "If you switch teams during a team battle, your points will be recalculated. Are you sure you want to switch teams?"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8362,
+          "text": "Are you sure you want to quit? If you quit, your individual PK points earned in the team battle will be reset"
+        }
+      ],
+      "reconstruction_choices": "20礼物升1级、初Lv1、Lv5双分；淘汰人为裁决，不声称恢复阈值/双倍时间。",
+      "implemented_fragments": [
+        "收20礼物升级",
+        "收10礼物计分",
+        "淘汰并离麦",
+        "尝试重新上麦",
+        "复活礼物",
+        "换到红队",
+        "退出清个人分",
+        "结束PK"
+      ],
+      "not_recovered": [
+        "升级/淘汰阈值、双倍时间、复活价格、服务端计分未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "passed: normal, mechanism guard and focused lifecycle/refund regressions",
+        "browser": "latest regression requires root re-verification",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      },
+      "regression_fix": "退出清本场个人分只允许PK进行中；已结算领域账本与赢家不再受退出动作修改。赛后真实离房不属于该本场计分动作，也未模拟RTC离房。"
+    },
+    {
+      "id": "MIC02",
+      "title": "Couple专属麦位与模式互斥",
+      "evidence_strength": "B",
+      "original_rules": "房主/用户Couple席；启用Couple Slot不支持PK；PK开始不能开情侣席；满席可付费扩容；关闭Couple才可计分。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10396,
+          "text": "Room Owner Couple Slot"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11263,
+          "text": "User Couple Slot"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10050,
+          "text": "PK is not available when Couple Slot is enabled"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11509,
+          "text": "You cannot enable Couple Slot after starting a PK"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11599,
+          "text": "Your Couple slots are full. Pay to expand slots?"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11484,
+          "text": "You can enable the scorekeeper after disabling Couple Slots"
+        }
+      ],
+      "reconstruction_choices": "1席初始、扩容10币，无原价格上限；占位席不含RTC。",
+      "implemented_fragments": [
+        "房主开启Couple席",
+        "情侣上席",
+        "模拟付费扩容",
+        "开启PK",
+        "关闭Couple席",
+        "PK计分",
+        "结束PK"
+      ],
+      "not_recovered": [
+        "关系数量、扩容价格/上限、具体座位布局未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "MIC03",
+      "title": "Couple等级的优先展示与专属礼物",
+      "evidence_strength": "B",
+      "original_rules": "Couple Lv3可优先展示；专属礼物要求Couple LV动态值；有Couple榜；取消关注/拉黑自动终止Couple。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10276,
+          "text": "Reach Couple LV3 to set priority display"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10275,
+          "text": "Reach Couple LV %s to gift this"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8764,
+          "text": "Couple Leaderboard"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11186,
+          "text": "Unfollow this user?(Couple relationship will be automatically terminated)"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8495,
+          "text": "By blacklisting this user, you will automatically unfollow them and terminate your Couple relationship. You will no longer receive their messages and they can no longer follow you or comment or like your posts. Are you sure you want to block this user?"
+        }
+      ],
+      "reconstruction_choices": "亲密10升级、本地专属礼物Lv3；榜用单机关系卡，终止保留成长未知选择。",
+      "implemented_fragments": [
+        "双向同意建立Couple",
+        "普通互动成长",
+        "展示Lv3优先卡",
+        "送3级专属礼物",
+        "取消关注终止",
+        "拉黑终止"
+      ],
+      "not_recovered": [
+        "建立双方同意、亲密公式、退出清分与榜单统计未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "MIC04",
+      "title": "家族赠收礼贡献榜与退出清分",
+      "evidence_strength": "B",
+      "original_rules": "每成员送/收礼钻石或金币用于排名；单人一家；建族等级动态门槛；离族清此家贡献；可启免审批加入。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10265,
+          "text": "Ranks based on every family members' number of diamonds or coins from gift sending or receiving"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10003,
+          "text": "One person can only join one family"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11273,
+          "text": "Users can only create a family when they exceed the level of %s."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8883,
+          "text": "Do you confirm to leave this family? Your contribution points for this family will be cleared after you leave."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8290,
+          "text": "After this function is activated, no permission is needed when users apply to join the family."
+        }
+      ],
+      "reconstruction_choices": "建族5级、送收等权展示分离源值；单人一家、离族清分保留文案。",
+      "implemented_fragments": [
+        "用户升到5级",
+        "创建蓝族",
+        "申请加入红族",
+        "开启免审批",
+        "赠礼贡献20",
+        "收礼贡献10",
+        "刷新双侧贡献榜",
+        "退出家族清分"
+      ],
+      "not_recovered": [
+        "送收加权、防刷、榜周期、建族门槛和人数未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "MIC05",
+      "title": "主播守护的免踢免禁言",
+      "evidence_strength": "B",
+      "original_rules": "守护不能被踢/禁言；剩余天数展示；守护等级决定专属礼物；取消收回权益。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11075,
+          "text": "This user is a guardian, you can't kick this user out"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11076,
+          "text": "This user is a guardian, you can't mute this user"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10330,
+          "text": "Remaining time as a guardian: %s days"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11487,
+          "text": "You can gift it after reaching %s in the guardian level."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11396,
+          "text": "When you cancel, the guardianship privilege will be retracted."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9005,
+          "text": "Entry visual effects for guardians"
+        }
+      ],
+      "reconstruction_choices": "7天守护及礼物Lv2为补齐；房管免踢/禁言按文案，不设计平台处罚。",
+      "implemented_fragments": [
+        "接受7天主播守护",
+        "房管尝试踢出",
+        "房管尝试禁言",
+        "守护升到2级",
+        "送2级守护礼物",
+        "取消守护",
+        "推进7天"
+      ],
+      "not_recovered": [
+        "购买/邀请方式、续期、违规管理员 override、等级阈值未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "MIC06",
+      "title": "贵族身份的房管免踢与称号启停",
+      "evidence_strength": "B",
+      "original_rules": "启用贵族称号才得到权益；贵族不被主播/admin踢；停用将失去权益；部分称号只可活动获得。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 7872,
+          "text": "2. Only by using aristocratic titles you can get all the aristocratic privileges"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8891,
+          "text": "Do you want the privilege of being permanently in the live room without being kicked out? Aristocrat users can avoid to be kicked out of the live room by broadcasters or admins."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9435,
+          "text": "If you disable the aristocracy you won't be able to use its privileges, are you sure to stop using it?"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11056,
+          "text": "This noble privilege is currently not open for purchase, can only be obtained through the event"
+        }
+      ],
+      "reconstruction_choices": "活动骑士名称自定；启用才获免踢，不扩展原未知权限。",
+      "implemented_fragments": [
+        "领取活动限定称号",
+        "启用贵族称号",
+        "房管尝试踢出",
+        "停用称号",
+        "尝试购买活动称号"
+      ],
+      "not_recovered": [
+        "各爵位权限差异、平台处罚覆盖、购买范围/价格未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "MIC07",
+      "title": "Pure Supporter分场景隐藏与SVIP9双经验",
+      "evidence_strength": "B",
+      "original_rules": "可隐藏TOP FANS；Mystery Man赠礼部分场景隐身；部分游戏可隐藏；SVIP9专属礼物双EXP。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9038,
+          "text": "Exclusive privilege for Pure Supporters. When enabled, your identity will be hidden in certain games."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10239,
+          "text": "Pure Supporter SVIP9 exclusive gift. Earn double EXP when you send it!"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10240,
+          "text": "Pure Supporter exclusive privilege that lets you hide yourself from a streamer's TOP FANS list."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10241,
+          "text": "Pure Supporter privilege. Once Mystery Man is enabled, you can hide your identity in certain situations when sending gifts. Details"
+        }
+      ],
+      "reconstruction_choices": "基础EXP10、SVIP9×2；单个本地允许场景用于展示，原匿名场景名单未恢复。",
+      "implemented_fragments": [
+        "隐藏TOP FANS",
+        "启用Mystery Man",
+        "选择支持匿名场景",
+        "选择未证实游戏场景",
+        "SVIP升到9",
+        "赠SVIP9专属礼物"
+      ],
+      "not_recovered": [
+        "Pure Supporter准入、具体可匿名场景、EXP归属和隐私边界未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "MIC08",
+      "title": "跨语言VIP与访问隐身/招呼优先",
+      "evidence_strength": "B",
+      "original_rules": "VIP无限翻译；可启无痕访问；VIP招呼在Chat列表优先且增加招呼数。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8438,
+          "text": "Become a VIP and get additional greetings!"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8439,
+          "text": "Become a VIP, and enjoy unlimited translation privileges!"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11342,
+          "text": "Want to take a look to others, but you don't want to be detected? The invisible visit privilege just got here! Enable this privilege, and be invisible immediately, and check the profile of others without leaving a footprint"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11380,
+          "text": "What a pity that your greetings are unknown by people you are interested in. Become a VIP member, and all your greetings will be given preference in the Chat list, draw more attention by becoming a VIP member!"
+        }
+      ],
+      "reconstruction_choices": "固定词典/同级新招呼先排为重构；未恢复套餐/限额，不含真实聊天。",
+      "implemented_fragments": [
+        "启用VIP套餐",
+        "启用无痕访问",
+        "访问阿红资料",
+        "翻译固定双语消息",
+        "发送VIP优先招呼",
+        "停用VIP"
+      ],
+      "not_recovered": [
+        "套餐期限/价格、优先排序、防骚扰限制、翻译服务未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "MIC09",
+      "title": "Rocket Blast分级奖励候选",
+      "evidence_strength": "C",
+      "original_rules": "包体仅明确下一火箭等级更好奖励，奖励已到账提示。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10390,
+          "text": "Rewards from Rocket Blast have been issued to your account. The next level of the rocket will give even better rewards!"
+        }
+      ],
+      "reconstruction_choices": "只有更高等级/已到账文案；能量2、领取流程均概念实验，不称原火箭玩法。",
+      "implemented_fragments": [
+        "进入Rocket Blast候选",
+        "投入概念能量",
+        "确认下一等级更好奖励",
+        "领取等级概念奖励"
+      ],
+      "not_recovered": [
+        "火箭如何获得能量、参与者、时窗、等级和分配未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "MIC10",
+      "title": "Ludo成长与车辆竞猜入口候选",
+      "evidence_strength": "C",
+      "original_rules": "观察到Ludo邀请、教程提示、Ludo EXP+占位和Guess the vehicle入口文案。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9355,
+          "text": "Hi, welcome to Ludo. Let me show you how to play~"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9523,
+          "text": "Invites you to a game of LUDO"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9673,
+          "text": "Ludo EXP +%1$s"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9320,
+          "text": "Guess the vehicle"
+        }
+      ],
+      "reconstruction_choices": "仅Ludo邀请/教程/EXP+占位和车辆入口有证据；无骰子/棋盘/竞猜判奖恢复，本地教程走一格。",
+      "implemented_fragments": [
+        "选择Ludo候选",
+        "选择车辆竞猜候选",
+        "发送Ludo邀请",
+        "对方接受邀请",
+        "查看教程提示",
+        "完成本地一格教程",
+        "提交车辆概念选择",
+        "结束车辆入口实验"
+      ],
+      "not_recovered": [
+        "具体棋盘、规则变体、车辆竞猜操作、资源奖励全部未恢复。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "MIC11",
+      "title": "TOP10小时抽奖候选",
+      "evidence_strength": "C",
+      "original_rules": "仅观察TOP10 lottery draw与once every hour两文案。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10774,
+          "text": "TOP 10 lottery draw"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10930,
+          "text": "The lottery will be drawn once every hour."
+        }
+      ],
+      "reconstruction_choices": "TOP10与每小时的关联未证实；只做假设资格提交/计时不开奖不发奖。",
+      "implemented_fragments": [
+        "进入TOP10候选面板",
+        "本地模拟进入第10名",
+        "提交资格假设",
+        "推进一小时",
+        "执行无奖品契约检查"
+      ],
+      "not_recovered": [
+        "二者调用关联、入场资格、概率、奖品和地区开关未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    }
+  ]
+}

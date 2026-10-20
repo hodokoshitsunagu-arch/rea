@@ -1,0 +1,421 @@
+{
+  "app": "Mirrativ",
+  "package": "com.dena.mirrativ",
+  "version": "11.92.1",
+  "scope": "partial static",
+  "items": [
+    {
+      "id": "MIR01",
+      "categories": [
+        "社交",
+        "玩法"
+      ],
+      "name": "双形态Collab：通话与共同直播",
+      "core_loop": "发起talk/streaming请求→承诺→开始→退出/取消/断线",
+      "distinctive": "对话和联合直播分开建模，Emomo可共场",
+      "rules": {
+        "门槛": "主播需开LiveParty；部分用户没有主持开关",
+        "时序": "联合者须在%s秒内开播，具体值动态",
+        "资源": "人数上限存在但值未知"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140727",
+          "resource_name": "text_collab_request_type_streaming",
+          "string_index": 2404,
+          "offset": 130676,
+          "quote": "%1$sさんから『コラボ配信』のリクエストが届いています"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140729",
+          "resource_name": "text_collab_request_type_talk",
+          "string_index": 2403,
+          "offset": 130597,
+          "quote": "%1$sさんから『コラボ通話』のリクエストが届いています"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1406fa",
+          "resource_name": "text_collab_error_4",
+          "string_index": 3255,
+          "offset": 157107,
+          "quote": "This Streamer has LiveParty turned off so you can't start a LiveParty :("
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140fe9",
+          "resource_name": "text_ios_collab_timeout_for_caster",
+          "string_index": 3873,
+          "offset": 185371,
+          "quote": "コラボ者が%1$s秒以内に配信を始められなかったか通信に問題があり、コラボ配信を開始できませんでした"
+        }
+      ],
+      "unknowns": [
+        "人数、重试、竞态",
+        "媒体路由"
+      ],
+      "replica_scope": "两种邀请状态机与形象共场；已有demo可补超时和开关",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "已有"
+    },
+    {
+      "id": "MIR02",
+      "categories": [
+        "社交",
+        "权益",
+        "玩法"
+      ],
+      "name": "Cheerleader礼物身份",
+      "core_loop": "观众送Cheerleader礼物→形成主播专属应援关系/等级",
+      "distinctive": "礼物行为变成可识别的支持者资格",
+      "rules": {
+        "门槛": "指定Cheerleader gift",
+        "回报": "支持者身份；另有Cheer level门控"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140426",
+          "resource_name": "text_became_cheerleader_description",
+          "string_index": 3925,
+          "offset": 187191,
+          "quote": "チアリーダーギフトを贈って\nあなたの配信を応援してくれた\n視聴者さんだよ！"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140b9d",
+          "resource_name": "text_epos_card_issue_card_empty_streamers_v2",
+          "string_index": 3931,
+          "offset": 187410,
+          "quote": "チアレベル1以上の配信者さんがいないため\n発行できるカードがありません"
+        }
+      ],
+      "unknowns": [
+        "应援等级计分、周期及完整权益"
+      ],
+      "replica_scope": "支持者关系与等级门控原型，等级参数由本地配置",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "MIR03",
+      "categories": [
+        "游戏",
+        "玩法"
+      ],
+      "name": "主播/观众双侧Live Game任务",
+      "core_loop": "进入直播游戏→主播与观众分别接受条件→任务达成→金币/boost状态",
+      "distinctive": "直播互动角色带不同任务契约",
+      "rules": {
+        "资源": "LiveGameMission携带condition/player/viewer/coinBoost",
+        "时序": "Connected/Playing/Ended事件候选"
+      },
+      "evidence_strength": "C",
+      "evidence_refs": [
+        {
+          "file": "analysis/package-string-evidence.json",
+          "id": "com.dena.mirrativ.apk:classes.dex:string:28854",
+          "offset": 3038056,
+          "quote": "LiveGameMission(condition="
+        },
+        {
+          "file": "analysis/rea-livegame-mission.json",
+          "evidence_id": "ev_52515f86ca7754591784595cbb06e8d42d3fda904270055c6b435fb8706a51b2",
+          "location": "raw_result / parsed class members",
+          "derived_note": "REA解析LiveGameMission成员condition、player、viewer、coinBoost。未追踪具体游戏条件与奖励公式。",
+          "parsed_fields": [
+            {
+              "type": "android.os.Parcelable$Creator<com.dena.mirrativ.mirrativapi.livegame.LiveGameMission>",
+              "def_pos": 0,
+              "name": "CREATOR"
+            },
+            {
+              "type": "com.dena.mirrativ.mirrativapi.livegame.CoinBoost",
+              "def_pos": 0,
+              "name": "coinBoost"
+            },
+            {
+              "type": "java.lang.String",
+              "def_pos": 0,
+              "name": "condition"
+            },
+            {
+              "type": "com.dena.mirrativ.mirrativapi.livegame.LiveGameMissionStatus",
+              "def_pos": 0,
+              "name": "player"
+            },
+            {
+              "type": "com.dena.mirrativ.mirrativapi.livegame.LiveGameMissionStatus",
+              "def_pos": 0,
+              "name": "viewer"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "触发条件、奖励公式",
+        "哪些观众可参与"
+      ],
+      "replica_scope": "保留双侧任务结构；原demo可配置角色目标",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "已有"
+    },
+    {
+      "id": "MIR04",
+      "categories": [
+        "游戏",
+        "社交"
+      ],
+      "name": "Emomo麻将邀请与NPC补位",
+      "core_loop": "邀请两名朋友或NPC→开始Emomo麻将→头像共桌",
+      "distinctive": "把形象好友邀请接入三席候选局",
+      "rules": {
+        "门槛": "已邀请2人，NPC亦可",
+        "资源": "Emomo麻将avatar模型和邀请文案"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140a0f",
+          "resource_name": "text_emomo_mahjong_select_users_notice_v2",
+          "string_index": 3511,
+          "offset": 165020,
+          "quote": "※2人（NPCも可）の友だちが招待できていると、プレイ開始できます"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140a0a",
+          "resource_name": "text_emomo_mahjong_member_invited_title",
+          "string_index": 2489,
+          "offset": 133816,
+          "quote": "%sさんから\nエモ雀の招待が届いたよ!\n一緒にプレイしよう!!"
+        }
+      ],
+      "unknowns": [
+        "具体麻将规则、席位总数",
+        "匹配与结算"
+      ],
+      "replica_scope": "只复刻邀请/NPC补位/头像等候，不造原麻将规则",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "MIR05",
+      "categories": [
+        "游戏",
+        "权益"
+      ],
+      "name": "Emomo RPG奖励→抽卡券",
+      "core_loop": "玩Emomo跑酷RPG→获得gacha券→消耗于礼物抽取入口",
+      "distinctive": "游戏进度联通虚拟形象/礼物奖励链",
+      "rules": {
+        "资源": "gacha券从Emomoランあーるぴーじー奖励等获取"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140aa5",
+          "resource_name": "text_emomo_quest_gift_gacha_ticket_error_message",
+          "string_index": 3797,
+          "offset": 181413,
+          "quote": "ガチャチケットはエモモランあーるぴーじーの報酬などで獲得できます。"
+        }
+      ],
+      "unknowns": [
+        "RPG战斗/跑酷规则",
+        "票来源和掉率",
+        "奖池"
+      ],
+      "replica_scope": "券的获得/消费账本和静态奖池候选，先补真实规则",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "MIR06",
+      "categories": [
+        "玩法",
+        "权益"
+      ],
+      "name": "定时任务与观看赚币",
+      "core_loop": "观众入直播→观看任务→每日得coin；定时任务窗口重新开放",
+      "distinctive": "观看回访与一天三段任务节奏连接",
+      "rules": {
+        "时序": "任务奖励说明为04:00/12:00/20:00重置且每次可挑战一次",
+        "回报": "观看任务每日coin",
+        "门槛": "资源称部分任务需广告；近30天未购coin显示广告"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f14121d",
+          "resource_name": "text_mission_reward_description_popup",
+          "string_index": 4356,
+          "offset": 206901,
+          "quote": "朝4時、昼12時、夜20時にリセットされて\n1回ずつチャレンジできるよ!"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1419af",
+          "resource_name": "text_tutorial_mission_achievement_dialog_description",
+          "string_index": 4469,
+          "offset": 211694,
+          "quote": "素敵な配信に出会えたかな？次回の入室から「視聴ミッション」が表示されるよ！ミッションクリアで毎日コインをGETしよう！"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1411e3",
+          "resource_name": "text_mission_cm_required_detail",
+          "string_index": 2636,
+          "offset": 137511,
+          "quote": "CMは直近30日間コイン購入が無い方に表示されます\n（一部ミッションを除く）"
+        }
+      ],
+      "unknowns": [
+        "各文案是否同任务",
+        "观看时长及coin数量",
+        "时区"
+      ],
+      "replica_scope": "分别做观看任务和三时段任务；不把两者合成已证实链路",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "MIR07",
+      "categories": [
+        "社交",
+        "玩法"
+      ],
+      "name": "自制Emomo表情礼物",
+      "core_loop": "选自己的Emomo姿势→输入最多8字→创建/保存gift",
+      "distinctive": "用个人形象做带短句的应援内容",
+      "rules": {
+        "资源": "文字最多8字；姿势在Emomo拍摄界面改",
+        "时序": "关闭制作页会丢弃正在创建的gift"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f141a13",
+          "resource_name": "text_unique_emomo_gift_stamp_input_text_note",
+          "string_index": 3530,
+          "offset": 167265,
+          "quote": "※テキストは最大8文字まで入力できます\n※ポーズはエモモ撮影画面から変更できます"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1419fa",
+          "resource_name": "text_unique_emomo_close_alert_title",
+          "string_index": 4665,
+          "offset": 219225,
+          "quote": "閉じると作成中のギフトが\n破棄されます\nよろしいですか？"
+        }
+      ],
+      "unknowns": [
+        "审核、发布权限、价格",
+        "图像净化与发送流程"
+      ],
+      "replica_scope": "本地avatar姿势+8字编辑器和草稿丢弃，使用原创资产",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "MIR08",
+      "categories": [
+        "权益",
+        "社交"
+      ],
+      "name": "推し活实体卡形象设计资格",
+      "core_loop": "有Cheer level≥1主播→设计形象卡→合作方审查发卡",
+      "distinctive": "支持关系可进入联名卡权益，区别于普通会员徽章",
+      "rules": {
+        "门槛": "无Cheer level 1以上主播则无可发行卡",
+        "资源": "Emomo可拖动缩放；制作需同意PR规范",
+        "回报": "EPOS发行的卡，需审批"
+      },
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140b9d",
+          "resource_name": "text_epos_card_issue_card_empty_streamers_v2",
+          "string_index": 3931,
+          "offset": 187410,
+          "quote": "チアレベル1以上の配信者さんがいないため\n発行できるカードがありません"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140b8f",
+          "resource_name": "text_epos_card_creation_edit_hint_v2",
+          "string_index": 3965,
+          "offset": 188879,
+          "quote": "ピンチイン・ピンチアウトやドラッグで\nエモモの大きさや位置を調整できるよ！"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140ba8",
+          "resource_name": "text_epos_card_issued_by_epos_v2",
+          "string_index": 4685,
+          "offset": 219872,
+          "quote": "［PR］エポスカードは株式会社エポスカードから発行されます。"
+        }
+      ],
+      "unknowns": [
+        "原金融合作合同、审核",
+        "关联利益和权限"
+      ],
+      "replica_scope": "只做关系门控+原创纪念卡设计；实体金融流程暂缓",
+      "replica_effort": "高",
+      "readiness": "暂缓",
+      "demo_status": "未实现"
+    }
+  ]
+}

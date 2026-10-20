@@ -1,0 +1,119 @@
+{
+  "app": "Yalla",
+  "requested_regions": "MENA",
+  "expected_package": "com.weieyu.yalla",
+  "source_kind": "third-party mirror APKPure",
+  "source_page": "https://apkpure.net/yalla/com.weieyu.yalla/download",
+  "page_title": "Download Yalla - Play Game &amp; Voice Chat 3.7.0 APK for Android - Free and Safe Download",
+  "download_url": "https://d.apkpure.net/b/XAPK/com.weieyu.yalla?version=latest",
+  "final_url": "https://data.winudf.com/XAPK/Y29tLndlaWV5dS55YWxsYV8zMDcwMl9lN2JkOTBhMw?_p=Y29tLndlaWV5dS55YWxsYQ%3D%3D&filename=Yalla+-+Play+Game+%26+Voice+Chat_3.7.0_APKPure.xapk&full_size=243980635&is_hot=false&k=REDACTED&package_name=com.weieyu.yalla&source=web&token=REDACTED",
+  "retrieved_at": "2026-10-13T07:53:44.193578+00:00",
+  "file": "Yalla-3.7.0.xapk",
+  "bytes": 243980635,
+  "sha256": "7f6d919b311586ede522f36014878d5e1e0e38396002400b7252901bb3660668",
+  "zip_crc": "passed",
+  "archive_manifest": {
+    "xapk_version": 2,
+    "package_name": "com.weieyu.yalla",
+    "name": "Yalla",
+    "locales_name": {
+      "ar": "Yalla",
+      "en": "Yalla",
+      "es": "Yalla",
+      "hi": "Yalla",
+      "in": "Yalla",
+      "pt": "Yalla",
+      "tr": "Yalla",
+      "ur": "Yalla"
+    },
+    "version_code": "30702",
+    "version_name": "3.7.0",
+    "min_sdk_version": "24",
+    "target_sdk_version": "36",
+    "permissions": [
+      "android.permission.MODIFY_AUDIO_SETTINGS",
+      "android.permission.READ_CALENDAR",
+      "android.permission.WRITE_CALENDAR",
+      "android.permission.SYSTEM_ALERT_WINDOW",
+      "android.permission.SYSTEM_OVERLAY_WINDOW",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+      "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+      "com.android.launcher.permission.INSTALL_SHORTCUT",
+      "com.android.launcher.permission.UNINSTALL_SHORTCUT",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.READ_MEDIA_IMAGES",
+      "android.permission.READ_MEDIA_AUDIO",
+      "android.permission.READ_MEDIA_VIDEO",
+      "android.permission.WRITE_MEDIA_STORAGE",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.READ_PHONE_STATE",
+      "android.permission.INTERNET",
+      "android.permission.VIBRATE",
+      "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.CAMERA",
+      "android.intent.action.HEADSET_PLUG",
+      "com.google.android.providers.gsf.permission.READ_GSERVICES",
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.WAKE_LOCK",
+      "android.permission.KILL_BACKGROUND_PROCESSES",
+      "android.permission.FOREGROUND_SERVICE_REMOTE_MESSAGING",
+      "android.permission.GET_TASKS",
+      "com.weieyu.yalla.permission.C2D_MESSAGE",
+      "com.google.android.c2dm.permission.RECEIVE",
+      "android.permission.REORDER_TASKS",
+      "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+      "android.permission.BLUETOOTH_CONNECT",
+      "android.permission.CHANGE_COMPONENT_ENABLED_STATE",
+      "android.permission.CHANGE_WIFI_STATE",
+      "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+      "android.permission.FLASHLIGHT",
+      "android.permission.POST_NOTIFICATIONS",
+      "com.google.android.gms.permission.AD_ID",
+      "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+      "android.permission.ACCESS_ADSERVICES_AD_ID",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "com.android.vending.BILLING",
+      "com.samsung.android.mapsagent.permission.READ_APP_INFO",
+      "com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA",
+      "com.weieyu.yalla.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "android.permission.CHANGE_NETWORK_STATE",
+      "android.permission.DETECT_SCREEN_RECORDING",
+      "com.yallatech.support.READ_VERSIONS"
+    ],
+    "split_configs": [
+      "config.armeabi_v7a",
+      "config.mdpi"
+    ],
+    "total_size": 243927648,
+    "icon": "icon.png",
+    "split_apks": [
+      {
+        "file": "com.weieyu.yalla.apk",
+        "id": "base"
+      },
+      {
+        "file": "config.armeabi_v7a.apk",
+        "id": "config.armeabi_v7a"
+      },
+      {
+        "file": "config.mdpi.apk",
+        "id": "config.mdpi"
+      }
+    ]
+  },
+  "extracted_apks": [
+    "com.weieyu.yalla.apk",
+    "config.armeabi_v7a.apk",
+    "config.mdpi.apk"
+  ],
+  "latest_scope": "Newest version advertised by live APKPure download page on retrieval date; staged Google Play release not verified",
+  "final_url_redacted_transport_credentials": [
+    "k",
+    "token"
+  ]
+}

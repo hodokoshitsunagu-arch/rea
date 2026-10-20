@@ -1,0 +1,388 @@
+TAP version 13
+# Subtest: YPH01 完整专属闭环与纯函数
+ok 1 - YPH01 完整专属闭环与纯函数
+  ---
+  duration_ms: 1.219208
+  type: 'test'
+  ...
+# Subtest: YPH01 拒绝边界不改变业务状态
+ok 2 - YPH01 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.080291
+  type: 'test'
+  ...
+# Subtest: YPH01 重置与未知操作
+ok 3 - YPH01 重置与未知操作
+  ---
+  duration_ms: 0.104125
+  type: 'test'
+  ...
+# Subtest: YPH02 完整专属闭环与纯函数
+ok 4 - YPH02 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.0945
+  type: 'test'
+  ...
+# Subtest: YPH02 拒绝边界不改变业务状态
+ok 5 - YPH02 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.059792
+  type: 'test'
+  ...
+# Subtest: YPH02 重置与未知操作
+ok 6 - YPH02 重置与未知操作
+  ---
+  duration_ms: 0.05225
+  type: 'test'
+  ...
+# Subtest: YPH03 完整专属闭环与纯函数
+ok 7 - YPH03 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.103208
+  type: 'test'
+  ...
+# Subtest: YPH03 拒绝边界不改变业务状态
+ok 8 - YPH03 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.035542
+  type: 'test'
+  ...
+# Subtest: YPH03 重置与未知操作
+ok 9 - YPH03 重置与未知操作
+  ---
+  duration_ms: 0.041875
+  type: 'test'
+  ...
+# Subtest: YPH04 完整专属闭环与纯函数
+ok 10 - YPH04 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.123125
+  type: 'test'
+  ...
+# Subtest: YPH04 拒绝边界不改变业务状态
+ok 11 - YPH04 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.037417
+  type: 'test'
+  ...
+# Subtest: YPH04 重置与未知操作
+ok 12 - YPH04 重置与未知操作
+  ---
+  duration_ms: 0.034292
+  type: 'test'
+  ...
+# Subtest: YPH05 完整专属闭环与纯函数
+ok 13 - YPH05 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.097333
+  type: 'test'
+  ...
+# Subtest: YPH05 拒绝边界不改变业务状态
+ok 14 - YPH05 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.031875
+  type: 'test'
+  ...
+# Subtest: YPH05 重置与未知操作
+ok 15 - YPH05 重置与未知操作
+  ---
+  duration_ms: 0.02775
+  type: 'test'
+  ...
+# Subtest: YPH06 完整专属闭环与纯函数
+ok 16 - YPH06 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.083417
+  type: 'test'
+  ...
+# Subtest: YPH06 拒绝边界不改变业务状态
+ok 17 - YPH06 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.026125
+  type: 'test'
+  ...
+# Subtest: YPH06 重置与未知操作
+ok 18 - YPH06 重置与未知操作
+  ---
+  duration_ms: 0.028291
+  type: 'test'
+  ...
+# Subtest: YPH07 完整专属闭环与纯函数
+ok 19 - YPH07 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.066667
+  type: 'test'
+  ...
+# Subtest: YPH07 拒绝边界不改变业务状态
+ok 20 - YPH07 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.052709
+  type: 'test'
+  ...
+# Subtest: YPH07 重置与未知操作
+ok 21 - YPH07 重置与未知操作
+  ---
+  duration_ms: 0.027708
+  type: 'test'
+  ...
+# Subtest: YPH08 完整专属闭环与纯函数
+ok 22 - YPH08 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.061833
+  type: 'test'
+  ...
+# Subtest: YPH08 拒绝边界不改变业务状态
+ok 23 - YPH08 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.025292
+  type: 'test'
+  ...
+# Subtest: YPH08 重置与未知操作
+ok 24 - YPH08 重置与未知操作
+  ---
+  duration_ms: 0.029166
+  type: 'test'
+  ...
+# Subtest: YPH09 完整专属闭环与纯函数
+ok 25 - YPH09 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.110167
+  type: 'test'
+  ...
+# Subtest: YPH09 拒绝边界不改变业务状态
+ok 26 - YPH09 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.033833
+  type: 'test'
+  ...
+# Subtest: YPH09 重置与未知操作
+ok 27 - YPH09 重置与未知操作
+  ---
+  duration_ms: 0.02725
+  type: 'test'
+  ...
+# Subtest: YPH10 完整专属闭环与纯函数
+ok 28 - YPH10 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.091
+  type: 'test'
+  ...
+# Subtest: YPH10 拒绝边界不改变业务状态
+ok 29 - YPH10 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.026084
+  type: 'test'
+  ...
+# Subtest: YPH10 重置与未知操作
+ok 30 - YPH10 重置与未知操作
+  ---
+  duration_ms: 0.029166
+  type: 'test'
+  ...
+# Subtest: YPH11 完整专属闭环与纯函数
+ok 31 - YPH11 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.060792
+  type: 'test'
+  ...
+# Subtest: YPH11 拒绝边界不改变业务状态
+ok 32 - YPH11 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.026167
+  type: 'test'
+  ...
+# Subtest: YPH11 重置与未知操作
+ok 33 - YPH11 重置与未知操作
+  ---
+  duration_ms: 0.034875
+  type: 'test'
+  ...
+# Subtest: YPH12 完整专属闭环与纯函数
+ok 34 - YPH12 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.124042
+  type: 'test'
+  ...
+# Subtest: YPH12 拒绝边界不改变业务状态
+ok 35 - YPH12 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.026083
+  type: 'test'
+  ...
+# Subtest: YPH12 重置与未知操作
+ok 36 - YPH12 重置与未知操作
+  ---
+  duration_ms: 0.030708
+  type: 'test'
+  ...
+# Subtest: YPH13 完整专属闭环与纯函数
+ok 37 - YPH13 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.068375
+  type: 'test'
+  ...
+# Subtest: YPH13 拒绝边界不改变业务状态
+ok 38 - YPH13 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.023667
+  type: 'test'
+  ...
+# Subtest: YPH13 重置与未知操作
+ok 39 - YPH13 重置与未知操作
+  ---
+  duration_ms: 0.041
+  type: 'test'
+  ...
+# Subtest: YPH14 完整专属闭环与纯函数
+ok 40 - YPH14 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.096
+  type: 'test'
+  ...
+# Subtest: YPH14 拒绝边界不改变业务状态
+ok 41 - YPH14 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.030292
+  type: 'test'
+  ...
+# Subtest: YPH14 重置与未知操作
+ok 42 - YPH14 重置与未知操作
+  ---
+  duration_ms: 0.037917
+  type: 'test'
+  ...
+# Subtest: YPH15 完整专属闭环与纯函数
+ok 43 - YPH15 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.09875
+  type: 'test'
+  ...
+# Subtest: YPH15 拒绝边界不改变业务状态
+ok 44 - YPH15 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.023083
+  type: 'test'
+  ...
+# Subtest: YPH15 重置与未知操作
+ok 45 - YPH15 重置与未知操作
+  ---
+  duration_ms: 0.191625
+  type: 'test'
+  ...
+# Subtest: YPH01 骰和5出巢、双5两子、Classic/Spanish不同回巢
+ok 46 - YPH01 骰和5出巢、双5两子、Classic/Spanish不同回巢
+  ---
+  duration_ms: 0.102625
+  type: 'test'
+  ...
+# Subtest: YPH02 自己与他人不能穿障、双数必须拆障
+ok 47 - YPH02 自己与他人不能穿障、双数必须拆障
+  ---
+  duration_ms: 0.048291
+  type: 'test'
+  ...
+# Subtest: YPH03 20/10奖励额度一次消费
+ok 48 - YPH03 20/10奖励额度一次消费
+  ---
+  duration_ms: 0.044375
+  type: 'test'
+  ...
+# Subtest: YPH04 四子只解锁代操作而非获胜、队友退出结算一次
+ok 49 - YPH04 四子只解锁代操作而非获胜、队友退出结算一次
+  ---
+  duration_ms: 0.048
+  type: 'test'
+  ...
+# Subtest: YPH05 周榜仅一次、传奇40边界
+ok 50 - YPH05 周榜仅一次、传奇40边界
+  ---
+  duration_ms: 0.051084
+  type: 'test'
+  ...
+# Subtest: YPH06 无Pass不能多箱队列、串行自动下一箱
+ok 51 - YPH06 无Pass不能多箱队列、串行自动下一箱
+  ---
+  duration_ms: 0.053375
+  type: 'test'
+  ...
+# Subtest: YPH07 协助即时应用、重复与GMT-5午夜过期
+ok 52 - YPH07 协助即时应用、重复与GMT-5午夜过期
+  ---
+  duration_ms: 0.044333
+  type: 'test'
+  ...
+# Subtest: YPH08 双VIP2门槛与到期新入场拒绝
+ok 53 - YPH08 双VIP2门槛与到期新入场拒绝
+  ---
+  duration_ms: 0.035667
+  type: 'test'
+  ...
+# Subtest: YPH09 会员任务资格和周奖励去重
+ok 54 - YPH09 会员任务资格和周奖励去重
+  ---
+  duration_ms: 0.055
+  type: 'test'
+  ...
+# Subtest: YPH10 提前12小时边界、20天登录与余额不足取消
+ok 55 - YPH10 提前12小时边界、20天登录与余额不足取消
+  ---
+  duration_ms: 0.058875
+  type: 'test'
+  ...
+# Subtest: YPH11 本地停滞天数和互动刷新衰减计时
+ok 56 - YPH11 本地停滞天数和互动刷新衰减计时
+  ---
+  duration_ms: 0.027959
+  type: 'test'
+  ...
+# Subtest: YPH12 同分先达到优先、延迟不立即冠名
+ok 57 - YPH12 同分先达到优先、延迟不立即冠名
+  ---
+  duration_ms: 0.047916
+  type: 'test'
+  ...
+# Subtest: YPH13 冻结不拿充值加成、不兑换权益
+ok 58 - YPH13 冻结不拿充值加成、不兑换权益
+  ---
+  duration_ms: 0.034875
+  type: 'test'
+  ...
+# Subtest: YPH14 不同水果不能合成、复活一次、退出快照独立
+ok 59 - YPH14 不同水果不能合成、复活一次、退出快照独立
+  ---
+  duration_ms: 0.04375
+  type: 'test'
+  ...
+# Subtest: YPH15 注册Lv1不计进度、重复Lv2/领奖与到期
+ok 60 - YPH15 注册Lv1不计进度、重复Lv2/领奖与到期
+  ---
+  duration_ms: 0.052875
+  type: 'test'
+  ...
+# Subtest: YPH09 明确统计窗口与离团延迟清榜
+ok 61 - YPH09 明确统计窗口与离团延迟清榜
+  ---
+  duration_ms: 0.051334
+  type: 'test'
+  ...
+# Subtest: YPH15 重复注册不能覆盖独立邀请身份核验进度、领奖后登记拒绝
+ok 62 - YPH15 重复注册不能覆盖独立邀请身份核验进度、领奖后登记拒绝
+  ---
+  duration_ms: 0.126959
+  type: 'test'
+  ...
+# Subtest: YPH07 两个好友共用同一资格边界、开箱后协助保持业务状态
+ok 63 - YPH07 两个好友共用同一资格边界、开箱后协助保持业务状态
+  ---
+  duration_ms: 0.052084
+  type: 'test'
+  ...
+1..63
+# tests 63
+# suites 0
+# pass 63
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 45.02025

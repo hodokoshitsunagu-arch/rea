@@ -1,0 +1,29 @@
+[
+  {
+    "file": "analysis/rea-package.json",
+    "operation": "inspect_android_package",
+    "evidence_id": "ev_2cb81149b361a8b4ea14049e593412ebaf72608aeea074a7ce0096d4145dd787",
+    "status": "success",
+    "code": null,
+    "message": null,
+    "sha256": "4d04e5485b283660942f7fd0a5d2d367d19ec8020a7597df1bd8baf4ea7d43c6"
+  },
+  {
+    "file": "analysis/rea-spy-search.json",
+    "operation": "search_android_classes",
+    "evidence_id": "ev_0c6eaadc42d4114e9f82c3d7f4434a2fea83af8effcade95699a227b42e7453f",
+    "status": "success",
+    "code": null,
+    "message": null,
+    "sha256": "306dad3eb22347f6b8268459de2388ee186635ae8306fa27155ad8f83287b509"
+  },
+  {
+    "file": "analysis/rea-spy-social-class.json",
+    "operation": "inspect_android_class",
+    "evidence_id": "ev_3dcb029c0d6cbd8184d2d24a04f5f96e55bfc693d8dc12784994fc6e85824ff2",
+    "status": "success",
+    "code": null,
+    "message": null,
+    "sha256": "9288ed529cd6b57b27b760b1e1831e1da157beb06454c37b1024b317de5f2131"
+  }
+]

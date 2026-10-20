@@ -1,0 +1,67 @@
+[
+  {
+    "file": "AndroidManifest.decoded.xml",
+    "bytes": 75667,
+    "sha256": "dd5708fb786278c3e7dff22d1024cfde525ba32159661af5d74acd3a9b78fabb"
+  },
+  {
+    "file": "archive-members.json",
+    "bytes": 735832,
+    "sha256": "94d499cb857645ea16fb952a07c8096a17a0edc87ace8dc3dc193032a37a3382"
+  },
+  {
+    "file": "class-descriptors.json",
+    "bytes": 8361525,
+    "sha256": "3b9f328f9211a7366e1fb93ecb692e6f6c6da25365dd2ecdea70be02de8122f9"
+  },
+  {
+    "file": "evidence-index.json",
+    "bytes": 1164,
+    "sha256": "a0c155235acdd53c6c746d642589ddd12c1979983705ec847f62811bc361247c"
+  },
+  {
+    "file": "extract-dex-resource-candidates.py",
+    "bytes": 2584,
+    "sha256": "b6e926a4ef44129ff3c1c638febe38a2ec24ae6891f955faaeeb204a9af43e84"
+  },
+  {
+    "file": "feature-ledger.json",
+    "bytes": 2908,
+    "sha256": "e9848c25d32c9c28022dac32b4e6b3b7d720fd8d688db064a3bcbdab8d17b36b"
+  },
+  {
+    "file": "gameBannerConfig.json",
+    "bytes": 2350,
+    "sha256": "017e31918ba34992cb9d1d1fa4ef3d61322f126db6adb02a0be4b30b58d2c084"
+  },
+  {
+    "file": "gameConfig.json",
+    "bytes": 12161,
+    "sha256": "c46f54bf1e96dec3daff453dc795e9f218d256723f57274cbfb32b8aba9e6478"
+  },
+  {
+    "file": "package-candidates.json",
+    "bytes": 7610094,
+    "sha256": "2412dfd767e4ad2c0e949dbf25dc109a1921a8c4e555682a3489c76b99298881"
+  },
+  {
+    "file": "rea-ludo-class.json",
+    "bytes": 4403,
+    "sha256": "558174ab867ae4261c5c1883ecd1899e1174ecd2237b673a222d1c0c20c18d22"
+  },
+  {
+    "file": "rea-ludo-method.json",
+    "bytes": 30648,
+    "sha256": "01cf2b0d5681660ddf9584035736e964b65e310a57fa844e46b466d4fcc8b1fc"
+  },
+  {
+    "file": "rea-package.json",
+    "bytes": 165430,
+    "sha256": "811560ae0ad6dae9ce7e2bea862b555a3d2cc84b803624b966b0960e25fd45e1"
+  },
+  {
+    "file": "selected-feature-resources.json",
+    "bytes": 1657,
+    "sha256": "96b87db254718aff1b17ab18e9235e914064892bf94df4e567a06c7460fe6d52"
+  }
+]

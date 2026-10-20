@@ -1,0 +1,1179 @@
+{
+  "input_hashes": {
+    "app.mjs": "55c58cb1ef9abbec9eff62b1546522631736d63cd4ce5f49328354c0fb09ff72",
+    "features.test.mjs": "3af6e30b9ce376aac34db222041cd9e684f941a9a5bac39828c73ec65564ba51",
+    "index.html": "e50ec63f4baa9f072db2871e78deac296df426816d441461e955741af8126b3a",
+    "model.mjs": "0f8b588909eba885d97286af59f54b8ad464bad494a28bbb90c6d1032eec2549",
+    "modules.json": "ea8f06c17167358a0c3d14f0ec0730173e662d43b74a1e2aa9fe676cde7d84ff",
+    "package.json": "18d5995fb218921933532eee24f652e8b1fe890a9c763f439b72423adf78216a",
+    "style.css": "f2cc9a8605c24fe9c052560d762f1e34e10107d5aced069ede235f42423f4cb1"
+  },
+  "app": "SUGO",
+  "module_count": 12,
+  "checks": [
+    {
+      "app": "SUGO",
+      "id": "SUG01",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "主持人开始自动PK"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "支持本队：模拟礼物10分"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"advance\"]",
+          "expected_text": "推进5分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"advance\"]",
+          "expected_text": "推进5分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stop\"]",
+          "expected_text": "主动停止轮转"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG02",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "向当前麦位送10分"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"replace\"]",
+          "expected_text": "阿澄下麦，米拉上麦"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "向当前麦位送10分"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"settle\"]",
+          "expected_text": "结算本轮双账本"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"replace\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"settle\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"settle\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG03",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "双方模拟聊天（本地10点）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "双方模拟聊天（本地10点）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "双方模拟聊天（本地10点）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "双方模拟聊天（本地10点）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"consent\"]",
+          "expected_text": "对方同意展示私人相册"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"album\"]",
+          "expected_text": "请求查看相册样本"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"album\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG04",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]",
+          "expected_text": "邀请米拉成为Couple"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "米拉接受邀请"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"terminate\"]",
+          "expected_text": "双方确认解除关系"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"replace\"]",
+          "expected_text": "尝试邀请另一位伴侣"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG05",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"relationship\"]",
+          "expected_text": "双方同意建立Couple"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"seatA\"]",
+          "expected_text": "阿澄坐情侣左席"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"seatB\"]",
+          "expected_text": "米拉坐情侣右席"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"leave\"]",
+          "expected_text": "米拉离开右席"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"seatB\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG06",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]",
+          "expected_text": "创建家族（本地门槛Lv5）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "完成今日任务（本地5活跃）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进一天"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "完成今日任务（本地5活跃）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]",
+          "expected_text": "结算自然月"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG07",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"contribute\"]",
+          "expected_text": "米拉贡献本地10点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"leader\"]",
+          "expected_text": "切换为族长阿澄"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"appoint\"]",
+          "expected_text": "任命米拉为副手"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"transfer\"]",
+          "expected_text": "族长转让给米拉"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"leave\"]",
+          "expected_text": "米拉确认离族并清贡献"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"appoint\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG08",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"verify\"]",
+          "expected_text": "完成全部模拟个人验证"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "聊天事件（本地40分）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "聊天事件（本地40分）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "达到80分激活/刷新Chat Star"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进一天"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "聊天事件（本地40分）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "聊天事件（本地40分）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "达到80分激活/刷新Chat Star"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "推进七天至权益到期"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG09",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"noble\"]",
+          "expected_text": "授予模拟贵族资格"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"toggle\"]",
+          "expected_text": "切换入房/榜单隐身"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"lock\"]",
+          "expected_text": "启用锁房"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "模拟资格失效"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"toggle\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG10",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftA\"]",
+          "expected_text": "阿澄贡献10礼物分"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]",
+          "expected_text": "当前榜首使用入场特效"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "米拉贡献20礼物分"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]",
+          "expected_text": "当前榜首使用入场特效"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]",
+          "expected_text": "进入新月清榜"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG11",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "房主开启报名倒计时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "阿澄付本地10币报名"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinB\"]",
+          "expected_text": "米拉模拟报名"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinC\"]",
+          "expected_text": "阿宁模拟报名"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"deadline\"]",
+          "expected_text": "报名倒计时结束"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG12",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "送模拟幸运礼物"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"unlock\"]",
+          "expected_text": "注入已知“超级时刻解锁”事件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"announce\"]",
+          "expected_text": "注入1000倍奖励播报样本"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"announce\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG01",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "主持人开始自动PK"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "支持本队：模拟礼物10分"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"advance\"]",
+          "expected_text": "推进5分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"advance\"]",
+          "expected_text": "推进5分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stop\"]",
+          "expected_text": "主动停止轮转"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SUG01-mobile.png"
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG02",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "向当前麦位送10分"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"replace\"]",
+          "expected_text": "阿澄下麦，米拉上麦"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "向当前麦位送10分"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"settle\"]",
+          "expected_text": "结算本轮双账本"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"replace\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"settle\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"settle\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SUG02-mobile.png"
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG03",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "双方模拟聊天（本地10点）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "双方模拟聊天（本地10点）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "双方模拟聊天（本地10点）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "双方模拟聊天（本地10点）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"consent\"]",
+          "expected_text": "对方同意展示私人相册"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"album\"]",
+          "expected_text": "请求查看相册样本"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"album\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SUG03-mobile.png"
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG04",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]",
+          "expected_text": "邀请米拉成为Couple"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "米拉接受邀请"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"terminate\"]",
+          "expected_text": "双方确认解除关系"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"replace\"]",
+          "expected_text": "尝试邀请另一位伴侣"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SUG04-mobile.png"
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG05",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"relationship\"]",
+          "expected_text": "双方同意建立Couple"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"seatA\"]",
+          "expected_text": "阿澄坐情侣左席"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"seatB\"]",
+          "expected_text": "米拉坐情侣右席"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"leave\"]",
+          "expected_text": "米拉离开右席"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"seatB\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SUG05-mobile.png"
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG06",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]",
+          "expected_text": "创建家族（本地门槛Lv5）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "完成今日任务（本地5活跃）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进一天"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "完成今日任务（本地5活跃）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]",
+          "expected_text": "结算自然月"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SUG06-mobile.png"
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"contribute\"]",
+          "expected_text": "米拉贡献本地10点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"leader\"]",
+          "expected_text": "切换为族长阿澄"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"appoint\"]",
+          "expected_text": "任命米拉为副手"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"transfer\"]",
+          "expected_text": "族长转让给米拉"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"leave\"]",
+          "expected_text": "米拉确认离族并清贡献"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"appoint\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SUG07-mobile.png"
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG08",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"verify\"]",
+          "expected_text": "完成全部模拟个人验证"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "聊天事件（本地40分）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "聊天事件（本地40分）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "达到80分激活/刷新Chat Star"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进一天"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "聊天事件（本地40分）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "聊天事件（本地40分）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "达到80分激活/刷新Chat Star"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "推进七天至权益到期"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SUG08-mobile.png"
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG09",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"noble\"]",
+          "expected_text": "授予模拟贵族资格"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"toggle\"]",
+          "expected_text": "切换入房/榜单隐身"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"lock\"]",
+          "expected_text": "启用锁房"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "模拟资格失效"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"toggle\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SUG09-mobile.png"
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG10",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftA\"]",
+          "expected_text": "阿澄贡献10礼物分"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]",
+          "expected_text": "当前榜首使用入场特效"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "米拉贡献20礼物分"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]",
+          "expected_text": "当前榜首使用入场特效"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]",
+          "expected_text": "进入新月清榜"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SUG10-mobile.png"
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG11",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "房主开启报名倒计时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "阿澄付本地10币报名"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinB\"]",
+          "expected_text": "米拉模拟报名"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinC\"]",
+          "expected_text": "阿宁模拟报名"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"deadline\"]",
+          "expected_text": "报名倒计时结束"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SUG11-mobile.png"
+    },
+    {
+      "app": "SUGO",
+      "id": "SUG12",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "送模拟幸运礼物"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"unlock\"]",
+          "expected_text": "注入已知“超级时刻解锁”事件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"announce\"]",
+          "expected_text": "注入1000倍奖励播报样本"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"announce\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SUG12-mobile.png"
+    }
+  ],
+  "passed": true,
+  "scope": "Local core-loop UI verification; no original APK/RTC/backend/payment/human verification."
+}

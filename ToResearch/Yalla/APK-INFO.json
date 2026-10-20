@@ -1,0 +1,77 @@
+{
+  "app": "Yalla",
+  "regions": "MENA",
+  "package": "com.weieyu.yalla",
+  "version": "3.7.0",
+  "version_code": 30702,
+  "selected_file": "Yalla-3.7.0.xapk",
+  "source": "APKPure mirror",
+  "source_page": "https://apkpure.net/yalla/com.weieyu.yalla/download",
+  "retrieved_at": "2026-10-13T07:53:44.193578+00:00",
+  "checks": {
+    "zip_crc": "passed",
+    "manifest_package_match": true,
+    "manifest_version": "read from downloaded APK",
+    "android_runtime": "not tested",
+    "publisher_signature": "not cryptographically verified"
+  },
+  "files": [
+    {
+      "path": "Yalla-3.7.0.xapk",
+      "bytes": 243980635,
+      "sha256": "7f6d919b311586ede522f36014878d5e1e0e38396002400b7252901bb3660668",
+      "sha1": "805acda85f6aed54ca4ed4f93111f7b076af2b56",
+      "manifest": null
+    },
+    {
+      "path": "apks/com.weieyu.yalla.apk",
+      "bytes": 193363720,
+      "sha256": "f14f498c00d06367e92cb3b54a830f6986601d2f89a71105887e752bb7623303",
+      "sha1": "876476dba5fb732656206ef3da97b7ae01e045ce",
+      "manifest": {
+        "package": "com.weieyu.yalla",
+        "versionName": "3.7.0",
+        "versionCode": 30702,
+        "split": null
+      }
+    },
+    {
+      "path": "apks/config.armeabi_v7a.apk",
+      "bytes": 50249452,
+      "sha256": "505ee28a540073e8bb668a6480971b90a2abbbccfbc1aee381acd1fa3b065122",
+      "sha1": "68b66134ebfa8118ef230aa2f79df9f2d1f7f5ae",
+      "manifest": {
+        "package": "com.weieyu.yalla",
+        "versionName": null,
+        "versionCode": 30702,
+        "split": "config.armeabi_v7a"
+      }
+    },
+    {
+      "path": "apks/config.mdpi.apk",
+      "bytes": 314476,
+      "sha256": "5f9ed5854ac2e4b7409ebccaa2817dcbcef204396667ebf519bbcfe04a9a6f1f",
+      "sha1": "2f178c2018ca1bc5186dd1bfcce0f5a1d94d1fa6",
+      "manifest": {
+        "package": "com.weieyu.yalla",
+        "versionName": null,
+        "versionCode": 30702,
+        "split": "config.mdpi"
+      }
+    }
+  ],
+  "compared_sources": [
+    {
+      "source_page": "https://apkpure.net/yalla/com.weieyu.yalla/download",
+      "file": "Yalla-3.7.0.xapk",
+      "identity": {
+        "package": "com.weieyu.yalla",
+        "versionName": "3.7.0",
+        "versionCode": 30702,
+        "split": null
+      }
+    }
+  ],
+  "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+  "mirror_advertised_date": "Sep 14, 2026"
+}

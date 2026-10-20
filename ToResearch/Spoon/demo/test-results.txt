@@ -1,0 +1,130 @@
+TAP version 13
+# Subtest: SPO01 正常核心闭环、资源结果与纯函数重置
+ok 1 - SPO01 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.923209
+  type: 'test'
+  ...
+# Subtest: SPO01 关键资格、重复或异常边界
+ok 2 - SPO01 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.08225
+  type: 'test'
+  ...
+# Subtest: SPO02 正常核心闭环、资源结果与纯函数重置
+ok 3 - SPO02 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.088791
+  type: 'test'
+  ...
+# Subtest: SPO02 关键资格、重复或异常边界
+ok 4 - SPO02 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.04725
+  type: 'test'
+  ...
+# Subtest: SPO03 正常核心闭环、资源结果与纯函数重置
+ok 5 - SPO03 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.085584
+  type: 'test'
+  ...
+# Subtest: SPO03 关键资格、重复或异常边界
+ok 6 - SPO03 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.045125
+  type: 'test'
+  ...
+# Subtest: SPO04 正常核心闭环、资源结果与纯函数重置
+ok 7 - SPO04 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.098291
+  type: 'test'
+  ...
+# Subtest: SPO04 关键资格、重复或异常边界
+ok 8 - SPO04 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.04625
+  type: 'test'
+  ...
+# Subtest: SPO05 正常核心闭环、资源结果与纯函数重置
+ok 9 - SPO05 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.376625
+  type: 'test'
+  ...
+# Subtest: SPO05 关键资格、重复或异常边界
+ok 10 - SPO05 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.088167
+  type: 'test'
+  ...
+# Subtest: SPO06 正常核心闭环、资源结果与纯函数重置
+ok 11 - SPO06 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.105625
+  type: 'test'
+  ...
+# Subtest: SPO06 关键资格、重复或异常边界
+ok 12 - SPO06 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.057459
+  type: 'test'
+  ...
+# Subtest: SPO07 正常核心闭环、资源结果与纯函数重置
+ok 13 - SPO07 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.061875
+  type: 'test'
+  ...
+# Subtest: SPO07 关键资格、重复或异常边界
+ok 14 - SPO07 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.035584
+  type: 'test'
+  ...
+# Subtest: SPO08 正常核心闭环、资源结果与纯函数重置
+ok 15 - SPO08 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.110917
+  type: 'test'
+  ...
+# Subtest: SPO08 关键资格、重复或异常边界
+ok 16 - SPO08 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.040542
+  type: 'test'
+  ...
+# Subtest: SPO09 正常核心闭环、资源结果与纯函数重置
+ok 17 - SPO09 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.055
+  type: 'test'
+  ...
+# Subtest: SPO09 关键资格、重复或异常边界
+ok 18 - SPO09 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.052792
+  type: 'test'
+  ...
+# Subtest: Spoon 失败奖励10% 与五盒上限
+ok 19 - Spoon 失败奖励10% 与五盒上限
+  ---
+  duration_ms: 0.104666
+  type: 'test'
+  ...
+# Subtest: Spoon 周/月/场窗口与一年欢迎记录淘汰
+ok 20 - Spoon 周/月/场窗口与一年欢迎记录淘汰
+  ---
+  duration_ms: 0.79925
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 38.633917

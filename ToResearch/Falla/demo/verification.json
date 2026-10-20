@@ -1,0 +1,1194 @@
+{
+  "input_hashes": {
+    "app.mjs": "55c58cb1ef9abbec9eff62b1546522631736d63cd4ce5f49328354c0fb09ff72",
+    "features.test.mjs": "3af6e30b9ce376aac34db222041cd9e684f941a9a5bac39828c73ec65564ba51",
+    "index.html": "324e3a61451c53ba9359001ff4f5ff3002c5330d8dc5a6a709dcd0180be8cb79",
+    "model.mjs": "7c7aa361c532cec72129b08f743f9a0b4c5ac4507631b7ee501f620e0d0fe2e9",
+    "modules.json": "abe3729816cbcb0f777015ed2cdbc18724f46fd854fd1248c285c6a62be2e544",
+    "package.json": "18d5995fb218921933532eee24f652e8b1fe890a9c763f439b72423adf78216a",
+    "style.css": "f2cc9a8605c24fe9c052560d762f1e34e10107d5aced069ede235f42423f4cb1"
+  },
+  "app": "Falla",
+  "module_count": 13,
+  "checks": [
+    {
+      "app": "Falla",
+      "id": "FAL01",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"capture\"]",
+          "expected_text": "移动4格吃对手"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"goal\"]",
+          "expected_text": "精确走到本地12格终点"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"goal\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Falla",
+      "id": "FAL02",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"capture\"]",
+          "expected_text": "注入捕获事件获得再投"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]",
+          "expected_text": "注入精确终点事件获得再投"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]",
+          "expected_text": "输入骰子6"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]",
+          "expected_text": "输入骰子6"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]",
+          "expected_text": "输入骰子6"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"capture\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Falla",
+      "id": "FAL03",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gold\"]",
+          "expected_text": "使用金骰得到6"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"magnet\"]",
+          "expected_text": "磁铁前进最多8格直到阻挡"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bomb\"]",
+          "expected_text": "使用炸弹检查前8格对手"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gold\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"magnet\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bomb\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gold\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Falla",
+      "id": "FAL04",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]",
+          "expected_text": "选择外部Ludo平台样本"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"request\"]",
+          "expected_text": "构造room_match_extra请求样本"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"success\"]",
+          "expected_text": "注入MatchModel gid=42"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]",
+          "expected_text": "携游戏信息进入样本房"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Falla",
+      "id": "FAL05",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"send\"]",
+          "expected_text": "消耗一张幸运袋票发送"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "阿澄领取本地分发名额"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"close\"]",
+          "expected_text": "关闭本地袋活动"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Falla",
+      "id": "FAL06",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"draw\"]",
+          "expected_text": "本地许愿：保证奖励样本"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exchange\"]",
+          "expected_text": "用2礼物碎片兑样本礼物"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"noble\"]",
+          "expected_text": "用1贵族碎片兑换样本权益"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "沙特时间日0点结榜"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "沙特周一0点结周榜"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"exchange\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Falla",
+      "id": "FAL07",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]",
+          "expected_text": "邀请者发当前类型关系邀请"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "对方同意关系邀请"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "普通礼物增加本地10亲密"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"excluded\"]",
+          "expected_text": "活动/周星礼物排除不加亲密"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"terminate\"]",
+          "expected_text": "解除关系清亲密及权益"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Falla",
+      "id": "FAL08",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "成员完成任务（本地10EXP）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "成员完成任务（本地10EXP）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"deadline\"]",
+          "expected_text": "推进截止并保级结算"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"upgrade\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Falla",
+      "id": "FAL09",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"admin\"]",
+          "expected_text": "切换管理员身份"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"muteAll\"]",
+          "expected_text": "开启全员禁言"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"speak\"]",
+          "expected_text": "当前角色发送活动公告"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"member\"]",
+          "expected_text": "切换普通成员"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"muteAll\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Falla",
+      "id": "FAL10",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]",
+          "expected_text": "购买/续期贵族：显示折扣账单"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "推进30天使首周期到期"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"seven\"]",
+          "expected_text": "推进到期后7天边界"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]",
+          "expected_text": "购买/续期贵族：显示折扣账单"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Falla",
+      "id": "FAL11",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]",
+          "expected_text": "消耗神秘体验卡（本地2天）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进1天并检查自动恢复"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进1天并检查自动恢复"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Falla",
+      "id": "FAL12",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"topup\"]",
+          "expected_text": "注入100金币充值与10SVIP点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"recalc\"]",
+          "expected_text": "有效期到期重算等级并清点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"topup\"]",
+          "expected_text": "注入100金币充值与10SVIP点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"recalc\"]",
+          "expected_text": "有效期到期重算等级并清点"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"recalc\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Falla",
+      "id": "FAL13",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"choose\"]",
+          "expected_text": "选择新英语地区"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"preview\"]",
+          "expected_text": "查看迁移代价并明确确认"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"migrate\"]",
+          "expected_text": "执行已确认的一次性迁移"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"migrate\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Falla",
+      "id": "FAL01",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"capture\"]",
+          "expected_text": "移动4格吃对手"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"goal\"]",
+          "expected_text": "精确走到本地12格终点"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"goal\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/FAL01-mobile.png"
+    },
+    {
+      "app": "Falla",
+      "id": "FAL02",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"capture\"]",
+          "expected_text": "注入捕获事件获得再投"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]",
+          "expected_text": "注入精确终点事件获得再投"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]",
+          "expected_text": "输入骰子6"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]",
+          "expected_text": "输入骰子6"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]",
+          "expected_text": "输入骰子6"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"capture\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/FAL02-mobile.png"
+    },
+    {
+      "app": "Falla",
+      "id": "FAL03",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gold\"]",
+          "expected_text": "使用金骰得到6"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"magnet\"]",
+          "expected_text": "磁铁前进最多8格直到阻挡"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bomb\"]",
+          "expected_text": "使用炸弹检查前8格对手"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gold\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"magnet\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bomb\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gold\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/FAL03-mobile.png"
+    },
+    {
+      "app": "Falla",
+      "id": "FAL04",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]",
+          "expected_text": "选择外部Ludo平台样本"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"request\"]",
+          "expected_text": "构造room_match_extra请求样本"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"success\"]",
+          "expected_text": "注入MatchModel gid=42"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]",
+          "expected_text": "携游戏信息进入样本房"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/FAL04-mobile.png"
+    },
+    {
+      "app": "Falla",
+      "id": "FAL05",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"send\"]",
+          "expected_text": "消耗一张幸运袋票发送"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "阿澄领取本地分发名额"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"close\"]",
+          "expected_text": "关闭本地袋活动"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/FAL05-mobile.png"
+    },
+    {
+      "app": "Falla",
+      "id": "FAL06",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"draw\"]",
+          "expected_text": "本地许愿：保证奖励样本"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exchange\"]",
+          "expected_text": "用2礼物碎片兑样本礼物"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"noble\"]",
+          "expected_text": "用1贵族碎片兑换样本权益"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "沙特时间日0点结榜"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "沙特周一0点结周榜"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"exchange\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/FAL06-mobile.png"
+    },
+    {
+      "app": "Falla",
+      "id": "FAL07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]",
+          "expected_text": "邀请者发当前类型关系邀请"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "对方同意关系邀请"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "普通礼物增加本地10亲密"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"excluded\"]",
+          "expected_text": "活动/周星礼物排除不加亲密"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"terminate\"]",
+          "expected_text": "解除关系清亲密及权益"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/FAL07-mobile.png"
+    },
+    {
+      "app": "Falla",
+      "id": "FAL08",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "成员完成任务（本地10EXP）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "成员完成任务（本地10EXP）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"deadline\"]",
+          "expected_text": "推进截止并保级结算"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"upgrade\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/FAL08-mobile.png"
+    },
+    {
+      "app": "Falla",
+      "id": "FAL09",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"admin\"]",
+          "expected_text": "切换管理员身份"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"muteAll\"]",
+          "expected_text": "开启全员禁言"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"speak\"]",
+          "expected_text": "当前角色发送活动公告"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"member\"]",
+          "expected_text": "切换普通成员"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"muteAll\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/FAL09-mobile.png"
+    },
+    {
+      "app": "Falla",
+      "id": "FAL10",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]",
+          "expected_text": "购买/续期贵族：显示折扣账单"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "推进30天使首周期到期"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"seven\"]",
+          "expected_text": "推进到期后7天边界"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]",
+          "expected_text": "购买/续期贵族：显示折扣账单"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/FAL10-mobile.png"
+    },
+    {
+      "app": "Falla",
+      "id": "FAL11",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]",
+          "expected_text": "消耗神秘体验卡（本地2天）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进1天并检查自动恢复"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进1天并检查自动恢复"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/FAL11-mobile.png"
+    },
+    {
+      "app": "Falla",
+      "id": "FAL12",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"topup\"]",
+          "expected_text": "注入100金币充值与10SVIP点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"recalc\"]",
+          "expected_text": "有效期到期重算等级并清点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"topup\"]",
+          "expected_text": "注入100金币充值与10SVIP点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"recalc\"]",
+          "expected_text": "有效期到期重算等级并清点"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"recalc\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/FAL12-mobile.png"
+    },
+    {
+      "app": "Falla",
+      "id": "FAL13",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"choose\"]",
+          "expected_text": "选择新英语地区"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"preview\"]",
+          "expected_text": "查看迁移代价并明确确认"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"migrate\"]",
+          "expected_text": "执行已确认的一次性迁移"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"migrate\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/FAL13-mobile.png"
+    }
+  ],
+  "passed": true,
+  "scope": "Local core-loop UI verification; no original APK/RTC/backend/payment/human verification."
+}

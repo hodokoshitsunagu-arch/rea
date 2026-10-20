@@ -1,0 +1,769 @@
+{
+  "app": "17LIVE",
+  "count": 12,
+  "items": [
+    {
+      "id": "L1701",
+      "source_rules": {
+        "资源": "1 gift point=1 PK point；任务有评论/赞/礼物",
+        "时序": "任务完成后礼物仍加PK点；一方投降结束共斗"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:1999",
+          "offset": 115122,
+          "quote": "Gifting will accumulate PK Points regardless of whether it’s during a mission.\nEven after the mission is completed, users can continue sending gifts to help boost your PK score and earn rewards! (1 gift point = 1 PK point)"
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:3494",
+          "offset": 182206,
+          "quote": "Random missions (such as comments, likes, or various gifts) will appear during the PK!\nViewers from both livestreams can work together to complete them and earn even more PK Points!"
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:4404",
+          "offset": 217148,
+          "quote": "The PK co-op mission has ended since the opponent has surrendered."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "target": 3,
+          "duration": 60,
+          "coopReward": 10
+        },
+        "actions": [
+          {
+            "action": "start",
+            "participant_action": "双方开始PK"
+          },
+          {
+            "action": "gift",
+            "participant_action": "观众送礼"
+          },
+          {
+            "action": "mission",
+            "participant_action": "评论赞合作任务"
+          },
+          {
+            "action": "surrender",
+            "participant_action": "一方投降"
+          },
+          {
+            "action": "end",
+            "participant_action": "倒计时结束"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: L1701 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "匹配、任务随机、真实奖励",
+        "胜负结算"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "L1702",
+      "source_rules": {
+        "门槛": "只在对应主播直播享权益且订阅有效",
+        "回报": "徽章、专属礼物、Front Row、弹幕；专属直播可限制rank",
+        "规则": "一文案写level4及以上，另一%s为配置"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:764",
+          "offset": 68835,
+          "quote": "Army perks are only available when your subscription is active."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:765",
+          "offset": 68901,
+          "quote": "Army privilege can only be enjoyed in this livestream, it doesn't work on other streamers."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:755",
+          "offset": 68250,
+          "quote": "Army exclusive livestream requires army level 4 and above."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:1924",
+          "offset": 112551,
+          "quote": "Gain access to Army-only streams. Note that some Army-only streams may be restricted by Army rank."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "minRank": 4,
+          "days": 30
+        },
+        "actions": [
+          {
+            "action": "subscribe",
+            "participant_action": "订阅指定主播Army"
+          },
+          {
+            "action": "channel",
+            "participant_action": "切换当前主播"
+          },
+          {
+            "action": "enter",
+            "participant_action": "进入Army专属直播"
+          },
+          {
+            "action": "expire",
+            "participant_action": "订阅到期"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: L1702 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "各地区/阶级矩阵、价格",
+        "4级与配置适用"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "L1703",
+      "source_rules": {
+        "时序": "赠订30天且不自动续费",
+        "限制": "赠订不能升级"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:483",
+          "offset": 56639,
+          "quote": "A gifted Army subscription gives your friend a 30-day membership to %s's Army and won't auto-renew."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:1992",
+          "offset": 114835,
+          "quote": "Gifted Army memberships do not auto-renew and cannot be upgraded."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "days": 30
+        },
+        "actions": [
+          {
+            "action": "gift",
+            "participant_action": "赠送朋友30天Army"
+          },
+          {
+            "action": "upgrade",
+            "participant_action": "尝试升级赠订"
+          },
+          {
+            "action": "expire",
+            "participant_action": "前进30天"
+          },
+          {
+            "action": "renew",
+            "participant_action": "检查自动续费"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: L1703 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "赠送资格、重复赠送与叠加",
+        "退款"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "L1704",
+      "source_rules": {
+        "时序": "名称需批准后生效",
+        "门槛": "Army成员可在此主播直播使用其自制emoji"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:1391",
+          "offset": 92998,
+          "quote": "Customize your Army with a unique name. You can even name your ranks! Names will go into effect once they've been approved."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:761",
+          "offset": 68519,
+          "quote": "Army members will be able to access custom emojis created by the streamer and use them in streamer's live stream chat."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "emojiLimit": 4
+        },
+        "actions": [
+          {
+            "action": "edit",
+            "participant_action": "主播编辑Army名称"
+          },
+          {
+            "action": "approve",
+            "participant_action": "模拟名称审核通过"
+          },
+          {
+            "action": "join",
+            "participant_action": "观众成为Army成员"
+          },
+          {
+            "action": "emoji",
+            "participant_action": "在对应频道发送专属表情"
+          },
+          {
+            "action": "channel",
+            "participant_action": "切换频道"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: L1704 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "emoji数量/审核",
+        "改名频率"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "L1705",
+      "source_rules": {
+        "回报": "Army直播内实时语音/视频Call-in",
+        "规则": "可选择开/关相机；另Group Calls在Army-exclusive被禁"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:2377",
+          "offset": 137532,
+          "quote": "Introducing Army Call in!\nYou can now enjoy real-time voice or video calls with streamers during Army livestreams for a more interactive experience."
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140a6b",
+          "resource_name": "call_in_viewer_request_permission_des",
+          "string_index": 8817,
+          "offset": 429055,
+          "quote": "Go to Settings > 17LIVE and enable microphone and camera access. When joining a call-in, you can choose whether to turn on your camera."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:2062",
+          "offset": 117576,
+          "quote": "Group Calls are disabled in Army-exclusive streams."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "capacity": 1
+        },
+        "actions": [
+          {
+            "action": "member",
+            "participant_action": "模拟有效Army资格"
+          },
+          {
+            "action": "permission",
+            "participant_action": "模拟授权麦克风"
+          },
+          {
+            "action": "request",
+            "participant_action": "申请Call-in"
+          },
+          {
+            "action": "accept",
+            "participant_action": "主播接入"
+          },
+          {
+            "action": "leave",
+            "participant_action": "离开连线"
+          },
+          {
+            "action": "group",
+            "participant_action": "尝试Group Call"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: L1705 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "Call-in与Group Call协议差异",
+        "等级、人数、主持控制"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "L1706",
+      "source_rules": {
+        "门槛": "每主播同时一位Guardian",
+        "时序": "七天；任何人可更高价竞标；本人可竞价延长",
+        "资源": "最高价确认后消费Baby Coins；只对对应主播生效"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f14118b",
+          "resource_name": "guardian_rule_1_txt",
+          "string_index": 8189,
+          "offset": 409953,
+          "quote": "Each streamer has ONE Guardian Knight"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f14118c",
+          "resource_name": "guardian_rule_2_txt",
+          "string_index": 11999,
+          "offset": 550652,
+          "quote": "The Knight will be committed to guarding the beloved streamer in SEVEN days"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f14118e",
+          "resource_name": "guardian_rule_4_txt",
+          "string_index": 7017,
+          "offset": 367260,
+          "quote": "Anyone can offer a higher price to bid for Knight honor at any time."
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f14118f",
+          "resource_name": "guardian_rule_5_txt",
+          "string_index": 7923,
+          "offset": 399632,
+          "quote": "Current Knight can also bid to extend their time as Guardian Knight"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1406a9",
+          "resource_name": "app_containers_Guardian_consume_reminder",
+          "string_index": 9152,
+          "offset": 447934,
+          "quote": "If you tap \"Bid\" and you are the highest bidder, the corresponding amount of Baby Coins will be consumed."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "days": 7,
+          "minimumIncrement": 1
+        },
+        "actions": [
+          {
+            "action": "bid",
+            "participant_action": "竞标Guardian"
+          },
+          {
+            "action": "expire",
+            "participant_action": "前进七天"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: L1706 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "被抢退款、续期叠加",
+        "竞价最小增幅"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "L1707",
+      "source_rules": {
+        "规则": "可开关并拖拽排序；多个打开只播最高匹配动画"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:346",
+          "offset": 45993,
+          "quote": "1. Once you've set an Entry Animation and enter a stream room, everyone in the room including the streamer will see the animation.\n2. You can toggle each Entry Animation off and on.\n3. Press and hold to drag and drop Entry Animations in your preferred order.\n4. If you've toggled on multiple Entry Animations, the animation highest on the list will be shown when you enter stream rooms.\n\nFor example if your Entry Animations are ordered with Army at the top, followed by Guardian and then Premium, the following will happen:\n1. If you enter a stream room and you subscribe to that streamer's Army, the Army Entry Animation will play.\n2. If you enter a stream room and you do not subscribe to that streamer's Army, but you are their Guardian, the Guardian Entry Animation will play.\n3. If you enter a stream room and you are not a member of the streamer's Army nor their Guardian, the Premium Entry Animation will play."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {},
+        "actions": [
+          {
+            "action": "priority",
+            "participant_action": "调整最高动画"
+          },
+          {
+            "action": "toggle",
+            "participant_action": "开关动画"
+          },
+          {
+            "action": "eligibility",
+            "participant_action": "设置当前房间身份"
+          },
+          {
+            "action": "enter",
+            "participant_action": "进入房间择一播放"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: L1707 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "去重/冷却及动画资源",
+        "权限失效即时性"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "L1708",
+      "source_rules": {
+        "资源": "各奖按概率抽取",
+        "规则": "距GP次数基于袋自身，由所有gift senders累计"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f141626",
+          "resource_name": "lucky_bag_ceiling_desc",
+          "string_index": 12080,
+          "offset": 559098,
+          "quote": "The number of times left before guaranteed prize (GP) is based on the lucky bag per se, which is accumulated by all gift senders."
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.machipopo.media17.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f14162a",
+          "resource_name": "lucky_bag_detail_description",
+          "string_index": 12099,
+          "offset": 560871,
+          "quote": "The reward is based on the probability of each draw; the actual outcome may vary depending on each draw and your luck. To learn more about lucky bag, please check the %s."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "ceiling": 3,
+          "cost": 10,
+          "ordinaryReward": 1
+        },
+        "actions": [
+          {
+            "action": "draw",
+            "participant_action": "观众抽共享袋"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动",
+        "boundary_fix": "parametersFor统一校验模拟袋成本为有限正数、保底次数为正安全整数、普通奖励为有限非负数；首次抽取绑定本袋保底配置，修改次数需重置。"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: L1708 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "袋scope/重置、阈值、权重",
+        "概率动态配置"
+      ],
+      "validation": {
+        "node": "passed normal-loop, immutable guard, owner-boundary regression and reset",
+        "browser": "根代理待复验本轮修正"
+      }
+    },
+    {
+      "id": "L1709",
+      "source_rules": {
+        "资源": "不同活动物件需求不同",
+        "回报": "等级1-5对应不同ultimate prizes；清单全满足主播获奖"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:475",
+          "offset": 55463,
+          "quote": "A Random Rush Event is a box event where viewers can satisfy the required items in the box by purchasing Lucky Bags. When the requirements are all met, the streamer will win an awesome prize!\n\nThe required items will be different in each Random Rush Event. Ranging from levels 1 to 5, Random Rush Events have different ultimate prizes.\n\nThe Random Rush Event is a new fun event to get support from your fans. Come and join us!"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "level": 1,
+          "required": {
+            "星": 2,
+            "月": 1
+          },
+          "cost": 10
+        },
+        "actions": [
+          {
+            "action": "bag",
+            "participant_action": "观众购买模拟袋获物件"
+          },
+          {
+            "action": "claim",
+            "participant_action": "主播领取共集终极奖"
+          },
+          {
+            "action": "level",
+            "participant_action": "切换活动等级"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动",
+        "boundary_fix": "parametersFor统一校验模拟袋成本为有限正数、活动等级1–5整数、非空物件清单需求为正安全整数。原物件需求/价格/概率未知仍保留。"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: L1709 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "各level清单、物件重复处理",
+        "结算时机"
+      ],
+      "validation": {
+        "node": "passed normal-loop, immutable guard, owner-boundary regression and reset",
+        "browser": "根代理待复验本轮修正"
+      }
+    },
+    {
+      "id": "L1710",
+      "source_rules": {
+        "直接文案": "Interactive Games包含Draw & Guess；AI handles rules/hints/answers"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:4063",
+          "offset": 202678,
+          "quote": "Spice up streams with Interactive Games! Play Draw & Guess and Quiz Game with viewers. AI handles everything: rules, hints, answers. Just have fun with your community."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "answer": "太阳",
+          "duration": 60
+        },
+        "actions": [
+          {
+            "action": "start",
+            "participant_action": "主播开画猜局"
+          },
+          {
+            "action": "stroke",
+            "participant_action": "主播添加画笔线条"
+          },
+          {
+            "action": "hint",
+            "participant_action": "本地主持给提示"
+          },
+          {
+            "action": "guess",
+            "participant_action": "观众提交猜题"
+          },
+          {
+            "action": "timeout",
+            "participant_action": "回合到期"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: L1710 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "输入渠道、回合、计分、AI/题库",
+        "画布同步"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "L1711",
+      "source_rules": {
+        "门槛": "先select question theme",
+        "资源": "AI规则、提示与答案文案"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:3806",
+          "offset": 191114,
+          "quote": "Select a question theme for the Quiz game"
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:4063",
+          "offset": 202678,
+          "quote": "Spice up streams with Interactive Games! Play Draw & Guess and Quiz Game with viewers. AI handles everything: rules, hints, answers. Just have fun with your community."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "answer": "东京",
+          "duration": 30
+        },
+        "actions": [
+          {
+            "action": "theme",
+            "participant_action": "主播选择题目主题"
+          },
+          {
+            "action": "start",
+            "participant_action": "开始主题Quiz"
+          },
+          {
+            "action": "hint",
+            "participant_action": "本地主持给提示"
+          },
+          {
+            "action": "answer",
+            "participant_action": "观众答题"
+          },
+          {
+            "action": "timeout",
+            "participant_action": "答题到期"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: L1711 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "判题、参与资格、分数、超时",
+        "是否实际AI"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "L1712",
+      "source_rules": {
+        "公式": "Army Subscription/subscription days",
+        "示例": "196554 coins/90天=每日2184，尾差到期更新"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "config.ko.apk:resources.arsc:pool:12:string:347",
+          "offset": 46916,
+          "quote": "1. The coins listed on the Army Leaderboard include Received Gifts and Sent Gifts.\n2. Calculation: Army Subscription/subscription days. \nFor example, when a user purchases a 3-month/90-day Captain Army Subscription on 12/15 for 196,554 Baby Coins, the daily Baby Coins of 2,184 will be updated on the leaderboard (the daily decimals will be updated when the Army Subscription is due)"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "coins": 196554,
+          "days": 90
+        },
+        "actions": [
+          {
+            "action": "subscribe",
+            "participant_action": "购买90日Army订阅"
+          },
+          {
+            "action": "day",
+            "participant_action": "日摊分入收送榜"
+          },
+          {
+            "action": "expire",
+            "participant_action": "摊分至到期尾差"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: L1712 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "赠订/跨日取消、尾差精度",
+        "榜计时区"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    }
+  ],
+  "validation_summary": {
+    "node_tests": 28,
+    "passed": 28,
+    "legacy_tests": "passed",
+    "browser": "affected modules require root revalidation after owner-boundary fixes",
+    "original_runtime": "not executed"
+  }
+}

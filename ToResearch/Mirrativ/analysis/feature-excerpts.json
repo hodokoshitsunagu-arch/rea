@@ -1,0 +1,170 @@
+{
+  "selection": "Report-specific bounded excerpts; full keyword records remain in sibling evidence files",
+  "records": [
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:1561",
+      "offset": 1912113,
+      "text": ", collabInvited="
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:6281",
+      "offset": 2074255,
+      "text": "CollabAccepted"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:6282",
+      "offset": 2074271,
+      "text": "CollabAccepted(key="
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:6288",
+      "offset": 2074420,
+      "text": "CollabClosed"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:6289",
+      "offset": 2074434,
+      "text": "CollabClosed(key="
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:6294",
+      "offset": 2074587,
+      "text": "CollabInvited"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:6295",
+      "offset": 2074602,
+      "text": "CollabInvited(key="
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:6299",
+      "offset": 2074721,
+      "text": "CollabReceivedPeer"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:6300",
+      "offset": 2074741,
+      "text": "CollabReceivedPeer(key="
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:6301",
+      "offset": 2074766,
+      "text": "CollabRequested"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:6302",
+      "offset": 2074783,
+      "text": "CollabRequested(key="
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:22168",
+      "offset": 2746336,
+      "text": "Lcom/dena/mirrativ/featurecommon/bcsvr/BcsvrEvent$CollabAccepted;"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:22171",
+      "offset": 2746536,
+      "text": "Lcom/dena/mirrativ/featurecommon/bcsvr/BcsvrEvent$CollabClosed;"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:22176",
+      "offset": 2746908,
+      "text": "Lcom/dena/mirrativ/featurecommon/bcsvr/BcsvrEvent$CollabReceivedPeer;"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:22177",
+      "offset": 2746979,
+      "text": "Lcom/dena/mirrativ/featurecommon/bcsvr/BcsvrEvent$CollabRequested;"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:22294",
+      "offset": 2755246,
+      "text": "Lcom/dena/mirrativ/featurecommon/unity/CollabAvatarManager;"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:22311",
+      "offset": 2756293,
+      "text": "Lcom/dena/mirrativ/featurecommon/unity/SetCollaboType;"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:22401",
+      "offset": 2763558,
+      "text": "Lcom/dena/mirrativ/featurecommon/unity/UnityCommand$SetCollabo;"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:22402",
+      "offset": 2763623,
+      "text": "Lcom/dena/mirrativ/featurecommon/unity/UnityCommand$SetCollaboGiftAvatarModel;"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:22406",
+      "offset": 2763911,
+      "text": "Lcom/dena/mirrativ/featurecommon/unity/UnityCommand$SetEmomoMahjongAvatarModel;"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:22659",
+      "offset": 2780150,
+      "text": "Lcom/dena/mirrativ/mirrativapi/emomomahjong/EmomoMahjongMemberAvatarsResponse;"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:28854",
+      "offset": 3038056,
+      "text": "LiveGameMission(condition="
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes.dex:string:37300",
+      "offset": 3229453,
+      "text": "SetEmomoMahjongAvatarModel"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes3.dex:string:4742",
+      "offset": 1868904,
+      "text": "CollabAvatarManager.kt"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes3.dex:string:20243",
+      "offset": 2548411,
+      "text": "Lcom/dena/mirrativ/featurecommon/unity/CollabAvatarManager$Companion;"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:classes4.dex:string:28563",
+      "offset": 2957323,
+      "text": "LiveGameMissionStatus(coin="
+    },
+    {
+      "id": "com.dena.mirrativ.apk:resources.arsc:pool:12:string:3873",
+      "offset": 185371,
+      "text": "コラボ者が%1$s秒以内に配信を始められなかったか通信に問題があり、コラボ配信を開始できませんでした"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:resources.arsc:pool:12:string:3881",
+      "offset": 185731,
+      "text": "コラボ通話中"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:resources.arsc:pool:12:string:3882",
+      "offset": 185752,
+      "text": "コラボ通話中は\n配信の移動はできません"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:resources.arsc:pool:12:string:4430",
+      "offset": 209866,
+      "text": "現在コラボ通話中です。退出するとコラボ通話も終了しますがよろしいですか?"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:resources.arsc:pool:221216:string:9806",
+      "offset": 553105,
+      "text": "text_collab_waiting_reconnect_title"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:resources.arsc:pool:221216:string:9807",
+      "offset": 553143,
+      "text": "text_collab_waiting_title"
+    },
+    {
+      "id": "com.dena.mirrativ.apk:resources.arsc:pool:221216:string:9808",
+      "offset": 553171,
+      "text": "text_collab_waiting_title_streaming_collab"
+    }
+  ]
+}

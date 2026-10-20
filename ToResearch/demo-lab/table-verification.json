@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "rows": 196,
+      "content_matches_catalog": true,
+      "deep_links": true,
+      "filters": true,
+      "empty_state": true,
+      "page_overflow": false,
+      "page_errors": [],
+      "passed": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "rows": 196,
+      "content_matches_catalog": true,
+      "deep_links": true,
+      "filters": true,
+      "empty_state": true,
+      "page_overflow": false,
+      "page_errors": [],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,8 @@
+{
+  "url": "http://127.0.0.1:8767/",
+  "desktop": "loaded, scenario and advance clicked",
+  "mobile": "390x844 loaded, reset and scenario clicked",
+  "overflow": false,
+  "pageErrors": [],
+  "desktopText": "包体证据驱动 · 本地模拟 · 无 RTC / 无真实资产\n\nTopTop · 关系竞拍场\n\n竞拍麦位 → 礼物出价 → 保底成交 → 关系与亲密成长\n\n直接证据：resources.arsc [12546] 低于最低成交价不能中标；[12280/12281] 维持原关系或新关系，并增加亲密值。30保底、10出价、3回合、亲密增长等于价钱为本地决策。\n\n状态 playing / 1回合\n\n保底价 30 · A 30 / B 10\n\n旧关系：搭档 · 亲密值 20\n\n本场目标：形成新关系\n\n尚未成交\n\n竞拍者 A 出价\n竞拍者 B 出价\n切换为新关系\n管理员开始拍卖\n推进倒计时\n载入固定演示场景\n重置\n房主/管理员开启关系拍卖（角色本地固定）\n竞拍者1 礼物出价 +10\n竞拍者1 礼物出价 +10\n竞拍者1 礼物出价 +10\n竞拍者2 礼物出价 +10\n查看证据、推断和未知边界"
+}

@@ -1,0 +1,47 @@
+{
+  "app": "17LIVE",
+  "artifact_sha256": "b8eca71f7e68a9359e4a84ffe81db2cf242c6ce3f08e2e614ee4628a1d2bd2f4",
+  "rea_package_evidence_id": "ev_19c7ddec4c8edb0aa0c5683505e32bb7fa1155f345de1c5b594ebee38f4d0aab",
+  "features": [
+    {
+      "question": "语聊 / PK等待室与队伍",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "等待室交流文案、拖放分队/话题/时长设置文案、原主持离开后系统指定新主持文案",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "是静态产品说明；实际队伍人数、房主转移算法与媒体路由未知"
+    },
+    {
+      "question": "社交游戏化 / PK共斗",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "双方主播及观众完成任务拿奖励；随机评论/点赞/礼物任务；1gift point=1PK point；投降结束共斗文案；DEX PK_DYNAMIC_MISSION",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "可以重构竞争与协作叠加；任务生成概率、奖励、匹配/结算逻辑未知"
+    },
+    {
+      "question": "社交 / Army",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "Army说明为订阅系统；专属徽章礼物、进入动画、Army-only streaming、前排等权益文案",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "订阅服务/定价/各级权益与有效校验未知"
+    },
+    {
+      "question": "小游戏 / Draw & Guess与Quiz",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "交互游戏文案明确Draw & Guess与Quiz Game，AI处理规则、提示、答案；题目主题资源",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "确认宣传/界面契约，不证明模型、服务端出题、判题或地区开放"
+    },
+    {
+      "question": "游戏化 / Lucky Bag",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "概率抽取、guaranteed prize计数由送礼者累积文案",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "抽奖概率、保底阈值和实际资金结算未知"
+    }
+  ]
+}

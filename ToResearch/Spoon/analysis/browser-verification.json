@@ -1,0 +1,18 @@
+{
+  "app": "Spoon",
+  "engine": "Chrome controlled headless browser",
+  "desktop": "1280x900",
+  "mobile": "390x844",
+  "scenario": [
+    "听众 · 发送挑战",
+    "主播 · 接受",
+    "选盒 3",
+    "揭晓"
+  ],
+  "observedState": "result · 收礼者 DJ Hana · 盒子 3 · 获得 100 spoons",
+  "reset": "passed",
+  "mobileHorizontalOverflow": false,
+  "pageErrors": [],
+  "originalAndroidRuntime": "not tested",
+  "humanVisualAcceptance": "not performed"
+}

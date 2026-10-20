@@ -1,0 +1,19 @@
+{
+  "app": "YoHo",
+  "region": "MENA",
+  "source_page": "https://www.yoho.media/",
+  "download_url": "https://cdn.yoho.media/apk/yoho_release.apk",
+  "final_url": "https://cdn.yoho.media/apk/yoho_release.apk",
+  "retrieved_at": "2026-10-13T07:48:50.369561+00:00",
+  "file": "YoHo-5.48.40.apk",
+  "bytes": 96735470,
+  "sha256": "2d26edd454bd9bd7d39d9df94750aa7cc714c0d6c3e445ebbde10c9d1ffc14c8",
+  "zip_crc": "passed",
+  "latest_scope": "Official website current download; Google Play staged releases not independently checked",
+  "manifest_identity": {
+    "package": "com.voicechat.live.group",
+    "versionName": "5.48.40",
+    "versionCode": 4630,
+    "split": null
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "app": "Yalla",
+  "modules": [
+    {
+      "id": "YAL01",
+      "title": "观众干预的速度赛",
+      "implemented_scope": "固定轨道、技能按钮、排名结算，技能数值标为自定。；12格赛道；速度2、点赞+1、技能减速1；平终点蓝队先到裁决；奖金20/10为重构参数。",
+      "limitations": [
+        "[$0]含义、技能表、轨道与速度公式、人数和时间未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    },
+    {
+      "id": "YAL02",
+      "title": "足球/团队礼物积分奖池",
+      "implemented_scope": "现demo只有通用团队奖池，虽标题含Speed Battle但未实现速度技能；足球与奖池调用未证实前不合并。；足球仅专属礼物入口实验；独立奖池前4均分、增益固定2倍；两条静态文案未关联。",
+      "limitations": [
+        "团队奖池文字是否专属于足球未完成资源调用映射；比分算法、概率、奖励比例未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a8\"]"
+        }
+      ]
+    },
+    {
+      "id": "YAL03",
+      "title": "10级房间共同开宝箱",
+      "implemented_scope": "共享进度、开箱和模拟分配，阈值/随机率自定。；普通礼物1钥匙、3钥匙开箱、每日一箱、固定分配用于可重复测试；全部在房成员进入候选。",
+      "limitations": [
+        "钥匙兑换率、宝箱各级阈值、抽取分配与概率未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ]
+    },
+    {
+      "id": "YAL04",
+      "title": "押金式房内猜拳",
+      "implemented_scope": "发起/响应/到期状态机与两个榜，不接支付。；单响应者；押金20、赠礼榜只记录胜者礼物、参与榜记录次数；结算和到期返押金不重复。",
+      "limitations": [
+        "一对多手势比对、开奖时点、赠礼扣款和退款先后未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ]
+    },
+    {
+      "id": "YAL05",
+      "title": "变声整蛊与防护牌",
+      "implemented_scope": "道具状态与10分钟免疫倒计时；真实变声另立技术任务。；机器人为视觉占位，无音频/麦克风；防护10分钟按文案。",
+      "limitations": [
+        "变声音效列表、目标同意与适用房模式、卡片获取/价格未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        }
+      ]
+    },
+    {
+      "id": "YAL06",
+      "title": "CP绑定与专属礼物亲密",
+      "implemented_scope": "双向邀请、模拟亲密及权益开关；门槛作为可配置策略。；双向同意、每礼物15亲密、解绑保留亲密为重构；不同性别为本条资源门槛。",
+      "limitations": [
+        "邀请同意流程、等级、加成倍率、解绑亲密处理未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ]
+    },
+    {
+      "id": "YAL07",
+      "title": "房会员亲密与徽章熄亮",
+      "implemented_scope": "会员组、任务、徽章状态与1.2倍计分；费用为模拟。；会费10、房主日上限20；基础亲密10×1.2；任务和灰化触发为本地配置，重入保留。",
+      "limitations": [
+        "会费范围、会员有效期、日上限、徽章变灰周期未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ]
+    },
+    {
+      "id": "YAL08",
+      "title": "90天VIP升降与退款冻结",
+      "implemented_scope": "参数化周期/升降/冻结模拟器，阈值自行定义。；每级100点、最低Lv1、有效期初值270天；升级清零/90天重评/180天冻结清有效期保留明确文案。",
+      "limitations": [
+        "逐级点数阈值、宽限期时长、不同新旧文案配置是否同版生效未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ]
+    },
+    {
+      "id": "YAL09",
+      "title": "Premium爵位返金与成长倍率",
+      "implemented_scope": "双轨权益表与倍率/返金账本，模拟余额。；Baron返金未恢复取0；Count/Marquis明确倍率；100金币礼物仅模拟。",
+      "limitations": [
+        "售价、订阅周期、返金适用礼物、实际配置未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ]
+    },
+    {
+      "id": "YAL10",
+      "title": "自定义房主题的时效与冻结",
+      "implemented_scope": "上传占位、审核模拟、有效期与冻结，不复刻素材商店。；免费次数初值1、冻结照常耗时为补齐；上传是本地占位审核。；另保留30天1999金币申请。",
+      "limitations": [
+        "审核规则、VIP免费额度、冻结期间时长是否继续流逝未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node正常/guard/退款与生命周期回归通过；最新浏览器复验待根任务",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        }
+      ],
+      "regression_fix": "无主题推进时间不改变申请资格；到期后可提交新主题。统一submitTheme拥有当次付费币/免费次数与退款字段，先清前次申请残留，拒审只退本次资产，防止跨周期重复退款。"
+    },
+    {
+      "id": "YAL11",
+      "title": "房间置顶卡拍卖",
+      "implemented_scope": "时段拍卖及榜首页位置模拟。；出价20/30、流拍直购10、结束扣最高者模拟余额；原押金/置顶时长未知。",
+      "limitations": [
+        "出价步长、押金返还、置顶时长和同分处理未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        }
+      ]
+    },
+    {
+      "id": "YAL12",
+      "title": "徽章星级与限时荣誉榜",
+      "implemented_scope": "采用明确三级星规则演示；四级作为未决配置。；采用铜1银3金11；钻石未恢复；荣誉月取30天，先获得同分优先。",
+      "limitations": [
+        "同时有四级含Diamond与三级版本文案；钻石星数、具体成就任务、版本配置未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    }
+  ]
+}

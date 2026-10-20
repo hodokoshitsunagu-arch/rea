@@ -1,0 +1,12 @@
+✔ 双数强制拆己方路障 (0.689625ms)
+✔ 不能越过路障 (0.092333ms)
+✔ 吃子获得20步且奖励不消费另一骰 (0.387042ms)
+✔ 三次双数Spanish与Classic选择不同受罚棋子 (0.135292ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 51.569708

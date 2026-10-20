@@ -1,0 +1,43 @@
+[
+  {
+    "file": "rea-micpk-classes.json",
+    "operation": "search_android_classes",
+    "evidence_id": null,
+    "status": "failed",
+    "error": "provider_timeout",
+    "parameters": null
+  },
+  {
+    "file": "rea-package.json",
+    "operation": "inspect_android_package",
+    "evidence_id": "ev_8a0c842e65bdb722f4363e341491f3079364ce14bef2648856fe9ab484c6a98f",
+    "status": "observed",
+    "error": null,
+    "parameters": {
+      "path": "/Users/mark/Projects/REA/ToResearch/SUGO/SUGO-2.52.0.1.apk"
+    }
+  },
+  {
+    "file": "rea-pk-api-class.json",
+    "operation": "inspect_android_class",
+    "evidence_id": "ev_934ca7e6ff352253510a3468c9b1fa74c23a2101eb650bd8ef86c3d1516b5c84",
+    "status": "observed",
+    "error": null,
+    "parameters": {
+      "path": "/Users/mark/Projects/REA/ToResearch/SUGO/SUGO-2.52.0.1.apk",
+      "class_name": "com.biz.audio.crossroompk.repository.PKApiService"
+    }
+  },
+  {
+    "file": "rea-pk-method.json",
+    "operation": "inspect_android_method",
+    "evidence_id": "ev_34a9b34b1a0739db6ec6541b5e6104b9f8ef0002d9272feb08c63ca117974af7",
+    "status": "observed",
+    "error": null,
+    "parameters": {
+      "path": "/Users/mark/Projects/REA/ToResearch/SUGO/SUGO-2.52.0.1.apk",
+      "class_name": "com.biz.audio.crossroompk.repository.PKApiService",
+      "method_name": "i"
+    }
+  }
+]

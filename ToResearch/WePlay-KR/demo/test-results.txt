@@ -1,0 +1,412 @@
+TAP version 13
+# Subtest: WKR01 BFF门槛、竞拍旁路与关系展示槽位 正常闭环与重置
+ok 1 - WKR01 BFF门槛、竞拍旁路与关系展示槽位 正常闭环与重置
+  ---
+  duration_ms: 1.379292
+  type: 'test'
+  ...
+# Subtest: WKR01 关键资格/阶段拒绝且业务原子回退
+ok 2 - WKR01 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.077791
+  type: 'test'
+  ...
+# Subtest: WKR02 BFF关系进阶：亲密进度、宝箱与专属关系卡 正常闭环与重置
+ok 3 - WKR02 BFF关系进阶：亲密进度、宝箱与专属关系卡 正常闭环与重置
+  ---
+  duration_ms: 0.2325
+  type: 'test'
+  ...
+# Subtest: WKR02 关键资格/阶段拒绝且业务原子回退
+ok 4 - WKR02 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.068375
+  type: 'test'
+  ...
+# Subtest: WKR03 戒指替换保留旧物与关系年龄 正常闭环与重置
+ok 5 - WKR03 戒指替换保留旧物与关系年龄 正常闭环与重置
+  ---
+  duration_ms: 0.146333
+  type: 'test'
+  ...
+# Subtest: WKR03 关键资格/阶段拒绝且业务原子回退
+ok 6 - WKR03 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.042458
+  type: 'test'
+  ...
+# Subtest: WKR04 高级房容量扩张与到期回收 正常闭环与重置
+ok 7 - WKR04 高级房容量扩张与到期回收 正常闭环与重置
+  ---
+  duration_ms: 0.080917
+  type: 'test'
+  ...
+# Subtest: WKR04 关键资格/阶段拒绝且业务原子回退
+ok 8 - WKR04 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.097958
+  type: 'test'
+  ...
+# Subtest: WKR05 高级房三管理员与到期权限撤销 正常闭环与重置
+ok 9 - WKR05 高级房三管理员与到期权限撤销 正常闭环与重置
+  ---
+  duration_ms: 0.123209
+  type: 'test'
+  ...
+# Subtest: WKR05 关键资格/阶段拒绝且业务原子回退
+ok 10 - WKR05 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.090042
+  type: 'test'
+  ...
+# Subtest: WKR06 语音房宝箱倒计时与任务减时 正常闭环与重置
+ok 11 - WKR06 语音房宝箱倒计时与任务减时 正常闭环与重置
+  ---
+  duration_ms: 0.101417
+  type: 'test'
+  ...
+# Subtest: WKR06 关键资格/阶段拒绝且业务原子回退
+ok 12 - WKR06 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.060208
+  type: 'test'
+  ...
+# Subtest: WKR07 签约歌手出题与审核回报 正常闭环与重置
+ok 13 - WKR07 签约歌手出题与审核回报 正常闭环与重置
+  ---
+  duration_ms: 0.08825
+  type: 'test'
+  ...
+# Subtest: WKR07 关键资格/阶段拒绝且业务原子回退
+ok 14 - WKR07 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.054375
+  type: 'test'
+  ...
+# Subtest: WKR08 玩家词题投稿与延后奖励 正常闭环与重置
+ok 15 - WKR08 玩家词题投稿与延后奖励 正常闭环与重置
+  ---
+  duration_ms: 0.066542
+  type: 'test'
+  ...
+# Subtest: WKR08 关键资格/阶段拒绝且业务原子回退
+ok 16 - WKR08 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.052833
+  type: 'test'
+  ...
+# Subtest: WKR09 绘画道具：付费延时与成长解锁颜色 正常闭环与重置
+ok 17 - WKR09 绘画道具：付费延时与成长解锁颜色 正常闭环与重置
+  ---
+  duration_ms: 0.120875
+  type: 'test'
+  ...
+# Subtest: WKR09 关键资格/阶段拒绝且业务原子回退
+ok 18 - WKR09 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.051875
+  type: 'test'
+  ...
+# Subtest: WKR10 VIP全站广播、礼物隐私与成长转换 正常闭环与重置
+ok 19 - WKR10 VIP全站广播、礼物隐私与成长转换 正常闭环与重置
+  ---
+  duration_ms: 0.077166
+  type: 'test'
+  ...
+# Subtest: WKR10 关键资格/阶段拒绝且业务原子回退
+ok 20 - WKR10 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.058
+  type: 'test'
+  ...
+# Subtest: WKR11 家族人气徽章触发房间奖励 正常闭环与重置
+ok 21 - WKR11 家族人气徽章触发房间奖励 正常闭环与重置
+  ---
+  duration_ms: 0.073459
+  type: 'test'
+  ...
+# Subtest: WKR11 关键资格/阶段拒绝且业务原子回退
+ok 22 - WKR11 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.051334
+  type: 'test'
+  ...
+# Subtest: WKR12 卧底语音描述、不可撤销猜词与同投票结算交友 正常闭环与重置
+ok 23 - WKR12 卧底语音描述、不可撤销猜词与同投票结算交友 正常闭环与重置
+  ---
+  duration_ms: 0.229667
+  type: 'test'
+  ...
+# Subtest: WKR12 关键资格/阶段拒绝且业务原子回退
+ok 24 - WKR12 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.060083
+  type: 'test'
+  ...
+# Subtest: WKR13 家族宝箱：锁定名单与领取时动态校验 正常闭环与重置
+ok 25 - WKR13 家族宝箱：锁定名单与领取时动态校验 正常闭环与重置
+  ---
+  duration_ms: 0.161666
+  type: 'test'
+  ...
+# Subtest: WKR13 关键资格/阶段拒绝且业务原子回退
+ok 26 - WKR13 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.058209
+  type: 'test'
+  ...
+# Subtest: WKR14 绘画接力：上一棒、展示确认与赞踩 正常闭环与重置
+ok 27 - WKR14 绘画接力：上一棒、展示确认与赞踩 正常闭环与重置
+  ---
+  duration_ms: 0.424708
+  type: 'test'
+  ...
+# Subtest: WKR14 关键资格/阶段拒绝且业务原子回退
+ok 28 - WKR14 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.067583
+  type: 'test'
+  ...
+# Subtest: WKR15 抢麦：练习局转正式的下一题生效 正常闭环与重置
+ok 29 - WKR15 抢麦：练习局转正式的下一题生效 正常闭环与重置
+  ---
+  duration_ms: 0.113667
+  type: 'test'
+  ...
+# Subtest: WKR15 关键资格/阶段拒绝且业务原子回退
+ok 30 - WKR15 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.062042
+  type: 'test'
+  ...
+# Subtest: WKR16 次日婚礼堂竞拍与固定婚礼时段 正常闭环与重置
+ok 31 - WKR16 次日婚礼堂竞拍与固定婚礼时段 正常闭环与重置
+  ---
+  duration_ms: 0.113542
+  type: 'test'
+  ...
+# Subtest: WKR16 关键资格/阶段拒绝且业务原子回退
+ok 32 - WKR16 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.077042
+  type: 'test'
+  ...
+# Subtest: WKR17 关系退出：未回复三天自动拒绝 正常闭环与重置
+ok 33 - WKR17 关系退出：未回复三天自动拒绝 正常闭环与重置
+  ---
+  duration_ms: 0.066959
+  type: 'test'
+  ...
+# Subtest: WKR17 关键资格/阶段拒绝且业务原子回退
+ok 34 - WKR17 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.067792
+  type: 'test'
+  ...
+# Subtest: WKR18 双人画布协作入口 正常闭环与重置
+ok 35 - WKR18 双人画布协作入口 正常闭环与重置
+  ---
+  duration_ms: 0.089667
+  type: 'test'
+  ...
+# Subtest: WKR18 关键资格/阶段拒绝且业务原子回退
+ok 36 - WKR18 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.062417
+  type: 'test'
+  ...
+# Subtest: WKR19 Puppet/Mind：四槽装配与遗迹一轮一次 正常闭环与重置
+ok 37 - WKR19 Puppet/Mind：四槽装配与遗迹一轮一次 正常闭环与重置
+  ---
+  duration_ms: 0.12825
+  type: 'test'
+  ...
+# Subtest: WKR19 关键资格/阶段拒绝且业务原子回退
+ok 38 - WKR19 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.066041
+  type: 'test'
+  ...
+# Subtest: BFF旁路/房主进阶禁止/唯一卡/戒指年龄/容量到期
+ok 39 - BFF旁路/房主进阶禁止/唯一卡/戒指年龄/容量到期
+  ---
+  duration_ms: 0.34725
+  type: 'test'
+  ...
+# Subtest: 管理员3人/到期撤权、宝箱任务去重、歌手日额、词稿延后奖
+ok 40 - 管理员3人/到期撤权、宝箱任务去重、歌手日额、词稿延后奖
+  ---
+  duration_ms: 0.340541
+  type: 'test'
+  ...
+# Subtest: 绘画两次取消/VIP广播覆盖五分钟/地域隐私与徽章日额度
+ok 41 - 绘画两次取消/VIP广播覆盖五分钟/地域隐私与徽章日额度
+  ---
+  duration_ms: 0.251708
+  type: 'test'
+  ...
+# Subtest: 卧底猜词确认不可撤销及人数重分词
+ok 42 - 卧底猜词确认不可撤销及人数重分词
+  ---
+  duration_ms: 0.135375
+  type: 'test'
+  ...
+# Subtest: Limited发放名单锁定/不复核；Normal后来达标/领取动态复核
+ok 43 - Limited发放名单锁定/不复核；Normal后来达标/领取动态复核
+  ---
+  duration_ms: 0.257
+  type: 'test'
+  ...
+# Subtest: 接力禁止中途换房/观众猜题；抢麦下一题转正式与独占麦
+ok 44 - 接力禁止中途换房/观众猜题；抢麦下一题转正式与独占麦
+  ---
+  duration_ms: 0.25775
+  type: 'test'
+  ...
+# Subtest: 婚礼时段界限与锁定/关系三天自动拒绝/Mind四槽一轮一次/候选双画布
+ok 45 - 婚礼时段界限与锁定/关系三天自动拒绝/Mind四槽一轮一次/候选双画布
+  ---
+  duration_ms: 0.533209
+  type: 'test'
+  ...
+# Subtest: 词卡和护盾模型拥有公共角色投影
+ok 46 - 词卡和护盾模型拥有公共角色投影
+  ---
+  duration_ms: 0.077
+  type: 'test'
+  ...
+# Subtest: WKR01 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 47 - WKR01 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.695416
+  type: 'test'
+  ...
+# Subtest: WKR02 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 48 - WKR02 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.914666
+  type: 'test'
+  ...
+# Subtest: WKR03 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 49 - WKR03 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.131167
+  type: 'test'
+  ...
+# Subtest: WKR04 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 50 - WKR04 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.056291
+  type: 'test'
+  ...
+# Subtest: WKR05 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 51 - WKR05 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.060292
+  type: 'test'
+  ...
+# Subtest: WKR06 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 52 - WKR06 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.435833
+  type: 'test'
+  ...
+# Subtest: WKR07 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 53 - WKR07 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.055875
+  type: 'test'
+  ...
+# Subtest: WKR08 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 54 - WKR08 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.260791
+  type: 'test'
+  ...
+# Subtest: WKR09 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 55 - WKR09 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 1.040417
+  type: 'test'
+  ...
+# Subtest: WKR10 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 56 - WKR10 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.6335
+  type: 'test'
+  ...
+# Subtest: WKR11 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 57 - WKR11 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.924209
+  type: 'test'
+  ...
+# Subtest: WKR12 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 58 - WKR12 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.569334
+  type: 'test'
+  ...
+# Subtest: WKR13 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 59 - WKR13 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 1.099708
+  type: 'test'
+  ...
+# Subtest: WKR14 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 60 - WKR14 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.50725
+  type: 'test'
+  ...
+# Subtest: WKR15 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 61 - WKR15 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.471334
+  type: 'test'
+  ...
+# Subtest: WKR16 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 62 - WKR16 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.270125
+  type: 'test'
+  ...
+# Subtest: WKR17 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 63 - WKR17 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.288542
+  type: 'test'
+  ...
+# Subtest: WKR18 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 64 - WKR18 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.279709
+  type: 'test'
+  ...
+# Subtest: WKR19 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 65 - WKR19 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.676708
+  type: 'test'
+  ...
+# Subtest: 资源费用负值/NaN/Infinity不改钱包；显式零成本可免费实验
+ok 66 - 资源费用负值/NaN/Infinity不改钱包；显式零成本可免费实验
+  ---
+  duration_ms: 0.484208
+  type: 'test'
+  ...
+# Subtest: 次数/时限须整数，动作字段亦不能把非有限资源写入业务模型
+ok 67 - 次数/时限须整数，动作字段亦不能把非有限资源写入业务模型
+  ---
+  duration_ms: 0.638458
+  type: 'test'
+  ...
+1..67
+# tests 67
+# suites 0
+# pass 67
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 57.799875

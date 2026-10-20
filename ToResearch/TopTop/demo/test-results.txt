@@ -1,0 +1,334 @@
+TAP version 13
+# Subtest: TOP01 正常闭环
+ok 1 - TOP01 正常闭环
+  ---
+  duration_ms: 0.857458
+  type: 'test'
+  ...
+# Subtest: TOP01 核心边界
+ok 2 - TOP01 核心边界
+  ---
+  duration_ms: 0.263958
+  type: 'test'
+  ...
+# Subtest: TOP01 补充分支 1
+ok 3 - TOP01 补充分支 1
+  ---
+  duration_ms: 0.052208
+  type: 'test'
+  ...
+# Subtest: TOP01 不重复结算或消费资格
+ok 4 - TOP01 不重复结算或消费资格
+  ---
+  duration_ms: 0.083958
+  type: 'test'
+  ...
+# Subtest: TOP01 重置独立与不可未知操作
+ok 5 - TOP01 重置独立与不可未知操作
+  ---
+  duration_ms: 0.159584
+  type: 'test'
+  ...
+# Subtest: TOP02 正常闭环
+ok 6 - TOP02 正常闭环
+  ---
+  duration_ms: 0.074667
+  type: 'test'
+  ...
+# Subtest: TOP02 核心边界
+ok 7 - TOP02 核心边界
+  ---
+  duration_ms: 0.060083
+  type: 'test'
+  ...
+# Subtest: TOP02 补充分支 1
+ok 8 - TOP02 补充分支 1
+  ---
+  duration_ms: 0.043625
+  type: 'test'
+  ...
+# Subtest: TOP02 补充分支 2
+ok 9 - TOP02 补充分支 2
+  ---
+  duration_ms: 0.062792
+  type: 'test'
+  ...
+# Subtest: TOP02 重置独立与不可未知操作
+ok 10 - TOP02 重置独立与不可未知操作
+  ---
+  duration_ms: 0.124
+  type: 'test'
+  ...
+# Subtest: TOP03 正常闭环
+ok 11 - TOP03 正常闭环
+  ---
+  duration_ms: 0.073417
+  type: 'test'
+  ...
+# Subtest: TOP03 核心边界
+ok 12 - TOP03 核心边界
+  ---
+  duration_ms: 0.0465
+  type: 'test'
+  ...
+# Subtest: TOP03 不重复结算或消费资格
+ok 13 - TOP03 不重复结算或消费资格
+  ---
+  duration_ms: 0.042917
+  type: 'test'
+  ...
+# Subtest: TOP03 重置独立与不可未知操作
+ok 14 - TOP03 重置独立与不可未知操作
+  ---
+  duration_ms: 0.080291
+  type: 'test'
+  ...
+# Subtest: TOP04 正常闭环
+ok 15 - TOP04 正常闭环
+  ---
+  duration_ms: 0.053917
+  type: 'test'
+  ...
+# Subtest: TOP04 核心边界
+ok 16 - TOP04 核心边界
+  ---
+  duration_ms: 0.040416
+  type: 'test'
+  ...
+# Subtest: TOP04 不重复结算或消费资格
+ok 17 - TOP04 不重复结算或消费资格
+  ---
+  duration_ms: 0.039375
+  type: 'test'
+  ...
+# Subtest: TOP04 重置独立与不可未知操作
+ok 18 - TOP04 重置独立与不可未知操作
+  ---
+  duration_ms: 0.092417
+  type: 'test'
+  ...
+# Subtest: TOP05 正常闭环
+ok 19 - TOP05 正常闭环
+  ---
+  duration_ms: 0.088792
+  type: 'test'
+  ...
+# Subtest: TOP05 核心边界
+ok 20 - TOP05 核心边界
+  ---
+  duration_ms: 0.050375
+  type: 'test'
+  ...
+# Subtest: TOP05 不重复结算或消费资格
+ok 21 - TOP05 不重复结算或消费资格
+  ---
+  duration_ms: 0.062583
+  type: 'test'
+  ...
+# Subtest: TOP05 重置独立与不可未知操作
+ok 22 - TOP05 重置独立与不可未知操作
+  ---
+  duration_ms: 0.120208
+  type: 'test'
+  ...
+# Subtest: TOP06 正常闭环
+ok 23 - TOP06 正常闭环
+  ---
+  duration_ms: 0.059375
+  type: 'test'
+  ...
+# Subtest: TOP06 核心边界
+ok 24 - TOP06 核心边界
+  ---
+  duration_ms: 0.03
+  type: 'test'
+  ...
+# Subtest: TOP06 不重复结算或消费资格
+ok 25 - TOP06 不重复结算或消费资格
+  ---
+  duration_ms: 0.044917
+  type: 'test'
+  ...
+# Subtest: TOP06 重置独立与不可未知操作
+ok 26 - TOP06 重置独立与不可未知操作
+  ---
+  duration_ms: 0.086041
+  type: 'test'
+  ...
+# Subtest: TOP07 正常闭环
+ok 27 - TOP07 正常闭环
+  ---
+  duration_ms: 0.054417
+  type: 'test'
+  ...
+# Subtest: TOP07 核心边界
+ok 28 - TOP07 核心边界
+  ---
+  duration_ms: 0.0355
+  type: 'test'
+  ...
+# Subtest: TOP07 重置独立与不可未知操作
+ok 29 - TOP07 重置独立与不可未知操作
+  ---
+  duration_ms: 0.103416
+  type: 'test'
+  ...
+# Subtest: TOP08 正常闭环
+ok 30 - TOP08 正常闭环
+  ---
+  duration_ms: 0.054708
+  type: 'test'
+  ...
+# Subtest: TOP08 核心边界
+ok 31 - TOP08 核心边界
+  ---
+  duration_ms: 0.031791
+  type: 'test'
+  ...
+# Subtest: TOP08 不重复结算或消费资格
+ok 32 - TOP08 不重复结算或消费资格
+  ---
+  duration_ms: 0.04025
+  type: 'test'
+  ...
+# Subtest: TOP08 重置独立与不可未知操作
+ok 33 - TOP08 重置独立与不可未知操作
+  ---
+  duration_ms: 0.086584
+  type: 'test'
+  ...
+# Subtest: TOP09 正常闭环
+ok 34 - TOP09 正常闭环
+  ---
+  duration_ms: 0.0605
+  type: 'test'
+  ...
+# Subtest: TOP09 核心边界
+ok 35 - TOP09 核心边界
+  ---
+  duration_ms: 0.029
+  type: 'test'
+  ...
+# Subtest: TOP09 不重复结算或消费资格
+ok 36 - TOP09 不重复结算或消费资格
+  ---
+  duration_ms: 0.044458
+  type: 'test'
+  ...
+# Subtest: TOP09 重置独立与不可未知操作
+ok 37 - TOP09 重置独立与不可未知操作
+  ---
+  duration_ms: 0.087542
+  type: 'test'
+  ...
+# Subtest: TOP10 正常闭环
+ok 38 - TOP10 正常闭环
+  ---
+  duration_ms: 0.0675
+  type: 'test'
+  ...
+# Subtest: TOP10 核心边界
+ok 39 - TOP10 核心边界
+  ---
+  duration_ms: 0.035833
+  type: 'test'
+  ...
+# Subtest: TOP10 补充分支 1
+ok 40 - TOP10 补充分支 1
+  ---
+  duration_ms: 0.033625
+  type: 'test'
+  ...
+# Subtest: TOP10 不重复结算或消费资格
+ok 41 - TOP10 不重复结算或消费资格
+  ---
+  duration_ms: 0.049
+  type: 'test'
+  ...
+# Subtest: TOP10 重置独立与不可未知操作
+ok 42 - TOP10 重置独立与不可未知操作
+  ---
+  duration_ms: 0.084791
+  type: 'test'
+  ...
+# Subtest: TOP11 正常闭环
+ok 43 - TOP11 正常闭环
+  ---
+  duration_ms: 0.045709
+  type: 'test'
+  ...
+# Subtest: TOP11 核心边界
+ok 44 - TOP11 核心边界
+  ---
+  duration_ms: 0.289625
+  type: 'test'
+  ...
+# Subtest: TOP11 不重复结算或消费资格
+ok 45 - TOP11 不重复结算或消费资格
+  ---
+  duration_ms: 0.102667
+  type: 'test'
+  ...
+# Subtest: TOP11 重置独立与不可未知操作
+ok 46 - TOP11 重置独立与不可未知操作
+  ---
+  duration_ms: 0.096791
+  type: 'test'
+  ...
+# Subtest: TOP12 正常闭环
+ok 47 - TOP12 正常闭环
+  ---
+  duration_ms: 0.068916
+  type: 'test'
+  ...
+# Subtest: TOP12 核心边界
+ok 48 - TOP12 核心边界
+  ---
+  duration_ms: 0.061833
+  type: 'test'
+  ...
+# Subtest: TOP12 重置独立与不可未知操作
+ok 49 - TOP12 重置独立与不可未知操作
+  ---
+  duration_ms: 0.086541
+  type: 'test'
+  ...
+# Subtest: TOP13 正常闭环
+ok 50 - TOP13 正常闭环
+  ---
+  duration_ms: 0.064791
+  type: 'test'
+  ...
+# Subtest: TOP13 核心边界
+ok 51 - TOP13 核心边界
+  ---
+  duration_ms: 0.03925
+  type: 'test'
+  ...
+# Subtest: TOP13 补充分支 1
+ok 52 - TOP13 补充分支 1
+  ---
+  duration_ms: 0.03525
+  type: 'test'
+  ...
+# Subtest: TOP13 重置独立与不可未知操作
+ok 53 - TOP13 重置独立与不可未知操作
+  ---
+  duration_ms: 0.128709
+  type: 'test'
+  ...
+# Subtest: TOP07 未中奖不得推进奖品有效期，中奖后正常到期
+ok 54 - TOP07 未中奖不得推进奖品有效期，中奖后正常到期
+  ---
+  duration_ms: 0.062166
+  type: 'test'
+  ...
+1..54
+# tests 54
+# suites 0
+# pass 54
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 42.547375

@@ -1,0 +1,2751 @@
+{
+  "apps": [
+    "Yalla",
+    "YoHo",
+    "MICO",
+    "TopTop",
+    "WePlay-AR",
+    "Spoon",
+    "WePlay-JP",
+    "WePlay-KR",
+    "Mirrativ",
+    "Pococha",
+    "17LIVE",
+    "SUGO",
+    "Yalla-Parchis",
+    "Falla",
+    "HeeSay"
+  ],
+  "source_files": 537,
+  "source_bytes": 122084209,
+  "included": [
+    {
+      "path": "ToResearch/Yalla/APK-INFO.md",
+      "bytes": 1415,
+      "sha256": "f1eeec6dd56df715143322db05293b4e3567103dc8be27c0568bfa2554f41f1a"
+    },
+    {
+      "path": "ToResearch/Yalla/APK-INFO.json",
+      "bytes": 2466,
+      "sha256": "deaa9d3c3f72cc86257ca835ed4d57a8a6143dc63e587682986b27926eb783b0"
+    },
+    {
+      "path": "ToResearch/Yalla/ANALYSIS.md",
+      "bytes": 7379,
+      "sha256": "16222b08db2c0385be0ec001e0aae1a3c6c90bcf2cca10c2ff92329c53946f97"
+    },
+    {
+      "path": "ToResearch/Yalla/FEATURE-CATALOG.md",
+      "bytes": 23023,
+      "sha256": "da9fa9553a01f83c890c09109d311a374a7fe6152c96d5c615cf7a8e12ba0500"
+    },
+    {
+      "path": "ToResearch/Yalla/RECONSTRUCTION.md",
+      "bytes": 3413,
+      "sha256": "814699a1b489e615c9ddc8283017f1ec6e3e844f1365ad67a8b4fa2177ae793b"
+    },
+    {
+      "path": "ToResearch/Yalla/mirror-provenance.json",
+      "bytes": 4749,
+      "sha256": "d615df7eb3d1ed4b8ba7384b7c5d60cd95c87abea72f1cc13374b8761aa09188"
+    },
+    {
+      "path": "ToResearch/Yalla/analysis/demo-test-results-final.txt",
+      "bytes": 22,
+      "sha256": "afce23488b54e8cb51ff9a3345f1d190cddfd83b35c85d8942ddfa6f47ad1f41"
+    },
+    {
+      "path": "ToResearch/Yalla/analysis/extract-static-evidence.py",
+      "bytes": 2644,
+      "sha256": "8f24efee90f4f3163089337965e1921e526105fa9ec8c319a2992d9b4572a8cf"
+    },
+    {
+      "path": "ToResearch/Yalla/analysis/feature-catalog.json",
+      "bytes": 28730,
+      "sha256": "4b10801245293189a543211d1a6cf3962e7a7cb7d127ba665d53622b77f9b05d"
+    },
+    {
+      "path": "ToResearch/Yalla/analysis/feature-expanded-resources.json",
+      "bytes": 832762,
+      "sha256": "e193c71a77b4d789abc0eec005b202aec9881346b26e99e038d8b7db74e7e5e3"
+    },
+    {
+      "path": "ToResearch/Yalla/analysis/feature-ledger.json",
+      "bytes": 6849,
+      "sha256": "aae49dc2f4a27ae65e52f5effc7d148baee3c4633145b82192fe548342d7045c"
+    },
+    {
+      "path": "ToResearch/Yalla/analysis/feature-resource-extraction.py",
+      "bytes": 1773,
+      "sha256": "4dffbd50831495a46f78e0601de7febb05e93abfaec2308f82a7cb7dc156a0e5"
+    },
+    {
+      "path": "ToResearch/Yalla/analysis/rea-feature-class.json",
+      "bytes": 1285,
+      "sha256": "81aa5cbc25dd88dd6d328cc96759e8cf38b10fc2861f15f8950cf275a5c0765a"
+    },
+    {
+      "path": "ToResearch/Yalla/analysis/rea-feature-search.json",
+      "bytes": 2070456,
+      "sha256": "538188c3a56569fd514557e90ec1283bcf9910a91a0e624ec9fac9ff6b28c1e1"
+    },
+    {
+      "path": "ToResearch/Yalla/analysis/rea-initial-error.json",
+      "bytes": 16136,
+      "sha256": "131eb7babb20dba2e3fe38699f7b4a251cb8b7f511db0f4b45fd559212895c46"
+    },
+    {
+      "path": "ToResearch/Yalla/analysis/rea-package.json",
+      "bytes": 146322,
+      "sha256": "ee5aa0f0255f7c7d502c4d87970543fd8349fa7f267484dbbb9b0e545c7218cd"
+    },
+    {
+      "path": "ToResearch/Yalla/analysis/reconstruction-coverage.json",
+      "bytes": 30494,
+      "sha256": "6f445e7b6949ee8ad64d8eb8f21cfa45445a373ed62739fa5c42ed01ea46f552"
+    },
+    {
+      "path": "ToResearch/Yalla/demo/features.mjs",
+      "bytes": 47079,
+      "sha256": "f429f3bbdd80c37c5b64af2e433a33f379dad3afa664c247e172a04667458443"
+    },
+    {
+      "path": "ToResearch/Yalla/demo/features.test.mjs",
+      "bytes": 17689,
+      "sha256": "7d0bafa54c5575215b0810e73a5d594985e8ca14ed8dd3212c62dc2194c04259"
+    },
+    {
+      "path": "ToResearch/Yalla/demo/index.html",
+      "bytes": 3922,
+      "sha256": "83b4335a63ac014670c9edbe6e04bb21ad957972fa5a1efed60b9c7987351a72"
+    },
+    {
+      "path": "ToResearch/Yalla/demo/legacy/EVIDENCE.html",
+      "bytes": 7754,
+      "sha256": "663f527d1dcab127498eae9a88ff8278f91185d7cf6fbb3f14edf2704fcc2717"
+    },
+    {
+      "path": "ToResearch/Yalla/demo/legacy/README.md",
+      "bytes": 728,
+      "sha256": "7e61a0cf2a66dea3052b23b7820ef214cbabe0b76347946a60f83c0d18770fc1"
+    },
+    {
+      "path": "ToResearch/Yalla/demo/legacy/browser-check.json",
+      "bytes": 1010,
+      "sha256": "6df4c14f3aa891527a69ce4e27a744b49c40e50e6b727b213bf8d07073c1a50d"
+    },
+    {
+      "path": "ToResearch/Yalla/demo/legacy/index.html",
+      "bytes": 1034,
+      "sha256": "84d7cdd96d482c4384672b3f1cf0f380cbf7870f0490afaf92ec3ecdd2470f57"
+    },
+    {
+      "path": "ToResearch/Yalla/demo/legacy/model.mjs",
+      "bytes": 1793,
+      "sha256": "b3c9c7e83652e0803d0ef40a44e6887c9bd88888fb72b1f2f02a6a8f692da3a1"
+    },
+    {
+      "path": "ToResearch/Yalla/demo/legacy/model.test.mjs",
+      "bytes": 498,
+      "sha256": "8f5edc8ed3dc40e095e4f12c51f7a77204e417c710bed3e99d2fe1f378c88997"
+    },
+    {
+      "path": "ToResearch/Yalla/demo/legacy/ui.mjs",
+      "bytes": 2193,
+      "sha256": "381c8558860e747700e1d49f5c42cb5f23e5c04f35217ed8e8c5e21eb764ae70"
+    },
+    {
+      "path": "ToResearch/Yalla/demo/modules.json",
+      "bytes": 13706,
+      "sha256": "6dee6d4e2ffe5ffa633070e32eb77ffd1eb1ae99a2a672416c648c9766473df7"
+    },
+    {
+      "path": "ToResearch/Yalla/demo/test-results.txt",
+      "bytes": 7138,
+      "sha256": "ecea351d84f0ff2381e2126329ecf038a508ded0b90f3d5523a59e55e40b4a93"
+    },
+    {
+      "path": "ToResearch/Yalla/demo/ui.mjs",
+      "bytes": 8256,
+      "sha256": "9a2e3cffa34b392b1e11432bea2c2bd141e0ea944bd05255c28f4a546596bf88"
+    },
+    {
+      "path": "ToResearch/Yalla/demo/verification.json",
+      "bytes": 19643,
+      "sha256": "2031ac86554afac259a5305aef2ac40950683c1b47d069ad9e0a4a93cd58bdfb"
+    },
+    {
+      "path": "ToResearch/YoHo/APK-INFO.md",
+      "bytes": 1112,
+      "sha256": "bb81c09d83bf873c271cca5486ab00223671d911ad7a9ae995fd53d1bd63dcd6"
+    },
+    {
+      "path": "ToResearch/YoHo/APK-INFO.json",
+      "bytes": 1737,
+      "sha256": "a530a36df60ed482fd3fe310fecebc697688da83c85f0498b00387ba0ece03a0"
+    },
+    {
+      "path": "ToResearch/YoHo/ANALYSIS.md",
+      "bytes": 8437,
+      "sha256": "484e5c4a5c91941d32d9ae4e1179bab426f2b1f3fec356674931dc2101792c4b"
+    },
+    {
+      "path": "ToResearch/YoHo/FEATURE-CATALOG.md",
+      "bytes": 23755,
+      "sha256": "b49bee2909e2e763bbb13228e1d093160233d4c3df601fe564738e3490e5b38d"
+    },
+    {
+      "path": "ToResearch/YoHo/RECONSTRUCTION.md",
+      "bytes": 2821,
+      "sha256": "c45b37774a95d45cfba99dfd7e700f1df13cbb617ef579a5cdac62c01014ead3"
+    },
+    {
+      "path": "ToResearch/YoHo/mirror-provenance.json",
+      "bytes": 5894,
+      "sha256": "f25f300083140c943d395d35c57fcfa3d2c46ec9b003b58cca61183d221d157d"
+    },
+    {
+      "path": "ToResearch/YoHo/download-provenance.json",
+      "bytes": 675,
+      "sha256": "d26b0119bc6d5a0a835456fead7a098da96c3164f1ec37ec34bb98ecb39ca555"
+    },
+    {
+      "path": "ToResearch/YoHo/analysis/demo-test-results-final.txt",
+      "bytes": 22,
+      "sha256": "afce23488b54e8cb51ff9a3345f1d190cddfd83b35c85d8942ddfa6f47ad1f41"
+    },
+    {
+      "path": "ToResearch/YoHo/analysis/extract-static-evidence.py",
+      "bytes": 2644,
+      "sha256": "8f24efee90f4f3163089337965e1921e526105fa9ec8c319a2992d9b4572a8cf"
+    },
+    {
+      "path": "ToResearch/YoHo/analysis/feature-catalog.json",
+      "bytes": 30961,
+      "sha256": "c967c0c4b76caedc64580213d2125fa18d54b3c3df01de4bb44288735b4f972c"
+    },
+    {
+      "path": "ToResearch/YoHo/analysis/feature-expanded-resources.json",
+      "bytes": 1024120,
+      "sha256": "f836f3767b62d32d12828779f1e560a6ccf75eeab72ca18147ae3368dfee7a4f"
+    },
+    {
+      "path": "ToResearch/YoHo/analysis/feature-ledger.json",
+      "bytes": 10049,
+      "sha256": "972700203e193945875b322fc5d0a19a3f7f3f199748fd7ec404c50d51e8cb62"
+    },
+    {
+      "path": "ToResearch/YoHo/analysis/feature-resource-extraction.py",
+      "bytes": 1763,
+      "sha256": "9d4f972c38936fb73e9de0a44f28497aa3145bd317ddbf529ad5b2f12138d041"
+    },
+    {
+      "path": "ToResearch/YoHo/analysis/rea-feature-class.json",
+      "bytes": 1265,
+      "sha256": "7b1277b0dd3cbeec1a593de07b4d62a906ff545499cd5aeed3764f0f9bc2ac41"
+    },
+    {
+      "path": "ToResearch/YoHo/analysis/rea-feature-search.json",
+      "bytes": 1994633,
+      "sha256": "727c493dc770c36da565e9942e2d1bec09fb86f6d846c7b473169ebd17bb6bae"
+    },
+    {
+      "path": "ToResearch/YoHo/analysis/rea-initial-error.json",
+      "bytes": 16116,
+      "sha256": "aa3a97f3b52a9a96e7dc13a51810282157708aef6eafd385ef47e96c6f644b2d"
+    },
+    {
+      "path": "ToResearch/YoHo/analysis/rea-package.json",
+      "bytes": 183164,
+      "sha256": "ffcdf0d9bb5775c5b9e6223d2ccebf817bedb4148c0c141f0267be92c437600f"
+    },
+    {
+      "path": "ToResearch/YoHo/analysis/reconstruction-coverage.json",
+      "bytes": 32592,
+      "sha256": "387cab1ca738b0736a77f7279568b4704356f9c3837bbf5a2ba3489df20ecc6e"
+    },
+    {
+      "path": "ToResearch/YoHo/demo/features.mjs",
+      "bytes": 50762,
+      "sha256": "201d393eab7490c62ba99f083dfa43a67e5f0aefa5835890d514a7c1b8c24eb1"
+    },
+    {
+      "path": "ToResearch/YoHo/demo/features.test.mjs",
+      "bytes": 15950,
+      "sha256": "b0cc1b359fc10b07107a28bb8a315a97107b0560a896075028329361afe7e6ef"
+    },
+    {
+      "path": "ToResearch/YoHo/demo/index.html",
+      "bytes": 3920,
+      "sha256": "8b96a31657246cd7d58f6edc3bd342bebfe17cc293f3900d14b9bfebe9991654"
+    },
+    {
+      "path": "ToResearch/YoHo/demo/legacy/EVIDENCE.html",
+      "bytes": 8826,
+      "sha256": "b4eafa0fac5e781a6a17f646d1475e58073222f823db3b337cbf879816ecbed0"
+    },
+    {
+      "path": "ToResearch/YoHo/demo/legacy/README.md",
+      "bytes": 725,
+      "sha256": "dfd596fa11480cec5c6982b254720b0e7fb91af3f0e04754e9b3f07becd58490"
+    },
+    {
+      "path": "ToResearch/YoHo/demo/legacy/browser-check.json",
+      "bytes": 954,
+      "sha256": "c833b47229c18c8196e45fb864921cccff1fcd24bcd2de5fbb00a356e76b8370"
+    },
+    {
+      "path": "ToResearch/YoHo/demo/legacy/index.html",
+      "bytes": 1033,
+      "sha256": "cea0e947eb68bc5198ead91a79247f37883e79ba12cbc19212913837d562a9e0"
+    },
+    {
+      "path": "ToResearch/YoHo/demo/legacy/model.mjs",
+      "bytes": 1607,
+      "sha256": "b5dfb87e5b9025e18b7e64bca978770ae312cbd856073da9e1e25757e2436892"
+    },
+    {
+      "path": "ToResearch/YoHo/demo/legacy/model.test.mjs",
+      "bytes": 471,
+      "sha256": "c7c5f984fd27b48c11ecf90c9f3f971b346416e2540d6eacf9ddb12c651c84ac"
+    },
+    {
+      "path": "ToResearch/YoHo/demo/legacy/ui.mjs",
+      "bytes": 2193,
+      "sha256": "381c8558860e747700e1d49f5c42cb5f23e5c04f35217ed8e8c5e21eb764ae70"
+    },
+    {
+      "path": "ToResearch/YoHo/demo/modules.json",
+      "bytes": 13748,
+      "sha256": "e6408b309a2288f5099e4412cbd863535f0dc3b48abe04f3ec72e8e300ea03d6"
+    },
+    {
+      "path": "ToResearch/YoHo/demo/test-results.txt",
+      "bytes": 5942,
+      "sha256": "77b2341e10ab6c4a39618aacabe8b3da6033f75d75d752b1d7d38f84d417a599"
+    },
+    {
+      "path": "ToResearch/YoHo/demo/ui.mjs",
+      "bytes": 8256,
+      "sha256": "9a2e3cffa34b392b1e11432bea2c2bd141e0ea944bd05255c28f4a546596bf88"
+    },
+    {
+      "path": "ToResearch/YoHo/demo/verification.json",
+      "bytes": 20610,
+      "sha256": "253c6eddffee3878d030773e05637cf2c34a947e44166cc5621de1a734b0d329"
+    },
+    {
+      "path": "ToResearch/MICO/APK-INFO.md",
+      "bytes": 1397,
+      "sha256": "10a1d88568ca3b748716f97a4a63f0224bafd3b47379c4162b2232b858345624"
+    },
+    {
+      "path": "ToResearch/MICO/APK-INFO.json",
+      "bytes": 2461,
+      "sha256": "b149748e05c0a06a19816cb01ef37ae6292c88435c2f97048fdf48f207669609"
+    },
+    {
+      "path": "ToResearch/MICO/ANALYSIS.md",
+      "bytes": 8432,
+      "sha256": "78d403f007641f30cf3517808c067435d01e2818d794d9c78f96cbbfb293d427"
+    },
+    {
+      "path": "ToResearch/MICO/FEATURE-CATALOG.md",
+      "bytes": 18454,
+      "sha256": "7bbc5c046e1b00da7e870dca91a523417de057bfa888c79a34b366aaa064214b"
+    },
+    {
+      "path": "ToResearch/MICO/RECONSTRUCTION.md",
+      "bytes": 3111,
+      "sha256": "1f015f4ac5f86a6abc4feb7925d40d9bf996b1b1eaec31ef29e8dc89c9bc3292"
+    },
+    {
+      "path": "ToResearch/MICO/mirror-provenance.json",
+      "bytes": 4866,
+      "sha256": "69aeefe1de4f6b2e8c0fee3643c290ea74ccc9d156939c7f2206351ec50ce6e7"
+    },
+    {
+      "path": "ToResearch/MICO/analysis/demo-test-results-final.txt",
+      "bytes": 22,
+      "sha256": "afce23488b54e8cb51ff9a3345f1d190cddfd83b35c85d8942ddfa6f47ad1f41"
+    },
+    {
+      "path": "ToResearch/MICO/analysis/extract-static-evidence.py",
+      "bytes": 2644,
+      "sha256": "8f24efee90f4f3163089337965e1921e526105fa9ec8c319a2992d9b4572a8cf"
+    },
+    {
+      "path": "ToResearch/MICO/analysis/feature-catalog.json",
+      "bytes": 23759,
+      "sha256": "b489916e753cb6ac1e436229856c91522445232d32135be7f69109d0ed8d1669"
+    },
+    {
+      "path": "ToResearch/MICO/analysis/feature-expanded-resources.json",
+      "bytes": 1567639,
+      "sha256": "ad2ce8154599f037f1843b8b92512c498df023918bc82ef443246e3b88fa9f32"
+    },
+    {
+      "path": "ToResearch/MICO/analysis/feature-ledger.json",
+      "bytes": 11689,
+      "sha256": "b73b53b86ad340cb3e1d504ba7917894d696fa12c0d62e2d667f3b3b642b9fad"
+    },
+    {
+      "path": "ToResearch/MICO/analysis/feature-resource-extraction.py",
+      "bytes": 1764,
+      "sha256": "2a43024646a9f30fc0f6763b046571abd115ba60a8e4e89b18561cee48c6bd97"
+    },
+    {
+      "path": "ToResearch/MICO/analysis/rea-feature-class.json",
+      "bytes": 1267,
+      "sha256": "1b696f08fbd85257c1ad38bd403ed80058b38e592e29e621b67c1265debaa822"
+    },
+    {
+      "path": "ToResearch/MICO/analysis/rea-feature-search.json",
+      "bytes": 2139727,
+      "sha256": "d7e6af8b6a2d5f058cd14b23c5170eeefcddf3f0e945bf1e6d025c815812ae85"
+    },
+    {
+      "path": "ToResearch/MICO/analysis/rea-package.json",
+      "bytes": 247324,
+      "sha256": "c771978d92ee3ffc7febafe509b4d4e5dc33e5bebb830b627abc7305b64c642d"
+    },
+    {
+      "path": "ToResearch/MICO/analysis/reconstruction-coverage.json",
+      "bytes": 25506,
+      "sha256": "ca9ee408292bcc8603b003a602ffede9ee7acb3b889ab89e04317d1c16e12acf"
+    },
+    {
+      "path": "ToResearch/MICO/demo/features.mjs",
+      "bytes": 41344,
+      "sha256": "80b12de46628e5463b79a75806fbff6c543be5b92cb2b2da854507bd829720ea"
+    },
+    {
+      "path": "ToResearch/MICO/demo/features.test.mjs",
+      "bytes": 15275,
+      "sha256": "8d731292a8f3ce66a06c9ed21319230b5ba008868819c1743b5a67b2c8d18ab2"
+    },
+    {
+      "path": "ToResearch/MICO/demo/index.html",
+      "bytes": 3920,
+      "sha256": "19e04f6aeab55ed7d8d03487d55854e3e52b154441bc241b675085f387d2e433"
+    },
+    {
+      "path": "ToResearch/MICO/demo/legacy/EVIDENCE.html",
+      "bytes": 8806,
+      "sha256": "29fc83816949701e7bf413fc620ce9130e8649def14d1afa8b6aab585336f36a"
+    },
+    {
+      "path": "ToResearch/MICO/demo/legacy/README.md",
+      "bytes": 725,
+      "sha256": "da0333c4cc67045e0796a12a0c73a58290459e0bbe4e5937be99b2643eb7636a"
+    },
+    {
+      "path": "ToResearch/MICO/demo/legacy/browser-check.json",
+      "bytes": 1221,
+      "sha256": "5bc38cd21ca6a55ffa71b1006ad54d9abd99f36250aabd18cffac67365ae18a1"
+    },
+    {
+      "path": "ToResearch/MICO/demo/legacy/index.html",
+      "bytes": 1033,
+      "sha256": "0965958eb4502a80aa349489e33e12ed74c8481dbaf8c88c4dd49d94c652fc98"
+    },
+    {
+      "path": "ToResearch/MICO/demo/legacy/model.mjs",
+      "bytes": 1876,
+      "sha256": "6d4ff27459830acab57295a4ec2a3d200c4fd51e70a2966079883db33d16b63e"
+    },
+    {
+      "path": "ToResearch/MICO/demo/legacy/model.test.mjs",
+      "bytes": 586,
+      "sha256": "1ae298f3141d88ddcb247dda83b6055a6bc04d38fd16b5d5c85a5d7c0ccf99d2"
+    },
+    {
+      "path": "ToResearch/MICO/demo/legacy/ui.mjs",
+      "bytes": 2193,
+      "sha256": "381c8558860e747700e1d49f5c42cb5f23e5c04f35217ed8e8c5e21eb764ae70"
+    },
+    {
+      "path": "ToResearch/MICO/demo/modules.json",
+      "bytes": 13245,
+      "sha256": "037ca6dd81a15f7d357a843da217becf2c2e6ac1f31d91ea7852ad0b83269820"
+    },
+    {
+      "path": "ToResearch/MICO/demo/test-results.txt",
+      "bytes": 5579,
+      "sha256": "a3c1471d24df3f2b0f7a05cbfc42aa333e0b15bb46364fdffb23a82c89e7eb2f"
+    },
+    {
+      "path": "ToResearch/MICO/demo/ui.mjs",
+      "bytes": 8256,
+      "sha256": "9a2e3cffa34b392b1e11432bea2c2bd141e0ea944bd05255c28f4a546596bf88"
+    },
+    {
+      "path": "ToResearch/MICO/demo/verification.json",
+      "bytes": 19752,
+      "sha256": "d9be89b370adb6580ca023ef40620700c43f8e36867d4e66158ba4022e4abd82"
+    },
+    {
+      "path": "ToResearch/TopTop/APK-INFO.md",
+      "bytes": 1460,
+      "sha256": "1453ff36c1162754ac1a6b7f774ee6b49605906f9c44e93a93c1cbef8662400b"
+    },
+    {
+      "path": "ToResearch/TopTop/APK-INFO.json",
+      "bytes": 2614,
+      "sha256": "8e56ab0d32b1bb38d1118e3e05d9196828e98ba8a3b7817e8582a29e7889f7ca"
+    },
+    {
+      "path": "ToResearch/TopTop/ANALYSIS.md",
+      "bytes": 7019,
+      "sha256": "84e11da6efef94d5c744296a404b981c431996e958f3ef8b8a9522d372c578ed"
+    },
+    {
+      "path": "ToResearch/TopTop/FEATURE-CATALOG.md",
+      "bytes": 21693,
+      "sha256": "65c810f974b2237bd96f4c8b709f88c823cd9f8a1c9cb9adb3dc64540001c992"
+    },
+    {
+      "path": "ToResearch/TopTop/RECONSTRUCTION.md",
+      "bytes": 3378,
+      "sha256": "ae770a099ce0b0abc7af67d3f5ad6e3cc48381cd592e16aa7b7587a2c60b777e"
+    },
+    {
+      "path": "ToResearch/TopTop/mirror-provenance.json",
+      "bytes": 5133,
+      "sha256": "f1ec7d29392e0d6b814c3484a094cabb2d1dc1fd181d51df9713cb692d7e6f7c"
+    },
+    {
+      "path": "ToResearch/TopTop/analysis/demo-test-results-final.txt",
+      "bytes": 22,
+      "sha256": "afce23488b54e8cb51ff9a3345f1d190cddfd83b35c85d8942ddfa6f47ad1f41"
+    },
+    {
+      "path": "ToResearch/TopTop/analysis/extract-static-evidence.py",
+      "bytes": 2644,
+      "sha256": "8f24efee90f4f3163089337965e1921e526105fa9ec8c319a2992d9b4572a8cf"
+    },
+    {
+      "path": "ToResearch/TopTop/analysis/feature-catalog.json",
+      "bytes": 28006,
+      "sha256": "e235b7bc412a71cbd3eede49de4a04081427ddd065a6d2a16d05562c7a75421c"
+    },
+    {
+      "path": "ToResearch/TopTop/analysis/feature-expanded-resources.json",
+      "bytes": 1072996,
+      "sha256": "348c063bf8d234aa1752ba405161b47c373ebeb26912a0dcaabf471170414777"
+    },
+    {
+      "path": "ToResearch/TopTop/analysis/feature-ledger.json",
+      "bytes": 7079,
+      "sha256": "3eb97eea9e7a97ca20e1ebffdb26324faa783a916e18ebb801c38dc7669550f9"
+    },
+    {
+      "path": "ToResearch/TopTop/analysis/feature-resource-extraction.py",
+      "bytes": 1782,
+      "sha256": "4103910b55515d9b04714efb4f2b4396ca71cd2b4764d74f3655e989823b8a28"
+    },
+    {
+      "path": "ToResearch/TopTop/analysis/rea-feature-class.json",
+      "bytes": 1303,
+      "sha256": "c322c592a6fde2027e4fe5a252adc15eaab2a5e26f9f938ab5f242c00466e4d0"
+    },
+    {
+      "path": "ToResearch/TopTop/analysis/rea-feature-search.json",
+      "bytes": 1439762,
+      "sha256": "11f90831e0e8d5065c82dc361e4d191b54002dffdae35ec060c039c527479b44"
+    },
+    {
+      "path": "ToResearch/TopTop/analysis/rea-package.json",
+      "bytes": 264410,
+      "sha256": "ca5ceae6c2037412133ceb9f77686c63823976abeb43cb244ad47dced173df0f"
+    },
+    {
+      "path": "ToResearch/TopTop/analysis/reconstruction-coverage.json",
+      "bytes": 30105,
+      "sha256": "b675e0ab15150c533979fd9bfa94a88979401a6beb629ab81155d0335c4232e0"
+    },
+    {
+      "path": "ToResearch/TopTop/demo/features.mjs",
+      "bytes": 48931,
+      "sha256": "2d0177519a5e49db77648033066972d49cd675801b10d70dfb5784a5db41128e"
+    },
+    {
+      "path": "ToResearch/TopTop/demo/features.test.mjs",
+      "bytes": 19250,
+      "sha256": "42af5f255150461bb93b69ed407bef248e2c60dd5502226a30a86e1f87c81379"
+    },
+    {
+      "path": "ToResearch/TopTop/demo/index.html",
+      "bytes": 3924,
+      "sha256": "de89493f62102cfe066ebb0543c4158180d250d259515b97bd27c22a2c93e78a"
+    },
+    {
+      "path": "ToResearch/TopTop/demo/legacy/EVIDENCE.html",
+      "bytes": 7395,
+      "sha256": "361fd2e217f8615f3df17241e1899bab9e63fae02f692a003608a8d04900b29c"
+    },
+    {
+      "path": "ToResearch/TopTop/demo/legacy/README.md",
+      "bytes": 731,
+      "sha256": "d21604066a1a7241ced88ec5cd0df4745c3d1e7f7cdd58612a58cb4cca1cc0d9"
+    },
+    {
+      "path": "ToResearch/TopTop/demo/legacy/browser-check.json",
+      "bytes": 1092,
+      "sha256": "333465e9a4b4ba777fc60b747cb69b75189189cb0b73c16f56a276720e3ffc6c"
+    },
+    {
+      "path": "ToResearch/TopTop/demo/legacy/index.html",
+      "bytes": 1035,
+      "sha256": "20bc6cb205146191e2412be6ea7dbb5671bf35d72d81238f9298afa8c0f85e0a"
+    },
+    {
+      "path": "ToResearch/TopTop/demo/legacy/model.mjs",
+      "bytes": 1850,
+      "sha256": "6b9a2bf1dbfd06c30cabe989ec7a978110a013ff799588d81ace4f6e82631d95"
+    },
+    {
+      "path": "ToResearch/TopTop/demo/legacy/model.test.mjs",
+      "bytes": 586,
+      "sha256": "9bb7895338465121f086ac3a5ef52ca08e413d73eefa6cee0b7bfbd3002dc1fe"
+    },
+    {
+      "path": "ToResearch/TopTop/demo/legacy/ui.mjs",
+      "bytes": 2193,
+      "sha256": "381c8558860e747700e1d49f5c42cb5f23e5c04f35217ed8e8c5e21eb764ae70"
+    },
+    {
+      "path": "ToResearch/TopTop/demo/modules.json",
+      "bytes": 15386,
+      "sha256": "0a54af31d73ea99def2f19fbd0ae3d62ed833c8d60523a10742fc7e4f3f4c2a3"
+    },
+    {
+      "path": "ToResearch/TopTop/demo/test-results.txt",
+      "bytes": 6906,
+      "sha256": "5cf6a945a1cc5d0e3961704131c5dae38f465529432b5115f2952ca2572cce49"
+    },
+    {
+      "path": "ToResearch/TopTop/demo/ui.mjs",
+      "bytes": 8256,
+      "sha256": "9a2e3cffa34b392b1e11432bea2c2bd141e0ea944bd05255c28f4a546596bf88"
+    },
+    {
+      "path": "ToResearch/TopTop/demo/verification.json",
+      "bytes": 22886,
+      "sha256": "2e5fa11c3ea8d0f04efb6e304b46a0f5c254576254bca83e3442598f09ebf005"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/APK-INFO.md",
+      "bytes": 2080,
+      "sha256": "2642f69144b93fbbe13721fa03d1a65e91c2ea669c4796d4974389c33cd6ab51"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/APK-INFO.json",
+      "bytes": 4772,
+      "sha256": "a25c036caa0ac98857c6d68c78f2bfdf23c4de499ae860073628556cb5296755"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/ANALYSIS.md",
+      "bytes": 7007,
+      "sha256": "ef85029687f023eda0b7edaba2c77ac71b2d6b64ef15d384591c13d31b61a6da"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/FEATURE-CATALOG.md",
+      "bytes": 28909,
+      "sha256": "9ce7bce70e3ecf64d2005268c86436ecddcc59075e50f72295a09af8966333df"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/RECONSTRUCTION.md",
+      "bytes": 3076,
+      "sha256": "e8823c27c9ba5a297aa9045e1a143178446fcf3c9b999fb8f073ccfaf125c219"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/mirror-provenance.json",
+      "bytes": 4867,
+      "sha256": "d133fdacecd2d1ec7ae9d579682cf7aae9e3cd311db6f9c799fb59f3011f34fe"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/analysis/browser-verification.json",
+      "bytes": 609,
+      "sha256": "d6258492cfbcda29cbee4c28206b86f44d95abb90677f3510c141dcc591698fa"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/analysis/demo-test-results-final.txt",
+      "bytes": 100,
+      "sha256": "858a53a212a7c65c8f8be523217f534a8132bbf06b94418de5b3c29fff8404c6"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/analysis/evidence-index.json",
+      "bytes": 999,
+      "sha256": "8eccdd697d0a845b48819dd69e0caab561a333a7a014aee51258aad69fecebb5"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/analysis/feature-catalog.json",
+      "bytes": 47610,
+      "sha256": "1bbe2a624c9761b0e5b9835b631d047bfc07d5edab4f4d4ce546d7b0cea69cc3"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/analysis/feature-ledger.json",
+      "bytes": 9159,
+      "sha256": "7e45e09f5c6caaf5fac30a898801ac3273ee31b8071472170aff9e624b257c48"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/analysis/inspect-feature-catalog-resources.py",
+      "bytes": 3508,
+      "sha256": "8eb0418818292f6ac66ee9c0dc7fc31f9e34c3f074a36d5201fac57327aa4909"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/analysis/inspect-package-static.py",
+      "bytes": 3757,
+      "sha256": "f8dc1ffa0024f3c9c7dbb6750a4eddc07f43f8ca9d92a30140f9b6a4af3a544f"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/analysis/inspect-resource-rules.py",
+      "bytes": 3359,
+      "sha256": "2aebc953ae5af3dd7962265adcd6a30f9060b3b1c3c67b1c512cd4865d7404bd"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/analysis/packaged-database.json",
+      "bytes": 8512,
+      "sha256": "d52d4b53cae961edddf0998ee027b92309c74a4f37ed38870ab83e3b13fc75fa"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/analysis/rea-package.json",
+      "bytes": 239957,
+      "sha256": "4d04e5485b283660942f7fd0a5d2d367d19ec8020a7597df1bd8baf4ea7d43c6"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/analysis/rea-spy-search.json",
+      "bytes": 683834,
+      "sha256": "306dad3eb22347f6b8268459de2388ee186635ae8306fa27155ad8f83287b509"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/analysis/rea-spy-social-class.json",
+      "bytes": 5031,
+      "sha256": "9288ed529cd6b57b27b760b1e1831e1da157beb06454c37b1024b317de5f2131"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/analysis/reconstruction-coverage.json",
+      "bytes": 67018,
+      "sha256": "36002ecf48255c17c2a9a7ef01a8a41136de68f2bbc11ed3f72b6426b53af452"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/analysis/resource-catalog.json",
+      "bytes": 10007324,
+      "sha256": "38a0fd9fc8de54e96134b3039bfa74ccb70527e35a3097e2e242e5aec7df6f7b"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/analysis/resource-rules.json",
+      "bytes": 397492,
+      "sha256": "a0029d6a2808037bd7f2f8e750cecb3e51c1c6678f7bfe7c66f1e57ffecc8a98"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/demo/README.md",
+      "bytes": 513,
+      "sha256": "16450a06da9ddb4c9d61127314fea5574a5c924e35d52338369c5085c9d90bf1"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/demo/features.test.mjs",
+      "bytes": 14125,
+      "sha256": "776e69fcb2ae7b57bd09f972d4ccd9d7c47316318b05ba5aa256e971b66b9c1a"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/demo/index.html",
+      "bytes": 3883,
+      "sha256": "f05b7c8f4bb37c495a85985b0ca5cb66eb3f354d7afec7bdd986434ec3e5ab5c"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/demo/legacy/README.md",
+      "bytes": 775,
+      "sha256": "1bce293c6f469dbb02905f666e518a77d95c587a6aa5e95d8770b21782fa299f"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/demo/legacy/app.mjs",
+      "bytes": 9572,
+      "sha256": "8cc92a7e859a66900150edfe5ddaf917ee83b7aa2f3130b0b1a467f2a975368d"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/demo/legacy/index.html",
+      "bytes": 1402,
+      "sha256": "5f167c3da541738a92e179323410ff36a4e732535c5a5f07cba8d1cf4ca3de27"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/demo/legacy/model.mjs",
+      "bytes": 1956,
+      "sha256": "bb7d3ee9ed3b5cae57810ee7427e7d8280b5686e9ef77ec6a1d5ee05638de0ac"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/demo/legacy/package.json",
+      "bytes": 121,
+      "sha256": "fde598308b5d0cca46006257a6c583f570fbf45f57cbd83cfd3658b520201b64"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/demo/legacy/style.css",
+      "bytes": 2720,
+      "sha256": "42867467e93403040a024b478b9374c984bd29ccc184727c01535b5f05da0177"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/demo/legacy/test.mjs",
+      "bytes": 814,
+      "sha256": "ef7dbd2dfb312b9ace231eb95bf85a8d59b85de5cc323c6920249fab46bb4a2a"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/demo/model.mjs",
+      "bytes": 62552,
+      "sha256": "b660e936535e11c1bca56b929a561f087eaa7a59f27a9604b1cbef07e9836e6d"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/demo/modules.json",
+      "bytes": 25815,
+      "sha256": "8fd53c9e3c7548fe0734e469657ea04d605f821f6f74123574029e960436e980"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/demo/test-results.txt",
+      "bytes": 11309,
+      "sha256": "b5d39d914356e48a119e9ca24860095095ce6704938fb9fcb27eaa9625f62bbc"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/demo/ui.mjs",
+      "bytes": 11741,
+      "sha256": "5a7a50b82ac4f6cc252016cc674ed92ba304b9fa7759265fff5ff88362724226"
+    },
+    {
+      "path": "ToResearch/WePlay-AR/demo/verification.json",
+      "bytes": 36352,
+      "sha256": "2e220da0cf592a3baa98615243c7ae7d46dd618380a0fed2c59ce51c015cef1c"
+    },
+    {
+      "path": "ToResearch/Spoon/APK-INFO.md",
+      "bytes": 1402,
+      "sha256": "8a9800417137025a7cfad1cd9f86fa791fabc94e907d1e4ba3c54931277f152c"
+    },
+    {
+      "path": "ToResearch/Spoon/APK-INFO.json",
+      "bytes": 2422,
+      "sha256": "7a75a1a1c92ae913c64f129a2317a57c30b649fe7c309a9994886ee89b2b5e8e"
+    },
+    {
+      "path": "ToResearch/Spoon/ANALYSIS.md",
+      "bytes": 8807,
+      "sha256": "bc2ddabba0d02122aa1fb9a9fecad243ca74c6a3205d9bbc7f5508bf8784d92b"
+    },
+    {
+      "path": "ToResearch/Spoon/FEATURE-CATALOG.md",
+      "bytes": 14137,
+      "sha256": "669ad99887a0ff917ca0e65a0ee7a06ea05d40e176e22223a51cd0796c887668"
+    },
+    {
+      "path": "ToResearch/Spoon/RECONSTRUCTION.md",
+      "bytes": 1424,
+      "sha256": "0cd8860b516b90e3de7612e5c5cfd7d5ffddf712d4a9c59929e528144ea6193a"
+    },
+    {
+      "path": "ToResearch/Spoon/mirror-provenance.json",
+      "bytes": 3253,
+      "sha256": "c41736ad63592d3155ebaf06bc93cd81d455ee700b9ea173d43b48fb8b0a0211"
+    },
+    {
+      "path": "ToResearch/Spoon/analysis/browser-verification.json",
+      "bytes": 469,
+      "sha256": "9c1349a29b51bed630d5d9d5628973c13e4374fbb2ec82f3afacf5e4d63311bf"
+    },
+    {
+      "path": "ToResearch/Spoon/analysis/demo-test-results-final.txt",
+      "bytes": 71,
+      "sha256": "eb356a71b76f007c0070a01dcf51aed479b3619d2be9ad98d4a983724a06e31f"
+    },
+    {
+      "path": "ToResearch/Spoon/analysis/demo-test-results.txt",
+      "bytes": 71,
+      "sha256": "eb356a71b76f007c0070a01dcf51aed479b3619d2be9ad98d4a983724a06e31f"
+    },
+    {
+      "path": "ToResearch/Spoon/analysis/feature-catalog.json",
+      "bytes": 16402,
+      "sha256": "772ef8025bc9edfdaf7e4f0802041c8c7b344a5eb35ac17928d8a9fadc734ad9"
+    },
+    {
+      "path": "ToResearch/Spoon/analysis/feature-excerpts.json",
+      "bytes": 4782,
+      "sha256": "348f3d7970d0ed8cef56be67586bf3c4197ec553096d81e49c1a44acd747e468"
+    },
+    {
+      "path": "ToResearch/Spoon/analysis/feature-ledger.json",
+      "bytes": 1956,
+      "sha256": "909b9bfb93e2c8ab9303005fa70fbadc0bcb7677b1d40283219b958a67b5d663"
+    },
+    {
+      "path": "ToResearch/Spoon/analysis/feature-resource-rules.json",
+      "bytes": 602574,
+      "sha256": "558cde775a18a9c6b6add14c6142fe505d4fc5fc7b8f2aff8e929b9e2c5baf3e"
+    },
+    {
+      "path": "ToResearch/Spoon/analysis/package-string-evidence.json",
+      "bytes": 2701299,
+      "sha256": "2c85b3018414ed4d99fbc5ce522a6b2da3efb18da6ec8c89d769901e97eb9511"
+    },
+    {
+      "path": "ToResearch/Spoon/analysis/rea-luckybox-info.json",
+      "bytes": 8922,
+      "sha256": "ccc3ffc5b6cecce5e2cf8c95ae8e0cdbe014f5087e24d6bc1142db16909bb49f"
+    },
+    {
+      "path": "ToResearch/Spoon/analysis/rea-luckybox-tostring.json",
+      "bytes": 7307,
+      "sha256": "4d0575ee10475aae18dacfba7b656d777d3c6902ceb44d72922d47e70b6abe20"
+    },
+    {
+      "path": "ToResearch/Spoon/analysis/rea-package-blocked.json",
+      "bytes": 16124,
+      "sha256": "10ff5dc03090ce64aaccab98ee3554a506b2efa05c8171a621e50f97d3ecab0f"
+    },
+    {
+      "path": "ToResearch/Spoon/analysis/rea-package.json",
+      "bytes": 141056,
+      "sha256": "e30d0b9690da535f420664f4320511c06fc266f18634ddf54f7ccb343bd90b43"
+    },
+    {
+      "path": "ToResearch/Spoon/analysis/reconstruction-coverage.json",
+      "bytes": 22363,
+      "sha256": "f97b4ee7a19ddd48c03be7958c1e4697c09a2af6fd6fb76106663a94e501d631"
+    },
+    {
+      "path": "ToResearch/Spoon/analysis/resource-evidence.json",
+      "bytes": 164323,
+      "sha256": "2e003333a100fc2f644caaa0d0e8843a760aec34ec47a92ef23c390d84fe732c"
+    },
+    {
+      "path": "ToResearch/Spoon/demo/features.test.mjs",
+      "bytes": 5342,
+      "sha256": "fad89fe6937261c2913f622ce854c49f00d2cb2ff141fcc3b04ce3dd56c51598"
+    },
+    {
+      "path": "ToResearch/Spoon/demo/index.html",
+      "bytes": 3210,
+      "sha256": "d89c599133404bb092c9c81b0e3eb7d885e56762041ecb6895bcde790cd85be4"
+    },
+    {
+      "path": "ToResearch/Spoon/demo/legacy/README.md",
+      "bytes": 542,
+      "sha256": "cb33de7c99eeb417ad170973f7bc5a1c7c2b1e64c4b444d9f346452a0a5c7a4a"
+    },
+    {
+      "path": "ToResearch/Spoon/demo/legacy/index.html",
+      "bytes": 3083,
+      "sha256": "118f5445a2a54017fedc7cc96e9f10f41b2e79233fe85bc2f63924a2fc48be06"
+    },
+    {
+      "path": "ToResearch/Spoon/demo/legacy/model.mjs",
+      "bytes": 1264,
+      "sha256": "4a2fa9f9b16f27e28943d63d7733501ace0465be6fb51569c608e70b92295e53"
+    },
+    {
+      "path": "ToResearch/Spoon/demo/legacy/model.test.mjs",
+      "bytes": 688,
+      "sha256": "245b1b47d9a08c25d97ba22da9d9924675d85e30bd419628387cf7e602de3d81"
+    },
+    {
+      "path": "ToResearch/Spoon/demo/model.mjs",
+      "bytes": 20849,
+      "sha256": "e49479799e8a325c03b82b20fd97e8cad9549df574fc650151ef40dc92a662dc"
+    },
+    {
+      "path": "ToResearch/Spoon/demo/modules.json",
+      "bytes": 10917,
+      "sha256": "f7920e7e91041865dc5eb26eb2f7ace6577d9f572f934ed284f8541d3fc37178"
+    },
+    {
+      "path": "ToResearch/Spoon/demo/test-results.txt",
+      "bytes": 3501,
+      "sha256": "8e658bacd3b8b86fa0b0a77010009a82ee1d10b4cafb96baeb7914501277ba1d"
+    },
+    {
+      "path": "ToResearch/Spoon/demo/ui.mjs",
+      "bytes": 4472,
+      "sha256": "092f425fa8169555e9cbd61cbf590f96b9504238548eff9c1d26d69b0e83df51"
+    },
+    {
+      "path": "ToResearch/Spoon/demo/verification.json",
+      "bytes": 17431,
+      "sha256": "67ead7c169ab72f2b5817ad8ed91f5b0c1c2b46a4db9f938821bfa26c8eb40c3"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/APK-INFO.md",
+      "bytes": 1558,
+      "sha256": "b592d4f60e27f068033fba4e53472fe53bae484289f16119df5df091702af315"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/APK-INFO.json",
+      "bytes": 2904,
+      "sha256": "2d176962e2c6da281259100321dd530d2ed3b038ab51d945e2c81e0e15842c12"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/ANALYSIS.md",
+      "bytes": 10404,
+      "sha256": "24bb55c6fce1aeca37866b51b16c304581a5f4a802a99c55d1f0997ccde4aef8"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/FEATURE-CATALOG.md",
+      "bytes": 35071,
+      "sha256": "f7c2e870cc556227401b69a0ca2a3cba83584f338fc9347d9565f4c7cbbda243"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/RECONSTRUCTION.md",
+      "bytes": 3076,
+      "sha256": "6b2038ace46246f6299c829f8e93122bb6bad383dc98ab46174ad87f6cc6d23e"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/mirror-provenance.json",
+      "bytes": 4560,
+      "sha256": "12073612d4a2bfab410fe1d0a94ac3a30f2c0fe3659040add05c00cd3633a0c5"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/browser-verification.json",
+      "bytes": 609,
+      "sha256": "9258f9ea5c4d56ea484bf35e3eaba98b8ea23b1765a4b28b23551f604b44b985"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/demo-test-results-final.txt",
+      "bytes": 90,
+      "sha256": "c254847b9b0356fbb85d2181e60ed5eb598da005180ec35b74c873b4c97cebc5"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/evidence-index.json",
+      "bytes": 7046,
+      "sha256": "07461948d88759c2f70031c4f1f125b6ee4a9ba25d4b3a2e21e4de16cc388aeb"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/feature-catalog.json",
+      "bytes": 57296,
+      "sha256": "58082054f7cff3fdedb2168a40dfa722b09c71f8b630885c838ddc0065c901f6"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/feature-ledger.json",
+      "bytes": 26563,
+      "sha256": "ca183358ed3e9fb2a8b71a1298747117d0107eb4fa457c7709b7eac3f8cff88a"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/inspect-feature-catalog-resources.py",
+      "bytes": 3508,
+      "sha256": "8eb0418818292f6ac66ee9c0dc7fc31f9e34c3f074a36d5201fac57327aa4909"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/inspect-package-static.py",
+      "bytes": 3757,
+      "sha256": "f8dc1ffa0024f3c9c7dbb6750a4eddc07f43f8ca9d92a30140f9b6a4af3a544f"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/inspect-resource-rules.py",
+      "bytes": 3359,
+      "sha256": "2aebc953ae5af3dd7962265adcd6a30f9060b3b1c3c67b1c512cd4865d7404bd"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/packaged-database.json",
+      "bytes": 10058,
+      "sha256": "8fa39a8d5b8d9b6e5dc32f54fe1ceba94a82e288ccf1c1c7919a63de43b0a964"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/rea-catalog-family-box-class.json",
+      "bytes": 8582,
+      "sha256": "f92a66c1bf88db711c1f4145c09cefa52bb9ee0f9a9cdf20c5ff3420c6d0e3bf"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/rea-catalog-family-box-policy.json",
+      "bytes": 7415,
+      "sha256": "01baa37d87a2a9ee43616e2db0eed5bcac4bb2bb898e3f5d8755dea762b62391"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/rea-draw-chain-class.json",
+      "bytes": 2346,
+      "sha256": "f801b6062e3076178517dfcab4855e71a47cb136556a3c71695171e036aa35db"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/rea-package-sandbox-error.json",
+      "bytes": 16150,
+      "sha256": "2461ef92f263071fe91792f93582bff957a7dee5a93979900a47c126fa22907d"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/rea-package.json",
+      "bytes": 326660,
+      "sha256": "ae245b65bdc4e62334875539557d016d425a7dcbc13c285925e014e1c3137723"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/rea-relay-decode-method.json",
+      "bytes": 10521,
+      "sha256": "2f5252aa9a163f4d0611c9ed8a7dd3e5d6cfde0008ed5d7160ca719a5a4ab613"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/rea-relay-search.json",
+      "bytes": 1800676,
+      "sha256": "7ae0da4247830a88fb8a2d857dcb393d15c153c908046e0b09765b3a4efcc463"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/rea-relay-state-class.json",
+      "bytes": 8688,
+      "sha256": "d0ee89d06a4397350990f620c338d9bc3027ff4d01a73dc5e7672ceadaee2d9c"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/reconstruction-coverage.json",
+      "bytes": 81563,
+      "sha256": "f223505b4bfc00be7e97276da1e01c4b974a17538e86d1c3fc3f12e473386802"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/resource-catalog.json",
+      "bytes": 7132825,
+      "sha256": "a343b09c08172a0897d2ab4f4dec92ce85eae089884f0d3a774e6538488140cf"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/analysis/resource-rules.json",
+      "bytes": 591245,
+      "sha256": "a41a1c8eb55f3d6b2d1dd428fad7105e390125a7b7ea9274b004dfe2cf05b33e"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/demo/README.md",
+      "bytes": 513,
+      "sha256": "19795ca34194625bbf3113ca31d71784a18f88c6257cc05fab2a4fa04fb9daed"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/demo/features.test.mjs",
+      "bytes": 14134,
+      "sha256": "a6c641924ad7e406bd080a2d3beaedf55bf440de5ff6f5b7354875fe9cb2a188"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/demo/index.html",
+      "bytes": 3883,
+      "sha256": "f7977fe50db7180a1a60dec9c57dff8ca1f5933b94bfd07457a790a3fe047e9e"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/demo/legacy/README.md",
+      "bytes": 719,
+      "sha256": "781b1fa814b5379556b6c41cb9b7ee774e559e5286852195847e2eb7edd5b24b"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/demo/legacy/app.mjs",
+      "bytes": 9218,
+      "sha256": "9870af0439456f01cd8d02174e5cd8b0dace7ad273c347e87ef936f592eebdc6"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/demo/legacy/index.html",
+      "bytes": 1349,
+      "sha256": "d54357f98ef8ab278a6674d44829dcfc1a0516785617010db09d38379ee08b2d"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/demo/legacy/model.mjs",
+      "bytes": 1521,
+      "sha256": "fb264a2eb226f6d8499d75e58a6ee81de6346698812fab3be65c6dda23f85ddc"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/demo/legacy/package.json",
+      "bytes": 121,
+      "sha256": "fde598308b5d0cca46006257a6c583f570fbf45f57cbd83cfd3658b520201b64"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/demo/legacy/style.css",
+      "bytes": 2720,
+      "sha256": "42867467e93403040a024b478b9374c984bd29ccc184727c01535b5f05da0177"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/demo/legacy/test.mjs",
+      "bytes": 908,
+      "sha256": "ab6c08e413be6afcd3fbe4085d5fd572021ac1aa29f010221408191a2ab6644a"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/demo/model.mjs",
+      "bytes": 77515,
+      "sha256": "9e6fb68ce9f1359e5166535ee589143e64a2da07ba0f386fa5f4769cf849baac"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/demo/modules.json",
+      "bytes": 33515,
+      "sha256": "08b2d77e919b3101e3fcac0144810dfbf755bee4445a4ab9c8bd44151b72faf4"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/demo/test-results.txt",
+      "bytes": 13554,
+      "sha256": "24eac0fd396c431ae71263b9b046843b5f6ad00985be1fc04d2d39e8dc6eb4ca"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/demo/ui.mjs",
+      "bytes": 11741,
+      "sha256": "5a7a50b82ac4f6cc252016cc674ed92ba304b9fa7759265fff5ff88362724226"
+    },
+    {
+      "path": "ToResearch/WePlay-JP/demo/verification.json",
+      "bytes": 48260,
+      "sha256": "439c2bfe134a3b0727218cc7f6614a467f279b952b0af8eae02e03a81fbd1fc1"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/APK-INFO.md",
+      "bytes": 1558,
+      "sha256": "e28723ca1cf0e3bc804f28beb82a1642a6f911454cb0ce101345145f94e96e3a"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/APK-INFO.json",
+      "bytes": 2905,
+      "sha256": "0dda556eceb50cb0848f70e13b301b382503e48f98bad8f8a6bc8e32dbaaadc1"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/ANALYSIS.md",
+      "bytes": 9637,
+      "sha256": "d82bb5d958f5b775bd51b0d01d756499b5552f41b7a02d9aa50c18f20ddb81d5"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/FEATURE-CATALOG.md",
+      "bytes": 34424,
+      "sha256": "eb8361d47ffb2db0497ff8eb7c50a974db9c27284dc6b0a5ca39d03af685b6cf"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/RECONSTRUCTION.md",
+      "bytes": 3076,
+      "sha256": "f94d1ccd2171fc250c595b03a3ab9aa1cd10351c61a250b5597934efc05f14ca"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/mirror-provenance.json",
+      "bytes": 4568,
+      "sha256": "931b906a37fd3ea4ae06677aa84c0b5deb6fe2b5e7fc1c4a93401cf1434b36a6"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/analysis/browser-verification.json",
+      "bytes": 609,
+      "sha256": "8b59b02480808a7e28ad9592accb881297367706dd9bde374bd2637528e8c89a"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/analysis/demo-test-results-final.txt",
+      "bytes": 95,
+      "sha256": "0979d83923442bbc755f91ea689d7b5a5a9c5d53387fd97656bff1d2549d9c1b"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/analysis/evidence-index.json",
+      "bytes": 1003,
+      "sha256": "b4a4665a6ce16458b7201a2417bf0692d933f5b5c6f0d79cc57a065f52b2218c"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/analysis/feature-catalog.json",
+      "bytes": 56537,
+      "sha256": "c043a159c7eae335d49ff53049d41d4cf3b3cbf6ebcc0a04c3ce75097c23df18"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/analysis/feature-ledger.json",
+      "bytes": 19688,
+      "sha256": "2d65c5fe90b2e48372c4c163f331bd5c48883a9528542eda3c5890c7ea14baa6"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/analysis/inspect-feature-catalog-resources.py",
+      "bytes": 3508,
+      "sha256": "8eb0418818292f6ac66ee9c0dc7fc31f9e34c3f074a36d5201fac57327aa4909"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/analysis/inspect-package-static.py",
+      "bytes": 3757,
+      "sha256": "f8dc1ffa0024f3c9c7dbb6750a4eddc07f43f8ca9d92a30140f9b6a4af3a544f"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/analysis/inspect-resource-rules.py",
+      "bytes": 3359,
+      "sha256": "2aebc953ae5af3dd7962265adcd6a30f9060b3b1c3c67b1c512cd4865d7404bd"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/analysis/packaged-database.json",
+      "bytes": 10058,
+      "sha256": "8fa39a8d5b8d9b6e5dc32f54fe1ceba94a82e288ccf1c1c7919a63de43b0a964"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/analysis/rea-mic-exit-method.json",
+      "bytes": 15455,
+      "sha256": "b1e14ffcb20285f6a79e88a15e2a2560e41b469e50847c898a4c6503335b6721"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/analysis/rea-mic-state-class.json",
+      "bytes": 24294,
+      "sha256": "05bbd4a5ce87a61ce75f58e7254c99c2ebe3546a51397e2605e97691ab35fd14"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/analysis/rea-package.json",
+      "bytes": 324960,
+      "sha256": "7de71a3f6fe8002d98d6af150c544b1b298695fd5f255759313d60faaf15f3b0"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/analysis/reconstruction-coverage.json",
+      "bytes": 80705,
+      "sha256": "7663dafd6c417c63ba0ab1c1de86991cfc117c54b4d80a6c05f070beeeca85a4"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/analysis/resource-catalog.json",
+      "bytes": 7186794,
+      "sha256": "b1c0e2d1614f68799f4522ece64f949d264bb12b59a87cf77ad21411314b7f1d"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/analysis/resource-rules.json",
+      "bytes": 596650,
+      "sha256": "a3de6a37f6a134db635489ff47b919c17b06072407862bdf448336685116ca93"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/demo/README.md",
+      "bytes": 513,
+      "sha256": "a28798a414f9524c7e91130ac15dad079a6975120c3043046fac3870ca5d0657"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/demo/features.test.mjs",
+      "bytes": 14134,
+      "sha256": "a6c641924ad7e406bd080a2d3beaedf55bf440de5ff6f5b7354875fe9cb2a188"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/demo/index.html",
+      "bytes": 3883,
+      "sha256": "b059ffd31412a90ce2aecb0f297a6748f453c409b6fd7d7a81dc8e5a78208c6f"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/demo/legacy/README.md",
+      "bytes": 766,
+      "sha256": "215d18f1da9abd24a0754d12081bce225c775695d0cc5cc5cc811589dd01c3c9"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/demo/legacy/app.mjs",
+      "bytes": 9183,
+      "sha256": "74113d6d60cab487a15d2d24bfd4740ddc713c1de02199985fb0e53f2dcb5364"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/demo/legacy/index.html",
+      "bytes": 1388,
+      "sha256": "225c5c991ed9b47277c5040ae8f3f0a3a053c13b01d37083a2be0355b90272b8"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/demo/legacy/model.mjs",
+      "bytes": 1484,
+      "sha256": "7652ca50c393cbf178bf555922bc68743c9a70b26b8a0184b9c4f16fa954d6a3"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/demo/legacy/package.json",
+      "bytes": 121,
+      "sha256": "fde598308b5d0cca46006257a6c583f570fbf45f57cbd83cfd3658b520201b64"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/demo/legacy/style.css",
+      "bytes": 2720,
+      "sha256": "42867467e93403040a024b478b9374c984bd29ccc184727c01535b5f05da0177"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/demo/legacy/test.mjs",
+      "bytes": 876,
+      "sha256": "81c1f38e9ce4001a3d2e9ea1877ff6fc483a41d92cda38951f7430c5b9ee4e6f"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/demo/model.mjs",
+      "bytes": 76791,
+      "sha256": "5e338aab17fdfa84c32ace3eef3e88950a8f1900dc748a7ed67647f24351d97e"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/demo/modules.json",
+      "bytes": 33530,
+      "sha256": "b84dd4067f0e0f5c101d7e1791e1be578625dfaf04d18b4ff7b4744e5f29a2f8"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/demo/test-results.txt",
+      "bytes": 13556,
+      "sha256": "ce90317846f86bc491394ad8b5f819b9465c60b7b91d69c78f38bf1308ad28d0"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/demo/ui.mjs",
+      "bytes": 11741,
+      "sha256": "5a7a50b82ac4f6cc252016cc674ed92ba304b9fa7759265fff5ff88362724226"
+    },
+    {
+      "path": "ToResearch/WePlay-KR/demo/verification.json",
+      "bytes": 48260,
+      "sha256": "3e54a5a64a19fce8069d142101c02a9462fb7126ceed1461e4b23bbfc9992aa9"
+    },
+    {
+      "path": "ToResearch/Mirrativ/APK-INFO.md",
+      "bytes": 1543,
+      "sha256": "2dc1d8fef7339060a2b5ae296c4f0949bb8655e63e456884032f258899515309"
+    },
+    {
+      "path": "ToResearch/Mirrativ/APK-INFO.json",
+      "bytes": 2930,
+      "sha256": "e08fd45fe88e633a5fa12b37ec419be726018794237f5c60226ccc2d450c7433"
+    },
+    {
+      "path": "ToResearch/Mirrativ/ANALYSIS.md",
+      "bytes": 9025,
+      "sha256": "6582856d39dc19e526975c0e36c3102f996ffe422494c564cb659321059ad0b6"
+    },
+    {
+      "path": "ToResearch/Mirrativ/FEATURE-CATALOG.md",
+      "bytes": 13098,
+      "sha256": "ee0f0b9cbbe6fb76f6a4605f1977269013d725398686869c20700de290049815"
+    },
+    {
+      "path": "ToResearch/Mirrativ/RECONSTRUCTION.md",
+      "bytes": 1430,
+      "sha256": "6f809be48f8b400ee4aa8b362c6c15526afe41f8ac6bf16a721d7efd40a644c5"
+    },
+    {
+      "path": "ToResearch/Mirrativ/mirror-provenance.json",
+      "bytes": 3562,
+      "sha256": "ebda009a44a7fc7c1b768e0cb1a0bd36640f87b62d9dc7050892a2d382597850"
+    },
+    {
+      "path": "ToResearch/Mirrativ/analysis/browser-verification.json",
+      "bytes": 522,
+      "sha256": "9adaadf60c99a05980c7de0f0a60fa996571d847555c211a20b92f51c5e5956c"
+    },
+    {
+      "path": "ToResearch/Mirrativ/analysis/demo-test-results-final.txt",
+      "bytes": 74,
+      "sha256": "692aa8a22dea25d29bfb8915c8622ddbf3cf3596157d81004a05e9879dde2130"
+    },
+    {
+      "path": "ToResearch/Mirrativ/analysis/demo-test-results.txt",
+      "bytes": 74,
+      "sha256": "692aa8a22dea25d29bfb8915c8622ddbf3cf3596157d81004a05e9879dde2130"
+    },
+    {
+      "path": "ToResearch/Mirrativ/analysis/feature-catalog.json",
+      "bytes": 16069,
+      "sha256": "d3765fe13fbada91f984df443324ba760e7ff5b461bddacc18c817a8faf113c5"
+    },
+    {
+      "path": "ToResearch/Mirrativ/analysis/feature-excerpts.json",
+      "bytes": 5507,
+      "sha256": "0ac4168897d814b040bc9b718fcbdbda5dc0ed898e6c8f934530f30cc84cdc02"
+    },
+    {
+      "path": "ToResearch/Mirrativ/analysis/feature-ledger.json",
+      "bytes": 2021,
+      "sha256": "d0cd77402c2c0f50b34bb213c9a673785a3977573b8e83d2a787d4a5df19110a"
+    },
+    {
+      "path": "ToResearch/Mirrativ/analysis/feature-resource-rules.json",
+      "bytes": 738401,
+      "sha256": "e65fde650baad982fd95f64429f6e739dfbb3bd8dfe0d74bf5a2e94736bb2bd2"
+    },
+    {
+      "path": "ToResearch/Mirrativ/analysis/package-string-evidence.json",
+      "bytes": 1233378,
+      "sha256": "e276dcca61abeda113d620f0cfd6be4031548427501e0dd1445e474634c44abe"
+    },
+    {
+      "path": "ToResearch/Mirrativ/analysis/rea-livegame-mission.json",
+      "bytes": 10745,
+      "sha256": "a81c4c7060d653f41c0d2865bfff361c40ef6dd2be93beed3bf562ecc7479ab5"
+    },
+    {
+      "path": "ToResearch/Mirrativ/analysis/rea-package.json",
+      "bytes": 198897,
+      "sha256": "82329b14ba8f1504afb31b6abb3db6fdd6a98f876e7645222f494c689f2fa07c"
+    },
+    {
+      "path": "ToResearch/Mirrativ/analysis/reconstruction-coverage.json",
+      "bytes": 21537,
+      "sha256": "9c27a396c2480617e544f85083c62cb9a25a18f347ae9555e04ef7daf63a35e2"
+    },
+    {
+      "path": "ToResearch/Mirrativ/analysis/resource-evidence.json",
+      "bytes": 345303,
+      "sha256": "4301f30dd168b00e03c04e25a987f79921aa615a2c43aedf2c3cbb2fdd41ec39"
+    },
+    {
+      "path": "ToResearch/Mirrativ/demo/features.test.mjs",
+      "bytes": 4617,
+      "sha256": "e52785731865864705e20586c39e38b79d8e1c46d3bdeb9532a2bf5fbf76c0a5"
+    },
+    {
+      "path": "ToResearch/Mirrativ/demo/index.html",
+      "bytes": 3213,
+      "sha256": "1b98a61553b5654bc65981bc5a49564dfaafa42c7ed8161fa167be962da9c6ea"
+    },
+    {
+      "path": "ToResearch/Mirrativ/demo/legacy/README.md",
+      "bytes": 545,
+      "sha256": "a0ac846615df79439c5c4a86e3fd6ca47a5d2acf65119da90202169e7826b631"
+    },
+    {
+      "path": "ToResearch/Mirrativ/demo/legacy/index.html",
+      "bytes": 3121,
+      "sha256": "1a036517aacc72593b2819e5ea5d221c30a74a67c44e3b43a26ec20dc212e6b7"
+    },
+    {
+      "path": "ToResearch/Mirrativ/demo/legacy/model.mjs",
+      "bytes": 1725,
+      "sha256": "9a7b9f974cea26acb440e6194afd5252b1a29e3ea3f361481e79d5cbf52c6ffd"
+    },
+    {
+      "path": "ToResearch/Mirrativ/demo/legacy/model.test.mjs",
+      "bytes": 793,
+      "sha256": "0cca6626d3378dec02b18d17f4e6561ec1a596f5ebd31b3a3d2d9faaaa782a31"
+    },
+    {
+      "path": "ToResearch/Mirrativ/demo/model.mjs",
+      "bytes": 19706,
+      "sha256": "11675566ac67d4cf4579796b0ff54b8729c2a058f1b49b63cf5995bd3986c5e6"
+    },
+    {
+      "path": "ToResearch/Mirrativ/demo/modules.json",
+      "bytes": 11747,
+      "sha256": "77778423d697e13fb0817dd903240a307474dae33096fcb9e0a367425fb668f8"
+    },
+    {
+      "path": "ToResearch/Mirrativ/demo/test-results.txt",
+      "bytes": 3037,
+      "sha256": "1e857816ccbc197b2a7bc4fc3ca5c44d3b6a3400251b5c11de5a485386d089e2"
+    },
+    {
+      "path": "ToResearch/Mirrativ/demo/ui.mjs",
+      "bytes": 5017,
+      "sha256": "238409bc126b10dd60fd497e04bec58412579a39bf02807a3f19fabff1923dd4"
+    },
+    {
+      "path": "ToResearch/Mirrativ/demo/verification.json",
+      "bytes": 19358,
+      "sha256": "989a079f81e610095cbce70a169a8e448e3bfeb7dc99f364252de30b6c6fa380"
+    },
+    {
+      "path": "ToResearch/Pococha/APK-INFO.md",
+      "bytes": 1425,
+      "sha256": "bc747e2b41855f1abdf7712afdaaf0fff1b61ad871b448e16a432512497ed637"
+    },
+    {
+      "path": "ToResearch/Pococha/APK-INFO.json",
+      "bytes": 2484,
+      "sha256": "850c66daa940a81c53b45f6e270bf2e617db53c2076aca99388c761b5dc3f13b"
+    },
+    {
+      "path": "ToResearch/Pococha/ANALYSIS.md",
+      "bytes": 8954,
+      "sha256": "8de1bcbbcc1abc387b4fe6f3b1639a11c70808b994232002b1c8dfd951c319fd"
+    },
+    {
+      "path": "ToResearch/Pococha/FEATURE-CATALOG.md",
+      "bytes": 17654,
+      "sha256": "b3fbca7831b6a58c472be32d126af31a80745bdb8df84dd3a1329099d6c84ad3"
+    },
+    {
+      "path": "ToResearch/Pococha/RECONSTRUCTION.md",
+      "bytes": 2119,
+      "sha256": "ee792e49307e7134fbc6a459f860a1f33297e7457004eee18cc6bc5c6bfb1f27"
+    },
+    {
+      "path": "ToResearch/Pococha/mirror-provenance.json",
+      "bytes": 5908,
+      "sha256": "341252222e9d06f6cb2998aa9baf0682d25ce697855f6de62aae1b9b5d5361be"
+    },
+    {
+      "path": "ToResearch/Pococha/analysis/browser-verification.json",
+      "bytes": 476,
+      "sha256": "1f2f21cb6cdf7de3ad18f07b053a7c2be49147994a9b256b97f60c79ff203324"
+    },
+    {
+      "path": "ToResearch/Pococha/analysis/demo-test-results-final.txt",
+      "bytes": 73,
+      "sha256": "76fc8a290a2748a3ff407f35a4824a07b50f5e1119361e45a3cfae17f85469ce"
+    },
+    {
+      "path": "ToResearch/Pococha/analysis/demo-test-results.txt",
+      "bytes": 73,
+      "sha256": "76fc8a290a2748a3ff407f35a4824a07b50f5e1119361e45a3cfae17f85469ce"
+    },
+    {
+      "path": "ToResearch/Pococha/analysis/feature-catalog.json",
+      "bytes": 20025,
+      "sha256": "b1293f5d0163b38e9963ddf4b5374828b0b578b7b5d4786d7b47319cd4432142"
+    },
+    {
+      "path": "ToResearch/Pococha/analysis/feature-excerpts.json",
+      "bytes": 4885,
+      "sha256": "53ff9ba8de6ded71ede15dbcdb122e6e71bbb7d962939276b796a698c7eda928"
+    },
+    {
+      "path": "ToResearch/Pococha/analysis/feature-ledger.json",
+      "bytes": 2375,
+      "sha256": "36189b6a48ca053b1dff2bce18963b894ac75cb68f2ab3c40d1ea2fb6027ad15"
+    },
+    {
+      "path": "ToResearch/Pococha/analysis/feature-resource-rules.json",
+      "bytes": 1669651,
+      "sha256": "12f098a117052d9b08becaeb6556e6b416e78d48ecbf4fd69572f5e77441fd1c"
+    },
+    {
+      "path": "ToResearch/Pococha/analysis/package-string-evidence.json",
+      "bytes": 1213258,
+      "sha256": "a1813cf14ec1d903e72918cffd16f765f52356bdf856ad6d7fa90d358266253b"
+    },
+    {
+      "path": "ToResearch/Pococha/analysis/rea-package.json",
+      "bytes": 159019,
+      "sha256": "f475ed1de7cb0c674b332b0bfc41a6223979f654a1bafae2cf94448b07db52e0"
+    },
+    {
+      "path": "ToResearch/Pococha/analysis/rea-rank-meter.json",
+      "bytes": 21316,
+      "sha256": "0dfba81f38e7373cc036180c116368d8772dca7d7bb95c1af3ce4b8381e96359"
+    },
+    {
+      "path": "ToResearch/Pococha/analysis/reconstruction-coverage.json",
+      "bytes": 27961,
+      "sha256": "238e18b57f31b6e882f9d0195724fe671d7b326b7254f5ed0d45fd5e4d662e8a"
+    },
+    {
+      "path": "ToResearch/Pococha/analysis/resource-evidence.json",
+      "bytes": 297139,
+      "sha256": "c38e8ffc83fe9d614a02eb85cb64b351196d1ec03d0451999ed00a911ef477f3"
+    },
+    {
+      "path": "ToResearch/Pococha/demo/features.test.mjs",
+      "bytes": 6499,
+      "sha256": "e5a4bf0add677eeaf41e5335ba452b3b74596ef36c12997db5d5a00a0e677fd2"
+    },
+    {
+      "path": "ToResearch/Pococha/demo/index.html",
+      "bytes": 3212,
+      "sha256": "0ce7182fe42a1d78b4966361b3985648b66ff3c6de6f658cedb4e9c4f42b4ea7"
+    },
+    {
+      "path": "ToResearch/Pococha/demo/legacy/README.md",
+      "bytes": 511,
+      "sha256": "4e58b5a25815ac374510d3d030959e6c4ae82f4b4fa7f5567f5249fea9a57d38"
+    },
+    {
+      "path": "ToResearch/Pococha/demo/legacy/index.html",
+      "bytes": 3104,
+      "sha256": "8d37826fdbecde9aa371700ccad5a3385fc6c1e74397474b06f4cfe94e4c7607"
+    },
+    {
+      "path": "ToResearch/Pococha/demo/legacy/model.mjs",
+      "bytes": 1470,
+      "sha256": "5c5f755548d257d2a3d6365d45f8caa8bd530e3a7fe65538c093cadd7ea4a243"
+    },
+    {
+      "path": "ToResearch/Pococha/demo/legacy/model.test.mjs",
+      "bytes": 807,
+      "sha256": "221eb467cb0cc7134ba6df73e7338c2a3ac64d59c6662770cdf5bf464108231d"
+    },
+    {
+      "path": "ToResearch/Pococha/demo/model.mjs",
+      "bytes": 26035,
+      "sha256": "1ca81fab84e25cf25e7ed819f774b8d5a36efe24a9bb1f466693ed69ce0d11e9"
+    },
+    {
+      "path": "ToResearch/Pococha/demo/modules.json",
+      "bytes": 15292,
+      "sha256": "23331b5b6d539d9907a9f0114e301005b62d51542cba4f695301dea4dd9db450"
+    },
+    {
+      "path": "ToResearch/Pococha/demo/test-results.txt",
+      "bytes": 4468,
+      "sha256": "39c8ecef1f0cda692e30f9e15577786159f7716a689451e828048b13492870ba"
+    },
+    {
+      "path": "ToResearch/Pococha/demo/ui.mjs",
+      "bytes": 4514,
+      "sha256": "a7b09213cd30defb9c2449b333638dfd823affab66d337c56ae2693495fdb127"
+    },
+    {
+      "path": "ToResearch/Pococha/demo/verification.json",
+      "bytes": 24266,
+      "sha256": "cf1b1c1b5e1d8de6ce7575fc970b7305bdbb4fdb95f57e373567c525ed26255b"
+    },
+    {
+      "path": "ToResearch/17LIVE/APK-INFO.md",
+      "bytes": 3440,
+      "sha256": "fa8faa935ab91436622934e041365518184d644677879bfdb5662c3fada78794"
+    },
+    {
+      "path": "ToResearch/17LIVE/APK-INFO.json",
+      "bytes": 9747,
+      "sha256": "69a5cf699fb5632e5f595a0b4232759634b3dc6df95f3a2f48503eda6a23c2fd"
+    },
+    {
+      "path": "ToResearch/17LIVE/ANALYSIS.md",
+      "bytes": 8275,
+      "sha256": "a4e4c4899423105af719098919fd7ea6e00bf31d78e9d5adebc7cca9637c79a8"
+    },
+    {
+      "path": "ToResearch/17LIVE/FEATURE-CATALOG.md",
+      "bytes": 18767,
+      "sha256": "0c30535f861ead8502a0299e82053253d6d200b9a10bf9be6c85502239202d8e"
+    },
+    {
+      "path": "ToResearch/17LIVE/RECONSTRUCTION.md",
+      "bytes": 2358,
+      "sha256": "6e89e6b2f20003024c9066ca2546636dd620dd6b5d0fe460f33e887ed8edf411"
+    },
+    {
+      "path": "ToResearch/17LIVE/mirror-provenance.json",
+      "bytes": 6290,
+      "sha256": "31a99e15301a72274f5a6e2c167ca686f7fd8735d9d85a0b70f30a967b2adc43"
+    },
+    {
+      "path": "ToResearch/17LIVE/analysis/browser-verification.json",
+      "bytes": 520,
+      "sha256": "d561464a2503510eb17abc782eedf67485ae6521cd636c8e847a66dff50167b8"
+    },
+    {
+      "path": "ToResearch/17LIVE/analysis/demo-test-results-final.txt",
+      "bytes": 72,
+      "sha256": "325fba83a6bc55eef6be40b48e63e20626f55096257c7cfa45f277c2db35d2a5"
+    },
+    {
+      "path": "ToResearch/17LIVE/analysis/demo-test-results.txt",
+      "bytes": 72,
+      "sha256": "325fba83a6bc55eef6be40b48e63e20626f55096257c7cfa45f277c2db35d2a5"
+    },
+    {
+      "path": "ToResearch/17LIVE/analysis/feature-catalog.json",
+      "bytes": 20713,
+      "sha256": "7de1c933abc7d7c8fde884e48790e37c1699cebe86bcb32633a99a4ed2f73f0f"
+    },
+    {
+      "path": "ToResearch/17LIVE/analysis/feature-excerpts.json",
+      "bytes": 3506,
+      "sha256": "57f7f79557d25d788101902aa2057da879b944544ce587accfd51a9a6fca2816"
+    },
+    {
+      "path": "ToResearch/17LIVE/analysis/feature-ledger.json",
+      "bytes": 2467,
+      "sha256": "7a24798c47ebd6368040d4e55e0b0eda21d1f4e00261b7094eb133a4f79fab12"
+    },
+    {
+      "path": "ToResearch/17LIVE/analysis/feature-resource-rules.json",
+      "bytes": 18686656,
+      "sha256": "582dcd41d9834ff9c615657f1d8ed28fe9769158fd25e3a04192a3319fdeb6c6"
+    },
+    {
+      "path": "ToResearch/17LIVE/analysis/package-string-evidence.json",
+      "bytes": 4590429,
+      "sha256": "0bd2b6e35335310ef6b86e37121731a901856693713e09ed2728c70515e01a7f"
+    },
+    {
+      "path": "ToResearch/17LIVE/analysis/pk-evidence.json",
+      "bytes": 1399705,
+      "sha256": "04449f134c3f370e91b0d41fcac1ec0ad63e79dd02c755cbb8abffca85fb47a4"
+    },
+    {
+      "path": "ToResearch/17LIVE/analysis/rea-package.json",
+      "bytes": 190797,
+      "sha256": "4a55f2d445daaf7de35cf28289037f29dd1679621de2babfbc5866d431310cef"
+    },
+    {
+      "path": "ToResearch/17LIVE/analysis/rea-pk-search.json",
+      "bytes": 2917191,
+      "sha256": "f6c404fd15cfd8d17c2d4b88d8a50a4929137f747e56c77bd9b819ac780707ee"
+    },
+    {
+      "path": "ToResearch/17LIVE/analysis/reconstruction-coverage.json",
+      "bytes": 27845,
+      "sha256": "bd6e75fc566196637b857a4b3ddea633f14523f506e5559466c86bea7f1d1b92"
+    },
+    {
+      "path": "ToResearch/17LIVE/analysis/resource-evidence.json",
+      "bytes": 2431320,
+      "sha256": "3bc1b0fe73576c3d90abf6277b2e77327290cf71d9712aa137eb0894cb7c5c9b"
+    },
+    {
+      "path": "ToResearch/17LIVE/demo/features.test.mjs",
+      "bytes": 6390,
+      "sha256": "5bc25af14ff841237b3228e4a3e986c3b55200301e4ebb47a9c5952556fe54e4"
+    },
+    {
+      "path": "ToResearch/17LIVE/demo/index.html",
+      "bytes": 3211,
+      "sha256": "61ddedf3ec3920547fd4d1423a9b41954088e180a12c8cca235422bbaef997d5"
+    },
+    {
+      "path": "ToResearch/17LIVE/demo/legacy/README.md",
+      "bytes": 490,
+      "sha256": "e7986060a6f2c1dd538e57f32e7b892c3fdd35aa0fe917857f9597270b599653"
+    },
+    {
+      "path": "ToResearch/17LIVE/demo/legacy/index.html",
+      "bytes": 3014,
+      "sha256": "1fc3ba9f6c5a6098b9fec0318beb7105ad1bbb2520fd1bd81f2642d58d5beb7c"
+    },
+    {
+      "path": "ToResearch/17LIVE/demo/legacy/model.mjs",
+      "bytes": 1636,
+      "sha256": "787c3907317a08e3b29636d426e5bdfdb790980ca2a733af27255b9ef2781f8d"
+    },
+    {
+      "path": "ToResearch/17LIVE/demo/legacy/model.test.mjs",
+      "bytes": 824,
+      "sha256": "a93d1cc9c75edc4aff6f0fbdcb8c0c23f266adef7afc5c7e08743d0ea99679a4"
+    },
+    {
+      "path": "ToResearch/17LIVE/demo/model.mjs",
+      "bytes": 27464,
+      "sha256": "cf73c96897d743830334b1e06f9c954d4f3bb5859839f09a18420a8e22c4d819"
+    },
+    {
+      "path": "ToResearch/17LIVE/demo/modules.json",
+      "bytes": 16661,
+      "sha256": "75ceca92c4fac871e468ad9d6f528ce24110fc81189b93165e4c1e99155b4772"
+    },
+    {
+      "path": "ToResearch/17LIVE/demo/test-results.txt",
+      "bytes": 5084,
+      "sha256": "4f481fd9768cd3e9d723f45ed15a7f367eb05967f7485987276b526e1d1583cb"
+    },
+    {
+      "path": "ToResearch/17LIVE/demo/ui.mjs",
+      "bytes": 4472,
+      "sha256": "092f425fa8169555e9cbd61cbf590f96b9504238548eff9c1d26d69b0e83df51"
+    },
+    {
+      "path": "ToResearch/17LIVE/demo/verification.json",
+      "bytes": 26919,
+      "sha256": "3f6485ac585d988d290a41599606d394f6105d466c8b104eb30fd491f0fe4e14"
+    },
+    {
+      "path": "ToResearch/SUGO/APK-INFO.md",
+      "bytes": 1168,
+      "sha256": "69b7a5a84e8972a9af08a8abcae5dbf0dce3ff0f0464be596b7b8e551bc72154"
+    },
+    {
+      "path": "ToResearch/SUGO/APK-INFO.json",
+      "bytes": 1745,
+      "sha256": "ffae10ba6bc389df17d477453e5deaa29c10b79afc8f0b8db5bcc8805a7e31fd"
+    },
+    {
+      "path": "ToResearch/SUGO/ANALYSIS.md",
+      "bytes": 5799,
+      "sha256": "c680670cd198b9ffb5cc0964ac13acb4b24f951dfd2398130c5ca0057b3ef588"
+    },
+    {
+      "path": "ToResearch/SUGO/FEATURE-CATALOG.md",
+      "bytes": 18295,
+      "sha256": "1c30dfb448991141fe6696741ed3b2a8aecf2fba07d4b29af8bf27bc407ef8c6"
+    },
+    {
+      "path": "ToResearch/SUGO/RECONSTRUCTION.md",
+      "bytes": 13767,
+      "sha256": "250dd26c0aaa1674598b99455d87ea7b1ea39bb318072e1a9defc2bbd105511a"
+    },
+    {
+      "path": "ToResearch/SUGO/mirror-provenance.json",
+      "bytes": 5283,
+      "sha256": "22ed7acc309ca4fc84117b777945f7818f4f884799b0a42748262a46de04f9cf"
+    },
+    {
+      "path": "ToResearch/SUGO/download-provenance.json",
+      "bytes": 749,
+      "sha256": "9947c26ff77e835a6f64d0900665f81c3fd0fa4d59e93f7acebd78c6efd2c3df"
+    },
+    {
+      "path": "ToResearch/SUGO/analysis/demo-test-results-final.txt",
+      "bytes": 303,
+      "sha256": "a74d6c467fa29562292aba9de4e98308368ede069cbd9b4d6c7770948c525063"
+    },
+    {
+      "path": "ToResearch/SUGO/analysis/evidence-index.json",
+      "bytes": 1336,
+      "sha256": "1db7e8d89a71418fe2b0f977a5e0920cee0955c5631239ad28683607c320cba5"
+    },
+    {
+      "path": "ToResearch/SUGO/analysis/extract-dex-resource-candidates.py",
+      "bytes": 2584,
+      "sha256": "b6e926a4ef44129ff3c1c638febe38a2ec24ae6891f955faaeeb204a9af43e84"
+    },
+    {
+      "path": "ToResearch/SUGO/analysis/extract-feature-expansion.py",
+      "bytes": 2618,
+      "sha256": "2b963b756621eea168d676991f0477b8f028993d02d8570f554d1d4aee8d7229"
+    },
+    {
+      "path": "ToResearch/SUGO/analysis/feature-catalog.json",
+      "bytes": 21377,
+      "sha256": "f5276a651691eedd4ad83862d1c320a3fd8778ce1c69444bf4317d685618418d"
+    },
+    {
+      "path": "ToResearch/SUGO/analysis/feature-expansion-resources.json",
+      "bytes": 10539423,
+      "sha256": "6a0b2ac3b907eddc719e48b509297d032578d0a878e70cb89e5712e9b757ebeb"
+    },
+    {
+      "path": "ToResearch/SUGO/analysis/feature-ledger.json",
+      "bytes": 3080,
+      "sha256": "fa9fe902a4824a10b4f6f9a85da2514e0f122b133e4949febf466830455aa0c4"
+    },
+    {
+      "path": "ToResearch/SUGO/analysis/output-integrity.json",
+      "bytes": 1787,
+      "sha256": "771b16066108bb8aff98ac88dd57830a8111abb06f7fa564dec38ecce15c4125"
+    },
+    {
+      "path": "ToResearch/SUGO/analysis/rea-micpk-classes.json",
+      "bytes": 1269,
+      "sha256": "529c2b32918b09e92e4e8a2f96cb7ef0f7848d042f4cb9e48ad21e54844b58bc"
+    },
+    {
+      "path": "ToResearch/SUGO/analysis/rea-package.json",
+      "bytes": 233055,
+      "sha256": "aa1133ba9750ea607f5e1e97eea972992428fa4037a0464b5f4bae36aa4236a8"
+    },
+    {
+      "path": "ToResearch/SUGO/analysis/rea-pk-api-class.json",
+      "bytes": 9121,
+      "sha256": "652ddc47ede7948fdedbf99ed4057db5011d8a6d4e0c2aaf34cc62cd3aa19ae8"
+    },
+    {
+      "path": "ToResearch/SUGO/analysis/rea-pk-method.json",
+      "bytes": 8755,
+      "sha256": "330d513e840b86930f70a2801a46e0b2aaabee11757bc6943960495bcb908cd4"
+    },
+    {
+      "path": "ToResearch/SUGO/analysis/reconstruction-coverage.json",
+      "bytes": 34261,
+      "sha256": "ba38d9436b5526ba29660e8f52f05177a1516947fe8f17746660b696e49fb629"
+    },
+    {
+      "path": "ToResearch/SUGO/analysis/selected-feature-resources.json",
+      "bytes": 1939,
+      "sha256": "9576f8a8f8b0d6b16197cd998d9efa0843811210c040e2c813b20c7585bde261"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/README.md",
+      "bytes": 753,
+      "sha256": "4053b5cf111971fb0899c1f3cd63017829d1c558458e00abb036376ff861a9b7"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/app.mjs",
+      "bytes": 11191,
+      "sha256": "55c58cb1ef9abbec9eff62b1546522631736d63cd4ce5f49328354c0fb09ff72"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/features.test.mjs",
+      "bytes": 16290,
+      "sha256": "3af6e30b9ce376aac34db222041cd9e684f941a9a5bac39828c73ec65564ba51"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/index.html",
+      "bytes": 339,
+      "sha256": "e50ec63f4baa9f072db2871e78deac296df426816d441461e955741af8126b3a"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/legacy/README.md",
+      "bytes": 468,
+      "sha256": "b1a1df9d55384db27b1e180c5295de2631ab12d4713cfde4b6a69998a63d76c3"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/legacy/app.mjs",
+      "bytes": 1301,
+      "sha256": "f8068907459b5070de1849dd80e52e592fab4b74d18571acdf77bac6e9f667c9"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/legacy/browser-check.json",
+      "bytes": 285,
+      "sha256": "3a37be656e22e46acbd6f6c46391412794e0cd6e375bb586a2737e066198f5bd"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/legacy/index.html",
+      "bytes": 1050,
+      "sha256": "dd96d662df44089186d09136010a4c24eafcbf572854157dbe9a5b1f76e9eab3"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/legacy/model.mjs",
+      "bytes": 999,
+      "sha256": "f2b433a65211177758295886e106046b05b28b63dcf40996665f25d9d6a8f1c7"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/legacy/model.test.mjs",
+      "bytes": 845,
+      "sha256": "ddbebbb3a508b6dc5938d17b48faf31e73a1f8b0ced9e66269280d16d60a79c5"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/legacy/package.json",
+      "bytes": 66,
+      "sha256": "f91b3b335d35a2881a2847cee2f5568ae80591ee915e26c8cfd9fc5046a32856"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/legacy/style.css",
+      "bytes": 1290,
+      "sha256": "edf407eaddb504e1ad869cf3b53c7daf7ebef74cf6a07d9152ba4ac2ee6367ce"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/legacy/test-results.txt",
+      "bytes": 306,
+      "sha256": "cede0514cd673d4689826d7c07aad3e7a0f79d13424e1d5951abc1d76da98a18"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/model.mjs",
+      "bytes": 28829,
+      "sha256": "0f8b588909eba885d97286af59f54b8ad464bad494a28bbb90c6d1032eec2549"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/modules.json",
+      "bytes": 19996,
+      "sha256": "ea8f06c17167358a0c3d14f0ec0730173e662d43b74a1e2aa9fe676cde7d84ff"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/package.json",
+      "bytes": 86,
+      "sha256": "18d5995fb218921933532eee24f652e8b1fe890a9c763f439b72423adf78216a"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/style.css",
+      "bytes": 2493,
+      "sha256": "f2cc9a8605c24fe9c052560d762f1e34e10107d5aced069ede235f42423f4cb1"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/test-results.txt",
+      "bytes": 7255,
+      "sha256": "641d6af2c028e5bdabfc87f7143216a28cde53b91a27cddc9fb4ddade5e5fb12"
+    },
+    {
+      "path": "ToResearch/SUGO/demo/verification.json",
+      "bytes": 30687,
+      "sha256": "4cedb405d6bbbb5a487bd468223fa406bcc433b37d85b88f11619942eb3f2bdf"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/APK-INFO.md",
+      "bytes": 1381,
+      "sha256": "b3519e158c657ee7652d828773bcb02ac413a337ee7c0f94e1ae052bdd97d7bf"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/APK-INFO.json",
+      "bytes": 2235,
+      "sha256": "efd5c6484423e7f3b79e08d7200bbd883a76badc257884e73de486e6689d67c3"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/ANALYSIS.md",
+      "bytes": 5452,
+      "sha256": "26c22b153586b48f45880fd7f82e561f9e9667cb96a59318c58116ef4fc899b1"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/FEATURE-CATALOG.md",
+      "bytes": 24993,
+      "sha256": "5d80c486e1e2ff9884434ffb4b9c2718dddde91c80e35c312d365e487a4ffaf1"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/RECONSTRUCTION.md",
+      "bytes": 17693,
+      "sha256": "b23e036d107990f2cada77b686c0aff8fc36c45f3a7ffe04a3782f3a41ef58c9"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/mirror-provenance.json",
+      "bytes": 6389,
+      "sha256": "e2bb6ec4cb78ca80ac2001f614b3504a875bdcac258c0a72b8a23eabe14ad88b"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/analysis/demo-test-results-final.txt",
+      "bytes": 326,
+      "sha256": "076643a36f39804a798190a905ecab2edf7064517b0de1aa56fa05ab271e7343"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/analysis/evidence-index.json",
+      "bytes": 347,
+      "sha256": "8c204630fc0f09634c0db1e2676525f927b2450aeb1e183f69e04e967754bb4b"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/analysis/extract-dex-resource-candidates.py",
+      "bytes": 2584,
+      "sha256": "b6e926a4ef44129ff3c1c638febe38a2ec24ae6891f955faaeeb204a9af43e84"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/analysis/extract-feature-expansion.py",
+      "bytes": 2627,
+      "sha256": "a89e07cba2d7de08ce00dab13d57517e1dce698d4d7071c710738a0ab3f14b3e"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/analysis/extract-unity-text.py",
+      "bytes": 1325,
+      "sha256": "54067ca358ce3cc8bb955318bf867d7810163e46bbcdef1636b2d4574f75d8bb"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/analysis/feature-catalog.json",
+      "bytes": 35685,
+      "sha256": "b3101657db261b3b2022813c5642c0a93ecd71600d179a4833741cac314eb3da"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/analysis/feature-expansion-resources.json",
+      "bytes": 1267494,
+      "sha256": "0aaf63c9ffbde7c11b930694e51591c4e4c5e8132c34debf87bf927e711e3609"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/analysis/feature-ledger.json",
+      "bytes": 3061,
+      "sha256": "f20da4554c47d3e5401f123305dbf7bde104fad7daeddcd31049d36542dc4c57"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/analysis/output-integrity.json",
+      "bytes": 1798,
+      "sha256": "42ee2cbd17e7c5af623ec8e2903d5aefaa95644c625c6762fe5d02453ce3b501"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/analysis/rea-package.json",
+      "bytes": 80549,
+      "sha256": "873ef84b719725af61df3ab9e80a78e45e3889d0ea92f65b2a20250f60b3eb93"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/analysis/reconstruction-coverage.json",
+      "bytes": 54606,
+      "sha256": "237e3e89f71d81bd8ea60e4cad01b699d43538ec840ecd8077978b655b19ee07"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/analysis/selected-feature-resources.json",
+      "bytes": 12265,
+      "sha256": "b28f688605e26af814aba72aa4e9ac3245cbf70d07843a69faea7a6d5015a238"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/analysis/unity-localization-values.json",
+      "bytes": 1242377,
+      "sha256": "38c0d7c3f8c69ca0948c4d58c6a234fa88fdb0399755f191231332968376aa29"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/analysis/unity-text-assets.json",
+      "bytes": 866296,
+      "sha256": "e1184d7486fe5c1c3958fb19231d28bcb7b19fbe37f2d1a64996b74e2ae3235e"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/README.md",
+      "bytes": 762,
+      "sha256": "daa734b760d69560da320b0fb310a582e85fb221e49ebddb51da1065b785c8c0"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/app.mjs",
+      "bytes": 11191,
+      "sha256": "55c58cb1ef9abbec9eff62b1546522631736d63cd4ce5f49328354c0fb09ff72"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/features.test.mjs",
+      "bytes": 17438,
+      "sha256": "4af18c34be0a8b3eb25345186f8addca929f0c67a141defb9562ce609e0ccd60"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/index.html",
+      "bytes": 348,
+      "sha256": "de54cb9626a76338350ab184aebcf16b651e72c24d536d93f76c88256c53a671"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/legacy/README.md",
+      "bytes": 477,
+      "sha256": "65594f7b62d7d0b4bcb1c4f80ed1584440eb44f0710f16ae1a116e01cb52a7dd"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/legacy/app.mjs",
+      "bytes": 1942,
+      "sha256": "646d001b1f28fe3ec8e98dfb13a9afec35fd4581fc5e2a0685a2979ab3a7bc7c"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/legacy/browser-check.json",
+      "bytes": 294,
+      "sha256": "52b50eacc65287de0dd970ece0b2af54b5fef1b7599ad1e41ce903ce1fc009bf"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/legacy/index.html",
+      "bytes": 1087,
+      "sha256": "2f277bd24979d1639e1a8a7edeae5d1f18d5d78248ff406841553d1d6e6a1c90"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/legacy/model.mjs",
+      "bytes": 2074,
+      "sha256": "41afc1f892dc9a4dbe8e81f058efc2c01bcad6a62719c5866774be5b0d9bb507"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/legacy/model.test.mjs",
+      "bytes": 929,
+      "sha256": "82c6e30d510a691e0ba3d3ce39e55f4bc50cebaf23ce09c350c04d7c1d521bc1"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/legacy/package.json",
+      "bytes": 66,
+      "sha256": "f91b3b335d35a2881a2847cee2f5568ae80591ee915e26c8cfd9fc5046a32856"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/legacy/style.css",
+      "bytes": 1290,
+      "sha256": "edf407eaddb504e1ad869cf3b53c7daf7ebef74cf6a07d9152ba4ac2ee6367ce"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/legacy/test-results.txt",
+      "bytes": 328,
+      "sha256": "6e63a58088400bc7b54b4aaaa59dbc375244953d0528aa0486f7a531c656fced"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/model.mjs",
+      "bytes": 46952,
+      "sha256": "951191d1b1fa6d0ad29956c2165c10a673037a630200d1f59ac4b5d6fc17c7a6"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/modules.json",
+      "bytes": 27757,
+      "sha256": "c9a73b65ecc5a8bd9215de6d1b77bb313747c45244db9a4d41f9fc25b4c3826e"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/package.json",
+      "bytes": 86,
+      "sha256": "18d5995fb218921933532eee24f652e8b1fe890a9c763f439b72423adf78216a"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/style.css",
+      "bytes": 2493,
+      "sha256": "f2cc9a8605c24fe9c052560d762f1e34e10107d5aced069ede235f42423f4cb1"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/test-results.txt",
+      "bytes": 9665,
+      "sha256": "3b74e968020e343bc74e22afb88731d7bcdf9330b614e3b45319bf01da1e7d11"
+    },
+    {
+      "path": "ToResearch/Yalla-Parchis/demo/verification.json",
+      "bytes": 42180,
+      "sha256": "6a35738cf9d6411274700fb518540d6eef70607adbad2271d105c3a4629e3dbc"
+    },
+    {
+      "path": "ToResearch/Falla/APK-INFO.md",
+      "bytes": 1453,
+      "sha256": "377d9608f1f4b1fe7d2953d631c32dc00b546209eba67ff8250f78e2210ddde3"
+    },
+    {
+      "path": "ToResearch/Falla/APK-INFO.json",
+      "bytes": 2562,
+      "sha256": "6dfbee2ac336fd27b88a51c652befb96c94cad7545534cae194f832f91262779"
+    },
+    {
+      "path": "ToResearch/Falla/ANALYSIS.md",
+      "bytes": 4948,
+      "sha256": "8aa2b5b22ceed6314021842484f4e6c19e63be84282a641b3e32a2acb6ea25b0"
+    },
+    {
+      "path": "ToResearch/Falla/FEATURE-CATALOG.md",
+      "bytes": 19710,
+      "sha256": "a52d2192588fd1acf458362139d2b12a6a0a47d17f4ea7c7a1040c2f5578012c"
+    },
+    {
+      "path": "ToResearch/Falla/RECONSTRUCTION.md",
+      "bytes": 13846,
+      "sha256": "e03364e0080b53a8cc0db38807f710e60cdf4d9b39a35d8ef5ad0414b5954563"
+    },
+    {
+      "path": "ToResearch/Falla/mirror-provenance.json",
+      "bytes": 6077,
+      "sha256": "b29bbe497834ec9338521c5fe8f2c2ae8a1f22e5d74fd450e76d44eea42e119b"
+    },
+    {
+      "path": "ToResearch/Falla/analysis/demo-test-results-final.txt",
+      "bytes": 306,
+      "sha256": "e8e08f18f8ab6c74212a2b90745a2f56f83edca9238dbc75ee5f326498c9ca5f"
+    },
+    {
+      "path": "ToResearch/Falla/analysis/evidence-index.json",
+      "bytes": 1164,
+      "sha256": "a0c155235acdd53c6c746d642589ddd12c1979983705ec847f62811bc361247c"
+    },
+    {
+      "path": "ToResearch/Falla/analysis/extract-dex-resource-candidates.py",
+      "bytes": 2584,
+      "sha256": "b6e926a4ef44129ff3c1c638febe38a2ec24ae6891f955faaeeb204a9af43e84"
+    },
+    {
+      "path": "ToResearch/Falla/analysis/extract-feature-expansion.py",
+      "bytes": 2619,
+      "sha256": "fc69e4ee25bab562992741d06588deb246f1bc9906bab1f7eb6f1323016e0871"
+    },
+    {
+      "path": "ToResearch/Falla/analysis/feature-catalog.json",
+      "bytes": 22154,
+      "sha256": "2d0ed1a6bde125380a618dfe992697ad02529d88d19cb7a3393d248f6eb9278f"
+    },
+    {
+      "path": "ToResearch/Falla/analysis/feature-expansion-resources.json",
+      "bytes": 9569058,
+      "sha256": "13a365b7ca8a97728f6ada0e71949a9066652f3efe3ec766957ad944aff7e0a4"
+    },
+    {
+      "path": "ToResearch/Falla/analysis/feature-ledger.json",
+      "bytes": 2908,
+      "sha256": "e9848c25d32c9c28022dac32b4e6b3b7d720fd8d688db064a3bcbdab8d17b36b"
+    },
+    {
+      "path": "ToResearch/Falla/analysis/gameBannerConfig.json",
+      "bytes": 2350,
+      "sha256": "017e31918ba34992cb9d1d1fa4ef3d61322f126db6adb02a0be4b30b58d2c084"
+    },
+    {
+      "path": "ToResearch/Falla/analysis/gameConfig.json",
+      "bytes": 12161,
+      "sha256": "c46f54bf1e96dec3daff453dc795e9f218d256723f57274cbfb32b8aba9e6478"
+    },
+    {
+      "path": "ToResearch/Falla/analysis/output-integrity.json",
+      "bytes": 1926,
+      "sha256": "f0b70aa47d01699c9db06e56c0ee6e29e1a00edf18e40eb9c52fb392b0cb9d6d"
+    },
+    {
+      "path": "ToResearch/Falla/analysis/rea-ludo-class.json",
+      "bytes": 4403,
+      "sha256": "558174ab867ae4261c5c1883ecd1899e1174ecd2237b673a222d1c0c20c18d22"
+    },
+    {
+      "path": "ToResearch/Falla/analysis/rea-ludo-method.json",
+      "bytes": 30648,
+      "sha256": "01cf2b0d5681660ddf9584035736e964b65e310a57fa844e46b466d4fcc8b1fc"
+    },
+    {
+      "path": "ToResearch/Falla/analysis/rea-package.json",
+      "bytes": 165430,
+      "sha256": "811560ae0ad6dae9ce7e2bea862b555a3d2cc84b803624b966b0960e25fd45e1"
+    },
+    {
+      "path": "ToResearch/Falla/analysis/reconstruction-coverage.json",
+      "bytes": 36417,
+      "sha256": "0e2aad0429d9c4ce8447809f113d4cb47dd4eae35a609bdd968c64ab886974df"
+    },
+    {
+      "path": "ToResearch/Falla/analysis/selected-feature-resources.json",
+      "bytes": 1657,
+      "sha256": "96b87db254718aff1b17ab18e9235e914064892bf94df4e567a06c7460fe6d52"
+    },
+    {
+      "path": "ToResearch/Falla/demo/README.md",
+      "bytes": 754,
+      "sha256": "527ec682bebe319c18e6757c350a330053cdc48891fb9dc658386aba73d61b4f"
+    },
+    {
+      "path": "ToResearch/Falla/demo/app.mjs",
+      "bytes": 11191,
+      "sha256": "55c58cb1ef9abbec9eff62b1546522631736d63cd4ce5f49328354c0fb09ff72"
+    },
+    {
+      "path": "ToResearch/Falla/demo/features.test.mjs",
+      "bytes": 16290,
+      "sha256": "3af6e30b9ce376aac34db222041cd9e684f941a9a5bac39828c73ec65564ba51"
+    },
+    {
+      "path": "ToResearch/Falla/demo/index.html",
+      "bytes": 340,
+      "sha256": "324e3a61451c53ba9359001ff4f5ff3002c5330d8dc5a6a709dcd0180be8cb79"
+    },
+    {
+      "path": "ToResearch/Falla/demo/legacy/README.md",
+      "bytes": 469,
+      "sha256": "1fd839de81e3695d828f45eef4c8b44950e03548cbca7daef1c7c16ad1c91d97"
+    },
+    {
+      "path": "ToResearch/Falla/demo/legacy/app.mjs",
+      "bytes": 1278,
+      "sha256": "40ef88a1a9294018ae1ca3a674ddec57b6fc565452e193de57925d26668ef1bf"
+    },
+    {
+      "path": "ToResearch/Falla/demo/legacy/browser-check.json",
+      "bytes": 286,
+      "sha256": "c5f59c09c94191e0c2d02f1c07bba4b6d78a7e8886c7e1e1db750e38e0bb91fc"
+    },
+    {
+      "path": "ToResearch/Falla/demo/legacy/index.html",
+      "bytes": 1066,
+      "sha256": "93895a55a95649298055c664f5ac2fc708fab4877fefb76cadee4783b9430dac"
+    },
+    {
+      "path": "ToResearch/Falla/demo/legacy/model.mjs",
+      "bytes": 1297,
+      "sha256": "b756fb1885f0994f765eed30ca703726880e312fb1583443439d574db3844daf"
+    },
+    {
+      "path": "ToResearch/Falla/demo/legacy/model.test.mjs",
+      "bytes": 777,
+      "sha256": "0fb938660095b172151d838ce35196a90fd9dde8ee9cbd1f4701988ae71f9650"
+    },
+    {
+      "path": "ToResearch/Falla/demo/legacy/package.json",
+      "bytes": 66,
+      "sha256": "f91b3b335d35a2881a2847cee2f5568ae80591ee915e26c8cfd9fc5046a32856"
+    },
+    {
+      "path": "ToResearch/Falla/demo/legacy/style.css",
+      "bytes": 1290,
+      "sha256": "edf407eaddb504e1ad869cf3b53c7daf7ebef74cf6a07d9152ba4ac2ee6367ce"
+    },
+    {
+      "path": "ToResearch/Falla/demo/legacy/test-results.txt",
+      "bytes": 304,
+      "sha256": "012e041e5eb211b2d9ce7164243ea7f57f406b0daa4a2393012d6ae39506488d"
+    },
+    {
+      "path": "ToResearch/Falla/demo/model.mjs",
+      "bytes": 31396,
+      "sha256": "7c7aa361c532cec72129b08f743f9a0b4c5ac4507631b7ee501f620e0d0fe2e9"
+    },
+    {
+      "path": "ToResearch/Falla/demo/modules.json",
+      "bytes": 20473,
+      "sha256": "abe3729816cbcb0f777015ed2cdbc18724f46fd854fd1248c285c6a62be2e544"
+    },
+    {
+      "path": "ToResearch/Falla/demo/package.json",
+      "bytes": 86,
+      "sha256": "18d5995fb218921933532eee24f652e8b1fe890a9c763f439b72423adf78216a"
+    },
+    {
+      "path": "ToResearch/Falla/demo/style.css",
+      "bytes": 2493,
+      "sha256": "f2cc9a8605c24fe9c052560d762f1e34e10107d5aced069ede235f42423f4cb1"
+    },
+    {
+      "path": "ToResearch/Falla/demo/test-results.txt",
+      "bytes": 7720,
+      "sha256": "f2f395504684fd1cce31204358dae1b0e2b8efc26754f86efb8950ebd06b035b"
+    },
+    {
+      "path": "ToResearch/Falla/demo/verification.json",
+      "bytes": 30512,
+      "sha256": "c481a412549675551eaec70e5e4df8778fd73cf0d824c151f988a674ff0b8942"
+    },
+    {
+      "path": "ToResearch/HeeSay/APK-INFO.md",
+      "bytes": 986,
+      "sha256": "929665e98b386da088eafad3bc4bac6303e1e05e4a60403ee6c5557a48f40f32"
+    },
+    {
+      "path": "ToResearch/HeeSay/APK-INFO.json",
+      "bytes": 1395,
+      "sha256": "76b66a138c5258ea0f76336eeaa702ce4f8409abd087388d4610f95d2d1a9bb3"
+    },
+    {
+      "path": "ToResearch/HeeSay/ANALYSIS.md",
+      "bytes": 5580,
+      "sha256": "29cc41d5d3cdce42133b80e50a3e71559b88f99bf319f6d42d8a034463a3d99b"
+    },
+    {
+      "path": "ToResearch/HeeSay/FEATURE-CATALOG.md",
+      "bytes": 25542,
+      "sha256": "72d710428d9eca481b9cac0fa16983cb7a875f707bdd69d40cbb685c0d36e427"
+    },
+    {
+      "path": "ToResearch/HeeSay/RECONSTRUCTION.md",
+      "bytes": 17368,
+      "sha256": "11aa846b49a39c034435278e0351917dce7c202326737fdccf03c035d307f0d9"
+    },
+    {
+      "path": "ToResearch/HeeSay/download-provenance.json",
+      "bytes": 713,
+      "sha256": "0fb29277d8fd5ce3083c3748a63b0bd94f6ddaad7aac3fbe3c6ee7dc8574662f"
+    },
+    {
+      "path": "ToResearch/HeeSay/analysis/demo-test-results-final.txt",
+      "bytes": 307,
+      "sha256": "64d095461c83c4230ec5bf8e06e35d9f2a7a4863a8049bebf84dd396020bcca8"
+    },
+    {
+      "path": "ToResearch/HeeSay/analysis/evidence-index.json",
+      "bytes": 1144,
+      "sha256": "d873ae89a689a11ce3e723b8c2da56aece0f8eac569f0efd99e259c48d5c58c9"
+    },
+    {
+      "path": "ToResearch/HeeSay/analysis/extract-dex-resource-candidates.py",
+      "bytes": 2584,
+      "sha256": "b6e926a4ef44129ff3c1c638febe38a2ec24ae6891f955faaeeb204a9af43e84"
+    },
+    {
+      "path": "ToResearch/HeeSay/analysis/extract-feature-expansion.py",
+      "bytes": 2620,
+      "sha256": "a47e8571820a86fe09fd6906ed79d163e1402bf313ed9f64e9ec138d1c67bf50"
+    },
+    {
+      "path": "ToResearch/HeeSay/analysis/feature-catalog.json",
+      "bytes": 29498,
+      "sha256": "46121988df228ebe6bb83e56df7f65fedc0ebcf8c3f3b8103dedbb6470e5e0da"
+    },
+    {
+      "path": "ToResearch/HeeSay/analysis/feature-expansion-resources.json",
+      "bytes": 9900872,
+      "sha256": "c011cb1736b596c3d21385f857ef36f633997f4f9ff4ac53e556b9c0caa938a0"
+    },
+    {
+      "path": "ToResearch/HeeSay/analysis/feature-ledger.json",
+      "bytes": 3089,
+      "sha256": "cb2944623dea2e4fc2af5c50c147011a3055d92e47557c534fe3fb1db6f4f345"
+    },
+    {
+      "path": "ToResearch/HeeSay/analysis/output-integrity.json",
+      "bytes": 1788,
+      "sha256": "c4968583456498895cb2164f03bc11e44e11cc990e951da09039e251be8a584d"
+    },
+    {
+      "path": "ToResearch/HeeSay/analysis/rea-hotpick-class.json",
+      "bytes": 8761,
+      "sha256": "7e2f875525f77a71f15358ad244bad25e9444473c6b99c0a60ee13a0ab93b787"
+    },
+    {
+      "path": "ToResearch/HeeSay/analysis/rea-hotpick-config.json",
+      "bytes": 12315,
+      "sha256": "642099afdb3c17eb4319d12e3083ef20382acacde80559e6a27e89230361af90"
+    },
+    {
+      "path": "ToResearch/HeeSay/analysis/rea-package.json",
+      "bytes": 196424,
+      "sha256": "049d144a3f6003948e7cb8ea893a73c372f662eaf2430e2f619745168e3be9e8"
+    },
+    {
+      "path": "ToResearch/HeeSay/analysis/reconstruction-coverage.json",
+      "bytes": 46773,
+      "sha256": "9cda48bb017c31a8ac55d65cfcddbbca79310880e1d8a0efced119b4a84eb6e5"
+    },
+    {
+      "path": "ToResearch/HeeSay/analysis/selected-feature-resources.json",
+      "bytes": 13170,
+      "sha256": "b72e32c99e52ed98ff1fc681f5f944fcdded1137b4f51d2b84c3b747fb5e136c"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/README.md",
+      "bytes": 755,
+      "sha256": "adaf029f14600f044f4c8fad096562fbb55388f27e1308de7464ba1473e7b21d"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/app.mjs",
+      "bytes": 11191,
+      "sha256": "55c58cb1ef9abbec9eff62b1546522631736d63cd4ce5f49328354c0fb09ff72"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/features.test.mjs",
+      "bytes": 16779,
+      "sha256": "ad8a6fe47547718c2118ded328259e9dddc1e258877a065d538330d5c68528e2"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/index.html",
+      "bytes": 341,
+      "sha256": "e29cad9275ce8887f59cf4f01771076ccffc13e0ca8c0fcb811c4731078dcf07"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/legacy/README.md",
+      "bytes": 470,
+      "sha256": "fb04e92e49880ccf8d828e0c8e6ff139b1d3caf2368ee957ebc76c71209f1825"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/legacy/app.mjs",
+      "bytes": 1501,
+      "sha256": "c5afe7de03a6aabb9f71fe987d3a51c4318d513fb7e27fe30452102f5c4f2eb9"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/legacy/browser-check.json",
+      "bytes": 287,
+      "sha256": "97ab05766f9ddf4d06eb5434f70e94842fbe1a5c4e60866116891f1256192587"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/legacy/index.html",
+      "bytes": 1086,
+      "sha256": "de53988c0eb6969bb9805846c0bc7ca7c4e22b9f49b731af3b8853c27b31a59c"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/legacy/model.mjs",
+      "bytes": 1014,
+      "sha256": "ca9af15edbb1b97f19123d404eeaff163ce370f36c67ffd8071e10a188457daf"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/legacy/model.test.mjs",
+      "bytes": 900,
+      "sha256": "fd026e083bf152e0a80d7c481d19b889ccd24200a8724264a627b3cc9659b2dc"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/legacy/package.json",
+      "bytes": 66,
+      "sha256": "f91b3b335d35a2881a2847cee2f5568ae80591ee915e26c8cfd9fc5046a32856"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/legacy/style.css",
+      "bytes": 1290,
+      "sha256": "edf407eaddb504e1ad869cf3b53c7daf7ebef74cf6a07d9152ba4ac2ee6367ce"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/legacy/test-results.txt",
+      "bytes": 309,
+      "sha256": "d47d7521ce35da07568d7164a5605af31a96113f6393dd337fe3060509b7a6e9"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/model.mjs",
+      "bytes": 41441,
+      "sha256": "a59f5071d6dea7c24e1aeda158ea627dac3cd5b1f74ca2c8aae1f1c19b9a703e"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/modules.json",
+      "bytes": 26895,
+      "sha256": "1c5eaf7d8c880cebd75cd5fdc91aa5595cd3b99a8f42c0c830720a53014629f9"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/package.json",
+      "bytes": 86,
+      "sha256": "18d5995fb218921933532eee24f652e8b1fe890a9c763f439b72423adf78216a"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/style.css",
+      "bytes": 2493,
+      "sha256": "f2cc9a8605c24fe9c052560d762f1e34e10107d5aced069ede235f42423f4cb1"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/test-results.txt",
+      "bytes": 8854,
+      "sha256": "25da12c897c0b0a92cd8ebc8073538c43cbafe2304ac926962ef08b21b3e7f94"
+    },
+    {
+      "path": "ToResearch/HeeSay/demo/verification.json",
+      "bytes": 40855,
+      "sha256": "13973f0553a4787bd1fe4ca477a843e9bb3cf861984fe0a95fadfa1e3bed1987"
+    },
+    {
+      "path": "ToResearch/APK-COLLECTION-2026-10-13.md",
+      "bytes": 2088,
+      "sha256": "c9c5cdd40d52f725e323c846ca5a91e4b064e5cfc5bafd84984e2eaff645d021"
+    },
+    {
+      "path": "ToResearch/APK-COLLECTION-2026-10-13.json",
+      "bytes": 51141,
+      "sha256": "1066b14b6f0860200a219c69571a554c267a704643fd52f422bea111d2b6d01c"
+    },
+    {
+      "path": "ToResearch/FEATURE-SELECTION.md",
+      "bytes": 58295,
+      "sha256": "a6f5cf52af1b7e249941a694baeaffbeaeb3436fcffd644500f5d11f50c68f43"
+    },
+    {
+      "path": "ToResearch/FEATURE-SELECTION.json",
+      "bytes": 488001,
+      "sha256": "63e2a1912270042f783f303505db54d42eba1d160d241f82ff8212fd9c769ccf"
+    },
+    {
+      "path": "ToResearch/FEATURE-CATALOG-VALIDATION.json",
+      "bytes": 213,
+      "sha256": "154714d728d217a2c9eb1bfd93320071032adce21eeb7f3e6089635a83d29b6e"
+    },
+    {
+      "path": "ToResearch/RECONSTRUCTION-INDEX.md",
+      "bytes": 26276,
+      "sha256": "5d54a41b8ebc2044eef779ba17e0e6370dcbbe41609b35d150e38beed0487571"
+    },
+    {
+      "path": "ToResearch/RECONSTRUCTION-SCOPE.json",
+      "bytes": 10903,
+      "sha256": "bb4845dab63eb325b831cd729619bd7b2e1d367e312876c0a1eb1d40bae15aea"
+    },
+    {
+      "path": "ToResearch/RECONSTRUCTION-VERIFICATION.json",
+      "bytes": 332932,
+      "sha256": "7c1fdb5417ea46b2f8efcd164bdb984666a54828436c111aa00f5594a4372d83"
+    },
+    {
+      "path": "ToResearch/RESEARCH-INDEX.md",
+      "bytes": 5774,
+      "sha256": "409546601715c51179d30424a5d71c4155b31f808d003a6ac0fbc6c3a4958da5"
+    },
+    {
+      "path": "ToResearch/RESEARCH-INDEX.json",
+      "bytes": 26617,
+      "sha256": "48165c05c095b02d5d04af8f4a9f4815eced3407c1d5ffc2e206a7793b91006f"
+    },
+    {
+      "path": "ToResearch/demo-lab/README.md",
+      "bytes": 2560,
+      "sha256": "987940a5520de0e4dfac09abba8a14c50468b5410b4fb79cba077124086b17e7"
+    },
+    {
+      "path": "ToResearch/demo-lab/browser-verification.json",
+      "bytes": 5116,
+      "sha256": "e889c8f48dee9bf6d26bb7b7f5075dd90945b64da00390b6b242148bf0acd9d5"
+    },
+    {
+      "path": "ToResearch/demo-lab/build-index.mjs",
+      "bytes": 6382,
+      "sha256": "678b518c53649b6884b55a19e5f31a1eb74bfc6d8cd790cb5e5eebf457929187"
+    },
+    {
+      "path": "ToResearch/demo-lab/entry-verification.json",
+      "bytes": 1818,
+      "sha256": "4e36e5d7ad58f841d4a58d6efb1d04ef9e067ba781a8676069aff740954bcf74"
+    },
+    {
+      "path": "ToResearch/demo-lab/index.html",
+      "bytes": 112961,
+      "sha256": "657a759628fdab09b7006f9cd6715e1d92884f2b1a91d4b2903604a6757596cd"
+    },
+    {
+      "path": "ToResearch/demo-lab/module-browser-verification.json",
+      "bytes": 521411,
+      "sha256": "86a275446154fc2a602d557a5f31bb2c0135e3af4ab2d28cf899497436a93959"
+    },
+    {
+      "path": "ToResearch/demo-lab/package.json",
+      "bytes": 120,
+      "sha256": "373f2133be144e271f9d868e6a090ef94bfde65cc53123381523e9bbf56c2b44"
+    },
+    {
+      "path": "ToResearch/demo-lab/rule-verification.json",
+      "bytes": 3823,
+      "sha256": "836970f023ae42090758898a499d941f22fa769d001b6b5d5f3d6e9a0059c02c"
+    },
+    {
+      "path": "ToResearch/demo-lab/scope-verification.json",
+      "bytes": 3219,
+      "sha256": "a64dd45e37e929de26e57b15929cfbbc3aa2a4fd702eb76a16777ce968dae15d"
+    },
+    {
+      "path": "ToResearch/demo-lab/server.mjs",
+      "bytes": 2193,
+      "sha256": "78924c5238b65817ad0a0a5dd2262da4384179c44f5c7e0c7e11abb76e1fcfcf"
+    },
+    {
+      "path": "ToResearch/demo-lab/table-verification.json",
+      "bytes": 632,
+      "sha256": "51dc8def42d883c32368084da54322fa086fc7e845dd4909bb88f2148d86cace"
+    },
+    {
+      "path": "ToResearch/demo-lab/test.mjs",
+      "bytes": 903,
+      "sha256": "d2546a3839b743bf2b1ad72de3121352f56ea86fdcf931a9acc3d651065f8d9e"
+    },
+    {
+      "path": "ToResearch/demo-lab/verify-browser.mjs",
+      "bytes": 5643,
+      "sha256": "0db3ac5884cc3119f93742ce32448bbec4390d188040fd60b21e55909cbeb2d5"
+    },
+    {
+      "path": "ToResearch/demo-lab/verify-rules.mjs",
+      "bytes": 1508,
+      "sha256": "4102cf537e0f1c4d0657ac306e489598423d1ae1a5cf627fb4e6996d812c32d5"
+    },
+    {
+      "path": "ToResearch/demo-lab/verify-scopes.mjs",
+      "bytes": 1583,
+      "sha256": "2abbba280383ef2536cf2cf75bd6ba4771fa27ae717f26c7496df9e83d492afd"
+    }
+  ],
+  "omitted_regenerable_indexes": [
+    "ToResearch/Yalla/analysis/archive-inventory.json",
+    "ToResearch/Yalla/analysis/feature-candidates.json",
+    "ToResearch/YoHo/analysis/archive-inventory.json",
+    "ToResearch/YoHo/analysis/feature-candidates.json",
+    "ToResearch/MICO/analysis/archive-inventory.json",
+    "ToResearch/MICO/analysis/feature-candidates.json",
+    "ToResearch/TopTop/analysis/archive-inventory.json",
+    "ToResearch/TopTop/analysis/feature-candidates.json",
+    "ToResearch/WePlay-AR/analysis/archive-members.json",
+    "ToResearch/WePlay-AR/analysis/dex-class-inventory.json",
+    "ToResearch/WePlay-AR/analysis/package-feature-strings.json",
+    "ToResearch/Spoon/analysis/archive-inventory.json",
+    "ToResearch/WePlay-JP/analysis/archive-members.json",
+    "ToResearch/WePlay-JP/analysis/dex-class-inventory.json",
+    "ToResearch/WePlay-JP/analysis/package-feature-strings.json",
+    "ToResearch/WePlay-KR/analysis/archive-members.json",
+    "ToResearch/WePlay-KR/analysis/dex-class-inventory.json",
+    "ToResearch/WePlay-KR/analysis/package-feature-strings.json",
+    "ToResearch/Mirrativ/analysis/archive-inventory.json",
+    "ToResearch/Pococha/analysis/archive-inventory.json",
+    "ToResearch/17LIVE/analysis/archive-inventory.json",
+    "ToResearch/SUGO/analysis/archive-members.json",
+    "ToResearch/SUGO/analysis/class-descriptors.json",
+    "ToResearch/SUGO/analysis/package-candidates.json",
+    "ToResearch/Yalla-Parchis/analysis/archive-members.json",
+    "ToResearch/Yalla-Parchis/analysis/class-descriptors.json",
+    "ToResearch/Yalla-Parchis/analysis/il2cpp-string-literals.json",
+    "ToResearch/Yalla-Parchis/analysis/package-candidates.json",
+    "ToResearch/Falla/analysis/archive-members.json",
+    "ToResearch/Falla/analysis/class-descriptors.json",
+    "ToResearch/Falla/analysis/package-candidates.json",
+    "ToResearch/HeeSay/analysis/archive-members.json",
+    "ToResearch/HeeSay/analysis/class-descriptors.json",
+    "ToResearch/HeeSay/analysis/package-candidates.json"
+  ],
+  "excluded_classes": [
+    "original and extracted application binaries",
+    "downloaded pages and tools",
+    "screenshots and reproducible image output",
+    "implementation planning",
+    "unrelated app folders and working tree changes"
+  ]
+}

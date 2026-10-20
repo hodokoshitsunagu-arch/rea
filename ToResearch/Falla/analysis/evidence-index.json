@@ -1,0 +1,35 @@
+[
+  {
+    "file": "rea-ludo-class.json",
+    "operation": "inspect_android_class",
+    "evidence_id": "ev_c19b4019754492fb92e92a648b0ecd6a91137f7f25bbcf6eab9111ff54ec2ef1",
+    "status": "observed",
+    "error": null,
+    "parameters": {
+      "path": "/Users/mark/Projects/REA/ToResearch/Falla/apks/com.juhaoliao.vochat.apk",
+      "class_name": "com.juhaoliao.vochat.util.LudoMatchHelper"
+    }
+  },
+  {
+    "file": "rea-ludo-method.json",
+    "operation": "inspect_android_method",
+    "evidence_id": "ev_be475da3348244034000399d8fa034d17c878dd6cfb6babf2af5de3e223d3bd2",
+    "status": "observed",
+    "error": null,
+    "parameters": {
+      "path": "/Users/mark/Projects/REA/ToResearch/Falla/apks/com.juhaoliao.vochat.apk",
+      "class_name": "com.juhaoliao.vochat.util.LudoMatchHelper",
+      "method_name": "a"
+    }
+  },
+  {
+    "file": "rea-package.json",
+    "operation": "inspect_android_package",
+    "evidence_id": "ev_b912cfe3008fec64e3cf78e410966217198ae0879ebe7c7019aa1846c91ea606",
+    "status": "observed",
+    "error": null,
+    "parameters": {
+      "path": "/Users/mark/Projects/REA/ToResearch/Falla/apks/com.juhaoliao.vochat.apk"
+    }
+  }
+]

@@ -1,0 +1,124 @@
+[
+  {
+    "apk": "apks/wepie_asset_pack.apk",
+    "member": "assets/databases/wespy.sqlite",
+    "tables": [
+      [
+        "sqlite_sequence",
+        "CREATE TABLE sqlite_sequence(name,seq)"
+      ],
+      [
+        "talk",
+        "CREATE TABLE talk (user integer  PRIMARY KEY DEFAULT NULL,unread_count integer  DEFAULT 0,last_message Varchar DEFAULT NULL)"
+      ],
+      [
+        "friend_info",
+        "CREATE TABLE friend_info (user integer  PRIMARY KEY DEFAULT NULL,remark_name integer DEFAULT NULL, pinyin_name varchar(20) NOT NULL DEFAULT '', nickname string DEFAULT '', wdid string DEFAULT '')"
+      ],
+      [
+        "blockuser",
+        "CREATE TABLE blockuser (user integer  PRIMARY KEY DEFAULT NULL)"
+      ],
+      [
+        "new_friend_record",
+        "CREATE TABLE new_friend_record (user integer  PRIMARY KEY DEFAULT NULL,type integer DEFAULT NULL,time integer DEFAULT NULL,content Varchar DEFAULT NULL, mid text DEFAULT '')"
+      ],
+      [
+        "room_info",
+        "CREATE TABLE room_info (rid integer  PRIMARY KEY DEFAULT NULL,name Varchar,gamer_limit integer DEFAULT NULL,now_speaker_num INTEGER DEFAULT NULL,state integer,word_pingmin Varchar DEFAULT NULL,word_wodi Varchar DEFAULT NULL,last_game_message Varchar DEFAULT NULL,start_speaker_num integer DEFAULT NULL,game_type integer DEFAULT 1,allow_enter integer DEFAULT 1,owner integer  DEFAULT 0,unread_count integer  DEFAULT 0)"
+      ],
+      [
+        "game_message",
+        "CREATE TABLE game_message (mid Varchar  PRIMARY KEY DEFAULT NULL,content Varchar DEFAULT NULL,uid integer,rid integer,status integer,type integer,time integer,num Smallint DEFAULT -1,room_state Smallint  DEFAULT -1,media_type integer DEFAULT 1, extension varchar(12) NOT NULL DEFAULT '', bubble_id integer DEFAULT 0)"
+      ],
+      [
+        "user",
+        "CREATE TABLE user (uid INTEGER  PRIMARY KEY DEFAULT 0,email Varchar(50) DEFAULT NULL,nickname Varchar(50) DEFAULT NULL,gender Smallint DEFAULT 0,headimgurl Varchar(100),sina_uid integer,birthday Date DEFAULT NULL,province Varchar DEFAULT NULL,city Varchar DEFAULT NULL,signature integer,wdid Varchar(50) DEFAULT NULL,wdid_edit_num Smallint DEFAULT 0,version integer DEFAULT 1, phone Varchar DEFAULT NULL, points INTEGER DEFAULT 0, coin INTEGER DEFAULT 0, flower INTEGER DEFAULT 0, add_friend_price INTEGER DEFAULT 0, win INTEGER DEFAULT 0, lose INTEGER DEFAULT 0, last_login_time LONG DEFAULT 0, photo_num int, singer_state integer DEFAULT 0, vip INTEGER DEFAULT 0, area string DEFAULT '', distance string DEFAULT '', avatar_show integer DEFAULT 0, extra_data string DEFAULT '', lucky_id_level integer DEFAULT 0, bigr_right_level integer DEFAULT 0, open_bigr_right_level integer DEFAULT 0, can_use_dynamic_img integer DEFAULT 0)"
+      ],
+      [
+        "contact",
+        "CREATE TABLE contact (phone Varchar  PRIMARY KEY DEFAULT NULL,name Varchar,avatar_url Varchar,uid integer,status integer)"
+      ],
+      [
+        "android_metadata",
+        "CREATE TABLE android_metadata (locale TEXT)"
+      ],
+      [
+        "album",
+        "CREATE TABLE album ( photo_id integer primary key, uid integer , media_url varchar(12), upload_time integer, flower integer, uid_flower varchar(12) )"
+      ],
+      [
+        "friend_circle_remind",
+        "CREATE TABLE friend_circle_remind (remind_id varchar(12) primary key, discover_id int, discover_owner_uid int, from_uid int, from_nickname varchar(12), from_headimgurl varchar(12), to_uid int, type int, time integer, media_url varchar(12), content varchar(12), discover_type integer DEFAULT 4, discover_content string DEFAULT '', discover_ext string DEFAULT '', discover_key string DEFAULT '')"
+      ],
+      [
+        "GroupInfo",
+        "CREATE TABLE GroupInfo ( gid integer primary key, version integer, uid_list varchar(48), save_to_contact integer, owner integer, notify_switch integer, note varchar(48), name varchar(48), msg_offset integer, invite_switch integer, family_id integer , fold_gift integer DEFAULT 0, adminListStr string DEFAULT '', introduce string DEFAULT '', level integer DEFAULT 0, group_image string DEFAULT '', category_id integer DEFAULT 0, sub_cate_id integer DEFAULT 0, recommend_switch integer DEFAULT 0, add_group_switch integer DEFAULT 0, group_no integer DEFAULT 0, total_exp long DEFAULT 0, bindAdvRidsStr string DEFAULT '', alliance_id integer DEFAULT 0)"
+      ],
+      [
+        "ConversationInfo",
+        "CREATE TABLE ConversationInfo ( cid varchar(48) primary key, unread_num integer, top_time integer, target_uid integer, last_self_msg_status integer, last_msg_uid integer, last_msg_type integer, last_msg_time integer, last_msg_subtype integer, last_msg_content varchar(48), is_top integer, group_id integer, extra varchar(48), draft varchar(48) , dnd integer DEFAULT 0, mid string DEFAULT '', ref_mid string DEFAULT '')"
+      ],
+      [
+        "FixRoomInfo",
+        "CREATE TABLE FixRoomInfo ( rid integer primary key, word_cate integer, voice_type integer, version integer, seatListStr varchar(48), room_type integer, room_level integer, residentListStr varchar(48), owner integer, note varchar(48), name varchar(48), music_cate integer, lease_type integer, high_quality integer, gold_box integer, gamerNum integer, game_type integer, game_state integer, free_talk integer, expire_time integer, enter_level integer, bg_url varchar(48), bet_level integer, allow_enter integer, adminListStr varchar(48) , pwd integer DEFAULT 0)"
+      ],
+      [
+        "RedPacket",
+        "CREATE TABLE RedPacket ( rp_id varchar(48) primary key, type integer, time integer, status integer, password varchar(48), number integer, graped integer, content varchar(48), coin integer , rp_skin_id integer DEFAULT 0)"
+      ],
+      [
+        "EmoticonItem",
+        "CREATE TABLE EmoticonItem ( url varchar(48) primary key, type integer, sort integer, name varchar(48), md5 varchar(48) )"
+      ],
+      [
+        "discover",
+        "CREATE TABLE discover (discover_id int primary key, discover_owner_uid int, type integer, time integer, content varchar(12) )"
+      ],
+      [
+        "WPMessageSync",
+        "CREATE TABLE \"WPMessageSync\" (`mid` TEXT NOT NULL, `send_uid` INTEGER NOT NULL, `recv_uid` INTEGER NOT NULL, `time` INTEGER NOT NULL, `content` TEXT, `media_type` INTEGER NOT NULL, `extension` TEXT, `peer` INTEGER NOT NULL, `sub_type` INTEGER NOT NULL, `ref_mid` TEXT, PRIMARY KEY(`mid`))"
+      ],
+      [
+        "message",
+        "CREATE TABLE \"message\" (`mid` TEXT NOT NULL, `content` TEXT NOT NULL DEFAULT '', `send_uid` INTEGER NOT NULL, `recv_uid` INTEGER NOT NULL, `time` INTEGER NOT NULL DEFAULT CURRENT_TIMESTAMP, `status` INTEGER NOT NULL DEFAULT 0, `media_type` INTEGER NOT NULL DEFAULT 1, `extension` TEXT NOT NULL DEFAULT '', `sub_type` INTEGER NOT NULL DEFAULT 0, `bubble_id` INTEGER NOT NULL DEFAULT 0, `invite_status` INTEGER NOT NULL DEFAULT 0, `ref_mid` TEXT DEFAULT '', PRIMARY KEY(`mid`))"
+      ],
+      [
+        "GroupChatMsg",
+        "CREATE TABLE \"GroupChatMsg\" (`mid` TEXT NOT NULL, `group_id` INTEGER NOT NULL, `content` TEXT NOT NULL, `send_uid` INTEGER NOT NULL, `recv_uid` INTEGER NOT NULL, `sequence` INTEGER NOT NULL, `time` INTEGER NOT NULL, `status` INTEGER NOT NULL, `mediaType` INTEGER NOT NULL, `subType` INTEGER NOT NULL, `ext` TEXT NOT NULL, `bubbleId` INTEGER NOT NULL, `ref_mid` TEXT NOT NULL, PRIMARY KEY(`mid`))"
+      ],
+      [
+        "FixRoomMsg",
+        "CREATE TABLE \"FixRoomMsg\" (`mid` TEXT NOT NULL, `rid` INTEGER NOT NULL, `content` TEXT NOT NULL, `send_uid` INTEGER NOT NULL, `recv_uid` INTEGER NOT NULL, `sequence` INTEGER NOT NULL, `time` INTEGER NOT NULL, `status` INTEGER NOT NULL, `mediaType` INTEGER NOT NULL, `subType` INTEGER NOT NULL, `ext` TEXT NOT NULL, `bubbleId` INTEGER NOT NULL, PRIMARY KEY(`mid`))"
+      ],
+      [
+        "room_master_table",
+        "CREATE TABLE room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)"
+      ]
+    ],
+    "rows": {
+      "talk": [],
+      "friend_info": [],
+      "blockuser": [],
+      "new_friend_record": [],
+      "room_info": [],
+      "game_message": [],
+      "user": [],
+      "contact": [],
+      "android_metadata": [],
+      "album": [],
+      "friend_circle_remind": [],
+      "GroupInfo": [],
+      "ConversationInfo": [],
+      "FixRoomInfo": [],
+      "RedPacket": [],
+      "EmoticonItem": [],
+      "discover": [],
+      "WPMessageSync": [],
+      "message": [],
+      "GroupChatMsg": [],
+      "FixRoomMsg": [],
+      "room_master_table": []
+    }
+  }
+]

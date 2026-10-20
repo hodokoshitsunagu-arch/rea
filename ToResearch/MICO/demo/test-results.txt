@@ -1,0 +1,268 @@
+TAP version 13
+# Subtest: MIC01 正常闭环
+ok 1 - MIC01 正常闭环
+  ---
+  duration_ms: 0.555833
+  type: 'test'
+  ...
+# Subtest: MIC01 核心边界
+ok 2 - MIC01 核心边界
+  ---
+  duration_ms: 0.640917
+  type: 'test'
+  ...
+# Subtest: MIC01 补充分支 1
+ok 3 - MIC01 补充分支 1
+  ---
+  duration_ms: 0.066417
+  type: 'test'
+  ...
+# Subtest: MIC01 不重复结算或消费资格
+ok 4 - MIC01 不重复结算或消费资格
+  ---
+  duration_ms: 0.089125
+  type: 'test'
+  ...
+# Subtest: MIC01 重置独立与不可未知操作
+ok 5 - MIC01 重置独立与不可未知操作
+  ---
+  duration_ms: 0.15075
+  type: 'test'
+  ...
+# Subtest: MIC02 正常闭环
+ok 6 - MIC02 正常闭环
+  ---
+  duration_ms: 0.084833
+  type: 'test'
+  ...
+# Subtest: MIC02 核心边界
+ok 7 - MIC02 核心边界
+  ---
+  duration_ms: 0.046209
+  type: 'test'
+  ...
+# Subtest: MIC02 补充分支 1
+ok 8 - MIC02 补充分支 1
+  ---
+  duration_ms: 0.051167
+  type: 'test'
+  ...
+# Subtest: MIC02 重置独立与不可未知操作
+ok 9 - MIC02 重置独立与不可未知操作
+  ---
+  duration_ms: 0.099834
+  type: 'test'
+  ...
+# Subtest: MIC03 正常闭环
+ok 10 - MIC03 正常闭环
+  ---
+  duration_ms: 0.106584
+  type: 'test'
+  ...
+# Subtest: MIC03 核心边界
+ok 11 - MIC03 核心边界
+  ---
+  duration_ms: 0.050708
+  type: 'test'
+  ...
+# Subtest: MIC03 不重复结算或消费资格
+ok 12 - MIC03 不重复结算或消费资格
+  ---
+  duration_ms: 0.063042
+  type: 'test'
+  ...
+# Subtest: MIC03 重置独立与不可未知操作
+ok 13 - MIC03 重置独立与不可未知操作
+  ---
+  duration_ms: 0.088833
+  type: 'test'
+  ...
+# Subtest: MIC04 正常闭环
+ok 14 - MIC04 正常闭环
+  ---
+  duration_ms: 0.065333
+  type: 'test'
+  ...
+# Subtest: MIC04 核心边界
+ok 15 - MIC04 核心边界
+  ---
+  duration_ms: 0.041209
+  type: 'test'
+  ...
+# Subtest: MIC04 不重复结算或消费资格
+ok 16 - MIC04 不重复结算或消费资格
+  ---
+  duration_ms: 0.048375
+  type: 'test'
+  ...
+# Subtest: MIC04 重置独立与不可未知操作
+ok 17 - MIC04 重置独立与不可未知操作
+  ---
+  duration_ms: 0.089208
+  type: 'test'
+  ...
+# Subtest: MIC05 正常闭环
+ok 18 - MIC05 正常闭环
+  ---
+  duration_ms: 0.044625
+  type: 'test'
+  ...
+# Subtest: MIC05 核心边界
+ok 19 - MIC05 核心边界
+  ---
+  duration_ms: 0.031292
+  type: 'test'
+  ...
+# Subtest: MIC05 重置独立与不可未知操作
+ok 20 - MIC05 重置独立与不可未知操作
+  ---
+  duration_ms: 0.098875
+  type: 'test'
+  ...
+# Subtest: MIC06 正常闭环
+ok 21 - MIC06 正常闭环
+  ---
+  duration_ms: 0.03425
+  type: 'test'
+  ...
+# Subtest: MIC06 核心边界
+ok 22 - MIC06 核心边界
+  ---
+  duration_ms: 0.031417
+  type: 'test'
+  ...
+# Subtest: MIC06 重置独立与不可未知操作
+ok 23 - MIC06 重置独立与不可未知操作
+  ---
+  duration_ms: 0.071583
+  type: 'test'
+  ...
+# Subtest: MIC07 正常闭环
+ok 24 - MIC07 正常闭环
+  ---
+  duration_ms: 0.054417
+  type: 'test'
+  ...
+# Subtest: MIC07 核心边界
+ok 25 - MIC07 核心边界
+  ---
+  duration_ms: 0.029417
+  type: 'test'
+  ...
+# Subtest: MIC07 重置独立与不可未知操作
+ok 26 - MIC07 重置独立与不可未知操作
+  ---
+  duration_ms: 0.08625
+  type: 'test'
+  ...
+# Subtest: MIC08 正常闭环
+ok 27 - MIC08 正常闭环
+  ---
+  duration_ms: 0.066625
+  type: 'test'
+  ...
+# Subtest: MIC08 核心边界
+ok 28 - MIC08 核心边界
+  ---
+  duration_ms: 0.030834
+  type: 'test'
+  ...
+# Subtest: MIC08 重置独立与不可未知操作
+ok 29 - MIC08 重置独立与不可未知操作
+  ---
+  duration_ms: 0.116625
+  type: 'test'
+  ...
+# Subtest: MIC09 正常闭环
+ok 30 - MIC09 正常闭环
+  ---
+  duration_ms: 0.09325
+  type: 'test'
+  ...
+# Subtest: MIC09 核心边界
+ok 31 - MIC09 核心边界
+  ---
+  duration_ms: 0.052666
+  type: 'test'
+  ...
+# Subtest: MIC09 不重复结算或消费资格
+ok 32 - MIC09 不重复结算或消费资格
+  ---
+  duration_ms: 0.065333
+  type: 'test'
+  ...
+# Subtest: MIC09 重置独立与不可未知操作
+ok 33 - MIC09 重置独立与不可未知操作
+  ---
+  duration_ms: 0.118458
+  type: 'test'
+  ...
+# Subtest: MIC10 正常闭环
+ok 34 - MIC10 正常闭环
+  ---
+  duration_ms: 0.063334
+  type: 'test'
+  ...
+# Subtest: MIC10 核心边界
+ok 35 - MIC10 核心边界
+  ---
+  duration_ms: 0.032625
+  type: 'test'
+  ...
+# Subtest: MIC10 补充分支 1
+ok 36 - MIC10 补充分支 1
+  ---
+  duration_ms: 0.031
+  type: 'test'
+  ...
+# Subtest: MIC10 不重复结算或消费资格
+ok 37 - MIC10 不重复结算或消费资格
+  ---
+  duration_ms: 0.049542
+  type: 'test'
+  ...
+# Subtest: MIC10 重置独立与不可未知操作
+ok 38 - MIC10 重置独立与不可未知操作
+  ---
+  duration_ms: 0.0805
+  type: 'test'
+  ...
+# Subtest: MIC11 正常闭环
+ok 39 - MIC11 正常闭环
+  ---
+  duration_ms: 0.045416
+  type: 'test'
+  ...
+# Subtest: MIC11 核心边界
+ok 40 - MIC11 核心边界
+  ---
+  duration_ms: 0.029667
+  type: 'test'
+  ...
+# Subtest: MIC11 不重复结算或消费资格
+ok 41 - MIC11 不重复结算或消费资格
+  ---
+  duration_ms: 0.036541
+  type: 'test'
+  ...
+# Subtest: MIC11 重置独立与不可未知操作
+ok 42 - MIC11 重置独立与不可未知操作
+  ---
+  duration_ms: 0.079167
+  type: 'test'
+  ...
+# Subtest: MIC01 退出清本场分只在PK中生效，结算账本与赢家不受赛后动作改变
+ok 43 - MIC01 退出清本场分只在PK中生效，结算账本与赢家不受赛后动作改变
+  ---
+  duration_ms: 0.072875
+  type: 'test'
+  ...
+1..43
+# tests 43
+# suites 0
+# pass 43
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 42.140583

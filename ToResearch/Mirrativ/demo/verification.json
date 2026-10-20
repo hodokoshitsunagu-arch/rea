@@ -1,0 +1,743 @@
+{
+  "input_hashes": {
+    "features.test.mjs": "e52785731865864705e20586c39e38b79d8e1c46d3bdeb9532a2bf5fbf76c0a5",
+    "index.html": "1b98a61553b5654bc65981bc5a49564dfaafa42c7ed8161fa167be962da9c6ea",
+    "model.mjs": "11675566ac67d4cf4579796b0ff54b8729c2a058f1b49b63cf5995bd3986c5e6",
+    "modules.json": "77778423d697e13fb0817dd903240a307474dae33096fcb9e0a367425fb668f8",
+    "ui.mjs": "238409bc126b10dd60fd497e04bec58412579a39bf02807a3f19fabff1923dd4"
+  },
+  "app": "Mirrativ",
+  "module_count": 8,
+  "checks": [
+    {
+      "app": "Mirrativ",
+      "id": "MIR01",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"enable\"]",
+          "expected_text": "主播开启LiveParty"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"request-type\"]",
+          "value": "streaming"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"request\"]",
+          "expected_text": "观众申请Collab"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "主播接受请求"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "联合者开始直播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"leave\"]",
+          "expected_text": "联合者退出"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Mirrativ",
+      "id": "MIR02",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"gift-amount\"]",
+          "value": "100"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "赠送Cheerleader礼物"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gate\"]",
+          "expected_text": "检查Cheer level资格"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Mirrativ",
+      "id": "MIR03",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"connect\"]",
+          "expected_text": "Connected契约事件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"play\"]",
+          "expected_text": "Playing契约事件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"player\"]",
+          "expected_text": "主播完成一次条件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"player\"]",
+          "expected_text": "主播完成一次条件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"viewer\"]",
+          "expected_text": "观众完成一次条件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"viewer\"]",
+          "expected_text": "观众完成一次条件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"viewer\"]",
+          "expected_text": "观众完成一次条件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "领取局部契约奖励"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "Ended契约事件"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Mirrativ",
+      "id": "MIR04",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"invite-name\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]",
+          "expected_text": "邀请朋友"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"join-name\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]",
+          "expected_text": "朋友接受邀请"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"npc\"]",
+          "expected_text": "NPC补位"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "进入麻将共场"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]",
+          "expected_text": "结束本地共场"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Mirrativ",
+      "id": "MIR05",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "启动本地RPG任务"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"complete\"]",
+          "expected_text": "完成本地关卡"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reward\"]",
+          "expected_text": "领取RPG抽卡券"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"draw\"]",
+          "expected_text": "消耗券抽本地装饰"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Mirrativ",
+      "id": "MIR06",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"ad\"]",
+          "expected_text": "观看模拟广告"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "领取本时段任务币"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"next\"]",
+          "expected_text": "进入下一重置时段"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Mirrativ",
+      "id": "MIR07",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]",
+          "expected_text": "打开Emomo制作页"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"edit-text\"]",
+          "value": "一起加油"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"edit-pose\"]",
+          "value": "举手"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"edit\"]",
+          "expected_text": "编辑文字与姿势"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"publish\"]",
+          "expected_text": "发布本地礼物"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"send\"]",
+          "expected_text": "发送已发布礼物"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Mirrativ",
+      "id": "MIR08",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"qualify\"]",
+          "expected_text": "模拟Cheer level 1资格"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"agree\"]",
+          "expected_text": "同意PR规范预览"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"design-x\"]",
+          "value": "50"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"design-y\"]",
+          "value": "50"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"design-scale\"]",
+          "value": "1.2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"design\"]",
+          "expected_text": "设计Emomo头像预览"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"preview\"]",
+          "expected_text": "查看卡面资格预览"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Mirrativ",
+      "id": "MIR01",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"enable\"]",
+          "expected_text": "主播开启LiveParty"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"request-type\"]",
+          "value": "streaming"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"request\"]",
+          "expected_text": "观众申请Collab"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "主播接受请求"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "联合者开始直播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"leave\"]",
+          "expected_text": "联合者退出"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIR01-mobile.png"
+    },
+    {
+      "app": "Mirrativ",
+      "id": "MIR02",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"gift-amount\"]",
+          "value": "100"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "赠送Cheerleader礼物"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gate\"]",
+          "expected_text": "检查Cheer level资格"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIR02-mobile.png"
+    },
+    {
+      "app": "Mirrativ",
+      "id": "MIR03",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"connect\"]",
+          "expected_text": "Connected契约事件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"play\"]",
+          "expected_text": "Playing契约事件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"player\"]",
+          "expected_text": "主播完成一次条件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"player\"]",
+          "expected_text": "主播完成一次条件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"viewer\"]",
+          "expected_text": "观众完成一次条件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"viewer\"]",
+          "expected_text": "观众完成一次条件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"viewer\"]",
+          "expected_text": "观众完成一次条件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "领取局部契约奖励"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "Ended契约事件"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIR03-mobile.png"
+    },
+    {
+      "app": "Mirrativ",
+      "id": "MIR04",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"invite-name\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]",
+          "expected_text": "邀请朋友"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"join-name\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]",
+          "expected_text": "朋友接受邀请"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"npc\"]",
+          "expected_text": "NPC补位"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "进入麻将共场"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]",
+          "expected_text": "结束本地共场"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIR04-mobile.png"
+    },
+    {
+      "app": "Mirrativ",
+      "id": "MIR05",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "启动本地RPG任务"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"complete\"]",
+          "expected_text": "完成本地关卡"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reward\"]",
+          "expected_text": "领取RPG抽卡券"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"draw\"]",
+          "expected_text": "消耗券抽本地装饰"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIR05-mobile.png"
+    },
+    {
+      "app": "Mirrativ",
+      "id": "MIR06",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"ad\"]",
+          "expected_text": "观看模拟广告"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "领取本时段任务币"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"next\"]",
+          "expected_text": "进入下一重置时段"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIR06-mobile.png"
+    },
+    {
+      "app": "Mirrativ",
+      "id": "MIR07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]",
+          "expected_text": "打开Emomo制作页"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"edit-text\"]",
+          "value": "一起加油"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"edit-pose\"]",
+          "value": "举手"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"edit\"]",
+          "expected_text": "编辑文字与姿势"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"publish\"]",
+          "expected_text": "发布本地礼物"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"send\"]",
+          "expected_text": "发送已发布礼物"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIR07-mobile.png"
+    },
+    {
+      "app": "Mirrativ",
+      "id": "MIR08",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"qualify\"]",
+          "expected_text": "模拟Cheer level 1资格"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"agree\"]",
+          "expected_text": "同意PR规范预览"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"design-x\"]",
+          "value": "50"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"design-y\"]",
+          "value": "50"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"design-scale\"]",
+          "value": "1.2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"design\"]",
+          "expected_text": "设计Emomo头像预览"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"preview\"]",
+          "expected_text": "查看卡面资格预览"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIR08-mobile.png"
+    }
+  ],
+  "passed": true,
+  "scope": "Local core-loop UI verification; no original APK/RTC/backend/payment/human verification."
+}

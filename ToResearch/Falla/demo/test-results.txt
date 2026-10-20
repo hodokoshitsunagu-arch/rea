@@ -1,0 +1,322 @@
+TAP version 13
+# Subtest: FAL01 完整专属闭环与纯函数
+ok 1 - FAL01 完整专属闭环与纯函数
+  ---
+  duration_ms: 1.066875
+  type: 'test'
+  ...
+# Subtest: FAL01 拒绝边界不改变业务状态
+ok 2 - FAL01 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.076667
+  type: 'test'
+  ...
+# Subtest: FAL01 重置与未知操作
+ok 3 - FAL01 重置与未知操作
+  ---
+  duration_ms: 0.061958
+  type: 'test'
+  ...
+# Subtest: FAL02 完整专属闭环与纯函数
+ok 4 - FAL02 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.115541
+  type: 'test'
+  ...
+# Subtest: FAL02 拒绝边界不改变业务状态
+ok 5 - FAL02 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.08
+  type: 'test'
+  ...
+# Subtest: FAL02 重置与未知操作
+ok 6 - FAL02 重置与未知操作
+  ---
+  duration_ms: 0.0405
+  type: 'test'
+  ...
+# Subtest: FAL03 完整专属闭环与纯函数
+ok 7 - FAL03 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.083416
+  type: 'test'
+  ...
+# Subtest: FAL03 拒绝边界不改变业务状态
+ok 8 - FAL03 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.056666
+  type: 'test'
+  ...
+# Subtest: FAL03 重置与未知操作
+ok 9 - FAL03 重置与未知操作
+  ---
+  duration_ms: 0.0625
+  type: 'test'
+  ...
+# Subtest: FAL04 完整专属闭环与纯函数
+ok 10 - FAL04 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.152958
+  type: 'test'
+  ...
+# Subtest: FAL04 拒绝边界不改变业务状态
+ok 11 - FAL04 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.039833
+  type: 'test'
+  ...
+# Subtest: FAL04 重置与未知操作
+ok 12 - FAL04 重置与未知操作
+  ---
+  duration_ms: 0.032166
+  type: 'test'
+  ...
+# Subtest: FAL05 完整专属闭环与纯函数
+ok 13 - FAL05 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.063375
+  type: 'test'
+  ...
+# Subtest: FAL05 拒绝边界不改变业务状态
+ok 14 - FAL05 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.038584
+  type: 'test'
+  ...
+# Subtest: FAL05 重置与未知操作
+ok 15 - FAL05 重置与未知操作
+  ---
+  duration_ms: 0.034042
+  type: 'test'
+  ...
+# Subtest: FAL06 完整专属闭环与纯函数
+ok 16 - FAL06 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.080416
+  type: 'test'
+  ...
+# Subtest: FAL06 拒绝边界不改变业务状态
+ok 17 - FAL06 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.025167
+  type: 'test'
+  ...
+# Subtest: FAL06 重置与未知操作
+ok 18 - FAL06 重置与未知操作
+  ---
+  duration_ms: 0.0265
+  type: 'test'
+  ...
+# Subtest: FAL07 完整专属闭环与纯函数
+ok 19 - FAL07 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.064792
+  type: 'test'
+  ...
+# Subtest: FAL07 拒绝边界不改变业务状态
+ok 20 - FAL07 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.029958
+  type: 'test'
+  ...
+# Subtest: FAL07 重置与未知操作
+ok 21 - FAL07 重置与未知操作
+  ---
+  duration_ms: 0.027458
+  type: 'test'
+  ...
+# Subtest: FAL08 完整专属闭环与纯函数
+ok 22 - FAL08 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.043917
+  type: 'test'
+  ...
+# Subtest: FAL08 拒绝边界不改变业务状态
+ok 23 - FAL08 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.029125
+  type: 'test'
+  ...
+# Subtest: FAL08 重置与未知操作
+ok 24 - FAL08 重置与未知操作
+  ---
+  duration_ms: 0.0325
+  type: 'test'
+  ...
+# Subtest: FAL09 完整专属闭环与纯函数
+ok 25 - FAL09 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.05425
+  type: 'test'
+  ...
+# Subtest: FAL09 拒绝边界不改变业务状态
+ok 26 - FAL09 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.024541
+  type: 'test'
+  ...
+# Subtest: FAL09 重置与未知操作
+ok 27 - FAL09 重置与未知操作
+  ---
+  duration_ms: 0.025459
+  type: 'test'
+  ...
+# Subtest: FAL10 完整专属闭环与纯函数
+ok 28 - FAL10 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.06825
+  type: 'test'
+  ...
+# Subtest: FAL10 拒绝边界不改变业务状态
+ok 29 - FAL10 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.027292
+  type: 'test'
+  ...
+# Subtest: FAL10 重置与未知操作
+ok 30 - FAL10 重置与未知操作
+  ---
+  duration_ms: 0.042792
+  type: 'test'
+  ...
+# Subtest: FAL11 完整专属闭环与纯函数
+ok 31 - FAL11 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.047542
+  type: 'test'
+  ...
+# Subtest: FAL11 拒绝边界不改变业务状态
+ok 32 - FAL11 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.035375
+  type: 'test'
+  ...
+# Subtest: FAL11 重置与未知操作
+ok 33 - FAL11 重置与未知操作
+  ---
+  duration_ms: 0.027292
+  type: 'test'
+  ...
+# Subtest: FAL12 完整专属闭环与纯函数
+ok 34 - FAL12 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.060708
+  type: 'test'
+  ...
+# Subtest: FAL12 拒绝边界不改变业务状态
+ok 35 - FAL12 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.023459
+  type: 'test'
+  ...
+# Subtest: FAL12 重置与未知操作
+ok 36 - FAL12 重置与未知操作
+  ---
+  duration_ms: 0.027708
+  type: 'test'
+  ...
+# Subtest: FAL13 完整专属闭环与纯函数
+ok 37 - FAL13 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.056041
+  type: 'test'
+  ...
+# Subtest: FAL13 拒绝边界不改变业务状态
+ok 38 - FAL13 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.024708
+  type: 'test'
+  ...
+# Subtest: FAL13 重置与未知操作
+ok 39 - FAL13 重置与未知操作
+  ---
+  duration_ms: 0.031875
+  type: 'test'
+  ...
+# Subtest: FAL01 没有捕获不能终点、赢局不能重复终点
+ok 40 - FAL01 没有捕获不能终点、赢局不能重复终点
+  ---
+  duration_ms: 0.058417
+  type: 'test'
+  ...
+# Subtest: FAL02 三连6结束回合且不能第四投
+ok 41 - FAL02 三连6结束回合且不能第四投
+  ---
+  duration_ms: 0.046875
+  type: 'test'
+  ...
+# Subtest: FAL03 道具消耗一次、磁铁阻挡与炸弹路径
+ok 42 - FAL03 道具消耗一次、磁铁阻挡与炸弹路径
+  ---
+  duration_ms: 0.05375
+  type: 'test'
+  ...
+# Subtest: FAL04 gid0阻止进房且保留caller游戏字段
+ok 43 - FAL04 gid0阻止进房且保留caller游戏字段
+  ---
+  duration_ms: 0.046791
+  type: 'test'
+  ...
+# Subtest: FAL05 Queen禁发与票/领取去重
+ok 44 - FAL05 Queen禁发与票/领取去重
+  ---
+  duration_ms: 0.065292
+  type: 'test'
+  ...
+# Subtest: FAL06 保证奖励入背包、兑换不足拒绝
+ok 45 - FAL06 保证奖励入背包、兑换不足拒绝
+  ---
+  duration_ms: 0.056958
+  type: 'test'
+  ...
+# Subtest: FAL07 活动周星礼物排除、解散清榜权益
+ok 46 - FAL07 活动周星礼物排除、解散清榜权益
+  ---
+  duration_ms: 0.04925
+  type: 'test'
+  ...
+# Subtest: FAL08 截止前升级门槛与保级扣EXP
+ok 47 - FAL08 截止前升级门槛与保级扣EXP
+  ---
+  duration_ms: 0.035583
+  type: 'test'
+  ...
+# Subtest: FAL09 全员禁言管理员豁免、单人禁言独立
+ok 48 - FAL09 全员禁言管理员豁免、单人禁言独立
+  ---
+  duration_ms: 0.06275
+  type: 'test'
+  ...
+# Subtest: FAL10 到期后第7天8折第8天原价
+ok 49 - FAL10 到期后第7天8折第8天原价
+  ---
+  duration_ms: 0.045584
+  type: 'test'
+  ...
+# Subtest: FAL11 Holder本地2天到期自动恢复真实ID
+ok 50 - FAL11 Holder本地2天到期自动恢复真实ID
+  ---
+  duration_ms: 0.032584
+  type: 'test'
+  ...
+# Subtest: FAL12 重算后清点、同周期不能重复结算
+ok 51 - FAL12 重算后清点、同周期不能重复结算
+  ---
+  duration_ms: 0.030166
+  type: 'test'
+  ...
+# Subtest: FAL13 确认、一次性与全部身份代价
+ok 52 - FAL13 确认、一次性与全部身份代价
+  ---
+  duration_ms: 0.0755
+  type: 'test'
+  ...
+1..52
+# tests 52
+# suites 0
+# pass 52
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 43.427

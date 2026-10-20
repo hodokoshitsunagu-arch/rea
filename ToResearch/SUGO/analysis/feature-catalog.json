@@ -1,0 +1,582 @@
+{
+  "app": "SUGO",
+  "package": "com.voicemaker.android",
+  "version": "2.52.0.1",
+  "scope": "partial static",
+  "items": [
+    {
+      "name": "PK KING/QUEEN 自动轮转",
+      "categories": [
+        "玩法",
+        "社交"
+      ],
+      "core_loop": "随机配对→5分钟PK→5分钟冷却→继续配对直到主动停止",
+      "distinctive": "让主播保持连续节目节奏",
+      "rules": {
+        "门槛": "主持方开启",
+        "时序": "5分钟对局+5分钟冷却",
+        "资源": "PK礼物积分",
+        "回报": "单轮竞争展示"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 12521,
+          "offset": 659717,
+          "quote": "PK KING/QUEEN is a brand new way of playing. The system matches a random opponent with the host. Every PK lasts 5 minutes. After a PK, the system will have a 5-min cool-down. After the cool-down, a random opponent will be matched with the host again and so on, until the user chooses to stop the PK KING/QUEEN."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 11331,
+          "offset": 627451,
+          "quote": "In %s seconds, the PK KING/QUEEN system will start matching for you again"
+        }
+      ],
+      "unknowns": [
+        "匹配池和退出处罚",
+        "服务器计分"
+      ],
+      "replica_scope": "自动轮转状态机",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "已有",
+      "id": "SUG01"
+    },
+    {
+      "name": "麦位分与阵营累计分分离",
+      "categories": [
+        "玩法"
+      ],
+      "core_loop": "上麦收礼→换人→麦位重新计算→阵营累计保留",
+      "distinctive": "人员流动不抹去队伍战绩",
+      "rules": {
+        "门槛": "PK场景",
+        "时序": "本轮",
+        "资源": "个人礼物与阵营累计",
+        "回报": "双层分数"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10380,
+          "offset": 599994,
+          "quote": "Each mic seat displays the total number of%sreceived by the user during the PK; if the user on the mic seat changes during the PK, the points will be recalculated"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 14179,
+          "offset": 715414,
+          "quote": "The two sets of PK values show the sum of the%sreceived by each group of mics positions during the PK period. During the PK period, the user's up and down mics will not affect the calculation of the PK value, and the PK value of the mic's position will be reset to zero."
+        }
+      ],
+      "unknowns": [
+        "重新计算和归零文案差异",
+        "跨队转移归属"
+      ],
+      "replica_scope": "双账本计分实验",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "已有",
+      "id": "SUG02"
+    },
+    {
+      "name": "亲密度解锁关系能力",
+      "categories": [
+        "社交",
+        "权益"
+      ],
+      "core_loop": "聊天或送礼→亲密等级→解锁双方能力",
+      "distinctive": "关系进度控制私密内容与互动能力",
+      "rules": {
+        "门槛": "Lv1通话/Lv2语音消息/Lv4私人相册/Lv5更多动态文案",
+        "时序": "累计增长",
+        "资源": "亲密度",
+        "回报": "能力逐阶开放"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 11398,
+          "offset": 629829,
+          "quote": "Intimacy Level reached Lv.1 to unlock the call feature~ Chatting & sending gifts can increase intimacy."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 11399,
+          "offset": 629935,
+          "quote": "Intimacy Level reached Lv.2 to unlock the voice message feature ~ Chatting & sending gifts can increase intimacy."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 11401,
+          "offset": 630105,
+          "quote": "Intimacy Level reached Lv.4 to view other user's private albums ~ Chatting & sending gifts can increase intimacy."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 12962,
+          "offset": 673980,
+          "quote": "Reach Intimacy Lv.5 to unlock more Moments! Chat or send gifts to increase intimacy"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9345,
+          "offset": 566608,
+          "quote": "Avatar verified. Chat or send gifts to boost Intimacy and unlock more features!"
+        }
+      ],
+      "unknowns": [
+        "相互同意和付费边界",
+        "每级精确积分",
+        "地区差异"
+      ],
+      "replica_scope": "以虚拟互动积累解锁非基础关系内容",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "SUG03"
+    },
+    {
+      "name": "Couple 唯一关系与扩槽冲突",
+      "categories": [
+        "社交",
+        "权益"
+      ],
+      "core_loop": "邀请→形成关系→公开关系墙→解除或换伴侣",
+      "distinctive": "亲密关系与装扮/席位共享",
+      "rules": {
+        "门槛": "文案称每人一个Couple，另有付费扩槽文案",
+        "时序": "解除时更新关系",
+        "资源": "关系身份",
+        "回报": "共享权益"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10381,
+          "offset": 600161,
+          "quote": "Each user can have only one Couple. To invite a new partner, the current Couple relationship must be terminated first."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10382,
+          "offset": 600282,
+          "quote": "Each user can only have one Couple, if you form a Couple with a new partner, the old Couple relationship will be automatically disbanded, and the relationship will be publicly available on your profile - Relationship Wall."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 15283,
+          "offset": 759299,
+          "quote": "Your Couple slots are full. Pay to expand slots?"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 14577,
+          "offset": 731357,
+          "quote": "Unlock Couple slots"
+        }
+      ],
+      "unknowns": [
+        "唯一关系与扩槽文案适用对象冲突",
+        "当前开关"
+      ],
+      "replica_scope": "先研究关系模型与同意流程",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现",
+      "id": "SUG04"
+    },
+    {
+      "name": "情侣麦位双人特效",
+      "categories": [
+        "社交",
+        "玩法",
+        "权益"
+      ],
+      "core_loop": "Couple双方坐情侣席→触发特效",
+      "distinctive": "将关系身份投射到房间空间",
+      "rules": {
+        "门槛": "双方占据Couple席",
+        "时序": "席位占用触发",
+        "资源": "关系/主题",
+        "回报": "成对特效和入场装扮"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 13677,
+          "offset": 692405,
+          "quote": "Special effects trigger when both occupy Couple seat"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 13936,
+          "offset": 699295,
+          "quote": "The Theme label indicates special modes in this setting, such as Couple seats, stage seats, etc. %s"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10559,
+          "offset": 604801,
+          "quote": "Exclusive two-person chat room entry effect (only available for couples)"
+        }
+      ],
+      "unknowns": [
+        "特效触发次数",
+        "席位权限",
+        "断线处理"
+      ],
+      "replica_scope": "情侣席位条件展示",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "SUG05"
+    },
+    {
+      "name": "家族活跃维护与强制解散",
+      "categories": [
+        "社交",
+        "玩法"
+      ],
+      "core_loop": "创建或加入→完成每日任务→累积月活跃→维持家族",
+      "distinctive": "社群有持续维护成本",
+      "rules": {
+        "门槛": "创建等级动态；每人仅加入一家",
+        "时序": "自然月",
+        "资源": "任务活跃值",
+        "回报": "家族存续；低于25自动解散且不可恢复文案"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10814,
+          "offset": 611838,
+          "quote": "Forced disband: In order to ensure that users have a good experience of the family function, when the total active value of the family is lower than 25 in a natural month, it will be automatically disbanded, and the family leader/vice leader will receive a notification. the disbanded family cannot be restored.Thank you"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 12426,
+          "offset": 656515,
+          "quote": "One person can only join one family"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 14711,
+          "offset": 735143,
+          "quote": "Users can only create a family when they exceed the level of %s."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 14364,
+          "offset": 724327,
+          "quote": "To everyone, finish today's family tasks to increase family activity，%s"
+        }
+      ],
+      "unknowns": [
+        "任务计分",
+        "时区",
+        "25常量适用区域"
+      ],
+      "replica_scope": "任务活跃、月末预警及解散沙盘",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "SUG06"
+    },
+    {
+      "name": "家族贡献账本和管理权",
+      "categories": [
+        "社交",
+        "权益"
+      ],
+      "core_loop": "成员贡献→贡献排行→领导/副手管理→转让或离开",
+      "distinctive": "贡献与组织身份绑定，离开清账",
+      "rules": {
+        "门槛": "领导可任命副手/转让",
+        "时序": "离开时贡献点清除",
+        "资源": "成员贡献",
+        "回报": "社群职位与贡献展示"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 10300,
+          "offset": 596880,
+          "quote": "Do you confirm to leave this family? Your contribution points for this family will be cleared after you leave."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 8279,
+          "offset": 531030,
+          "quote": "%1$s has been appointed by family leader %2$s as deputy"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 8290,
+          "offset": 531598,
+          "quote": "%1$s has transferred family leadership to %2$s."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9106,
+          "offset": 558054,
+          "quote": "After this function is activated, no permission is needed when users apply to join the family."
+        }
+      ],
+      "unknowns": [
+        "管理权限全集",
+        "任务贡献算法"
+      ],
+      "replica_scope": "角色授权与离族清账模拟",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "SUG07"
+    },
+    {
+      "name": "Chat Star 限时认证权益",
+      "categories": [
+        "社交",
+        "权益"
+      ],
+      "core_loop": "完成个人认证与聊天积分→80分→七天权益→再次达标刷新周期",
+      "distinctive": "认证与社交活跃联合触发临时身份",
+      "rules": {
+        "门槛": "全部个人验证+聊天分80",
+        "时序": "7天；有效期内再达标同步更新",
+        "资源": "聊天积分",
+        "回报": "Chat Star权益"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 8785,
+          "offset": 547566,
+          "quote": "3：Complete all personal verification, the chat score reaches 80 to unlock 7 days Chat Star privileges, privileges are effective during the period to meet the conditions again, the privilege cycle will be synchronized and updated;."
+        }
+      ],
+      "unknowns": [
+        "聊天分生产规则",
+        "刷新是延长还是重置",
+        "权益全集"
+      ],
+      "replica_scope": "限时身份状态机",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现",
+      "id": "SUG08"
+    },
+    {
+      "name": "贵族隐身入房和榜单匿名",
+      "categories": [
+        "权益",
+        "社交"
+      ],
+      "core_loop": "开贵族→启用隐身→入房/榜单隐藏身份",
+      "distinctive": "隐私可见性成为身份权益",
+      "rules": {
+        "门槛": "贵族权益",
+        "时序": "启用期间",
+        "资源": "贵族资格",
+        "回报": "头像昵称入房信息不可见、锁房入口"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9295,
+          "offset": 565187,
+          "quote": "Aristocratic privileges. After enabling it, other users in the live studio won't be able to see your profile pic, nickname and when you come in"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 12268,
+          "offset": 651890,
+          "quote": "No real personal information is displayed in the regional wealth list, charm list, Couple list and room list, appearing as a mystery person"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 12479,
+          "offset": 658708,
+          "quote": "Open aristocracy to enjoy the function of locking room"
+        }
+      ],
+      "unknowns": [
+        "房主/管理员是否仍可见",
+        "不同贵族等级"
+      ],
+      "replica_scope": "可见性矩阵与匿名房间演示",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "SUG09"
+    },
+    {
+      "name": "榜单冠军的可维持身份",
+      "categories": [
+        "权益",
+        "玩法"
+      ],
+      "core_loop": "送礼竞争主播月榜→Top1获专属进场/道具→继续送礼维持",
+      "distinctive": "身份权益持续依赖竞争地位",
+      "rules": {
+        "门槛": "主播月榜Top1",
+        "时序": "月榜周期",
+        "资源": "礼物贡献",
+        "回报": "专属入场效果/道具"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9393,
+          "offset": 567633,
+          "quote": "Become the TOP 1 of the broadcaster's monthly list, and get immediately the exclusive super fan entry effect! Send gifts to the broadcaster, this way you can keep your entry effect."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9394,
+          "offset": 567819,
+          "quote": "Become the TOP1 of the broadcaster's monthly list, and get immediately the exclusive super fan item! Send a gift to the broadcaster this way you can keep your item!"
+        }
+      ],
+      "unknowns": [
+        "失去Top1后的失效时间",
+        "同分规则"
+      ],
+      "replica_scope": "限时榜首权益模型",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "SUG10"
+    },
+    {
+      "name": "Super Winner 报名人数闸门",
+      "categories": [
+        "游戏",
+        "玩法"
+      ],
+      "core_loop": "房主发起→付入口费报名→倒计时→人数超过2自动开局",
+      "distinctive": "先聚集参与者再启动房间小游戏",
+      "rules": {
+        "门槛": "房主启动且倒计时后>2人",
+        "时序": "报名倒计时",
+        "资源": "入口费",
+        "回报": "获胜金币文案"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 8571,
+          "offset": 540364,
+          "quote": "1. Game Description: Super winner is a multiplayer interactive game, started by room owners. Players can participate in the game by paying a entrance fee, and the game will start automatically when there are more than 2 players after the countdown"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9958,
+          "offset": 585843,
+          "quote": "Congratulations to the Winner %1$s won %2$scoins in Super Winner Game"
+        }
+      ],
+      "unknowns": [
+        "游戏动作和随机算法",
+        "退款",
+        "完整结算"
+      ],
+      "replica_scope": "仅报名/锁局状态机",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现",
+      "id": "SUG11"
+    },
+    {
+      "name": "幸运礼物的超级时刻",
+      "categories": [
+        "玩法",
+        "权益"
+      ],
+      "core_loop": "送幸运礼物→超级时刻解锁→奖励播报",
+      "distinctive": "礼物与房间共同期待的奖励时刻关联",
+      "rules": {
+        "门槛": "幸运礼物；触发条件未知",
+        "时序": "超级时刻",
+        "资源": "幸运礼物",
+        "回报": "资源宣称有人得1000倍奖励"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 14165,
+          "offset": 713948,
+          "quote": "The super moment for lucky gifts has been unlocked. Someone will win the reward worth 1000 times in a super moment. Join now and you could be the lucky player"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 13497,
+          "offset": 688034,
+          "quote": "Sent you a surprise gift. Received a lucky unlimited gift %s."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 8529,
+          "offset": 539758,
+          "quote": "*The gifts get from the games which are put in the backpack are not counted in any rankings."
+        }
+      ],
+      "unknowns": [
+        "概率/触发/资金流",
+        "榜单排除范围"
+      ],
+      "replica_scope": "仅事件节奏展示，数值不仿真",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现",
+      "id": "SUG12"
+    }
+  ]
+}

@@ -1,0 +1,1533 @@
+{
+  "input_hashes": {
+    "app.mjs": "55c58cb1ef9abbec9eff62b1546522631736d63cd4ce5f49328354c0fb09ff72",
+    "features.test.mjs": "ad8a6fe47547718c2118ded328259e9dddc1e258877a065d538330d5c68528e2",
+    "index.html": "e29cad9275ce8887f59cf4f01771076ccffc13e0ca8c0fcb811c4731078dcf07",
+    "model.mjs": "a59f5071d6dea7c24e1aeda158ea627dac3cd5b1f74ca2c8aae1f1c19b9a703e",
+    "modules.json": "1c5eaf7d8c880cebd75cd5fdc91aa5595cd3b99a8f42c0c830720a53014629f9",
+    "package.json": "18d5995fb218921933532eee24f652e8b1fe890a9c763f439b72423adf78216a",
+    "style.css": "f2cc9a8605c24fe9c052560d762f1e34e10107d5aced069ede235f42423f4cb1"
+  },
+  "app": "HeeSay",
+  "module_count": 14,
+  "checks": [
+    {
+      "app": "HeeSay",
+      "id": "HEE01",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftA\"]",
+          "expected_text": "阿澄赠2500Beans成为守护"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "推进2分钟榜单延迟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "米拉赠3000Beans争Top1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "推进2分钟榜单延迟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expiry\"]",
+          "expected_text": "推进至第8日GMT+0零点"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftA\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expiry\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE02",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"spark\"]",
+          "expected_text": "注入Chat Spark已点燃事件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftA\"]",
+          "expected_text": "阿澄向米拉送11Beans"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "米拉向阿澄送11Beans"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"unlock\"]",
+          "expected_text": "核验同一天互赠门槛"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "GMT+0进入新一天"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"unlock\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE03",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "加入主播A粉丝团Lv1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinB\"]",
+          "expected_text": "加入主播B粉丝团Lv1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "给B贡献本地20粉丝点升Lv3"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reward\"]",
+          "expected_text": "领取当天最高团等级奖励"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"roomB\"]",
+          "expected_text": "进入所属主播B房展示徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"outside\"]",
+          "expected_text": "进入无所属团主播C房"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"reward\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE04",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "任务注入150000 Force样本"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"upgrade\"]",
+          "expected_text": "选择用150000 Overall升级Lv2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]",
+          "expected_text": "GMT+0月末结算与清月值"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]",
+          "expected_text": "GMT+0月末结算与清月值"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"upgrade\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE05",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"eligible\"]",
+          "expected_text": "模拟财富Lv9"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]",
+          "expected_text": "走财富Lv9新Family路径创建"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"familyBulletin\"]",
+          "expected_text": "族务管理员编辑家族公告"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chatAdmin\"]",
+          "expected_text": "独立授予群管理员"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chatAnnouncement\"]",
+          "expected_text": "群管理员编辑群聊公告"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"recruit\"]",
+          "expected_text": "招募10成员使总人数11"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"deadline\"]",
+          "expected_text": "到本地30天招募截止"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"starship\"]",
+          "expected_text": "查看旧Starship创建资格样本"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE06",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"earn\"]",
+          "expected_text": "积累本地50EXP"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "有效期结束维护重算"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"earn\"]",
+          "expected_text": "积累本地50EXP"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"earn\"]",
+          "expected_text": "积累本地50EXP"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE07",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"eligible\"]",
+          "expected_text": "授予Anonymous Viewing模拟资格"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"toggle\"]",
+          "expected_text": "开启/关闭匿名观看"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"host\"]",
+          "expected_text": "切换主播视角识别真实身份"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"profile\"]",
+          "expected_text": "当前视角打开主页"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"audience\"]",
+          "expected_text": "切换普通观众视角"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"toggle\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE08",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "送1000Beans幸运礼物（100Coins样本）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"result\"]",
+          "expected_text": "注入已知抽取样本：0倍奖励"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"result\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE09",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]",
+          "expected_text": "开始Lv2宝箱任务"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"excluded\"]",
+          "expected_text": "幸运/袋/飞评礼物消耗不计点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"ordinary\"]",
+          "expected_text": "普通礼物消耗10Beans"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"map\"]",
+          "expected_text": "赠送1地图记1点至本地上限2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"map\"]",
+          "expected_text": "赠送1地图记1点至本地上限2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"map\"]",
+          "expected_text": "赠送1地图记1点至本地上限2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "完成共同目标领取资格"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE10",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinB\"]",
+          "expected_text": "B队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "超过10次且双队有人才开局"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"mid\"]",
+          "expected_text": "推进揭第二张卡的倒计时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "结束揭第三张并比较样本队分"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE11",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"configure\"]",
+          "expected_text": "打开开放/显示/按钮三独立配置"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hotpick\"]",
+          "expected_text": "进入Hot Pick入口实验"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "推进配置end_seconds至活动结束"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"pk\"]",
+          "expected_text": "进入跨房PK"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "推进配置end_seconds至活动结束"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"hotpick\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE12",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"likeOld\"]",
+          "expected_text": "为旧作注入人气事件10点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"likeNew\"]",
+          "expected_text": "为新作注入人气事件20点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]",
+          "expected_text": "GMT+0下月1日00:00结榜"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"fourth\"]",
+          "expected_text": "推进到每月4日关闭展示"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"likeOld\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"likeNew\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"fourth\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"likeOld\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE13",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]",
+          "expected_text": "使用一张模拟游戏票"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"win\"]",
+          "expected_text": "注入赢局：Lucky Points+1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]",
+          "expected_text": "使用一张模拟游戏票"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"loss\"]",
+          "expected_text": "注入输局：Lucky Points+3"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]",
+          "expected_text": "使用一张模拟游戏票"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"draw\"]",
+          "expected_text": "注入平局：Lucky Points+0"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"win\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE14",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reorder\"]",
+          "expected_text": "将最后一枚提到第一槽"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"remove\"]",
+          "expected_text": "卸下第一槽并重排"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"reorder\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE01",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftA\"]",
+          "expected_text": "阿澄赠2500Beans成为守护"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "推进2分钟榜单延迟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "米拉赠3000Beans争Top1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "推进2分钟榜单延迟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expiry\"]",
+          "expected_text": "推进至第8日GMT+0零点"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftA\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expiry\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/HEE01-mobile.png"
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE02",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"spark\"]",
+          "expected_text": "注入Chat Spark已点燃事件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftA\"]",
+          "expected_text": "阿澄向米拉送11Beans"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "米拉向阿澄送11Beans"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"unlock\"]",
+          "expected_text": "核验同一天互赠门槛"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "GMT+0进入新一天"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"unlock\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/HEE02-mobile.png"
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE03",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "加入主播A粉丝团Lv1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinB\"]",
+          "expected_text": "加入主播B粉丝团Lv1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "给B贡献本地20粉丝点升Lv3"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reward\"]",
+          "expected_text": "领取当天最高团等级奖励"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"roomB\"]",
+          "expected_text": "进入所属主播B房展示徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"outside\"]",
+          "expected_text": "进入无所属团主播C房"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"reward\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/HEE03-mobile.png"
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE04",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "任务注入150000 Force样本"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"upgrade\"]",
+          "expected_text": "选择用150000 Overall升级Lv2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]",
+          "expected_text": "GMT+0月末结算与清月值"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]",
+          "expected_text": "GMT+0月末结算与清月值"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"upgrade\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/HEE04-mobile.png"
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE05",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"eligible\"]",
+          "expected_text": "模拟财富Lv9"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]",
+          "expected_text": "走财富Lv9新Family路径创建"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"familyBulletin\"]",
+          "expected_text": "族务管理员编辑家族公告"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chatAdmin\"]",
+          "expected_text": "独立授予群管理员"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chatAnnouncement\"]",
+          "expected_text": "群管理员编辑群聊公告"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"recruit\"]",
+          "expected_text": "招募10成员使总人数11"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"deadline\"]",
+          "expected_text": "到本地30天招募截止"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"starship\"]",
+          "expected_text": "查看旧Starship创建资格样本"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/HEE05-mobile.png"
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE06",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"earn\"]",
+          "expected_text": "积累本地50EXP"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "有效期结束维护重算"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"earn\"]",
+          "expected_text": "积累本地50EXP"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"earn\"]",
+          "expected_text": "积累本地50EXP"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/HEE06-mobile.png"
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"eligible\"]",
+          "expected_text": "授予Anonymous Viewing模拟资格"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"toggle\"]",
+          "expected_text": "开启/关闭匿名观看"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"host\"]",
+          "expected_text": "切换主播视角识别真实身份"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"profile\"]",
+          "expected_text": "当前视角打开主页"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"audience\"]",
+          "expected_text": "切换普通观众视角"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"toggle\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/HEE07-mobile.png"
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE08",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "送1000Beans幸运礼物（100Coins样本）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"result\"]",
+          "expected_text": "注入已知抽取样本：0倍奖励"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"result\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/HEE08-mobile.png"
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE09",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]",
+          "expected_text": "开始Lv2宝箱任务"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"excluded\"]",
+          "expected_text": "幸运/袋/飞评礼物消耗不计点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"ordinary\"]",
+          "expected_text": "普通礼物消耗10Beans"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"map\"]",
+          "expected_text": "赠送1地图记1点至本地上限2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"map\"]",
+          "expected_text": "赠送1地图记1点至本地上限2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"map\"]",
+          "expected_text": "赠送1地图记1点至本地上限2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "完成共同目标领取资格"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/HEE09-mobile.png"
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE10",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinB\"]",
+          "expected_text": "B队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "超过10次且双队有人才开局"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"mid\"]",
+          "expected_text": "推进揭第二张卡的倒计时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "结束揭第三张并比较样本队分"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/HEE10-mobile.png"
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE11",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"configure\"]",
+          "expected_text": "打开开放/显示/按钮三独立配置"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hotpick\"]",
+          "expected_text": "进入Hot Pick入口实验"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "推进配置end_seconds至活动结束"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"pk\"]",
+          "expected_text": "进入跨房PK"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "推进配置end_seconds至活动结束"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"hotpick\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/HEE11-mobile.png"
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE12",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"likeOld\"]",
+          "expected_text": "为旧作注入人气事件10点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"likeNew\"]",
+          "expected_text": "为新作注入人气事件20点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]",
+          "expected_text": "GMT+0下月1日00:00结榜"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"fourth\"]",
+          "expected_text": "推进到每月4日关闭展示"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"likeOld\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"likeNew\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"fourth\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"likeOld\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/HEE12-mobile.png"
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE13",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]",
+          "expected_text": "使用一张模拟游戏票"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"win\"]",
+          "expected_text": "注入赢局：Lucky Points+1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]",
+          "expected_text": "使用一张模拟游戏票"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"loss\"]",
+          "expected_text": "注入输局：Lucky Points+3"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]",
+          "expected_text": "使用一张模拟游戏票"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"draw\"]",
+          "expected_text": "注入平局：Lucky Points+0"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"win\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/HEE13-mobile.png"
+    },
+    {
+      "app": "HeeSay",
+      "id": "HEE14",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reorder\"]",
+          "expected_text": "将最后一枚提到第一槽"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"remove\"]",
+          "expected_text": "卸下第一槽并重排"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"reorder\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/HEE14-mobile.png"
+    }
+  ],
+  "passed": true,
+  "scope": "Local core-loop UI verification; no original APK/RTC/backend/payment/human verification."
+}

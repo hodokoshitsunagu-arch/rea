@@ -1,0 +1,12 @@
+[
+  {
+    "file": "rea-package.json",
+    "operation": "inspect_android_package",
+    "evidence_id": "ev_3ba0a0afa5f2ff8bafd072267ce8084dbed4f06fc1ac7640bb50179e8a3b1167",
+    "status": "observed",
+    "error": null,
+    "parameters": {
+      "path": "/Users/mark/Projects/REA/ToResearch/Yalla-Parchis/apks/com.yalla.yallaparchisi.apk"
+    }
+  }
+]

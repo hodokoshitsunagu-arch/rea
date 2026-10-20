@@ -1,0 +1,112 @@
+TAP version 13
+# Subtest: MIR01 正常核心闭环、资源结果与纯函数重置
+ok 1 - MIR01 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.866375
+  type: 'test'
+  ...
+# Subtest: MIR01 关键资格、重复或异常边界
+ok 2 - MIR01 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.069708
+  type: 'test'
+  ...
+# Subtest: MIR02 正常核心闭环、资源结果与纯函数重置
+ok 3 - MIR02 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.0885
+  type: 'test'
+  ...
+# Subtest: MIR02 关键资格、重复或异常边界
+ok 4 - MIR02 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.041084
+  type: 'test'
+  ...
+# Subtest: MIR03 正常核心闭环、资源结果与纯函数重置
+ok 5 - MIR03 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.191125
+  type: 'test'
+  ...
+# Subtest: MIR03 关键资格、重复或异常边界
+ok 6 - MIR03 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.041458
+  type: 'test'
+  ...
+# Subtest: MIR04 正常核心闭环、资源结果与纯函数重置
+ok 7 - MIR04 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.109208
+  type: 'test'
+  ...
+# Subtest: MIR04 关键资格、重复或异常边界
+ok 8 - MIR04 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.048709
+  type: 'test'
+  ...
+# Subtest: MIR05 正常核心闭环、资源结果与纯函数重置
+ok 9 - MIR05 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.07625
+  type: 'test'
+  ...
+# Subtest: MIR05 关键资格、重复或异常边界
+ok 10 - MIR05 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.119584
+  type: 'test'
+  ...
+# Subtest: MIR06 正常核心闭环、资源结果与纯函数重置
+ok 11 - MIR06 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.135916
+  type: 'test'
+  ...
+# Subtest: MIR06 关键资格、重复或异常边界
+ok 12 - MIR06 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.059709
+  type: 'test'
+  ...
+# Subtest: MIR07 正常核心闭环、资源结果与纯函数重置
+ok 13 - MIR07 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.085667
+  type: 'test'
+  ...
+# Subtest: MIR07 关键资格、重复或异常边界
+ok 14 - MIR07 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.036291
+  type: 'test'
+  ...
+# Subtest: MIR08 正常核心闭环、资源结果与纯函数重置
+ok 15 - MIR08 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.081666
+  type: 'test'
+  ...
+# Subtest: MIR08 关键资格、重复或异常边界
+ok 16 - MIR08 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.045416
+  type: 'test'
+  ...
+# Subtest: Mirrativ 超时、重复奖励、草稿丢弃与时段重置
+ok 17 - Mirrativ 超时、重复奖励、草稿丢弃与时段重置
+  ---
+  duration_ms: 0.176292
+  type: 'test'
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 36.919791

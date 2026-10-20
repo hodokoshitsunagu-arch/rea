@@ -1,0 +1,532 @@
+{
+  "app": "Falla",
+  "package": "com.juhaoliao.vochat",
+  "version": "V9.23.0",
+  "scope": "partial static",
+  "items": [
+    {
+      "name": "Quick Ludo 先吃后冲线",
+      "categories": [
+        "游戏",
+        "玩法"
+      ],
+      "core_loop": "至少吃一子→获得进终点资格→一子到终点获胜",
+      "distinctive": "冲刺以前必须主动对抗",
+      "rules": {
+        "门槛": "快速模式吃1子才能进终点",
+        "时序": "单局",
+        "资源": "捕获标记",
+        "回报": "一子完成即胜；经典全子"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 7024,
+          "offset": 501282,
+          "quote": "1. In Quick Mode, you can enter the finish track only after killing 1 piece of any other player\n\n2. A player who throws 6 can move, and gets another chance to throw the dice. If a player throws 6 three consecutive times, the round ends. \n\n3. Players who steps on an opponent can eliminate the opponent, forcing them back to base, while the player gets another chance to throw the dice. \n\n4. Player can reach the finish only when they throw the number for the fixed point, and get another chance to throw the dice. \n\n5. Players who earn 'gold dice' must throw 6. \n\n6. Players who earn the 'magnet' can advance 8 steps until others block them \n\n7. Players who earn the 'bomb' can bomb 8 steps, eliminating the opponent back to the base \n\n8. All pieces should reach the finish in a classic competition, and only one piece should reach the finish in a quick competition. \n9. When the game is over, the more pieces that reach the finish, and \nthe farther the pieces that haven't reached the finish are, the higher the rank."
+        }
+      ],
+      "unknowns": [
+        "棋盘坐标/安全格",
+        "服务器骰子"
+      ],
+      "replica_scope": "吃子资格与终局状态机",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "已有",
+      "id": "FAL01"
+    },
+    {
+      "name": "Ludo 额外回合与三连六停局",
+      "categories": [
+        "游戏",
+        "玩法"
+      ],
+      "core_loop": "掷6/吃子/到终点→再投→连续三6结束回合",
+      "distinctive": "连动收益与失去回合相制约",
+      "rules": {
+        "门槛": "6、吃子、精确终点",
+        "时序": "三次连续6结束本回合",
+        "资源": "骰子历史",
+        "回报": "再投机会"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 7024,
+          "offset": 501282,
+          "quote": "1. In Quick Mode, you can enter the finish track only after killing 1 piece of any other player\n\n2. A player who throws 6 can move, and gets another chance to throw the dice. If a player throws 6 three consecutive times, the round ends. \n\n3. Players who steps on an opponent can eliminate the opponent, forcing them back to base, while the player gets another chance to throw the dice. \n\n4. Player can reach the finish only when they throw the number for the fixed point, and get another chance to throw the dice. \n\n5. Players who earn 'gold dice' must throw 6. \n\n6. Players who earn the 'magnet' can advance 8 steps until others block them \n\n7. Players who earn the 'bomb' can bomb 8 steps, eliminating the opponent back to the base \n\n8. All pieces should reach the finish in a classic competition, and only one piece should reach the finish in a quick competition. \n9. When the game is over, the more pieces that reach the finish, and \nthe farther the pieces that haven't reached the finish are, the higher the rank."
+        }
+      ],
+      "unknowns": [
+        "连续定义",
+        "捕获后六历史是否重置"
+      ],
+      "replica_scope": "连动规则实验",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "已有",
+      "id": "FAL02"
+    },
+    {
+      "name": "Ludo 金骰磁铁炸弹",
+      "categories": [
+        "游戏",
+        "玩法"
+      ],
+      "core_loop": "获得道具→修改骰子或行进→破坏对手布局",
+      "distinctive": "三种作用边界各异",
+      "rules": {
+        "门槛": "获取对应道具",
+        "时序": "使用窗口未知",
+        "资源": "金骰必6；磁铁前进8直到阻挡；炸弹8步送对手回基地",
+        "回报": "位置优势"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 7024,
+          "offset": 501282,
+          "quote": "1. In Quick Mode, you can enter the finish track only after killing 1 piece of any other player\n\n2. A player who throws 6 can move, and gets another chance to throw the dice. If a player throws 6 three consecutive times, the round ends. \n\n3. Players who steps on an opponent can eliminate the opponent, forcing them back to base, while the player gets another chance to throw the dice. \n\n4. Player can reach the finish only when they throw the number for the fixed point, and get another chance to throw the dice. \n\n5. Players who earn 'gold dice' must throw 6. \n\n6. Players who earn the 'magnet' can advance 8 steps until others block them \n\n7. Players who earn the 'bomb' can bomb 8 steps, eliminating the opponent back to the base \n\n8. All pieces should reach the finish in a classic competition, and only one piece should reach the finish in a quick competition. \n9. When the game is over, the more pieces that reach the finish, and \nthe farther the pieces that haven't reached the finish are, the higher the rank."
+        }
+      ],
+      "unknowns": [
+        "获取成本/概率",
+        "安全格例外",
+        "炸弹路径"
+      ],
+      "replica_scope": "道具机制候选，先补使用窗口",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现",
+      "id": "FAL03"
+    },
+    {
+      "name": "房间与外部游戏匹配绑定",
+      "categories": [
+        "游戏",
+        "社交",
+        "玩法"
+      ],
+      "core_loop": "选游戏→请求匹配→得到gid→带游戏信息进房",
+      "distinctive": "游戏匹配将社交空间身份作为结果",
+      "rules": {
+        "门槛": "gameId与gamePlatform",
+        "时序": "gid>0才进入成功分支",
+        "资源": "room_match_extra/MatchModel",
+        "回报": "共享游戏房"
+      },
+      "evidence_strength": "A代码+文案",
+      "evidence_refs": [
+        {
+          "file": "analysis/rea-ludo-method.json",
+          "selector": "LudoMatchHelper.a",
+          "observation": "gameId/gamePlatform→RoomApi GroupInfo→gid判定→room_match_extra",
+          "evidence_id": "ev_be475da3348244034000399d8fa034d17c878dd6cfb6babf2af5de3e223d3bd2"
+        }
+      ],
+      "unknowns": [
+        "服务器路由",
+        "进房后的游戏状态"
+      ],
+      "replica_scope": "游戏匹配与房间关联流程",
+      "replica_effort": "高",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "FAL04"
+    },
+    {
+      "name": "幸运袋票与Queen权限",
+      "categories": [
+        "玩法",
+        "权益"
+      ],
+      "core_loop": "使用幸运袋票→房间分礼→Queen身份禁止送袋",
+      "distinctive": "礼物活动权限依特殊身份变化",
+      "rules": {
+        "门槛": "幸运袋票；Queen不能送袋",
+        "时序": "房间活动",
+        "资源": "袋票/礼物",
+        "回报": "参与分发"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 7926,
+          "offset": 527792,
+          "quote": "Gift lucky bag ticket"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9059,
+          "offset": 562932,
+          "quote": "Sent a gift lucky bag, come and open it"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9062,
+          "offset": 563042,
+          "quote": "Sent gift lucky bag worth [Holder]"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9258,
+          "offset": 567234,
+          "quote": "The Queen can't send a lucky bag gift"
+        }
+      ],
+      "unknowns": [
+        "Queen获取失效",
+        "分配概率",
+        "票成本"
+      ],
+      "replica_scope": "权限闸门+袋活动骨架",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现",
+      "id": "FAL05"
+    },
+    {
+      "name": "许愿池碎片兑换和榜单",
+      "categories": [
+        "玩法",
+        "权益"
+      ],
+      "core_loop": "抽许愿池→必得奖励入背包→礼物/贵族碎片兑换→日周排行",
+      "distinctive": "一次抽取连接装扮、贵族和社交赠礼",
+      "rules": {
+        "门槛": "参加抽奖",
+        "时序": "沙特时间日0点、周一0点结算",
+        "资源": "礼物碎片/贵族碎片",
+        "回报": "限定礼物、兑换物、榜单奖励"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 7023,
+          "offset": 500516,
+          "quote": "1. Every time you participate in the Wishing Fountain lottery, you will receive a reward, and the reward will be automatically placed in your backpack.\n2. The gifts in the Wishing Fountain are limited gifts. You can only get this gift by drawing in the Wishing Fountain.\n3. Obtain gift fragments and noble fragments, which can be used in the happy exchange house.\n4. The daily list settlement time is from 00:00 on the same day to 00:00 the next day, saudi time, and the weekly list settlement time is from monday 00:00 on monday to 00:00 on the next monday, saudi time. ranking rewards will be automatically distributed after settlement.\n5. This gameplay has nothing to do with apple.\n6. The final interpretation right of this gameplay belongs to the platform."
+        }
+      ],
+      "unknowns": [
+        "抽取概率/成本",
+        "碎片兑换率"
+      ],
+      "replica_scope": "虚拟碎片合成与结算节奏",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现",
+      "id": "FAL06"
+    },
+    {
+      "name": "Soulmate/Bestie/Homie 区域关系榜",
+      "categories": [
+        "社交",
+        "权益"
+      ],
+      "core_loop": "邀请关系→积累亲密→按邀请者地区排行→解除清点/权益",
+      "distinctive": "多关系类别共用区域亲密竞争",
+      "rules": {
+        "门槛": "成立关系；按邀请者区域",
+        "时序": "统计期未知",
+        "资源": "亲密值，活动与周星礼物排除",
+        "回报": "关系榜和权益"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 7027,
+          "offset": 503115,
+          "quote": "1. The relationship list of Soulmate, Bestie, and Homie in your region\n\n2. Ranking based on the intimacy value obtained (events and weekly star gifts do not participate in the relationship list)\n\n3. Intimacy are ranked based on the inviter region, and intimacy in other region will not be ranked."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 7202,
+          "offset": 507999,
+          "quote": "Are you sure to initiate a termination application? The intimacy value and privileges will be removed immediately after the relationship is terminated"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9308,
+          "offset": 570192,
+          "quote": "The intimacy has been terminated; the intimacy value is cleared and the privilege becomes invalid"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9668,
+          "offset": 581042,
+          "quote": "You and [Holder] unbind the CP relationship, the CP intimacy has been cleared to 0, and the CP privileges have disappeared"
+        }
+      ],
+      "unknowns": [
+        "各类槽位/同意",
+        "具体权益"
+      ],
+      "replica_scope": "关系类别与来源排除账本",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "FAL07"
+    },
+    {
+      "name": "家族EXP保级周期",
+      "categories": [
+        "社交",
+        "玩法",
+        "权益"
+      ],
+      "core_loop": "成员贡献EXP→到截止前升级/保级→区域家族榜",
+      "distinctive": "家族升级不是永久状态",
+      "rules": {
+        "门槛": "指定EXP阈值",
+        "时序": "等级截止时间下发",
+        "资源": "家族EXP",
+        "回报": "等级与地区排行"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9281,
+          "offset": 568782,
+          "quote": "The family level will be settled at [Holder1]. EXP reach [Holder2] before the expiration date to upgrade. Hurry up and contribute EXP to your family!"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9787,
+          "offset": 587069,
+          "quote": "Your family level is about to expire at [Holder1]. EXP reach [Holder2] before the expiration date to keep current level. Hurry up and contribute EXP to your family!"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 8778,
+          "offset": 556314,
+          "quote": "Ranked based on family EXP, display the ranking the family owner's region/country. Different country/region will not be displayed."
+        }
+      ],
+      "unknowns": [
+        "EXP来源",
+        "降级幅度",
+        "月周期是否统一"
+      ],
+      "replica_scope": "可配置家族维护系统",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现",
+      "id": "FAL08"
+    },
+    {
+      "name": "家族管理员发言特权",
+      "categories": [
+        "社交",
+        "权益"
+      ],
+      "core_loop": "群管理开启全员禁言→族长和管理可发言→对单人另行禁言",
+      "distinctive": "组织角色控制社群主持权",
+      "rules": {
+        "门槛": "族长/管理员",
+        "时序": "开关即时",
+        "资源": "管理身份",
+        "回报": "组织活动秩序"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9448,
+          "offset": 575623,
+          "quote": "Turn it on and only family owner and admins are allowed to speak. (In the group or member list, click the user's avatar to mute a single member)"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9754,
+          "offset": 585262,
+          "quote": "You have turned on All Mute, which only allows family owner and admins to send messages"
+        }
+      ],
+      "unknowns": [
+        "开关操作者",
+        "角色转让",
+        "语音是否受影响"
+      ],
+      "replica_scope": "家族群主持权限演示",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "FAL09"
+    },
+    {
+      "name": "贵族30天权益与续期折扣",
+      "categories": [
+        "权益"
+      ],
+      "core_loop": "买贵族→30天生效→有效期及到期7天内复购八折",
+      "distinctive": "续费窗口跨过期边界",
+      "rules": {
+        "门槛": "购买贵族",
+        "时序": "30天；到期后7天仍20%折扣",
+        "资源": "贵族资格",
+        "回报": "限时贵族权限"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 6913,
+          "offset": 498931,
+          "quote": "*The aristocratic privilege is valid for 30 days each time, and will automatically expire after 30 days. You can get 20% discount if you buy again within the period of validity and 7 days after expiration"
+        }
+      ],
+      "unknowns": [
+        "等级权益/价格",
+        "续期叠加"
+      ],
+      "replica_scope": "权益有效期与价格窗口",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "FAL10"
+    },
+    {
+      "name": "神秘身份体验卡与自动恢复",
+      "categories": [
+        "权益",
+        "社交"
+      ],
+      "core_loop": "试用卡→切神秘ID→限时匿名→到期恢复真实ID",
+      "distinctive": "身份展示有显式自动回落",
+      "rules": {
+        "门槛": "神秘权益或试用卡",
+        "时序": "{Holder}天；到期恢复",
+        "资源": "体验卡",
+        "回报": "神秘身份"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 8477,
+          "offset": 543744,
+          "quote": "No mystery privilege yet, do you want to use a [Holder]-day trial card and switch to mystery ID ?"
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9798,
+          "offset": 587744,
+          "quote": "Your mystery privileges will expire within [Holder] hours, and will automatically switch to real ID then"
+        }
+      ],
+      "unknowns": [
+        "可见对象",
+        "真ID泄露范围"
+      ],
+      "replica_scope": "匿名身份生命周期",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "FAL11"
+    },
+    {
+      "name": "SVIP周期重算与充值加成",
+      "categories": [
+        "权益"
+      ],
+      "core_loop": "周期内积点→按点重算SVIP→清点→享受充值奖励",
+      "distinctive": "等级与本周期积分分开结算",
+      "rules": {
+        "门槛": "SVIP等级积分",
+        "时序": "到期重算后积分清空",
+        "资源": "SVIP点/充值",
+        "回报": "额外百分比金币"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 9850,
+          "offset": 589793,
+          "quote": "[Holder] The current level is about to expire and the SVIP level will be reset according to the points you have, and the points will be cleared after reset."
+        },
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 7608,
+          "offset": 520022,
+          "quote": "Dear SVIP[Holder1] user, you will enjoy additional [Holder2]% coin reward for every recharge you make"
+        }
+      ],
+      "unknowns": [
+        "等级阈值",
+        "点生产",
+        "返还数值"
+      ],
+      "replica_scope": "周期权益账本",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现",
+      "id": "FAL12"
+    },
+    {
+      "name": "跨语区迁移的一次性身份代价",
+      "categories": [
+        "社交",
+        "权益",
+        "玩法"
+      ],
+      "core_loop": "选新语言地区→确认→退家族清榜/清SVIP→旧国房不可进入",
+      "distinctive": "地区迁移切换整个社交经济身份",
+      "rules": {
+        "门槛": "仅一次跨语言区域迁移",
+        "时序": "确认后重置",
+        "资源": "特殊ID、家族、榜分、SVIP级点",
+        "回报": "新区域身份"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expansion-resources.json",
+          "member": "resources.arsc",
+          "index": 8523,
+          "offset": 544882,
+          "quote": "Notes for Changing Country\n1. Each user has only one opportunity to change country across language regions. You are changing to【[Holder]】\n2. After the change, you will lose your current special ID and automatically quit the family, and all activity and ranking points, SVIP level and SVIP points will be reset to 0.\n3. After the change, you will no longer be able to enter rooms of your previous country."
+        }
+      ],
+      "unknowns": [
+        "当前服务地区定义",
+        "迁移可恢复性"
+      ],
+      "replica_scope": "只做沙盘，不操作真实账户",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "FAL13"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "selection": "Report-specific bounded excerpts; full keyword records remain in sibling evidence files",
+  "records": [
+    {
+      "id": "com.machipopo.media17.apk:classes10.dex:string:4827",
+      "offset": 6687676,
+      "text": "(Lcom/machipopo/media17/modules/rockarea/adapter/RockAreaListAdapter;Landroid/view/View;ILcom/machipopo/media17/modules/rockarea/adapter/RockAreaListAdapter$RockAreaListAdapterOnClickListener;Lcom/machipopo/media17/modules/livebroadcast/utils/LiveBroadcastType;Ljava/lang/Boolean;Lcom/machipopo/media17/modules/armysubs/data/network/model/ArmyNameData;)V"
+    },
+    {
+      "id": "com.machipopo.media17.apk:classes10.dex:string:7831",
+      "offset": 6847829,
+      "text": "ARMY_BROADCAST_SETTING_REQUIRE_LEVEL"
+    },
+    {
+      "id": "com.machipopo.media17.apk:classes10.dex:string:9113",
+      "offset": 6880341,
+      "text": "CONFIG_ARMY_BROADCAST_LEVEL"
+    },
+    {
+      "id": "com.machipopo.media17.apk:classes8.dex:string:27546",
+      "offset": 7221832,
+      "text": "PK_DYNAMIC_MISSION"
+    },
+    {
+      "id": "com.machipopo.media17.apk:classes9.dex:string:33279",
+      "offset": 7832267,
+      "text": "button_pk.mission.help"
+    },
+    {
+      "id": "config.ko.apk:resources.arsc:pool:12:string:866",
+      "offset": 72921,
+      "text": "Before starting the battle, please set up the teams (drag and drop to assign streamers), choose a topic, and set the duration."
+    },
+    {
+      "id": "config.ko.apk:resources.arsc:pool:12:string:1551",
+      "offset": 98537,
+      "text": "During the PK event period, both streamers and their viewers work together to complete the above missions and earn rewards for both sides."
+    },
+    {
+      "id": "config.ko.apk:resources.arsc:pool:12:string:1870",
+      "offset": 110912,
+      "text": "For PK livestreams that successfully complete the mission, both streamers will receive the following rewards."
+    },
+    {
+      "id": "config.ko.apk:resources.arsc:pool:12:string:1999",
+      "offset": 115122,
+      "text": "Gifting will accumulate PK Points regardless of whether it’s during a mission.\nEven after the mission is completed, users can continue sending gifts to help boost your PK score and earn rewards! (1 gift point = 1 PK point)"
+    },
+    {
+      "id": "config.ko.apk:resources.arsc:pool:12:string:3494",
+      "offset": 182206,
+      "text": "Random missions (such as comments, likes, or various gifts) will appear during the PK!\nViewers from both livestreams can work together to complete them and earn even more PK Points!"
+    },
+    {
+      "id": "config.ko.apk:resources.arsc:pool:12:string:3806",
+      "offset": 191114,
+      "text": "Select a question theme for the Quiz game"
+    },
+    {
+      "id": "config.ko.apk:resources.arsc:pool:12:string:4063",
+      "offset": 202678,
+      "text": "Spice up streams with Interactive Games! Play Draw & Guess and Quiz Game with viewers. AI handles everything: rules, hints, answers. Just have fun with your community."
+    },
+    {
+      "id": "config.ko.apk:resources.arsc:pool:12:string:4085",
+      "offset": 203435,
+      "text": "Start Quiz game"
+    },
+    {
+      "id": "config.ko.apk:resources.arsc:pool:12:string:4404",
+      "offset": 217148,
+      "text": "The PK co-op mission has ended since the opponent has surrendered."
+    },
+    {
+      "id": "config.ko.apk:resources.arsc:pool:12:string:4405",
+      "offset": 217217,
+      "text": "The PK co-op mission has ended since the streamer has surrendered."
+    }
+  ]
+}

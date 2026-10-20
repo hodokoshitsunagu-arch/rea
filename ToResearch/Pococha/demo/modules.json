@@ -1,0 +1,442 @@
+{
+  "app": "Pococha",
+  "modules": [
+    {
+      "id": "POC01",
+      "title": "开放/核心粉丝Family资格与退群",
+      "implemented_scope": "粉丝申请Family→持续观看与保持核心资格→失格自动退群；模拟成为Core Fan / 申请Family / 观看重置连续未看天数 / 连续10天未观看 / 模拟失去Core Fan / 月末资格检查",
+      "limitations": [
+        "核心资格积分、观看计日时区",
+        "例外",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"core\"]",
+          "expected_text": "模拟成为Core Fan"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"apply-type\"]",
+          "value": "Core"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"apply\"]",
+          "expected_text": "申请Family"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "观看重置连续未看天数"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"tenDays\"]",
+          "expected_text": "连续10天未观看"
+        }
+      ]
+    },
+    {
+      "id": "POC02",
+      "title": "Family频道权限和助手治理",
+      "implemented_scope": "主播建频道→按助手/应援等级分隔→委派助手执行管理；选择模拟角色 / 邀请Family成员 / 发送频道消息 / Owner移除成员",
+      "limitations": [
+        "具体权限枚举、邀请数量",
+        "成员等级判定",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "assistant"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]",
+          "expected_text": "选择模拟角色"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"invite-name\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]",
+          "expected_text": "邀请Family成员"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"post-channel\"]",
+          "value": "assistant"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"post-text\"]",
+          "value": "请管理应援秩序"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"post\"]",
+          "expected_text": "发送频道消息"
+        }
+      ]
+    },
+    {
+      "id": "POC03",
+      "title": "助手操作日志同意",
+      "implemented_scope": "助手同意动作可见→管理评论/用户/Family→主播查看专属日志；助手同意操作日志 / 撤回日志同意 / 助手治理操作 / 选择查看角色 / 查看操作日志 / 普通观看；仅Family Owner取得治理日志投影；切换至助手/粉丝立即清除可见快照，UI通过visibleState过滤原logs与治理事件轨迹。所有者原记录保留，可重新查询。",
+      "limitations": [
+        "具体日志事件列表、保存期",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "Node owner-boundary regression passed; browser revalidation pending",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"agree\"]",
+          "expected_text": "助手同意操作日志"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"operate-target\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"operate\"]",
+          "expected_text": "助手治理操作"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "owner"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]",
+          "expected_text": "选择查看角色"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"logs\"]",
+          "expected_text": "查看操作日志"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "fan"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]"
+        }
+      ]
+    },
+    {
+      "id": "POC04",
+      "title": "季度Family Board留言",
+      "implemented_scope": "满足Core Fan等条件→每3个月留一条→指定日期集体可见；模拟Core Fan资格 / 写季度留言 / 提交季度留言 / 达到公开日期 / 进入下个季度",
+      "limitations": [
+        "其他资格、周期锚点、修改删除",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"core\"]",
+          "expected_text": "模拟Core Fan资格"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"write-text\"]",
+          "value": "这季度感谢大家的陪伴"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"write\"]",
+          "expected_text": "写季度留言"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]",
+          "expected_text": "提交季度留言"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reveal\"]",
+          "expected_text": "达到公开日期"
+        }
+      ]
+    },
+    {
+      "id": "POC05",
+      "title": "Rank Meter应援保级进度",
+      "implemented_scope": "直播积累应援→Rank Meter显示当前分与目标→周期变化；写入本地应援点 / 模拟休息保护 / 周期结算契约 / 开始新周期",
+      "limitations": [
+        "真实计分、等级变化阈值与周期",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"support-points\"]",
+          "value": "200"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]",
+          "expected_text": "写入本地应援点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"settle\"]",
+          "expected_text": "周期结算契约"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"period\"]",
+          "expected_text": "开始新周期"
+        }
+      ]
+    },
+    {
+      "id": "POC06",
+      "title": "Rest Day强制休息与等级保护",
+      "implemented_scope": "排本月休息→到点禁止直播/终止当前直播→Rank不变；设置月休息日 / 开始前10分钟修改 / 主播开播 / 推进到休息日 / 推进自动结束延迟 / 尝试同日Freeze Pass",
+      "limitations": [
+        "月最低天数、延迟终止秒数",
+        "不同模式适用",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"schedule\"]",
+          "expected_text": "设置月休息日"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "主播开播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"advance\"]",
+          "expected_text": "推进到休息日"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"delay\"]",
+          "expected_text": "推进自动结束延迟"
+        }
+      ]
+    },
+    {
+      "id": "POC07",
+      "title": "Freeze Pass按需停表",
+      "implemented_scope": "消耗通票→Rank Meter冻结→保护休息中的等级；使用Freeze Pass / 应援尝试改变Meter / 尝试设置Rest Day / 结束冻结周期",
+      "limitations": [
+        "券获取/有效期",
+        "能否直播/赚收益",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"freeze\"]",
+          "expected_text": "使用Freeze Pass"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]",
+          "expected_text": "应援尝试改变Meter"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "结束冻结周期"
+        }
+      ]
+    },
+    {
+      "id": "POC08",
+      "title": "PocoBox连续观看+评论续计时",
+      "implemented_scope": "看直播→宝箱倒计时→停止时评论恢复→连续看候选升级箱；进入连续观看 / 持续观看一分钟 / 计时停止 / 发送评论续计时 / 开启PocoBox",
+      "limitations": [
+        "计时长度、停止条件、掉率、币奖",
+        "升级是概率提示",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "进入连续观看"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "持续观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"pause\"]",
+          "expected_text": "计时停止"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"comment\"]",
+          "expected_text": "发送评论续计时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "持续观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "持续观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "开启PocoBox"
+        }
+      ]
+    },
+    {
+      "id": "POC09",
+      "title": "Poco Knight应援身份与专属道具",
+      "implemented_scope": "付Coins成为主播Knight→获对应身份道具→升级后旧道具仍可用；升级Knight / 使用限定应援道具 / 升级到下一档；parametersFor拥有四档Knight价格/名称解释；价格必须有限正数，等级必须整数。价格与档位仍为本地重构参数，不声称原定价。",
+      "limitations": [
+        "价格、身份期限、道具数量和消耗",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "Node owner-boundary regression passed; browser revalidation pending",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"upgrade-level\"]",
+          "value": "0"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"upgrade\"]",
+          "expected_text": "升级Knight"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"upgradeNext\"]",
+          "expected_text": "升级到下一档"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]",
+          "expected_text": "使用限定应援道具"
+        }
+      ]
+    },
+    {
+      "id": "POC10",
+      "title": "Flexi/Premier直播收益时长模式",
+      "implemented_scope": "选择节奏→申请审核→模式调整时长/Stage；首次直播满21日 / 申请模式 / 模拟审核通过 / 直播一小时 / Flexi改Premier / 关闭申请窗口",
+      "limitations": [
+        "Diamond倍率、Stage降幅",
+        "适用地区",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"age\"]",
+          "expected_text": "首次直播满21日"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"apply-mode\"]",
+          "value": "Flexi"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"apply\"]",
+          "expected_text": "申请模式"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]",
+          "expected_text": "模拟审核通过"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stream\"]",
+          "expected_text": "直播一小时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"switch\"]",
+          "expected_text": "Flexi改Premier"
+        }
+      ]
+    },
+    {
+      "id": "POC11",
+      "title": "Audition活动收益切换",
+      "implemented_scope": "切到选拔活动模式→应援入活动points→停常规diamond获取；切换收益模式 / 观众应援 / 直播一小时 / 结束活动模式",
+      "limitations": [
+        "切换窗口、积分和奖励",
+        "是否所有选拔适用",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"mode-mode\"]",
+          "value": "audition"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"mode\"]",
+          "expected_text": "切换收益模式"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"support-points\"]",
+          "value": "20"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]",
+          "expected_text": "观众应援"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hour\"]",
+          "expected_text": "直播一小时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "结束活动模式"
+        }
+      ]
+    }
+  ]
+}

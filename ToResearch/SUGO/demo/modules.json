@@ -1,0 +1,561 @@
+{
+  "app": "SUGO",
+  "modules": [
+    {
+      "id": "SUG01",
+      "title": "PK KING/QUEEN 自动轮转",
+      "implemented_scope": "自动轮转状态机；专属操作：主持人开始自动PK → 支持本队：模拟礼物10分 → 推进5分钟 → 主动停止轮转",
+      "limitations": [
+        "匹配池和退出处罚",
+        "服务器计分",
+        "匹配对象以本地两主播轮换；1礼物=10分仅试验参数；5+5分钟为资源规则",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "主持人开始自动PK"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "支持本队：模拟礼物10分"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"advance\"]",
+          "expected_text": "推进5分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"advance\"]",
+          "expected_text": "推进5分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stop\"]",
+          "expected_text": "主动停止轮转"
+        }
+      ]
+    },
+    {
+      "id": "SUG02",
+      "title": "麦位分与阵营累计分分离",
+      "implemented_scope": "双账本计分实验；专属操作：向当前麦位送10分 → 阿澄下麦，米拉上麦 → 结算本轮双账本",
+      "limitations": [
+        "重新计算和归零文案差异",
+        "跨队转移归属",
+        "采用更换清零文案分支；重新计算文案冲突保留；礼物10分为本地参数",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"replace\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"settle\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"settle\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "向当前麦位送10分"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"replace\"]",
+          "expected_text": "阿澄下麦，米拉上麦"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "向当前麦位送10分"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"settle\"]",
+          "expected_text": "结算本轮双账本"
+        }
+      ]
+    },
+    {
+      "id": "SUG03",
+      "title": "亲密度解锁关系能力",
+      "implemented_scope": "以虚拟互动积累解锁非基础关系内容；专属操作：双方模拟聊天（本地10点） → 对方同意展示私人相册 → 请求查看相册样本",
+      "limitations": [
+        "相互同意和付费边界",
+        "每级精确积分",
+        "地区差异",
+        "每级10点本地参数；同意是重构补齐；Lv1/2/4/5为直接门槛",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"album\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "双方模拟聊天（本地10点）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "双方模拟聊天（本地10点）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "双方模拟聊天（本地10点）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "双方模拟聊天（本地10点）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"consent\"]",
+          "expected_text": "对方同意展示私人相册"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"album\"]",
+          "expected_text": "请求查看相册样本"
+        }
+      ]
+    },
+    {
+      "id": "SUG04",
+      "title": "Couple 唯一关系与扩槽冲突",
+      "implemented_scope": "先研究关系模型与同意流程；专属操作：邀请米拉成为Couple → 米拉接受邀请 → 尝试邀请另一位伴侣 → 双方确认解除关系",
+      "limitations": [
+        "唯一关系与扩槽文案适用对象冲突",
+        "当前开关",
+        "明确选择先解除分支；自动替换和扩槽冲突仅展示，不宣称当前线上规则",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]",
+          "expected_text": "邀请米拉成为Couple"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "米拉接受邀请"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"terminate\"]",
+          "expected_text": "双方确认解除关系"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"replace\"]",
+          "expected_text": "尝试邀请另一位伴侣"
+        }
+      ]
+    },
+    {
+      "id": "SUG05",
+      "title": "情侣麦位双人特效",
+      "implemented_scope": "情侣席位条件展示；专属操作：双方同意建立Couple → 阿澄坐情侣左席 → 米拉坐情侣右席 → 米拉离开右席",
+      "limitations": [
+        "特效触发次数",
+        "席位权限",
+        "断线处理",
+        "特效离席即停止、本地权限与一次状态切换为重构选择",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"seatB\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"relationship\"]",
+          "expected_text": "双方同意建立Couple"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"seatA\"]",
+          "expected_text": "阿澄坐情侣左席"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"seatB\"]",
+          "expected_text": "米拉坐情侣右席"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"leave\"]",
+          "expected_text": "米拉离开右席"
+        }
+      ]
+    },
+    {
+      "id": "SUG06",
+      "title": "家族活跃维护与强制解散",
+      "implemented_scope": "任务活跃、月末预警及解散沙盘；专属操作：创建家族（本地门槛Lv5） → 完成今日任务（本地5活跃） → 推进一天 → 结算自然月",
+      "limitations": [
+        "任务计分",
+        "时区",
+        "25常量适用区域",
+        "创建Lv>5和每任务5点本地参数；自然月按手动月份步进，源时区未知",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]",
+          "expected_text": "创建家族（本地门槛Lv5）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "完成今日任务（本地5活跃）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进一天"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "完成今日任务（本地5活跃）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]",
+          "expected_text": "结算自然月"
+        }
+      ]
+    },
+    {
+      "id": "SUG07",
+      "title": "家族贡献账本和管理权",
+      "implemented_scope": "角色授权与离族清账模拟；专属操作：米拉贡献本地10点 → 切换为族长阿澄 → 任命米拉为副手 → 族长转让给米拉 → 米拉确认离族并清贡献",
+      "limitations": [
+        "管理权限全集",
+        "任务贡献算法",
+        "贡献每次10点、本地离族后领导空缺；未知管理规则不自动推断",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"appoint\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"contribute\"]",
+          "expected_text": "米拉贡献本地10点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"leader\"]",
+          "expected_text": "切换为族长阿澄"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"appoint\"]",
+          "expected_text": "任命米拉为副手"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"transfer\"]",
+          "expected_text": "族长转让给米拉"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"leave\"]",
+          "expected_text": "米拉确认离族并清贡献"
+        }
+      ]
+    },
+    {
+      "id": "SUG08",
+      "title": "Chat Star 限时认证权益",
+      "implemented_scope": "限时身份状态机；专属操作：完成全部模拟个人验证 → 聊天事件（本地40分） → 达到80分激活/刷新Chat Star → 推进一天 → 推进七天至权益到期",
+      "limitations": [
+        "聊天分生产规则",
+        "刷新是延长还是重置",
+        "权益全集",
+        "聊天40分、达标扣分和刷新为从当前日起重置7天，是本地分支，不断言延长公式",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"verify\"]",
+          "expected_text": "完成全部模拟个人验证"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "聊天事件（本地40分）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "聊天事件（本地40分）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "达到80分激活/刷新Chat Star"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进一天"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "聊天事件（本地40分）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chat\"]",
+          "expected_text": "聊天事件（本地40分）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "达到80分激活/刷新Chat Star"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "推进七天至权益到期"
+        }
+      ]
+    },
+    {
+      "id": "SUG09",
+      "title": "贵族隐身入房和榜单匿名",
+      "implemented_scope": "可见性矩阵与匿名房间演示；专属操作：授予模拟贵族资格 → 切换入房/榜单隐身 → 启用锁房 → 模拟资格失效",
+      "limitations": [
+        "房主/管理员是否仍可见",
+        "不同贵族等级",
+        "只实现普通观众可见性；房主与管理员返回未知；到期回收是本地补齐",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"toggle\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"noble\"]",
+          "expected_text": "授予模拟贵族资格"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"toggle\"]",
+          "expected_text": "切换入房/榜单隐身"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"lock\"]",
+          "expected_text": "启用锁房"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "模拟资格失效"
+        }
+      ]
+    },
+    {
+      "id": "SUG10",
+      "title": "榜单冠军的可维持身份",
+      "implemented_scope": "限时榜首权益模型；专属操作：阿澄贡献10礼物分 → 米拉贡献20礼物分 → 当前榜首使用入场特效 → 进入新月清榜",
+      "limitations": [
+        "失去Top1后的失效时间",
+        "同分规则",
+        "贡献10/20本地测试值；失榜立即回收为实验选择，同分保持未知",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftA\"]",
+          "expected_text": "阿澄贡献10礼物分"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]",
+          "expected_text": "当前榜首使用入场特效"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "米拉贡献20礼物分"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]",
+          "expected_text": "当前榜首使用入场特效"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]",
+          "expected_text": "进入新月清榜"
+        }
+      ]
+    },
+    {
+      "id": "SUG11",
+      "title": "Super Winner 报名人数闸门",
+      "implemented_scope": "仅报名/锁局状态机；专属操作：房主开启报名倒计时 → 阿澄付本地10币报名 → 米拉模拟报名 → 阿宁模拟报名 → 报名倒计时结束",
+      "limitations": [
+        "游戏动作和随机算法",
+        "退款",
+        "完整结算",
+        "本地入口费10；仅报名与人数闸门，未知游戏动作/退款/胜者不补造",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "房主开启报名倒计时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "阿澄付本地10币报名"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinB\"]",
+          "expected_text": "米拉模拟报名"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinC\"]",
+          "expected_text": "阿宁模拟报名"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"deadline\"]",
+          "expected_text": "报名倒计时结束"
+        }
+      ]
+    },
+    {
+      "id": "SUG12",
+      "title": "幸运礼物的超级时刻",
+      "implemented_scope": "仅事件节奏展示，数值不仿真；专属操作：送模拟幸运礼物 → 注入已知“超级时刻解锁”事件 → 注入1000倍奖励播报样本",
+      "limitations": [
+        "概率/触发/资金流",
+        "榜单排除范围",
+        "手动注入源事件；不仿真概率、触发公式、奖励货币或榜单排除范围",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"announce\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "送模拟幸运礼物"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"unlock\"]",
+          "expected_text": "注入已知“超级时刻解锁”事件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"announce\"]",
+          "expected_text": "注入1000倍奖励播报样本"
+        }
+      ]
+    }
+  ]
+}

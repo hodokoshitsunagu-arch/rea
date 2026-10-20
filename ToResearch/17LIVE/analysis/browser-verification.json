@@ -1,0 +1,18 @@
+{
+  "app": "17LIVE",
+  "engine": "Chrome controlled headless browser",
+  "desktop": "1280x900",
+  "mobile": "390x844",
+  "scenario": [
+    "等待室 · 开始PK",
+    "队1 · 礼物10点",
+    "队1 · 完成助力",
+    "队2 · 完成助力"
+  ],
+  "observedState": "battle · PK 10 : 0 · 共斗任务 1/3 vs 1/3 · 协作未达标 · 结果 待定",
+  "reset": "passed",
+  "mobileHorizontalOverflow": false,
+  "pageErrors": [],
+  "originalAndroidRuntime": "not tested",
+  "humanVisualAcceptance": "not performed"
+}

@@ -1,0 +1,890 @@
+{
+  "input_hashes": {
+    "features.mjs": "80b12de46628e5463b79a75806fbff6c543be5b92cb2b2da854507bd829720ea",
+    "features.test.mjs": "8d731292a8f3ce66a06c9ed21319230b5ba008868819c1743b5a67b2c8d18ab2",
+    "index.html": "19e04f6aeab55ed7d8d03487d55854e3e52b154441bc241b675085f387d2e433",
+    "modules.json": "037ca6dd81a15f7d357a843da217becf2c2e6ac1f31d91ea7852ad0b83269820",
+    "ui.mjs": "9a2e3cffa34b392b1e11432bea2c2bd141e0ea944bd05255c28f4a546596bf88"
+  },
+  "app": "MICO",
+  "module_count": 11,
+  "checks": [
+    {
+      "app": "MICO",
+      "id": "MIC01",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "MICO",
+      "id": "MIC02",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "MICO",
+      "id": "MIC03",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "MICO",
+      "id": "MIC04",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "MICO",
+      "id": "MIC05",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "MICO",
+      "id": "MIC06",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "MICO",
+      "id": "MIC07",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "MICO",
+      "id": "MIC08",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "MICO",
+      "id": "MIC09",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "MICO",
+      "id": "MIC10",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "MICO",
+      "id": "MIC11",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "MICO",
+      "id": "MIC01",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        }
+      ],
+      "errors": [],
+      "guard_steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ],
+      "guard_rejection": true,
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIC01-mobile.png"
+    },
+    {
+      "app": "MICO",
+      "id": "MIC02",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIC02-mobile.png"
+    },
+    {
+      "app": "MICO",
+      "id": "MIC03",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIC03-mobile.png"
+    },
+    {
+      "app": "MICO",
+      "id": "MIC04",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIC04-mobile.png"
+    },
+    {
+      "app": "MICO",
+      "id": "MIC05",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIC05-mobile.png"
+    },
+    {
+      "app": "MICO",
+      "id": "MIC06",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIC06-mobile.png"
+    },
+    {
+      "app": "MICO",
+      "id": "MIC07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIC07-mobile.png"
+    },
+    {
+      "app": "MICO",
+      "id": "MIC08",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIC08-mobile.png"
+    },
+    {
+      "app": "MICO",
+      "id": "MIC09",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIC09-mobile.png"
+    },
+    {
+      "app": "MICO",
+      "id": "MIC10",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIC10-mobile.png"
+    },
+    {
+      "app": "MICO",
+      "id": "MIC11",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/MIC11-mobile.png"
+    }
+  ],
+  "passed": true,
+  "scope": "Local core-loop UI verification; no original APK/RTC/backend/payment/human verification."
+}

@@ -1,0 +1,16 @@
+{
+  "app": "Pococha",
+  "engine": "Chrome controlled headless browser",
+  "desktop": "1280x900",
+  "mobile": "390x844",
+  "scenario": [
+    "切换 Freeze Pass",
+    "推进一天并结算"
+  ],
+  "observedState": "第 1 天 · 示例等级 0 · Meter 40 · Freeze false · Rest false · Family Aoi 缺席1天",
+  "reset": "passed",
+  "mobileHorizontalOverflow": false,
+  "pageErrors": [],
+  "originalAndroidRuntime": "not tested",
+  "humanVisualAcceptance": "not performed"
+}

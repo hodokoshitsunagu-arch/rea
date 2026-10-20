@@ -1,0 +1,158 @@
+{
+  "node_version": "v24.17.0",
+  "scope": "Local reconstructed reducers; no original Android/server/RTC behavior validated",
+  "apps": [
+    {
+      "app": "Yalla",
+      "exit_code": 0,
+      "passed": true,
+      "tests": 54,
+      "pass": 54,
+      "fail": 0,
+      "skipped": 0,
+      "test_sha256": "7d0bafa54c5575215b0810e73a5d594985e8ca14ed8dd3212c62dc2194c04259"
+    },
+    {
+      "app": "YoHo",
+      "exit_code": 0,
+      "passed": true,
+      "tests": 47,
+      "pass": 47,
+      "fail": 0,
+      "skipped": 0,
+      "test_sha256": "b0cc1b359fc10b07107a28bb8a315a97107b0560a896075028329361afe7e6ef"
+    },
+    {
+      "app": "MICO",
+      "exit_code": 0,
+      "passed": true,
+      "tests": 43,
+      "pass": 43,
+      "fail": 0,
+      "skipped": 0,
+      "test_sha256": "8d731292a8f3ce66a06c9ed21319230b5ba008868819c1743b5a67b2c8d18ab2"
+    },
+    {
+      "app": "TopTop",
+      "exit_code": 0,
+      "passed": true,
+      "tests": 54,
+      "pass": 54,
+      "fail": 0,
+      "skipped": 0,
+      "test_sha256": "42af5f255150461bb93b69ed407bef248e2c60dd5502226a30a86e1f87c81379"
+    },
+    {
+      "app": "WePlay-AR",
+      "exit_code": 0,
+      "passed": true,
+      "tests": 56,
+      "pass": 56,
+      "fail": 0,
+      "skipped": 0,
+      "test_sha256": "776e69fcb2ae7b57bd09f972d4ccd9d7c47316318b05ba5aa256e971b66b9c1a"
+    },
+    {
+      "app": "Spoon",
+      "exit_code": 0,
+      "passed": true,
+      "tests": 20,
+      "pass": 20,
+      "fail": 0,
+      "skipped": 0,
+      "test_sha256": "fad89fe6937261c2913f622ce854c49f00d2cb2ff141fcc3b04ce3dd56c51598"
+    },
+    {
+      "app": "WePlay-JP",
+      "exit_code": 0,
+      "passed": true,
+      "tests": 67,
+      "pass": 67,
+      "fail": 0,
+      "skipped": 0,
+      "test_sha256": "a6c641924ad7e406bd080a2d3beaedf55bf440de5ff6f5b7354875fe9cb2a188"
+    },
+    {
+      "app": "WePlay-KR",
+      "exit_code": 0,
+      "passed": true,
+      "tests": 67,
+      "pass": 67,
+      "fail": 0,
+      "skipped": 0,
+      "test_sha256": "a6c641924ad7e406bd080a2d3beaedf55bf440de5ff6f5b7354875fe9cb2a188"
+    },
+    {
+      "app": "Mirrativ",
+      "exit_code": 0,
+      "passed": true,
+      "tests": 17,
+      "pass": 17,
+      "fail": 0,
+      "skipped": 0,
+      "test_sha256": "e52785731865864705e20586c39e38b79d8e1c46d3bdeb9532a2bf5fbf76c0a5"
+    },
+    {
+      "app": "Pococha",
+      "exit_code": 0,
+      "passed": true,
+      "tests": 25,
+      "pass": 25,
+      "fail": 0,
+      "skipped": 0,
+      "test_sha256": "e5a4bf0add677eeaf41e5335ba452b3b74596ef36c12997db5d5a00a0e677fd2"
+    },
+    {
+      "app": "17LIVE",
+      "exit_code": 0,
+      "passed": true,
+      "tests": 28,
+      "pass": 28,
+      "fail": 0,
+      "skipped": 0,
+      "test_sha256": "5bc25af14ff841237b3228e4a3e986c3b55200301e4ebb47a9c5952556fe54e4"
+    },
+    {
+      "app": "SUGO",
+      "exit_code": 0,
+      "passed": true,
+      "tests": 48,
+      "pass": 48,
+      "fail": 0,
+      "skipped": 0,
+      "test_sha256": "3af6e30b9ce376aac34db222041cd9e684f941a9a5bac39828c73ec65564ba51"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "exit_code": 0,
+      "passed": true,
+      "tests": 63,
+      "pass": 63,
+      "fail": 0,
+      "skipped": 0,
+      "test_sha256": "4af18c34be0a8b3eb25345186f8addca929f0c67a141defb9562ce609e0ccd60"
+    },
+    {
+      "app": "Falla",
+      "exit_code": 0,
+      "passed": true,
+      "tests": 52,
+      "pass": 52,
+      "fail": 0,
+      "skipped": 0,
+      "test_sha256": "3af6e30b9ce376aac34db222041cd9e684f941a9a5bac39828c73ec65564ba51"
+    },
+    {
+      "app": "HeeSay",
+      "exit_code": 0,
+      "passed": true,
+      "tests": 57,
+      "pass": 57,
+      "fail": 0,
+      "skipped": 0,
+      "test_sha256": "ad8a6fe47547718c2118ded328259e9dddc1e258877a065d538330d5c68528e2"
+    }
+  ],
+  "passed": true,
+  "total_tests": 698
+}

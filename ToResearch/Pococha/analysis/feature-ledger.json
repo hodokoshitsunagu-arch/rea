@@ -1,0 +1,47 @@
+{
+  "app": "Pococha",
+  "artifact_sha256": "0de7478f2a347464e34727de59a104d2137633325f0aafafd95f91dee5279be9",
+  "rea_package_evidence_id": "ev_14e535e6a4b9d2037fdc518c610106f3d96d1e3ca3d735fff46e8a330cea0232",
+  "features": [
+    {
+      "question": "语聊 / 直播应援",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "直播资源与应援条目、CheerBursts protobuf配置/积分字段族",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "本包主要是直播应援社交；独立语音房、多麦权限未知"
+    },
+    {
+      "question": "社交 / Family与频道权限",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "FamilyChannelPermissionType、families/FamilyV1 与10天未观看移出Family文案",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "能恢复文案规则；不同地区/家族类型是否同规则未知"
+    },
+    {
+      "question": "社交游戏化 / Rank Meter",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "REA protobuf RankMeter：current point、points、position、advancement、rank order等成员",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "服务端排序和应援分公式未知，不能从字段反推"
+    },
+    {
+      "question": "社交游戏化 / 休息保护",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "Rest Day文案：不能开播、rank不变、不能同时使用Freeze Pass；Freeze Pass冻结meter",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "实时开放、固定时长、时区与自动终止直播的具体延时未知"
+    },
+    {
+      "question": "小游戏 / Guild Battle或Cheer Burst",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "guild_battle排名类、CheerBursts配置、listener score ratio、bonus字段族",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "属于事件/应援契约；独立小游戏规则未发现充分证据"
+    }
+  ]
+}

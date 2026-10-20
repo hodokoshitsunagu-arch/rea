@@ -1,0 +1,89 @@
+{
+  "app": "WePlay-KR",
+  "regions": "Korea",
+  "package": "com.wejoy.weplay.kr",
+  "version": "6.12.0",
+  "version_code": 61207,
+  "selected_file": "WePlay-KR-6.12.0.xapk",
+  "source": "APKPure mirror",
+  "source_page": "https://apkpure.net/weplay-kr/com.wejoy.weplay.kr/download",
+  "retrieved_at": "2026-10-13T07:57:28.281072+00:00",
+  "checks": {
+    "zip_crc": "passed",
+    "manifest_package_match": true,
+    "manifest_version": "read from downloaded APK",
+    "android_runtime": "not tested",
+    "publisher_signature": "not cryptographically verified"
+  },
+  "files": [
+    {
+      "path": "WePlay-KR-6.12.0.xapk",
+      "bytes": 249327156,
+      "sha256": "9b566ae43e5b2327917c13dbe88cd585fb57d666ee27b00ead0f538c7c4bbd63",
+      "sha1": "8d1e21993018bc652b338445897ec1a128c4a838",
+      "manifest": null
+    },
+    {
+      "path": "apks/com.wejoy.weplay.kr.apk",
+      "bytes": 115675555,
+      "sha256": "6c1ddbaeca51610598e156964eebe2bfcf4baddc5a360a45466923f90e104ced",
+      "sha1": "17d680f40c5ce72ac09e414a830951f7f11aea21",
+      "manifest": {
+        "package": "com.wejoy.weplay.kr",
+        "versionName": "6.12.0",
+        "versionCode": 61207,
+        "split": null
+      }
+    },
+    {
+      "path": "apks/config.arm64_v8a.apk",
+      "bytes": 70020596,
+      "sha256": "2fac6bf8208de15c593074b366569f046484ec428ca2fc17bde2d1db52127ce1",
+      "sha1": "a0a39e8603fde5fb5e22b4eedca540dc294bc4db",
+      "manifest": {
+        "package": "com.wejoy.weplay.kr",
+        "versionName": null,
+        "versionCode": 61207,
+        "split": "config.arm64_v8a"
+      }
+    },
+    {
+      "path": "apks/config.mdpi.apk",
+      "bytes": 841390,
+      "sha256": "70917f06ba67dc6931623e7de62bd5fd32364aff1a4c9b024aec028c91a86b07",
+      "sha1": "f499defc3237144d93082c4dd56c0aa2dcaea9db",
+      "manifest": {
+        "package": "com.wejoy.weplay.kr",
+        "versionName": null,
+        "versionCode": 61207,
+        "split": "config.mdpi"
+      }
+    },
+    {
+      "path": "apks/wepie_asset_pack.apk",
+      "bytes": 62763023,
+      "sha256": "da4d0098954b4a80fe21a6db68a057047074010337c55b36e41c72f047e5bce2",
+      "sha1": "cee5de032dee4e6b399bc2c5b3418cf89bf49cfd",
+      "manifest": {
+        "package": "com.wejoy.weplay.kr",
+        "versionName": null,
+        "versionCode": 61207,
+        "split": "wepie_asset_pack"
+      }
+    }
+  ],
+  "compared_sources": [
+    {
+      "source_page": "https://apkpure.net/weplay-kr/com.wejoy.weplay.kr/download",
+      "file": "WePlay-KR-6.12.0.xapk",
+      "identity": {
+        "package": "com.wejoy.weplay.kr",
+        "versionName": "6.12.0",
+        "versionCode": 61207,
+        "split": null
+      }
+    }
+  ],
+  "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+  "mirror_advertised_date": "Oct 10, 2026"
+}

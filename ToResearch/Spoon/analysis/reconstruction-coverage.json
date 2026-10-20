@@ -1,0 +1,669 @@
+{
+  "app": "Spoon",
+  "count": 9,
+  "items": [
+    {
+      "id": "SPO01",
+      "source_rules": {
+        "门槛": "主播或Live Call嘉宾接收",
+        "资源": "Spoons；可选择最多5盒",
+        "回报": "未抽中只奖励10%",
+        "时序": "创建/接受/结果模型存在；全路径未恢复"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "co.spoonme.apk:resources.arsc:pool:12:string:5790",
+          "offset": 257573,
+          "quote": "You can choose up to 5 boxes. Only 10% of spoons will be rewarded if the Lucky box is not drawn."
+        },
+        {
+          "file": "analysis/package-string-evidence.json",
+          "id": "co.spoonme.apk:classes2.dex:string:959",
+          "offset": 8937210,
+          "quote": "()Lco/spoonme/core/model/chat/response/eventpayload/WalaLuckyBoxInfo;"
+        },
+        {
+          "file": "analysis/rea-luckybox-info.json",
+          "evidence_id": "ev_1ede51c0f24fc18e6817881b85e65dbc26da3a0d504fd57e55159e0765467312",
+          "location": "raw_result / parsed class members",
+          "derived_note": "REA解析WalaLuckyBoxInfo成员：amount:int、boxCount:int、message:String。成员证据不包含随机或结算算法。",
+          "parsed_fields": [
+            {
+              "name": "Companion",
+              "def_pos": 0,
+              "type": "co.spoonme.core.model.chat.response.eventpayload.WalaLuckyBoxInfo$Companion"
+            },
+            {
+              "name": "amount",
+              "def_pos": 0,
+              "type": "int"
+            },
+            {
+              "name": "boxCount",
+              "def_pos": 0,
+              "type": "int"
+            },
+            {
+              "name": "message",
+              "def_pos": 0,
+              "type": "java.lang.String"
+            }
+          ]
+        }
+      ],
+      "evidence_strength": "A",
+      "local_choices": {
+        "parameters": {
+          "amount": 100,
+          "boxes": 3,
+          "winning": 2
+        },
+        "actions": [
+          {
+            "action": "create",
+            "participant_action": "听众创建挑战"
+          },
+          {
+            "action": "accept",
+            "participant_action": "主播接受"
+          },
+          {
+            "action": "choose",
+            "participant_action": "选择盒子"
+          },
+          {
+            "action": "reveal",
+            "participant_action": "揭晓奖励"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: SPO01 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "真实概率与总盒数",
+        "超时/退款/取消",
+        "服务端结算"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "SPO02",
+      "source_rules": {
+        "资源": "问答附带Spoons",
+        "回报": "失败只转10%",
+        "门槛": "听众出题，主播收礼"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "co.spoonme.apk:resources.arsc:pool:12:string:5092",
+          "offset": 231580,
+          "quote": "Send a quiz to your streamer and make them get your donated spoons!"
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "co.spoonme.apk:resources.arsc:pool:12:string:5561",
+          "offset": 249723,
+          "quote": "Unfortunately, only 10%% of spoons with the quiz sent from %1$s were sent to %2$s"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "amount": 100,
+          "answer": "东京",
+          "successPercent": 100
+        },
+        "actions": [
+          {
+            "action": "create",
+            "participant_action": "听众赠问答"
+          },
+          {
+            "action": "accept",
+            "participant_action": "主播接受"
+          },
+          {
+            "action": "answer",
+            "participant_action": "主播提交答案"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: SPO02 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "判题、题型、时间限制",
+        "成功比例完整规则"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "SPO03",
+      "source_rules": {
+        "门槛": "首次听众且收听≥3分钟",
+        "时序": "直播结束自动发",
+        "资源": "欢迎内容至少20字；昵称自动前缀",
+        "回报": "过去一年接收者记录；更早移出清单"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/co.spoonme.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140cdc",
+          "resource_name": "welcomefanboard_write_tip_desc_03",
+          "string_index": 4037,
+          "offset": 200817,
+          "quote": "First-time listeners get your Welcome Post after listening for 3 minutes or more."
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/co.spoonme.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140cd5",
+          "resource_name": "welcomefanboard_write_desc",
+          "string_index": 3517,
+          "offset": 186714,
+          "quote": "Auto-posted to their Space when your live ends."
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/co.spoonme.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140cd6",
+          "resource_name": "welcomefanboard_write_error_min_length",
+          "string_index": 3917,
+          "offset": 197080,
+          "quote": "Enter at least 20 characters."
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/co.spoonme.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140ccf",
+          "resource_name": "welcomefanboard_listener_list_info_desc",
+          "string_index": 5047,
+          "offset": 230528,
+          "quote": "See who received your Welcome Post over the past year, sorted by date. Entries older than a year drop off the list."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "minimum": 180
+        },
+        "actions": [
+          {
+            "action": "write",
+            "participant_action": "DJ设置欢迎贴"
+          },
+          {
+            "action": "listen",
+            "participant_action": "首次听众收听3分钟"
+          },
+          {
+            "action": "end",
+            "participant_action": "DJ结束直播"
+          },
+          {
+            "action": "year",
+            "participant_action": "前进366天"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: SPO03 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "收听累计及离线判定",
+        "去重/封禁处理"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "SPO04",
+      "source_rules": {
+        "门槛": "Tier创建存在审核通过/拒绝",
+        "回报": "订Tier才能看指定post；仅plan订阅者可发Fan Board图片"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/co.spoonme.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140a4e",
+          "resource_name": "push_subscription_plan_review_approved",
+          "string_index": 6081,
+          "offset": 271729,
+          "quote": "‎%1$s‎'s %2$s Tier has been approved! Congratulations!"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/co.spoonme.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140c47",
+          "resource_name": "subscription_plan_join_post_view",
+          "string_index": 5280,
+          "offset": 237174,
+          "quote": "Subscribe to membership tier to view the post."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "co.spoonme.apk:resources.arsc:pool:12:string:4666",
+          "offset": 220277,
+          "quote": "Only plan subscribers can upload images to the fan board."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "days": 30
+        },
+        "actions": [
+          {
+            "action": "submit",
+            "participant_action": "DJ提交Tier审核"
+          },
+          {
+            "action": "approve",
+            "participant_action": "模拟审核通过"
+          },
+          {
+            "action": "reject",
+            "participant_action": "模拟审核拒绝"
+          },
+          {
+            "action": "subscribe",
+            "participant_action": "粉丝订阅Tier"
+          },
+          {
+            "action": "view",
+            "participant_action": "粉丝阅读专属帖"
+          },
+          {
+            "action": "image",
+            "participant_action": "粉丝上传模拟图片"
+          },
+          {
+            "action": "expire",
+            "participant_action": "订阅到期"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: SPO04 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "订价、退款、审核细則",
+        "各Tier权益分配"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "SPO05",
+      "source_rules": {
+        "门槛": "创建者需Premium会员",
+        "回报": "subscriber-exclusive broadcasts/Podcasts"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "co.spoonme.apk:resources.arsc:pool:12:string:4653",
+          "offset": 219543,
+          "quote": "Only Premium membership subscribers can create broadcasts.\nJoin the membership and try subscriber-exclusive broadcasts."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "co.spoonme.apk:resources.arsc:pool:12:string:4655",
+          "offset": 219742,
+          "quote": "Only Premium membership subscribers can create subscriber-exclusive Podcasts."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "days": 30
+        },
+        "actions": [
+          {
+            "action": "premium",
+            "participant_action": "DJ开通Premium"
+          },
+          {
+            "action": "create",
+            "participant_action": "DJ创建专属内容"
+          },
+          {
+            "action": "subscribe",
+            "participant_action": "听众订阅"
+          },
+          {
+            "action": "open",
+            "participant_action": "听众进入内容"
+          },
+          {
+            "action": "expire",
+            "participant_action": "计划到期"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: SPO05 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "接收端Tier映射",
+        "失效后的访问策略"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "SPO06",
+      "source_rules": {
+        "门槛": "Spoon Membership；回放/精选需Premium",
+        "回报": "最长4小时；Live Call；自动保存；featured CAST"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "co.spoonme.apk:resources.arsc:pool:12:string:5199",
+          "offset": 234617,
+          "quote": "Spoon Membership Subscribers can broadcast for up to 4 hours."
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "co.spoonme.apk:resources.arsc:pool:12:string:5223",
+          "offset": 235488,
+          "quote": "Start a Live Call\nwith Spoon Membership."
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/co.spoonme.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f14049f",
+          "resource_name": "djmembership_benefit_save_replay",
+          "string_index": 3522,
+          "offset": 186890,
+          "quote": "Automatically save all live broadcasts."
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/co.spoonme.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1404a9",
+          "resource_name": "djmembership_premium_only_featured_cast",
+          "string_index": 5810,
+          "offset": 258871,
+          "quote": "You can register a featured cast after subscribing to Spoon Membership Premium."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "nonMemberMinutes": 60
+        },
+        "actions": [
+          {
+            "action": "plan",
+            "participant_action": "DJ选择会员"
+          },
+          {
+            "action": "start",
+            "participant_action": "DJ开始直播"
+          },
+          {
+            "action": "call",
+            "participant_action": "发起Live Call"
+          },
+          {
+            "action": "advance",
+            "participant_action": "播满4小时"
+          },
+          {
+            "action": "feature",
+            "participant_action": "设置精选CAST"
+          },
+          {
+            "action": "expire",
+            "participant_action": "会员失效"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: SPO06 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "非会员时长",
+        "保存周期及存储限额",
+        "Live Call人数"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "SPO07",
+      "source_rules": {
+        "资源": "直播Spoons+likes；Live Call嘉宾收入排除",
+        "门槛": "另参考违规史和直播活跃",
+        "回报": "当月DJ badge"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "co.spoonme.apk:resources.arsc:pool:12:string:2",
+          "offset": 24790,
+          "quote": "This ranking is based on spoons and likes received in livestreams.(*spoons received as a Live Call Guest is not included.)\n\nThis is used to select Choice DJs, along with violation history and livestream activity.\n\nCheck your livestream activity in Streamer's Dashboard.\n\n➡️ Go to Dashboard\n\n※Monthly: From the 1st of this month to yesterday\n※ Last 7 days: The 7 days leading up to yesterday\n※ Last 1 day: Within the last 24 hours"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/co.spoonme.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140a33",
+          "resource_name": "push_choice",
+          "string_index": 3296,
+          "offset": 179163,
+          "quote": "%s, you have been awarded this month’s DJ badge! Check it out on your channel now."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "spoonWeight": 1,
+          "likeWeight": 1,
+          "threshold": 100
+        },
+        "actions": [
+          {
+            "action": "host",
+            "participant_action": "主播收100 Spoons"
+          },
+          {
+            "action": "guest",
+            "participant_action": "嘉宾收100 Spoons"
+          },
+          {
+            "action": "like",
+            "participant_action": "听众点赞"
+          },
+          {
+            "action": "active",
+            "participant_action": "记录直播活跃"
+          },
+          {
+            "action": "violation",
+            "participant_action": "记录违规"
+          },
+          {
+            "action": "select",
+            "participant_action": "本地候选评选"
+          },
+          {
+            "action": "month",
+            "participant_action": "进入下个月"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: SPO07 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "加权、评选门槛及权益",
+        "月徽章续期"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "SPO08",
+      "source_rules": {
+        "时序": "Real-time为当前Live；周一到周日；月初到月末",
+        "门槛": "隐藏后不入Loyalty Score榜也无徽章"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "co.spoonme.apk:resources.arsc:pool:12:string:4007",
+          "offset": 200022,
+          "quote": "Fan rankings: Total, Real-time, This Week, This Month. Updated daily; reset each period.\n\n· Total (All): all time\n· Real-time: current Live\n· This Week: Mon–Sun\n· This Month: 1st–last day"
+        },
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "co.spoonme.apk:resources.arsc:pool:12:string:4198",
+          "offset": 205521,
+          "quote": "If a streamer hides a listener from their Loyalty Score Ranking, that listener is excluded from the ranking and won't receive the badge."
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "badgeThreshold": 50,
+          "epoch": "2026-10-05"
+        },
+        "actions": [
+          {
+            "action": "support",
+            "participant_action": "听众应援"
+          },
+          {
+            "action": "window",
+            "participant_action": "切换榜单窗口"
+          },
+          {
+            "action": "rank",
+            "participant_action": "更新榜与徽章"
+          },
+          {
+            "action": "hide",
+            "participant_action": "DJ隐藏听众"
+          },
+          {
+            "action": "period",
+            "participant_action": "前进日历并开启新直播"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: SPO08 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "忠诚计分及徽章门槛",
+        "贡献与忠诚两榜是否共公式"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "SPO09",
+      "source_rules": {
+        "时序": "使用后两天，或DJ开始直播时重置"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/resource-evidence.json",
+          "id": "co.spoonme.apk:resources.arsc:pool:12:string:6061",
+          "offset": 270511,
+          "quote": "· Nudging resets two days after use or when the DJ starts a broadcast.\n· If you become a fan of the DJ, you can receive broadcast notifications anytime"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "cooldown": 172800
+        },
+        "actions": [
+          {
+            "action": "nudge",
+            "participant_action": "粉丝催开播"
+          },
+          {
+            "action": "twoDays",
+            "participant_action": "前进两天"
+          },
+          {
+            "action": "start",
+            "participant_action": "DJ开播重置催播"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: SPO09 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "次数限制、通知合并",
+        "是否需先关注"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    }
+  ],
+  "validation_summary": {
+    "node_tests": 20,
+    "passed": 20,
+    "legacy_tests": "passed",
+    "browser": "delegated to root sequential validation",
+    "original_runtime": "not executed"
+  }
+}

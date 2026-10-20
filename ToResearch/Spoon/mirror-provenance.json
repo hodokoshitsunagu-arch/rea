@@ -1,0 +1,85 @@
+{
+  "app": "Spoon",
+  "requested_regions": "Japan; Korea",
+  "expected_package": "co.spoonme",
+  "source_kind": "third-party mirror APKPure",
+  "source_page": "https://apkpure.net/spoon/co.spoonme/download",
+  "page_title": "Download Spoon: Audio Live 11.20.0 APK for Android - Free and Safe Download",
+  "download_url": "https://d.apkpure.net/b/XAPK/co.spoonme?version=latest",
+  "final_url": "https://data.winudf.com/XAPK/Y28uc3Bvb25tZV83MzhfYzBhMWYyMWM?_p=Y28uc3Bvb25tZQ%3D%3D&filename=Spoon%3A+Audio+Live_11.20.0_APKPure.xapk&full_size=113425916&is_hot=false&k=REDACTED&package_name=co.spoonme&source=web&token=REDACTED",
+  "retrieved_at": "2026-10-13T07:53:28.730059+00:00",
+  "file": "Spoon-11.20.0.xapk",
+  "bytes": 113425916,
+  "sha256": "4bae89eb2cddc0bf21993d813c0f8045e34dd860a83e6151fd9da8de0971a58d",
+  "zip_crc": "passed",
+  "archive_manifest": {
+    "xapk_version": 2,
+    "package_name": "co.spoonme",
+    "name": "Spoon",
+    "version_code": "738",
+    "version_name": "11.20.0",
+    "min_sdk_version": "32",
+    "target_sdk_version": "36",
+    "permissions": [
+      "android.permission.RECORD_AUDIO",
+      "android.permission.MODIFY_AUDIO_SETTINGS",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.DETECT_SCREEN_CAPTURE",
+      "android.permission.INTERNET",
+      "android.permission.WAKE_LOCK",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.VIBRATE",
+      "android.permission.USE_CREDENTIALS",
+      "android.permission.BLUETOOTH",
+      "android.permission.POST_NOTIFICATIONS",
+      "com.google.android.c2dm.permission.RECEIVE",
+      "co.spoonme.permission.C2D_MESSAGE",
+      "com.android.vending.BILLING",
+      "com.google.android.gms.permission.AD_ID",
+      "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+      "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+      "android.permission.READ_PHONE_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+      "com.samsung.android.mapsagent.permission.READ_APP_INFO",
+      "com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA",
+      "android.permission.ACCESS_ADSERVICES_AD_ID",
+      "android.permission.ACCESS_ADSERVICES_TOPICS",
+      "co.spoonme.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+      "com.android.vending.CHECK_LICENSE"
+    ],
+    "split_configs": [
+      "config.arm64_v8a",
+      "config.mdpi"
+    ],
+    "total_size": 113413282,
+    "icon": "icon.png",
+    "split_apks": [
+      {
+        "file": "co.spoonme.apk",
+        "id": "base"
+      },
+      {
+        "file": "config.arm64_v8a.apk",
+        "id": "config.arm64_v8a"
+      },
+      {
+        "file": "config.mdpi.apk",
+        "id": "config.mdpi"
+      }
+    ]
+  },
+  "extracted_apks": [
+    "co.spoonme.apk",
+    "config.arm64_v8a.apk",
+    "config.mdpi.apk"
+  ],
+  "latest_scope": "Newest version advertised by live APKPure download page on retrieval date; staged Google Play release not verified",
+  "final_url_redacted_transport_credentials": [
+    "k",
+    "token"
+  ]
+}

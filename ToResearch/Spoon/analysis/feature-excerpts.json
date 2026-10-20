@@ -1,0 +1,140 @@
+{
+  "selection": "Report-specific bounded excerpts; full keyword records remain in sibling evidence files",
+  "records": [
+    {
+      "id": "co.spoonme.apk:classes.dex:string:18221",
+      "offset": 8372388,
+      "text": "Lco/spoonme/common/model/chat/LiveChatMessage$LiveCallGuestDonation;"
+    },
+    {
+      "id": "co.spoonme.apk:classes.dex:string:18436",
+      "offset": 8384882,
+      "text": "Lco/spoonme/core/model/deeplink/DeepLink$ChannelFanBoard;"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:959",
+      "offset": 8937210,
+      "text": "()Lco/spoonme/core/model/chat/response/eventpayload/WalaLuckyBoxInfo;"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:960",
+      "offset": 8937281,
+      "text": "()Lco/spoonme/core/model/chat/response/eventpayload/WalaLuckyBoxResultDetail;"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:1288",
+      "offset": 8960389,
+      "text": "(ILjava/lang/String;I)Lco/spoonme/core/model/chat/response/eventpayload/WalaLuckyBoxInfo;"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:1293",
+      "offset": 8960676,
+      "text": "(ILjava/lang/String;IIILco/spoonme/core/model/chat/response/eventpayload/WalaLuckyBoxInfo;Lco/spoonme/core/model/chat/response/eventpayload/common/WalaSender;JLy3n;)V"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:1297",
+      "offset": 8961213,
+      "text": "(ILjava/lang/String;IIILco/spoonme/core/model/chat/response/eventpayload/common/WalaSender;Lco/spoonme/core/model/chat/response/eventpayload/WalaLuckyBoxResultDetail;Ly3n;)V"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:1552",
+      "offset": 8990006,
+      "text": "(Laa6;)Lco/spoonme/core/model/chat/response/eventpayload/WalaLuckyBoxResultDetail;"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:5121",
+      "offset": 9116295,
+      "text": "BeforeOpen(selectedLuckyBoxIndex="
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:5614",
+      "offset": 9126828,
+      "text": "ChannelFanBoard"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:5615",
+      "offset": 9126845,
+      "text": "ChannelFanBoard(userId="
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:5910",
+      "offset": 9133304,
+      "text": "CreateLuckyBoxReq(targetId="
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:5911",
+      "offset": 9133333,
+      "text": "CreateLuckyBoxReq.kt"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:8113",
+      "offset": 9175086,
+      "text": "LIVE_LUCKYBOX_CREATE"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:8114",
+      "offset": 9175108,
+      "text": "LIVE_LUCKYBOX_RESULT"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:11465",
+      "offset": 9250677,
+      "text": "Lco/spoonme/core/model/http/ReqLiveCallGuestDonation;"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:11842",
+      "offset": 9270815,
+      "text": "Lco/spoonme/core/model/live/game/Donation$Quiz$Creator;"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:11843",
+      "offset": 9270872,
+      "text": "Lco/spoonme/core/model/live/game/Donation$Quiz;"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:18142",
+      "offset": 9414845,
+      "text": "LiveCallGuestDonationResp(presentSpoon="
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:36295",
+      "offset": 9693252,
+      "text": "[Lco/spoonme/core/model/live/game/Donation$Quiz;"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:38432",
+      "offset": 9750418,
+      "text": "co.spoonme.core.network.model.http.CreateLuckyBoxReq"
+    },
+    {
+      "id": "co.spoonme.apk:classes2.dex:string:46882",
+      "offset": 10083156,
+      "text": "live_luckybox_create"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4132",
+      "offset": 203517,
+      "text": "Guests can receive donations through Lucky Boxes sent by listeners."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5092",
+      "offset": 231580,
+      "text": "Send a quiz to your streamer and make them get your donated spoons!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5174",
+      "offset": 233939,
+      "text": "Sorry! Only 10%% of the spoons sent by %1$s have been rewarded to %2$s"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5561",
+      "offset": 249723,
+      "text": "Unfortunately, only 10%% of spoons with the quiz sent from %1$s were sent to %2$s"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5790",
+      "offset": 257573,
+      "text": "You can choose up to 5 boxes. Only 10% of spoons will be rewarded if the Lucky box is not drawn."
+    }
+  ]
+}

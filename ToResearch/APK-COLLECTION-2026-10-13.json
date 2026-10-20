@@ -1,0 +1,1417 @@
+{
+  "retrieval_date": "2026-10-13",
+  "apps": [
+    {
+      "app": "Yalla",
+      "regions": "MENA",
+      "package": "com.weieyu.yalla",
+      "version": "3.7.0",
+      "version_code": 30702,
+      "selected_file": "Yalla-3.7.0.xapk",
+      "source": "APKPure mirror",
+      "source_page": "https://apkpure.net/yalla/com.weieyu.yalla/download",
+      "retrieved_at": "2026-10-13T07:53:44.193578+00:00",
+      "checks": {
+        "zip_crc": "passed",
+        "manifest_package_match": true,
+        "manifest_version": "read from downloaded APK",
+        "android_runtime": "not tested",
+        "publisher_signature": "not cryptographically verified"
+      },
+      "files": [
+        {
+          "path": "Yalla-3.7.0.xapk",
+          "bytes": 243980635,
+          "sha256": "7f6d919b311586ede522f36014878d5e1e0e38396002400b7252901bb3660668",
+          "sha1": "805acda85f6aed54ca4ed4f93111f7b076af2b56",
+          "manifest": null
+        },
+        {
+          "path": "apks/com.weieyu.yalla.apk",
+          "bytes": 193363720,
+          "sha256": "f14f498c00d06367e92cb3b54a830f6986601d2f89a71105887e752bb7623303",
+          "sha1": "876476dba5fb732656206ef3da97b7ae01e045ce",
+          "manifest": {
+            "package": "com.weieyu.yalla",
+            "versionName": "3.7.0",
+            "versionCode": 30702,
+            "split": null
+          }
+        },
+        {
+          "path": "apks/config.armeabi_v7a.apk",
+          "bytes": 50249452,
+          "sha256": "505ee28a540073e8bb668a6480971b90a2abbbccfbc1aee381acd1fa3b065122",
+          "sha1": "68b66134ebfa8118ef230aa2f79df9f2d1f7f5ae",
+          "manifest": {
+            "package": "com.weieyu.yalla",
+            "versionName": null,
+            "versionCode": 30702,
+            "split": "config.armeabi_v7a"
+          }
+        },
+        {
+          "path": "apks/config.mdpi.apk",
+          "bytes": 314476,
+          "sha256": "5f9ed5854ac2e4b7409ebccaa2817dcbcef204396667ebf519bbcfe04a9a6f1f",
+          "sha1": "2f178c2018ca1bc5186dd1bfcce0f5a1d94d1fa6",
+          "manifest": {
+            "package": "com.weieyu.yalla",
+            "versionName": null,
+            "versionCode": 30702,
+            "split": "config.mdpi"
+          }
+        }
+      ],
+      "compared_sources": [
+        {
+          "source_page": "https://apkpure.net/yalla/com.weieyu.yalla/download",
+          "file": "Yalla-3.7.0.xapk",
+          "identity": {
+            "package": "com.weieyu.yalla",
+            "versionName": "3.7.0",
+            "versionCode": 30702,
+            "split": null
+          }
+        }
+      ],
+      "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+      "mirror_advertised_date": "Sep 14, 2026"
+    },
+    {
+      "app": "YoHo",
+      "regions": "MENA",
+      "package": "com.voicechat.live.group",
+      "version": "5.48.40",
+      "version_code": 4630,
+      "selected_file": "YoHo-5.48.40.apk",
+      "source": "Official website",
+      "source_page": "https://www.yoho.media/",
+      "retrieved_at": "2026-10-13T07:48:50.369561+00:00",
+      "checks": {
+        "zip_crc": "passed",
+        "manifest_package_match": true,
+        "manifest_version": "read from downloaded APK",
+        "android_runtime": "not tested",
+        "publisher_signature": "not cryptographically verified"
+      },
+      "files": [
+        {
+          "path": "YoHo-5.48.40.apk",
+          "bytes": 96735470,
+          "sha256": "2d26edd454bd9bd7d39d9df94750aa7cc714c0d6c3e445ebbde10c9d1ffc14c8",
+          "sha1": "473bbaf9f897b1eda8df1ace00f4a231223aac6f",
+          "manifest": {
+            "package": "com.voicechat.live.group",
+            "versionName": "5.48.40",
+            "versionCode": 4630,
+            "split": null
+          }
+        }
+      ],
+      "compared_sources": [
+        {
+          "source_page": "https://www.yoho.media/",
+          "file": "YoHo-5.48.40.apk",
+          "identity": {
+            "package": "com.voicechat.live.group",
+            "versionName": "5.48.40",
+            "versionCode": 4630,
+            "split": null
+          }
+        },
+        {
+          "source_page": "https://apkpure.net/yoho/com.voicechat.live.group/download",
+          "file": "source-comparison/YoHo-5.48.30.xapk",
+          "identity": {
+            "package": "com.voicechat.live.group",
+            "versionName": "5.48.30",
+            "versionCode": 4620,
+            "split": null
+          }
+        }
+      ],
+      "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+      "mirror_advertised_date": "Sep 22, 2026"
+    },
+    {
+      "app": "MICO",
+      "regions": "MENA; SEA",
+      "package": "com.mico",
+      "version": "9.1.5.0",
+      "version_code": 131380,
+      "selected_file": "MICO-9.1.5.0.xapk",
+      "source": "APKPure mirror",
+      "source_page": "https://apkpure.net/mico/com.mico/download",
+      "retrieved_at": "2026-10-13T07:55:17.939051+00:00",
+      "checks": {
+        "zip_crc": "passed",
+        "manifest_package_match": true,
+        "manifest_version": "read from downloaded APK",
+        "android_runtime": "not tested",
+        "publisher_signature": "not cryptographically verified",
+        "published_archive_sha1_match": true
+      },
+      "files": [
+        {
+          "path": "MICO-9.1.5.0.xapk",
+          "bytes": 222795202,
+          "sha256": "3d567246ae5fac4fe7e08ff7d4f309cb5adcc3f5121e13620626a373e32d07ef",
+          "sha1": "ea61d864f133403d75520cc044b59fac126bfd2e",
+          "manifest": null
+        },
+        {
+          "path": "apks/com.mico.apk",
+          "bytes": 153388300,
+          "sha256": "305aa51527f6e73b298a6bf17c554ea96b9a0514a7e33a36e629bdee9a539181",
+          "sha1": "c49dc929646bb13fd51f7199dd6869297c92a35e",
+          "manifest": {
+            "package": "com.mico",
+            "versionName": "9.1.5.0",
+            "versionCode": 131380,
+            "split": null
+          }
+        },
+        {
+          "path": "apks/config.armeabi_v7a.apk",
+          "bytes": 67707370,
+          "sha256": "3ab51583a31a52ba3a86ad57683fa4245b184f5a383e2b286c53a42e2c932169",
+          "sha1": "21e4081cbabde78dab060f123ff79254d3ee3423",
+          "manifest": {
+            "package": "com.mico",
+            "versionName": null,
+            "versionCode": 131380,
+            "split": "config.armeabi_v7a"
+          }
+        },
+        {
+          "path": "apks/config.mdpi.apk",
+          "bytes": 1686795,
+          "sha256": "a22e92b2a4fdf5dd0e3778cbd953f4790174dfb787708f76d53d3f4e571408b5",
+          "sha1": "0dfe5de820bef83258d2f631f7ead5f77e05742b",
+          "manifest": {
+            "package": "com.mico",
+            "versionName": null,
+            "versionCode": 131380,
+            "split": "config.mdpi"
+          }
+        }
+      ],
+      "compared_sources": [
+        {
+          "source_page": "https://apkpure.net/mico/com.mico/download",
+          "file": "MICO-9.1.5.0.xapk",
+          "identity": {
+            "package": "com.mico",
+            "versionName": "9.1.5.0",
+            "versionCode": 131380,
+            "split": null
+          }
+        }
+      ],
+      "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+      "mirror_advertised_date": "Sep 25, 2026"
+    },
+    {
+      "app": "TopTop",
+      "regions": "MENA",
+      "package": "com.game.friends.android",
+      "version": "3.27.3",
+      "version_code": 3027003,
+      "selected_file": "TopTop-3.27.3.xapk",
+      "source": "APKPure mirror",
+      "source_page": "https://apkpure.net/toptop/com.game.friends.android/download",
+      "retrieved_at": "2026-10-13T07:53:30.477177+00:00",
+      "checks": {
+        "zip_crc": "passed",
+        "manifest_package_match": true,
+        "manifest_version": "read from downloaded APK",
+        "android_runtime": "not tested",
+        "publisher_signature": "not cryptographically verified",
+        "published_archive_sha1_match": true
+      },
+      "files": [
+        {
+          "path": "TopTop-3.27.3.xapk",
+          "bytes": 242311437,
+          "sha256": "a5f9e540433efe408767ecbf00c86f623120b6001cfbdb33f29450de600a9a9c",
+          "sha1": "d355f4888cc107d85fea3f80fe7abcd5b4c81099",
+          "manifest": null
+        },
+        {
+          "path": "apks/com.game.friends.android.apk",
+          "bytes": 151020582,
+          "sha256": "554cd034d0302ae99de4bce341588e821fa0ea4ad7019579bba2839536bb2f62",
+          "sha1": "9a22e391b582cd7188cefedfc24e8dab0c4c8012",
+          "manifest": {
+            "package": "com.game.friends.android",
+            "versionName": "3.27.3",
+            "versionCode": 3027003,
+            "split": null
+          }
+        },
+        {
+          "path": "apks/config.armeabi_v7a.apk",
+          "bytes": 61590261,
+          "sha256": "9398e0b2967ada3a934fc33d88c0d83e4c3da080795f9be79ff3a8c17df2cdd0",
+          "sha1": "163be8ce1997da898775dee8d622df0de5318e47",
+          "manifest": {
+            "package": "com.game.friends.android",
+            "versionName": null,
+            "versionCode": 3027003,
+            "split": "config.armeabi_v7a"
+          }
+        },
+        {
+          "path": "apks/topinnergame.apk",
+          "bytes": 29690003,
+          "sha256": "5c6d549162f586a04757af535fd4a7329073a160d64c5375adf751b7afbb80e9",
+          "sha1": "f28bbecaa96645a5337a9908517082e7a8e790b8",
+          "manifest": {
+            "package": "com.game.friends.android",
+            "versionName": null,
+            "versionCode": 3027003,
+            "split": "topinnergame"
+          }
+        }
+      ],
+      "compared_sources": [
+        {
+          "source_page": "https://apkpure.net/toptop/com.game.friends.android/download",
+          "file": "TopTop-3.27.3.xapk",
+          "identity": {
+            "package": "com.game.friends.android",
+            "versionName": "3.27.3",
+            "versionCode": 3027003,
+            "split": null
+          }
+        }
+      ],
+      "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+      "mirror_advertised_date": "Last updated on Sep 24, 2026"
+    },
+    {
+      "app": "WePlay-AR",
+      "regions": "MENA / Arabic",
+      "package": "com.wejoy.weplay.ar",
+      "version": "6.8.5",
+      "version_code": 60851,
+      "selected_file": "WePlay-AR-6.8.5.xapk",
+      "source": "APKPure mirror",
+      "source_page": "https://apkpure.net/weplay-ar/com.wejoy.weplay.ar/download",
+      "retrieved_at": "2026-10-13T07:54:31.910008+00:00",
+      "checks": {
+        "zip_crc": "passed",
+        "manifest_package_match": true,
+        "manifest_version": "read from downloaded APK",
+        "android_runtime": "not tested",
+        "publisher_signature": "not cryptographically verified"
+      },
+      "files": [
+        {
+          "path": "WePlay-AR-6.8.5.xapk",
+          "bytes": 214318467,
+          "sha256": "5cc9230034cf20479a4a380f57b7546f4e6bfe5e9dd1ba15c5565eb71d9161dd",
+          "sha1": "ca8a7018e1c121b96bc859069198847ae10f6d82",
+          "manifest": null
+        },
+        {
+          "path": "apks/com.wejoy.weplay.ar.apk",
+          "bytes": 63281854,
+          "sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "sha1": "64fc62d2604343df15c22c30b1f133058af07341",
+          "manifest": {
+            "package": "com.wejoy.weplay.ar",
+            "versionName": "6.8.5",
+            "versionCode": 60851,
+            "split": null
+          }
+        },
+        {
+          "path": "apks/config.ar.apk",
+          "bytes": 3225675,
+          "sha256": "177c9157387598f7f1e3a550268b40b6a07cb8664f724725edc2dfd753a7272a",
+          "sha1": "db548976b355191d10e159a84259d5a7a9135141",
+          "manifest": {
+            "package": "com.wejoy.weplay.ar",
+            "versionName": null,
+            "versionCode": 60851,
+            "split": "config.ar"
+          }
+        },
+        {
+          "path": "apks/config.arm64_v8a.apk",
+          "bytes": 72560071,
+          "sha256": "6e18997c2e91fea6546d491d6e263effb3316fcfe876cc05985cc3c87a533222",
+          "sha1": "4017b23f3b1388cf926ce72d597b6b91156281c9",
+          "manifest": {
+            "package": "com.wejoy.weplay.ar",
+            "versionName": null,
+            "versionCode": 60851,
+            "split": "config.arm64_v8a"
+          }
+        },
+        {
+          "path": "apks/config.en.apk",
+          "bytes": 569554,
+          "sha256": "a875a0860e4ce558500c8cb6f47306876d044933aabfdefc18384e335cd63971",
+          "sha1": "41a0d78f3414f215f7ebfee0d5eb4a1522463eb7",
+          "manifest": {
+            "package": "com.wejoy.weplay.ar",
+            "versionName": null,
+            "versionCode": 60851,
+            "split": "config.en"
+          }
+        },
+        {
+          "path": "apks/config.hi.apk",
+          "bytes": 3793193,
+          "sha256": "c460aa786c374c9294830656744e8936e36114fe9022befc35728a0b514fcbe6",
+          "sha1": "d89b907d0566730936d6bf988aa52602e92f20af",
+          "manifest": {
+            "package": "com.wejoy.weplay.ar",
+            "versionName": null,
+            "versionCode": 60851,
+            "split": "config.hi"
+          }
+        },
+        {
+          "path": "apks/config.tr.apk",
+          "bytes": 5002772,
+          "sha256": "22a96186595f676e59eaa8367d5df6e5a29bf205a8bf89c7d29e65ea1db9875c",
+          "sha1": "2e28cbe7ede92779d5f11b925a7348d733253212",
+          "manifest": {
+            "package": "com.wejoy.weplay.ar",
+            "versionName": null,
+            "versionCode": 60851,
+            "split": "config.tr"
+          }
+        },
+        {
+          "path": "apks/config.xxhdpi.apk",
+          "bytes": 497284,
+          "sha256": "f9857897947e9620dfc28cc9645bfaba5df31a7aa70c51a1da63cddf559fa7df",
+          "sha1": "d7225131427c374c7b228e658d5bb8afcad2eec3",
+          "manifest": {
+            "package": "com.wejoy.weplay.ar",
+            "versionName": null,
+            "versionCode": 60851,
+            "split": "config.xxhdpi"
+          }
+        },
+        {
+          "path": "apks/config.zh.apk",
+          "bytes": 41841,
+          "sha256": "8c4749da80955cf16ac86b3ceb49d18b24df5844b1c489c110bc655e9762386f",
+          "sha1": "85990022b57701eb10774c7d822d17761200ac18",
+          "manifest": {
+            "package": "com.wejoy.weplay.ar",
+            "versionName": null,
+            "versionCode": 60851,
+            "split": "config.zh"
+          }
+        },
+        {
+          "path": "apks/wepie_asset_pack.apk",
+          "bytes": 65228677,
+          "sha256": "8bd14a52e70fa34978f4113b0f7dc0be235b5a5e1e675a3b9fbfe5bbb2cb37a2",
+          "sha1": "5baae58bc301cf0b1ea51ea3934ae8708daad0b1",
+          "manifest": {
+            "package": "com.wejoy.weplay.ar",
+            "versionName": null,
+            "versionCode": 60851,
+            "split": "wepie_asset_pack"
+          }
+        }
+      ],
+      "compared_sources": [
+        {
+          "source_page": "https://apkpure.net/weplay-ar/com.wejoy.weplay.ar/download",
+          "file": "WePlay-AR-6.8.5.xapk",
+          "identity": {
+            "package": "com.wejoy.weplay.ar",
+            "versionName": "6.8.5",
+            "versionCode": 60851,
+            "split": null
+          }
+        }
+      ],
+      "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+      "mirror_advertised_date": "Oct 13, 2026"
+    },
+    {
+      "app": "Spoon",
+      "regions": "Japan; Korea",
+      "package": "co.spoonme",
+      "version": "11.20.0",
+      "version_code": 738,
+      "selected_file": "Spoon-11.20.0.xapk",
+      "source": "APKPure mirror",
+      "source_page": "https://apkpure.net/spoon/co.spoonme/download",
+      "retrieved_at": "2026-10-13T07:53:28.730059+00:00",
+      "checks": {
+        "zip_crc": "passed",
+        "manifest_package_match": true,
+        "manifest_version": "read from downloaded APK",
+        "android_runtime": "not tested",
+        "publisher_signature": "not cryptographically verified"
+      },
+      "files": [
+        {
+          "path": "Spoon-11.20.0.xapk",
+          "bytes": 113425916,
+          "sha256": "4bae89eb2cddc0bf21993d813c0f8045e34dd860a83e6151fd9da8de0971a58d",
+          "sha1": "241a8c8fa9fde26644f50d3dbc6ea77f223ee436",
+          "manifest": null
+        },
+        {
+          "path": "apks/co.spoonme.apk",
+          "bytes": 81673142,
+          "sha256": "3af6243d07193bd4a8441cfd2b19215c2c5cd46978534f617badbd174a3aa592",
+          "sha1": "fda34b804dc4bd2ac25d2f11bda2d61673df70db",
+          "manifest": {
+            "package": "co.spoonme",
+            "versionName": "11.20.0",
+            "versionCode": 738,
+            "split": null
+          }
+        },
+        {
+          "path": "apks/config.arm64_v8a.apk",
+          "bytes": 31613656,
+          "sha256": "54f1dff322ec8bf99b882e0c9dc55992e532c6224d3d7666cf8d2f523e645251",
+          "sha1": "5a5c77ccb695bef4dd5531141ba6c3615bbbce96",
+          "manifest": {
+            "package": "co.spoonme",
+            "versionName": null,
+            "versionCode": 738,
+            "split": "config.arm64_v8a"
+          }
+        },
+        {
+          "path": "apks/config.mdpi.apk",
+          "bytes": 126484,
+          "sha256": "76f7ad90e95335bbd7fc54e1e7165ee2cd01327d253fbada340e103b2f3fa079",
+          "sha1": "577b68ec569019d2cca738baaf27b4143dc9782c",
+          "manifest": {
+            "package": "co.spoonme",
+            "versionName": null,
+            "versionCode": 738,
+            "split": "config.mdpi"
+          }
+        }
+      ],
+      "compared_sources": [
+        {
+          "source_page": "https://apkpure.net/spoon/co.spoonme/download",
+          "file": "Spoon-11.20.0.xapk",
+          "identity": {
+            "package": "co.spoonme",
+            "versionName": "11.20.0",
+            "versionCode": 738,
+            "split": null
+          }
+        }
+      ],
+      "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+      "mirror_advertised_date": "Oct 6, 2026"
+    },
+    {
+      "app": "WePlay-JP",
+      "regions": "Japan",
+      "package": "com.wejoy.weplay.jp",
+      "version": "6.12.0",
+      "version_code": 61207,
+      "selected_file": "WePlay-JP-6.12.0.xapk",
+      "source": "APKPure mirror",
+      "source_page": "https://apkpure.net/weplay-jp/com.wejoy.weplay.jp/download",
+      "retrieved_at": "2026-10-13T07:57:48.805963+00:00",
+      "checks": {
+        "zip_crc": "passed",
+        "manifest_package_match": true,
+        "manifest_version": "read from downloaded APK",
+        "android_runtime": "not tested",
+        "publisher_signature": "not cryptographically verified"
+      },
+      "files": [
+        {
+          "path": "WePlay-JP-6.12.0.xapk",
+          "bytes": 274603920,
+          "sha256": "dff5d4ba6e61c706ccf54f7483c8f7d644ae08a94b389ca82ad0dc28eea7204b",
+          "sha1": "d8ed3ad33d7cd2e1a9c2f3d32a51a1578d35df1d",
+          "manifest": null
+        },
+        {
+          "path": "apks/com.wejoy.weplay.jp.apk",
+          "bytes": 118052369,
+          "sha256": "9b86689be30cc4e3dbb4a16ef268a6ac5ca275f58c37ed41cd073c3b89884e3a",
+          "sha1": "3cba05c0561aed71e05c075c1e23889294264778",
+          "manifest": {
+            "package": "com.wejoy.weplay.jp",
+            "versionName": "6.12.0",
+            "versionCode": 61207,
+            "split": null
+          }
+        },
+        {
+          "path": "apks/config.arm64_v8a.apk",
+          "bytes": 71663454,
+          "sha256": "6425f1ee1dd87fc196f776ab5dd91d73ab789341dd4c5aafe4dc8e5b2b2fd75d",
+          "sha1": "4b3a69d9af24fd5730b44adae825b4132e04d29c",
+          "manifest": {
+            "package": "com.wejoy.weplay.jp",
+            "versionName": null,
+            "versionCode": 61207,
+            "split": "config.arm64_v8a"
+          }
+        },
+        {
+          "path": "apks/config.mdpi.apk",
+          "bytes": 857774,
+          "sha256": "f1f2073ff59fb844225da3e6f3ff22d6e50d61ffdffc47198f8656f7d6385767",
+          "sha1": "fa153db787fcf200367df7b946a2ed15220233e8",
+          "manifest": {
+            "package": "com.wejoy.weplay.jp",
+            "versionName": null,
+            "versionCode": 61207,
+            "split": "config.mdpi"
+          }
+        },
+        {
+          "path": "apks/wepie_asset_pack.apk",
+          "bytes": 84003672,
+          "sha256": "ac03a1f7c05abae36e57a6f1e4c9d572578d56e47236f1031178c62384f891e9",
+          "sha1": "87bc2df1c87bd626a069a152ee19ec2113efdace",
+          "manifest": {
+            "package": "com.wejoy.weplay.jp",
+            "versionName": null,
+            "versionCode": 61207,
+            "split": "wepie_asset_pack"
+          }
+        }
+      ],
+      "compared_sources": [
+        {
+          "source_page": "https://apkpure.net/weplay-jp/com.wejoy.weplay.jp/download",
+          "file": "WePlay-JP-6.12.0.xapk",
+          "identity": {
+            "package": "com.wejoy.weplay.jp",
+            "versionName": "6.12.0",
+            "versionCode": 61207,
+            "split": null
+          }
+        }
+      ],
+      "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+      "mirror_advertised_date": "Oct 9, 2026"
+    },
+    {
+      "app": "WePlay-KR",
+      "regions": "Korea",
+      "package": "com.wejoy.weplay.kr",
+      "version": "6.12.0",
+      "version_code": 61207,
+      "selected_file": "WePlay-KR-6.12.0.xapk",
+      "source": "APKPure mirror",
+      "source_page": "https://apkpure.net/weplay-kr/com.wejoy.weplay.kr/download",
+      "retrieved_at": "2026-10-13T07:57:28.281072+00:00",
+      "checks": {
+        "zip_crc": "passed",
+        "manifest_package_match": true,
+        "manifest_version": "read from downloaded APK",
+        "android_runtime": "not tested",
+        "publisher_signature": "not cryptographically verified"
+      },
+      "files": [
+        {
+          "path": "WePlay-KR-6.12.0.xapk",
+          "bytes": 249327156,
+          "sha256": "9b566ae43e5b2327917c13dbe88cd585fb57d666ee27b00ead0f538c7c4bbd63",
+          "sha1": "8d1e21993018bc652b338445897ec1a128c4a838",
+          "manifest": null
+        },
+        {
+          "path": "apks/com.wejoy.weplay.kr.apk",
+          "bytes": 115675555,
+          "sha256": "6c1ddbaeca51610598e156964eebe2bfcf4baddc5a360a45466923f90e104ced",
+          "sha1": "17d680f40c5ce72ac09e414a830951f7f11aea21",
+          "manifest": {
+            "package": "com.wejoy.weplay.kr",
+            "versionName": "6.12.0",
+            "versionCode": 61207,
+            "split": null
+          }
+        },
+        {
+          "path": "apks/config.arm64_v8a.apk",
+          "bytes": 70020596,
+          "sha256": "2fac6bf8208de15c593074b366569f046484ec428ca2fc17bde2d1db52127ce1",
+          "sha1": "a0a39e8603fde5fb5e22b4eedca540dc294bc4db",
+          "manifest": {
+            "package": "com.wejoy.weplay.kr",
+            "versionName": null,
+            "versionCode": 61207,
+            "split": "config.arm64_v8a"
+          }
+        },
+        {
+          "path": "apks/config.mdpi.apk",
+          "bytes": 841390,
+          "sha256": "70917f06ba67dc6931623e7de62bd5fd32364aff1a4c9b024aec028c91a86b07",
+          "sha1": "f499defc3237144d93082c4dd56c0aa2dcaea9db",
+          "manifest": {
+            "package": "com.wejoy.weplay.kr",
+            "versionName": null,
+            "versionCode": 61207,
+            "split": "config.mdpi"
+          }
+        },
+        {
+          "path": "apks/wepie_asset_pack.apk",
+          "bytes": 62763023,
+          "sha256": "da4d0098954b4a80fe21a6db68a057047074010337c55b36e41c72f047e5bce2",
+          "sha1": "cee5de032dee4e6b399bc2c5b3418cf89bf49cfd",
+          "manifest": {
+            "package": "com.wejoy.weplay.kr",
+            "versionName": null,
+            "versionCode": 61207,
+            "split": "wepie_asset_pack"
+          }
+        }
+      ],
+      "compared_sources": [
+        {
+          "source_page": "https://apkpure.net/weplay-kr/com.wejoy.weplay.kr/download",
+          "file": "WePlay-KR-6.12.0.xapk",
+          "identity": {
+            "package": "com.wejoy.weplay.kr",
+            "versionName": "6.12.0",
+            "versionCode": 61207,
+            "split": null
+          }
+        }
+      ],
+      "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+      "mirror_advertised_date": "Oct 10, 2026"
+    },
+    {
+      "app": "Mirrativ",
+      "regions": "Japan",
+      "package": "com.dena.mirrativ",
+      "version": "11.92.1",
+      "version_code": 43253,
+      "selected_file": "Mirrativ-11.92.1.xapk",
+      "source": "APKPure mirror",
+      "source_page": "https://apkpure.net/mirrativ/com.dena.mirrativ/download",
+      "retrieved_at": "2026-10-13T07:57:51.704040+00:00",
+      "checks": {
+        "zip_crc": "passed",
+        "manifest_package_match": true,
+        "manifest_version": "read from downloaded APK",
+        "android_runtime": "not tested",
+        "publisher_signature": "not cryptographically verified",
+        "published_archive_sha1_match": true
+      },
+      "files": [
+        {
+          "path": "Mirrativ-11.92.1.xapk",
+          "bytes": 315936429,
+          "sha256": "99c154d8391f86348cc5e514b89c7a6a70ac656660f0f6939f882fd330eb7242",
+          "sha1": "40d2f6c55cf26fe1d67e3582762e08459ea428d0",
+          "manifest": null
+        },
+        {
+          "path": "apks/com.dena.mirrativ.apk",
+          "bytes": 138993690,
+          "sha256": "47fdad48fc045719b3e942c87d03d12058ed0d572705efa80890fe0b38eeffc9",
+          "sha1": "e5d87b2112c9e5c8c9f0d84fb84b983016564277",
+          "manifest": {
+            "package": "com.dena.mirrativ",
+            "versionName": "11.92.1",
+            "versionCode": 43253,
+            "split": null
+          }
+        },
+        {
+          "path": "apks/config.arm64_v8a.apk",
+          "bytes": 174831914,
+          "sha256": "ab64ba39e65d071c5b75f427117abd196a19b9784821ff73eeaaf5251abe1b59",
+          "sha1": "b12d4db541831dada7c5441d5c0e9f42cdce90d8",
+          "manifest": {
+            "package": "com.dena.mirrativ",
+            "versionName": null,
+            "versionCode": 43253,
+            "split": "config.arm64_v8a"
+          }
+        },
+        {
+          "path": "apks/config.en.apk",
+          "bytes": 127186,
+          "sha256": "a204cf39353ed012d7c08f31412ea9e256faf87ee1a4dc93569d034f598d59aa",
+          "sha1": "b147b6f5cdb9356996fb2fa3132bf6e3f8eda9f7",
+          "manifest": {
+            "package": "com.dena.mirrativ",
+            "versionName": null,
+            "versionCode": 43253,
+            "split": "config.en"
+          }
+        },
+        {
+          "path": "apks/config.mdpi.apk",
+          "bytes": 1851243,
+          "sha256": "a9bbff958eec245186fae800197dc8fc86ff9a1b6ef92a71c2e1c8e3fe5a5a4d",
+          "sha1": "261c9a05251df08c4f7668d3cb2d414342556600",
+          "manifest": {
+            "package": "com.dena.mirrativ",
+            "versionName": null,
+            "versionCode": 43253,
+            "split": "config.mdpi"
+          }
+        }
+      ],
+      "compared_sources": [
+        {
+          "source_page": "https://apkpure.net/mirrativ/com.dena.mirrativ/download",
+          "file": "Mirrativ-11.92.1.xapk",
+          "identity": {
+            "package": "com.dena.mirrativ",
+            "versionName": "11.92.1",
+            "versionCode": 43253,
+            "split": null
+          }
+        }
+      ],
+      "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+      "mirror_advertised_date": "Last updated on Oct 7, 2026"
+    },
+    {
+      "app": "Pococha",
+      "regions": "Japan",
+      "package": "com.dena.pokota",
+      "version": "7.36.0",
+      "version_code": 7360000,
+      "selected_file": "Pococha-7.36.0.xapk",
+      "source": "APKPure mirror",
+      "source_page": "https://apkpure.net/pococha/com.dena.pokota/download",
+      "retrieved_at": "2026-10-13T07:58:15.025370+00:00",
+      "checks": {
+        "zip_crc": "passed",
+        "manifest_package_match": true,
+        "manifest_version": "read from downloaded APK",
+        "android_runtime": "not tested",
+        "publisher_signature": "not cryptographically verified"
+      },
+      "files": [
+        {
+          "path": "Pococha-7.36.0.xapk",
+          "bytes": 202629527,
+          "sha256": "ccb8139a7ae6657182d1fa7c72e59f155b6863e64db3407178275b59aadc099d",
+          "sha1": "d8baff6059012cc35336fd917bf750a5d93b7180",
+          "manifest": null
+        },
+        {
+          "path": "apks/com.dena.pokota.apk",
+          "bytes": 113825068,
+          "sha256": "0de7478f2a347464e34727de59a104d2137633325f0aafafd95f91dee5279be9",
+          "sha1": "9e82f80e58107ec4133740a6b95ce2132bf8d560",
+          "manifest": {
+            "package": "com.dena.pokota",
+            "versionName": "7.36.0",
+            "versionCode": 7360000,
+            "split": null
+          }
+        },
+        {
+          "path": "apks/config.arm64_v8a.apk",
+          "bytes": 86333143,
+          "sha256": "d4273331ccf1baa1345beb86d50df83177ad7c580f743f4ddccb964dc3caee27",
+          "sha1": "31b34ee670f07cc8ffc50184ac53f1a86a9a7a87",
+          "manifest": {
+            "package": "com.dena.pokota",
+            "versionName": null,
+            "versionCode": 7360000,
+            "split": "config.arm64_v8a"
+          }
+        },
+        {
+          "path": "apks/config.mdpi.apk",
+          "bytes": 2368219,
+          "sha256": "da6582bdf5ae53cbe18ce937644b946597e451fb0f5dcc571f2c96c3e7274d06",
+          "sha1": "45219e870ebd080cf81e179c809af0cc2680c61a",
+          "manifest": {
+            "package": "com.dena.pokota",
+            "versionName": null,
+            "versionCode": 7360000,
+            "split": "config.mdpi"
+          }
+        }
+      ],
+      "compared_sources": [
+        {
+          "source_page": "https://apkpure.net/pococha/com.dena.pokota/download",
+          "file": "Pococha-7.36.0.xapk",
+          "identity": {
+            "package": "com.dena.pokota",
+            "versionName": "7.36.0",
+            "versionCode": 7360000,
+            "split": null
+          }
+        }
+      ],
+      "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+      "mirror_advertised_date": "Oct 13, 2026"
+    },
+    {
+      "app": "17LIVE",
+      "regions": "Japan; Korea",
+      "package": "com.machipopo.media17",
+      "version": "2.253.1.0",
+      "version_code": 17914363,
+      "selected_file": "17LIVE-2.253.1.0.xapk",
+      "source": "APKPure mirror",
+      "source_page": "https://apkpure.net/17live/com.machipopo.media17/download",
+      "retrieved_at": "2026-10-13T07:59:42.827230+00:00",
+      "checks": {
+        "zip_crc": "passed",
+        "manifest_package_match": true,
+        "manifest_version": "read from downloaded APK",
+        "android_runtime": "not tested",
+        "publisher_signature": "not cryptographically verified"
+      },
+      "files": [
+        {
+          "path": "17LIVE-2.253.1.0.xapk",
+          "bytes": 334869642,
+          "sha256": "d717b57cdd64ea4bcee63d05e09860df264a42c9e42ccd92aedee11858e60a33",
+          "sha1": "ea4ab5377d7b956fffdc6679810853e1b871b1e7",
+          "manifest": null
+        },
+        {
+          "path": "apks/com.machipopo.media17.apk",
+          "bytes": 136456431,
+          "sha256": "b8eca71f7e68a9359e4a84ffe81db2cf242c6ce3f08e2e614ee4628a1d2bd2f4",
+          "sha1": "3b49ee9de6a1bd72ae8c1d484a1181331032e33a",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": "2.253.1.0",
+            "versionCode": 17914363,
+            "split": null
+          }
+        },
+        {
+          "path": "apks/config.ja.apk",
+          "bytes": 1048985,
+          "sha256": "5feb3271ccf56c358e3c1050aea408ad2c6df62113a24b98908b7f6bca0a56af",
+          "sha1": "4a9da6a6b2a0f2e9ff3127a96438e60fae991a9b",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.ja"
+          }
+        },
+        {
+          "path": "apks/config.mdpi.apk",
+          "bytes": 3047303,
+          "sha256": "ac5ca4be741cf5d5a47bf2104aa3606d989aad28005a977634b835469b9cbee1",
+          "sha1": "b3f911c9bcea8be202d249796119bccab1a4dc6a",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.mdpi"
+          }
+        },
+        {
+          "path": "apks/config.ru.apk",
+          "bytes": 205209,
+          "sha256": "2c22c3472c2f764dd483c6218412f0bda4b7c15b35a29f5ee8aebcef26ad2fb7",
+          "sha1": "1d2aff89f974bace001ce98409c046777eee52ca",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.ru"
+          }
+        },
+        {
+          "path": "apks/config.ar.apk",
+          "bytes": 999833,
+          "sha256": "cc56923010d321c8354de8af7221dfe3e30017b0ff6b48ee8a327f8f726cf830",
+          "sha1": "015aaf153440febc5d500f67ef489bb9f479ef8a",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.ar"
+          }
+        },
+        {
+          "path": "apks/config.armeabi_v7a.apk",
+          "bytes": 83082421,
+          "sha256": "ca2b2f388a6fb2784c8172ef21d605dd9d97cf3ade7fc44ec7dc9648fe6cbe82",
+          "sha1": "734685f507abbfe6e0651fa617b62a913be712a5",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.armeabi_v7a"
+          }
+        },
+        {
+          "path": "apks/config.de.apk",
+          "bytes": 197017,
+          "sha256": "18278813698a1b7174329a7667a94488e32ca59328ddaaaeaa26f2fe60d7db29",
+          "sha1": "e5a11ea5ed46247ac7114a5de1e276ba6ef5748c",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.de"
+          }
+        },
+        {
+          "path": "apks/config.en.apk",
+          "bytes": 1450393,
+          "sha256": "ae73622e188e7636f71be40acc1605846765dab0649616ee99aad993d31a2fc1",
+          "sha1": "a8702c02d80b1b7e5feaf8e9f92df00b8a2be97e",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.en"
+          }
+        },
+        {
+          "path": "apks/config.es.apk",
+          "bytes": 270745,
+          "sha256": "102998d19facc9684e2342b54eb543aa9164cf0fcb06711d1661de6dfa3ab270",
+          "sha1": "6112ce88259bcddfde927e14fa21b1c4cf6f773a",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.es"
+          }
+        },
+        {
+          "path": "apks/config.hi.apk",
+          "bytes": 139673,
+          "sha256": "360780b1ed51b6ff69f5488f921f59a778f1ab05eda0cbabe04251bd2b93e5ad",
+          "sha1": "45aaf8e59b88bc0e87ca4b25f08343a6a1b33351",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.hi"
+          }
+        },
+        {
+          "path": "apks/config.zh.apk",
+          "bytes": 1794457,
+          "sha256": "510dc1f12ae70e05be07b2f715d549e3b4cac8af082372d65e4433af2c743607",
+          "sha1": "b4954ef655a2f3598ac4100750f203595370d6c6",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.zh"
+          }
+        },
+        {
+          "path": "apks/UnityDataAssetPack.apk",
+          "bytes": 17388333,
+          "sha256": "836ed3ef030d267fb6029bbf523e9787e2d98384e5d16f2218a2dfb56a13fd93",
+          "sha1": "ffe2227d98fc1cb8c7788820ea925bdc065a2e38",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "UnityDataAssetPack"
+          }
+        },
+        {
+          "path": "apks/config.fr.apk",
+          "bytes": 250265,
+          "sha256": "6cda397ae464752b981f28a33aa465d7094ab26f7ff04c49ce5238752e12a1c0",
+          "sha1": "7ba3614cfc00128210ddfa01af3f54a3d834966d",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.fr"
+          }
+        },
+        {
+          "path": "apks/config.tr.apk",
+          "bytes": 131481,
+          "sha256": "3adccc1610b1f866adfd22fb6eb37b39a95dd36caff8cb493cf75bee0f3ecc65",
+          "sha1": "72fe2ee5a10df0f3e23fbc2a2d7040e08483f6a3",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.tr"
+          }
+        },
+        {
+          "path": "apks/config.in.apk",
+          "bytes": 975257,
+          "sha256": "cb2447337ace1629686209f7d7a1cf01ffa5e9ec93d9e0b1ef4a708e7010a0b2",
+          "sha1": "13a9d2688dd989868425c411266a6f9a3d29a5c0",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.in"
+          }
+        },
+        {
+          "path": "apks/config.it.apk",
+          "bytes": 197017,
+          "sha256": "4ec0a878e9172af09e48b7ed3cd1d66cc8bd2cecaace2a8b476e5b98c0a4e2f1",
+          "sha1": "30ccb455ed82caf7a3f7089115c0666e14822fd5",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.it"
+          }
+        },
+        {
+          "path": "apks/config.ko.apk",
+          "bytes": 938393,
+          "sha256": "617d423f9ecec777727de01a702652ff7c1ef3d92a6ee0c031bff870ab442c3e",
+          "sha1": "6ff3b22163a75da0ac4f36161bf905466cc8b168",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.ko"
+          }
+        },
+        {
+          "path": "apks/config.my.apk",
+          "bytes": 119193,
+          "sha256": "62925bb0cf2b3a88f769561ab973ed552408ad11bb9fd4eaf7b1180c7c17b5a4",
+          "sha1": "6f1df97abfaa0a106a65dd6f7f64f755b9eb8226",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.my"
+          }
+        },
+        {
+          "path": "apks/config.pt.apk",
+          "bytes": 295321,
+          "sha256": "9d134f0c3a7b1836939bf66050bc773cd3596b8640bf25f579d7c43531ce564f",
+          "sha1": "8cb395a34f5c3191529213f3d855313020236d02",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.pt"
+          }
+        },
+        {
+          "path": "apks/config.th.apk",
+          "bytes": 250265,
+          "sha256": "1f67d0f1e28c756e2d206d84587ddaa2d117db77125d8307bcc07a804b01a636",
+          "sha1": "4b2c594a07d12e069fa0507058cb646899f787f0",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.th"
+          }
+        },
+        {
+          "path": "apks/config.vi.apk",
+          "bytes": 209305,
+          "sha256": "e4ff4846b9209b431f58f7e9e5ed14431358e4371ba1419c022e13e2994c7143",
+          "sha1": "7e1b8897a5de74f31cf0af7bc50dcf86ec39ba63",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "config.vi"
+          }
+        },
+        {
+          "path": "apks/m17Assets.apk",
+          "bytes": 85414324,
+          "sha256": "0ced358d5caec28de8c2be16a120a7b46f4fce2d4c6267c2ea1d5d0ff0346431",
+          "sha1": "2ae733f561c3c33f1c3a0a1fe5c54ccabeb363f8",
+          "manifest": {
+            "package": "com.machipopo.media17",
+            "versionName": null,
+            "versionCode": 17914363,
+            "split": "m17Assets"
+          }
+        }
+      ],
+      "compared_sources": [
+        {
+          "source_page": "https://apkpure.net/17live/com.machipopo.media17/download",
+          "file": "17LIVE-2.253.1.0.xapk",
+          "identity": {
+            "package": "com.machipopo.media17",
+            "versionName": "2.253.1.0",
+            "versionCode": 17914363,
+            "split": null
+          }
+        }
+      ],
+      "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+      "mirror_advertised_date": "Oct 8, 2026"
+    },
+    {
+      "app": "SUGO",
+      "regions": "LATAM; SEA",
+      "package": "com.voicemaker.android",
+      "version": "2.52.0.1",
+      "version_code": 326,
+      "selected_file": "SUGO-2.52.0.1.apk",
+      "source": "Official website",
+      "source_page": "https://www.sugo.com/mobile",
+      "retrieved_at": "2026-10-13T07:48:31.348255+00:00",
+      "checks": {
+        "zip_crc": "passed",
+        "manifest_package_match": true,
+        "manifest_version": "read from downloaded APK",
+        "android_runtime": "not tested",
+        "publisher_signature": "not cryptographically verified"
+      },
+      "files": [
+        {
+          "path": "SUGO-2.52.0.1.apk",
+          "bytes": 202100621,
+          "sha256": "24e683f9dce6d6dd83a53dc4d84768a36bb2e96f63173ba2abcaec8052673ae2",
+          "sha1": "60f80392b4c6f965d313a5a91ef295cbef2c4bfa",
+          "manifest": {
+            "package": "com.voicemaker.android",
+            "versionName": "2.52.0.1",
+            "versionCode": 326,
+            "split": null
+          }
+        }
+      ],
+      "compared_sources": [
+        {
+          "source_page": "https://www.sugo.com/mobile",
+          "file": "SUGO-2.52.0.1.apk",
+          "identity": {
+            "package": "com.voicemaker.android",
+            "versionName": "2.52.0.1",
+            "versionCode": 326,
+            "split": null
+          }
+        },
+        {
+          "source_page": "https://apkpure.net/sugo/com.voicemaker.android/download",
+          "file": "source-comparison/SUGO-2.52.0.0.xapk",
+          "identity": {
+            "package": "com.voicemaker.android",
+            "versionName": "2.52.0.0",
+            "versionCode": 325,
+            "split": null
+          }
+        }
+      ],
+      "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+      "mirror_advertised_date": "Oct 1, 2026"
+    },
+    {
+      "app": "Yalla-Parchis",
+      "regions": "Spanish; Portuguese",
+      "package": "com.yalla.yallaparchisi",
+      "version": "1.5.3",
+      "version_code": 191,
+      "selected_file": "Yalla-Parchis-1.5.3.xapk",
+      "source": "APKPure mirror",
+      "source_page": "https://apkpure.net/yalla-parchis/com.yalla.yallaparchisi/download",
+      "retrieved_at": "2026-10-13T07:59:43.048070+00:00",
+      "checks": {
+        "zip_crc": "passed",
+        "manifest_package_match": true,
+        "manifest_version": "read from downloaded APK",
+        "android_runtime": "not tested",
+        "publisher_signature": "not cryptographically verified",
+        "published_archive_sha1_match": true
+      },
+      "files": [
+        {
+          "path": "Yalla-Parchis-1.5.3.xapk",
+          "bytes": 183838705,
+          "sha256": "ea8e63bab3821ef19660c774059dc64282a9d27fe53a08c0f795ad52ccc562c1",
+          "sha1": "6ec2ac1ae9512b948d4786b93d4a8902d84d9b58",
+          "manifest": null
+        },
+        {
+          "path": "apks/com.yalla.yallaparchisi.apk",
+          "bytes": 124178341,
+          "sha256": "619075f46880c04b14b6ffc299557431404270e429a9a17b5476398bd532bd51",
+          "sha1": "f4ebc5c68fa841a76f2268c7129b3cc87f300389",
+          "manifest": {
+            "package": "com.yalla.yallaparchisi",
+            "versionName": "1.5.3",
+            "versionCode": 191,
+            "split": null
+          }
+        },
+        {
+          "path": "apks/config.arm64_v8a.apk",
+          "bytes": 59583561,
+          "sha256": "1fd044075a38687b47c4f88d3372a46c59cae80acfcb85d59daef60a7456b0ce",
+          "sha1": "9484a84301a610aaa0bc6a5bda002ce3bf22ad70",
+          "manifest": {
+            "package": "com.yalla.yallaparchisi",
+            "versionName": null,
+            "versionCode": 191,
+            "split": "config.arm64_v8a"
+          }
+        }
+      ],
+      "compared_sources": [
+        {
+          "source_page": "https://apkpure.net/yalla-parchis/com.yalla.yallaparchisi/download",
+          "file": "Yalla-Parchis-1.5.3.xapk",
+          "identity": {
+            "package": "com.yalla.yallaparchisi",
+            "versionName": "1.5.3",
+            "versionCode": 191,
+            "split": null
+          }
+        }
+      ],
+      "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+      "mirror_advertised_date": "Sep 23, 2026"
+    },
+    {
+      "app": "Falla",
+      "regions": "Spanish; Portuguese",
+      "package": "com.juhaoliao.vochat",
+      "version": "V9.23.0",
+      "version_code": 9230,
+      "selected_file": "Falla-V9.23.0.xapk",
+      "source": "APKPure mirror",
+      "source_page": "https://apkpure.net/falla/com.juhaoliao.vochat/download",
+      "retrieved_at": "2026-10-13T08:00:06.229639+00:00",
+      "checks": {
+        "zip_crc": "passed",
+        "manifest_package_match": true,
+        "manifest_version": "read from downloaded APK",
+        "android_runtime": "not tested",
+        "publisher_signature": "not cryptographically verified",
+        "published_archive_sha1_match": true
+      },
+      "files": [
+        {
+          "path": "Falla-V9.23.0.xapk",
+          "bytes": 206446289,
+          "sha256": "bb2bb9d99f03b3476d198f515fd7589856bacb65d8b1548dae339b81b290d903",
+          "sha1": "ad87771085d7d9e59ea1d8625195e6248e53b40c",
+          "manifest": null
+        },
+        {
+          "path": "apks/com.juhaoliao.vochat.apk",
+          "bytes": 131961721,
+          "sha256": "c927d0193643e097f0287188924aeb8dafefb5c66be91462bc3d61f4bc59dc59",
+          "sha1": "997dd5301e221535360b740ece5af69ed46a285e",
+          "manifest": {
+            "package": "com.juhaoliao.vochat",
+            "versionName": "V9.23.0",
+            "versionCode": 9230,
+            "split": null
+          }
+        },
+        {
+          "path": "apks/config.xxhdpi.apk",
+          "bytes": 243042,
+          "sha256": "c6bc288ec0e78f11597a5c90a6b8c674a0d6a2d606f9888e6bf51331d0ab5779",
+          "sha1": "f871ab3ceef8e1150e4c5aa07afe854b7fad2275",
+          "manifest": {
+            "package": "com.juhaoliao.vochat",
+            "versionName": null,
+            "versionCode": 9230,
+            "split": "config.xxhdpi"
+          }
+        },
+        {
+          "path": "apks/config.arm64_v8a.apk",
+          "bytes": 74205824,
+          "sha256": "5500b36f90aaea5cb3c9a2fba59679e3abcf87d69b875c3d6997a36b4cacf6f2",
+          "sha1": "db4621af1641db52f7351cc523b13852e2d2d63f",
+          "manifest": {
+            "package": "com.juhaoliao.vochat",
+            "versionName": null,
+            "versionCode": 9230,
+            "split": "config.arm64_v8a"
+          }
+        }
+      ],
+      "compared_sources": [
+        {
+          "source_page": "https://apkpure.net/falla/com.juhaoliao.vochat/download",
+          "file": "Falla-V9.23.0.xapk",
+          "identity": {
+            "package": "com.juhaoliao.vochat",
+            "versionName": "V9.23.0",
+            "versionCode": 9230,
+            "split": null
+          }
+        }
+      ],
+      "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+      "mirror_advertised_date": "Sep 23, 2026"
+    },
+    {
+      "app": "HeeSay",
+      "regions": "SEA",
+      "package": "com.blued.international",
+      "version": "5.14.5",
+      "version_code": 514052,
+      "selected_file": "HeeSay-5.14.5.apk",
+      "source": "Official website",
+      "source_page": "https://common.heesay.com/",
+      "retrieved_at": "2026-10-13T07:48:45.911816+00:00",
+      "checks": {
+        "zip_crc": "passed",
+        "manifest_package_match": true,
+        "manifest_version": "read from downloaded APK",
+        "android_runtime": "not tested",
+        "publisher_signature": "not cryptographically verified"
+      },
+      "files": [
+        {
+          "path": "HeeSay-5.14.5.apk",
+          "bytes": 149796234,
+          "sha256": "fa23b9e0bee7d646a10689d3289a84224f6c174def4a59ccb63a71e457ff2d48",
+          "sha1": "47438ebba74d04511a60a5bdc344eaf6235e3930",
+          "manifest": {
+            "package": "com.blued.international",
+            "versionName": "5.14.5",
+            "versionCode": 514052,
+            "split": null
+          }
+        }
+      ],
+      "compared_sources": [
+        {
+          "source_page": "https://common.heesay.com/",
+          "file": "HeeSay-5.14.5.apk",
+          "identity": {
+            "package": "com.blued.international",
+            "versionName": "5.14.5",
+            "versionCode": 514052,
+            "split": null
+          }
+        }
+      ],
+      "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ."
+    }
+  ],
+  "complete": true,
+  "expected_unique_packages": 15
+}

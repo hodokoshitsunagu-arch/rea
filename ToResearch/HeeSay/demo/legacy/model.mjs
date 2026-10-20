@@ -1,0 +1,4 @@
+export function initial(){return {day:0,gifts:[],log:[]}}
+export function gift(s,user,beans){s=structuredClone(s);if(!Number.isInteger(beans)||beans<=0)throw Error('Beans须正整数');s.gifts.push({user,beans,day:s.day});s.log.push(`${user} 第${s.day}天 +${beans}`);return s}
+export function advance(s,days){s=structuredClone(s);s.day+=days;s.log.push(`模拟GMT+0午夜：第${s.day}天`);return s}
+export function standings(s){let scores={},daily={};for(let g of s.gifts){if(s.day-g.day<7)scores[g.user]=(scores[g.user]||0)+g.beans;if(g.day===s.day)daily[g.user]=(daily[g.user]||0)+g.beans}let guardians=[...new Set(s.gifts.filter(g=>{let d=s.gifts.filter(x=>x.user===g.user&&x.day===g.day).reduce((a,x)=>a+x.beans,0);return d>=2500}).map(g=>g.user))];let r=Object.entries(scores).filter(([u])=>guardians.includes(u)).sort((a,b)=>b[1]-a[1]);let tie=r.length>1&&r[0][1]===r[1][1];return {scores,daily,guardians,couple:tie?'并列：原包仲裁未知':r.length&&guardians.includes(r[0][0])?r[0][0]:'无',tie}}

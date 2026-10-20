@@ -1,0 +1,762 @@
+{
+  "app": "YoHo",
+  "scope": "local simulation, not recovered runtime",
+  "items": [
+    {
+      "id": "YOH01",
+      "title": "家族周排名挑战与20%贡献转移",
+      "evidence_strength": "B",
+      "original_rules": "败方20%周贡献转移；拒绝后24小时不能再挑战同一族；挑战小时是占位配置。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9522,
+          "text": "Confrim to send forward a Ranking PK? After %s hours since the PK starts, system will compare both Families' weekly rankings. The lower-ranked Family will lose 20%% of own weekly contribution points to the higher-ranked Family."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11995,
+          "text": "The Family has accepted your Ranking PK invitation. After %s hours, system will compare both Families' weekly rankings. The lower-ranked Family will lose 20%% of own weekly contribution points to the higher-ranked Family. Invite your Family members to help climb the ranks!"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12087,
+          "text": "The other Family has declined your Ranking PK invitation. You cannot invite this Family to a PK for another 24 hours, but you can challenge another Family."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12841,
+          "text": "Your Family lost the Ranking PK. 20%% of your weekly contribution points were taken by the other Family."
+        }
+      ],
+      "reconstruction_choices": "2小时挑战、贡献即排名、向下取整、同分蓝队胜为本地规则。",
+      "implemented_fragments": [
+        "邀请同一家族",
+        "对方拒绝",
+        "推进24小时",
+        "对方接受",
+        "阿蓝家族贡献50",
+        "挑战结束"
+      ],
+      "not_recovered": [
+        "排名算法、取整、并列、超时和上限未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "YOH02",
+      "title": "家族召集与成长任务",
+      "evidence_strength": "B",
+      "original_rules": "建/入族财富门槛为动态值；全族召集一天一次；另有每日提醒计数；管理员可管理成员。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12780,
+          "text": "You need a wealth level ≥%d to create a family. Upgrade your level or try to join a fun family!"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12671,
+          "text": "You can apply to join this family when you reach the wealth level up to %d"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9043,
+          "text": "All family members will receive your call and have direct access to your room(There is only one chance to summon a day ~)"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9044,
+          "text": "All family members will receive your reminder and join the room. (Number of daily reminders left: %1$s/%2$s)"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9000,
+          "text": "Admins can help you manage the family, kick people out as well. Do you want to set this person as an admin?"
+        }
+      ],
+      "reconstruction_choices": "财富10、提醒每日2、任务10族EXP为自定；管理员每日召集一次保留文案。",
+      "implemented_fragments": [
+        "财富达到10",
+        "申请加入家族",
+        "管理员批准",
+        "全族召集",
+        "每日提醒",
+        "完成成长任务",
+        "下一日"
+      ],
+      "not_recovered": [
+        "具体门槛、族等级、人数和提醒数未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "YOH03",
+      "title": "礼物竞拍守护关系",
+      "evidence_strength": "B",
+      "original_rules": "赠礼竞价；类型/期限由拍卖师决定；Guests与host不能竞拍；100拍卖值=100守护值；总量达到动态值解锁宝箱。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9022,
+          "text": "After the auction starts, send gifts to the auctor to bid"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9112,
+          "text": "Approach 2: form the guardianship through bidding in an auction venue (the guardianship type and its duration are decided by auctors)."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8600,
+          "text": "2. 100 auction value in the auction venue = 100 guardian value"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10312,
+          "text": "Guests cannot join the auction."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12061,
+          "text": "The host cannot join the auction."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12583,
+          "text": "When the total amount involved in the auction reaches %1$s, the treasure reward will be unlocked."
+        }
+      ],
+      "reconstruction_choices": "按累计赠礼比价、宝箱300、同分先蓝；未恢复分成退款，全部虚拟。",
+      "implemented_fragments": [
+        "拍卖师配置7天守护",
+        "切换竞拍成员",
+        "切换host",
+        "阿蓝赠礼100",
+        "阿红赠礼200",
+        "结束竞拍"
+      ],
+      "not_recovered": [
+        "竞价比较、最高价还是累计价、分成、退款、平局未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "YOH04",
+      "title": "守护代币与限期关系升级",
+      "evidence_strength": "B",
+      "original_rules": "100币代币=100守护值；可7/30天；拒绝/超时退代币；替换不同类型不合并时长；结束清守护值；守护或Couple Lv3通话免费。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8530,
+          "text": "1. 100 coins of relationship token sent = 100 guardian value"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9111,
+          "text": "Approach 1: send relationship tokens. Once they accept the tokens, the guardianship can thus be formed (the guardianship duration can be 7 days / 30 days)."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12162,
+          "text": "They have declined your guardianship invitation. Your token is returned. No relationship is formed."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12056,
+          "text": "The guardian application has expired, and the gold coins you spent on purchasing tokens have been returned"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12625,
+          "text": "You and %1$s currently have a [%2$s] relationship with %3$s days remaining. Do you still want to form a %4$s relationship? If you proceed, the [%4$s] relationship will replace your current [%2$s] relationship. The validity periods will not be combined."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9013,
+          "text": "After ending the relationship, both of your guardian value will be cleared."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9280,
+          "text": "Calls are free once you start any Guardian relationship with each other"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9281,
+          "text": "Calls are free once you're Couple Lv.3 with each other"
+        }
+      ],
+      "reconstruction_choices": "100代币=100守护值；同类型续期累加、异类型覆盖从今日30天；替换价格未知未扣款。",
+      "implemented_fragments": [
+        "发送7天守护代币",
+        "接受守护",
+        "拒绝退代币",
+        "邀请超时退代币",
+        "续期7天",
+        "替换30天Couple",
+        "达到Couple Lv3",
+        "推进30天"
+      ],
+      "not_recovered": [
+        "关系名称全集、等级阈值、续期定价、通话计价未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "YOH05",
+      "title": "双向亮心配对回合",
+      "evidence_strength": "B",
+      "original_rules": "双向亮心才成功；礼物可增加配对概率的提示存在；成功动画公布、引导离场，未成功可留席。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10671,
+          "text": "Light up ❤ of the player you like, if he/she lights you, you will be paired successfully!"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10672,
+          "text": "Light up ❤ of the player you like, if he/she lights you, you will be paired successfully! (Tips: giving gifts can increase the probability of pairing)"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11890,
+          "text": "Successfully paired users will be announced in an animation. If not successful, you can stay in the seat to wait for next game!"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9024,
+          "text": "After the end, guide the paired players leave the game. Other users can stay for next game. Invite new players to join."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10313,
+          "text": "Guide the paired players to play a game of active atmosphere; guide other users to express a blessing to the paired players by sending gifts."
+        }
+      ],
+      "reconstruction_choices": "两人互选；礼物只显示未恢复的概率提示，不产生同意；未匹配留席。",
+      "implemented_fragments": [
+        "阿蓝亮心阿红",
+        "阿红亮心阿蓝",
+        "阿红不亮心",
+        "礼物概率提示",
+        "公布互选",
+        "配对后离席"
+      ],
+      "not_recovered": [
+        "礼物如何影响互选概率、角色人数、性别与隐私呈现未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "YOH06",
+      "title": "最低钻石狙击的大逃杀",
+      "evidence_strength": "B",
+      "original_rules": "至少2人起；房主选回合倒计时；最低钻分被瞄准；最低同分全部瞄准；中途不能加入，退出淘汰且不能回归；换座不影响分。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8531,
+          "text": "1. After the game starts, the score will be based on the score of diamonds received;\n2. Those with the lowest scores will be targeted by snipers;\n3. If there are several people with the same lowest score at the same time, all these people will be targeted by snipers;"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8533,
+          "text": "1. Click \"Join\" to join this round;\n2. Other people that directly take the mic can also join the game;\n3. You need at least 2 people to start the game;\n4. In order to be fair, after the game starts, you cannot remove the player from the game until that user is eliminated or the game is over;\n5. By clicking ❤, you can review the game guidelines;"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8542,
+          "text": "1. The countdown of each round is selected by the owner;\n2. After the end of the countdown, the sniper will shoot to eliminate the targeted people;\n3. After eliminating one person, the countdown of the next round will start immediately ;"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8544,
+          "text": "1. The score of the people who've been eliminated will not continue, so the scoreboard will be eliminated;\n2. Users with mics won't be able to join the game in the middle of the game;\n3. If you drop the mic or leave the room in the middle of the game, you will be considered as a quitter. You will be eliminated and won't be able to go back to the game;\n4. Changing seats will not affect the score;"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12320,
+          "text": "Unable to switch mode while Battle Royale mode is in progress"
+        }
+      ],
+      "reconstruction_choices": "最低同分同步淘汰、全员同分无胜者；每回合10秒；换座保持玩家身份计分。",
+      "implemented_fragments": [
+        "房主设置10秒开局",
+        "赠阿蓝2钻",
+        "赠阿红1钻",
+        "换座位",
+        "阿蓝退出",
+        "中途加入",
+        "倒计时射击"
+      ],
+      "not_recovered": [
+        "同轮瞄准多人时射击次序、最终胜者/奖池、积分折算未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "YOH07",
+      "title": "团队武器PK与火箭升级",
+      "evidence_strength": "B",
+      "original_rules": "更多钻=更高武器等级，更多钻队胜；5币礼物=1钻=1PK分；换队重置本场钻；MVP且团队>200钻可上榜；火箭升级领奖。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8543,
+          "text": "1. The more diamonds you receive, the higher your weapon level will be.The team that receives more diamonds will win the game."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10244,
+          "text": "Gifts worth 5 coins = 1 diamond = 1 PK credit"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10438,
+          "text": "If you change your team now, diamonds received during the battle will be reset. Do you confirm to continue?"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10479,
+          "text": "In team battle mode, users that win MPV and are part of a team that has more than 200 diamonds will appear on this list"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12514,
+          "text": "We now added the rocket feature to the team battle. Level up your rocket to win prizes!"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12036,
+          "text": "The following prizes are rewarded to you since you have unlocked LV%1$s rocket."
+        }
+      ],
+      "reconstruction_choices": "5币=1钻；50钻升级；本样本单贡献者为MVP；火箭2燃料领奖独立，未关联武器。",
+      "implemented_fragments": [
+        "送礼1005金币蓝队",
+        "切换到红队清分",
+        "送礼5金币当前队",
+        "给独立火箭加燃料",
+        "领取火箭等级奖励",
+        "结束团队PK"
+      ],
+      "not_recovered": [
+        "火箭和武器是否同一进度、升级阈值、时长、奖池未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "YOH08",
+      "title": "游戏币与通用币双钱包",
+      "evidence_strength": "B",
+      "original_rules": "两币等值；有两种币优先用Game Coins；仅用于文案所列9类指定游戏。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8537,
+          "text": "1. Game Coins and Coins are equal in value."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8603,
+          "text": "2. If you have both Coins and Game Coins, Game Coins will be used first."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8688,
+          "text": "3. Game Coins can only be used in designated games: greedycat, slot_frenzy, yummy, crash_rocket, lion, eliminateslot, chickenpass, fishing, olymapus"
+        }
+      ],
+      "reconstruction_choices": "9类游戏名未作玩法恢复；消费20、游戏币优先，纯资格/账本实验无博彩。",
+      "implemented_fragments": [
+        "选择指定游戏1",
+        "选择指定游戏9",
+        "选择非指定游戏",
+        "消费20币",
+        "完成游戏入口实验",
+        "选择指定游戏2",
+        "选择指定游戏3",
+        "选择指定游戏4",
+        "选择指定游戏5",
+        "选择指定游戏6",
+        "选择指定游戏7",
+        "选择指定游戏8"
+      ],
+      "not_recovered": [
+        "兑换方向、过期/退款、中奖产出类型、地区开放未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "YOH09",
+      "title": "Room Club等级与成员权益",
+      "evidence_strength": "B",
+      "original_rules": "会员可抢红包、使用专属席位；部分礼物须Club LV动态值；升级解锁权益。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9208,
+          "text": "Become a Room Club member to snatch red packets"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10592,
+          "text": "Join Room Club to enjoy exclusive seats"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10591,
+          "text": "Join Room Club and reach LV%1$s to send this gift"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9540,
+          "text": "Congratulations to %1$s for upgrading to Room Club LV%2$s, unlocking the following benefits"
+        }
+      ],
+      "reconstruction_choices": "LV3为动态门槛补齐；会员席位1、红包一次；退出保留等级是本地选择。",
+      "implemented_fragments": [
+        "加入Room Club",
+        "完成任务升到3级",
+        "使用专属席位",
+        "领取会员红包",
+        "送3级专属礼物",
+        "退出Club"
+      ],
+      "not_recovered": [
+        "费用、亲密/等级增长、退组数据、席位数量未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "YOH10",
+      "title": "Mystery匿名身份与贵族隐私",
+      "evidence_strength": "B",
+      "original_rules": "房外才能切换；指定贵族/VIP等级可用；匿名用户不能使用关系试用卡；另有国家Unknown/在线Yesterday/魅力0隐藏项。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12000,
+          "text": "The Mystery User feature is an exclusive privilege for %1$s and %2$s statuses and above."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12307,
+          "text": "Turning on and off the mystery person function needs to be performed outside the room"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12090,
+          "text": "The other party is a mystery user; relationship trial cards cannot be used"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12570,
+          "text": "When enabled during an active Aristocracy, Charm Level will always display as 0"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12577,
+          "text": "When enabled, your country or region will be displayed as \"Unknown\" on your profile page (%1$s, %2$s exclusive privilege)"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12579,
+          "text": "When enabled, your last online time will be displayed as \"Yesterday\" on your profile page, and the green online status dot will not be shown (%1$s, %2$s exclusive privilege)"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9008,
+          "text": "After changing your ID, all the contributions you made with your previous ID will be transferred to your real ID. Your real name will be shown on the gift wall and a new mysterious ID will be created for you."
+        }
+      ],
+      "reconstruction_choices": "VIP3解锁、匿名固定ID #7为本地参数；只展示视图，不承诺原隐私保护。",
+      "implemented_fragments": [
+        "模拟VIP达到3级",
+        "切换Mystery身份",
+        "进入房间",
+        "离开房间",
+        "使用关系试用卡",
+        "隐藏国家在线魅力"
+      ],
+      "not_recovered": [
+        "具体解锁等级、匿名ID稳定性、哪些日志与他人视图仍可见未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "YOH11",
+      "title": "贵族礼物授权与高阶动态名片",
+      "evidence_strength": "B",
+      "original_rules": "贵族礼物向下兼容；Noble10以上入房欢迎图；VIP9或Noble13可GIF头像；VIP12以上动态封面。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11031,
+          "text": "Noble members can send exclusive Noble gifts. Higher-level Noble status includes the authority to send lower-level gifts."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11157,
+          "text": "Open noble 10 above, the user into the room can automatically send welcome pictures."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12405,
+          "text": "Users at VIP9 or Noble13 can upload animated profile pictures in GIF format"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12852,
+          "text": "Your VIP level is too low. Users with VIP12 or above can upload animated cover photos."
+        }
+      ],
+      "reconstruction_choices": "示例礼物门槛Noble3；其他等级按文案；售价/周期未模拟。",
+      "implemented_fragments": [
+        "Noble达到10",
+        "Noble达到13",
+        "VIP达到9",
+        "VIP达到12",
+        "送低阶贵族礼物",
+        "设置GIF头像",
+        "设置动态封面",
+        "展示入房欢迎图"
+      ],
+      "not_recovered": [
+        "各爵位售价、周期、欢迎图可定制度、地区版本未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    },
+    {
+      "id": "YOH12",
+      "title": "生日与关系周年派对奖励",
+      "evidence_strength": "B",
+      "original_rules": "生日与周年均提示可赢徽章、头像框、车辆。",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 10577,
+          "text": "It will be your birthday in %1$s days. Come and create your own birthday party. You can win badges, avatar frames, and vehicles!"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 11990,
+          "text": "Thanks for staying with %3$s! It will be our %2$s anniversary in %1$s days. Wanna join our anniversary celebration? You can win badges, avatar frames, and vehicles!"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 12012,
+          "text": "The birthday party held by %1$s"
+        }
+      ],
+      "reconstruction_choices": "2日提醒、双人响应与庆祝任务全部设计补齐；仅徽章/头像框/车辆候选类别有文案。",
+      "implemented_fragments": [
+        "选择关系周年",
+        "创建庆祝派对",
+        "阿红响应邀请",
+        "推进到纪念日",
+        "完成本地庆祝任务",
+        "领取概念装扮"
+      ],
+      "not_recovered": [
+        "活动触发条件、奖励任务、邀请权限、时间窗未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "verification": {
+        "node": "闭环/机制guard",
+        "browser": "pending",
+        "original_runtime": "not executed",
+        "node_runtime": "v24.17.0 (repository pinned: v24.18.0)"
+      }
+    }
+  ]
+}

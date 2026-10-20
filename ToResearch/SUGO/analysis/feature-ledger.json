@@ -1,0 +1,42 @@
+[
+  {
+    "question": "语音房PK怎样形成持续活动",
+    "direct_evidence": "资源12521明确随机匹配对手、每轮5分钟、5分钟冷却、循环直到主动停止；11331有冷却再匹配提示。",
+    "derivation_or_inference": "推导：这是持续轮转的节目机制，不仅是一次性送礼排行榜。",
+    "unknown": "实际随机匹配池、配平、地区开关、退出处罚、断线恢复均未知。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "换麦会不会抹掉阵营分数",
+    "direct_evidence": "资源10380说明麦位显示用户本轮收礼总量，换用户时重新计算；14179说明两组麦位累计值不受上下麦影响，并提到麦位值重置为零。",
+    "derivation_or_inference": "推导：至少需要把阵营历史累计和当前麦用户显示分开。demo采用当前用户本轮个人积分作麦位显示；这个细节是重构选择。",
+    "unknown": "文本存在“重新计算”与“归零”细节差异，未还原原生计分实现；跨队移动如何归属未知。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "跨房PK的代码边界",
+    "direct_evidence": "REA `rea-pk-api-class.json` 观察到 `PKApiService` 14个普通方法；`i(long, PartySeat.CrossRoomPKTemplate, long, long, int, qy1)`显示模板类型参数。DEX有acceptPKInvite、auditRoomPkInvite、cancelCrossRoomPkMatch等来源类。",
+    "derivation_or_inference": "推断：客户端存在邀请/模板/匹配多个动作，模板不是纯展示文字。仅类名不能证明具体执行路径。",
+    "unknown": "序列化后的真实RPC流量、服务器裁决、并发冲突未知；方法反编译结果见独立Evidence。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "社交关系是否嵌入房间",
+    "direct_evidence": "资源包含Couple专用入场效果、情侣麦位、关系唯一性/解除请求、家族任务、转让领导等提示；选中资源13936明确Couple seats与stage seats主题。",
+    "derivation_or_inference": "推断：关系身份会投射到房间席位与可见装扮，家族提供持续社群组织。",
+    "unknown": "门槛配置、权限算法、邀请同意边界、活跃度统计与服务端关系真实性未知。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "有哪些非基础小游戏",
+    "direct_evidence": "资源8571直接说明Super winner：房主发起、报名入口费用、倒计时结束后人数大于2自动开始；另有Ludo 2V2组队类与Unity资产。",
+    "derivation_or_inference": "推导：报名与锁定人数阶段有状态门槛；不能只看到Unity/Ludo SDK就声称恢复游戏。",
+    "unknown": "随机算法、完整Super winner结算/退款比例及Ludo规则没有在本轮代码核实，未制作虚假的原版结算。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  }
+]

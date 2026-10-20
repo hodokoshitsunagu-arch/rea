@@ -1,0 +1,1043 @@
+{
+  "app": "WePlay-AR",
+  "package": "com.wejoy.weplay.ar",
+  "version": "6.8.5",
+  "scope": "partial static",
+  "definition": "独特指本应用内有特色的机制，不声称市场独占；A为客户端代码/契约+文案互证，B明确资源规则，C入口/结构候选，均无原运行验收",
+  "resource_evidence_sha256": "38a0fd9fc8de54e96134b3039bfa74ccb70527e35a3097e2e242e5aec7df6f7b",
+  "items": [
+    {
+      "name": "BFF门槛、竞拍旁路与关系展示槽位",
+      "categories": [
+        "社交",
+        "权益",
+        "玩法"
+      ],
+      "core_loop": "累积Guard达到普通BFF门槛 → 发起关系 → 对方同意 → 解锁展示槽位；竞拍房存在跳过Guard门槛的旁路。",
+      "distinctive": "关系形成资格与关系展示容量分开；不是简单好友申请。",
+      "rules": [
+        "文本普通门槛为1000 Guard；竞拍BFF可绕过此门槛。",
+        "展示新增BFF槽位另需Gold，价格/槽位数是占位符。"
+      ],
+      "unknowns": [
+        "Guard增加/衰减公式、旁路服务端授权、并行申请与槽位价格未知。"
+      ],
+      "replica_scope": "复刻普通门槛/竞拍旁路/同意/槽位四状态，Guard和Gold用虚拟变量，不接原资产。",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "未实现",
+      "id": "WAR01",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13041c",
+          "resource_key": "build_intimacy",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3183780,
+          "string_index": 12991,
+          "string_offset": 579352,
+          "quote": "To become a BFF, you need to reach a Guard of 1000! (In the bidding room, bidding for a BFF can bypass this requirement.)"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13020c",
+          "resource_key": "ask_to_be_intimacy_friend_invited",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3175764,
+          "string_index": 10788,
+          "string_offset": 511141,
+          "quote": "Inviting, waiting for the other user to agree"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13041e",
+          "resource_key": "build_intimacy_tips1",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3183812,
+          "string_index": 9260,
+          "string_offset": 467925,
+          "quote": "Are you sure to spend <b><font color=#FFA94A>%1$s</font></b> Gold to unlock the %2$sth BFF slot"
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    },
+    {
+      "name": "BFF关系进阶：亲密进度、宝箱与专属关系卡",
+      "categories": [
+        "社交",
+        "游戏",
+        "玩法"
+      ],
+      "core_loop": "先成为BFF → 在进阶局增加亲密 → 达阈值开宝箱 → 选专属关系卡 → 局末结算。",
+      "distinctive": "将关系升级变成房内多人可观看的进度与选卡事件；抽取动画不直接决定最终卡。",
+      "rules": [
+        "只有BFF能进更亲密关系；房主可竞拍BFF但不能参与关系进阶。",
+        "亲密达动态阈值解锁宝箱，每轮最多取得1卡；抽卡结果用于展示，最终以玩家选择为准。",
+        "选择超时随机分配；结束/下麦清空本轮进度。"
+      ],
+      "unknowns": [
+        "阈值、卡池、随机分布、亲密增加方式及落库冲突未知。"
+      ],
+      "replica_scope": "复刻BFF→进度→解锁→选择/超时→结算闭环，阈值/超时显式作为研究参数。",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "未实现",
+      "id": "WAR02",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130240",
+          "resource_key": "auction_advance_progress_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3176580,
+          "string_index": 11417,
+          "string_offset": 528897,
+          "quote": "Only BFF can have more intimate relationships"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13023f",
+          "resource_key": "auction_advance_owner_tip",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3176564,
+          "string_index": 12756,
+          "string_offset": 567430,
+          "quote": "The game is about to end. The host can bid a BFF, but the host cannot participate in the \"Relationship Advancement\" ~"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13022e",
+          "resource_key": "auction_advance_card_box_unlock_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3176292,
+          "string_index": 10792,
+          "string_offset": 511254,
+          "quote": "It can be unlocked when your intimacy reaches %1$s"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13021f",
+          "resource_key": "auction_advance_card_box_award_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3176052,
+          "string_index": 11363,
+          "string_offset": 526334,
+          "quote": "Note: Cards can be drawn each time the chest is opened, but players can get <font color=\"#FFD392\"> up to 1 card per round</font>"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130220",
+          "resource_key": "auction_advance_card_box_award_tips_had",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3176068,
+          "string_index": 11364,
+          "string_offset": 526467,
+          "quote": "Note: the result of the player's card drawing is only used as a display, and the final card is subject to the player's selection"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130233",
+          "resource_key": "auction_advance_card_select_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3176372,
+          "string_index": 10678,
+          "string_offset": 506180,
+          "quote": "If not selected, the result will be randomly allocated after <font color=\"#FFD392\">%1$s s</font>"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130236",
+          "resource_key": "auction_advance_close_tip",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3176420,
+          "string_index": 9253,
+          "string_offset": 467404,
+          "quote": "Are you sure to end this round of progress? (After ending, players will enter game settlement, and the accumulated intimacy points for this round will be cleared)"
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    },
+    {
+      "name": "戒指替换保留旧物与关系年龄",
+      "categories": [
+        "社交",
+        "权益"
+      ],
+      "core_loop": "关系中使用新戒指 → 旧戒指入盒 → 关系年龄保留 → Charm/Guard按新戒指属性更新。",
+      "distinctive": "展示装备更换与长期关系记忆分离，新道具不抹掉关系历史。",
+      "rules": [
+        "新戒指不需要对方再次批准；旧戒指保存。",
+        "婚姻时间不变；Charm、Guard依据新戒指属性改变。"
+      ],
+      "unknowns": [
+        "是否能降低数值、戒指属性表、赠予/撤销和服务端防重未知。"
+      ],
+      "replica_scope": "复刻装备替换、历史盒子、年龄保留与属性快照；关系成立条件另行定义。",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "未实现",
+      "id": "WAR03",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1301a8",
+          "resource_key": "add_couple_ring",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3174324,
+          "string_index": 8873,
+          "string_offset": 452104,
+          "quote": "- You can use rings of any value\n- You don't need approval to use new rings\n- When new rings are used, the previous ones will be saved in the ring box\n- The time of your marriage will not be changed\n- Charm and Guard Pts will increase according to the new rings' stats"
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    },
+    {
+      "name": "高级房容量扩张与到期回收",
+      "categories": [
+        "权益",
+        "社交"
+      ],
+      "core_loop": "高级房开通 → 上限40扩到80 → 到期降回40 → 保留现有超额成员但暂停新增。",
+      "distinctive": "权限回收遵循保留存量、限制增量；避免到期粗暴踢人。",
+      "rules": [
+        "资源明确40→80→40。",
+        "到期超额成员不删除，但不能再接收新成员。"
+      ],
+      "unknowns": [
+        "踢人后何时恢复新增、房主转让、离线人数口径与服务器一致性未知。"
+      ],
+      "replica_scope": "复刻到期计时/容量和既有成员保留，模拟多个加入请求，不做真实订阅。",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "未实现",
+      "id": "WAR04",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130bab",
+          "resource_key": "game_room_vip_desc_desc_01",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3211748,
+          "string_index": 12786,
+          "string_offset": 569165,
+          "quote": "The member limit of Advanced Room will be promoted from 40 to 80.\n\nOnce it expires, the member limit will be reduced to 40 again. Excess members will not be deleted, but the room will not be able to hold any new member."
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    },
+    {
+      "name": "高级房三管理员与到期权限撤销",
+      "categories": [
+        "权益",
+        "社交"
+      ],
+      "core_loop": "任命最多3管理员 → 管理游戏模式/人数/陌生人准入/等级/踢人 → 高级房到期统一撤权。",
+      "distinctive": "将社交房的协同管理作为可到期的权益，而非永久管理员。",
+      "rules": [
+        "最多3管理员；可改模式/人数、允许或拒绝陌生人、设等级门槛和移除成员。",
+        "到期管理员失去上述权限，等级门槛也不可设置。"
+      ],
+      "unknowns": [
+        "权限细粒度组合、房主覆盖、强退及操作竞态未知。"
+      ],
+      "replica_scope": "复刻可撤销角色授权表、到期事件和操作日志，不接原后台。",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "未实现",
+      "id": "WAR05",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130bb0",
+          "resource_key": "game_room_vip_desc_desc_06",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3211828,
+          "string_index": 13539,
+          "string_offset": 597215,
+          "quote": "You can appoint up to 3 admins in an Advanced Room.\n\nAdmins can change the game mode and member number, allow in and reject strangers, set a level requirement and kick out members.\n\nOnce it expires, admins will lose these rights."
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130bb1",
+          "resource_key": "game_room_vip_desc_desc_07",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3211844,
+          "string_index": 13570,
+          "string_offset": 599423,
+          "quote": "You can set a level requirement for members in an Advanced Room.\n\nOnce it expires, you will not be able to use this feature."
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    },
+    {
+      "name": "语音房宝箱倒计时与任务减时",
+      "categories": [
+        "权益",
+        "玩法"
+      ],
+      "core_loop": "房内停留推进宝箱倒计时 → 完成任务减少剩余时间 → 达条件可开宝箱。",
+      "distinctive": "参与行为既积累在线时间，又直接压缩领取等待。",
+      "rules": [
+        "在Voice Room停留一段时间后可开启对应箱。",
+        "每完成一个任务减少开启倒计时1分钟。"
+      ],
+      "unknowns": [
+        "实际停留条件、后台/静音/断网处理、任务重复计数、奖励概率未知。"
+      ],
+      "replica_scope": "复刻计时与幂等任务减时，最低归零为明确重构选择；不宣称原后台时钟策略。",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "未实现",
+      "id": "WAR06",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13183e",
+          "resource_key": "treasure_desc",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3259908,
+          "string_index": 13307,
+          "string_offset": 587936,
+          "quote": "Watching for some time in the Voice Room to open corresponding Treasure Box~"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f131842",
+          "resource_key": "treasure_task_desc",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3259972,
+          "string_index": 10169,
+          "string_offset": 492488,
+          "quote": "Every task you completed will decrease the countdown of treasure box opening for 1 minute"
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    },
+    {
+      "name": "签约歌手出题与审核回报",
+      "categories": [
+        "玩法",
+        "权益",
+        "社交"
+      ],
+      "core_loop": "获得签约歌手资格 → 每日录制投稿 → 审核 → 歌曲进入唱歌题库并获得奖励。",
+      "distinctive": "玩家同时是题库内容生产者；资格奖励和作品通过奖励分开。",
+      "rules": [
+        "文本成为签约歌手奖励50 Gold。",
+        "每天最多提交1首；每首审核通过奖励20 Gold。",
+        "上传歌曲需要作品/授权承诺，原审核执行未知。"
+      ],
+      "unknowns": [
+        "资格考核、曲库版权核验、音频审核及各语言奖励货币配置未知。"
+      ],
+      "replica_scope": "复刻资格→投稿→待审→通过/拒绝→题库→奖励的内容循环，只用原创样本音频。",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "未实现",
+      "id": "WAR07",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130688",
+          "resource_key": "contribute_song_tips1",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3192372,
+          "string_index": 10592,
+          "string_offset": 503244,
+          "quote": "Hey, my name is Paul, producer of the show.<br> You need to get the qualification before submitting questions for singing games!<br> Becoming a contracted singer also grants <strong>50 Gold</strong>. Try your best!"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130685",
+          "resource_key": "contribute_song_full_activity_2",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3192324,
+          "string_index": 10164,
+          "string_offset": 492129,
+          "quote": "Every contracted singer can submit 1 song a day. Every approved song grants 20 Gold"
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    },
+    {
+      "name": "玩家词题投稿与延后奖励",
+      "categories": [
+        "玩法",
+        "权益"
+      ],
+      "core_loop": "提交村民词/卧底词或绘画词 → 审核 → 通过才付奖励。",
+      "distinctive": "把玩家语言创作接入游戏内容池；即时提交与权益到账分离。",
+      "rules": [
+        "文案每份贡献5 Gold并由Judge审核后发放。",
+        "“up to25 per day”的单位在英文文案不明确，不据此断言25份或25 Gold。"
+      ],
+      "unknowns": [
+        "适用游戏、每日25的单位、审核标准/队列及多语字符算法未知。"
+      ],
+      "replica_scope": "复刻审核后才奖励、重复投稿去重；日限额须先明确产品单位。",
+      "replica_effort": "低",
+      "readiness": "需补证据",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "未实现",
+      "id": "WAR08",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13068a",
+          "resource_key": "contribute_word_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3192388,
+          "string_index": 9319,
+          "string_offset": 470094,
+          "quote": "Award Subject, 5 gold for 1 contribution, up to 25 per day. (Subject will be reviewed by Judge, gold will be sent after passing.)"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130bd1",
+          "resource_key": "game_room_word_contribute_tips_1",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3212324,
+          "string_index": 12903,
+          "string_offset": 575603,
+          "quote": "Theme"
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    },
+    {
+      "name": "绘画道具：付费延时与成长解锁颜色",
+      "categories": [
+        "游戏",
+        "权益"
+      ],
+      "core_loop": "绘画倒计时中支付虚拟币延时 → 颜色以Gold或等级/EXP双路径解锁。",
+      "distinctive": "把局内创作资源与长期成长绑定，付款只是一条解锁路径。",
+      "rules": [
+        "颜色可用Gold解锁，也可达到绘画等级/EXP免费解锁。",
+        "延长绘画时间需要Gold；延时秒数在不同资源是固定或占位参数。",
+        "取消准备最多2次/局的资源文案也存在。"
+      ],
+      "unknowns": [
+        "每色费用、笔迹授权、动画/实时协作协议和延时竞态未知。"
+      ],
+      "replica_scope": "复刻双色解锁路径、画布工具和倒计时权益，所有价格/延时作为配置参数。",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "未实现",
+      "id": "WAR09",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13080e",
+          "resource_key": "draw_unlock_color_in_game",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3197828,
+          "string_index": 12462,
+          "string_offset": 556928,
+          "quote": "Spend %1$d Gold to unlock this color\nYou need %2$d more EXP to unlock it for free"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13080f",
+          "resource_key": "draw_unlock_color_in_other",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3197844,
+          "string_index": 12463,
+          "string_offset": 557012,
+          "quote": "Spend %1$d Gold to unlock this color\nYou need to reach Draw & Guess Lv.%2$d to unlock it for free"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130b19",
+          "resource_key": "game_room_draw_room_prolong_time",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3209556,
+          "string_index": 12458,
+          "string_offset": 556722,
+          "quote": "Spend %1$d Gold to prolong the drawing time by %2$ds?"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130805",
+          "resource_key": "draw_game_unready_max_time_2",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3197684,
+          "string_index": 13540,
+          "string_offset": 597449,
+          "quote": "You can cancel getting ready up to twice a game"
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    },
+    {
+      "name": "VIP全站广播、礼物隐私与成长转换",
+      "categories": [
+        "权益",
+        "社交"
+      ],
+      "core_loop": "赠领VIP卡/Charm转成长 → VIP广播占公共展示位 → 新广播覆盖旧 → 隐藏近期礼物。",
+      "distinctive": "身份权益同时改变展示竞争和社交可见性，而非仅头像装饰。",
+      "rules": [
+        "广播默认显示5分钟，其他VIP的新广播覆盖最后一条。",
+        "资源允许把Charm转换为VIP Growth Pts。",
+        "近期礼物隐藏：本包未在该文案注明VIP等级。"
+      ],
+      "unknowns": [
+        "转换倍率、等级保持、广播队列、退款回收与隐私服务端范围未知。"
+      ],
+      "replica_scope": "复刻有限展示位的替换规则、可见性开关和成长账本；原会员经济不复刻。",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "未实现",
+      "id": "WAR10",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13012e",
+          "resource_key": "activity_send_vip_desc",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3172484,
+          "string_index": 12737,
+          "string_offset": 566519,
+          "quote": "The default display time of broadcast is 5 minutes。 \nWhen other VIP users release a new broadcast post, the last one will be covered"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1300bb",
+          "resource_key": "activity_gain_vip_gift_4",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3170676,
+          "string_index": 9620,
+          "string_offset": 477659,
+          "quote": "Claim it to convert Charm into VIP Growth Pts"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f131973",
+          "resource_key": "vip_user_hide_receive_gift",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3264644,
+          "string_index": 12816,
+          "string_offset": 571030,
+          "quote": "The player enabled VIP Exclusive feature: Hide recent gifts"
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    },
+    {
+      "name": "家族人气徽章触发房间奖励",
+      "categories": [
+        "社交",
+        "权益",
+        "玩法"
+      ],
+      "core_loop": "家族累积人气 → 徽章达到阈值 → 用户确认触发房间奖励 → 扣除当天触发额度。",
+      "distinctive": "集体成就需要主动触发，并有每日次数额度。",
+      "rules": [
+        "徽章达到动态等级可点OK触发房间奖励。",
+        "每天可打开次数和剩余次数均由占位值显示。"
+      ],
+      "unknowns": [
+        "人气来源、阈值、奖励表、计日时区与冷却未知。"
+      ],
+      "replica_scope": "复刻多人贡献进度、确认触发与次数扣减；奖励使用固定实验道具。",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "未实现",
+      "id": "WAR11",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130d6b",
+          "resource_key": "hot_badge_dialog_tips1",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3218388,
+          "string_index": 9719,
+          "string_offset": 480249,
+          "quote": "Congrats, the family popularity badge has reached %d\nClick OK to trigger the following room rewards:"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130674",
+          "resource_key": "confirm_open_hot_badge_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3192068,
+          "string_index": 9272,
+          "string_offset": 468690,
+          "quote": "Are you sure you want to turn on the popularity badge feature? \n (can be opened %d times per day, %d times left)"
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    },
+    {
+      "name": "卧底语音描述、不可撤销猜词与同投票结算交友",
+      "categories": [
+        "游戏",
+        "社交",
+        "玩法"
+      ],
+      "core_loop": "分配词卡 → 轮流语音描述 → 票选或卧底猜村民词 → 揭词 → 用同目标投票次数推荐同桌。",
+      "distinctive": "结算关系候选由共同决策轨迹解释，而非任意推荐名单。",
+      "rules": [
+        "双词/双卧底文案存在语言歧义，最大字符为占位值。",
+        "描述超时会被跳过；确认猜村民词后不可取消。",
+        "改房人数会重新分词、换词会重开。",
+        "结算文案显示两人投相同目标次数并建议交朋友。"
+      ],
+      "unknowns": [
+        "角色配比、平票、猜词成功判定、共享投票匹配算法及真实加友服务未知。"
+      ],
+      "replica_scope": "已有AR本地实验只含模拟描述/投票/单向交友选择；猜词不可逆与同投票解释未实现，可选补。",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "已有",
+      "id": "WAR12",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130797",
+          "resource_key": "double_spies_spy_words_not_exceed_x_characters",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3195924,
+          "string_index": 13401,
+          "string_offset": 591342,
+          "quote": "When there are 2 spies, the spy words must not exceed %s characters"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130b68",
+          "resource_key": "game_room_spy_bomb_word_confirm_desc",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3210740,
+          "string_index": 9254,
+          "string_offset": 467571,
+          "quote": "Are you sure to guess the villagers’ word?<b> After confirmation, it cannot be cancelled.</b>"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130b7f",
+          "resource_key": "game_room_spy_not_speak_tip",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3211108,
+          "string_index": 22,
+          "string_offset": 58943,
+          "quote": "Please describe the word by voice, otherwise you will be skipped after <font color=#FFEB35>%1$ss</font>"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1311a6",
+          "resource_key": "party_spy_change_config_tips_when_not_gaming",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3234340,
+          "string_index": 9111,
+          "string_offset": 461165,
+          "quote": "After changing the number of people in the room, the words will be reassigned. Are you sure to change it?"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f131719",
+          "resource_key": "spy_game_end_match_tips_4",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3255764,
+          "string_index": 10574,
+          "string_offset": 502442,
+          "quote": "He/she and I voted for the same target %1$d times. You understand each other perfectly! Why don't you be friends!?"
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    },
+    {
+      "name": "家族宝箱：职位发放、周活门槛与解锁占用",
+      "categories": [
+        "社交",
+        "权益",
+        "玩法"
+      ],
+      "core_loop": "Leader/Deputy配置家族宝箱 → 成员达周活条件 → 解锁等待 → 领取奖励。",
+      "distinctive": "组织职位、成员贡献和奖池发放权限绑定。",
+      "rules": [
+        "不具备发箱资格时提示找Leader/Deputy。",
+        "周活达占位阈值才可领取；一箱开始后不能停止或再解锁其他箱。"
+      ],
+      "unknowns": [
+        "领取名单、奖池分配与解锁的作用域未知；本包未直接匹配日韩Limited/Normal文字。"
+      ],
+      "replica_scope": "复刻Leader发放/周活资格/单解锁占用，不借用日韩双模式作原包事实。",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "未实现",
+      "id": "WAR13",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1309d0",
+          "resource_key": "family_send_box_error_tips1",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3204628,
+          "string_index": 13498,
+          "string_offset": 594907,
+          "quote": "You are not qualified to send chests. Ask your Leader or Deputy to do it!"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130948",
+          "resource_key": "family_main_activity_week_active_dialog_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3202468,
+          "string_index": 13355,
+          "string_offset": 589407,
+          "quote": "Weekly Activity reach %1$d to claim"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1308ff",
+          "resource_key": "family_grab_box_box_unlock_normal_content",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3201300,
+          "string_index": 13581,
+          "string_offset": 600535,
+          "quote": "You can't stop or unlock another \n chest once it starts"
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    },
+    {
+      "name": "Baloot金币房、系统接管与离局匹配冷却",
+      "categories": [
+        "游戏",
+        "玩法",
+        "权益"
+      ],
+      "core_loop": "设置房间出牌/叫牌时限及金币结算 → 开局 → 退出由系统接管 → 限制短期重新匹配。",
+      "distinctive": "桌游离局后的代理行为与匹配/收益惩罚同时存在。",
+      "rules": [
+        "退出后系统接管，3分钟内不能匹配、不能赢Gold，并按占位金额扣除。",
+        "资源描述出牌/叫牌时间设置、金币结算设置。"
+      ],
+      "unknowns": [
+        "Baloot叫牌/牌型/积分、安全托管策略及当前金额未知。"
+      ],
+      "replica_scope": "先做退出→托管→冷却→收益限制的外围状态；完整Baloot须恢复规则。",
+      "replica_effort": "高",
+      "readiness": "需补证据",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "未实现",
+      "id": "WAR14",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1302fc",
+          "resource_key": "baloot_force_quit_tip_s",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3179588,
+          "string_index": 12758,
+          "string_offset": 567593,
+          "quote": "The game is in progress. Do you want to quit this game? After exiting the game, the system will take over, but the match cannot be carried out within 3 minutes and the gold cannot be won (%1$s will be deducted when exiting the game at present)."
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1302f4",
+          "resource_key": "baloot_config_help_tip4",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3179460,
+          "string_index": 12865,
+          "string_offset": 573806,
+          "quote": "The round time you can spend on bidding or playing."
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1302f6",
+          "resource_key": "baloot_config_help_tip6",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3179492,
+          "string_index": 12947,
+          "string_offset": 577996,
+          "quote": "This room will use gold in final settlement."
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    },
+    {
+      "name": "家族护盾库存的职位可见性",
+      "categories": [
+        "社交",
+        "权益"
+      ],
+      "core_loop": "开启Hide Shield → 普通成员不见护盾数 → Leader/Deputy可见真实计数。",
+      "distinctive": "同一个集体资源有角色分层的可见性，而不是统一隐藏。",
+      "rules": [
+        "隐藏状态Leader/Deputy仍可看到Current shield count。",
+        "其他成员仅显示已启用隐藏，不给数字。"
+      ],
+      "unknowns": [
+        "护盾消耗/补充、可见性切换者、客户端缓存与服务器校验未知。"
+      ],
+      "replica_scope": "复刻按角色投影的集体库存，并明确只是本地权限实验。",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "未实现",
+      "id": "WAR15",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1308d5",
+          "resource_key": "family_defence_leader_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3200628,
+          "string_index": 12766,
+          "string_offset": 568159,
+          "quote": "The hide shield is activated, and the family shield count is hidden. Current shield count: %1$s (visible only to the Leader and Deputy Leader)"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1308d6",
+          "resource_key": "family_defence_not_leader_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3200644,
+          "string_index": 12765,
+          "string_offset": 568088,
+          "quote": "The hide shield is activated, and the family shield count is hidden."
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    },
+    {
+      "name": "Bingo满卡后道具禁用",
+      "categories": [
+        "游戏",
+        "玩法"
+      ],
+      "core_loop": "购买卡片并开局 → 填卡 → 全卡Bingo后禁用道具。",
+      "distinctive": "胜利/完成状态会收回局内消耗能力，而不是仍允许无意义使用。",
+      "rules": [
+        "资源明确全Bingo卡后不能使用items。",
+        "有等待其他玩家买卡和道具入口，完整数值规则未恢复。"
+      ],
+      "unknowns": [
+        "开球/标记规则、卡牌生成、道具效果和完整胜负未知。"
+      ],
+      "replica_scope": "仅可做完成后禁用道具的状态实验，完整Bingo暂需更多证据。",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "evidence_strength": "B明确资源规则",
+      "demo_status": "未实现",
+      "id": "WAR16",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1301e5",
+          "resource_key": "all_bingo_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3175220,
+          "string_index": 13721,
+          "string_offset": 609145,
+          "quote": "You've got a full Bingo card, items can't be used now"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13035e",
+          "resource_key": "bingo_card_finish_tips2",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3181092,
+          "string_index": 13294,
+          "string_offset": 587601,
+          "quote": "Waiting for other players to buy cards…"
+        }
+      ],
+      "observations": "规则来自包内文案或静态派生表示；文字存在不证明线上执行。",
+      "inferences": [
+        "独特性说明是产品机制解释，不证明市场独占或效果。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "app": "17LIVE",
+  "regions": "Japan; Korea",
+  "package": "com.machipopo.media17",
+  "version": "2.253.1.0",
+  "version_code": 17914363,
+  "selected_file": "17LIVE-2.253.1.0.xapk",
+  "source": "APKPure mirror",
+  "source_page": "https://apkpure.net/17live/com.machipopo.media17/download",
+  "retrieved_at": "2026-10-13T07:59:42.827230+00:00",
+  "checks": {
+    "zip_crc": "passed",
+    "manifest_package_match": true,
+    "manifest_version": "read from downloaded APK",
+    "android_runtime": "not tested",
+    "publisher_signature": "not cryptographically verified"
+  },
+  "files": [
+    {
+      "path": "17LIVE-2.253.1.0.xapk",
+      "bytes": 334869642,
+      "sha256": "d717b57cdd64ea4bcee63d05e09860df264a42c9e42ccd92aedee11858e60a33",
+      "sha1": "ea4ab5377d7b956fffdc6679810853e1b871b1e7",
+      "manifest": null
+    },
+    {
+      "path": "apks/com.machipopo.media17.apk",
+      "bytes": 136456431,
+      "sha256": "b8eca71f7e68a9359e4a84ffe81db2cf242c6ce3f08e2e614ee4628a1d2bd2f4",
+      "sha1": "3b49ee9de6a1bd72ae8c1d484a1181331032e33a",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": "2.253.1.0",
+        "versionCode": 17914363,
+        "split": null
+      }
+    },
+    {
+      "path": "apks/config.ja.apk",
+      "bytes": 1048985,
+      "sha256": "5feb3271ccf56c358e3c1050aea408ad2c6df62113a24b98908b7f6bca0a56af",
+      "sha1": "4a9da6a6b2a0f2e9ff3127a96438e60fae991a9b",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.ja"
+      }
+    },
+    {
+      "path": "apks/config.mdpi.apk",
+      "bytes": 3047303,
+      "sha256": "ac5ca4be741cf5d5a47bf2104aa3606d989aad28005a977634b835469b9cbee1",
+      "sha1": "b3f911c9bcea8be202d249796119bccab1a4dc6a",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.mdpi"
+      }
+    },
+    {
+      "path": "apks/config.ru.apk",
+      "bytes": 205209,
+      "sha256": "2c22c3472c2f764dd483c6218412f0bda4b7c15b35a29f5ee8aebcef26ad2fb7",
+      "sha1": "1d2aff89f974bace001ce98409c046777eee52ca",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.ru"
+      }
+    },
+    {
+      "path": "apks/config.ar.apk",
+      "bytes": 999833,
+      "sha256": "cc56923010d321c8354de8af7221dfe3e30017b0ff6b48ee8a327f8f726cf830",
+      "sha1": "015aaf153440febc5d500f67ef489bb9f479ef8a",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.ar"
+      }
+    },
+    {
+      "path": "apks/config.armeabi_v7a.apk",
+      "bytes": 83082421,
+      "sha256": "ca2b2f388a6fb2784c8172ef21d605dd9d97cf3ade7fc44ec7dc9648fe6cbe82",
+      "sha1": "734685f507abbfe6e0651fa617b62a913be712a5",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.armeabi_v7a"
+      }
+    },
+    {
+      "path": "apks/config.de.apk",
+      "bytes": 197017,
+      "sha256": "18278813698a1b7174329a7667a94488e32ca59328ddaaaeaa26f2fe60d7db29",
+      "sha1": "e5a11ea5ed46247ac7114a5de1e276ba6ef5748c",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.de"
+      }
+    },
+    {
+      "path": "apks/config.en.apk",
+      "bytes": 1450393,
+      "sha256": "ae73622e188e7636f71be40acc1605846765dab0649616ee99aad993d31a2fc1",
+      "sha1": "a8702c02d80b1b7e5feaf8e9f92df00b8a2be97e",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.en"
+      }
+    },
+    {
+      "path": "apks/config.es.apk",
+      "bytes": 270745,
+      "sha256": "102998d19facc9684e2342b54eb543aa9164cf0fcb06711d1661de6dfa3ab270",
+      "sha1": "6112ce88259bcddfde927e14fa21b1c4cf6f773a",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.es"
+      }
+    },
+    {
+      "path": "apks/config.hi.apk",
+      "bytes": 139673,
+      "sha256": "360780b1ed51b6ff69f5488f921f59a778f1ab05eda0cbabe04251bd2b93e5ad",
+      "sha1": "45aaf8e59b88bc0e87ca4b25f08343a6a1b33351",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.hi"
+      }
+    },
+    {
+      "path": "apks/config.zh.apk",
+      "bytes": 1794457,
+      "sha256": "510dc1f12ae70e05be07b2f715d549e3b4cac8af082372d65e4433af2c743607",
+      "sha1": "b4954ef655a2f3598ac4100750f203595370d6c6",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.zh"
+      }
+    },
+    {
+      "path": "apks/UnityDataAssetPack.apk",
+      "bytes": 17388333,
+      "sha256": "836ed3ef030d267fb6029bbf523e9787e2d98384e5d16f2218a2dfb56a13fd93",
+      "sha1": "ffe2227d98fc1cb8c7788820ea925bdc065a2e38",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "UnityDataAssetPack"
+      }
+    },
+    {
+      "path": "apks/config.fr.apk",
+      "bytes": 250265,
+      "sha256": "6cda397ae464752b981f28a33aa465d7094ab26f7ff04c49ce5238752e12a1c0",
+      "sha1": "7ba3614cfc00128210ddfa01af3f54a3d834966d",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.fr"
+      }
+    },
+    {
+      "path": "apks/config.tr.apk",
+      "bytes": 131481,
+      "sha256": "3adccc1610b1f866adfd22fb6eb37b39a95dd36caff8cb493cf75bee0f3ecc65",
+      "sha1": "72fe2ee5a10df0f3e23fbc2a2d7040e08483f6a3",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.tr"
+      }
+    },
+    {
+      "path": "apks/config.in.apk",
+      "bytes": 975257,
+      "sha256": "cb2447337ace1629686209f7d7a1cf01ffa5e9ec93d9e0b1ef4a708e7010a0b2",
+      "sha1": "13a9d2688dd989868425c411266a6f9a3d29a5c0",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.in"
+      }
+    },
+    {
+      "path": "apks/config.it.apk",
+      "bytes": 197017,
+      "sha256": "4ec0a878e9172af09e48b7ed3cd1d66cc8bd2cecaace2a8b476e5b98c0a4e2f1",
+      "sha1": "30ccb455ed82caf7a3f7089115c0666e14822fd5",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.it"
+      }
+    },
+    {
+      "path": "apks/config.ko.apk",
+      "bytes": 938393,
+      "sha256": "617d423f9ecec777727de01a702652ff7c1ef3d92a6ee0c031bff870ab442c3e",
+      "sha1": "6ff3b22163a75da0ac4f36161bf905466cc8b168",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.ko"
+      }
+    },
+    {
+      "path": "apks/config.my.apk",
+      "bytes": 119193,
+      "sha256": "62925bb0cf2b3a88f769561ab973ed552408ad11bb9fd4eaf7b1180c7c17b5a4",
+      "sha1": "6f1df97abfaa0a106a65dd6f7f64f755b9eb8226",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.my"
+      }
+    },
+    {
+      "path": "apks/config.pt.apk",
+      "bytes": 295321,
+      "sha256": "9d134f0c3a7b1836939bf66050bc773cd3596b8640bf25f579d7c43531ce564f",
+      "sha1": "8cb395a34f5c3191529213f3d855313020236d02",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.pt"
+      }
+    },
+    {
+      "path": "apks/config.th.apk",
+      "bytes": 250265,
+      "sha256": "1f67d0f1e28c756e2d206d84587ddaa2d117db77125d8307bcc07a804b01a636",
+      "sha1": "4b2c594a07d12e069fa0507058cb646899f787f0",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.th"
+      }
+    },
+    {
+      "path": "apks/config.vi.apk",
+      "bytes": 209305,
+      "sha256": "e4ff4846b9209b431f58f7e9e5ed14431358e4371ba1419c022e13e2994c7143",
+      "sha1": "7e1b8897a5de74f31cf0af7bc50dcf86ec39ba63",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "config.vi"
+      }
+    },
+    {
+      "path": "apks/m17Assets.apk",
+      "bytes": 85414324,
+      "sha256": "0ced358d5caec28de8c2be16a120a7b46f4fce2d4c6267c2ea1d5d0ff0346431",
+      "sha1": "2ae733f561c3c33f1c3a0a1fe5c54ccabeb363f8",
+      "manifest": {
+        "package": "com.machipopo.media17",
+        "versionName": null,
+        "versionCode": 17914363,
+        "split": "m17Assets"
+      }
+    }
+  ],
+  "compared_sources": [
+    {
+      "source_page": "https://apkpure.net/17live/com.machipopo.media17/download",
+      "file": "17LIVE-2.253.1.0.xapk",
+      "identity": {
+        "package": "com.machipopo.media17",
+        "versionName": "2.253.1.0",
+        "versionCode": 17914363,
+        "split": null
+      }
+    }
+  ],
+  "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+  "mirror_advertised_date": "Oct 8, 2026"
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "GamePanelId": 13,
+    "NameTransKey": "",
+    "Img": "",
+    "Icon": "",
+    "GameType": 2,
+    "GameId": "",
+    "GameUrl": "",
+    "IsHalfScreen": true,
+    "HalfScreenTabIcon": "game_selector_web_tab_fruit",
+    "HalfScreenWidth": 750,
+    "HalfScreenHeight": 960
+  },
+  {
+    "GamePanelId": 17,
+    "NameTransKey": "str_rocket",
+    "Img": "ic_hot_game_rocket",
+    "Icon": "ic_room_game_rocket",
+    "GameType": 4,
+    "GameId": "3",
+    "GameUrl": "vochat://laya/rocket",
+    "IsHalfScreen": true,
+    "HalfScreenTabIcon": "game_selector_own_tab_rocket",
+    "HalfScreenWidth": 750,
+    "HalfScreenHeight": 960
+  },
+  {
+    "GamePanelId": 14,
+    "NameTransKey": "str_game_name_car",
+    "Img": "ic_hot_game_car_box",
+    "Icon": "ic_hot_game_car_right",
+    "GameType": 2,
+    "GameId": "",
+    "GameUrl": "",
+    "IsHalfScreen": true,
+    "HalfScreenTabIcon": "game_selector_web_tab_car",
+    "HalfScreenWidth": 750,
+    "HalfScreenHeight": 960
+  },
+  {
+    "GamePanelId": 15,
+    "NameTransKey": "str_game_name_race",
+    "Img": "ic_hot_game_race_box",
+    "Icon": "ic_hot_game_race_right",
+    "GameType": 4,
+    "GameId": "2",
+    "GameUrl": "vochat://laya/game/horse",
+    "IsHalfScreen": true,
+    "HalfScreenTabIcon": "game_selector_native_tab_race",
+    "HalfScreenWidth": 750,
+    "HalfScreenHeight": 960
+  },
+  {
+    "GamePanelId": 16,
+    "NameTransKey": "str_laya",
+    "Img": "ic_hot_game_jungle_slot",
+    "Icon": "ic_hot_game_jungle_right",
+    "GameType": 4,
+    "GameId": "1",
+    "GameUrl": "vochat://laya/game",
+    "IsHalfScreen": true,
+    "HalfScreenTabIcon": "game_selector_native_tab_laya",
+    "HalfScreenWidth": 750,
+    "HalfScreenHeight": 960
+  },
+  {
+    "GamePanelId": 10,
+    "NameTransKey": "str_game_box_hot_slots",
+    "Img": "ic_hot_game_slots",
+    "Icon": "ic_room_game_slots",
+    "GameType": 2,
+    "GameId": "",
+    "GameUrl": "",
+    "IsHalfScreen": true,
+    "HalfScreenTabIcon": "game_selector_web_tab_slot",
+    "HalfScreenWidth": 750,
+    "HalfScreenHeight": 960
+  },
+  {
+    "GamePanelId": 9,
+    "NameTransKey": "str_game_box_hot_fishing",
+    "Img": "ic_hot_game_fish",
+    "Icon": "",
+    "GameType": 2,
+    "GameId": "",
+    "GameUrl": "",
+    "IsHalfScreen": true,
+    "HalfScreenTabIcon": "game_selector_web_tab_fish",
+    "HalfScreenWidth": 750,
+    "HalfScreenHeight": 960
+  }
+]

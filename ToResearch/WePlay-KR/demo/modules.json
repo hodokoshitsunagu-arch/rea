@@ -1,0 +1,955 @@
+{
+  "app": "WePlay-KR",
+  "modules": [
+    {
+      "id": "WKR01",
+      "title": "BFF门槛、竞拍旁路与关系展示槽位",
+      "implemented_scope": "累积Guard达到普通BFF门槛 → 发起关系 → 对方同意 → 解锁展示槽位；竞拍房存在跳过Guard门槛的旁路。；专属机制：bff；双方互动增加本地Guard / 竞拍房获得本地旁路 / 小夏发起BFF邀请 / 阿辰同意关系 / 支付Gold解锁展示槽 / 把BFF关系放入展示槽",
+      "limitations": [
+        "Guard增加/衰减公式、旁路服务端授权、并行申请与槽位价格未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"slot\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"display\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR02",
+      "title": "BFF关系进阶：亲密进度、宝箱与专属关系卡",
+      "implemented_scope": "先成为BFF → 在进阶局增加亲密 → 达阈值开宝箱 → 选专属关系卡 → 局末结算。；专属机制：intimacy；模拟双方已有BFF关系 / 切换参与身份 / 双方上麦进入关系进阶 / 本轮互动增加亲密 / 解锁本轮唯一关系卡 / 玩家选择关系卡 / 选择超时本地分配 / 局末结算并清本轮进度 / 下麦清空本轮进度",
+      "limitations": [
+        "阈值、卡池、随机分布、亲密增加方式及落库冲突未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"bff\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"box\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"select-card\"]",
+          "value": "永恒知己"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR03",
+      "title": "戒指替换保留旧物与关系年龄",
+      "implemented_scope": "关系中使用新戒指 → 旧戒指入盒 → 关系年龄保留 → Charm/Guard按新戒指属性更新。；专属机制：ring；模拟已有关系 / 更换戒指无需对方重批 / 前进一天查看关系年龄",
+      "limitations": [
+        "是否能降低数值、戒指属性表、赠予/撤销和服务端防重未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"relate\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"replace-ring\"]",
+          "value": "月环"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"replace\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"age\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR04",
+      "title": "高级房容量扩张与到期回收",
+      "implemented_scope": "高级房开通 → 上限40扩到80 → 到期降回40 → 保留现有超额成员但暂停新增。；专属机制：capacity；房主开通高级房 / 接收一名新成员 / 高级房到期回收容量 / 成员离开房间",
+      "limitations": [
+        "踢人后何时恢复新增、房主转让、离线人数口径与服务器一致性未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"premium\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"join-name\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR05",
+      "title": "高级房三管理员与到期权限撤销",
+      "implemented_scope": "任命最多3管理员 → 管理游戏模式/人数/陌生人准入/等级/踢人 → 高级房到期统一撤权。；专属机制：admins；房主开通高级房 / 房主任命管理员 / 管理员调整房规 / 管理员移除成员 / 到期撤销全部管理员权限",
+      "limitations": [
+        "权限细粒度组合、房主覆盖、强退及操作竞态未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"premium\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"appoint-name\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"appoint\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-admin\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-mode\"]",
+          "value": "绘画"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-capacity\"]",
+          "value": "60"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-strangers\"]",
+          "value": "false"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-minLevel\"]",
+          "value": "3"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"manage\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"kick-admin\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"kick-target\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"kick\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR06",
+      "title": "语音房宝箱倒计时与任务减时",
+      "implemented_scope": "房内停留推进宝箱倒计时 → 完成任务减少剩余时间 → 达条件可开宝箱。；专属机制：voicebox；成员进入语音房 / 停留一分钟 / 完成具名任务减时一分钟 / 开启倒计时宝箱 / 离开暂停停留",
+      "limitations": [
+        "实际停留条件、后台/静音/断网处理、任务重复计数、奖励概率未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stay\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"task-task\"]",
+          "value": "发送问候"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stay\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR07",
+      "title": "签约歌手出题与审核回报",
+      "implemented_scope": "获得签约歌手资格 → 每日录制投稿 → 审核 → 歌曲进入唱歌题库并获得奖励。；专属机制：singer；模拟通过签约歌手资格 / 歌手确认作品授权承诺 / 提交今日录制歌曲 / 模拟Judge审核通过 / 模拟Judge审核拒绝 / 进入下一投稿日",
+      "limitations": [
+        "资格考核、曲库版权核验、音频审核及各语言奖励货币配置未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"sign\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rights\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-song\"]",
+          "value": "原创夜曲"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR08",
+      "title": "玩家词题投稿与延后奖励",
+      "implemented_scope": "提交村民词/卧底词或绘画词 → 审核 → 通过才付奖励。；专属机制：words；玩家贡献词题 / 模拟Judge审核通过 / 模拟Judge审核拒绝 / 进入下一投稿日",
+      "limitations": [
+        "适用游戏、每日25的单位、审核标准/队列及多语字符算法未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-game\"]",
+          "value": "卧底"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-villager\"]",
+          "value": "苹果"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-undercover\"]",
+          "value": "梨"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR09",
+      "title": "绘画道具：付费延时与成长解锁颜色",
+      "implemented_scope": "绘画倒计时中支付虚拟币延时 → 颜色以Gold或等级/EXP双路径解锁。；专属机制：drawtools；取消本局准备 / 进入绘画倒计时 / 支付Gold延长本模式绘画时间 / 支付Gold解锁颜色 / 本地成长获得绘画EXP / 达到EXP免费解锁颜色 / 选择已解锁颜色绘画 / 绘画时间到期",
+      "limitations": [
+        "每色费用、笔迹授权、动画/实时协作协议和延时竞态未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"extend\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"color-color\"]",
+          "value": "蓝"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"color\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"practice\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"free-color\"]",
+          "value": "红"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"free\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-color\"]",
+          "value": "蓝"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-x\"]",
+          "value": "80"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-y\"]",
+          "value": "60"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stroke\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"timeout\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR10",
+      "title": "VIP全站广播、礼物隐私与成长转换",
+      "implemented_scope": "赠领VIP卡/Charm转成长 → VIP广播占公共展示位 → 新广播覆盖旧 → 隐藏近期礼物。；专属机制：vip；领取模拟VIP卡 / Charm转换本地VIP成长 / VIP发布公共广播 / 隐藏近期礼物 / 前进5分钟广播到期",
+      "limitations": [
+        "转换倍率、等级保持、广播队列、退款回收与隐私服务端范围未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"card\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"convert-amount\"]",
+          "value": "20"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"convert\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"broadcast-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"broadcast-text\"]",
+          "value": "今天一起玩绘画！"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"broadcast\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hide\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR11",
+      "title": "家族人气徽章触发房间奖励",
+      "implemented_scope": "家族累积人气 → 徽章达到阈值 → 用户确认触发房间奖励 → 扣除当天触发额度。；专属机制：popularity；家族成员贡献人气 / 成员点OK触发房间奖励 / 新的一天刷新额度",
+      "limitations": [
+        "人气来源、阈值、奖励表、计日时区与冷却未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"confirm\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR12",
+      "title": "卧底语音描述、不可撤销猜词与同投票结算交友",
+      "implemented_scope": "分配词卡 → 轮流语音描述 → 票选或卧底猜村民词 → 揭词 → 用同目标投票次数推荐同桌。；专属机制：undercover；主持分配本地角色词卡 / 当前玩家模拟语音描述 / 描述超时跳过 / 玩家投票 / 卧底确认猜村民词不可撤回 / 尝试撤销已确认猜词 / 主持揭词并结算同票推荐 / 修改人数重分词 / 主持换词重开",
+      "limitations": [
+        "角色配比、平票、猜词成功判定、共享投票匹配算法及真实加友服务未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"describe-text\"]",
+          "value": "圆圆的水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"describe\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"skip\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"describe-text\"]",
+          "value": "好吃的水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"describe\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"skip\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-target\"]",
+          "value": "小雨"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"vote\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-target\"]",
+          "value": "小雨"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"vote\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reveal\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR13",
+      "title": "家族宝箱：锁定名单与领取时动态校验",
+      "implemented_scope": "家族配置发送方式/分配模式 → 发放时锁定受领人或等待领取校验 → 按周活跃分享奖池。；专属机制：familyJK；选择家族职位 / 配置名单/分配方式 / 家族发放宝箱锁定资格 / 成员更新周活跃 / 成员领取并核验适用资格",
+      "limitations": [
+        "本包没有新做FamilyBox代码追踪；资格阈值、随机分配、上限和反抢并发未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "Leader"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"configure-mode\"]",
+          "value": "Limited"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"configure-allocation\"]",
+          "value": "Equal"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"configure-sendType\"]",
+          "value": "1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"configure\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"send\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"active-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"active-points\"]",
+          "value": "100"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"active\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"claim-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR14",
+      "title": "绘画接力：上一棒、展示确认与赞踩",
+      "implemented_scope": "选词 → 绘画 → 看上一棒猜词 → 继续传递 → 整链展示 → 赞踩反馈。；专属机制：relay；主持开始接力选词 / 第一棒选词 / 当前画手绘制笔迹 / 上传本地画面 / 上传确认后交给下一棒 / 下一棒看上一棒猜词 / 展示整链接力结果 / 玩家确认展示 / 参与者赞踩 / 确认反馈结束回合 / 尝试游戏中换房 / 切换观众角色 / 选词时付费换词",
+      "limitations": [
+        "轮序、评分、词库、展示和投票确认的服务端阶段条件未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"select-word\"]",
+          "value": "太阳"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-x\"]",
+          "value": "80"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-y\"]",
+          "value": "60"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stroke\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"upload\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"pass\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"guess-word\"]",
+          "value": "太阳"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"guess\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reveal\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"confirmShow\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-vote\"]",
+          "value": "赞"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"vote\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"confirmVote\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR15",
+      "title": "抢麦：练习局转正式的下一题生效",
+      "implemented_scope": "单人开局练习 → 中途其他人入场 → 当前题仍练习 → 下一题转正式 → 抢麦接唱并记排行。；专属机制：sing；单人开始抢麦练习 / 另一玩家中途加入 / 玩家抢麦 / 抢麦者模拟接唱结果 / 切换下一首后转正式 / 启用本地Star Bonus卡 / 结束本地抢麦场",
+      "limitations": [
+        "抢麦判定、歌声评分、加分卡倍率/有效期和Rank日组分配未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"grab-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"grab\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sing\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"next\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"grab-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"grab\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sing\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR16",
+      "title": "次日婚礼堂竞拍与固定婚礼时段",
+      "implemented_scope": "当日竞拍次日礼堂 → 最高出价得使用权 → 在给定晚间窗口选时段 → 主持/嘉宾进入。；专属机制：wedding；参与者竞拍次日礼堂 / 当天22:00结束竞拍 / 最高价者选择婚礼时段 / 确认时段不可修改 / 推进到次日婚礼时段 / 主持/嘉宾进入婚礼堂",
+      "limitations": [
+        "时区、每次仪式长度、并列出价、禁用账号和退款补偿未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"bid-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"bid-amount\"]",
+          "value": "100"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bid\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"close\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"slot-time\"]",
+          "value": "19:00"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"slot\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"confirm\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"tomorrow\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"enter-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR17",
+      "title": "关系退出：未回复三天自动拒绝",
+      "implemented_scope": "发出关系解除请求 → 等待对方 → 同意/拒绝 → 三天未回应自动拒绝；有强制解除入口。；专属机制：divorce；一方请求解除关系 / 对方同意解除 / 对方拒绝解除 / 三天未回复自动拒绝 / 本地模拟强制解除入口",
+      "limitations": [
+        "强制路径资格/费用、服务器计时、道具属性回收和关系冲突未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"request\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"timeout\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"force\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR18",
+      "title": "双人画布协作入口",
+      "implemented_scope": "双方进入绘画玩法 → 打开双人画布 → 共同编辑并显示协作指引。；专属机制：doubleCanvas；参与者进入双人画布入口 / 打开候选协作指引 / 本地协议实验添加笔迹 / 导出本地协作预览",
+      "limitations": [
+        "画布所有权、谁可同时画、笔迹合并、撤销、轮替和结算完全未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"join-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"join-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-x\"]",
+          "value": "80"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-y\"]",
+          "value": "60"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stroke\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-x\"]",
+          "value": "160"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-y\"]",
+          "value": "90"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stroke\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"preview\"]"
+        }
+      ]
+    },
+    {
+      "id": "WKR19",
+      "title": "Puppet/Mind：四槽装配与遗迹一轮一次",
+      "implemented_scope": "装备Puppet和Minds → 进入Mystic Ruins → 每个Mind一轮只可使用一次 → 战斗获得碎片。；专属机制：puppet；装配Mind到四槽Puppet / 进入Mystic Ruins契约场 / 本轮使用一次Mind / 进入下一轮重置Mind使用 / 领取本地战斗契约实验碎片",
+      "limitations": [
+        "战斗核心、能力表、事件顺序、掉落和原Unity/native实现未知。",
+        "本地账号/媒体/审核/支付/后台模拟；不建立原规则或原运行验收"
+      ],
+      "test_status": "passed normal loop + guard + immutable reset + per-ID parameter boundary; resource wallet regressions passed; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"equip-mind\"]",
+          "value": "Natal"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"equip-source\"]",
+          "value": "self"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"equip-mind\"]",
+          "value": "Spark"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"equip-source\"]",
+          "value": "puppet"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"use-mind\"]",
+          "value": "Natal"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"use-mind\"]",
+          "value": "Spark"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        }
+      ]
+    }
+  ]
+}

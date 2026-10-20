@@ -1,0 +1,5236 @@
+{
+  "method": "Nested Android resource table chunks and string pools; all split resources",
+  "pattern": "(?i)(spoon|roulette|lucky|fan.?board|cast|poll|quiz|duet|collab|cohost|battle|family|cheer|meter|diamond|rank|emomo|avatar|live.?game|game.?live|game.?room|combo|mission|fan.?club|army|コラボ|ミッション|エモモ|ゲーム|応援|ファミリー|ボックス|クイズ)",
+  "records": [
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:2",
+      "offset": 24790,
+      "text": "This ranking is based on spoons and likes received in livestreams.(*spoons received as a Live Call Guest is not included.)\n\nThis is used to select Choice DJs, along with violation history and livestream activity.\n\nCheck your livestream activity in Streamer's Dashboard.\n\n➡️ Go to Dashboard\n\n※Monthly: From the 1st of this month to yesterday\n※ Last 7 days: The 7 days leading up to yesterday\n※ Last 1 day: Within the last 24 hours"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:519",
+      "offset": 49253,
+      "text": "res/drawable/$img_spoon_snap_guide__0.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:520",
+      "offset": 49297,
+      "text": "res/drawable/$img_spoon_snap_guide__1.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:521",
+      "offset": 49341,
+      "text": "res/drawable/$img_spoon_snap_guide__2.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:522",
+      "offset": 49385,
+      "text": "res/drawable/$img_spoon_snap_guide__3.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:523",
+      "offset": 49429,
+      "text": "res/drawable/$img_spoon_snap_guide__4.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:524",
+      "offset": 49473,
+      "text": "res/drawable/$logo_spoonai__0.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:525",
+      "offset": 49509,
+      "text": "res/drawable/$logo_spoonai__1.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:526",
+      "offset": 49545,
+      "text": "res/drawable/$logo_spoonai__2.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:527",
+      "offset": 49581,
+      "text": "res/drawable/$logo_spoonai__3.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:528",
+      "offset": 49617,
+      "text": "res/drawable/$logo_spoonai__4.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:529",
+      "offset": 49653,
+      "text": "res/drawable/$logo_spoonai__5.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:530",
+      "offset": 49689,
+      "text": "res/drawable/$logo_spoonai__6.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:918",
+      "offset": 67716,
+      "text": "res/drawable/ic_btn_create_live_cast_enabled.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:932",
+      "offset": 68239,
+      "text": "res/drawable/ic_cast.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:933",
+      "offset": 68266,
+      "text": "res/drawable/ic_cast_info.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1065",
+      "offset": 72942,
+      "text": "res/drawable/ic_logo_spoon.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1066",
+      "offset": 72975,
+      "text": "res/drawable/ic_logo_spoon_combi.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1067",
+      "offset": 73014,
+      "text": "res/drawable/ic_logo_spoon_wordmark.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1068",
+      "offset": 73056,
+      "text": "res/drawable/ic_lucky.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1126",
+      "offset": 75107,
+      "text": "res/drawable/ic_playlist_cast.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1127",
+      "offset": 75143,
+      "text": "res/drawable/ic_playlist_cast_white_40.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1140",
+      "offset": 75606,
+      "text": "res/drawable/ic_ranking.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1141",
+      "offset": 75636,
+      "text": "res/drawable/ic_ranking_down_gray_50_8.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1175",
+      "offset": 76799,
+      "text": "res/drawable/ic_spoon_membership.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1176",
+      "offset": 76838,
+      "text": "res/drawable/ic_spoon_stroke_24.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1177",
+      "offset": 76876,
+      "text": "res/drawable/ic_spoonmembership.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1219",
+      "offset": 78313,
+      "text": "res/drawable/img_avatar_system.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1230",
+      "offset": 78708,
+      "text": "res/drawable/img_default_lucky_box.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1233",
+      "offset": 78822,
+      "text": "res/drawable/img_empty_livegames.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1238",
+      "offset": 79010,
+      "text": "res/drawable/img_favorite_spooni_guide.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1247",
+      "offset": 79361,
+      "text": "res/drawable/img_live_games_app_update_enabled.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1248",
+      "offset": 79414,
+      "text": "res/drawable/img_live_games_luckybox_thumbnail_disabled.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1249",
+      "offset": 79477,
+      "text": "res/drawable/img_live_games_luckybox_thumbnail_enabled.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1250",
+      "offset": 79539,
+      "text": "res/drawable/img_live_games_quiz_thumbnail_disabled.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1251",
+      "offset": 79598,
+      "text": "res/drawable/img_live_games_quiz_thumbnail_enabled.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1301",
+      "offset": 81678,
+      "text": "res/drawable/img_quiz_sp_placeholder.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1302",
+      "offset": 81721,
+      "text": "res/drawable/img_ranking_dj_1.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1303",
+      "offset": 81758,
+      "text": "res/drawable/img_ranking_dj_2.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1304",
+      "offset": 81795,
+      "text": "res/drawable/img_ranking_dj_3.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1305",
+      "offset": 81832,
+      "text": "res/drawable/img_ranking_fan_1.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1306",
+      "offset": 81870,
+      "text": "res/drawable/img_ranking_fan_2.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1307",
+      "offset": 81908,
+      "text": "res/drawable/img_ranking_fan_3.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1308",
+      "offset": 81946,
+      "text": "res/drawable/img_ranking_number_1.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1309",
+      "offset": 81987,
+      "text": "res/drawable/img_ranking_number_10.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1310",
+      "offset": 82029,
+      "text": "res/drawable/img_ranking_number_2.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1311",
+      "offset": 82070,
+      "text": "res/drawable/img_ranking_number_3.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1312",
+      "offset": 82111,
+      "text": "res/drawable/img_ranking_number_4.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1313",
+      "offset": 82152,
+      "text": "res/drawable/img_ranking_number_5.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1314",
+      "offset": 82193,
+      "text": "res/drawable/img_ranking_number_6.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1315",
+      "offset": 82234,
+      "text": "res/drawable/img_ranking_number_7.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1316",
+      "offset": 82275,
+      "text": "res/drawable/img_ranking_number_8.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1317",
+      "offset": 82316,
+      "text": "res/drawable/img_ranking_number_9.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1324",
+      "offset": 82667,
+      "text": "res/drawable/img_spoon.png"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1325",
+      "offset": 82696,
+      "text": "res/drawable/img_spoon_2d.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1326",
+      "offset": 82729,
+      "text": "res/drawable/img_spoon_3d.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1327",
+      "offset": 82762,
+      "text": "res/drawable/img_spoon_3d_tilt.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1328",
+      "offset": 82800,
+      "text": "res/drawable/img_spoon_ani.gif"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1329",
+      "offset": 82833,
+      "text": "res/drawable/img_spoon_snap_guide.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1344",
+      "offset": 83447,
+      "text": "res/drawable/img_welcomemission_default.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1345",
+      "offset": 83494,
+      "text": "res/drawable/img_welcomemission_done.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1347",
+      "offset": 83574,
+      "text": "res/drawable/imgt_live_games_preparing_placeholder.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1368",
+      "offset": 84449,
+      "text": "res/drawable/logo_spoon_wordmark.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1369",
+      "offset": 84488,
+      "text": "res/drawable/logo_spoonai.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1370",
+      "offset": 84520,
+      "text": "res/drawable/logo_spoonai_word.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1371",
+      "offset": 84557,
+      "text": "res/drawable/logo_spoonvip.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1381",
+      "offset": 84971,
+      "text": "res/drawable/main_cast_repeat_1_ic_dark.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1382",
+      "offset": 85017,
+      "text": "res/drawable/main_cast_repeat_dark.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1460",
+      "offset": 88734,
+      "text": "res/drawable/spoon_dj_dashboard_widget_info.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1461",
+      "offset": 88785,
+      "text": "res/drawable/spoon_live_create_widget_preview.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1462",
+      "offset": 88838,
+      "text": "res/drawable/spoon_series_history_widget_info.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1819",
+      "offset": 106457,
+      "text": "res/layout/ch_plugin_layout_avatar.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:1860",
+      "offset": 108289,
+      "text": "res/layout/ch_view_command_parameter_overlay_item.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:2117",
+      "offset": 119942,
+      "text": "res/layout/material_chip_input_combo.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:2184",
+      "offset": 122993,
+      "text": "res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:2361",
+      "offset": 131356,
+      "text": "res/navigation/nav_graph_home_cast.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:2421",
+      "offset": 134042,
+      "text": "res/drawable-night-v8/ic_btn_create_live_cast_enabled.xml"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3010",
+      "offset": 168080,
+      "text": "res/drawable-xxxhdpi-v4/img_welcome_fanboard.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3011",
+      "offset": 168132,
+      "text": "res/drawable-xxxhdpi-v4/img_welcomemission.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3017",
+      "offset": 168441,
+      "text": "res/drawable-xxxhdpi-v4/main_cast_next_ic.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3018",
+      "offset": 168490,
+      "text": "res/drawable-xxxhdpi-v4/main_cast_no_img.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3019",
+      "offset": 168538,
+      "text": "res/drawable-xxxhdpi-v4/main_cast_pause_ic.png"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3020",
+      "offset": 168587,
+      "text": "res/drawable-xxxhdpi-v4/main_cast_play_ic_black.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3021",
+      "offset": 168642,
+      "text": "res/drawable-xxxhdpi-v4/main_cast_previous_ic.png"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3022",
+      "offset": 168694,
+      "text": "res/drawable-xxxhdpi-v4/main_cast_repeat.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3023",
+      "offset": 168742,
+      "text": "res/drawable-xxxhdpi-v4/main_cast_repeat_0_ic.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3024",
+      "offset": 168795,
+      "text": "res/drawable-xxxhdpi-v4/main_cast_repeat_1_ic.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3025",
+      "offset": 168848,
+      "text": "res/drawable-xxxhdpi-v4/main_cast_top_sleep_ic.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3026",
+      "offset": 168902,
+      "text": "res/drawable-xxxhdpi-v4/main_cast_top_time_ic.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3038",
+      "offset": 169567,
+      "text": "res/drawable-xxxhdpi-v4/ranking_down_ic.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3039",
+      "offset": 169614,
+      "text": "res/drawable-xxxhdpi-v4/ranking_up_ic.webp"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3153",
+      "offset": 175577,
+      "text": " sent a lucky box"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3154",
+      "offset": 175597,
+      "text": " sent a quiz"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3165",
+      "offset": 175831,
+      "text": "%1$,dSpoons"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3192",
+      "offset": 176166,
+      "text": "%1$s Berries = 1 Spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3200",
+      "offset": 176334,
+      "text": "%1$s Spoons exchanged."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3207",
+      "offset": 176536,
+      "text": "%1$s gave a gift to %2$s podcast."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3216",
+      "offset": 176861,
+      "text": "%1$s liked %2$s podcast."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3225",
+      "offset": 177065,
+      "text": "%1$s posted %2$s podcast."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3227",
+      "offset": 177123,
+      "text": "%1$s sent a %2$s Spoon sticker gift."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3234",
+      "offset": 177354,
+      "text": "%1$s spoons to unlock"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3256",
+      "offset": 178244,
+      "text": "%2$s spoons with the quiz from %1$s are sent to %3$s."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3276",
+      "offset": 178671,
+      "text": "%s has already started broadcasting a LIVE!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3283",
+      "offset": 178851,
+      "text": "%s opened the quiz."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3287",
+      "offset": 178926,
+      "text": "%s sent a quiz."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3288",
+      "offset": 178944,
+      "text": "%s sent a quiz. Check it out!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3289",
+      "offset": 178976,
+      "text": "%s started the Lucky box challenge!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3308",
+      "offset": 179611,
+      "text": "* All personal data and app usage information recorded while you were a Spoon user will be deleted and recovery will not be possible."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3361",
+      "offset": 181388,
+      "text": "A DJ who recently started going live on Spoon. You'll appear as a new DJ when all of the following are true:\n• Signed up on or after January 1, 2025\n• Under 60 hours of total live streaming time\n• Sign-up dates and live streaming time from other accounts with the same verified identity (including deactivated accounts) are also counted"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3396",
+      "offset": 182961,
+      "text": "Access permission error"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3403",
+      "offset": 183234,
+      "text": "Accounts that have been suspended from using the service due to violations of the Spoon terms cannot unsubscribe immediately."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3452",
+      "offset": 184603,
+      "text": "All podcasts"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3463",
+      "offset": 184938,
+      "text": "Allow the use of %s feature through Settings > App > Spoon > Access settings."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3522",
+      "offset": 186890,
+      "text": "Automatically save all live broadcasts."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3526",
+      "offset": 186975,
+      "text": "Available from Spoon Membership Premium and above."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3551",
+      "offset": 187445,
+      "text": "Become a Spoon VIP to chat with your VIP Manager and get help fast."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3588",
+      "offset": 188858,
+      "text": "By utilizing the analyzed voice, we can more accurately recommend your broadcast to a more diverse audience."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3589",
+      "offset": 188969,
+      "text": "CAST Topic"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3597",
+      "offset": 189105,
+      "text": "Can't revert to Berries after exchanging for Spoons"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3619",
+      "offset": 189742,
+      "text": "Cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3648",
+      "offset": 190477,
+      "text": "Check out Spoon Membership to make ‎%1$s‎'s broadcast even more engaging and fun."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3649",
+      "offset": 190565,
+      "text": "Check out Welcome Mission"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3651",
+      "offset": 190638,
+      "text": "Check out podcasts by streamers you follow."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3675",
+      "offset": 191112,
+      "text": "Collaboration"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3681",
+      "offset": 191213,
+      "text": "Collect Berries and Exchange for Spoons"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3688",
+      "offset": 191383,
+      "text": "Combo sticker counts can be seen by the people who sent the Spoons, but it can be controlled so that the streamer and other listeners cannot see it."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3717",
+      "offset": 192376,
+      "text": "Contact Spoon / Report"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3748",
+      "offset": 192967,
+      "text": "Create a Podcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3750",
+      "offset": 193010,
+      "text": "Create your broadcast frequency and invite listeners."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3751",
+      "offset": 193066,
+      "text": "Create your nickname for Spoon. (Max %1$s characters)"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3753",
+      "offset": 193172,
+      "text": "Create your own playlist by adding podcasts."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3767",
+      "offset": 193551,
+      "text": "Current spoon count"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3808",
+      "offset": 194442,
+      "text": "Detailed information is available on Spoon web."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3822",
+      "offset": 194749,
+      "text": "Discover Plans Through Creator-Selected Casts."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3825",
+      "offset": 194883,
+      "text": "Discover podcasts featured in this category."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3827",
+      "offset": 194959,
+      "text": "Discover your voice with Spoon AI"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3845",
+      "offset": 195575,
+      "text": "Don't miss out on these podcasts."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3865",
+      "offset": 195976,
+      "text": "Earn Berries through easy missions."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3893",
+      "offset": 196549,
+      "text": "End Live Game?"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3895",
+      "offset": 196581,
+      "text": "End Quiz?"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3955",
+      "offset": 198124,
+      "text": "Even with the 18+ tag, you must still maintain a safe environment for ALL our users.That includes but is not limited to refraining from:\n\n1. Overtly sexual content on-air, in chat, or in background images\n2. Any content or interaction designed to solicit sexual behavior\n\nRemember, all behavior prohibited in our Terms of Service is still prohibited.Please be responsible and respectful! Do not say or do anything on Spoon that you would not want a 13 year old to hear."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3966",
+      "offset": 198869,
+      "text": "Exchange for Spoons"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3968",
+      "offset": 198903,
+      "text": "Exchanged Berries to Spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:3970",
+      "offset": 198939,
+      "text": "Exit Send Lucky box?"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4002",
+      "offset": 199815,
+      "text": "Family"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4005",
+      "offset": 199846,
+      "text": "Fan clubs"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4006",
+      "offset": 199858,
+      "text": "Fan rankings are calculated as follows: Total, Reattime, This week, This month. These calculations are updated on a daily basis till the end of the set period."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4007",
+      "offset": 200022,
+      "text": "Fan rankings: Total, Real-time, This Week, This Month. Updated daily; reset each period.\n\n· Total (All): all time\n· Real-time: current Live\n· This Week: Mon–Sun\n· This Month: 1st–last day"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4020",
+      "offset": 200428,
+      "text": "Featured Podcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4028",
+      "offset": 200623,
+      "text": "Final Rank"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4042",
+      "offset": 200997,
+      "text": "Follow Ranking Calculations"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4071",
+      "offset": 201825,
+      "text": "Free Spoons"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4078",
+      "offset": 201909,
+      "text": "Function allows to receive Spoons and voice messages\n*voice messages will not play when connected to earphones"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4106",
+      "offset": 202861,
+      "text": "Gift your streamer a Lucky box filled with spoons"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4113",
+      "offset": 203039,
+      "text": "Go to Spoon VIP"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4132",
+      "offset": 203517,
+      "text": "Guests can receive donations through Lucky Boxes sent by listeners."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4145",
+      "offset": 203961,
+      "text": "Heart racing — I'm a brand-new DJ on Spoon!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4150",
+      "offset": 204099,
+      "text": "Hey %s,\nwelcome to Spoon! ������"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4151",
+      "offset": 204134,
+      "text": "Hey Spooner, this is #Spoon streamer %s.\nCome check out my posts on Spoon!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4152",
+      "offset": 204211,
+      "text": "Hey! It's #Spoon Streamer %s.\nWant to check out my playlist?"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4153",
+      "offset": 204274,
+      "text": "Hey, this is #Spoon streamer %s.\nCheck out my latest podcast!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4154",
+      "offset": 204338,
+      "text": "Hey, this is #Spoon streamer %s.\nI want you to join the live stream!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4156",
+      "offset": 204426,
+      "text": "Hi, Spooner! I found this amazing streamer on Spoon. You gotta check them out: Streamer %s"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4162",
+      "offset": 204587,
+      "text": "Hide from the ranking?"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4166",
+      "offset": 204675,
+      "text": "Highest Rank"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4169",
+      "offset": 204710,
+      "text": "Hold on! You are currently subscribed to Spoon Membership or a Tier."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4174",
+      "offset": 204826,
+      "text": "How Loyalty Score Rankings Work"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4178",
+      "offset": 204941,
+      "text": "How to change access permissions"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4182",
+      "offset": 205017,
+      "text": "I can't make subscriber-exclusive broadcasts."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4187",
+      "offset": 205223,
+      "text": "I've nudged %s to start a broadcast."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4197",
+      "offset": 205454,
+      "text": "If a Spooner invited you, enter their Invitation Frequency here."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4198",
+      "offset": 205521,
+      "text": "If a streamer hides a listener from their Loyalty Score Ranking, that listener is excluded from the ranking and won't receive the badge."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4200",
+      "offset": 205716,
+      "text": "If they don't get the right answer, 10% of the spoons will be donated \nand the rest will be refunded"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4202",
+      "offset": 205879,
+      "text": "If you cannot hear anything or the sound cuts out frequently while listening to a live call broadcast, try using this mode. Activating this mode may cause a slight delay in the voice of the streamer or guests."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4276",
+      "offset": 208600,
+      "text": "Jackpot! You got %1$,d Spoons from the Candy!������"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4277",
+      "offset": 208654,
+      "text": "Jackpot! You got %1$,d Spoons!✨"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4288",
+      "offset": 208964,
+      "text": "Join broadcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4290",
+      "offset": 209081,
+      "text": "Join the event and raise the event ranking much faster"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4318",
+      "offset": 209691,
+      "text": "Learn More About Spoon Membership"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4347",
+      "offset": 210530,
+      "text": "Liked Podcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4350",
+      "offset": 210603,
+      "text": "Likes + Spoons"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4367",
+      "offset": 211198,
+      "text": "Listen to a Podcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4368",
+      "offset": 211220,
+      "text": "Listen to podcasts in your playlist."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4369",
+      "offset": 211259,
+      "text": "Listen to the novel %1$s\nListen on Spoon Podnovel!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4380",
+      "offset": 211613,
+      "text": "Live Game"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4392",
+      "offset": 211804,
+      "text": "Live broadcast times and content may vary depending on the DJ’s circumstances, so check announcements and posts for updates."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4414",
+      "offset": 212417,
+      "text": "Login to Spoon to receive personalized recommendations"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4419",
+      "offset": 212539,
+      "text": "Loyalty Score Rank #%1$s"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4420",
+      "offset": 212566,
+      "text": "Loyalty Score Ranking"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4421",
+      "offset": 212590,
+      "text": "Loyalty Score rankings are tracked by Total, This Week, and This Month, updated daily and reset each period.\n\n· This Week: Mon–Sun\n· This Month: 1st–last day\n\n※ Weekly/monthly scores reflect the last update."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4423",
+      "offset": 212928,
+      "text": "Lucky box"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4455",
+      "offset": 214443,
+      "text": "Manage Spoon Goals"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4456",
+      "offset": 214464,
+      "text": "Manage settings in Spoon Labs"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4476",
+      "offset": 214924,
+      "text": "Microphone permissions"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4478",
+      "offset": 214971,
+      "text": "Microphone, Storage permissions"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4483",
+      "offset": 215171,
+      "text": "Minors under %1$s cannot use Spoon. \nThe app will close due to a violation of Spoon's Terms of Service."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4489",
+      "offset": 215578,
+      "text": "Mission Completed!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4490",
+      "offset": 215599,
+      "text": "Missions"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4510",
+      "offset": 215860,
+      "text": "My Spoons"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4511",
+      "offset": 215872,
+      "text": "My Spoons : %1$,d"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4529",
+      "offset": 216173,
+      "text": "Need %1$s more Berries to get a Spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4531",
+      "offset": 216233,
+      "text": "Need help with Spoon?"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4574",
+      "offset": 217311,
+      "text": "No available data to analyze yet.\nStart a live broadcast and grow your fan base."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4580",
+      "offset": 217546,
+      "text": "No fans have followed me yet.\nStart a live broadcast and build your fan base!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4581",
+      "offset": 217626,
+      "text": "No featured cast has been registered yet."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4603",
+      "offset": 218280,
+      "text": "No uploaded Podcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4614",
+      "offset": 218476,
+      "text": "Not available due to a violation of Spoon's policy."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4633",
+      "offset": 219051,
+      "text": "Nudge ������ non-broadcasting DJs to start a broadcast."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4651",
+      "offset": 219495,
+      "text": "Only New Spooners"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4653",
+      "offset": 219543,
+      "text": "Only Premium membership subscribers can create broadcasts.\nJoin the membership and try subscriber-exclusive broadcasts."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4655",
+      "offset": 219742,
+      "text": "Only Premium membership subscribers can create subscriber-exclusive Podcasts."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4656",
+      "offset": 219822,
+      "text": "Only Premium membership subscribers can create.\nJoin Membership and upload subscriber-exclusive Podcasts."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4663",
+      "offset": 220199,
+      "text": "Only on Spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4664",
+      "offset": 220215,
+      "text": "Only on Spoon now."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4666",
+      "offset": 220277,
+      "text": "Only plan subscribers can upload images to the fan board."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4672",
+      "offset": 220542,
+      "text": "Only the streamer can remove subscribed listeners. Managers don't have this permission."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4733",
+      "offset": 222252,
+      "text": "Permission denied"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4749",
+      "offset": 222624,
+      "text": "Play Podcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4782",
+      "offset": 224026,
+      "text": "Please select a CAST topic."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4795",
+      "offset": 224488,
+      "text": "Podcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4796",
+      "offset": 224498,
+      "text": "Podcast Description"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4797",
+      "offset": 224520,
+      "text": "Podcast Likes and Gifts"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4798",
+      "offset": 224546,
+      "text": "Podcasts"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4799",
+      "offset": 224557,
+      "text": "Poll"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4803",
+      "offset": 224609,
+      "text": "Popular Podcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4805",
+      "offset": 224645,
+      "text": "Popular podcasts that everyone is listening to"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4847",
+      "offset": 225755,
+      "text": "Purchase Spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4848",
+      "offset": 225772,
+      "text": "Purchase Spoons"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4855",
+      "offset": 225945,
+      "text": "Quiz"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4868",
+      "offset": 226160,
+      "text": "Ranking"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4869",
+      "offset": 226170,
+      "text": "Ranking Booster"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4870",
+      "offset": 226188,
+      "text": "Ranking Criteria"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4891",
+      "offset": 226648,
+      "text": "Recent Podcasts"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4932",
+      "offset": 228071,
+      "text": "Removing will block this Spooner and forcibly cancel their active subscription."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4955",
+      "offset": 228731,
+      "text": "Requires permission to use this function."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:4990",
+      "offset": 229349,
+      "text": "SUCCESS!\nYou won the Lucky box challenge"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5021",
+      "offset": 229977,
+      "text": "Scoop's cheering you on!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5022",
+      "offset": 230004,
+      "text": "Screen OFF. Immersion ON\nSpoon PodNovel"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5046",
+      "offset": 230497,
+      "text": "See the sticker combo count."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5062",
+      "offset": 230893,
+      "text": "Select a cast to promote your channel and plans."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5063",
+      "offset": 230944,
+      "text": "Select a podcast best describes yourself"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5078",
+      "offset": 231316,
+      "text": "Select your Lucky Number"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5083",
+      "offset": 231393,
+      "text": "Send Lucky box!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5084",
+      "offset": 231411,
+      "text": "Send Quiz"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5087",
+      "offset": 231453,
+      "text": "Send a fun multiple-choice quiz!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5090",
+      "offset": 231531,
+      "text": "Send a lucky box with spoons!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5092",
+      "offset": 231580,
+      "text": "Send a quiz to your streamer and make them get your donated spoons!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5100",
+      "offset": 231961,
+      "text": "Sender : SpoonLabs Inc."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5103",
+      "offset": 232072,
+      "text": "Sent Spoons"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5108",
+      "offset": 232169,
+      "text": "Set Spoon goals"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5109",
+      "offset": 232187,
+      "text": "Set a Spoon donation goal for this stream and share it with your listeners!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5121",
+      "offset": 232531,
+      "text": "Share announcements with your listeners in real-time to match the flow of your broadcast. Everyone will see it instantly."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5174",
+      "offset": 233939,
+      "text": "Sorry! Only 10%% of the spoons sent by %1$s have been rewarded to %2$s"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5190",
+      "offset": 234364,
+      "text": "Spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5191",
+      "offset": 234372,
+      "text": "Spoon AI analyzes your voice and recommends your broadcasts to more listeners."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5192",
+      "offset": 234453,
+      "text": "Spoon AI recommends voices similar to your favorite DJ."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5193",
+      "offset": 234511,
+      "text": "Spoon Broadcasting Guide"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5194",
+      "offset": 234538,
+      "text": "Spoon Care Center"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5195",
+      "offset": 234558,
+      "text": "Spoon Emoji"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5196",
+      "offset": 234572,
+      "text": "Spoon Goal"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5197",
+      "offset": 234585,
+      "text": "Spoon Labs"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5198",
+      "offset": 234598,
+      "text": "Spoon Membership"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5199",
+      "offset": 234617,
+      "text": "Spoon Membership Subscribers can broadcast for up to 4 hours."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5200",
+      "offset": 234681,
+      "text": "Spoon Originals"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5201",
+      "offset": 234699,
+      "text": "Spoon Radio Exchange Application"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5202",
+      "offset": 234734,
+      "text": "Spoon Snap"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5203",
+      "offset": 234747,
+      "text": "Spoon Team"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5204",
+      "offset": 234760,
+      "text": "Spoon VIP"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5205",
+      "offset": 234772,
+      "text": "Spoon has endless audio content for you to discover"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5206",
+      "offset": 234826,
+      "text": "Spoon is available for users aged %1$s and older. Your date of birth is used solely for age verification and cannot be changed afterward."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5207",
+      "offset": 234968,
+      "text": "Spoon is not supported if you are using an abnormal device through jailbreaking or rooting."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5208",
+      "offset": 235062,
+      "text": "Spoon needs Call Permission to enable Auto-Mute during a call."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5209",
+      "offset": 235127,
+      "text": "Spoon provides services based on our <a>Privacy Policy</a>."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5210",
+      "offset": 235189,
+      "text": "Spoon's Picks"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5211",
+      "offset": 235205,
+      "text": "Spooner%s"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5212",
+      "offset": 235217,
+      "text": "Spoons Needed"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5213",
+      "offset": 235233,
+      "text": "Spoons received"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5214",
+      "offset": 235251,
+      "text": "Spoons received in the past day"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5215",
+      "offset": 235285,
+      "text": "Spoons received increased by %1$s%% in the past day."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5216",
+      "offset": 235340,
+      "text": "Spoons received: %1$s"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5217",
+      "offset": 235364,
+      "text": "Spoons sent by %1$s in Lucky Box have been sponsored to %2$s!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5218",
+      "offset": 235428,
+      "text": "Spoons to Receive"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5223",
+      "offset": 235488,
+      "text": "Start a Live Call\nwith Spoon Membership."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5232",
+      "offset": 235767,
+      "text": "Start a plan with\nSpoon Membership."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5234",
+      "offset": 235832,
+      "text": "Start broadcasting"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5244",
+      "offset": 236129,
+      "text": "Start the quiz"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5251",
+      "offset": 236310,
+      "text": "Sticker Combo Count"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5254",
+      "offset": 236401,
+      "text": "Sticker animations can be seen by the person who sent the Spoon, but it can be controlled so that the streamer and other listeners cannot see it."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5255",
+      "offset": 236551,
+      "text": "Sticker combo count information is hidden."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5256",
+      "offset": 236596,
+      "text": "Sticker combo count information is shown."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5257",
+      "offset": 236640,
+      "text": "Still need help? Ask Spoon Bot."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5277",
+      "offset": 237020,
+      "text": "Subscribe and listen to exclusive Podcasts"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5278",
+      "offset": 237065,
+      "text": "Subscribe to Spoon Membership Premium to save and replay your live broadcasts anytime."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5281",
+      "offset": 237223,
+      "text": "Subscribe to the Tier and check out subscriber-exclusive broadcasts."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5285",
+      "offset": 237352,
+      "text": "Subscriber exclusive Podcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5330",
+      "offset": 238527,
+      "text": "Team scores and rankings are not updated in real time."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5351",
+      "offset": 239965,
+      "text": "The broadcast failed to end."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5355",
+      "offset": 240119,
+      "text": "The followers who have gifted the most Spoons and likes"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5363",
+      "offset": 240607,
+      "text": "The maximum combo count is %d."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5377",
+      "offset": 241202,
+      "text": "The scheduled time and the actual broadcast time may differ."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5378",
+      "offset": 241265,
+      "text": "The scoring and ranking for the team event will begin on the event start date, %1$s."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5384",
+      "offset": 241656,
+      "text": "The streamer started the challenge of winning lucky box!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5385",
+      "offset": 241715,
+      "text": "The streamer started the quiz!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5388",
+      "offset": 241850,
+      "text": "The total of Spoons and likes received on a CAST"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5426",
+      "offset": 243601,
+      "text": "This account is already registered on Spoon.\nPlease check that the login details you want to register are not already in use."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5427",
+      "offset": 243729,
+      "text": "This account is already registered on Spoon.\nPlease check that the login details you want to register are not already in use. <a href=\"%1$s\">Do you need help?</a>"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5434",
+      "offset": 244163,
+      "text": "This can be modified after uploading your podcast."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5435",
+      "offset": 244216,
+      "text": "This cast already been copied to a different playlist"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5450",
+      "offset": 245021,
+      "text": "This includes Lucky Boxes, Quiz Gifts, Free & Paid Likes."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5454",
+      "offset": 245387,
+      "text": "This is a quiz from %s"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5457",
+      "offset": 245590,
+      "text": "This is exclusive broadcast for %1$s subscribers."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5458",
+      "offset": 245642,
+      "text": "This is only for new Spooners.\nTry it and make new followers!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5495",
+      "offset": 247495,
+      "text": "To report a Live or Cast, use the report option on that screen."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5508",
+      "offset": 247843,
+      "text": "Top Live Ranking Criteria"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5522",
+      "offset": 248093,
+      "text": "Trending Podcast Calculation"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5523",
+      "offset": 248124,
+      "text": "Trending Podcasts"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5525",
+      "offset": 248217,
+      "text": "Try Group Live to co-host with other Spooners."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5526",
+      "offset": 248266,
+      "text": "Try Like and contribute to Streamers' Ranking"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5530",
+      "offset": 248375,
+      "text": "Try the LIVE for new Spooners!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5561",
+      "offset": 249723,
+      "text": "Unfortunately, only 10%% of spoons with the quiz sent from %1$s were sent to %2$s"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5590",
+      "offset": 250361,
+      "text": "Upon unsubscribing, all your Spoons and cashable amounts will be lost. Are you sure you want to unsubscribe?"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5593",
+      "offset": 250497,
+      "text": "Use all Spoons"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5629",
+      "offset": 251526,
+      "text": "View Podcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5678",
+      "offset": 252705,
+      "text": "We are monitoring content to keep the Spoon community fun and safe. Contents that violate our policies are subject to moderation. Do not disclose personal information in chat."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5679",
+      "offset": 252885,
+      "text": "We can recommend your broadcast to a wider audience.\nIn order to do so, we need your consent for AI to analyze and use your voice."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5686",
+      "offset": 253384,
+      "text": "We provide on-demand ranking system for the podcast. Spoon algorithm takes into data such as but not limited to listen duration, likes, spoons, and etc. The algorithm will continuously be optimized."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5687",
+      "offset": 253587,
+      "text": "We provide real-time ranking information on popular live streams.\nThe ranking algorithm takes into account listeners, likes, and other data.\nWe may modify the algorithm from time to time to improve the quality of our rankings."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5702",
+      "offset": 254510,
+      "text": "WebView login requires INTERNET permission"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5711",
+      "offset": 254697,
+      "text": "Welcome Mission"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5723",
+      "offset": 255037,
+      "text": "What is a new DJ on Spoon?"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5729",
+      "offset": 255264,
+      "text": "What's your podcast about?"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5730",
+      "offset": 255293,
+      "text": "When Binge-listen Mode is active, \nyour Spoons will be automatically used to unlock paid episodes. \nWould you like to apply this setting?"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5742",
+      "offset": 255847,
+      "text": "Will you... start a broadcast?"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5753",
+      "offset": 256144,
+      "text": "Write a message to be sent with the Lucky box (voluntary)"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5754",
+      "offset": 256204,
+      "text": "Write a quiz."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5790",
+      "offset": 257573,
+      "text": "You can choose up to 5 boxes. Only 10% of spoons will be rewarded if the Lucky box is not drawn."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5795",
+      "offset": 257885,
+      "text": "You can exchange up to %1$s Spoons."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5796",
+      "offset": 257923,
+      "text": "You can exchange up to %1$s Spoons. (30-day limit: %2$s Spoons)"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5797",
+      "offset": 257989,
+      "text": "You can exchange up to %1$s Spoons. (Daily limit: %2$s Spoons)"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5798",
+      "offset": 258054,
+      "text": "You can exchange up to %1$s Spoons. (Weekly limit: %2$s Spoons)"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5808",
+      "offset": 258736,
+      "text": "You can receive donations through the quiz the audience sends."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5810",
+      "offset": 258871,
+      "text": "You can register a featured cast after subscribing to Spoon Membership Premium."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5814",
+      "offset": 259139,
+      "text": "You can send up to 100 Spoons to %s! Watch an ad to spin the wheel now!"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5821",
+      "offset": 259483,
+      "text": "You can use Welcome Like only once.\nThe mission is reset when you exit the livestream and your acquired Welcome Like will be disappeared."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5823",
+      "offset": 259685,
+      "text": "You can't add any more podcasts to this playlist."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5828",
+      "offset": 259891,
+      "text": "You can't participate in this broadcast because the streamer created it with an out-dated version of the app. Please, inform the streamer to update their app or listen to other broadcasts."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5834",
+      "offset": 260281,
+      "text": "You cannot create subscriber-exclusive Podcasts."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5844",
+      "offset": 260918,
+      "text": "You did not receive any spoons during the specified period"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5846",
+      "offset": 261016,
+      "text": "You do not have permission to perform this action."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5847",
+      "offset": 261069,
+      "text": "You do not have permission to view this content."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5854",
+      "offset": 261395,
+      "text": "You don't have permission to create a live stream."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5857",
+      "offset": 261516,
+      "text": "You have Spoons or cashable amounts available."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5870",
+      "offset": 262064,
+      "text": "You have not added any podcasts."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5880",
+      "offset": 262629,
+      "text": "You may face legal consequences if you post illegal recordings, abusive language, defamatory remarks, or content and images that violate Spoon's community guidelines."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5884",
+      "offset": 262965,
+      "text": "You need more Spoons."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5885",
+      "offset": 262989,
+      "text": "You need to verify your identity to use live and giftcode features, and to purchase spoons."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5886",
+      "offset": 263083,
+      "text": "You purchased %1$,d Spoons."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5888",
+      "offset": 263181,
+      "text": "You received a %2$s Spoon sticker gift from %1$s."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5893",
+      "offset": 263398,
+      "text": "You will get %1$s Spoons"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5923",
+      "offset": 264748,
+      "text": "Your account has been disabled due to a violation of Spoon's Terms of Service.\nIf you have any questions, please contact <a href=\"%1$s\">Customer Support</a>."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5936",
+      "offset": 265809,
+      "text": "Your image and nickname are auto-generated for anonymity and cannot be changed. When you write a review, this anonymous profile is used automatically to protect your Spoon Profile. Share your opinions safely."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5943",
+      "offset": 266325,
+      "text": "Your maximum livestream duration is already set to 4 hours with Spoon Membership."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5946",
+      "offset": 266506,
+      "text": "Your podcast has been uploaded."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5957",
+      "offset": 267088,
+      "text": "[Spoon Labs Inc.] You've opted in to app push notifications. %1$s"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5958",
+      "offset": 267156,
+      "text": "[Spoon Labs Inc.] You've opted in to marketing emails. %1$s"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5959",
+      "offset": 267218,
+      "text": "[Spoon Labs Inc.] You've opted in to marketing notifications. %1$s"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5960",
+      "offset": 267287,
+      "text": "[Spoon Labs Inc.] You've opted in to nighttime push notifications. %1$s"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5961",
+      "offset": 267361,
+      "text": "[Spoon Labs Inc.] You've opted out of marketing emails. %1$s / You can change this in Settings > Notifications > Marketing."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5962",
+      "offset": 267487,
+      "text": "[Spoon Labs Inc.] You've opted out of marketing notifications. %1$s / You can change this in Settings > Notifications > Marketing."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5963",
+      "offset": 267622,
+      "text": "[Spoon Labs Inc.] You've opted out of nighttime push notifications. %1$s / You can change this in Settings > Notifications > Marketing."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5964",
+      "offset": 267762,
+      "text": "[SpoonLabs Inc.] You've opted out of app push notifications. %1$s / You can change this in Settings > Notifications > Marketing."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5973",
+      "offset": 268115,
+      "text": "and notices, podcasts, and all below"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:5979",
+      "offset": 268214,
+      "text": "broadcast time"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:6027",
+      "offset": 269873,
+      "text": "https://spoon-me-1033.firebaseio.com"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:6038",
+      "offset": 270033,
+      "text": "or %1$sspoons to unlock"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:6050",
+      "offset": 270320,
+      "text": "spoon-me-1033"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:6051",
+      "offset": 270336,
+      "text": "spoon-me-1033.appspot.com"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:6059",
+      "offset": 270464,
+      "text": "{nickname}, thanks for {amount} spoons."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:6061",
+      "offset": 270511,
+      "text": "· Nudging resets two days after use or when the DJ starts a broadcast.\n· If you become a fan of the DJ, you can receive broadcast notifications anytime"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:6062",
+      "offset": 270669,
+      "text": "· Presented in order of the most similar voices.\n· For non-broadcasting DJs, try nudging them to start a broadcast ������.\n· Nudges reset after two days of accumulation or when the DJ starts a broadcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:6068",
+      "offset": 271178,
+      "text": "‎%1$s‎ commented on your podcast."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:6079",
+      "offset": 271622,
+      "text": "‎%1$s‎ uploaded a subscriber-exclusive Podcast."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:12:string:6095",
+      "offset": 272144,
+      "text": "・You can set a target number of Spoons you'd like to receive during your stream.\n・This can't be edited once your stream is live."
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:330",
+      "offset": 338819,
+      "text": "ch_avatar_border_radius"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:331",
+      "offset": 338845,
+      "text": "ch_avatar_show_border"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:663",
+      "offset": 346076,
+      "text": "cornerFamily"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:664",
+      "offset": 346091,
+      "text": "cornerFamilyBottomLeft"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:665",
+      "offset": 346116,
+      "text": "cornerFamilyBottomRight"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:666",
+      "offset": 346142,
+      "text": "cornerFamilyTopLeft"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:667",
+      "offset": 346164,
+      "text": "cornerFamilyTopRight"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:876",
+      "offset": 350779,
+      "text": "fontFamily"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:884",
+      "offset": 350961,
+      "text": "fontProviderSystemFontFamily"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:1445",
+      "offset": 363753,
+      "text": "shapeCornerFamily"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:3508",
+      "offset": 419220,
+      "text": "badge_ranking_height"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:3509",
+      "offset": 419243,
+      "text": "badge_ranking_width"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:3539",
+      "offset": 419859,
+      "text": "broadcast_time_increase_height"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:3545",
+      "offset": 420062,
+      "text": "cast_following_dj_image_size"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:3546",
+      "offset": 420093,
+      "text": "cast_list_profile_size"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:3569",
+      "offset": 420865,
+      "text": "ch_chat_typing_avatar_size"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:3570",
+      "offset": 420894,
+      "text": "ch_chat_typing_second_avatar_margin"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:3571",
+      "offset": 420932,
+      "text": "ch_chat_typing_third_avatar_margin"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:3750",
+      "offset": 427432,
+      "text": "extend_broadcast_live_item_lottie_width"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:3800",
+      "offset": 429043,
+      "text": "live_combo_icon_width"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:3801",
+      "offset": 429067,
+      "text": "live_combo_view_bg_height"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:3802",
+      "offset": 429095,
+      "text": "live_combo_view_height"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:3966",
+      "offset": 435193,
+      "text": "m3_comp_input_chip_with_avatar_avatar_size"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4025",
+      "offset": 438254,
+      "text": "m3_comp_search_bar_avatar_size"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4474",
+      "offset": 455332,
+      "text": "ranking_increase_count_up_height"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4477",
+      "offset": 455429,
+      "text": "spoon_cast_detail_tagview_height"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4478",
+      "offset": 455464,
+      "text": "sticker_combo_up_height"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4642",
+      "offset": 459558,
+      "text": "$img_spoon_snap_guide__0"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4643",
+      "offset": 459585,
+      "text": "$img_spoon_snap_guide__1"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4644",
+      "offset": 459612,
+      "text": "$img_spoon_snap_guide__2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4645",
+      "offset": 459639,
+      "text": "$img_spoon_snap_guide__3"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4646",
+      "offset": 459666,
+      "text": "$img_spoon_snap_guide__4"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4647",
+      "offset": 459693,
+      "text": "$logo_spoonai__0"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4648",
+      "offset": 459712,
+      "text": "$logo_spoonai__1"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4649",
+      "offset": 459731,
+      "text": "$logo_spoonai__2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4650",
+      "offset": 459750,
+      "text": "$logo_spoonai__3"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4651",
+      "offset": 459769,
+      "text": "$logo_spoonai__4"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4652",
+      "offset": 459788,
+      "text": "$logo_spoonai__5"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:4653",
+      "offset": 459807,
+      "text": "$logo_spoonai__6"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5119",
+      "offset": 473565,
+      "text": "ic_btn_create_live_cast_enabled"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5133",
+      "offset": 473848,
+      "text": "ic_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5134",
+      "offset": 473858,
+      "text": "ic_cast_info"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5266",
+      "offset": 476288,
+      "text": "ic_logo_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5267",
+      "offset": 476304,
+      "text": "ic_logo_spoon_combi"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5268",
+      "offset": 476326,
+      "text": "ic_logo_spoon_wordmark"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5269",
+      "offset": 476351,
+      "text": "ic_lucky"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5327",
+      "offset": 477416,
+      "text": "ic_playlist_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5328",
+      "offset": 477435,
+      "text": "ic_playlist_cast_white_40"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5341",
+      "offset": 477677,
+      "text": "ic_ranking"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5342",
+      "offset": 477690,
+      "text": "ic_ranking_down_gray_50_8"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5376",
+      "offset": 478275,
+      "text": "ic_spoon_membership"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5377",
+      "offset": 478297,
+      "text": "ic_spoon_stroke_24"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5378",
+      "offset": 478318,
+      "text": "ic_spoonmembership"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5420",
+      "offset": 479041,
+      "text": "img_avatar_system"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5431",
+      "offset": 479243,
+      "text": "img_default_lucky_box"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5435",
+      "offset": 479324,
+      "text": "img_empty_livegames"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5441",
+      "offset": 479438,
+      "text": "img_favorite_spooni_guide"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5452",
+      "offset": 479655,
+      "text": "img_live_games_app_update_enabled"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5453",
+      "offset": 479691,
+      "text": "img_live_games_luckybox_thumbnail_disabled"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5454",
+      "offset": 479736,
+      "text": "img_live_games_luckybox_thumbnail_enabled"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5455",
+      "offset": 479780,
+      "text": "img_live_games_quiz_thumbnail_disabled"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5456",
+      "offset": 479821,
+      "text": "img_live_games_quiz_thumbnail_enabled"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5506",
+      "offset": 481013,
+      "text": "img_quiz_sp_placeholder"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5507",
+      "offset": 481039,
+      "text": "img_ranking_dj_1"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5508",
+      "offset": 481058,
+      "text": "img_ranking_dj_2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5509",
+      "offset": 481077,
+      "text": "img_ranking_dj_3"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5510",
+      "offset": 481096,
+      "text": "img_ranking_fan_1"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5511",
+      "offset": 481116,
+      "text": "img_ranking_fan_2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5512",
+      "offset": 481136,
+      "text": "img_ranking_fan_3"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5513",
+      "offset": 481156,
+      "text": "img_ranking_number_1"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5514",
+      "offset": 481179,
+      "text": "img_ranking_number_10"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5515",
+      "offset": 481203,
+      "text": "img_ranking_number_2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5516",
+      "offset": 481226,
+      "text": "img_ranking_number_3"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5517",
+      "offset": 481249,
+      "text": "img_ranking_number_4"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5518",
+      "offset": 481272,
+      "text": "img_ranking_number_5"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5519",
+      "offset": 481295,
+      "text": "img_ranking_number_6"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5520",
+      "offset": 481318,
+      "text": "img_ranking_number_7"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5521",
+      "offset": 481341,
+      "text": "img_ranking_number_8"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5522",
+      "offset": 481364,
+      "text": "img_ranking_number_9"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5530",
+      "offset": 481618,
+      "text": "img_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5531",
+      "offset": 481630,
+      "text": "img_spoon_2d"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5532",
+      "offset": 481645,
+      "text": "img_spoon_3d"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5533",
+      "offset": 481660,
+      "text": "img_spoon_3d_tilt"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5534",
+      "offset": 481680,
+      "text": "img_spoon_ani"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5535",
+      "offset": 481696,
+      "text": "img_spoon_snap_guide"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5554",
+      "offset": 482153,
+      "text": "img_welcome_fanboard"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5555",
+      "offset": 482176,
+      "text": "img_welcomemission"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5556",
+      "offset": 482197,
+      "text": "img_welcomemission_default"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5557",
+      "offset": 482226,
+      "text": "img_welcomemission_done"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5560",
+      "offset": 482278,
+      "text": "imgt_live_games_preparing_placeholder"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5586",
+      "offset": 482932,
+      "text": "logo_spoon_wordmark"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5587",
+      "offset": 482954,
+      "text": "logo_spoonai"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5588",
+      "offset": 482969,
+      "text": "logo_spoonai_word"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5589",
+      "offset": 482989,
+      "text": "logo_spoonvip"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5606",
+      "offset": 483406,
+      "text": "main_cast_next_ic"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5607",
+      "offset": 483426,
+      "text": "main_cast_no_img"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5608",
+      "offset": 483445,
+      "text": "main_cast_pause_ic"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5609",
+      "offset": 483466,
+      "text": "main_cast_play_ic_black"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5610",
+      "offset": 483492,
+      "text": "main_cast_previous_ic"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5611",
+      "offset": 483516,
+      "text": "main_cast_repeat"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5612",
+      "offset": 483535,
+      "text": "main_cast_repeat_0_ic"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5613",
+      "offset": 483559,
+      "text": "main_cast_repeat_1_ic"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5614",
+      "offset": 483583,
+      "text": "main_cast_repeat_1_ic_dark"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5615",
+      "offset": 483612,
+      "text": "main_cast_repeat_dark"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5616",
+      "offset": 483636,
+      "text": "main_cast_top_sleep_ic"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5617",
+      "offset": 483661,
+      "text": "main_cast_top_time_ic"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5780",
+      "offset": 488406,
+      "text": "ranking_down_ic"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5781",
+      "offset": 488424,
+      "text": "ranking_up_ic"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5792",
+      "offset": 488752,
+      "text": "spoon_dj_dashboard_widget_info"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5793",
+      "offset": 488785,
+      "text": "spoon_live_create_widget_preview"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5794",
+      "offset": 488820,
+      "text": "spoon_series_history_widget_info"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5916",
+      "offset": 491588,
+      "text": "action_mainCastFragment_to_castHashtagListFragment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5917",
+      "offset": 491641,
+      "text": "action_mainCastFragment_to_castListFragment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5918",
+      "offset": 491687,
+      "text": "action_mainCastFragment_to_castStorageListFragment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5931",
+      "offset": 492243,
+      "text": "action_myProfileFragment_to_spoonMembershipFragment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5934",
+      "offset": 492393,
+      "text": "action_navGraphHome_to_rankFragmentOnTopBar"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5952",
+      "offset": 493090,
+      "text": "action_to_navGraphHomeCast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:5956",
+      "offset": 493209,
+      "text": "action_to_rankFragment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6017",
+      "offset": 494258,
+      "text": "castEventHashtagListFragment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6018",
+      "offset": 494289,
+      "text": "castListFragment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6019",
+      "offset": 494308,
+      "text": "castStorageListFragment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6034",
+      "offset": 494626,
+      "text": "ch_avatarBubble"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6035",
+      "offset": 494644,
+      "text": "ch_avatarChannelError"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6036",
+      "offset": 494668,
+      "text": "ch_avatarChatItem"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6037",
+      "offset": 494688,
+      "text": "ch_avatarChatPlaceholder"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6038",
+      "offset": 494715,
+      "text": "ch_avatarChatTitleBottomAvatar"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6039",
+      "offset": 494748,
+      "text": "ch_avatarChatTitleSingleAvatar"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6040",
+      "offset": 494781,
+      "text": "ch_avatarChatTitleTopAvatar"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6041",
+      "offset": 494811,
+      "text": "ch_avatarDefaultTypeChannelProfile"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6042",
+      "offset": 494848,
+      "text": "ch_avatarFirst"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6043",
+      "offset": 494865,
+      "text": "ch_avatarManagerProfileBottomSheet"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6044",
+      "offset": 494902,
+      "text": "ch_avatarManagerWorkingStateFirst"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6045",
+      "offset": 494938,
+      "text": "ch_avatarManagerWorkingStateSecond"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6046",
+      "offset": 494975,
+      "text": "ch_avatarManagerWorkingStateThird"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6047",
+      "offset": 495011,
+      "text": "ch_avatarMessageHolder"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6048",
+      "offset": 495036,
+      "text": "ch_avatarReactionManager"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6049",
+      "offset": 495063,
+      "text": "ch_avatarSecond"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6050",
+      "offset": 495081,
+      "text": "ch_avatarSettingsHeader"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6051",
+      "offset": 495107,
+      "text": "ch_avatarThird"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6235",
+      "offset": 500045,
+      "text": "ch_imageAvatar"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6246",
+      "offset": 500280,
+      "text": "ch_imageCommandParameterOverlayItemName"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6247",
+      "offset": 500322,
+      "text": "ch_imageCommandParameterOverlayItemRequirement"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6299",
+      "offset": 501757,
+      "text": "ch_layoutAvatarPreview"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6322",
+      "offset": 502414,
+      "text": "ch_layoutChatTitleAvatar"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6323",
+      "offset": 502441,
+      "text": "ch_layoutChatTitleDoubleAvatar"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6324",
+      "offset": 502474,
+      "text": "ch_layoutChatTitleSingleAvatar"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6361",
+      "offset": 503656,
+      "text": "ch_layoutManagerAvatars"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6437",
+      "offset": 505815,
+      "text": "ch_rootAvatarLayout"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:6762",
+      "offset": 514740,
+      "text": "chronometer"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7165",
+      "offset": 525318,
+      "text": "iv_spoon_icon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7204",
+      "offset": 525891,
+      "text": "mainCastFragment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7279",
+      "offset": 527730,
+      "text": "nav_graph_home_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7374",
+      "offset": 529673,
+      "text": "rankFragment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7375",
+      "offset": 529688,
+      "text": "rankFragmentOnTopBar"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7471",
+      "offset": 531213,
+      "text": "spoonMembershipFragment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7548",
+      "offset": 532641,
+      "text": "total_spoons_icon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7549",
+      "offset": 532661,
+      "text": "total_spoons_text"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7651",
+      "offset": 535194,
+      "text": "m3_sys_shape_corner_extra_large_corner_family"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7652",
+      "offset": 535242,
+      "text": "m3_sys_shape_corner_extra_small_corner_family"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7653",
+      "offset": 535290,
+      "text": "m3_sys_shape_corner_full_corner_family"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7654",
+      "offset": 535331,
+      "text": "m3_sys_shape_corner_large_corner_family"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7655",
+      "offset": 535373,
+      "text": "m3_sys_shape_corner_medium_corner_family"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7656",
+      "offset": 535416,
+      "text": "m3_sys_shape_corner_small_corner_family"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7693",
+      "offset": 536620,
+      "text": "spoon_cast_max_length"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7694",
+      "offset": 536644,
+      "text": "spoon_live_greeting"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:7695",
+      "offset": 536666,
+      "text": "spoon_user_notice"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:8034",
+      "offset": 548247,
+      "text": "ch_plugin_layout_avatar"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:8075",
+      "offset": 549464,
+      "text": "ch_view_command_parameter_overlay_item"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:8598",
+      "offset": 569464,
+      "text": "material_chip_input_combo"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:8662",
+      "offset": 571433,
+      "text": "notification_template_part_chronometer"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9376",
+      "offset": 587754,
+      "text": "all_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9404",
+      "offset": 588331,
+      "text": "berry_exchange_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9422",
+      "offset": 588767,
+      "text": "berry_mission"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9423",
+      "offset": 588783,
+      "text": "berry_mission_count_hour"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9424",
+      "offset": 588810,
+      "text": "berry_mission_count_minute"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9425",
+      "offset": 588839,
+      "text": "berry_mission_empty"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9426",
+      "offset": 588861,
+      "text": "berry_mission_start"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9431",
+      "offset": 588953,
+      "text": "berry_spoon_exchange"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9474",
+      "offset": 590118,
+      "text": "cast_add_complete"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9475",
+      "offset": 590138,
+      "text": "cast_add_input_guide_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9476",
+      "offset": 590167,
+      "text": "cast_add_storage"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9477",
+      "offset": 590186,
+      "text": "cast_category_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9478",
+      "offset": 590208,
+      "text": "cast_description_text_empty"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9479",
+      "offset": 590238,
+      "text": "cast_description_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9480",
+      "offset": 590263,
+      "text": "cast_dj_subscription_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9481",
+      "offset": 590291,
+      "text": "cast_info_enter_broadcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9482",
+      "offset": 590319,
+      "text": "cast_info_enter_profile"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9483",
+      "offset": 590345,
+      "text": "cast_input_text_guide"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9484",
+      "offset": 590369,
+      "text": "cast_keyword_asmr"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9485",
+      "offset": 590389,
+      "text": "cast_keyword_audiodairy"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9486",
+      "offset": 590415,
+      "text": "cast_keyword_audiodrama"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9487",
+      "offset": 590441,
+      "text": "cast_keyword_audionote"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9488",
+      "offset": 590466,
+      "text": "cast_keyword_bookreading"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9489",
+      "offset": 590493,
+      "text": "cast_keyword_chat"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9490",
+      "offset": 590513,
+      "text": "cast_keyword_comedy"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9491",
+      "offset": 590535,
+      "text": "cast_keyword_coversongs"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9492",
+      "offset": 590561,
+      "text": "cast_keyword_coversongsperformance"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9493",
+      "offset": 590598,
+      "text": "cast_keyword_dubbingvoiceacting"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9494",
+      "offset": 590632,
+      "text": "cast_keyword_education"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9495",
+      "offset": 590657,
+      "text": "cast_keyword_empty_guide"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9496",
+      "offset": 590684,
+      "text": "cast_keyword_entertainment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9497",
+      "offset": 590713,
+      "text": "cast_keyword_featured"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9498",
+      "offset": 590737,
+      "text": "cast_keyword_healing"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9499",
+      "offset": 590760,
+      "text": "cast_keyword_miscellaneous"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9500",
+      "offset": 590789,
+      "text": "cast_keyword_performance"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9501",
+      "offset": 590816,
+      "text": "cast_keyword_pr"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9502",
+      "offset": 590834,
+      "text": "cast_keyword_questionworries"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9503",
+      "offset": 590865,
+      "text": "cast_keyword_realradio"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9504",
+      "offset": 590890,
+      "text": "cast_keyword_recommended"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9505",
+      "offset": 590917,
+      "text": "cast_keyword_selfcomposed"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9506",
+      "offset": 590945,
+      "text": "cast_keyword_situationvoice"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9507",
+      "offset": 590975,
+      "text": "cast_keyword_studyforeignlanguages"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9508",
+      "offset": 591012,
+      "text": "cast_keyword_underrecruit"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9509",
+      "offset": 591040,
+      "text": "cast_keyword_voiceacting"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9510",
+      "offset": 591067,
+      "text": "cast_keyword_worriesinterview"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9511",
+      "offset": 591099,
+      "text": "cast_main_group_category_text"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9512",
+      "offset": 591131,
+      "text": "cast_main_group_follow"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9513",
+      "offset": 591156,
+      "text": "cast_main_group_follow_text"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9514",
+      "offset": 591186,
+      "text": "cast_main_group_liked"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9515",
+      "offset": 591210,
+      "text": "cast_main_group_pick"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9516",
+      "offset": 591233,
+      "text": "cast_main_group_popular_playlist"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9517",
+      "offset": 591268,
+      "text": "cast_main_group_ranking"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9518",
+      "offset": 591294,
+      "text": "cast_main_group_ranking_text"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9519",
+      "offset": 591325,
+      "text": "cast_main_group_recently_created"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9520",
+      "offset": 591360,
+      "text": "cast_main_group_recently_created_text"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9521",
+      "offset": 591400,
+      "text": "cast_main_group_recommendation1"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9522",
+      "offset": 591434,
+      "text": "cast_main_group_recommendation1_text"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9523",
+      "offset": 591473,
+      "text": "cast_main_group_recommendation2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9524",
+      "offset": 591507,
+      "text": "cast_main_group_storage"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9525",
+      "offset": 591533,
+      "text": "cast_main_group_storage_text"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9526",
+      "offset": 591564,
+      "text": "cast_main_group_subscription_only"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9527",
+      "offset": 591600,
+      "text": "cast_playlist_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9528",
+      "offset": 591622,
+      "text": "cast_recording_start_guide"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9529",
+      "offset": 591651,
+      "text": "cast_select_keyword_guide"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9530",
+      "offset": 591679,
+      "text": "cast_share"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9531",
+      "offset": 591692,
+      "text": "cast_storage_already_exists"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9532",
+      "offset": 591722,
+      "text": "cast_storage_create"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9533",
+      "offset": 591744,
+      "text": "cast_storage_empty"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9534",
+      "offset": 591765,
+      "text": "cast_storage_max_count"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9535",
+      "offset": 591790,
+      "text": "cast_subscription_not_available"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9536",
+      "offset": 591824,
+      "text": "cast_subscription_not_available_description_1"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9537",
+      "offset": 591872,
+      "text": "cast_subscription_not_available_description_2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9538",
+      "offset": 591920,
+      "text": "cast_trend_criteria_description"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9539",
+      "offset": 591954,
+      "text": "cast_trend_criteria_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9640",
+      "offset": 595688,
+      "text": "ch.command.parameter_overlay.title.optional_parameters"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9641",
+      "offset": 595745,
+      "text": "ch.command.parameter_overlay.title.required_parameters"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9642",
+      "offset": 595802,
+      "text": "ch.command_input.parameters.description.default"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9643",
+      "offset": 595852,
+      "text": "ch.command_input.parameters.type_error"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9644",
+      "offset": 595893,
+      "text": "ch.command_input.parameters.type_error.bool"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9645",
+      "offset": 595939,
+      "text": "ch.command_input.parameters.type_error.choices"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9646",
+      "offset": 595988,
+      "text": "ch.command_input.parameters.type_error.empty_value"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9647",
+      "offset": 596041,
+      "text": "ch.command_input.parameters.type_error.float"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9648",
+      "offset": 596088,
+      "text": "ch.command_input.parameters.type_error.int"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9649",
+      "offset": 596133,
+      "text": "ch.command_input.parameters.type_error.required_parameter"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9650",
+      "offset": 596193,
+      "text": "ch.command_input.parameters.type_error.string"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9651",
+      "offset": 596241,
+      "text": "ch.command_input.placeholder.add_optional_parameters"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9652",
+      "offset": 596296,
+      "text": "ch.command_input.placeholder.add_required_parameters"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9789",
+      "offset": 600041,
+      "text": "ch.permission.denied"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9790",
+      "offset": 600064,
+      "text": "ch.permission.denied.dialog.description"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9791",
+      "offset": 600106,
+      "text": "ch.permission.denied.dialog.title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9902",
+      "offset": 603373,
+      "text": "channel_analysis_spoons_count"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9903",
+      "offset": 603405,
+      "text": "channel_analysis_spoons_increased"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9904",
+      "offset": 603441,
+      "text": "channel_analysis_spoons_last_day"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9909",
+      "offset": 603617,
+      "text": "channel_favorite_rank_empty"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9914",
+      "offset": 603782,
+      "text": "check_spoon_policies"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9972",
+      "offset": 605783,
+      "text": "com_facebook_internet_permission_error_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:9973",
+      "offset": 605832,
+      "text": "com_facebook_internet_permission_error_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10001",
+      "offset": 606844,
+      "text": "common_active_cast_replay"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10033",
+      "offset": 607527,
+      "text": "common_broadcast_default"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10034",
+      "offset": 607554,
+      "text": "common_broadcast_mode"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10035",
+      "offset": 607578,
+      "text": "common_broadcast_preset"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10036",
+      "offset": 607604,
+      "text": "common_broadcast_preset_1"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10037",
+      "offset": 607632,
+      "text": "common_broadcast_preset_2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10038",
+      "offset": 607660,
+      "text": "common_broadcast_scope"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10039",
+      "offset": 607685,
+      "text": "common_broadcast_start_now"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10044",
+      "offset": 607814,
+      "text": "common_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10045",
+      "offset": 607828,
+      "text": "common_cast_replay"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10103",
+      "offset": 609017,
+      "text": "common_event_ranking_score"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10111",
+      "offset": 609197,
+      "text": "common_fan_rank"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10115",
+      "offset": 609300,
+      "text": "common_favorite_rank"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10153",
+      "offset": 610495,
+      "text": "common_high_quality_broadcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10155",
+      "offset": 610541,
+      "text": "common_hot_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10176",
+      "offset": 610915,
+      "text": "common_live_game"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10251",
+      "offset": 612705,
+      "text": "common_permission_guide_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10268",
+      "offset": 613069,
+      "text": "common_rank_count"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10269",
+      "offset": 613089,
+      "text": "common_ranking"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10270",
+      "offset": 613106,
+      "text": "common_ranking_block_on_air"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10271",
+      "offset": 613136,
+      "text": "common_ranking_hidden_empty"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10272",
+      "offset": 613166,
+      "text": "common_ranking_hidden_notice"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10273",
+      "offset": 613197,
+      "text": "common_ranking_hidden_tab"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10274",
+      "offset": 613225,
+      "text": "common_ranking_hidden_toast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10275",
+      "offset": 613255,
+      "text": "common_ranking_hide"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10276",
+      "offset": 613277,
+      "text": "common_ranking_hide_action"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10277",
+      "offset": 613306,
+      "text": "common_ranking_hide_popup_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10278",
+      "offset": 613340,
+      "text": "common_ranking_total"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10279",
+      "offset": 613363,
+      "text": "common_ranking_unhide"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10280",
+      "offset": 613387,
+      "text": "common_ranking_unhide_action"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10281",
+      "offset": 613418,
+      "text": "common_ranking_unhide_popup_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10282",
+      "offset": 613454,
+      "text": "common_ranking_unhide_toast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10381",
+      "offset": 615841,
+      "text": "common_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10382",
+      "offset": 615856,
+      "text": "common_spoon_automsg"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10383",
+      "offset": 615879,
+      "text": "common_spoon_automsg_edit"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10384",
+      "offset": 615907,
+      "text": "common_spoon_automsg_edit_description"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10385",
+      "offset": 615947,
+      "text": "common_spoon_awards_badge_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10386",
+      "offset": 615981,
+      "text": "common_spoon_count"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10387",
+      "offset": 616002,
+      "text": "common_spoon_help"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10388",
+      "offset": 616022,
+      "text": "common_spoon_snap"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10389",
+      "offset": 616042,
+      "text": "common_spoon_vip"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10390",
+      "offset": 616061,
+      "text": "common_spoon_wallet"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10397",
+      "offset": 616200,
+      "text": "common_stored_spoon_count"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10404",
+      "offset": 616375,
+      "text": "common_string_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10426",
+      "offset": 616903,
+      "text": "common_top_ranking"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10428",
+      "offset": 616952,
+      "text": "common_total_spoon_count"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10457",
+      "offset": 617529,
+      "text": "common_welcomemission"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10498",
+      "offset": 618517,
+      "text": "djmembership_no_featured_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10502",
+      "offset": 618628,
+      "text": "djmembership_premium_only_featured_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10511",
+      "offset": 618931,
+      "text": "donation_popup_all_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10512",
+      "offset": 618958,
+      "text": "donation_popup_spoon_not_enough"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10516",
+      "offset": 619066,
+      "text": "emoji_cast_keyword_announcements"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10517",
+      "offset": 619101,
+      "text": "emoji_cast_keyword_asmr"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10518",
+      "offset": 619127,
+      "text": "emoji_cast_keyword_audio_diary"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10519",
+      "offset": 619160,
+      "text": "emoji_cast_keyword_audio_drama"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10520",
+      "offset": 619193,
+      "text": "emoji_cast_keyword_audio_note"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10521",
+      "offset": 619225,
+      "text": "emoji_cast_keyword_book_reading"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10522",
+      "offset": 619259,
+      "text": "emoji_cast_keyword_chat"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10523",
+      "offset": 619285,
+      "text": "emoji_cast_keyword_comedy"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10524",
+      "offset": 619313,
+      "text": "emoji_cast_keyword_cover_songs"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10525",
+      "offset": 619346,
+      "text": "emoji_cast_keyword_cover_songs_performance"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10526",
+      "offset": 619391,
+      "text": "emoji_cast_keyword_dubbing_voice_acting"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10527",
+      "offset": 619433,
+      "text": "emoji_cast_keyword_education"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10528",
+      "offset": 619464,
+      "text": "emoji_cast_keyword_entertainment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10529",
+      "offset": 619499,
+      "text": "emoji_cast_keyword_featured"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10530",
+      "offset": 619529,
+      "text": "emoji_cast_keyword_healing"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10531",
+      "offset": 619558,
+      "text": "emoji_cast_keyword_miscellaneous"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10532",
+      "offset": 619593,
+      "text": "emoji_cast_keyword_performance"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10533",
+      "offset": 619626,
+      "text": "emoji_cast_keyword_pr"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10534",
+      "offset": 619650,
+      "text": "emoji_cast_keyword_question_worries"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10535",
+      "offset": 619688,
+      "text": "emoji_cast_keyword_ranking"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10536",
+      "offset": 619717,
+      "text": "emoji_cast_keyword_real_radio"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10537",
+      "offset": 619749,
+      "text": "emoji_cast_keyword_recommended"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10538",
+      "offset": 619782,
+      "text": "emoji_cast_keyword_self_composed"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10539",
+      "offset": 619817,
+      "text": "emoji_cast_keyword_singer_song_writer"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10540",
+      "offset": 619857,
+      "text": "emoji_cast_keyword_situation_voice"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10541",
+      "offset": 619894,
+      "text": "emoji_cast_keyword_study_foreign_languages"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10542",
+      "offset": 619939,
+      "text": "emoji_cast_keyword_under_recruit"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10543",
+      "offset": 619974,
+      "text": "emoji_cast_keyword_voice_acting"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10544",
+      "offset": 620008,
+      "text": "emoji_cast_keyword_worries_interview"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10599",
+      "offset": 621634,
+      "text": "empty_broadcast_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10604",
+      "offset": 621712,
+      "text": "end_live_broadcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10625",
+      "offset": 622321,
+      "text": "error_message_permission_denied"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10637",
+      "offset": 622656,
+      "text": "error_text_spoon_charging_failed"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10645",
+      "offset": 622834,
+      "text": "exchange_convert_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10646",
+      "offset": 622859,
+      "text": "exchange_convert_spoon_info"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10727",
+      "offset": 625341,
+      "text": "fan_board"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10728",
+      "offset": 625353,
+      "text": "fan_board_input_hint"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10733",
+      "offset": 625484,
+      "text": "favorite_cheer_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10742",
+      "offset": 625727,
+      "text": "favorite_rank"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10743",
+      "offset": 625743,
+      "text": "favorite_ranking_hide_popup_content"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10744",
+      "offset": 625781,
+      "text": "favorite_ranking_info_content"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10745",
+      "offset": 625813,
+      "text": "favorite_ranking_info_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10746",
+      "offset": 625843,
+      "text": "favorite_ranking_unhide_popup_content"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10761",
+      "offset": 626269,
+      "text": "follower_rank_empty"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10822",
+      "offset": 627755,
+      "text": "item_admission_broadcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10829",
+      "offset": 627875,
+      "text": "item_ranking_boost"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10857",
+      "offset": 628552,
+      "text": "live_broadcast_already_broadcasting"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10858",
+      "offset": 628590,
+      "text": "live_broadcast_auto_save_cast_description"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10859",
+      "offset": 628634,
+      "text": "live_broadcast_is_unstable"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10860",
+      "offset": 628663,
+      "text": "live_broadcast_is_unstable_dj"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10885",
+      "offset": 629352,
+      "text": "live_close_broadcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10897",
+      "offset": 629738,
+      "text": "live_create_spoon_aim"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10902",
+      "offset": 629893,
+      "text": "live_donation_lucky_box_sub_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10944",
+      "offset": 631194,
+      "text": "live_game_app_update_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10945",
+      "offset": 631225,
+      "text": "live_game_close_game_question"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10946",
+      "offset": 631257,
+      "text": "live_game_mine"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10947",
+      "offset": 631274,
+      "text": "live_game_mine_empty_msg"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10948",
+      "offset": 631301,
+      "text": "live_game_preparing_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10949",
+      "offset": 631331,
+      "text": "live_game_preparing_open"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10950",
+      "offset": 631358,
+      "text": "live_game_quiz"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10951",
+      "offset": 631375,
+      "text": "live_game_quiz_sub_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10952",
+      "offset": 631402,
+      "text": "live_game_set_off_game_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10953",
+      "offset": 631435,
+      "text": "live_game_start"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10954",
+      "offset": 631453,
+      "text": "live_game_sub_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10955",
+      "offset": 631477,
+      "text": "live_game_waiting_dj_empty"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:10956",
+      "offset": 631506,
+      "text": "live_game_waiting_listener_empty"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11029",
+      "offset": 633355,
+      "text": "live_lucky_box"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11030",
+      "offset": 633372,
+      "text": "live_lucky_box_create_done_btn"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11031",
+      "offset": 633405,
+      "text": "live_lucky_box_create_location_over_validation"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11032",
+      "offset": 633454,
+      "text": "live_lucky_box_create_location_sub_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11033",
+      "offset": 633497,
+      "text": "live_lucky_box_create_location_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11034",
+      "offset": 633536,
+      "text": "live_lucky_box_create_messasge_hint"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11035",
+      "offset": 633574,
+      "text": "live_lucky_box_create_money_sub_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11036",
+      "offset": 633614,
+      "text": "live_lucky_box_create_money_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11037",
+      "offset": 633650,
+      "text": "live_lucky_box_donated_loose"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11038",
+      "offset": 633681,
+      "text": "live_lucky_box_donated_loose_sub2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11039",
+      "offset": 633717,
+      "text": "live_lucky_box_donated_win"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11040",
+      "offset": 633746,
+      "text": "live_lucky_box_fold_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11041",
+      "offset": 633774,
+      "text": "live_lucky_box_loose_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11042",
+      "offset": 633803,
+      "text": "live_lucky_box_open_select_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11043",
+      "offset": 633838,
+      "text": "live_lucky_box_open_supporter"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11044",
+      "offset": 633870,
+      "text": "live_lucky_box_open_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11045",
+      "offset": 633898,
+      "text": "live_lucky_box_result_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11046",
+      "offset": 633928,
+      "text": "live_lucky_box_win_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11092",
+      "offset": 635165,
+      "text": "live_main_group_ranking"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11093",
+      "offset": 635191,
+      "text": "live_main_group_ranking_text"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11148",
+      "offset": 636698,
+      "text": "live_optimize_combo_disabled_desc"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11149",
+      "offset": 636734,
+      "text": "live_optimize_combo_effect"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11150",
+      "offset": 636763,
+      "text": "live_optimize_combo_effect_desc"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11151",
+      "offset": 636797,
+      "text": "live_optimize_combo_effect_desc_pressed"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11152",
+      "offset": 636839,
+      "text": "live_optimize_combo_enabled_desc"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11182",
+      "offset": 637729,
+      "text": "live_prelisten_broadcast_time_guide"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11183",
+      "offset": 637767,
+      "text": "live_prelisten_enter_broadcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11193",
+      "offset": 638057,
+      "text": "live_quiz_fold_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11194",
+      "offset": 638080,
+      "text": "live_ranking_criteria_description"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11195",
+      "offset": 638116,
+      "text": "live_ranking_criteria_description_2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11196",
+      "offset": 638154,
+      "text": "live_ranking_criteria_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11197",
+      "offset": 638184,
+      "text": "live_ranking_info_content"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11198",
+      "offset": 638212,
+      "text": "live_ranking_info_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11202",
+      "offset": 638307,
+      "text": "live_restart_broadcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11210",
+      "offset": 638528,
+      "text": "live_result_welcomefanboard_desc"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11211",
+      "offset": 638563,
+      "text": "live_result_welcomefanboard_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11213",
+      "offset": 638621,
+      "text": "live_save_cast_off_msg"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11214",
+      "offset": 638646,
+      "text": "live_save_cast_on_msg"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11253",
+      "offset": 639620,
+      "text": "live_send_cast_guide"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11264",
+      "offset": 639949,
+      "text": "live_spoon_aim_bottom_desc"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11265",
+      "offset": 639978,
+      "text": "live_spoon_aim_complete"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11266",
+      "offset": 640004,
+      "text": "live_spoon_aim_count_placeholder"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11267",
+      "offset": 640039,
+      "text": "live_spoon_aim_description"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11268",
+      "offset": 640068,
+      "text": "live_spoon_aim_input_goal"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11269",
+      "offset": 640096,
+      "text": "live_spoon_aim_input_spoon_goal"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11270",
+      "offset": 640130,
+      "text": "live_spoon_aim_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11271",
+      "offset": 640153,
+      "text": "live_spoon_aim_title_placeholder"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11272",
+      "offset": 640188,
+      "text": "live_start_broadcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11273",
+      "offset": 640211,
+      "text": "live_start_broadcast_guest_guide"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11274",
+      "offset": 640246,
+      "text": "live_start_broadcast_guide"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11275",
+      "offset": 640275,
+      "text": "live_start_broadcast_guide_2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11276",
+      "offset": 640306,
+      "text": "live_start_broadcast_guide_3"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11277",
+      "offset": 640337,
+      "text": "live_start_broadcast_guide_4"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11278",
+      "offset": 640368,
+      "text": "live_start_broadcast_guide_membership"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11279",
+      "offset": 640408,
+      "text": "live_start_broadcast_guide_membership_2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11285",
+      "offset": 640617,
+      "text": "live_stop_broadcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11295",
+      "offset": 640896,
+      "text": "live_top_rank_best"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11296",
+      "offset": 640917,
+      "text": "live_top_rank_last"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11297",
+      "offset": 640938,
+      "text": "live_top_rank_list_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11436",
+      "offset": 644535,
+      "text": "login_start_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11442",
+      "offset": 644685,
+      "text": "lucky_box_open"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11443",
+      "offset": 644702,
+      "text": "lucky_box_sent_by_user"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11541",
+      "offset": 647988,
+      "text": "menu_cast_storage"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11637",
+      "offset": 651083,
+      "text": "notifications_permission_confirm"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11638",
+      "offset": 651118,
+      "text": "notifications_permission_decline"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11639",
+      "offset": 651153,
+      "text": "notifications_permission_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11703",
+      "offset": 653102,
+      "text": "permission_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11705",
+      "offset": 653130,
+      "text": "plan_discover_with_featured_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11709",
+      "offset": 653204,
+      "text": "plan_select_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11710",
+      "offset": 653223,
+      "text": "plan_showcase_plan_with_featured_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11720",
+      "offset": 653521,
+      "text": "plus_add_cast_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11730",
+      "offset": 653801,
+      "text": "popup_block_q_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11744",
+      "offset": 654240,
+      "text": "popup_deactivate_delete_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11745",
+      "offset": 654272,
+      "text": "popup_deactivate_delete_spoon_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11750",
+      "offset": 654415,
+      "text": "popup_deactivate_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11774",
+      "offset": 655134,
+      "text": "popup_live_no_permission_q"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11775",
+      "offset": 655163,
+      "text": "popup_live_no_permission_q2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11776",
+      "offset": 655193,
+      "text": "popup_live_roulette_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11779",
+      "offset": 655273,
+      "text": "popup_lucky_box_create_cancel_q"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11780",
+      "offset": 655307,
+      "text": "popup_lucky_box_create_cancel_sub"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11830",
+      "offset": 656742,
+      "text": "profile_cast_save"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11831",
+      "offset": 656762,
+      "text": "profile_cast_upload"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11833",
+      "offset": 656811,
+      "text": "profile_channel_recent_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11850",
+      "offset": 657284,
+      "text": "profile_fan_ranking_of_dj"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11851",
+      "offset": 657312,
+      "text": "profile_fanboard_empty_notice"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11852",
+      "offset": 657344,
+      "text": "profile_fanboard_empty_notice_b"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11864",
+      "offset": 657665,
+      "text": "profile_like_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11883",
+      "offset": 658178,
+      "text": "profile_ranking_info_content"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11886",
+      "offset": 658260,
+      "text": "profile_select_signature_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11887",
+      "offset": 658292,
+      "text": "profile_signature_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11902",
+      "offset": 658668,
+      "text": "push_cast_mention_voice_comment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11903",
+      "offset": 658702,
+      "text": "push_cast_new_fan_live"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11904",
+      "offset": 658727,
+      "text": "push_cast_new_live"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11905",
+      "offset": 658748,
+      "text": "push_cast_new_post"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11906",
+      "offset": 658769,
+      "text": "push_cast_set_like"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11907",
+      "offset": 658790,
+      "text": "push_cast_set_sticker"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11908",
+      "offset": 658814,
+      "text": "push_cast_set_voice_comment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11932",
+      "offset": 659391,
+      "text": "push_subscription_new_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11947",
+      "offset": 659839,
+      "text": "quiz_close_confirm"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11948",
+      "offset": 659860,
+      "text": "quiz_failed_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11949",
+      "offset": 659882,
+      "text": "quiz_incorrect_answer"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11950",
+      "offset": 659906,
+      "text": "quiz_open_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11951",
+      "offset": 659926,
+      "text": "quiz_opened_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11952",
+      "offset": 659948,
+      "text": "quiz_placeholder_multiful_chice_question"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11953",
+      "offset": 659991,
+      "text": "quiz_refund_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11954",
+      "offset": 660011,
+      "text": "quiz_right_answer"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11955",
+      "offset": 660031,
+      "text": "quiz_select_answers_sub_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11956",
+      "offset": 660063,
+      "text": "quiz_select_answers_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11957",
+      "offset": 660091,
+      "text": "quiz_select_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11958",
+      "offset": 660111,
+      "text": "quiz_send_quiz"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11959",
+      "offset": 660128,
+      "text": "quiz_sent_by_user"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11960",
+      "offset": 660148,
+      "text": "quiz_sent_user"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11961",
+      "offset": 660165,
+      "text": "quiz_setting_answers"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11962",
+      "offset": 660188,
+      "text": "quiz_settings_description"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11963",
+      "offset": 660216,
+      "text": "quiz_share_result_failed"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11964",
+      "offset": 660243,
+      "text": "quiz_share_result_succeeded"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11965",
+      "offset": 660273,
+      "text": "quiz_start"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11966",
+      "offset": 660286,
+      "text": "quiz_start_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11967",
+      "offset": 660307,
+      "text": "quiz_sub_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11968",
+      "offset": 660324,
+      "text": "quiz_sub_title_multiful_chice_question"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11969",
+      "offset": 660365,
+      "text": "quiz_succeeded_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11970",
+      "offset": 660390,
+      "text": "quiz_text_placeholder"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11971",
+      "offset": 660414,
+      "text": "quiz_thread_message_to_dj"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11972",
+      "offset": 660442,
+      "text": "quiz_thread_message_to_everyone"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11973",
+      "offset": 660476,
+      "text": "quiz_timeout_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11974",
+      "offset": 660499,
+      "text": "quiz_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11975",
+      "offset": 660512,
+      "text": "quiz_title_write_multiful_chice_question"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11976",
+      "offset": 660555,
+      "text": "quiz_write_quiz"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11979",
+      "offset": 660599,
+      "text": "rank_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11980",
+      "offset": 660612,
+      "text": "ranking_criteria_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11987",
+      "offset": 660813,
+      "text": "record_voice_recording_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11998",
+      "offset": 661120,
+      "text": "request_permission_app_info"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:11999",
+      "offset": 661150,
+      "text": "request_permission_comment"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12000",
+      "offset": 661179,
+      "text": "request_permission_image_store"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12001",
+      "offset": 661212,
+      "text": "request_permission_record_commnet"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12002",
+      "offset": 661248,
+      "text": "request_permission_record_store"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12003",
+      "offset": 661282,
+      "text": "request_permission_record_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12004",
+      "offset": 661316,
+      "text": "request_permission_record_write_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12005",
+      "offset": 661356,
+      "text": "request_permission_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12024",
+      "offset": 661799,
+      "text": "result_empty_spoon_present_users"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12025",
+      "offset": 661834,
+      "text": "result_empty_upload_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12043",
+      "offset": 662287,
+      "text": "result_live_permission_block"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12045",
+      "offset": 662338,
+      "text": "result_max_combo_item"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12052",
+      "offset": 662505,
+      "text": "result_no_permission"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12062",
+      "offset": 662794,
+      "text": "result_permission_block"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12096",
+      "offset": 663663,
+      "text": "reward_bonus_spoon_acquired"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12101",
+      "offset": 663777,
+      "text": "reward_jackpot_spoon_acquired"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12102",
+      "offset": 663809,
+      "text": "reward_spoon_acquired"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12118",
+      "offset": 664035,
+      "text": "search_recommend_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12200",
+      "offset": 665934,
+      "text": "series_pay_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12261",
+      "offset": 667811,
+      "text": "settings_laboratory_spoon_automsg_description"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12262",
+      "offset": 667859,
+      "text": "settings_laboratory_spoon_snap_description"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12281",
+      "offset": 668604,
+      "text": "settings_push_berry_mission_noti"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12312",
+      "offset": 669606,
+      "text": "share_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12333",
+      "offset": 670023,
+      "text": "spoon_automsg_empty"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12334",
+      "offset": 670045,
+      "text": "spoon_automsg_live_engagement"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12335",
+      "offset": 670077,
+      "text": "spoon_automsg_live_engagement_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12336",
+      "offset": 670117,
+      "text": "spoon_automsg_live_send_heart"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12337",
+      "offset": 670149,
+      "text": "spoon_automsg_live_send_heart_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12338",
+      "offset": 670189,
+      "text": "spoon_automsg_live_send_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12339",
+      "offset": 670221,
+      "text": "spoon_automsg_live_send_spoon_message"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12340",
+      "offset": 670261,
+      "text": "spoon_automsg_personalization_nickname_preview"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12341",
+      "offset": 670310,
+      "text": "spoon_charge_event_remain_time"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12342",
+      "offset": 670343,
+      "text": "spoon_manager"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12343",
+      "offset": 670359,
+      "text": "spoon_received_live_broadcast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12344",
+      "offset": 670391,
+      "text": "spoon_snap_background_placeholder"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12345",
+      "offset": 670427,
+      "text": "spoon_snap_description"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12346",
+      "offset": 670452,
+      "text": "spoon_snap_description_2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12347",
+      "offset": 670479,
+      "text": "spoon_snap_display"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12348",
+      "offset": 670500,
+      "text": "spoon_snap_list_notice"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12349",
+      "offset": 670525,
+      "text": "spoon_snap_list_notice_1"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12350",
+      "offset": 670552,
+      "text": "spoon_snap_list_notice_2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12351",
+      "offset": 670579,
+      "text": "spoon_snap_list_notice_3"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12352",
+      "offset": 670606,
+      "text": "spoon_snap_livelist_empty"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12353",
+      "offset": 670634,
+      "text": "spoon_snap_select_sticker_guide"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12354",
+      "offset": 670668,
+      "text": "spoon_to_receive"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12355",
+      "offset": 670687,
+      "text": "spooner_nickname"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12371",
+      "offset": 671184,
+      "text": "square_create_category_family"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12411",
+      "offset": 672338,
+      "text": "store_current_my_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12414",
+      "offset": 672393,
+      "text": "store_gifts_cast_receive_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12425",
+      "offset": 672649,
+      "text": "store_received_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12426",
+      "offset": 672672,
+      "text": "store_required_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12427",
+      "offset": 672695,
+      "text": "store_spoon_purchase"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12428",
+      "offset": 672718,
+      "text": "store_sticker_combo_limit_guide"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12431",
+      "offset": 672802,
+      "text": "store_stored_my_spoon"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12444",
+      "offset": 673225,
+      "text": "success_text_spoon_charging"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12490",
+      "offset": 674404,
+      "text": "tooltip_live_game_btn"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12493",
+      "offset": 674487,
+      "text": "tooltip_mission_confirm"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12495",
+      "offset": 674535,
+      "text": "top_ranking_description_dj_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12496",
+      "offset": 674569,
+      "text": "top_ranking_description_dj_freelike"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12497",
+      "offset": 674607,
+      "text": "top_ranking_description_dj_live"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12498",
+      "offset": 674641,
+      "text": "top_ranking_description_dj_live_listener"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12499",
+      "offset": 674684,
+      "text": "top_ranking_description_dj_live_time"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12500",
+      "offset": 674723,
+      "text": "top_ranking_description_fan"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12501",
+      "offset": 674753,
+      "text": "top_ranking_dj_cast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12502",
+      "offset": 674775,
+      "text": "top_ranking_dj_free_like"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12503",
+      "offset": 674802,
+      "text": "top_ranking_dj_live"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12504",
+      "offset": 674824,
+      "text": "top_ranking_dj_live_listener"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12505",
+      "offset": 674855,
+      "text": "top_ranking_dj_live_time"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12568",
+      "offset": 676482,
+      "text": "welcomefanboard_channel_empty_desc"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12569",
+      "offset": 676519,
+      "text": "welcomefanboard_channel_list_button"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12570",
+      "offset": 676557,
+      "text": "welcomefanboard_delete_complete_toast"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12571",
+      "offset": 676597,
+      "text": "welcomefanboard_delete_confirm_desc"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12572",
+      "offset": 676635,
+      "text": "welcomefanboard_delete_confirm_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12573",
+      "offset": 676674,
+      "text": "welcomefanboard_deleted_post_desc"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12574",
+      "offset": 676710,
+      "text": "welcomefanboard_deleted_post_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12575",
+      "offset": 676747,
+      "text": "welcomefanboard_listener_list_empty"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12576",
+      "offset": 676785,
+      "text": "welcomefanboard_listener_list_info_desc"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12577",
+      "offset": 676827,
+      "text": "welcomefanboard_listener_list_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12578",
+      "offset": 676865,
+      "text": "welcomefanboard_save_complete_button"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12579",
+      "offset": 676904,
+      "text": "welcomefanboard_save_complete_desc"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12580",
+      "offset": 676941,
+      "text": "welcomefanboard_save_complete_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12581",
+      "offset": 676979,
+      "text": "welcomefanboard_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12582",
+      "offset": 677003,
+      "text": "welcomefanboard_write_desc"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12583",
+      "offset": 677032,
+      "text": "welcomefanboard_write_error_min_length"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12584",
+      "offset": 677073,
+      "text": "welcomefanboard_write_nickname_chip"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12585",
+      "offset": 677111,
+      "text": "welcomefanboard_write_nickname_suffix"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12586",
+      "offset": 677151,
+      "text": "welcomefanboard_write_placeholder"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12587",
+      "offset": 677187,
+      "text": "welcomefanboard_write_tip_desc_01"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12588",
+      "offset": 677223,
+      "text": "welcomefanboard_write_tip_desc_02"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12589",
+      "offset": 677259,
+      "text": "welcomefanboard_write_tip_desc_03"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12590",
+      "offset": 677295,
+      "text": "welcomefanboard_write_tip_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12591",
+      "offset": 677329,
+      "text": "welcomefanboard_write_title"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12592",
+      "offset": 677359,
+      "text": "welcomemission_body_01"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12593",
+      "offset": 677384,
+      "text": "welcomemission_body_02"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12594",
+      "offset": 677409,
+      "text": "welcomemission_header"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:12595",
+      "offset": 677433,
+      "text": "welcomemission_welcome_like_use"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13164",
+      "offset": 699664,
+      "text": "Glance.AppWidget.TextAppearance.DeviceDefaultFontFamily"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13273",
+      "offset": 704112,
+      "text": "ShapeAppearance.M3.Comp.SearchBar.Avatar.Shape"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13325",
+      "offset": 706706,
+      "text": "SpoonImageEdit.Theme"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13326",
+      "offset": 706729,
+      "text": "SpoonTheme"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13327",
+      "offset": 706742,
+      "text": "SpoonTheme.ActionBar.TitleTextStyle"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13328",
+      "offset": 706780,
+      "text": "SpoonTheme.ActionBarStyle"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13329",
+      "offset": 706808,
+      "text": "SpoonTheme.Body1"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13330",
+      "offset": 706827,
+      "text": "SpoonTheme.Body1Bold"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13331",
+      "offset": 706850,
+      "text": "SpoonTheme.Body2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13332",
+      "offset": 706869,
+      "text": "SpoonTheme.Body2Bold"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13333",
+      "offset": 706892,
+      "text": "SpoonTheme.Body2_GrayText"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13334",
+      "offset": 706920,
+      "text": "SpoonTheme.Body3"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13335",
+      "offset": 706939,
+      "text": "SpoonTheme.Body3Bold"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13336",
+      "offset": 706962,
+      "text": "SpoonTheme.Body4"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13337",
+      "offset": 706981,
+      "text": "SpoonTheme.Body4Bold"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13338",
+      "offset": 707004,
+      "text": "SpoonTheme.FullScreen"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13339",
+      "offset": 707028,
+      "text": "SpoonTheme.Headline1"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13340",
+      "offset": 707051,
+      "text": "SpoonTheme.Headline1Bold"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13341",
+      "offset": 707078,
+      "text": "SpoonTheme.Headline2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13342",
+      "offset": 707101,
+      "text": "SpoonTheme.Headline2Bold"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13343",
+      "offset": 707128,
+      "text": "SpoonTheme.Headline3"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13344",
+      "offset": 707151,
+      "text": "SpoonTheme.Headline3Bold"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13345",
+      "offset": 707178,
+      "text": "SpoonTheme.Headline4"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13346",
+      "offset": 707201,
+      "text": "SpoonTheme.Headline4Bold"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13347",
+      "offset": 707228,
+      "text": "SpoonTheme.L400"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13348",
+      "offset": 707246,
+      "text": "SpoonTheme.L700"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13349",
+      "offset": 707264,
+      "text": "SpoonTheme.M400"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13350",
+      "offset": 707282,
+      "text": "SpoonTheme.M700"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13351",
+      "offset": 707300,
+      "text": "SpoonTheme.MS400"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13352",
+      "offset": 707319,
+      "text": "SpoonTheme.MS500"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13353",
+      "offset": 707338,
+      "text": "SpoonTheme.MS600"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13354",
+      "offset": 707357,
+      "text": "SpoonTheme.MS700"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13355",
+      "offset": 707376,
+      "text": "SpoonTheme.NoActionBar"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13356",
+      "offset": 707401,
+      "text": "SpoonTheme.NoActionBar.TransStatus"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13357",
+      "offset": 707438,
+      "text": "SpoonTheme.OssLicenses"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13358",
+      "offset": 707463,
+      "text": "SpoonTheme.PopupOverlay"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13359",
+      "offset": 707489,
+      "text": "SpoonTheme.S400"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13360",
+      "offset": 707507,
+      "text": "SpoonTheme.S500"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13361",
+      "offset": 707525,
+      "text": "SpoonTheme.S600"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13362",
+      "offset": 707543,
+      "text": "SpoonTheme.S700"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13363",
+      "offset": 707561,
+      "text": "SpoonTheme.Subhead"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13364",
+      "offset": 707582,
+      "text": "SpoonTheme.SubheadBold"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13365",
+      "offset": 707607,
+      "text": "SpoonTheme.XL400"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13366",
+      "offset": 707626,
+      "text": "SpoonTheme.XL700"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13367",
+      "offset": 707645,
+      "text": "SpoonTheme.XS400"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13368",
+      "offset": 707664,
+      "text": "SpoonTheme.XS700"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13369",
+      "offset": 707683,
+      "text": "SpoonTheme.XXL400"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13370",
+      "offset": 707703,
+      "text": "SpoonTheme.XXL700"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13371",
+      "offset": 707723,
+      "text": "SpoonTheme.XXS400"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13372",
+      "offset": 707743,
+      "text": "SpoonTheme.XXS700"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13373",
+      "offset": 707763,
+      "text": "SpoonTheme2"
+    },
+    {
+      "id": "co.spoonme.apk:resources.arsc:pool:273868:string:13608",
+      "offset": 717553,
+      "text": "Theme.SpoonAndroidDesignSystem"
+    }
+  ]
+}

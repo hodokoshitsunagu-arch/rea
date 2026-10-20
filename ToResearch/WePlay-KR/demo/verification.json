@@ -1,0 +1,2048 @@
+{
+  "input_hashes": {
+    "features.test.mjs": "a6c641924ad7e406bd080a2d3beaedf55bf440de5ff6f5b7354875fe9cb2a188",
+    "index.html": "b059ffd31412a90ce2aecb0f297a6748f453c409b6fd7d7a81dc8e5a78208c6f",
+    "model.mjs": "5e338aab17fdfa84c32ace3eef3e88950a8f1900dc748a7ed67647f24351d97e",
+    "modules.json": "b84dd4067f0e0f5c101d7e1791e1be578625dfaf04d18b4ff7b4744e5f29a2f8",
+    "ui.mjs": "5a7a50b82ac4f6cc252016cc674ed92ba304b9fa7759265fff5ff88362724226"
+  },
+  "app": "WePlay-KR",
+  "module_count": 19,
+  "checks": [
+    {
+      "app": "WePlay-KR",
+      "id": "WKR01",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"slot\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"display\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR02",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"bff\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"box\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"select-card\"]",
+          "value": "永恒知己"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR03",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"relate\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"replace-ring\"]",
+          "value": "月环"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"replace\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"age\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR04",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"premium\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"join-name\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR05",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"premium\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"appoint-name\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"appoint\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-admin\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-mode\"]",
+          "value": "绘画"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-capacity\"]",
+          "value": "60"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-strangers\"]",
+          "value": "false"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-minLevel\"]",
+          "value": "3"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"manage\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"kick-admin\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"kick-target\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"kick\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR06",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stay\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"task-task\"]",
+          "value": "发送问候"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stay\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR07",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"sign\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rights\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-song\"]",
+          "value": "原创夜曲"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR08",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-game\"]",
+          "value": "卧底"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-villager\"]",
+          "value": "苹果"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-undercover\"]",
+          "value": "梨"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR09",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"extend\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"color-color\"]",
+          "value": "蓝"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"color\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"practice\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"free-color\"]",
+          "value": "红"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"free\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-color\"]",
+          "value": "蓝"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-x\"]",
+          "value": "80"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-y\"]",
+          "value": "60"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stroke\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"timeout\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR10",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"card\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"convert-amount\"]",
+          "value": "20"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"convert\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"broadcast-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"broadcast-text\"]",
+          "value": "今天一起玩绘画！"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"broadcast\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hide\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR11",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"confirm\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR12",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"describe-text\"]",
+          "value": "圆圆的水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"describe\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"skip\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"describe-text\"]",
+          "value": "好吃的水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"describe\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"skip\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-target\"]",
+          "value": "小雨"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"vote\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-target\"]",
+          "value": "小雨"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"vote\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reveal\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR13",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "Leader"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"configure-mode\"]",
+          "value": "Limited"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"configure-allocation\"]",
+          "value": "Equal"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"configure-sendType\"]",
+          "value": "1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"configure\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"send\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"active-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"active-points\"]",
+          "value": "100"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"active\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"claim-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR14",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"select-word\"]",
+          "value": "太阳"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-x\"]",
+          "value": "80"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-y\"]",
+          "value": "60"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stroke\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"upload\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"pass\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"guess-word\"]",
+          "value": "太阳"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"guess\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reveal\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"confirmShow\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-vote\"]",
+          "value": "赞"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"vote\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"confirmVote\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR15",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"grab-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"grab\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sing\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"next\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"grab-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"grab\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sing\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR16",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"bid-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"bid-amount\"]",
+          "value": "100"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bid\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"close\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"slot-time\"]",
+          "value": "19:00"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"slot\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"confirm\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"tomorrow\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"enter-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR17",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"request\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"timeout\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"force\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR18",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"join-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"join-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-x\"]",
+          "value": "80"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-y\"]",
+          "value": "60"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stroke\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-x\"]",
+          "value": "160"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-y\"]",
+          "value": "90"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stroke\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"preview\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR19",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"equip-mind\"]",
+          "value": "Natal"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"equip-source\"]",
+          "value": "self"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"equip-mind\"]",
+          "value": "Spark"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"equip-source\"]",
+          "value": "puppet"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"use-mind\"]",
+          "value": "Natal"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"use-mind\"]",
+          "value": "Spark"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR01",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"slot\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"display\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR01-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR02",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"bff\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"box\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"select-card\"]",
+          "value": "永恒知己"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR02-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR03",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"relate\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"replace-ring\"]",
+          "value": "月环"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"replace\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"age\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR03-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR04",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"premium\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"join-name\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR04-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR05",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"premium\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"appoint-name\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"appoint\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-admin\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-mode\"]",
+          "value": "绘画"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-capacity\"]",
+          "value": "60"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-strangers\"]",
+          "value": "false"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-minLevel\"]",
+          "value": "3"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"manage\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"kick-admin\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"kick-target\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"kick\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR05-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR06",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stay\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"task-task\"]",
+          "value": "发送问候"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stay\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR06-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"sign\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rights\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-song\"]",
+          "value": "原创夜曲"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR07-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR08",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-game\"]",
+          "value": "卧底"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-villager\"]",
+          "value": "苹果"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-undercover\"]",
+          "value": "梨"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR08-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR09",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"extend\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"color-color\"]",
+          "value": "蓝"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"color\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"practice\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"free-color\"]",
+          "value": "红"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"free\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-color\"]",
+          "value": "蓝"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-x\"]",
+          "value": "80"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-y\"]",
+          "value": "60"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stroke\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"timeout\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR09-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR10",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"card\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"convert-amount\"]",
+          "value": "20"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"convert\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"broadcast-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"broadcast-text\"]",
+          "value": "今天一起玩绘画！"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"broadcast\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hide\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR10-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR11",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"confirm\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR11-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR12",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"describe-text\"]",
+          "value": "圆圆的水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"describe\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"skip\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"describe-text\"]",
+          "value": "好吃的水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"describe\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"skip\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-target\"]",
+          "value": "小雨"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"vote\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-target\"]",
+          "value": "小雨"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"vote\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reveal\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR12-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR13",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "Leader"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"configure-mode\"]",
+          "value": "Limited"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"configure-allocation\"]",
+          "value": "Equal"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"configure-sendType\"]",
+          "value": "1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"configure\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"send\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"active-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"active-points\"]",
+          "value": "100"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"active\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"claim-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR13-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR14",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"select-word\"]",
+          "value": "太阳"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-x\"]",
+          "value": "80"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-y\"]",
+          "value": "60"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stroke\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"upload\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"pass\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"guess-word\"]",
+          "value": "太阳"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"guess\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reveal\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"confirmShow\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-vote\"]",
+          "value": "赞"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"vote\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"confirmVote\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR14-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR15",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"grab-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"grab\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sing\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"next\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"grab-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"grab\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sing\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR15-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR16",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"bid-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"bid-amount\"]",
+          "value": "100"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bid\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"close\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"slot-time\"]",
+          "value": "19:00"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"slot\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"confirm\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"tomorrow\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"enter-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR16-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR17",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"request\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"timeout\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"force\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR17-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR18",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"join-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"join-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-x\"]",
+          "value": "80"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-y\"]",
+          "value": "60"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stroke\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-x\"]",
+          "value": "160"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-y\"]",
+          "value": "90"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stroke\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"preview\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR18-mobile.png"
+    },
+    {
+      "app": "WePlay-KR",
+      "id": "WKR19",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"equip-mind\"]",
+          "value": "Natal"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"equip-source\"]",
+          "value": "self"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"equip-mind\"]",
+          "value": "Spark"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"equip-source\"]",
+          "value": "puppet"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"use-mind\"]",
+          "value": "Natal"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"use-mind\"]",
+          "value": "Spark"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WKR19-mobile.png"
+    }
+  ],
+  "passed": true,
+  "scope": "Local core-loop UI verification; no original APK/RTC/backend/payment/human verification."
+}

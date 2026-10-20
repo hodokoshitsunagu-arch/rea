@@ -1,0 +1,184 @@
+{
+  "target_sha256": "554cd034d0302ae99de4bce341588e821fa0ea4ad7019579bba2839536bb2f62",
+  "rea_package_evidence_id": "ev_122ca9e3f3af3c3b0d0ed6b9301e4623b759f7e96ed1800b670a01ba0c942598",
+  "findings": [
+    {
+      "id": "S01",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9522
+      },
+      "text": "Closing Room PK will result in a loss for this round. Continue?",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S02",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 11126
+      },
+      "text": "Only the owner/admin can open the auction",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S03",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 12659
+      },
+      "text": "Wait for the auctioneer to take the seat",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S04",
+      "axis": "social",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 11454
+      },
+      "text": "Relationship to be auctioneed",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S05",
+      "axis": "social",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 12280
+      },
+      "text": "This round of relationship auction has ended. Congratulations to [%1$s] for successfully bidding, maintaining the original relationship [%2$s], and increasing the intimacy value [%3$s]",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S06",
+      "axis": "social",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 12281
+      },
+      "text": "This round of relationship auction has ended. Congratulations to [%1$s] for successfully bidding, reaching a new relationship [%2$s], and increasing the intimacy value [%3$s]",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S07",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9245
+      },
+      "text": "Auction is in progress",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S08",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 10687
+      },
+      "text": "Ludo",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S09",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 12546
+      },
+      "text": "Users cannot win the auction if lower than the lowest win price",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S10",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 12680
+      },
+      "text": "Weapon PK + mission gameplay",
+      "remaining": "是否已启用及实际服务端执行未知"
+    }
+  ],
+  "class_descriptor_candidates": [
+    "Lcom/game/voiceroom/component/auction/a;",
+    "Lcom/game/voiceroom/component/auction/b;",
+    "Lcom/game/voiceroom/component/auction/d;",
+    "Lcom/game/voiceroom/component/auction/dialog/AuctionBidderRankDialog;",
+    "Lcom/game/voiceroom/component/auction/dialog/AuctionResultDialog;",
+    "Lcom/game/voiceroom/component/auction/dialog/OpenAuctionDialog;",
+    "Lcom/game/voiceroom/component/auction/dialog/SettingAuctionDialog;",
+    "Lcom/game/voiceroom/component/auction/dialog/j0;",
+    "Lcom/game/voiceroom/component/auction/e;",
+    "Lcom/game/voiceroom/component/auction/f;",
+    "Lcom/game/voiceroom/component/auction/g;",
+    "Lcom/game/voiceroom/component/auction/h;",
+    "Lcom/game/voiceroom/component/auction/models/AuctionModeContentBean;",
+    "Lcom/game/voiceroom/component/auction/models/AuctionState;",
+    "Lcom/game/voiceroom/component/auction/models/AuctionStateDataBean;",
+    "Lcom/game/voiceroom/component/auction/view/AuctionRankView;",
+    "Lcom/game/voiceroom/component/auction/dialog/m0;",
+    "Lcom/game/voiceroom/component/auction/dialog/compose/a;",
+    "Lcom/game/voiceroom/component/auction/c;",
+    "Lcom/game/voiceroom/component/auction/dialog/a0;",
+    "Lcom/game/voiceroom/component/auction/dialog/a;",
+    "Lcom/game/voiceroom/component/auction/dialog/b0;",
+    "Lcom/game/voiceroom/component/auction/dialog/b;",
+    "Lcom/game/voiceroom/component/auction/dialog/c0;",
+    "Lcom/game/voiceroom/component/auction/dialog/c;",
+    "Lcom/game/voiceroom/component/auction/dialog/d0;",
+    "Lcom/game/voiceroom/component/auction/dialog/d;",
+    "Lcom/game/voiceroom/component/auction/dialog/e0;",
+    "Lcom/game/voiceroom/component/auction/dialog/e;",
+    "Lcom/game/voiceroom/component/auction/dialog/f0;",
+    "Lcom/game/voiceroom/component/auction/dialog/f;",
+    "Lcom/game/voiceroom/component/auction/dialog/g0;",
+    "Lcom/game/voiceroom/component/auction/dialog/g;",
+    "Lcom/game/voiceroom/component/auction/dialog/h0;",
+    "Lcom/game/voiceroom/component/auction/dialog/h;",
+    "Lcom/game/voiceroom/component/auction/dialog/i0;",
+    "Lcom/game/voiceroom/component/auction/dialog/i;",
+    "Lcom/game/voiceroom/component/auction/dialog/j;",
+    "Lcom/game/voiceroom/component/auction/dialog/k0;",
+    "Lcom/game/voiceroom/component/auction/dialog/k;"
+  ],
+  "coverage": {
+    "voice": "partial",
+    "social": "partial",
+    "games": "partial",
+    "runtime": "not examined"
+  }
+}

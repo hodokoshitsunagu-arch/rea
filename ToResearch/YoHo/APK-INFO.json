@@ -1,0 +1,56 @@
+{
+  "app": "YoHo",
+  "regions": "MENA",
+  "package": "com.voicechat.live.group",
+  "version": "5.48.40",
+  "version_code": 4630,
+  "selected_file": "YoHo-5.48.40.apk",
+  "source": "Official website",
+  "source_page": "https://www.yoho.media/",
+  "retrieved_at": "2026-10-13T07:48:50.369561+00:00",
+  "checks": {
+    "zip_crc": "passed",
+    "manifest_package_match": true,
+    "manifest_version": "read from downloaded APK",
+    "android_runtime": "not tested",
+    "publisher_signature": "not cryptographically verified"
+  },
+  "files": [
+    {
+      "path": "YoHo-5.48.40.apk",
+      "bytes": 96735470,
+      "sha256": "2d26edd454bd9bd7d39d9df94750aa7cc714c0d6c3e445ebbde10c9d1ffc14c8",
+      "sha1": "473bbaf9f897b1eda8df1ace00f4a231223aac6f",
+      "manifest": {
+        "package": "com.voicechat.live.group",
+        "versionName": "5.48.40",
+        "versionCode": 4630,
+        "split": null
+      }
+    }
+  ],
+  "compared_sources": [
+    {
+      "source_page": "https://www.yoho.media/",
+      "file": "YoHo-5.48.40.apk",
+      "identity": {
+        "package": "com.voicechat.live.group",
+        "versionName": "5.48.40",
+        "versionCode": 4630,
+        "split": null
+      }
+    },
+    {
+      "source_page": "https://apkpure.net/yoho/com.voicechat.live.group/download",
+      "file": "source-comparison/YoHo-5.48.30.xapk",
+      "identity": {
+        "package": "com.voicechat.live.group",
+        "versionName": "5.48.30",
+        "versionCode": 4620,
+        "split": null
+      }
+    }
+  ],
+  "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+  "mirror_advertised_date": "Sep 22, 2026"
+}

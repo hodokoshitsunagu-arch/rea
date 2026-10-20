@@ -1,0 +1,19 @@
+{
+  "app": "SUGO",
+  "region": "LATAM; SEA (regional package identity pending)",
+  "source_page": "https://www.sugo.com/mobile",
+  "download_url": "https://web-app-apk.voicemaker.media/apk/sugo_release.apk",
+  "final_url": "https://web-app-apk.voicemaker.media/apk/sugo_release.apk",
+  "retrieved_at": "2026-10-13T07:48:31.348255+00:00",
+  "file": "SUGO-2.52.0.1.apk",
+  "bytes": 202100621,
+  "sha256": "24e683f9dce6d6dd83a53dc4d84768a36bb2e96f63173ba2abcaec8052673ae2",
+  "zip_crc": "passed",
+  "latest_scope": "Official website current download; Google Play staged releases not independently checked",
+  "manifest_identity": {
+    "package": "com.voicemaker.android",
+    "versionName": "2.52.0.1",
+    "versionCode": 326,
+    "split": null
+  }
+}

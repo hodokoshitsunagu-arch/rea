@@ -1,0 +1,120 @@
+{
+  "selection": "Report-specific bounded excerpts; full keyword records remain in sibling evidence files",
+  "records": [
+    {
+      "id": "com.dena.pokota.apk:classes.dex:string:15688",
+      "offset": 6727531,
+      "text": "Lcom/dena/pokota/model/multi_channel_family/FamilyChannelPermissionType;"
+    },
+    {
+      "id": "com.dena.pokota.apk:classes3.dex:string:2312",
+      "offset": 5820113,
+      "text": "(Ljava/lang/String;)Lcom/dena/pokota/model/multi_channel_family/FamilyChannelPermissionType;"
+    },
+    {
+      "id": "com.dena.pokota.apk:classes3.dex:string:2536",
+      "offset": 5835853,
+      "text": "(Lycj;)Lcom/dena/pokota/model/multi_channel_family/FamilyChannelPermissionType;"
+    },
+    {
+      "id": "com.dena.pokota.apk:classes4.dex:string:1008",
+      "offset": 6324596,
+      "text": "(ILjava/lang/String;ILjava/lang/String;Lcom/dena/pokota/model/liveevent/ListeningRecord;Lcom/dena/pokota/model/liveevent/LiverFamily;Lcom/dena/pokota/model/liveevent/DailyTopFun;Lcom/dena/pokota/model/liveevent/DailyTopFun;Lcom/dena/pokota/model/liveevent/FIRPocoKnight;ZZZLcom/dena/pokota/model/liveevent/FIRDecoratedProfileBadge;Ljava/lang/String;)V"
+    },
+    {
+      "id": "com.dena.pokota.apk:classes4.dex:string:2721",
+      "offset": 6378432,
+      "text": ", rankMeterCurrentPoint="
+    },
+    {
+      "id": "com.dena.pokota.apk:classes4.dex:string:2724",
+      "offset": 6378506,
+      "text": ", rankMeterPoints="
+    },
+    {
+      "id": "com.dena.pokota.apk:classes6.dex:string:8082",
+      "offset": 5984518,
+      "text": "CheerBursts.java"
+    },
+    {
+      "id": "com.dena.pokota.apk:classes6.dex:string:22850",
+      "offset": 6438031,
+      "text": "Lprotobuf/api/festivals/logics/cheer_bursts/CheerBursts$DebuffDetail$a;"
+    },
+    {
+      "id": "com.dena.pokota.apk:classes6.dex:string:22851",
+      "offset": 6438104,
+      "text": "Lprotobuf/api/festivals/logics/cheer_bursts/CheerBursts$DebuffDetail;"
+    },
+    {
+      "id": "com.dena.pokota.apk:classes6.dex:string:22889",
+      "offset": 6441544,
+      "text": "Lprotobuf/api/festivals/logics/cheer_bursts/daily_rankings/DailyRankings$GetPocoKnightV1Response$a;"
+    },
+    {
+      "id": "com.dena.pokota.apk:classes6.dex:string:22890",
+      "offset": 6441645,
+      "text": "Lprotobuf/api/festivals/logics/cheer_bursts/daily_rankings/DailyRankings$GetPocoKnightV1Response;"
+    },
+    {
+      "id": "com.dena.pokota.apk:classes6.dex:string:23102",
+      "offset": 6458984,
+      "text": "Lprotobuf/resources/RankMeterOuterClass$RankMeter$RankMeterPoint;"
+    },
+    {
+      "id": "com.dena.pokota.apk:classes6.dex:string:23103",
+      "offset": 6459051,
+      "text": "Lprotobuf/resources/RankMeterOuterClass$RankMeter$a;"
+    },
+    {
+      "id": "com.dena.pokota.apk:classes6.dex:string:23104",
+      "offset": 6459105,
+      "text": "Lprotobuf/resources/RankMeterOuterClass$RankMeter$b;"
+    },
+    {
+      "id": "com.dena.pokota.apk:classes6.dex:string:34286",
+      "offset": 6694475,
+      "text": "addAllRankMeterPoints"
+    },
+    {
+      "id": "com.dena.pokota.apk:classes6.dex:string:34461",
+      "offset": 6697759,
+      "text": "addRankMeterPoints"
+    },
+    {
+      "id": "com.dena.pokota.apk:classes6.dex:string:36541",
+      "offset": 6738388,
+      "text": "clearRankMeterCurrentPoint"
+    },
+    {
+      "id": "com.dena.pokota.apk:classes6.dex:string:42313",
+      "offset": 6873330,
+      "text": "getRankMeterCurrentPoint"
+    },
+    {
+      "id": "com.dena.pokota.apk:resources.arsc:pool:12:string:2369",
+      "offset": 175577,
+      "text": "- After the %1$s day of the month, you can broadcast even if you did not set a Rest Day for the current month."
+    },
+    {
+      "id": "com.dena.pokota.apk:resources.arsc:pool:12:string:2373",
+      "offset": 175837,
+      "text": "- You cannot broadcast on a Rest Day. \n- Your Rank will not change on a Rest Day. \n- You cannot use a Freeze Pass and Rest Day at the same time. \n- You can change a Rest Day’s settings until 10 minutes before it starts. \n- If a Rest Day starts while you are broadcasting, the broadcast will end automatically after a fixed amount of time."
+    },
+    {
+      "id": "com.dena.pokota.apk:resources.arsc:pool:12:string:2805",
+      "offset": 186464,
+      "text": "Freezes your Rank Meter so you can take time off as needed."
+    },
+    {
+      "id": "com.dena.pokota.apk:resources.arsc:pool:12:string:2871",
+      "offset": 188147,
+      "text": "It has been %1$s days since you last watched a broadcast. You will automatically be removed from the Family if you do not watch any broadcasts for 10 consecutive days."
+    },
+    {
+      "id": "com.dena.pokota.apk:resources.arsc:pool:12:string:3092",
+      "offset": 194718,
+      "text": "Pococha asks broadcasters to take Rest Days. \nWe hope you can enjoy broadcasting by pacing yourself and taking time for self-care!"
+    }
+  ]
+}

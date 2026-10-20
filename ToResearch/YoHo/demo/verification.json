@@ -1,0 +1,931 @@
+{
+  "input_hashes": {
+    "features.mjs": "201d393eab7490c62ba99f083dfa43a67e5f0aefa5835890d514a7c1b8c24eb1",
+    "features.test.mjs": "b0cc1b359fc10b07107a28bb8a315a97107b0560a896075028329361afe7e6ef",
+    "index.html": "8b96a31657246cd7d58f6edc3bd342bebfe17cc293f3900d14b9bfebe9991654",
+    "modules.json": "e6408b309a2288f5099e4412cbd863535f0dc3b48abe04f3ec72e8e300ea03d6",
+    "ui.mjs": "9a2e3cffa34b392b1e11432bea2c2bd141e0ea944bd05255c28f4a546596bf88"
+  },
+  "app": "YoHo",
+  "module_count": 12,
+  "checks": [
+    {
+      "app": "YoHo",
+      "id": "YOH01",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH02",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH03",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH04",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH05",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH06",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH07",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH08",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH09",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH10",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH11",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH12",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH01",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YOH01-mobile.png"
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH02",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YOH02-mobile.png"
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH03",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YOH03-mobile.png"
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH04",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YOH04-mobile.png"
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH05",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YOH05-mobile.png"
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH06",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YOH06-mobile.png"
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YOH07-mobile.png"
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH08",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YOH08-mobile.png"
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH09",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YOH09-mobile.png"
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH10",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YOH10-mobile.png"
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH11",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YOH11-mobile.png"
+    },
+    {
+      "app": "YoHo",
+      "id": "YOH12",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/YOH12-mobile.png"
+    }
+  ],
+  "passed": true,
+  "scope": "Local core-loop UI verification; no original APK/RTC/backend/payment/human verification."
+}

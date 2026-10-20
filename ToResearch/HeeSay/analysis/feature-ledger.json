@@ -1,0 +1,42 @@
+[
+  {
+    "question": "语音守护关系怎样产生",
+    "direct_evidence": "资源10180：GMT+0单日送给主播2500Beans成为guardian；主播可有多个guardian、用户可守护多个主播；Top1 guardian与主播成为Couple，榜单可能延迟1–2分钟。",
+    "derivation_or_inference": "推导：guardian是多对多资格，Couple是主播维度Top1排名投影，不能直接把两者等同互斥好友。",
+    "unknown": "同分规则、隐藏分、关系更新事务、守护者资格过期、账号地域限制未知。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "守护积分为何会变化",
+    "direct_evidence": "资源10161：1Bean=1Guardian Point，积分有效7天，于获得后第8天GMT+0午夜扣除。",
+    "derivation_or_inference": "推导：积分应按获得批次带到期时间，累积总量不能永久保存。",
+    "unknown": "跨时区服务器时钟、退礼扣分、精确起止含当日语义没有运行核实。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "Hot Pick有哪些服务器参数",
+    "direct_evidence": "REA `HotPickScoreConfig`真实字段rank_type、score、name、image；`VoiceHotPickConfig`有end_seconds、is_hot_pick_open、is_show_hot_pick、is_show_hot_pick_btn、score_config、time_config。资源有Hot Pick阶段禁用跨房PK提示。",
+    "derivation_or_inference": "推导：开放态、可见态、按钮态应分开；得分与时间可配置。",
+    "unknown": "rank_type枚举含义、计分来源、胜者判定、结束后奖励未知，未硬造Hot Pick完整规则。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "Card Battle能看到什么",
+    "direct_evidence": "资源10336明确3张常规卡+1张secret card，第二张倒计时揭示、第三张结束时揭示；10333/10401说明高分队赢；10437开局人数/参与次数字段门槛；根目录`GameProtos.proto`存在secret card合成/第四卡购买确认的事件枚举。",
+    "derivation_or_inference": "推导：存在分阶段信息揭示与秘密卡解锁入口。该proto包名为DAS客户端game，属于埋点描述而非对局消息协议。",
+    "unknown": "卡牌点值概率、secret card权限、合成算法、结算赔率与服务器协议未知；本轮不实现虚构赌局。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "其他非基础互动",
+    "direct_evidence": "10191把Dice/Roshambo与语音房普通评论区分计任务；GameProtos有Lion vs Tiger、免费币、轮盘与任务埋点；VoiceGameLudoUtils类名包含downloadGameFile。",
+    "derivation_or_inference": "推断：小游戏与任务经济相互连接，部分资源可能动态加载。",
+    "unknown": "SDK或类名不能证明当前可玩游戏、下载地址有效性、支付/奖池真实性；本轮未执行动态下载。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  }
+]

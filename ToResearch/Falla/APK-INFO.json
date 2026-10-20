@@ -1,0 +1,78 @@
+{
+  "app": "Falla",
+  "regions": "Spanish; Portuguese",
+  "package": "com.juhaoliao.vochat",
+  "version": "V9.23.0",
+  "version_code": 9230,
+  "selected_file": "Falla-V9.23.0.xapk",
+  "source": "APKPure mirror",
+  "source_page": "https://apkpure.net/falla/com.juhaoliao.vochat/download",
+  "retrieved_at": "2026-10-13T08:00:06.229639+00:00",
+  "checks": {
+    "zip_crc": "passed",
+    "manifest_package_match": true,
+    "manifest_version": "read from downloaded APK",
+    "android_runtime": "not tested",
+    "publisher_signature": "not cryptographically verified",
+    "published_archive_sha1_match": true
+  },
+  "files": [
+    {
+      "path": "Falla-V9.23.0.xapk",
+      "bytes": 206446289,
+      "sha256": "bb2bb9d99f03b3476d198f515fd7589856bacb65d8b1548dae339b81b290d903",
+      "sha1": "ad87771085d7d9e59ea1d8625195e6248e53b40c",
+      "manifest": null
+    },
+    {
+      "path": "apks/com.juhaoliao.vochat.apk",
+      "bytes": 131961721,
+      "sha256": "c927d0193643e097f0287188924aeb8dafefb5c66be91462bc3d61f4bc59dc59",
+      "sha1": "997dd5301e221535360b740ece5af69ed46a285e",
+      "manifest": {
+        "package": "com.juhaoliao.vochat",
+        "versionName": "V9.23.0",
+        "versionCode": 9230,
+        "split": null
+      }
+    },
+    {
+      "path": "apks/config.xxhdpi.apk",
+      "bytes": 243042,
+      "sha256": "c6bc288ec0e78f11597a5c90a6b8c674a0d6a2d606f9888e6bf51331d0ab5779",
+      "sha1": "f871ab3ceef8e1150e4c5aa07afe854b7fad2275",
+      "manifest": {
+        "package": "com.juhaoliao.vochat",
+        "versionName": null,
+        "versionCode": 9230,
+        "split": "config.xxhdpi"
+      }
+    },
+    {
+      "path": "apks/config.arm64_v8a.apk",
+      "bytes": 74205824,
+      "sha256": "5500b36f90aaea5cb3c9a2fba59679e3abcf87d69b875c3d6997a36b4cacf6f2",
+      "sha1": "db4621af1641db52f7351cc523b13852e2d2d63f",
+      "manifest": {
+        "package": "com.juhaoliao.vochat",
+        "versionName": null,
+        "versionCode": 9230,
+        "split": "config.arm64_v8a"
+      }
+    }
+  ],
+  "compared_sources": [
+    {
+      "source_page": "https://apkpure.net/falla/com.juhaoliao.vochat/download",
+      "file": "Falla-V9.23.0.xapk",
+      "identity": {
+        "package": "com.juhaoliao.vochat",
+        "versionName": "V9.23.0",
+        "versionCode": 9230,
+        "split": null
+      }
+    }
+  ],
+  "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+  "mirror_advertised_date": "Sep 23, 2026"
+}

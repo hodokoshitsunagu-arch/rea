@@ -1,0 +1,765 @@
+{
+  "app": "Yalla-Parchis",
+  "modules": [
+    {
+      "id": "YPH01",
+      "title": "Classic/Spanish 双骰策略",
+      "implemented_scope": "两种模式骰史实验；专属操作：选择Spanish最后移动子处罚 → 输入骰子2+3（和5出巢） → 输入骰子5+2 → 输入双5 → 用5点出巢一子 → 将余下骰额给首子",
+      "limitations": [
+        "未移动棋子处罚",
+        "骰子服务器产生",
+        "40格实验轨道；Classic退最前棋子/Spanish退最后移动子与单双5出巢来自源规则；无已移动子处罚未知",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"exit\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"roll5\"]",
+          "expected_text": "输入骰子5+2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exit\"]",
+          "expected_text": "用5点出巢一子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"move\"]",
+          "expected_text": "将余下骰额给首子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rollDouble\"]",
+          "expected_text": "输入双5"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exit\"]",
+          "expected_text": "用5点出巢一子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exit\"]",
+          "expected_text": "用5点出巢一子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rollDouble\"]",
+          "expected_text": "输入双5"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"move\"]",
+          "expected_text": "将余下骰额给首子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"move\"]",
+          "expected_text": "将余下骰额给首子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rollDouble\"]",
+          "expected_text": "输入双5"
+        }
+      ]
+    },
+    {
+      "id": "YPH02",
+      "title": "路障与强制拆障",
+      "implemented_scope": "布局策略实验；专属操作：路障导致无棋可走，本回合作废 → 对手尝试穿越格4 → 输入双数并触发拆障义务 → 尝试绕过强拆义务 → 首子移动2格拆路障",
+      "limitations": [
+        "终点轨道例外",
+        "无法行动额度消费",
+        "仅直线试验格0–8；终点轨道例外与不可行动额度未知",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"opponent\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"double\"]",
+          "expected_text": "输入双数并触发拆障义务"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"split\"]",
+          "expected_text": "首子移动2格拆路障"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"opponent\"]",
+          "expected_text": "对手尝试穿越格4"
+        }
+      ]
+    },
+    {
+      "id": "YPH03",
+      "title": "吃子20步和终点10步奖励",
+      "implemented_scope": "奖励额度策略实验；专属操作：移动4格捕获对手 → 把20步奖励分配给第二子 → 首子精确进入本地40格终点 → 第二子消费10步终点奖励",
+      "limitations": [
+        "奖励串联",
+        "棋盘安全格坐标",
+        "40格与捕获路径本地布局；奖励20/10为源规则，奖励串联未知",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"bonus\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"capture\"]",
+          "expected_text": "移动4格捕获对手"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bonus\"]",
+          "expected_text": "把20步奖励分配给第二子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]",
+          "expected_text": "首子精确进入本地40格终点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finishBonus\"]",
+          "expected_text": "第二子消费10步终点奖励"
+        }
+      ]
+    },
+    {
+      "id": "YPH04",
+      "title": "队伍八子终局和代操作队友",
+      "implemented_scope": "协作残局与代操作；专属操作：自己一枚棋子到终点 → 代队友走完一枚 → 队友主动退出",
+      "limitations": [
+        "代操作冲突",
+        "挂机/掉线和主动退出区别",
+        "使用终点事件而非原棋盘寻路；退出只模拟主动退出，断线与挂机未知",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"assist\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"own\"]",
+          "expected_text": "自己一枚棋子到终点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"own\"]",
+          "expected_text": "自己一枚棋子到终点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"own\"]",
+          "expected_text": "自己一枚棋子到终点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"own\"]",
+          "expected_text": "自己一枚棋子到终点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"assist\"]",
+          "expected_text": "代队友走完一枚"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"assist\"]",
+          "expected_text": "代队友走完一枚"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"assist\"]",
+          "expected_text": "代队友走完一枚"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"assist\"]",
+          "expected_text": "代队友走完一枚"
+        }
+      ]
+    },
+    {
+      "id": "YPH05",
+      "title": "联赛升降和传奇星",
+      "implemented_scope": "周结算联赛沙盘；专属操作：达到玩家Lv4 → 每周结算前20%晋升 → 开启新一周 → 结算传奇前40名拿星 → 输入后20%并结算降级",
+      "limitations": [
+        "联赛分生产",
+        "分组容量",
+        "同分",
+        "100人和普通/传奇两段本地参数；积分生产与同分不模拟，前20/后20/传奇前40为源边界",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"promote\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"level\"]",
+          "expected_text": "达到玩家Lv4"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"promote\"]",
+          "expected_text": "每周结算前20%晋升"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "开启新一周"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"star\"]",
+          "expected_text": "结算传奇前40名拿星"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "开启新一周"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bottom\"]",
+          "expected_text": "输入后20%并结算降级"
+        }
+      ]
+    },
+    {
+      "id": "YPH06",
+      "title": "宝箱队列与通行证",
+      "implemented_scope": "宝箱排队系统；专属操作：注入胜局获得宝箱 → 授予模拟Event Pass → 开箱/通行证串行排队 → 推进本地60分钟",
+      "limitations": [
+        "解锁时长/掉率",
+        "队列容量",
+        "每箱60分钟、本地无容量；奖励只标注样本种类，不冒充掉率",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"hour\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"win\"]",
+          "expected_text": "注入胜局获得宝箱"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"win\"]",
+          "expected_text": "注入胜局获得宝箱"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"pass\"]",
+          "expected_text": "授予模拟Event Pass"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "开箱/通行证串行排队"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hour\"]",
+          "expected_text": "推进本地60分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hour\"]",
+          "expected_text": "推进本地60分钟"
+        }
+      ]
+    },
+    {
+      "id": "YPH07",
+      "title": "协助缩短开箱",
+      "implemented_scope": "互助开箱状态机；专属操作：好友阿宁协助减20分钟 → 好友米拉协助减20分钟 → 推进GMT-5午夜 → 推进剩余解锁时间",
+      "limitations": [
+        "次数上限",
+        "协助者奖励",
+        "减时来源",
+        "每人一次20分钟和开箱100分钟为本地参数；GMT-5午夜额度清零为源边界",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"helpB\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"helpA\"]",
+          "expected_text": "好友阿宁协助减20分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"helpB\"]",
+          "expected_text": "好友米拉协助减20分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"midnight\"]",
+          "expected_text": "推进GMT-5午夜"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]",
+          "expected_text": "推进剩余解锁时间"
+        }
+      ],
+      "regression_fix": "两位好友协助统一由applyChestHelp拥有资格与去重；宝箱已开后helpA/helpB均拒绝且remaining/reduction/helped不改变。"
+    },
+    {
+      "id": "YPH08",
+      "title": "VIP Elite 房与观战身份",
+      "implemented_scope": "房间权限矩阵演示；专属操作：模拟VIP2有效订阅 → 创建Elite房邀请VIP2 → 以VIP观众身份观战发特效弹幕 → 房主踢出模拟访客 → 模拟订阅到期",
+      "limitations": [
+        "Android实际支付实现",
+        "等级成本",
+        "订阅仅模拟；房内到期保留房间、关闭新权益为本地选择",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"elite\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"vip\"]",
+          "expected_text": "模拟VIP2有效订阅"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"elite\"]",
+          "expected_text": "创建Elite房邀请VIP2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "以VIP观众身份观战发特效弹幕"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"kick\"]",
+          "expected_text": "房主踢出模拟访客"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "模拟订阅到期"
+        }
+      ]
+    },
+    {
+      "id": "YPH09",
+      "title": "Member Club 任务社群",
+      "implemented_scope": "房间社群任务与周荣誉；专属操作：加入房间Member Club → 完成会员任务（本地10贡献） → 推进GMT-5 01:00夜间统计窗口 → 推进GMT-5 12:00午间统计窗口 → 统计窗口更新贡献排名快照 → 离开会员团等待统计清榜 → 结算本地周榜Top3样本 → GMT-5新周清贡献窗口",
+      "limitations": [
+        "具体任务积分",
+        "退团清算时刻",
+        "10贡献任务、20升级与Top3样本资格均本地参数；GMT-5 01–02/12–13窗口与离团统计清除来自源规则；同分先注册优先显示为规则，未建完整原榜",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]",
+          "expected_text": "加入房间Member Club"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "完成会员任务（本地10贡献）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "完成会员任务（本地10贡献）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"window1\"]",
+          "expected_text": "推进GMT-5 01:00夜间统计窗口"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "统计窗口更新贡献排名快照"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"settle\"]",
+          "expected_text": "结算本地周榜Top3样本"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "GMT-5新周清贡献窗口"
+        }
+      ]
+    },
+    {
+      "id": "YPH10",
+      "title": "Baron 房内按月权益续费",
+      "implemented_scope": "双资格体系与续期沙盘；专属操作：模拟花20钻开通30天Baron → 推进至到期前12小时 → 模拟当天登录 → 检查12小时续费窗口 → 推进至当前到期",
+      "limitations": [
+        "价格配置",
+        "准确权益列表",
+        "30天周期与20钻价格为本地参数；12小时/20天源边界，续期从旧到期累加为重构",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"renew\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]",
+          "expected_text": "模拟花20钻开通30天Baron"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"near\"]",
+          "expected_text": "推进至到期前12小时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"login\"]",
+          "expected_text": "模拟当天登录"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"renew\"]",
+          "expected_text": "检查12小时续费窗口"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "推进至当前到期"
+        }
+      ]
+    },
+    {
+      "id": "YPH11",
+      "title": "关系亲密度衰减",
+      "implemented_scope": "可配置亲密度生命周期；专属操作：注入未知停滞天数，保留未知状态 → 恢复本地停滞3天参数 → 与好友互动（本地10点） → 推进1天并检查停滞",
+      "limitations": [
+        "天数和衰减公式",
+        "关系类型",
+        "停滞3天、每日扣10、每10点1级都是明确本地参数，源只提供占位天数与衰减方向",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"unknownConfig\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]",
+          "expected_text": "与好友互动（本地10点）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进1天并检查停滞"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进1天并检查停滞"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进1天并检查停滞"
+        }
+      ]
+    },
+    {
+      "id": "YPH12",
+      "title": "礼物专属 Sponsor 冠名",
+      "implemented_scope": "礼物维度冠名榜；专属操作：阿澄送指定玫瑰1朵 → 米拉送指定玫瑰1朵 → 推进5分钟发布Sponsor → GMT-5周一开始新周",
+      "limitations": [
+        "退礼处理",
+        "不同礼包礼物计数",
+        "选择5分钟延迟（源范围5–30）；本地只计指定玫瑰，同分按先达到；退款未知",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftA\"]",
+          "expected_text": "阿澄送指定玫瑰1朵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "推进5分钟发布Sponsor"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "米拉送指定玫瑰1朵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "推进5分钟发布Sponsor"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "米拉送指定玫瑰1朵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "推进5分钟发布Sponsor"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "GMT-5周一开始新周"
+        }
+      ]
+    },
+    {
+      "id": "YPH13",
+      "title": "Royal 充值等级和冻结权益",
+      "implemented_scope": "权益冻结与兑换原型；专属操作：注入模拟充值10点/10币 → 注入Royal冻结状态 → 兑换本地10币装扮 → 注入Royal解冻状态",
+      "limitations": [
+        "维护/冻结规则",
+        "等级成本",
+        "兑换限制",
+        "10点一级、10币兑换和2币加成为本地参数；冻结/解冻由注入状态不补造维护规则",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"exchange\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"topup\"]",
+          "expected_text": "注入模拟充值10点/10币"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"freeze\"]",
+          "expected_text": "注入Royal冻结状态"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"topup\"]",
+          "expected_text": "注入模拟充值10点/10币"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"restore\"]",
+          "expected_text": "注入Royal解冻状态"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exchange\"]",
+          "expected_text": "兑换本地10币装扮"
+        }
+      ]
+    },
+    {
+      "id": "YPH14",
+      "title": "Fruit Merge 复活与排行",
+      "implemented_scope": "单机合成玩法核心；专属操作：拖放合并前两颗同类水果 → 顶部落下Lv2水果 → 清顶部水果复活一次 → 退出保存布局 → 手动更新排行榜样本",
+      "limitations": [
+        "碰撞/得分",
+        "道具成本",
+        "排行榜奖励",
+        "使用离散水果栈，非原物理引擎；合成分=新等级/复活一次均本地参数；退出保存与失败手动更新为源方向",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"update\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"merge\"]",
+          "expected_text": "拖放合并前两颗同类水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"drop\"]",
+          "expected_text": "顶部落下Lv2水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"merge\"]",
+          "expected_text": "拖放合并前两颗同类水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"revive\"]",
+          "expected_text": "清顶部水果复活一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exit\"]",
+          "expected_text": "退出保存布局"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"update\"]",
+          "expected_text": "手动更新排行榜样本"
+        }
+      ]
+    },
+    {
+      "id": "YPH15",
+      "title": "邀请新用户到二级领奖",
+      "implemented_scope": "邀请任务状态流；专属操作：选择模拟奖励：主题皮肤 → 两位新用户注册邀请码 → 阿宁玩到Lv2核验 → 小云玩到Lv2核验 → 限时领取本地奖励 → 推进至活动第3天到期",
+      "limitations": [
+        "人数动态",
+        "反作弊",
+        "真实奖励",
+        "2位新用户和3天倒计时为本地配置；不做真实引流、反作弊、邮件或奖励",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"register\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"level2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"register\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"level2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]",
+          "expected_text": "选择模拟奖励：主题皮肤"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"register\"]",
+          "expected_text": "两位新用户注册邀请码"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"level2\"]",
+          "expected_text": "阿宁玩到Lv2核验"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"second\"]",
+          "expected_text": "小云玩到Lv2核验"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "限时领取本地奖励"
+        }
+      ],
+      "regression_fix": "重复注册和领取后注册均拒绝；邀请身份counted由单次登记拥有，不得覆盖已核验记录。复现select→register→level2→register→level2→claim不会领取，remaining仍1，小云仍Lv1；second后方可领奖。"
+    }
+  ]
+}

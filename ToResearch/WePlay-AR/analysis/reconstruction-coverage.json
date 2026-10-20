@@ -1,0 +1,1736 @@
+{
+  "app": "WePlay-AR",
+  "count": 16,
+  "items": [
+    {
+      "id": "WAR01",
+      "kind": "bff",
+      "source_rules": [
+        "文本普通门槛为1000 Guard；竞拍BFF可绕过此门槛。",
+        "展示新增BFF槽位另需Gold，价格/槽位数是占位符。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13041c",
+          "resource_key": "build_intimacy",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3183780,
+          "string_index": 12991,
+          "string_offset": 579352,
+          "quote": "To become a BFF, you need to reach a Guard of 1000! (In the bidding room, bidding for a BFF can bypass this requirement.)"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13020c",
+          "resource_key": "ask_to_be_intimacy_friend_invited",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3175764,
+          "string_index": 10788,
+          "string_offset": 511141,
+          "quote": "Inviting, waiting for the other user to agree"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13041e",
+          "resource_key": "build_intimacy_tips1",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3183812,
+          "string_index": 9260,
+          "string_offset": 467925,
+          "quote": "Are you sure to spend <b><font color=#FFA94A>%1$s</font></b> Gold to unlock the %2$sth BFF slot"
+        }
+      ],
+      "not_recovered": [
+        "Guard增加/衰减公式、旁路服务端授权、并行申请与槽位价格未知。"
+      ],
+      "local_choices": {
+        "parameters": {
+          "slotPrice": 20,
+          "guardPerInteraction": 250
+        },
+        "source_fixed_constraints": [
+          "文本普通门槛为1000 Guard；竞拍BFF可绕过此门槛。",
+          "展示新增BFF槽位另需Gold，价格/槽位数是占位符。"
+        ],
+        "phase_model": {
+          "actor": "小夏",
+          "peer": "阿辰",
+          "guard": 0,
+          "bidding": false,
+          "phase": "none",
+          "gold": 100,
+          "slots": 0,
+          "display": []
+        },
+        "actions": [
+          {
+            "id": "interact",
+            "participant_action": "双方互动增加本地Guard"
+          },
+          {
+            "id": "bid",
+            "participant_action": "竞拍房获得本地旁路"
+          },
+          {
+            "id": "invite",
+            "participant_action": "小夏发起BFF邀请"
+          },
+          {
+            "id": "accept",
+            "participant_action": "阿辰同意关系"
+          },
+          {
+            "id": "slot",
+            "participant_action": "支付Gold解锁展示槽"
+          },
+          {
+            "id": "display",
+            "participant_action": "把BFF关系放入展示槽"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:bff",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    },
+    {
+      "id": "WAR02",
+      "kind": "intimacy",
+      "source_rules": [
+        "只有BFF能进更亲密关系；房主可竞拍BFF但不能参与关系进阶。",
+        "亲密达动态阈值解锁宝箱，每轮最多取得1卡；抽卡结果用于展示，最终以玩家选择为准。",
+        "选择超时随机分配；结束/下麦清空本轮进度。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130240",
+          "resource_key": "auction_advance_progress_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3176580,
+          "string_index": 11417,
+          "string_offset": 528897,
+          "quote": "Only BFF can have more intimate relationships"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13023f",
+          "resource_key": "auction_advance_owner_tip",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3176564,
+          "string_index": 12756,
+          "string_offset": 567430,
+          "quote": "The game is about to end. The host can bid a BFF, but the host cannot participate in the \"Relationship Advancement\" ~"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13022e",
+          "resource_key": "auction_advance_card_box_unlock_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3176292,
+          "string_index": 10792,
+          "string_offset": 511254,
+          "quote": "It can be unlocked when your intimacy reaches %1$s"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13021f",
+          "resource_key": "auction_advance_card_box_award_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3176052,
+          "string_index": 11363,
+          "string_offset": 526334,
+          "quote": "Note: Cards can be drawn each time the chest is opened, but players can get <font color=\"#FFD392\"> up to 1 card per round</font>"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130220",
+          "resource_key": "auction_advance_card_box_award_tips_had",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3176068,
+          "string_index": 11364,
+          "string_offset": 526467,
+          "quote": "Note: the result of the player's card drawing is only used as a display, and the final card is subject to the player's selection"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130233",
+          "resource_key": "auction_advance_card_select_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3176372,
+          "string_index": 10678,
+          "string_offset": 506180,
+          "quote": "If not selected, the result will be randomly allocated after <font color=\"#FFD392\">%1$s s</font>"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130236",
+          "resource_key": "auction_advance_close_tip",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3176420,
+          "string_index": 9253,
+          "string_offset": 467404,
+          "quote": "Are you sure to end this round of progress? (After ending, players will enter game settlement, and the accumulated intimacy points for this round will be cleared)"
+        }
+      ],
+      "not_recovered": [
+        "阈值、卡池、随机分布、亲密增加方式及落库冲突未知。"
+      ],
+      "local_choices": {
+        "parameters": {
+          "threshold": 100,
+          "progressPerGift": 50,
+          "selectionTimeout": 30,
+          "cards": [
+            "星光伙伴",
+            "永恒知己"
+          ],
+          "timeoutCardIndex": 0
+        },
+        "source_fixed_constraints": [
+          "只有BFF能进更亲密关系；房主可竞拍BFF但不能参与关系进阶。",
+          "亲密达动态阈值解锁宝箱，每轮最多取得1卡；抽卡结果用于展示，最终以玩家选择为准。",
+          "选择超时随机分配；结束/下麦清空本轮进度。"
+        ],
+        "phase_model": {
+          "bff": false,
+          "role": "participant",
+          "phase": "idle",
+          "progress": 0,
+          "drawn": null,
+          "selected": null,
+          "earned": [],
+          "deadline": 0
+        },
+        "actions": [
+          {
+            "id": "bff",
+            "participant_action": "模拟双方已有BFF关系"
+          },
+          {
+            "id": "role",
+            "participant_action": "切换参与身份"
+          },
+          {
+            "id": "start",
+            "participant_action": "双方上麦进入关系进阶"
+          },
+          {
+            "id": "gift",
+            "participant_action": "本轮互动增加亲密"
+          },
+          {
+            "id": "box",
+            "participant_action": "解锁本轮唯一关系卡"
+          },
+          {
+            "id": "select",
+            "participant_action": "玩家选择关系卡"
+          },
+          {
+            "id": "timeout",
+            "participant_action": "选择超时本地分配"
+          },
+          {
+            "id": "finish",
+            "participant_action": "局末结算并清本轮进度"
+          },
+          {
+            "id": "leave",
+            "participant_action": "下麦清空本轮进度"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:intimacy",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    },
+    {
+      "id": "WAR03",
+      "kind": "ring",
+      "source_rules": [
+        "新戒指不需要对方再次批准；旧戒指保存。",
+        "婚姻时间不变；Charm、Guard依据新戒指属性改变。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1301a8",
+          "resource_key": "add_couple_ring",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3174324,
+          "string_index": 8873,
+          "string_offset": 452104,
+          "quote": "- You can use rings of any value\n- You don't need approval to use new rings\n- When new rings are used, the previous ones will be saved in the ring box\n- The time of your marriage will not be changed\n- Charm and Guard Pts will increase according to the new rings' stats"
+        }
+      ],
+      "not_recovered": [
+        "是否能降低数值、戒指属性表、赠予/撤销和服务端防重未知。"
+      ],
+      "local_choices": {
+        "parameters": {
+          "rings": {
+            "星环": {
+              "charm": 20,
+              "guard": 30
+            },
+            "月环": {
+              "charm": 40,
+              "guard": 50
+            }
+          }
+        },
+        "source_fixed_constraints": [
+          "新戒指不需要对方再次批准；旧戒指保存。",
+          "婚姻时间不变；Charm、Guard依据新戒指属性改变。"
+        ],
+        "phase_model": {
+          "relationship": false,
+          "marriedSince": 120,
+          "clock": 200,
+          "current": "星环",
+          "box": [],
+          "charm": 20,
+          "guard": 30,
+          "replaced": []
+        },
+        "actions": [
+          {
+            "id": "relate",
+            "participant_action": "模拟已有关系"
+          },
+          {
+            "id": "replace",
+            "participant_action": "更换戒指无需对方重批"
+          },
+          {
+            "id": "age",
+            "participant_action": "前进一天查看关系年龄"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:ring",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    },
+    {
+      "id": "WAR04",
+      "kind": "capacity",
+      "source_rules": [
+        "资源明确40→80→40。",
+        "到期超额成员不删除，但不能再接收新成员。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130bab",
+          "resource_key": "game_room_vip_desc_desc_01",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3211748,
+          "string_index": 12786,
+          "string_offset": 569165,
+          "quote": "The member limit of Advanced Room will be promoted from 40 to 80.\n\nOnce it expires, the member limit will be reduced to 40 again. Excess members will not be deleted, but the room will not be able to hold any new member."
+        }
+      ],
+      "not_recovered": [
+        "踢人后何时恢复新增、房主转让、离线人数口径与服务器一致性未知。"
+      ],
+      "local_choices": {
+        "parameters": {},
+        "source_fixed_constraints": [
+          "资源明确40→80→40。",
+          "到期超额成员不删除，但不能再接收新成员。"
+        ],
+        "phase_model": {
+          "premium": false,
+          "capacity": 40,
+          "members": 40,
+          "accepted": [],
+          "expired": false
+        },
+        "actions": [
+          {
+            "id": "premium",
+            "participant_action": "房主开通高级房"
+          },
+          {
+            "id": "join",
+            "participant_action": "接收一名新成员"
+          },
+          {
+            "id": "expire",
+            "participant_action": "高级房到期回收容量"
+          },
+          {
+            "id": "leave",
+            "participant_action": "成员离开房间"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:capacity",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    },
+    {
+      "id": "WAR05",
+      "kind": "admins",
+      "source_rules": [
+        "最多3管理员；可改模式/人数、允许或拒绝陌生人、设等级门槛和移除成员。",
+        "到期管理员失去上述权限，等级门槛也不可设置。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130bb0",
+          "resource_key": "game_room_vip_desc_desc_06",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3211828,
+          "string_index": 13539,
+          "string_offset": 597215,
+          "quote": "You can appoint up to 3 admins in an Advanced Room.\n\nAdmins can change the game mode and member number, allow in and reject strangers, set a level requirement and kick out members.\n\nOnce it expires, admins will lose these rights."
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130bb1",
+          "resource_key": "game_room_vip_desc_desc_07",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3211844,
+          "string_index": 13570,
+          "string_offset": 599423,
+          "quote": "You can set a level requirement for members in an Advanced Room.\n\nOnce it expires, you will not be able to use this feature."
+        }
+      ],
+      "not_recovered": [
+        "权限细粒度组合、房主覆盖、强退及操作竞态未知。"
+      ],
+      "local_choices": {
+        "parameters": {},
+        "source_fixed_constraints": [
+          "最多3管理员；可改模式/人数、允许或拒绝陌生人、设等级门槛和移除成员。",
+          "到期管理员失去上述权限，等级门槛也不可设置。"
+        ],
+        "phase_model": {
+          "premium": false,
+          "admins": [],
+          "settings": {
+            "mode": "聊天",
+            "capacity": 40,
+            "strangers": true,
+            "minLevel": 0
+          },
+          "removed": [],
+          "revoked": []
+        },
+        "actions": [
+          {
+            "id": "premium",
+            "participant_action": "房主开通高级房"
+          },
+          {
+            "id": "appoint",
+            "participant_action": "房主任命管理员"
+          },
+          {
+            "id": "manage",
+            "participant_action": "管理员调整房规"
+          },
+          {
+            "id": "kick",
+            "participant_action": "管理员移除成员"
+          },
+          {
+            "id": "expire",
+            "participant_action": "到期撤销全部管理员权限"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:admins",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    },
+    {
+      "id": "WAR06",
+      "kind": "voicebox",
+      "source_rules": [
+        "在Voice Room停留一段时间后可开启对应箱。",
+        "每完成一个任务减少开启倒计时1分钟。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13183e",
+          "resource_key": "treasure_desc",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3259908,
+          "string_index": 13307,
+          "string_offset": 587936,
+          "quote": "Watching for some time in the Voice Room to open corresponding Treasure Box~"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f131842",
+          "resource_key": "treasure_task_desc",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3259972,
+          "string_index": 10169,
+          "string_offset": 492488,
+          "quote": "Every task you completed will decrease the countdown of treasure box opening for 1 minute"
+        }
+      ],
+      "not_recovered": [
+        "实际停留条件、后台/静音/断网处理、任务重复计数、奖励概率未知。"
+      ],
+      "local_choices": {
+        "parameters": {
+          "countdown": 180,
+          "rewardGold": 10
+        },
+        "source_fixed_constraints": [
+          "在Voice Room停留一段时间后可开启对应箱。",
+          "每完成一个任务减少开启倒计时1分钟。"
+        ],
+        "phase_model": {
+          "inside": false,
+          "remaining": 180,
+          "tasks": [],
+          "phase": "locked",
+          "gold": 0
+        },
+        "actions": [
+          {
+            "id": "enter",
+            "participant_action": "成员进入语音房"
+          },
+          {
+            "id": "stay",
+            "participant_action": "停留一分钟"
+          },
+          {
+            "id": "task",
+            "participant_action": "完成具名任务减时一分钟"
+          },
+          {
+            "id": "open",
+            "participant_action": "开启倒计时宝箱"
+          },
+          {
+            "id": "leave",
+            "participant_action": "离开暂停停留"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:voicebox",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    },
+    {
+      "id": "WAR07",
+      "kind": "singer",
+      "source_rules": [
+        "文本成为签约歌手奖励50 Gold。",
+        "每天最多提交1首；每首审核通过奖励20 Gold。",
+        "上传歌曲需要作品/授权承诺，原审核执行未知。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130688",
+          "resource_key": "contribute_song_tips1",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3192372,
+          "string_index": 10592,
+          "string_offset": 503244,
+          "quote": "Hey, my name is Paul, producer of the show.<br> You need to get the qualification before submitting questions for singing games!<br> Becoming a contracted singer also grants <strong>50 Gold</strong>. Try your best!"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130685",
+          "resource_key": "contribute_song_full_activity_2",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3192324,
+          "string_index": 10164,
+          "string_offset": 492129,
+          "quote": "Every contracted singer can submit 1 song a day. Every approved song grants 20 Gold"
+        }
+      ],
+      "not_recovered": [
+        "资格考核、曲库版权核验、音频审核及各语言奖励货币配置未知。"
+      ],
+      "local_choices": {
+        "parameters": {},
+        "source_fixed_constraints": [
+          "文本成为签约歌手奖励50 Gold。",
+          "每天最多提交1首；每首审核通过奖励20 Gold。",
+          "上传歌曲需要作品/授权承诺，原审核执行未知。"
+        ],
+        "phase_model": {
+          "signed": false,
+          "day": 0,
+          "submissions": [],
+          "gold": 0,
+          "library": [],
+          "rights": false
+        },
+        "actions": [
+          {
+            "id": "sign",
+            "participant_action": "模拟通过签约歌手资格"
+          },
+          {
+            "id": "rights",
+            "participant_action": "歌手确认作品授权承诺"
+          },
+          {
+            "id": "submit",
+            "participant_action": "提交今日录制歌曲"
+          },
+          {
+            "id": "approve",
+            "participant_action": "模拟Judge审核通过"
+          },
+          {
+            "id": "reject",
+            "participant_action": "模拟Judge审核拒绝"
+          },
+          {
+            "id": "day",
+            "participant_action": "进入下一投稿日"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:singer",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    },
+    {
+      "id": "WAR08",
+      "kind": "words",
+      "source_rules": [
+        "文案每份贡献5 Gold并由Judge审核后发放。",
+        "“up to25 per day”的单位在英文文案不明确，不据此断言25份或25 Gold。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13068a",
+          "resource_key": "contribute_word_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3192388,
+          "string_index": 9319,
+          "string_offset": 470094,
+          "quote": "Award Subject, 5 gold for 1 contribution, up to 25 per day. (Subject will be reviewed by Judge, gold will be sent after passing.)"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130bd1",
+          "resource_key": "game_room_word_contribute_tips_1",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3212324,
+          "string_index": 12903,
+          "string_offset": 575603,
+          "quote": "Theme"
+        }
+      ],
+      "not_recovered": [
+        "适用游戏、每日25的单位、审核标准/队列及多语字符算法未知。"
+      ],
+      "local_choices": {
+        "parameters": {
+          "localDailyLimit": 5
+        },
+        "source_fixed_constraints": [
+          "文案每份贡献5 Gold并由Judge审核后发放。",
+          "“up to25 per day”的单位在英文文案不明确，不据此断言25份或25 Gold。"
+        ],
+        "phase_model": {
+          "day": 0,
+          "submissions": [],
+          "gold": 0,
+          "library": []
+        },
+        "actions": [
+          {
+            "id": "submit",
+            "participant_action": "玩家贡献词题"
+          },
+          {
+            "id": "approve",
+            "participant_action": "模拟Judge审核通过"
+          },
+          {
+            "id": "reject",
+            "participant_action": "模拟Judge审核拒绝"
+          },
+          {
+            "id": "day",
+            "participant_action": "进入下一投稿日"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:words",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    },
+    {
+      "id": "WAR09",
+      "kind": "drawtools",
+      "source_rules": [
+        "颜色可用Gold解锁，也可达到绘画等级/EXP免费解锁。",
+        "延长绘画时间需要Gold；延时秒数在不同资源是固定或占位参数。",
+        "取消准备最多2次/局的资源文案也存在。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13080e",
+          "resource_key": "draw_unlock_color_in_game",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3197828,
+          "string_index": 12462,
+          "string_offset": 556928,
+          "quote": "Spend %1$d Gold to unlock this color\nYou need %2$d more EXP to unlock it for free"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13080f",
+          "resource_key": "draw_unlock_color_in_other",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3197844,
+          "string_index": 12463,
+          "string_offset": 557012,
+          "quote": "Spend %1$d Gold to unlock this color\nYou need to reach Draw & Guess Lv.%2$d to unlock it for free"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130b19",
+          "resource_key": "game_room_draw_room_prolong_time",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3209556,
+          "string_index": 12458,
+          "string_offset": 556722,
+          "quote": "Spend %1$d Gold to prolong the drawing time by %2$ds?"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130805",
+          "resource_key": "draw_game_unready_max_time_2",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3197684,
+          "string_index": 13540,
+          "string_offset": 597449,
+          "quote": "You can cancel getting ready up to twice a game"
+        }
+      ],
+      "not_recovered": [
+        "每色费用、笔迹授权、动画/实时协作协议和延时竞态未知。"
+      ],
+      "local_choices": {
+        "parameters": {
+          "extendSeconds": 30,
+          "extendCost": 10,
+          "colorCost": 20,
+          "unlockExp": 100,
+          "expPerPractice": 100
+        },
+        "source_fixed_constraints": [
+          "颜色可用Gold解锁，也可达到绘画等级/EXP免费解锁。",
+          "延长绘画时间需要Gold；延时秒数在不同资源是固定或占位参数。",
+          "取消准备最多2次/局的资源文案也存在。"
+        ],
+        "phase_model": {
+          "phase": "ready",
+          "gold": 100,
+          "seconds": 60,
+          "exp": 0,
+          "colors": [
+            "黑"
+          ],
+          "cancelCount": 0,
+          "strokes": []
+        },
+        "actions": [
+          {
+            "id": "cancel",
+            "participant_action": "取消本局准备"
+          },
+          {
+            "id": "start",
+            "participant_action": "进入绘画倒计时"
+          },
+          {
+            "id": "extend",
+            "participant_action": "支付Gold延长本模式绘画时间"
+          },
+          {
+            "id": "color",
+            "participant_action": "支付Gold解锁颜色"
+          },
+          {
+            "id": "practice",
+            "participant_action": "本地成长获得绘画EXP"
+          },
+          {
+            "id": "free",
+            "participant_action": "达到EXP免费解锁颜色"
+          },
+          {
+            "id": "stroke",
+            "participant_action": "选择已解锁颜色绘画"
+          },
+          {
+            "id": "timeout",
+            "participant_action": "绘画时间到期"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:drawtools",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    },
+    {
+      "id": "WAR10",
+      "kind": "vip",
+      "source_rules": [
+        "广播默认显示5分钟，其他VIP的新广播覆盖最后一条。",
+        "资源允许把Charm转换为VIP Growth Pts。",
+        "近期礼物隐藏：本包未在该文案注明VIP等级。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13012e",
+          "resource_key": "activity_send_vip_desc",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3172484,
+          "string_index": 12737,
+          "string_offset": 566519,
+          "quote": "The default display time of broadcast is 5 minutes。 \nWhen other VIP users release a new broadcast post, the last one will be covered"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1300bb",
+          "resource_key": "activity_gain_vip_gift_4",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3170676,
+          "string_index": 9620,
+          "string_offset": 477659,
+          "quote": "Claim it to convert Charm into VIP Growth Pts"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f131973",
+          "resource_key": "vip_user_hide_receive_gift",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3264644,
+          "string_index": 12816,
+          "string_offset": 571030,
+          "quote": "The player enabled VIP Exclusive feature: Hide recent gifts"
+        }
+      ],
+      "not_recovered": [
+        "转换倍率、等级保持、广播队列、退款回收与隐私服务端范围未知。"
+      ],
+      "local_choices": {
+        "parameters": {
+          "growthPerCharm": 1,
+          "cardLevel": 7,
+          "localPrivacyLevel": 1
+        },
+        "source_fixed_constraints": [
+          "广播默认显示5分钟，其他VIP的新广播覆盖最后一条。",
+          "资源允许把Charm转换为VIP Growth Pts。",
+          "近期礼物隐藏：本包未在该文案注明VIP等级。"
+        ],
+        "phase_model": {
+          "vipLevel": 0,
+          "charm": 100,
+          "growth": 0,
+          "broadcast": null,
+          "hidden": false,
+          "recentGifts": [
+            "原创星星礼物"
+          ],
+          "cards": 1
+        },
+        "actions": [
+          {
+            "id": "card",
+            "participant_action": "领取模拟VIP卡"
+          },
+          {
+            "id": "convert",
+            "participant_action": "Charm转换本地VIP成长"
+          },
+          {
+            "id": "broadcast",
+            "participant_action": "VIP发布公共广播"
+          },
+          {
+            "id": "hide",
+            "participant_action": "隐藏近期礼物"
+          },
+          {
+            "id": "expire",
+            "participant_action": "前进5分钟广播到期"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:vip",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    },
+    {
+      "id": "WAR11",
+      "kind": "popularity",
+      "source_rules": [
+        "徽章达到动态等级可点OK触发房间奖励。",
+        "每天可打开次数和剩余次数均由占位值显示。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130d6b",
+          "resource_key": "hot_badge_dialog_tips1",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3218388,
+          "string_index": 9719,
+          "string_offset": 480249,
+          "quote": "Congrats, the family popularity badge has reached %d\nClick OK to trigger the following room rewards:"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130674",
+          "resource_key": "confirm_open_hot_badge_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3192068,
+          "string_index": 9272,
+          "string_offset": 468690,
+          "quote": "Are you sure you want to turn on the popularity badge feature? \n (can be opened %d times per day, %d times left)"
+        }
+      ],
+      "not_recovered": [
+        "人气来源、阈值、奖励表、计日时区与冷却未知。"
+      ],
+      "local_choices": {
+        "parameters": {
+          "badgeThreshold": 100,
+          "dailyQuota": 2,
+          "popularityPerSupport": 50,
+          "rewardGold": 10
+        },
+        "source_fixed_constraints": [
+          "徽章达到动态等级可点OK触发房间奖励。",
+          "每天可打开次数和剩余次数均由占位值显示。"
+        ],
+        "phase_model": {
+          "family": "星光家族",
+          "popularity": 0,
+          "badge": 0,
+          "day": 0,
+          "openedToday": 0,
+          "roomRewards": [],
+          "gold": 0
+        },
+        "actions": [
+          {
+            "id": "support",
+            "participant_action": "家族成员贡献人气"
+          },
+          {
+            "id": "confirm",
+            "participant_action": "成员点OK触发房间奖励"
+          },
+          {
+            "id": "day",
+            "participant_action": "新的一天刷新额度"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:popularity",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    },
+    {
+      "id": "WAR12",
+      "kind": "undercover",
+      "source_rules": [
+        "双词/双卧底文案存在语言歧义，最大字符为占位值。",
+        "描述超时会被跳过；确认猜村民词后不可取消。",
+        "改房人数会重新分词、换词会重开。",
+        "结算文案显示两人投相同目标次数并建议交朋友。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130797",
+          "resource_key": "double_spies_spy_words_not_exceed_x_characters",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3195924,
+          "string_index": 13401,
+          "string_offset": 591342,
+          "quote": "When there are 2 spies, the spy words must not exceed %s characters"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130b68",
+          "resource_key": "game_room_spy_bomb_word_confirm_desc",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3210740,
+          "string_index": 9254,
+          "string_offset": 467571,
+          "quote": "Are you sure to guess the villagers’ word?<b> After confirmation, it cannot be cancelled.</b>"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130b7f",
+          "resource_key": "game_room_spy_not_speak_tip",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3211108,
+          "string_index": 22,
+          "string_offset": 58943,
+          "quote": "Please describe the word by voice, otherwise you will be skipped after <font color=#FFEB35>%1$ss</font>"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1311a6",
+          "resource_key": "party_spy_change_config_tips_when_not_gaming",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3234340,
+          "string_index": 9111,
+          "string_offset": 461165,
+          "quote": "After changing the number of people in the room, the words will be reassigned. Are you sure to change it?"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f131719",
+          "resource_key": "spy_game_end_match_tips_4",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3255764,
+          "string_index": 10574,
+          "string_offset": 502442,
+          "quote": "He/she and I voted for the same target %1$d times. You understand each other perfectly! Why don't you be friends!?"
+        }
+      ],
+      "not_recovered": [
+        "角色配比、平票、猜词成功判定、共享投票匹配算法及真实加友服务未知。"
+      ],
+      "local_choices": {
+        "parameters": {
+          "villagerWord": "苹果",
+          "undercoverWord": "梨",
+          "maxChars": 10,
+          "descriptionTimeout": 30
+        },
+        "source_fixed_constraints": [
+          "双词/双卧底文案存在语言歧义，最大字符为占位值。",
+          "描述超时会被跳过；确认猜村民词后不可取消。",
+          "改房人数会重新分词、换词会重开。",
+          "结算文案显示两人投相同目标次数并建议交朋友。"
+        ],
+        "phase_model": {
+          "phase": "lobby",
+          "players": [
+            "小夏",
+            "阿辰",
+            "小雨",
+            "房主"
+          ],
+          "roles": {
+            "小夏": "村民",
+            "阿辰": "村民",
+            "小雨": "卧底",
+            "房主": "村民"
+          },
+          "wordCards": {},
+          "turn": 0,
+          "descriptions": [],
+          "votes": [],
+          "guess": null,
+          "friendSuggestion": null,
+          "round": 1
+        },
+        "actions": [
+          {
+            "id": "start",
+            "participant_action": "主持分配本地角色词卡"
+          },
+          {
+            "id": "describe",
+            "participant_action": "当前玩家模拟语音描述"
+          },
+          {
+            "id": "skip",
+            "participant_action": "描述超时跳过"
+          },
+          {
+            "id": "vote",
+            "participant_action": "玩家投票"
+          },
+          {
+            "id": "guess",
+            "participant_action": "卧底确认猜村民词不可撤回"
+          },
+          {
+            "id": "cancelGuess",
+            "participant_action": "尝试撤销已确认猜词"
+          },
+          {
+            "id": "reveal",
+            "participant_action": "主持揭词并结算同票推荐"
+          },
+          {
+            "id": "resize",
+            "participant_action": "修改人数重分词"
+          },
+          {
+            "id": "replace",
+            "participant_action": "主持换词重开"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:undercover",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    },
+    {
+      "id": "WAR13",
+      "kind": "familyAR",
+      "source_rules": [
+        "不具备发箱资格时提示找Leader/Deputy。",
+        "周活达占位阈值才可领取；一箱开始后不能停止或再解锁其他箱。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1309d0",
+          "resource_key": "family_send_box_error_tips1",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3204628,
+          "string_index": 13498,
+          "string_offset": 594907,
+          "quote": "You are not qualified to send chests. Ask your Leader or Deputy to do it!"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f130948",
+          "resource_key": "family_main_activity_week_active_dialog_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3202468,
+          "string_index": 13355,
+          "string_offset": 589407,
+          "quote": "Weekly Activity reach %1$d to claim"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1308ff",
+          "resource_key": "family_grab_box_box_unlock_normal_content",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3201300,
+          "string_index": 13581,
+          "string_offset": 600535,
+          "quote": "You can't stop or unlock another \n chest once it starts"
+        }
+      ],
+      "not_recovered": [
+        "领取名单、奖池分配与解锁的作用域未知；本包未直接匹配日韩Limited/Normal文字。"
+      ],
+      "local_choices": {
+        "parameters": {
+          "weeklyThreshold": 100,
+          "unlockSeconds": 120,
+          "rewardGold": 20
+        },
+        "source_fixed_constraints": [
+          "不具备发箱资格时提示找Leader/Deputy。",
+          "周活达占位阈值才可领取；一箱开始后不能停止或再解锁其他箱。"
+        ],
+        "phase_model": {
+          "role": "member",
+          "phase": "none",
+          "activity": 0,
+          "box": null,
+          "unlockUntil": 0,
+          "gold": 0
+        },
+        "actions": [
+          {
+            "id": "role",
+            "participant_action": "选择家族职位"
+          },
+          {
+            "id": "send",
+            "participant_action": "Leader/Deputy配置发箱"
+          },
+          {
+            "id": "active",
+            "participant_action": "成员增加本地周活跃"
+          },
+          {
+            "id": "unlock",
+            "participant_action": "成员开始解锁占用"
+          },
+          {
+            "id": "stop",
+            "participant_action": "尝试停止已开始解锁"
+          },
+          {
+            "id": "wait",
+            "participant_action": "等待解锁倒计时"
+          },
+          {
+            "id": "claim",
+            "participant_action": "达标成员领取奖励"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:familyAR",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    },
+    {
+      "id": "WAR14",
+      "kind": "baloot",
+      "source_rules": [
+        "退出后系统接管，3分钟内不能匹配、不能赢Gold，并按占位金额扣除。",
+        "资源描述出牌/叫牌时间设置、金币结算设置。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1302fc",
+          "resource_key": "baloot_force_quit_tip_s",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3179588,
+          "string_index": 12758,
+          "string_offset": 567593,
+          "quote": "The game is in progress. Do you want to quit this game? After exiting the game, the system will take over, but the match cannot be carried out within 3 minutes and the gold cannot be won (%1$s will be deducted when exiting the game at present)."
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1302f4",
+          "resource_key": "baloot_config_help_tip4",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3179460,
+          "string_index": 12865,
+          "string_offset": 573806,
+          "quote": "The round time you can spend on bidding or playing."
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1302f6",
+          "resource_key": "baloot_config_help_tip6",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3179492,
+          "string_index": 12947,
+          "string_offset": 577996,
+          "quote": "This room will use gold in final settlement."
+        }
+      ],
+      "not_recovered": [
+        "Baloot叫牌/牌型/积分、安全托管策略及当前金额未知。"
+      ],
+      "local_choices": {
+        "parameters": {
+          "localPenalty": 10,
+          "playSeconds": 20,
+          "bidSeconds": 15
+        },
+        "source_fixed_constraints": [
+          "退出后系统接管，3分钟内不能匹配、不能赢Gold，并按占位金额扣除。",
+          "资源描述出牌/叫牌时间设置、金币结算设置。"
+        ],
+        "phase_model": {
+          "phase": "config",
+          "gold": 100,
+          "playSeconds": null,
+          "bidSeconds": null,
+          "settlement": null,
+          "takeover": false,
+          "cooldownUntil": 0,
+          "canWinGold": true
+        },
+        "actions": [
+          {
+            "id": "configure",
+            "participant_action": "房主设置出牌叫牌时限与金币结算"
+          },
+          {
+            "id": "start",
+            "participant_action": "开局进入Baloot契约场"
+          },
+          {
+            "id": "leave",
+            "participant_action": "玩家离局交系统接管"
+          },
+          {
+            "id": "match",
+            "participant_action": "尝试再次匹配"
+          },
+          {
+            "id": "wait",
+            "participant_action": "前进3分钟解除匹配冷却"
+          },
+          {
+            "id": "reward",
+            "participant_action": "尝试领取本场赢Gold"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:baloot",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    },
+    {
+      "id": "WAR15",
+      "kind": "shield",
+      "source_rules": [
+        "隐藏状态Leader/Deputy仍可看到Current shield count。",
+        "其他成员仅显示已启用隐藏，不给数字。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1308d5",
+          "resource_key": "family_defence_leader_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3200628,
+          "string_index": 12766,
+          "string_offset": 568159,
+          "quote": "The hide shield is activated, and the family shield count is hidden. Current shield count: %1$s (visible only to the Leader and Deputy Leader)"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1308d6",
+          "resource_key": "family_defence_not_leader_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3200644,
+          "string_index": 12765,
+          "string_offset": 568088,
+          "quote": "The hide shield is activated, and the family shield count is hidden."
+        }
+      ],
+      "not_recovered": [
+        "护盾消耗/补充、可见性切换者、客户端缓存与服务器校验未知。"
+      ],
+      "local_choices": {
+        "parameters": {
+          "initialShields": 8,
+          "localToggleRole": "Leader"
+        },
+        "source_fixed_constraints": [
+          "隐藏状态Leader/Deputy仍可看到Current shield count。",
+          "其他成员仅显示已启用隐藏，不给数字。"
+        ],
+        "phase_model": {
+          "role": "member",
+          "hidden": false,
+          "shieldStock": 8,
+          "display": null
+        },
+        "actions": [
+          {
+            "id": "role",
+            "participant_action": "选择家族职位"
+          },
+          {
+            "id": "hide",
+            "participant_action": "启用Hide Shield"
+          },
+          {
+            "id": "view",
+            "participant_action": "查询该角色可见库存"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:shield",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    },
+    {
+      "id": "WAR16",
+      "kind": "bingo",
+      "source_rules": [
+        "资源明确全Bingo卡后不能使用items。",
+        "有等待其他玩家买卡和道具入口，完整数值规则未恢复。"
+      ],
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1301e5",
+          "resource_key": "all_bingo_tips",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3175220,
+          "string_index": 13721,
+          "string_offset": 609145,
+          "quote": "You've got a full Bingo card, items can't be used now"
+        },
+        {
+          "file": "analysis/resource-catalog.json",
+          "apk": "apks/com.wejoy.weplay.ar.apk",
+          "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+          "member": "resources.arsc",
+          "resource_id": "0x7f13035e",
+          "resource_key": "bingo_card_finish_tips2",
+          "locale_bytes_hex": "00000000",
+          "entry_offset": 3181092,
+          "string_index": 13294,
+          "string_offset": 587601,
+          "quote": "Waiting for other players to buy cards…"
+        }
+      ],
+      "not_recovered": [
+        "开球/标记规则、卡牌生成、道具效果和完整胜负未知。"
+      ],
+      "local_choices": {
+        "parameters": {
+          "cardCost": 10,
+          "localCells": [
+            1,
+            2,
+            3
+          ],
+          "localItemEffect": "标记一个本地未标记格"
+        },
+        "source_fixed_constraints": [
+          "资源明确全Bingo卡后不能使用items。",
+          "有等待其他玩家买卡和道具入口，完整数值规则未恢复。"
+        ],
+        "phase_model": {
+          "phase": "buying",
+          "gold": 100,
+          "cards": [],
+          "marked": [],
+          "itemUses": 0,
+          "allBingo": false
+        },
+        "actions": [
+          {
+            "id": "buy",
+            "participant_action": "玩家购买本地Bingo卡"
+          },
+          {
+            "id": "start",
+            "participant_action": "所有参与者就绪开局"
+          },
+          {
+            "id": "mark",
+            "participant_action": "本地开球实验标记卡格"
+          },
+          {
+            "id": "item",
+            "participant_action": "使用本地标记道具"
+          },
+          {
+            "id": "complete",
+            "participant_action": "本地填满全部卡"
+          },
+          {
+            "id": "finish",
+            "participant_action": "结束契约实验局"
+          }
+        ],
+        "interpretation": "params均为本地重构配置；源文案数值以source_fixed_constraints为准；相同参数值也不代表原公式",
+        "parameter_policy": "model.validateParameters owns declaration/type/finite/nonnegative/integer checks; zero resource costs allowed; positive thresholds/timers/quotas required"
+      },
+      "implementation": [
+        "demo/model.mjs:bingo",
+        "demo/ui.mjs"
+      ],
+      "validation": {
+        "node": "passed: per ID normal lifecycle + resource result + guard + reset + pure input",
+        "browser": "root sequential pending",
+        "original_runtime": "not executed",
+        "parameters": "passed per-ID malformed boundary"
+      }
+    }
+  ],
+  "validation_summary": {
+    "node_tests": 56,
+    "passed": 56,
+    "legacy_test_file": "passed",
+    "browser": "root sequential pending",
+    "original_runtime": "not executed",
+    "parameter_boundary": "single owner + malformed/nonfinite/negative/type rejection + atomic wallets"
+  }
+}

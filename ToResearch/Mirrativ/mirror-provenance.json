@@ -1,0 +1,93 @@
+{
+  "app": "Mirrativ",
+  "requested_regions": "Japan",
+  "expected_package": "com.dena.mirrativ",
+  "source_kind": "third-party mirror APKPure",
+  "source_page": "https://apkpure.net/mirrativ/com.dena.mirrativ/download",
+  "page_title": "Download Mirrativ: Live-streaming App 11.92.1 APK for Android - Free and Safe Download",
+  "download_url": "https://d.apkpure.net/b/XAPK/com.dena.mirrativ?version=latest",
+  "final_url": "https://data.winudf.com/XAPK/Y29tLmRlbmEubWlycmF0aXZfNDMyNTNfYjhhNWY1YmI?_p=Y29tLmRlbmEubWlycmF0aXY%3D&filename=Mirrativ%3A+Live-streaming+App_11.92.1_APKPure.xapk&full_size=315936429&is_hot=false&k=REDACTED&package_name=com.dena.mirrativ&source=web&token=REDACTED",
+  "retrieved_at": "2026-10-13T07:57:51.704040+00:00",
+  "file": "Mirrativ-11.92.1.xapk",
+  "bytes": 315936429,
+  "sha256": "99c154d8391f86348cc5e514b89c7a6a70ac656660f0f6939f882fd330eb7242",
+  "zip_crc": "passed",
+  "archive_manifest": {
+    "xapk_version": 2,
+    "package_name": "com.dena.mirrativ",
+    "name": "Mirrativ",
+    "version_code": "43253",
+    "version_name": "11.92.1",
+    "min_sdk_version": "32",
+    "target_sdk_version": "36",
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.SYSTEM_ALERT_WINDOW",
+      "android.permission.CAMERA",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.MODIFY_AUDIO_SETTINGS",
+      "android.permission.ACCESS_NOTIFICATION_POLICY",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.WAKE_LOCK",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+      "android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION",
+      "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+      "android.permission.READ_PHONE_STATE",
+      "android.permission.VIBRATE",
+      "android.permission.EXPAND_STATUS_BAR",
+      "android.permission.PACKAGE_USAGE_STATS",
+      "com.google.android.gms.permission.AD_ID",
+      "android.permission.USE_BIOMETRIC",
+      "android.permission.USE_FINGERPRINT",
+      "com.android.vending.BILLING",
+      "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+      "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+      "android.permission.ACCESS_ADSERVICES_AD_ID",
+      "com.google.android.c2dm.permission.RECEIVE",
+      "com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE",
+      "android.permission.ACCESS_ADSERVICES_TOPICS",
+      "com.dena.mirrativ.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "android.permission.READ_EXTERNAL_STORAGE"
+    ],
+    "split_configs": [
+      "config.arm64_v8a",
+      "config.en",
+      "config.mdpi"
+    ],
+    "total_size": 315804033,
+    "icon": "icon.png",
+    "split_apks": [
+      {
+        "file": "com.dena.mirrativ.apk",
+        "id": "base"
+      },
+      {
+        "file": "config.arm64_v8a.apk",
+        "id": "config.arm64_v8a"
+      },
+      {
+        "file": "config.en.apk",
+        "id": "config.en"
+      },
+      {
+        "file": "config.mdpi.apk",
+        "id": "config.mdpi"
+      }
+    ]
+  },
+  "extracted_apks": [
+    "com.dena.mirrativ.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "latest_scope": "Newest version advertised by live APKPure download page on retrieval date; staged Google Play release not verified",
+  "final_url_redacted_transport_credentials": [
+    "k",
+    "token"
+  ]
+}

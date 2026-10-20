@@ -1,0 +1,8 @@
+{
+  "url": "http://127.0.0.1:8767/",
+  "desktop": "loaded, scenario and advance clicked",
+  "mobile": "390x844 loaded, reset and scenario clicked",
+  "overflow": false,
+  "pageErrors": [],
+  "desktopText": "包体证据驱动 · 本地模拟 · 无 RTC / 无真实资产\n\nMICO · 武器团队战\n\n麦位队伍 → Lv.5 礼物双倍 → 淘汰与复活\n\n直接证据：resources.arsc [8467/10312] 武器Lv5礼物2倍PK点；[10535] 道具可立即复活淘汰玩家。升级代价、淘汰条件、5回合时限未知，本Demo用可重复场景。\n\n阶段 playing / 回合 3\n\n红 20 · 武器 Lv5 / 蓝 0 · 武器 Lv1\n\nMaya 可贡献 · 20\n\nKai 淘汰 · 0\n\nRami 可贡献 · 0\n\nSara 可贡献 · 0\n\nMaya 贡献\nKai 贡献\nRami 贡献\nSara 贡献\n红队升级武器\n蓝队升级武器\n复活 Kai\n推进回合\n载入固定演示场景\n重置\n队伍1 武器升级为 2（升级阈值为本地按钮）\n队伍1 武器升级为 3（升级阈值为本地按钮）\n队伍1 武器升级为 4（升级阈值为本地按钮）\n队伍1 武器升级为 5（升级阈值为本地按钮）\nMaya +20（Lv5双倍）\nKai 被淘汰：触发条件是本地场景\n查看证据、推断和未知边界"
+}

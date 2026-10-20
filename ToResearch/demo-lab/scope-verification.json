@@ -1,0 +1,122 @@
+[
+  {
+    "app": "Yalla",
+    "expected": 12,
+    "passed": true,
+    "module_count": 12,
+    "registry_sha256": "6dee6d4e2ffe5ffa633070e32eb77ffd1eb1ae99a2a672416c648c9766473df7",
+    "legacy_preserved": true
+  },
+  {
+    "app": "YoHo",
+    "expected": 12,
+    "passed": true,
+    "module_count": 12,
+    "registry_sha256": "e6408b309a2288f5099e4412cbd863535f0dc3b48abe04f3ec72e8e300ea03d6",
+    "legacy_preserved": true
+  },
+  {
+    "app": "MICO",
+    "expected": 11,
+    "passed": true,
+    "module_count": 11,
+    "registry_sha256": "037ca6dd81a15f7d357a843da217becf2c2e6ac1f31d91ea7852ad0b83269820",
+    "legacy_preserved": true
+  },
+  {
+    "app": "TopTop",
+    "expected": 13,
+    "passed": true,
+    "module_count": 13,
+    "registry_sha256": "0a54af31d73ea99def2f19fbd0ae3d62ed833c8d60523a10742fc7e4f3f4c2a3",
+    "legacy_preserved": true
+  },
+  {
+    "app": "WePlay-AR",
+    "expected": 16,
+    "passed": true,
+    "module_count": 16,
+    "registry_sha256": "8fd53c9e3c7548fe0734e469657ea04d605f821f6f74123574029e960436e980",
+    "legacy_preserved": true
+  },
+  {
+    "app": "Spoon",
+    "expected": 9,
+    "passed": true,
+    "module_count": 9,
+    "registry_sha256": "f7920e7e91041865dc5eb26eb2f7ace6577d9f572f934ed284f8541d3fc37178",
+    "legacy_preserved": true
+  },
+  {
+    "app": "WePlay-JP",
+    "expected": 19,
+    "passed": true,
+    "module_count": 19,
+    "registry_sha256": "08b2d77e919b3101e3fcac0144810dfbf755bee4445a4ab9c8bd44151b72faf4",
+    "legacy_preserved": true
+  },
+  {
+    "app": "WePlay-KR",
+    "expected": 19,
+    "passed": true,
+    "module_count": 19,
+    "registry_sha256": "b84dd4067f0e0f5c101d7e1791e1be578625dfaf04d18b4ff7b4744e5f29a2f8",
+    "legacy_preserved": true
+  },
+  {
+    "app": "Mirrativ",
+    "expected": 8,
+    "passed": true,
+    "module_count": 8,
+    "registry_sha256": "77778423d697e13fb0817dd903240a307474dae33096fcb9e0a367425fb668f8",
+    "legacy_preserved": true
+  },
+  {
+    "app": "Pococha",
+    "expected": 11,
+    "passed": true,
+    "module_count": 11,
+    "registry_sha256": "23331b5b6d539d9907a9f0114e301005b62d51542cba4f695301dea4dd9db450",
+    "legacy_preserved": true
+  },
+  {
+    "app": "17LIVE",
+    "expected": 12,
+    "passed": true,
+    "module_count": 12,
+    "registry_sha256": "75ceca92c4fac871e468ad9d6f528ce24110fc81189b93165e4c1e99155b4772",
+    "legacy_preserved": true
+  },
+  {
+    "app": "SUGO",
+    "expected": 12,
+    "passed": true,
+    "module_count": 12,
+    "registry_sha256": "ea8f06c17167358a0c3d14f0ec0730173e662d43b74a1e2aa9fe676cde7d84ff",
+    "legacy_preserved": true
+  },
+  {
+    "app": "Yalla-Parchis",
+    "expected": 15,
+    "passed": true,
+    "module_count": 15,
+    "registry_sha256": "c9a73b65ecc5a8bd9215de6d1b77bb313747c45244db9a4d41f9fc25b4c3826e",
+    "legacy_preserved": true
+  },
+  {
+    "app": "Falla",
+    "expected": 13,
+    "passed": true,
+    "module_count": 13,
+    "registry_sha256": "abe3729816cbcb0f777015ed2cdbc18724f46fd854fd1248c285c6a62be2e544",
+    "legacy_preserved": true
+  },
+  {
+    "app": "HeeSay",
+    "expected": 14,
+    "passed": true,
+    "module_count": 14,
+    "registry_sha256": "1c5eaf7d8c880cebd75cd5fdc91aa5595cd3b99a8f42c0c830720a53014629f9",
+    "legacy_preserved": true
+  }
+]

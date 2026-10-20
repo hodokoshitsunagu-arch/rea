@@ -1,0 +1,8 @@
+{
+  "url": "http://127.0.0.1:8767/",
+  "desktop": "loaded, scenario and advance clicked",
+  "mobile": "390x844 loaded, reset and scenario clicked",
+  "overflow": false,
+  "pageErrors": [],
+  "desktopText": "包体证据驱动 · 本地模拟 · 无 RTC / 无真实资产\n\nYoHo · 家族排名 PK\n\n社交家族召集 → 接受挑战 → 周榜比较与贡献转移\n\n直接证据：resources.arsc [9522] PK 后 %s 小时比较双方周榜，败方20%周贡献给胜方。3小时、贡献+100、平局及排名等于贡献排序为本地决策。\n\n状态 playing / 1模拟小时\n\n家族 A 周贡献 1000\n\n家族 B 周贡献 1100\n\n尚未结算\n\n家族 A 联合贡献\n家族 B 联合贡献\n接受家族挑战\n推进一小时\n载入固定演示场景\n重置\n双方家族接受排名 PK\n家族 2 周贡献 +100（模拟）\n家族 2 周贡献 +100（模拟）\n家族 2 周贡献 +100（模拟）\n查看证据、推断和未知边界"
+}

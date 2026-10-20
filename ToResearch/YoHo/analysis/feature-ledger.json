@@ -1,0 +1,272 @@
+{
+  "target_sha256": "2d26edd454bd9bd7d39d9df94750aa7cc714c0d6c3e445ebbde10c9d1ffc14c8",
+  "rea_package_evidence_id": "ev_b5330ac3b2215d43ddc0b4a4a12016793435d82747797fafe2bd47408ae51b50",
+  "findings": [
+    {
+      "id": "S01",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9017
+      },
+      "text": "After mic seats are closed, users cannot apply for a mic",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S02",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9043
+      },
+      "text": "All family members will receive your call and have direct access to your room(There is only one chance to summon a day ~)",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S03",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9044
+      },
+      "text": "All family members will receive your reminder and join the room. (Number of daily reminders left: %1$s/%2$s)",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S04",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9066
+      },
+      "text": "Allow PK invitations from other rooms",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S05",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9196
+      },
+      "text": "Battle between red and blue, with the higher PK value owner being the winner!",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S06",
+      "axis": "social",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 8933
+      },
+      "text": "A family is an organization created by users on their own. Users apply to join the family and work together with like-minded partners to keep the family growing.",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S07",
+      "axis": "social",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9022
+      },
+      "text": "After the auction starts, send gifts to the auctor to bid",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S08",
+      "axis": "social",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9112
+      },
+      "text": "Approach 2: form the guardianship through bidding in an auction venue (the guardianship type and its duration are decided by auctors).",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S09",
+      "axis": "social",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9522
+      },
+      "text": "Confrim to send forward a Ranking PK? After %s hours since the PK starts, system will compare both Families' weekly rankings. The lower-ranked Family will lose 20%% of own weekly contribution points to the higher-ranked Family.",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S10",
+      "axis": "social",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 11995
+      },
+      "text": "The Family has accepted your Ranking PK invitation. After %s hours, system will compare both Families' weekly rankings. The lower-ranked Family will lose 20%% of own weekly contribution points to the higher-ranked Family. Invite your Family members to help climb the ranks!",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S11",
+      "axis": "social",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 12840
+      },
+      "text": "Your Family has received a Ranking PK invitation. After %s hours since PK starts, system will compare both Families' weekly rankings. The lower-ranked Family will lose 20%% of own weekly contribution points to the higher-ranked Family. Do you accept to start PK?",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S12",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 8400
+      },
+      "text": "%s Battle Royale",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S13",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9195
+      },
+      "text": "Battle Royale",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S14",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9197
+      },
+      "text": "Battle games",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S15",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 10597
+      },
+      "text": "Join the Ludo game.",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S16",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 10748
+      },
+      "text": "Ludo",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S17",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 10749
+      },
+      "text": "Ludo Newbie Reward",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S18",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 10750
+      },
+      "text": "Ludo return package",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S19",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 12770
+      },
+      "text": "You may purchase game equipments at the Ludo mall.",
+      "remaining": "是否已启用及实际服务端执行未知"
+    }
+  ],
+  "class_descriptor_candidates": [
+    "Lcom/audio/ui/audioroom/dialog/FamilyBattleNotificationDialog;",
+    "Lcom/mico/framework/model/response/converter/pbfamily/FamilyBattleInviteNtyBinding;",
+    "Lcom/mico/framework/model/response/converter/pbfamily/FamilyBattleInviteStatusBinding;",
+    "Lcom/audio/ui/audioroom/dialog/Hilt_FamilyBattleNotificationDialog;",
+    "Lcom/mico/databinding/DialogFamilyBattleGeneralBinding;",
+    "Lcom/mico/biz/me/data/model/family/RespondFamilyBattleRspBinding;",
+    "Lcom/mico/biz/me/data/model/family/StartFamilyBattleRspBinding;",
+    "Lcom/mico/cake/request/Cake_Request_ApiFamilyService_respondFamilyBattle;",
+    "Lcom/mico/cake/request/Cake_Request_ApiFamilyService_startFamilyBattle;",
+    "Lcom/mico/framework/model/response/converter/pbrankinglist/FamilyBattleResultBinding;",
+    "Lcom/mico/framework/model/response/converter/pbrankinglist/FamilyBattleStatusBinding;"
+  ],
+  "coverage": {
+    "voice": "partial",
+    "social": "partial",
+    "games": "partial",
+    "runtime": "not examined"
+  }
+}

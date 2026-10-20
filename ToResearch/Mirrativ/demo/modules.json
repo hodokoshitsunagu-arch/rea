@@ -1,0 +1,350 @@
+{
+  "app": "Mirrativ",
+  "modules": [
+    {
+      "id": "MIR01",
+      "title": "双形态Collab：通话与共同直播",
+      "implemented_scope": "发起talk/streaming请求→承诺→开始→退出/取消/断线；主播开启LiveParty / 观众申请Collab / 主播接受请求 / 联合者开始直播 / 超过邀请期限 / 联合者退出 / 模拟断线",
+      "limitations": [
+        "人数、重试、竞态",
+        "媒体路由",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"enable\"]",
+          "expected_text": "主播开启LiveParty"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"request-type\"]",
+          "value": "streaming"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"request\"]",
+          "expected_text": "观众申请Collab"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "主播接受请求"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "联合者开始直播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"leave\"]",
+          "expected_text": "联合者退出"
+        }
+      ]
+    },
+    {
+      "id": "MIR02",
+      "title": "Cheerleader礼物身份",
+      "implemented_scope": "观众送Cheerleader礼物→形成主播专属应援关系/等级；赠送Cheerleader礼物 / 赠送普通礼物 / 检查Cheer level资格",
+      "limitations": [
+        "应援等级计分、周期及完整权益",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"gift-amount\"]",
+          "value": "100"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "赠送Cheerleader礼物"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gate\"]",
+          "expected_text": "检查Cheer level资格"
+        }
+      ]
+    },
+    {
+      "id": "MIR03",
+      "title": "主播/观众双侧Live Game任务",
+      "implemented_scope": "进入直播游戏→主播与观众分别接受条件→任务达成→金币/boost状态；Connected契约事件 / Playing契约事件 / 主播完成一次条件 / 观众完成一次条件 / 领取局部契约奖励 / Ended契约事件",
+      "limitations": [
+        "触发条件、奖励公式",
+        "哪些观众可参与",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"connect\"]",
+          "expected_text": "Connected契约事件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"play\"]",
+          "expected_text": "Playing契约事件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"player\"]",
+          "expected_text": "主播完成一次条件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"player\"]",
+          "expected_text": "主播完成一次条件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"viewer\"]",
+          "expected_text": "观众完成一次条件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"viewer\"]",
+          "expected_text": "观众完成一次条件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"viewer\"]",
+          "expected_text": "观众完成一次条件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "领取局部契约奖励"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "Ended契约事件"
+        }
+      ]
+    },
+    {
+      "id": "MIR04",
+      "title": "Emomo麻将邀请与NPC补位",
+      "implemented_scope": "邀请两名朋友或NPC→开始Emomo麻将→头像共桌；邀请朋友 / 朋友接受邀请 / NPC补位 / 进入麻将共场 / 结束本地共场 / 朋友离场",
+      "limitations": [
+        "具体麻将规则、席位总数",
+        "匹配与结算",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"invite-name\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]",
+          "expected_text": "邀请朋友"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"join-name\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]",
+          "expected_text": "朋友接受邀请"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"npc\"]",
+          "expected_text": "NPC补位"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "进入麻将共场"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]",
+          "expected_text": "结束本地共场"
+        }
+      ]
+    },
+    {
+      "id": "MIR05",
+      "title": "Emomo RPG奖励→抽卡券",
+      "implemented_scope": "玩Emomo跑酷RPG→获得gacha券→消耗于礼物抽取入口；启动本地RPG任务 / 完成本地关卡 / 领取RPG抽卡券 / 消耗券抽本地装饰",
+      "limitations": [
+        "RPG战斗/跑酷规则",
+        "票来源和掉率",
+        "奖池",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "启动本地RPG任务"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"complete\"]",
+          "expected_text": "完成本地关卡"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reward\"]",
+          "expected_text": "领取RPG抽卡券"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"draw\"]",
+          "expected_text": "消耗券抽本地装饰"
+        }
+      ]
+    },
+    {
+      "id": "MIR06",
+      "title": "定时任务与观看赚币",
+      "implemented_scope": "观众入直播→观看任务→每日得coin；定时任务窗口重新开放；观看一分钟 / 观看模拟广告 / 领取本时段任务币 / 进入下一重置时段 / 模拟近30天购买资格",
+      "limitations": [
+        "各文案是否同任务",
+        "观看时长及coin数量",
+        "时区",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"ad\"]",
+          "expected_text": "观看模拟广告"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "领取本时段任务币"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"next\"]",
+          "expected_text": "进入下一重置时段"
+        }
+      ]
+    },
+    {
+      "id": "MIR07",
+      "title": "自制Emomo表情礼物",
+      "implemented_scope": "选自己的Emomo姿势→输入最多8字→创建/保存gift；打开Emomo制作页 / 编辑文字与姿势 / 发布本地礼物 / 发送已发布礼物 / 关闭并丢弃草稿",
+      "limitations": [
+        "审核、发布权限、价格",
+        "图像净化与发送流程",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]",
+          "expected_text": "打开Emomo制作页"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"edit-text\"]",
+          "value": "一起加油"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"edit-pose\"]",
+          "value": "举手"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"edit\"]",
+          "expected_text": "编辑文字与姿势"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"publish\"]",
+          "expected_text": "发布本地礼物"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"send\"]",
+          "expected_text": "发送已发布礼物"
+        }
+      ]
+    },
+    {
+      "id": "MIR08",
+      "title": "推し活实体卡形象设计资格",
+      "implemented_scope": "有Cheer level≥1主播→设计形象卡→合作方审查发卡；模拟Cheer level 1资格 / 同意PR规范预览 / 设计Emomo头像预览 / 查看卡面资格预览",
+      "limitations": [
+        "原金融合作合同、审核",
+        "关联利益和权限",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"qualify\"]",
+          "expected_text": "模拟Cheer level 1资格"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"agree\"]",
+          "expected_text": "同意PR规范预览"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"design-x\"]",
+          "value": "50"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"design-y\"]",
+          "value": "50"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"design-scale\"]",
+          "value": "1.2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"design\"]",
+          "expected_text": "设计Emomo头像预览"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"preview\"]",
+          "expected_text": "查看卡面资格预览"
+        }
+      ]
+    }
+  ]
+}

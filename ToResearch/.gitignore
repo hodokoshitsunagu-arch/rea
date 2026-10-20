@@ -1,0 +1,18 @@
+# Original artifacts and reproducible local output
+*.apk
+*.xapk
+*.apks
+*.aab
+*.dex
+*.so
+*.dll
+*.dylib
+*.zip
+.DS_Store
+**/apks/
+**/source-comparison/
+**/verification/
+*.png
+*.jpg
+*.webp
+**/__pycache__/

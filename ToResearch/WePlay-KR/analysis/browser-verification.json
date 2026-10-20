@@ -1,0 +1,28 @@
+{
+  "app": "WePlay-KR",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "errors": [],
+      "horizontal_overflow": false,
+      "complete_journey": true,
+      "reset": true,
+      "screenshot": "demo-desktop.png"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "horizontal_overflow": false,
+      "complete_journey": true,
+      "reset": true,
+      "screenshot": "demo-mobile.png"
+    }
+  ],
+  "scope": "controlled local demo; no Android APK, original service or human audio verification"
+}

@@ -1,0 +1,7 @@
+{
+  "items": 196,
+  "refs": 596,
+  "source_files": 29,
+  "quote_mismatches": [],
+  "scope": "file presence, required fields, package/version, ID uniqueness and source quotation matching; not runtime validation"
+}

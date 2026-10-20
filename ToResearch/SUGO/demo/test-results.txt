@@ -1,0 +1,298 @@
+TAP version 13
+# Subtest: SUG01 完整专属闭环与纯函数
+ok 1 - SUG01 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.770917
+  type: 'test'
+  ...
+# Subtest: SUG01 拒绝边界不改变业务状态
+ok 2 - SUG01 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.078542
+  type: 'test'
+  ...
+# Subtest: SUG01 重置与未知操作
+ok 3 - SUG01 重置与未知操作
+  ---
+  duration_ms: 0.055583
+  type: 'test'
+  ...
+# Subtest: SUG02 完整专属闭环与纯函数
+ok 4 - SUG02 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.095125
+  type: 'test'
+  ...
+# Subtest: SUG02 拒绝边界不改变业务状态
+ok 5 - SUG02 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.067916
+  type: 'test'
+  ...
+# Subtest: SUG02 重置与未知操作
+ok 6 - SUG02 重置与未知操作
+  ---
+  duration_ms: 0.054458
+  type: 'test'
+  ...
+# Subtest: SUG03 完整专属闭环与纯函数
+ok 7 - SUG03 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.110292
+  type: 'test'
+  ...
+# Subtest: SUG03 拒绝边界不改变业务状态
+ok 8 - SUG03 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.034875
+  type: 'test'
+  ...
+# Subtest: SUG03 重置与未知操作
+ok 9 - SUG03 重置与未知操作
+  ---
+  duration_ms: 0.052375
+  type: 'test'
+  ...
+# Subtest: SUG04 完整专属闭环与纯函数
+ok 10 - SUG04 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.119709
+  type: 'test'
+  ...
+# Subtest: SUG04 拒绝边界不改变业务状态
+ok 11 - SUG04 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.048917
+  type: 'test'
+  ...
+# Subtest: SUG04 重置与未知操作
+ok 12 - SUG04 重置与未知操作
+  ---
+  duration_ms: 0.037459
+  type: 'test'
+  ...
+# Subtest: SUG05 完整专属闭环与纯函数
+ok 13 - SUG05 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.065542
+  type: 'test'
+  ...
+# Subtest: SUG05 拒绝边界不改变业务状态
+ok 14 - SUG05 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.034
+  type: 'test'
+  ...
+# Subtest: SUG05 重置与未知操作
+ok 15 - SUG05 重置与未知操作
+  ---
+  duration_ms: 0.031417
+  type: 'test'
+  ...
+# Subtest: SUG06 完整专属闭环与纯函数
+ok 16 - SUG06 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.072
+  type: 'test'
+  ...
+# Subtest: SUG06 拒绝边界不改变业务状态
+ok 17 - SUG06 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.024791
+  type: 'test'
+  ...
+# Subtest: SUG06 重置与未知操作
+ok 18 - SUG06 重置与未知操作
+  ---
+  duration_ms: 0.027042
+  type: 'test'
+  ...
+# Subtest: SUG07 完整专属闭环与纯函数
+ok 19 - SUG07 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.07675
+  type: 'test'
+  ...
+# Subtest: SUG07 拒绝边界不改变业务状态
+ok 20 - SUG07 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.024584
+  type: 'test'
+  ...
+# Subtest: SUG07 重置与未知操作
+ok 21 - SUG07 重置与未知操作
+  ---
+  duration_ms: 0.026333
+  type: 'test'
+  ...
+# Subtest: SUG08 完整专属闭环与纯函数
+ok 22 - SUG08 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.095583
+  type: 'test'
+  ...
+# Subtest: SUG08 拒绝边界不改变业务状态
+ok 23 - SUG08 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.024958
+  type: 'test'
+  ...
+# Subtest: SUG08 重置与未知操作
+ok 24 - SUG08 重置与未知操作
+  ---
+  duration_ms: 0.031584
+  type: 'test'
+  ...
+# Subtest: SUG09 完整专属闭环与纯函数
+ok 25 - SUG09 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.060416
+  type: 'test'
+  ...
+# Subtest: SUG09 拒绝边界不改变业务状态
+ok 26 - SUG09 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.027041
+  type: 'test'
+  ...
+# Subtest: SUG09 重置与未知操作
+ok 27 - SUG09 重置与未知操作
+  ---
+  duration_ms: 0.031375
+  type: 'test'
+  ...
+# Subtest: SUG10 完整专属闭环与纯函数
+ok 28 - SUG10 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.073625
+  type: 'test'
+  ...
+# Subtest: SUG10 拒绝边界不改变业务状态
+ok 29 - SUG10 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.024375
+  type: 'test'
+  ...
+# Subtest: SUG10 重置与未知操作
+ok 30 - SUG10 重置与未知操作
+  ---
+  duration_ms: 0.028791
+  type: 'test'
+  ...
+# Subtest: SUG11 完整专属闭环与纯函数
+ok 31 - SUG11 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.072708
+  type: 'test'
+  ...
+# Subtest: SUG11 拒绝边界不改变业务状态
+ok 32 - SUG11 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.031
+  type: 'test'
+  ...
+# Subtest: SUG11 重置与未知操作
+ok 33 - SUG11 重置与未知操作
+  ---
+  duration_ms: 0.029542
+  type: 'test'
+  ...
+# Subtest: SUG12 完整专属闭环与纯函数
+ok 34 - SUG12 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.042875
+  type: 'test'
+  ...
+# Subtest: SUG12 拒绝边界不改变业务状态
+ok 35 - SUG12 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.023334
+  type: 'test'
+  ...
+# Subtest: SUG12 重置与未知操作
+ok 36 - SUG12 重置与未知操作
+  ---
+  duration_ms: 0.035708
+  type: 'test'
+  ...
+# Subtest: SUG01 PK和冷却各300秒、冷却拒绝礼物、停止后不轮转
+ok 37 - SUG01 PK和冷却各300秒、冷却拒绝礼物、停止后不轮转
+  ---
+  duration_ms: 0.070458
+  type: 'test'
+  ...
+# Subtest: SUG02 更换清麦位但不抹去阵营分、重复结算
+ok 38 - SUG02 更换清麦位但不抹去阵营分、重复结算
+  ---
+  duration_ms: 0.043083
+  type: 'test'
+  ...
+# Subtest: SUG03 Lv1/2/4/5能力和双方授权分别生效
+ok 39 - SUG03 Lv1/2/4/5能力和双方授权分别生效
+  ---
+  duration_ms: 0.058917
+  type: 'test'
+  ...
+# Subtest: SUG04 唯一关系拒绝第二伴侣、解除关系墙
+ok 40 - SUG04 唯一关系拒绝第二伴侣、解除关系墙
+  ---
+  duration_ms: 0.03575
+  type: 'test'
+  ...
+# Subtest: SUG05 关系与双方席位缺一不可
+ok 41 - SUG05 关系与双方席位缺一不可
+  ---
+  duration_ms: 0.028125
+  type: 'test'
+  ...
+# Subtest: SUG06 自然月25维护边界、解散不能恢复、任务去重
+ok 42 - SUG06 自然月25维护边界、解散不能恢复、任务去重
+  ---
+  duration_ms: 0.145625
+  type: 'test'
+  ...
+# Subtest: SUG07 权限随转让改变、离开后不能贡献
+ok 43 - SUG07 权限随转让改变、离开后不能贡献
+  ---
+  duration_ms: 0.0595
+  type: 'test'
+  ...
+# Subtest: SUG08 79分与未验证拒绝、7天严格到期
+ok 44 - SUG08 79分与未验证拒绝、7天严格到期
+  ---
+  duration_ms: 0.063459
+  type: 'test'
+  ...
+# Subtest: SUG09 无资格不允许锁房与匿名
+ok 45 - SUG09 无资格不允许锁房与匿名
+  ---
+  duration_ms: 0.039041
+  type: 'test'
+  ...
+# Subtest: SUG10 冠军随竞争转移、同分保持未知
+ok 46 - SUG10 冠军随竞争转移、同分保持未知
+  ---
+  duration_ms: 0.048958
+  type: 'test'
+  ...
+# Subtest: SUG11 人数2不能自动开局、重复付费拒绝
+ok 47 - SUG11 人数2不能自动开局、重复付费拒绝
+  ---
+  duration_ms: 0.060916
+  type: 'test'
+  ...
+# Subtest: SUG12 只允许解锁后播报一次不产生抽取余额
+ok 48 - SUG12 只允许解锁后播报一次不产生抽取余额
+  ---
+  duration_ms: 0.040667
+  type: 'test'
+  ...
+1..48
+# tests 48
+# suites 0
+# pass 48
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 42.074458

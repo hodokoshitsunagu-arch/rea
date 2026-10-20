@@ -1,0 +1,483 @@
+{
+  "scope": "All 196 catalog items; existing demo may cover only subset; implement bounded core loop with explicit choices for unknowns",
+  "apps": [
+    {
+      "app": "Yalla",
+      "package": "com.weieyu.yalla",
+      "version": "3.7.0",
+      "catalog": "Yalla/FEATURE-CATALOG.md",
+      "catalog_json": "Yalla/analysis/feature-catalog.json",
+      "catalog_sha256": "4b10801245293189a543211d1a6cf3962e7a7cb7d127ba665d53622b77f9b05d",
+      "count": 12,
+      "readiness": {
+        "可先复刻": 11,
+        "需补证据": 1
+      },
+      "evidence_grades": {
+        "B": 12
+      },
+      "ids": [
+        "YAL01",
+        "YAL02",
+        "YAL03",
+        "YAL04",
+        "YAL05",
+        "YAL06",
+        "YAL07",
+        "YAL08",
+        "YAL09",
+        "YAL10",
+        "YAL11",
+        "YAL12"
+      ]
+    },
+    {
+      "app": "YoHo",
+      "package": "com.voicechat.live.group",
+      "version": "5.48.40",
+      "catalog": "YoHo/FEATURE-CATALOG.md",
+      "catalog_json": "YoHo/analysis/feature-catalog.json",
+      "catalog_sha256": "c967c0c4b76caedc64580213d2125fa18d54b3c3df01de4bb44288735b4f972c",
+      "count": 12,
+      "readiness": {
+        "可先复刻": 11,
+        "需补证据": 1
+      },
+      "evidence_grades": {
+        "B": 12
+      },
+      "ids": [
+        "YOH01",
+        "YOH02",
+        "YOH03",
+        "YOH04",
+        "YOH05",
+        "YOH06",
+        "YOH07",
+        "YOH08",
+        "YOH09",
+        "YOH10",
+        "YOH11",
+        "YOH12"
+      ]
+    },
+    {
+      "app": "MICO",
+      "package": "com.mico",
+      "version": "9.1.5.0",
+      "catalog": "MICO/FEATURE-CATALOG.md",
+      "catalog_json": "MICO/analysis/feature-catalog.json",
+      "catalog_sha256": "b489916e753cb6ac1e436229856c91522445232d32135be7f69109d0ed8d1669",
+      "count": 11,
+      "readiness": {
+        "可先复刻": 8,
+        "需补证据": 3
+      },
+      "evidence_grades": {
+        "B": 8,
+        "C": 3
+      },
+      "ids": [
+        "MIC01",
+        "MIC02",
+        "MIC03",
+        "MIC04",
+        "MIC05",
+        "MIC06",
+        "MIC07",
+        "MIC08",
+        "MIC09",
+        "MIC10",
+        "MIC11"
+      ]
+    },
+    {
+      "app": "TopTop",
+      "package": "com.game.friends.android",
+      "version": "3.27.3",
+      "catalog": "TopTop/FEATURE-CATALOG.md",
+      "catalog_json": "TopTop/analysis/feature-catalog.json",
+      "catalog_sha256": "e235b7bc412a71cbd3eede49de4a04081427ddd065a6d2a16d05562c7a75421c",
+      "count": 13,
+      "readiness": {
+        "可先复刻": 10,
+        "需补证据": 3
+      },
+      "evidence_grades": {
+        "B": 12,
+        "C": 1
+      },
+      "ids": [
+        "TOP01",
+        "TOP02",
+        "TOP03",
+        "TOP04",
+        "TOP05",
+        "TOP06",
+        "TOP07",
+        "TOP08",
+        "TOP09",
+        "TOP10",
+        "TOP11",
+        "TOP12",
+        "TOP13"
+      ]
+    },
+    {
+      "app": "WePlay-AR",
+      "package": "com.wejoy.weplay.ar",
+      "version": "6.8.5",
+      "catalog": "WePlay-AR/FEATURE-CATALOG.md",
+      "catalog_json": "WePlay-AR/analysis/feature-catalog.json",
+      "catalog_sha256": "1bbe2a624c9761b0e5b9835b631d047bfc07d5edab4f4d4ce546d7b0cea69cc3",
+      "count": 16,
+      "readiness": {
+        "可先复刻": 13,
+        "需补证据": 3
+      },
+      "evidence_grades": {
+        "B": 16
+      },
+      "ids": [
+        "WAR01",
+        "WAR02",
+        "WAR03",
+        "WAR04",
+        "WAR05",
+        "WAR06",
+        "WAR07",
+        "WAR08",
+        "WAR09",
+        "WAR10",
+        "WAR11",
+        "WAR12",
+        "WAR13",
+        "WAR14",
+        "WAR15",
+        "WAR16"
+      ]
+    },
+    {
+      "app": "Spoon",
+      "package": "co.spoonme",
+      "version": "11.20.0",
+      "catalog": "Spoon/FEATURE-CATALOG.md",
+      "catalog_json": "Spoon/analysis/feature-catalog.json",
+      "catalog_sha256": "772ef8025bc9edfdaf7e4f0802041c8c7b344a5eb35ac17928d8a9fadc734ad9",
+      "count": 9,
+      "readiness": {
+        "可先复刻": 7,
+        "需补证据": 2
+      },
+      "evidence_grades": {
+        "A": 1,
+        "B": 8
+      },
+      "ids": [
+        "SPO01",
+        "SPO02",
+        "SPO03",
+        "SPO04",
+        "SPO05",
+        "SPO06",
+        "SPO07",
+        "SPO08",
+        "SPO09"
+      ]
+    },
+    {
+      "app": "WePlay-JP",
+      "package": "com.wejoy.weplay.jp",
+      "version": "6.12.0",
+      "catalog": "WePlay-JP/FEATURE-CATALOG.md",
+      "catalog_json": "WePlay-JP/analysis/feature-catalog.json",
+      "catalog_sha256": "58082054f7cff3fdedb2168a40dfa722b09c71f8b630885c838ddc0065c901f6",
+      "count": 19,
+      "readiness": {
+        "可先复刻": 16,
+        "需补证据": 3
+      },
+      "evidence_grades": {
+        "B": 16,
+        "A": 2,
+        "C": 1
+      },
+      "ids": [
+        "WJP01",
+        "WJP02",
+        "WJP03",
+        "WJP04",
+        "WJP05",
+        "WJP06",
+        "WJP07",
+        "WJP08",
+        "WJP09",
+        "WJP10",
+        "WJP11",
+        "WJP12",
+        "WJP13",
+        "WJP14",
+        "WJP15",
+        "WJP16",
+        "WJP17",
+        "WJP18",
+        "WJP19"
+      ]
+    },
+    {
+      "app": "WePlay-KR",
+      "package": "com.wejoy.weplay.kr",
+      "version": "6.12.0",
+      "catalog": "WePlay-KR/FEATURE-CATALOG.md",
+      "catalog_json": "WePlay-KR/analysis/feature-catalog.json",
+      "catalog_sha256": "c043a159c7eae335d49ff53049d41d4cf3b3cbf6ebcc0a04c3ce75097c23df18",
+      "count": 19,
+      "readiness": {
+        "可先复刻": 16,
+        "需补证据": 3
+      },
+      "evidence_grades": {
+        "B": 17,
+        "A": 1,
+        "C": 1
+      },
+      "ids": [
+        "WKR01",
+        "WKR02",
+        "WKR03",
+        "WKR04",
+        "WKR05",
+        "WKR06",
+        "WKR07",
+        "WKR08",
+        "WKR09",
+        "WKR10",
+        "WKR11",
+        "WKR12",
+        "WKR13",
+        "WKR14",
+        "WKR15",
+        "WKR16",
+        "WKR17",
+        "WKR18",
+        "WKR19"
+      ]
+    },
+    {
+      "app": "Mirrativ",
+      "package": "com.dena.mirrativ",
+      "version": "11.92.1",
+      "catalog": "Mirrativ/FEATURE-CATALOG.md",
+      "catalog_json": "Mirrativ/analysis/feature-catalog.json",
+      "catalog_sha256": "d3765fe13fbada91f984df443324ba760e7ff5b461bddacc18c817a8faf113c5",
+      "count": 8,
+      "readiness": {
+        "可先复刻": 3,
+        "需补证据": 4,
+        "暂缓": 1
+      },
+      "evidence_grades": {
+        "B": 7,
+        "C": 1
+      },
+      "ids": [
+        "MIR01",
+        "MIR02",
+        "MIR03",
+        "MIR04",
+        "MIR05",
+        "MIR06",
+        "MIR07",
+        "MIR08"
+      ]
+    },
+    {
+      "app": "Pococha",
+      "package": "com.dena.pokota",
+      "version": "7.36.0",
+      "catalog": "Pococha/FEATURE-CATALOG.md",
+      "catalog_json": "Pococha/analysis/feature-catalog.json",
+      "catalog_sha256": "b1293f5d0163b38e9963ddf4b5374828b0b578b7b5d4786d7b47319cd4432142",
+      "count": 11,
+      "readiness": {
+        "可先复刻": 9,
+        "需补证据": 2
+      },
+      "evidence_grades": {
+        "B": 9,
+        "C": 2
+      },
+      "ids": [
+        "POC01",
+        "POC02",
+        "POC03",
+        "POC04",
+        "POC05",
+        "POC06",
+        "POC07",
+        "POC08",
+        "POC09",
+        "POC10",
+        "POC11"
+      ]
+    },
+    {
+      "app": "17LIVE",
+      "package": "com.machipopo.media17",
+      "version": "2.253.1.0",
+      "catalog": "17LIVE/FEATURE-CATALOG.md",
+      "catalog_json": "17LIVE/analysis/feature-catalog.json",
+      "catalog_sha256": "7de1c933abc7d7c8fde884e48790e37c1699cebe86bcb32633a99a4ed2f73f0f",
+      "count": 12,
+      "readiness": {
+        "可先复刻": 9,
+        "需补证据": 3
+      },
+      "evidence_grades": {
+        "B": 12
+      },
+      "ids": [
+        "L1701",
+        "L1702",
+        "L1703",
+        "L1704",
+        "L1705",
+        "L1706",
+        "L1707",
+        "L1708",
+        "L1709",
+        "L1710",
+        "L1711",
+        "L1712"
+      ]
+    },
+    {
+      "app": "SUGO",
+      "package": "com.voicemaker.android",
+      "version": "2.52.0.1",
+      "catalog": "SUGO/FEATURE-CATALOG.md",
+      "catalog_json": "SUGO/analysis/feature-catalog.json",
+      "catalog_sha256": "f5276a651691eedd4ad83862d1c320a3fd8778ce1c69444bf4317d685618418d",
+      "count": 12,
+      "readiness": {
+        "可先复刻": 8,
+        "需补证据": 4
+      },
+      "evidence_grades": {
+        "B": 12
+      },
+      "ids": [
+        "SUG01",
+        "SUG02",
+        "SUG03",
+        "SUG04",
+        "SUG05",
+        "SUG06",
+        "SUG07",
+        "SUG08",
+        "SUG09",
+        "SUG10",
+        "SUG11",
+        "SUG12"
+      ]
+    },
+    {
+      "app": "Yalla-Parchis",
+      "package": "com.yalla.yallaparchisi",
+      "version": "1.5.3",
+      "catalog": "Yalla-Parchis/FEATURE-CATALOG.md",
+      "catalog_json": "Yalla-Parchis/analysis/feature-catalog.json",
+      "catalog_sha256": "b3101657db261b3b2022813c5642c0a93ecd71600d179a4833741cac314eb3da",
+      "count": 15,
+      "readiness": {
+        "可先复刻": 12,
+        "需补证据": 3
+      },
+      "evidence_grades": {
+        "B": 15
+      },
+      "ids": [
+        "YPH01",
+        "YPH02",
+        "YPH03",
+        "YPH04",
+        "YPH05",
+        "YPH06",
+        "YPH07",
+        "YPH08",
+        "YPH09",
+        "YPH10",
+        "YPH11",
+        "YPH12",
+        "YPH13",
+        "YPH14",
+        "YPH15"
+      ]
+    },
+    {
+      "app": "Falla",
+      "package": "com.juhaoliao.vochat",
+      "version": "V9.23.0",
+      "catalog": "Falla/FEATURE-CATALOG.md",
+      "catalog_json": "Falla/analysis/feature-catalog.json",
+      "catalog_sha256": "2d0ed1a6bde125380a618dfe992697ad02529d88d19cb7a3393d248f6eb9278f",
+      "count": 13,
+      "readiness": {
+        "可先复刻": 8,
+        "需补证据": 5
+      },
+      "evidence_grades": {
+        "B": 12,
+        "A": 1
+      },
+      "ids": [
+        "FAL01",
+        "FAL02",
+        "FAL03",
+        "FAL04",
+        "FAL05",
+        "FAL06",
+        "FAL07",
+        "FAL08",
+        "FAL09",
+        "FAL10",
+        "FAL11",
+        "FAL12",
+        "FAL13"
+      ]
+    },
+    {
+      "app": "HeeSay",
+      "package": "com.blued.international",
+      "version": "5.14.5",
+      "catalog": "HeeSay/FEATURE-CATALOG.md",
+      "catalog_json": "HeeSay/analysis/feature-catalog.json",
+      "catalog_sha256": "46121988df228ebe6bb83e56df7f65fedc0ebcf8c3f3b8103dedbb6470e5e0da",
+      "count": 14,
+      "readiness": {
+        "可先复刻": 8,
+        "需补证据": 6
+      },
+      "evidence_grades": {
+        "B": 13,
+        "C": 1
+      },
+      "ids": [
+        "HEE01",
+        "HEE02",
+        "HEE03",
+        "HEE04",
+        "HEE05",
+        "HEE06",
+        "HEE07",
+        "HEE08",
+        "HEE09",
+        "HEE10",
+        "HEE11",
+        "HEE12",
+        "HEE13",
+        "HEE14"
+      ]
+    }
+  ]
+}

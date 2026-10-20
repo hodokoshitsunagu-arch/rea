@@ -1,0 +1,735 @@
+{
+  "app": "HeeSay",
+  "modules": [
+    {
+      "id": "HEE01",
+      "title": "守护资格、Top1 Couple 与积分到期",
+      "implemented_scope": "守护双账本和滚动到期；专属操作：阿澄赠2500Beans成为守护 → 米拉赠3000Beans争Top1 → 推进2分钟榜单延迟 → 推进至第8日GMT+0零点",
+      "limitations": [
+        "同分",
+        "资格失效需要补量文案但精确公式未知",
+        "固定2500/3000Beans样本；2分钟延迟是源范围内测试值；积分逐笔7天到期，资格失效公式未知不推断",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftA\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expiry\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftA\"]",
+          "expected_text": "阿澄赠2500Beans成为守护"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "推进2分钟榜单延迟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "米拉赠3000Beans争Top1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"sync\"]",
+          "expected_text": "推进2分钟榜单延迟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expiry\"]",
+          "expected_text": "推进至第8日GMT+0零点"
+        }
+      ],
+      "regression_fix": "积分到期重算时使旧待同步榜身份失效（pending=null）；giftA→expiry→sync拒绝旧同步，不会复活过期Couple，新积分事件才可生成新待同步身份。"
+    },
+    {
+      "id": "HEE02",
+      "title": "Chat Spark 到 Soulmate 徽章",
+      "implemented_scope": "关系进阶模型；专属操作：注入Chat Spark已点燃事件 → 阿澄向米拉送11Beans → 米拉向阿澄送11Beans → 核验同一天互赠门槛 → GMT+0进入新一天",
+      "limitations": [
+        "Chat Spark点燃与熄灭",
+        "双方各10还是合计",
+        "点燃事件手动注入；选择双方各>10分支，合计/各自歧义保留；徽章跨日保留为本地选择",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"unlock\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"spark\"]",
+          "expected_text": "注入Chat Spark已点燃事件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftA\"]",
+          "expected_text": "阿澄向米拉送11Beans"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "米拉向阿澄送11Beans"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"unlock\"]",
+          "expected_text": "核验同一天互赠门槛"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "GMT+0进入新一天"
+        }
+      ]
+    },
+    {
+      "id": "HEE03",
+      "title": "Fan Club 取最高等级奖励",
+      "implemented_scope": "多粉丝团奖励去重模型；专属操作：加入主播A粉丝团Lv1 → 加入主播B粉丝团Lv1 → 给B贡献本地20粉丝点升Lv3 → 领取当天最高团等级奖励 → 进入所属主播B房展示徽章 → 进入无所属团主播C房",
+      "limitations": [
+        "粉丝点生产",
+        "退出不可恢复",
+        "奖励内容",
+        "粉丝点20和每10一级本地配置；奖励只标等级，退出不可恢复未造账户数据",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"reward\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "加入主播A粉丝团Lv1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinB\"]",
+          "expected_text": "加入主播B粉丝团Lv1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"giftB\"]",
+          "expected_text": "给B贡献本地20粉丝点升Lv3"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reward\"]",
+          "expected_text": "领取当天最高团等级奖励"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"roomB\"]",
+          "expected_text": "进入所属主播B房展示徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"outside\"]",
+          "expected_text": "进入无所属团主播C房"
+        }
+      ]
+    },
+    {
+      "id": "HEE04",
+      "title": "Family Starship 月度保级",
+      "implemented_scope": "组织成长与风险沙盘；专属操作：任务注入150000 Force样本 → 选择用150000 Overall升级Lv2 → GMT+0月末结算与清月值",
+      "limitations": [
+        "当前Family与Starship是否双体系",
+        "任务分",
+        "降级恢复公式",
+        "15000/150000/60000/容量10与15源规则；升级扣Overall、失败扣门槛为本地公式，未知原降级扣总力",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"upgrade\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "任务注入150000 Force样本"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"upgrade\"]",
+          "expected_text": "选择用150000 Overall升级Lv2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]",
+          "expected_text": "GMT+0月末结算与清月值"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]",
+          "expected_text": "GMT+0月末结算与清月值"
+        }
+      ]
+    },
+    {
+      "id": "HEE05",
+      "title": "家族双域管理员与创建存续条件",
+      "implemented_scope": "先分家族产品路径再复刻；专属操作：模拟财富Lv9 → 走财富Lv9新Family路径创建 → 族务管理员编辑家族公告 → 群管理员编辑群聊公告 → 独立授予群管理员 → 招募10成员使总人数11 → 到本地30天招募截止 → 查看旧Starship创建资格样本",
+      "limitations": [
+        "10天/30天人数文案冲突",
+        "旧Starship与新Family适用",
+        "当前服务器门槛",
+        "明示新Family财富Lv9+本地选择30天>10路径；10/30天和旧Starship冲突不合并，角色授权为本地补齐",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"eligible\"]",
+          "expected_text": "模拟财富Lv9"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]",
+          "expected_text": "走财富Lv9新Family路径创建"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"familyBulletin\"]",
+          "expected_text": "族务管理员编辑家族公告"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chatAdmin\"]",
+          "expected_text": "独立授予群管理员"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"chatAnnouncement\"]",
+          "expected_text": "群管理员编辑群聊公告"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"recruit\"]",
+          "expected_text": "招募10成员使总人数11"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"deadline\"]",
+          "expected_text": "到本地30天招募截止"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"starship\"]",
+          "expected_text": "查看旧Starship创建资格样本"
+        }
+      ]
+    },
+    {
+      "id": "HEE06",
+      "title": "RICH 保级失败冻结不降级",
+      "implemented_scope": "冻结保级状态机；专属操作：积累本地50EXP → 有效期结束维护重算",
+      "limitations": [
+        "部分扣除比例",
+        "阈值和周期",
+        "VIP是否独立",
+        "维护100、失败部分扣25、每事件50和解冻扣100全是本地参数；冻结不降级源规则",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"earn\"]",
+          "expected_text": "积累本地50EXP"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "有效期结束维护重算"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"earn\"]",
+          "expected_text": "积累本地50EXP"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"earn\"]",
+          "expected_text": "积累本地50EXP"
+        }
+      ]
+    },
+    {
+      "id": "HEE07",
+      "title": "匿名观播对主播可见",
+      "implemented_scope": "观众/主播可见性矩阵；专属操作：授予Anonymous Viewing模拟资格 → 开启/关闭匿名观看 → 切换主播视角识别真实身份 → 切换普通观众视角 → 当前视角打开主页",
+      "limitations": [
+        "财富Lv8神秘模式是否同一路径",
+        "房管可见性",
+        "资格直接注入，不把财富Lv8神秘模式合并；房管可见性保留未知",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"toggle\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"eligible\"]",
+          "expected_text": "授予Anonymous Viewing模拟资格"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"toggle\"]",
+          "expected_text": "开启/关闭匿名观看"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"host\"]",
+          "expected_text": "切换主播视角识别真实身份"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"profile\"]",
+          "expected_text": "当前视角打开主页"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"audience\"]",
+          "expected_text": "切换普通观众视角"
+        }
+      ]
+    },
+    {
+      "id": "HEE08",
+      "title": "幸运礼物按实际收币算榜",
+      "implemented_scope": "双币账本可先复刻，抽取算法待补；专属操作：送1000Beans幸运礼物（100Coins样本） → 注入已知抽取样本：0倍奖励 → 重置本地赠礼资产至1000Beans",
+      "limitations": [
+        "概率/每礼物兑换率",
+        "不同币种单位",
+        "1000Beans→100Coins→0.1财富点采用源示例；0倍结果手动注入非概率；魅力仅记录Coin源值，比例未知",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"result\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "送1000Beans幸运礼物（100Coins样本）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"result\"]",
+          "expected_text": "注入已知抽取样本：0倍奖励"
+        }
+      ]
+    },
+    {
+      "id": "HEE09",
+      "title": "宝箱任务排除特定礼物",
+      "implemented_scope": "按来源统计的共同目标；专属操作：开始Lv2宝箱任务 → 普通礼物消耗10Beans → 幸运/袋/飞评礼物消耗不计点 → 赠送1地图记1点至本地上限2 → 完成共同目标领取资格",
+      "limitations": [
+        "奖励池/竞争胜者",
+        "地图消耗与赠送语义",
+        "目标12/地图上限2为下发字段本地值；严格按来源统计，奖励竞争未补造",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]",
+          "expected_text": "开始Lv2宝箱任务"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"excluded\"]",
+          "expected_text": "幸运/袋/飞评礼物消耗不计点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"ordinary\"]",
+          "expected_text": "普通礼物消耗10Beans"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"map\"]",
+          "expected_text": "赠送1地图记1点至本地上限2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"map\"]",
+          "expected_text": "赠送1地图记1点至本地上限2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"map\"]",
+          "expected_text": "赠送1地图记1点至本地上限2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "完成共同目标领取资格"
+        }
+      ]
+    },
+    {
+      "id": "HEE10",
+      "title": "Card Battle 分阶段揭牌",
+      "implemented_scope": "仅揭牌节奏与信息公开矩阵；专属操作：A队参加一次 → B队参加一次 → 超过10次且双队有人才开局 → 推进揭第二张卡的倒计时 → 结束揭第三张并比较样本队分",
+      "limitations": [
+        "卡分/概率",
+        "秘密卡购买合成",
+        "结算赔率",
+        "卡值2/3/4与1/2/3、本地中点事件均演示参数；只做揭牌与比较，秘密卡购买/合成/赔率不造",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinB\"]",
+          "expected_text": "B队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"joinA\"]",
+          "expected_text": "A队参加一次"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "超过10次且双队有人才开局"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"mid\"]",
+          "expected_text": "推进揭第二张卡的倒计时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "结束揭第三张并比较样本队分"
+        }
+      ]
+    },
+    {
+      "id": "HEE11",
+      "title": "Hot Pick 与跨房PK互斥",
+      "implemented_scope": "仅活动互斥与可见性模型；专属操作：打开开放/显示/按钮三独立配置 → 只隐藏Hot Pick按钮 → 进入跨房PK → 进入Hot Pick入口实验 → 推进配置end_seconds至活动结束",
+      "limitations": [
+        "分数来源和rank_type",
+        "完整胜负规则",
+        "C级仅协议字段、可见性与互斥实验；60秒本地配置，不补造Hot Pick分数或胜负",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"hotpick\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"configure\"]",
+          "expected_text": "打开开放/显示/按钮三独立配置"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hotpick\"]",
+          "expected_text": "进入Hot Pick入口实验"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "推进配置end_seconds至活动结束"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"pk\"]",
+          "expected_text": "进入跨房PK"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "推进配置end_seconds至活动结束"
+        }
+      ]
+    },
+    {
+      "id": "HEE12",
+      "title": "Doodle 月榜排除上月Top10",
+      "implemented_scope": "作品榜轮换机制；专属操作：为旧作注入人气事件10点 → 为新作注入人气事件20点 → GMT+0下月1日00:00结榜 → 推进到每月4日关闭展示",
+      "limitations": [
+        "人气生产和奖项",
+        "排除期是否仅一月",
+        "两作品沙盘，同分按本地ID先后；人气10/20样本；排除仅下一月为本地解释，未推断奖项",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"likeOld\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"likeNew\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"fourth\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"likeOld\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"likeOld\"]",
+          "expected_text": "为旧作注入人气事件10点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"likeNew\"]",
+          "expected_text": "为新作注入人气事件20点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"month\"]",
+          "expected_text": "GMT+0下月1日00:00结榜"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"fourth\"]",
+          "expected_text": "推进到每月4日关闭展示"
+        }
+      ]
+    },
+    {
+      "id": "HEE13",
+      "title": "游戏票的失败补偿 Lucky Points",
+      "implemented_scope": "结果补偿积分层；专属操作：使用一张模拟游戏票 → 注入赢局：Lucky Points+1 → 注入输局：Lucky Points+3 → 注入平局：Lucky Points+0",
+      "limitations": [
+        "适用游戏",
+        "点数用途",
+        "退款结果",
+        "结果手动输入，不补造具体游戏；1/3/0为源值，兑换/退款未知",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"win\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]",
+          "expected_text": "使用一张模拟游戏票"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"win\"]",
+          "expected_text": "注入赢局：Lucky Points+1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]",
+          "expected_text": "使用一张模拟游戏票"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"loss\"]",
+          "expected_text": "注入输局：Lucky Points+3"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]",
+          "expected_text": "使用一张模拟游戏票"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"draw\"]",
+          "expected_text": "注入平局：Lucky Points+0"
+        }
+      ]
+    },
+    {
+      "id": "HEE14",
+      "title": "徽章槽位按展示域分权",
+      "implemented_scope": "徽章展示优先级；专属操作：装备下一枚持有徽章 → 将最后一枚提到第一槽 → 卸下第一槽并重排",
+      "limitations": [
+        "不同徽章专属规则",
+        "粉丝徽章与普通徽章交互",
+        "七枚样本徽章；重排与卸载后顺移为本地补齐；六槽展示域为源规则",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"reorder\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"equip\"]",
+          "expected_text": "装备下一枚持有徽章"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reorder\"]",
+          "expected_text": "将最后一枚提到第一槽"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"remove\"]",
+          "expected_text": "卸下第一槽并重排"
+        }
+      ]
+    }
+  ]
+}

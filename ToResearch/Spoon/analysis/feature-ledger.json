@@ -1,0 +1,39 @@
+{
+  "app": "Spoon",
+  "artifact_sha256": "3af6243d07193bd4a8441cfd2b19215c2c5cd46978534f617badbd174a3aa592",
+  "rea_package_evidence_id": "ev_5b0e712bf5678648d97c6824c768e85e31054bbfd98e602e8f6e9493afb12acf",
+  "features": [
+    {
+      "question": "语聊 / LiveCall 客人收礼",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "LiveChatMessage$LiveCallGuestDonation、WalaLiveCallDonation 与资源 Guests can receive donations through Lucky Boxes sent by listeners.",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "类/文案证明存在该表示；人数、主持权限、RTC质量未知"
+    },
+    {
+      "question": "游戏 / Lucky Box",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "Create/Accept/Result 消息族；REA WalaLuckyBoxInfo 的 boxCount、amount、message；资源最多5盒、失败仅10%。",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "已恢复静态契约与文案，不证明线上所有地区开放"
+    },
+    {
+      "question": "游戏 / Quiz Gift",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "Donation$Quiz、Send a quiz to your streamer…、失败仅10% spoons文案",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "具体题型、时限、判题与出题配额未知"
+    },
+    {
+      "question": "社交 / Fan Board",
+      "status": "partially answered",
+      "evidence_type": "包体直接证据",
+      "basis": "ChannelFanBoard 深链、ViewModel、WelcomeFanBoard 编辑及 fanboard_write/visit",
+      "scope": "static package declarations, contract fields, strings and resources",
+      "unknown": "表示频道粉丝留言入口；社区可见性和审核未知"
+    }
+  ]
+}

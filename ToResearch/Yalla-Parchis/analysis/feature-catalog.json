@@ -1,0 +1,824 @@
+{
+  "app": "Yalla-Parchis",
+  "package": "com.yalla.yallaparchisi",
+  "version": "1.5.3",
+  "scope": "partial static",
+  "items": [
+    {
+      "name": "Classic/Spanish 双骰策略",
+      "categories": [
+        "游戏",
+        "玩法"
+      ],
+      "core_loop": "双骰出巢→分配步数→三次双数受罚",
+      "distinctive": "同一骰史在变体下对应不同处罚棋子",
+      "rules": {
+        "门槛": "单骰或和5出一子；双5出两子",
+        "时序": "双数再投；三连双数处罚",
+        "资源": "两个骰子额度",
+        "回报": "步数与额外回合"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_66",
+          "quote": "A token can come out of the nest when player rolls 5 in a single dice or the sum of two dice. Two tokens can come out when player rolls double 5.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_match_tip6",
+          "quote": "Tip: In Spanish rule, the last moved token will be sent back to nest when player rolled double three times continuously.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_match_tip7",
+          "quote": "Tip: In Classic rule, the most advanced token will be sent back to nest when player rolled double three times continuously.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        }
+      ],
+      "unknowns": [
+        "未移动棋子处罚",
+        "骰子服务器产生"
+      ],
+      "replica_scope": "两种模式骰史实验",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "已有",
+      "id": "YPH01"
+    },
+    {
+      "name": "路障与强制拆障",
+      "categories": [
+        "游戏",
+        "玩法"
+      ],
+      "core_loop": "同色两子同格→阻塞所有玩家→掷双数必须拆己障",
+      "distinctive": "防守占位也会阻挡自己",
+      "rules": {
+        "门槛": "两枚同色同格",
+        "时序": "双数强制拆障",
+        "资源": "棋子布局",
+        "回报": "阻止穿越"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_70",
+          "quote": "If two tokens of the same color stay in the same box then they form a blockade. Neither the player's token or opponents' token can cross blockade. If a player can't move any token because of blockade then this turn is invalid. Note: If the player rolls double then it is forced to break blockade.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        }
+      ],
+      "unknowns": [
+        "终点轨道例外",
+        "无法行动额度消费"
+      ],
+      "replica_scope": "布局策略实验",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "已有",
+      "id": "YPH02"
+    },
+    {
+      "name": "吃子20步和终点10步奖励",
+      "categories": [
+        "游戏",
+        "玩法"
+      ],
+      "core_loop": "吃子/入终点→额外奖励额度→选择棋子移动",
+      "distinctive": "一次行动可带来二次策略选择",
+      "rules": {
+        "门槛": "吃子或到终点",
+        "时序": "事件后奖励",
+        "资源": "20/10步",
+        "回报": "额外移动"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_76",
+          "quote": "Player can move a token for 20 spaces after captured a token of opponent.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_78",
+          "quote": "Player can move a token for 10 spaces after one token reached the end.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_72",
+          "quote": "All gray spaces with star are safety zones. Token in safety zones can't be captured.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        }
+      ],
+      "unknowns": [
+        "奖励串联",
+        "棋盘安全格坐标"
+      ],
+      "replica_scope": "奖励额度策略实验",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "已有",
+      "id": "YPH03"
+    },
+    {
+      "name": "队伍八子终局和代操作队友",
+      "categories": [
+        "游戏",
+        "社交"
+      ],
+      "core_loop": "邀请码/好友/快配组队→己方四子完成→帮队友走完",
+      "distinctive": "个人完成后仍能参与队伍胜利",
+      "rules": {
+        "门槛": "红黄对蓝绿",
+        "时序": "先完成自己的四子才操作队友",
+        "资源": "每队8子",
+        "回报": "全队完成才赢；队友离局对方赢"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_82",
+          "quote": "You can create a team by inviting Facebook friends, sharing team code/link, or quick match.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_86",
+          "quote": "The first team to move all 8 tokens to the end will win. There is no reward if you only move your own 4 tokens.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_88",
+          "quote": "Players team up as follows: (Red & Yellow) vs (Blue & Green)",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_90",
+          "quote": "When you finish the game, you will be able to roll the teammate’s dice and move the teammate’s token.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_92",
+          "quote": "When one player leaves the game, opponents win.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        }
+      ],
+      "unknowns": [
+        "代操作冲突",
+        "挂机/掉线和主动退出区别"
+      ],
+      "replica_scope": "协作残局与代操作",
+      "replica_effort": "高",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "YPH04"
+    },
+    {
+      "name": "联赛升降和传奇星",
+      "categories": [
+        "游戏",
+        "权益"
+      ],
+      "core_loop": "每周排位→前20%升级/后20%降级→传奇前40拿星",
+      "distinctive": "短局形成长期竞技阶梯",
+      "rules": {
+        "门槛": "Lv4解锁文案",
+        "时序": "每周",
+        "资源": "联赛成绩/传奇星",
+        "回报": "段位与星身份"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_league_desc",
+          "quote": "1. Top 20% players in the league will be promoted.\n2. Bottom 20% players in the league will be demoted.\n3. The rest will stay in the current league.\n4. You can win Legend Stars each week if you are Top 1-40 in the Legend League.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_league unlocks at level 4",
+          "quote": "League unlocks at level 4!",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        }
+      ],
+      "unknowns": [
+        "联赛分生产",
+        "分组容量",
+        "同分"
+      ],
+      "replica_scope": "周结算联赛沙盘",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "YPH05"
+    },
+    {
+      "name": "宝箱队列与通行证",
+      "categories": [
+        "权益",
+        "玩法"
+      ],
+      "core_loop": "赢局拿箱→排队解锁→当前箱完成自动开始下一箱",
+      "distinctive": "等待队列是通行证专属便利",
+      "rules": {
+        "门槛": "购买event pass可排队",
+        "时序": "串行倒计时",
+        "资源": "箱位/钻石",
+        "回报": "皮肤碎片和钻石"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_36",
+          "quote": "Win games to get treasure chests. \nOpen your chests here.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_skinboxqueue_06",
+          "quote": "1. Treasure chest can line up only when players purchased event pass.\n2.When the countdown of unlocking current treasure chest ends, treasure chest in line will start countdown.\n3.Players can select other treasure chest which is not in line to change line up treasure chest.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_chestdes_02",
+          "quote": "Higher possibility to get featured blue or purple skin fragments and diamonds",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        }
+      ],
+      "unknowns": [
+        "解锁时长/掉率",
+        "队列容量"
+      ],
+      "replica_scope": "宝箱排队系统",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "YPH06"
+    },
+    {
+      "name": "协助缩短开箱",
+      "categories": [
+        "社交",
+        "玩法"
+      ],
+      "core_loop": "请求协助→好友帮助→分钟减免→当天累加额度过期",
+      "distinctive": "玩家关系直接改善游戏奖励等待",
+      "rules": {
+        "门槛": "协助事件",
+        "时序": "减时即时应用；GMT-5午夜过期",
+        "资源": "可堆叠减时",
+        "回报": "更快开箱"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_help_receive_suc",
+          "quote": "As an assistance reward, {0} minutes have been deducted from the skin chest unlock time.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_skin_box_help_text1",
+          "quote": "Stackable time-reductions expire daily at 0:00 (GMT-5) and apply instantly on chest unlock.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        }
+      ],
+      "unknowns": [
+        "次数上限",
+        "协助者奖励",
+        "减时来源"
+      ],
+      "replica_scope": "互助开箱状态机",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "YPH07"
+    },
+    {
+      "name": "VIP Elite 房与观战身份",
+      "categories": [
+        "权益",
+        "社交"
+      ],
+      "core_loop": "订VIP等级→创建/进入Elite→观战特殊弹幕",
+      "distinctive": "竞技房间的社交权限分层",
+      "rules": {
+        "门槛": "VIP2可与其他VIP2玩Elite",
+        "时序": "订阅有效期",
+        "资源": "VIP资格",
+        "回报": "Elite模式、房主踢人、观战效果、月度皮肤"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_privilege_content_3",
+          "quote": "You can play mode online 1 on 1、 online 4 players or team up in Elite Room with other VIP 2 players after being VIP 2",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_vip_content_82",
+          "quote": "Room owners with VIP subscriptions can kick out impolite users from rooms.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_vip_content_152",
+          "quote": "You can send comments with the exclusive effect during spectating after being VIP",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_privilege_content_5",
+          "quote": "Monthly free use at least 2 skins after being VIP. Free skins will have \"VIP\" logo in Skin Store and look as follows:",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        }
+      ],
+      "unknowns": [
+        "Android实际支付实现",
+        "等级成本"
+      ],
+      "replica_scope": "房间权限矩阵演示",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "YPH08"
+    },
+    {
+      "name": "Member Club 任务社群",
+      "categories": [
+        "社交",
+        "权益",
+        "玩法"
+      ],
+      "core_loop": "加入房间会员团→任务贡献→升团等级→周排行",
+      "distinctive": "游戏房间有长期社群共同目标",
+      "rules": {
+        "门槛": "加入Member Club",
+        "时序": "周排行，GMT-5双窗口统计",
+        "资源": "任务贡献",
+        "回报": "动态表情/钻石；Top3房间展示与热度奖"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_room_global_content",
+          "quote": "1. The global ranking counts the contribution points generated by your room member club or the room member clubs you have joined during a week (from Monday to Sunday).\n\n2. In global ranking, the top 3 room member clubs will have special display rewards in the \"Popular\" room list (As you may be in different regions and countries, the orders in which they are displayed may vary).\n\n3. In addition, the top 3 member clubs will be rewarded with different room heat prizes.\n \n4. The ranking contribution statistics will be updated at 1:00 - 2:00 AM and 12:00 - 13:00 (GMT-5).",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_member_rank_explain",
+          "quote": "1. The ranking counts the contribution points generated by your room member club or the room member clubs you have joined during a week (from Monday to Sunday).\n\n2. Contribution points could be earned by completing the corresponding tasks. If the contribution points are same, the player who registered earlier will be displayed first.\n \n3. The ranking contribution statistics will be updated at 1:00 - 2:00 AM and 12:00 - 13:00 (GMT-5).\n\n4. The players who leave room member clubs will be removed from the ranking after the relevant statistics are cleared.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_mc_description_1",
+          "quote": "Complete tasks to raise the level of the Member Club and you may get diamonds.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_emoji_join_tips",
+          "quote": "Join the the Member Club to unlock some dynamic emojis in the chat room immediately!",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        }
+      ],
+      "unknowns": [
+        "具体任务积分",
+        "退团清算时刻"
+      ],
+      "replica_scope": "房间社群任务与周荣誉",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "YPH09"
+    },
+    {
+      "name": "Baron 房内按月权益续费",
+      "categories": [
+        "权益",
+        "社交"
+      ],
+      "core_loop": "钻石购买Baron→房内身份→自动续费或过期",
+      "distinctive": "房间身份有独立于平台VIP的生命周期",
+      "rules": {
+        "门槛": "钻石购买",
+        "时序": "到期前12小时扣款；余额不足取消；超过20天未登录取消下期",
+        "资源": "钻石",
+        "回报": "房内Baron装扮权益"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_auto_content",
+          "quote": "1. The users can enable or disable the option of automatic monthly payment.\n2. You will not be charged in the next period if you disable the option.\n3. If you enable the automatic monthly payment, you will be charged 12 hours before the privileges expire, for which we hope your balance is enough to pay.\n4. If you don't have enough diamonds, you will not be charged successfully. The automatic monthly payment will be canceled and the privileges will expire in the next scheduled period.\n5. If you don't log in for more than 20 days when charged, the automatic payment will be canceled for next period.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_knight_content4",
+          "quote": "Your Baron privileges in the room will expire in {0} days and {1} hours. Do you want to pay for the next period in advance?",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_knight_get",
+          "quote": "You have paid {0} diamonds for Baron's privileges successfully and got the following items.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        }
+      ],
+      "unknowns": [
+        "价格配置",
+        "准确权益列表"
+      ],
+      "replica_scope": "双资格体系与续期沙盘",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "YPH10"
+    },
+    {
+      "name": "关系亲密度衰减",
+      "categories": [
+        "社交",
+        "权益"
+      ],
+      "core_loop": "与好友积累亲密→停滞若干天→衰减→降级少权益",
+      "distinctive": "关系需要持续维护而非永久等级",
+      "rules": {
+        "门槛": "连续{0}天不增长，值为下发占位",
+        "时序": "停滞后衰减",
+        "资源": "关系亲密点",
+        "回报": "关系等级权益"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_relation_rule5",
+          "quote": "If your intimacy points with a friend does not increase for {0} consecutive day(s), a decay mechanism will be triggered. If your intimacy points falls below the minimum required for the current level, you will be downgraded. Downgrading will reduce your privileges.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_intimacy_upgrade_1",
+          "quote": "Congratulations, your intimacy points with <color=#FFDD1F>{0}</color> has reached <color=#FFDD1F>{1}</color>. Here are your privileges:",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        }
+      ],
+      "unknowns": [
+        "天数和衰减公式",
+        "关系类型"
+      ],
+      "replica_scope": "可配置亲密度生命周期",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现",
+      "id": "YPH11"
+    },
+    {
+      "name": "礼物专属 Sponsor 冠名",
+      "categories": [
+        "社交",
+        "权益"
+      ],
+      "core_loop": "给某人送特定礼物→该礼物数量第一→成为冠名赞助",
+      "distinctive": "按收礼者×礼物种类分割关系荣誉",
+      "rules": {
+        "门槛": "特定礼物最高数量；同分先达到优先",
+        "时序": "GMT-5周一至周日，更新延迟5–30分钟，新周清空",
+        "资源": "礼物数量",
+        "回报": "Sponsor身份"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_gifttitle_rules_tips",
+          "quote": "1. The sponsors are typically calculated weekly, from Monday 00:00 to Sunday 24:00 (GMT-5).\n2. The user who sends the highest quantity of a specific gift to a player will be the sponsor of that gift. In case of a tie, the one who reaches the quantity first will be prioritized.\n3. If a player does not receive a specific gift during the week, there will be no sponsor of this gift.\n4. At the start of a new cycle, the previous sponsor information will be cleared.\n5. The update may take approximately 5 to 30 minutes.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        }
+      ],
+      "unknowns": [
+        "退礼处理",
+        "不同礼包礼物计数"
+      ],
+      "replica_scope": "礼物维度冠名榜",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "YPH12"
+    },
+    {
+      "name": "Royal 充值等级和冻结权益",
+      "categories": [
+        "权益"
+      ],
+      "core_loop": "充值→Royal点/币→权益→冻结后无法拿加成",
+      "distinctive": "消费等级、兑换币与有效权益分开",
+      "rules": {
+        "门槛": "点数门槛下发",
+        "时序": "冻结态影响权益",
+        "资源": "Royal Points/Coins",
+        "回报": "充值加成和物品兑换"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_royal_r0_desc_f",
+          "quote": "Recharge to get Royal Points(<slot index=0>)\nYou can use Royal privileges with more than {0} <slot index=1>",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_royal_pay_benefit_but_frozen",
+          "quote": "You are Royal <color=#F7FF2A>{0}</color>. \nUnfrozen your account to enjoy <color=#F7FF2A>{1}%</color> recarge benefit.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_royal_coin_no_data2",
+          "quote": "No data yet.\nRecharge to get Royal Coins <slot index=0>\nItems that meet the requirements can be exchanged.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        }
+      ],
+      "unknowns": [
+        "维护/冻结规则",
+        "等级成本",
+        "兑换限制"
+      ],
+      "replica_scope": "权益冻结与兑换原型",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "未实现",
+      "id": "YPH13"
+    },
+    {
+      "name": "Fruit Merge 复活与排行",
+      "categories": [
+        "游戏",
+        "玩法"
+      ],
+      "core_loop": "拖放水果→同类合成→排行→清顶部水果继续",
+      "distinctive": "独立休闲局给主棋牌游戏增加短循环",
+      "rules": {
+        "门槛": "进入小游戏",
+        "时序": "退出保存；上传失败需手动更新",
+        "资源": "水果布局/道具",
+        "回报": "合成得分与排行奖励"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_synthsis_fruit_guide_1",
+          "quote": "Tap to move and drop the fruits.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_synthsis_fruit_guide_2",
+          "quote": "Merge identical fruits to create new ones.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_synthsis_fruit_guide_3",
+          "quote": "Compete for ranking rewards by merging fruits.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_minigame_revive_syntheticfruits",
+          "quote": "Clear the top fruits to continue",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_minigame_quit_confirm",
+          "quote": "Quit game? Your progress will be saved.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        }
+      ],
+      "unknowns": [
+        "碰撞/得分",
+        "道具成本",
+        "排行榜奖励"
+      ],
+      "replica_scope": "单机合成玩法核心",
+      "replica_effort": "高",
+      "readiness": "需补证据",
+      "demo_status": "未实现",
+      "id": "YPH14"
+    },
+    {
+      "name": "邀请新用户到二级领奖",
+      "categories": [
+        "社交",
+        "玩法",
+        "权益"
+      ],
+      "core_loop": "选奖励→邀请码引流→新用户注册打局到Lv2→减进度→限时达标领取",
+      "distinctive": "邀请质量按游戏参与与成长验证",
+      "rules": {
+        "门槛": "新用户注册且到2级",
+        "时序": "活动倒计时内完成；部分奖励3工作日邮件发放",
+        "资源": "邀请进度",
+        "回报": "自选奖励"
+      },
+      "evidence_strength": "B明确资源规则",
+      "evidence_refs": [
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_pn_tips16",
+          "quote": "Invite new users to register and reach level 2 to receive the reward for free",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_system_boost2",
+          "quote": "So lucky! \nHere is some free boost from the system. \n\nKeep inviting new users to complete the progress bar before the countdown ends and redeem the reward you have selected.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_pn_get0",
+          "quote": "Congratulations! \n\nYou have received a free {0}! \n\nThe reward will be sent to your in-app mail within 3 business days.",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        },
+        {
+          "file": "analysis/unity-localization-values.json",
+          "member": "assets/bin/Data/data.unity3d",
+          "path_id": 77,
+          "name": "englishlocalization",
+          "key": "ids_ui_pn_tips12",
+          "quote": "1. Play one game \nand reach level 2",
+          "source_text_sha256_utf8": "9fa174f890499603e6d6874b25fc3f5ed2d8df262c61c888b11b9a73c1959e51"
+        }
+      ],
+      "unknowns": [
+        "人数动态",
+        "反作弊",
+        "真实奖励"
+      ],
+      "replica_scope": "邀请任务状态流",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现",
+      "id": "YPH15"
+    }
+  ]
+}

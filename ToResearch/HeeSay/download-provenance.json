@@ -1,0 +1,19 @@
+{
+  "app": "HeeSay",
+  "region": "SEA",
+  "source_page": "https://common.heesay.com/",
+  "download_url": "https://wsweb.bldimg.com/files/apk/heesay_5.14.5_e0301a.apk",
+  "final_url": "https://wsweb.bldimg.com/files/apk/heesay_5.14.5_e0301a.apk",
+  "retrieved_at": "2026-10-13T07:48:45.911816+00:00",
+  "file": "HeeSay-5.14.5.apk",
+  "bytes": 149796234,
+  "sha256": "fa23b9e0bee7d646a10689d3289a84224f6c174def4a59ccb63a71e457ff2d48",
+  "zip_crc": "passed",
+  "latest_scope": "Official website current download; Google Play staged releases not independently checked",
+  "manifest_identity": {
+    "package": "com.blued.international",
+    "versionName": "5.14.5",
+    "versionCode": 514052,
+    "split": null
+  }
+}

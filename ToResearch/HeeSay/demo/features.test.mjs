@@ -1,0 +1,75 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {definitions,initialState,reducer,scenarios} from './model.mjs';
+const step=(s,type)=>{const n=reducer(s,{type});assert.equal(n.error,null,`${s.id} ${type}: ${n.error}`);return n;};
+for(const def of definitions){
+ test(`${def.id} 完整专属闭环与纯函数`,()=>{let s=initialState(def.id);for(const action of scenarios[def.id].normal){const before=structuredClone(s);const n=step(s,action);assert.deepEqual(s,before,'输入不得被修改');s=n;}for(const [k,v] of Object.entries(scenarios[def.id].expected))assert.deepEqual(s[k],v,k);assert(s.log.every(e=>e.ok));});
+ test(`${def.id} 拒绝边界不改变业务状态`,()=>{let s={...initialState(def.id),...scenarios[def.id].guardState};let n=reducer(s,{type:scenarios[def.id].guard});if(!n.error){for(const a of scenarios[def.id].normal)s=step(s,a);n=reducer(s,{type:scenarios[def.id].guard});}assert(n.error,'应触发门槛拒绝');const {error:_,log:__,...business}=n;const {error:___,log:____,...original}=s;assert.deepEqual(business,original);});
+ test(`${def.id} 重置与未知操作`,()=>{let s=initialState(def.id);s=step(s,scenarios[def.id].normal[0]);assert.deepEqual(reducer(s,{type:'reset'}),initialState(def.id));const n=reducer(s,{type:'not-an-operation'});assert.equal(n.error,'未知操作');});
+}
+
+const run=(id,actions)=>actions.reduce((s,a)=>step(s,a),initialState(id));
+const reject=(s,a)=>{const n=reducer(s,{type:a});assert(n.error,`${s.id} ${a} 应被拒绝`);return n;};
+const boundary=(id,title,fn)=>{if(definitions.some(d=>d.id===id))test(`${id} ${title}`,fn);};
+boundary('SUG01','PK和冷却各300秒、冷却拒绝礼物、停止后不轮转',()=>{let s=run('SUG01',['start','gift','advance']);assert.equal(s.seconds,300);assert.equal(s.phase,'cooldown');reject(s,'gift');s=step(s,'stop');reject(s,'advance');});
+boundary('SUG02','更换清麦位但不抹去阵营分、重复结算',()=>{let s=run('SUG02',['gift','replace']);assert.equal(s.seat,0);assert.equal(s.team,10);s=step(s,'settle');reject(s,'settle');reject(s,'gift');});
+boundary('SUG03','Lv1/2/4/5能力和双方授权分别生效',()=>{let s=run('SUG03',['chat']);assert.deepEqual(s.capabilities,['通话']);s=step(s,'chat');assert(s.capabilities.includes('语音消息'));s=step(step(s,'chat'),'chat');reject(s,'album');s=step(step(s,'consent'),'album');s=step(s,'chat');assert(s.capabilities.includes('更多动态'));});
+boundary('SUG04','唯一关系拒绝第二伴侣、解除关系墙',()=>{let s=run('SUG04',['invite','accept']);reject(s,'replace');s=step(s,'terminate');assert.equal(s.wall.length,2);assert.equal(s.partner,null);});
+boundary('SUG05','关系与双方席位缺一不可',()=>{let s=run('SUG05',['seatA']);assert.equal(s.effect,false);s=step(s,'relationship');s=step(s,'seatB');assert.equal(s.effect,true);assert.equal(step(s,'leave').effect,false);});
+boundary('SUG06','自然月25维护边界、解散不能恢复、任务去重',()=>{let s=run('SUG06',['create']);for(let i=0;i<5;i++){s=step(s,'task');reject(s,'task');s=step(s,'day');}assert.equal(s.activity,25);s=step(s,'month');assert.equal(s.disbanded,false);s=step(s,'month');assert.equal(s.disbanded,true);reject(s,'create');});
+boundary('SUG07','权限随转让改变、离开后不能贡献',()=>{let s=run('SUG07',['contribute','leader','transfer']);reject(s,'appoint');s=step(s,'leave');assert.equal(s.contributions.米拉,0);reject(s,'contribute');});
+boundary('SUG08','79分与未验证拒绝、7天严格到期',()=>{let s=initialState('SUG08');s.score=79;s.verified=true;reject(s,'claim');s.score=80;s.verified=false;reject(s,'claim');s=step(s,'verify');s=step(s,'claim');for(let i=0;i<6;i++)s=step(s,'day');assert(s.active);s=step(s,'day');assert(!s.active);});
+boundary('SUG09','无资格不允许锁房与匿名',()=>{const s=initialState('SUG09');reject(s,'lock');reject(s,'toggle');const n=run('SUG09',['noble','toggle']);assert.equal(n.rankIdentity,'神秘人');});
+boundary('SUG10','冠军随竞争转移、同分保持未知',()=>{let s=run('SUG10',['giftA','giftB']);assert.equal(s.champion,'米拉');s=step(s,'giftA');assert.equal(s.champion,'同分待判');reject(s,'enter');});
+boundary('SUG11','人数2不能自动开局、重复付费拒绝',()=>{let s=run('SUG11',['start','joinA','joinB']);reject(s,'joinA');s=step(s,'deadline');assert.equal(s.phase,'insufficient');reject(s,'deadline');});
+boundary('SUG12','只允许解锁后播报一次不产生抽取余额',()=>{let s=run('SUG12',['gift','unlock','announce']);reject(s,'announce');assert(!('wallet' in s));});
+boundary('YPH01','骰和5出巢、双5两子、Classic/Spanish不同回巢',()=>{let s=run('YPH01',['rollSum','exit']);assert.equal(s.nest,3);assert.equal(s.credits.length,0);s=run('YPH01',['rollDouble','exit','exit']);assert.equal(s.nest,2);for(const [mode,expected] of [['Classic',[2]],['Spanish',[15]]]){let q=initialState('YPH01');q.pieces=[15,2];q.nest=2;q.doubles=2;q.lastMoved=1;q.mode=mode;q=step(q,'rollDouble');assert.deepEqual(q.pieces,expected);assert.equal(q.nest,3);}});
+boundary('YPH02','自己与他人不能穿障、双数必须拆障',()=>{let s=initialState('YPH02');reject(s,'opponent');s=step(s,'double');reject(s,'elsewhere');s=step(s,'split');s=step(s,'opponent');assert.equal(s.opponent,6);});
+boundary('YPH03','20/10奖励额度一次消费',()=>{let s=run('YPH03',['capture','bonus']);reject(s,'bonus');s=step(s,'finish');assert.equal(s.reward,10);s=step(s,'finishBonus');reject(s,'finishBonus');});
+boundary('YPH04','四子只解锁代操作而非获胜、队友退出结算一次',()=>{let s=run('YPH04',['own','own','own','own']);assert.equal(s.result,null);s=step(s,'quit');assert.equal(s.phase,'ended');reject(s,'quit');reject(s,'assist');});
+boundary('YPH05','周榜仅一次、传奇40边界',()=>{let s=run('YPH05',['level','promote']);reject(s,'promote');s=step(s,'week');s.rank=41;reject(s,'star');s.rank=40;s=step(s,'star');assert.equal(s.stars,1);reject(s,'star');});
+boundary('YPH06','无Pass不能多箱队列、串行自动下一箱',()=>{let s=run('YPH06',['win','win']);reject(s,'start');s=step(step(s,'pass'),'start');assert.equal(s.current,'箱1');s=step(s,'hour');assert.equal(s.current,'箱2');assert.equal(s.remaining,60);s=step(s,'hour');assert.deepEqual(s.claimed,['箱1','箱2']);});
+boundary('YPH07','协助即时应用、重复与GMT-5午夜过期',()=>{let s=run('YPH07',['helpA']);assert.equal(s.remaining,80);reject(s,'helpA');s=step(s,'midnight');assert.equal(s.reduction,0);assert.equal(s.remaining,80);s=step(s,'helpA');assert.equal(s.remaining,60);});
+boundary('YPH08','双VIP2门槛与到期新入场拒绝',()=>{let s=initialState('YPH08');s.vip=2;s.otherVip=1;reject(s,'elite');s.otherVip=2;s=step(s,'elite');s=step(s,'expire');reject(s,'watch');});
+boundary('YPH09','会员任务资格和周奖励去重',()=>{let s=run('YPH09',['join','task','task','window1','sync','settle']);reject(s,'settle');s=step(s,'week');reject(s,'settle');});
+boundary('YPH10','提前12小时边界、20天登录与余额不足取消',()=>{let s=run('YPH10',['buy']);s.hours=s.expires-13;reject(s,'renew');s=step(s,'near');s.lastLogin=s.hours-481;s=step(s,'renew');assert.equal(s.renew,false);let q=run('YPH10',['buy','near','login']);q.diamonds=19;q=step(q,'renew');assert.equal(q.renew,false);let r=run('YPH10',['buy','near','login','renew']);reject(r,'renew');});
+boundary('YPH11','本地停滞天数和互动刷新衰减计时',()=>{let s=run('YPH11',['day','day']);assert.equal(s.points,20);s=step(s,'interact');s=step(step(s,'day'),'day');assert.equal(s.points,30);s=step(s,'day');assert.equal(s.points,20);});
+boundary('YPH12','同分先达到优先、延迟不立即冠名',()=>{let s=run('YPH12',['giftA']);assert.equal(s.sponsor,null);s=step(s,'sync');s=step(s,'giftB');s=step(s,'sync');assert.equal(s.sponsor,'阿澄');s=step(s,'giftB');s=step(s,'sync');assert.equal(s.sponsor,'米拉');const q=run('YPH12',['giftB','giftA','sync']);assert.equal(q.sponsor,'米拉','同一分钟内先达到也优先');});
+boundary('YPH13','冻结不拿充值加成、不兑换权益',()=>{let s=run('YPH13',['topup','freeze','topup']);assert.equal(s.topupBonus,0);reject(s,'exchange');s=step(s,'restore');assert.equal(step(s,'exchange').inventory.length,1);});
+boundary('YPH14','不同水果不能合成、复活一次、退出快照独立',()=>{let s=run('YPH14',['merge']);s.board=[1,2];reject(s,'merge');s=step(s,'revive');reject(s,'revive');s=step(s,'exit');const saved=[...s.saved.board];s=step(s,'drop');assert.deepEqual(s.saved.board,saved);});
+boundary('YPH15','注册Lv1不计进度、重复Lv2/领奖与到期',()=>{let s=run('YPH15',['select','register']);assert.equal(s.remaining,2);s=step(s,'level2');reject(s,'level2');s=step(s,'second');s=step(s,'expire');reject(s,'claim');});
+boundary('FAL01','没有捕获不能终点、赢局不能重复终点',()=>{reject(initialState('FAL01'),'goal');let s=run('FAL01',['capture','goal']);reject(s,'goal');});
+boundary('FAL02','三连6结束回合且不能第四投',()=>{let s=run('FAL02',['six','six']);assert(s.extra);s=step(s,'six');assert(!s.extra);reject(s,'six');reject(s,'capture');});
+boundary('FAL03','道具消耗一次、磁铁阻挡与炸弹路径',()=>{let s=run('FAL03',['gold','magnet','bomb']);reject(s,'gold');reject(s,'magnet');reject(s,'bomb');assert.equal(s.position,5);assert.equal(s.opponent,-1);});
+boundary('FAL04','gid0阻止进房且保留caller游戏字段',()=>{let s=run('FAL04',['select','request','failure']);reject(s,'enter');s=step(s,'success');s=step(s,'enter');assert.equal(s.room.gameId,'ludo-lab');assert.equal(s.room.gamePlatform,'sandbox');});
+boundary('FAL05','Queen禁发与票/领取去重',()=>{let s=run('FAL05',['queen']);reject(s,'send');s=step(s,'member');s=step(s,'send');reject(s,'send');s=step(s,'claim');reject(s,'claim');});
+boundary('FAL06','保证奖励入背包、兑换不足拒绝',()=>{let s=run('FAL06',['draw']);assert.equal(s.bag.length,1);s=step(s,'exchange');reject(s,'exchange');s=step(s,'noble');reject(s,'noble');});
+boundary('FAL07','活动周星礼物排除、解散清榜权益',()=>{let s=run('FAL07',['invite','accept','gift']);s=step(s,'excluded');assert.equal(s.intimacy,10);assert.equal(s.regionRank,'沙特');s=step(s,'terminate');assert.equal(s.privilege,false);reject(s,'gift');});
+boundary('FAL08','截止前升级门槛与保级扣EXP',()=>{let s=run('FAL08',['task','task']);s=step(s,'deadline');assert.equal(s.exp,0);assert.equal(s.level,1);s=step(s,'deadline');assert.equal(s.level,1);});
+boundary('FAL09','全员禁言管理员豁免、单人禁言独立',()=>{let s=run('FAL09',['admin','muteAll','speak','member']);reject(s,'speak');s=step(s,'admin');s=step(s,'muteOne');reject(s,'speak');});
+boundary('FAL10','到期后第7天8折第8天原价',()=>{let s=run('FAL10',['buy','expire','seven','buy']);assert.deepEqual(s.paid,[100,80]);let q=run('FAL10',['buy','expire','eight','buy']);assert.deepEqual(q.paid,[100,100]);});
+boundary('FAL11','Holder本地2天到期自动恢复真实ID',()=>{let s=run('FAL11',['use','day']);assert.equal(s.displayId,'神秘访客');s=step(s,'day');assert.equal(s.displayId,s.realId);reject(s,'use');});
+boundary('FAL12','重算后清点、同周期不能重复结算',()=>{let s=run('FAL12',['topup','recalc']);assert.equal(s.points,0);reject(s,'recalc');s=step(s,'topup');assert.equal(s.coins,205);});
+boundary('FAL13','确认、一次性与全部身份代价',()=>{let s=run('FAL13',['choose']);reject(s,'migrate');s=step(step(s,'preview'),'migrate');for(const key of ['rankPoints','svip','svipPoints'])assert.equal(s[key],0);assert.equal(s.specialId,null);reject(s,'migrate');reject(s,'choose');reject(s,'oldRoom');});
+boundary('HEE01','2500单日守护、1Bean1点、逐笔第8日到期',()=>{let s=run('HEE01',['giftA']);assert.equal(s.scores.阿澄,2500);assert(s.guardian.includes('阿澄'));s.day=2;s=step(s,'giftB');s.day=1;s=step(s,'expiry');assert.equal(s.scores.阿澄,0);assert.equal(s.scores.米拉,3000);});
+boundary('HEE02','>10严格门槛与同日互赠',()=>{let s=initialState('HEE02');s.spark=true;s.gifts={阿澄:10,米拉:11};reject(s,'unlock');s=step(s,'giftA');s=step(s,'unlock');reject(s,'unlock');const q=run('HEE02',['spark','giftA','day','giftB']);reject(q,'unlock');});
+boundary('HEE03','多团只领奖最高、重复日奖励拒绝和所属房展示',()=>{let s=run('HEE03',['joinA','joinB','giftB','reward']);assert(s.result.includes('Lv3'));reject(s,'reward');s=step(s,'roomB');assert.equal(s.badge,'B Lv3');assert.equal(step(s,'outside').badge,null);});
+boundary('HEE04','升级当月旧门槛、下一月提高与月值清零',()=>{let s=run('HEE04',['task','upgrade']);assert.equal(s.maintenance,15000);assert.equal(s.nextMaintenance,60000);s=step(s,'month');assert.equal(s.maintenance,60000);assert.equal(s.monthly,0);s=step(s,'month');assert.equal(s.level,1);});
+boundary('HEE05','财富Lv9门槛、群管理与族務独立、招募>10',()=>{reject(initialState('HEE05'),'create');let s=run('HEE05',['eligible','create']);assert.equal(s.familyAdmin,true);assert.equal(s.chatAdmin,false);reject(s,'chatAnnouncement');s=step(s,'familyBulletin');s.members=10;s=step(s,'deadline');assert(s.disbanded);reject(s,'create');});
+boundary('HEE06','冻结不降级不重复扣除、补EXP即时解冻',()=>{let s=run('HEE06',['earn','end']);assert(s.frozen);assert.equal(s.level,3);assert.equal(s.exp,25);reject(s,'end');s=step(step(s,'earn'),'earn');assert(!s.frozen);assert.equal(s.level,3);});
+boundary('HEE07','匿名观众看不到真身份主页、主播能识别',()=>{let s=run('HEE07',['eligible','toggle']);assert(!s.profileAccess);assert(!s.display.includes('阿澄'));reject(s,'profile');s=step(s,'host');assert.equal(s.display,'阿澄');assert(step(s,'profile').profileAccess);});
+boundary('HEE08','实际收币榜分与赠礼成本分账、结算去重',()=>{let s=run('HEE08',['gift']);assert.equal(s.senderBeans,0);assert.equal(s.recipientCoins,100);assert.equal(s.wealthPoints,.1);s=step(s,'result');reject(s,'result');reject(s,'gift');});
+boundary('HEE09','来源排除、地图上限与任务领奖去重',()=>{let s=run('HEE09',['open','excluded']);assert.equal(s.points,0);s=step(step(step(s,'map'),'map'),'map');assert.equal(s.mapPoints,2);s=step(s,'ordinary');s=step(s,'claim');reject(s,'claim');});
+boundary('HEE10','参与次数>10、双队资格、分阶段秘密不可见、重复结算',()=>{let s=initialState('HEE10');for(let i=0;i<10;i++)s=step(s,'joinA');reject(s,'start');s=step(s,'joinA');reject(s,'start');s=step(s,'joinB');s=step(s,'start');assert.equal(s.visibleCards,1);reject(s,'end');s=step(s,'mid');assert.equal(s.visibleCards,2);s=step(s,'end');assert.equal(s.visibleCards,3);assert(!s.secretVisible);reject(s,'end');});
+boundary('HEE11','开放显示按钮分离、PK和Hot Pick双向互斥',()=>{let s=run('HEE11',['configure','hide']);reject(s,'hotpick');s=step(s,'configure');s=step(s,'hotpick');reject(s,'pk');s=step(s,'end');s=step(s,'pk');reject(s,'hotpick');assert(!('score' in s));});
+boundary('HEE12','上月Top10下月排除、月人气清零与1–3日展示',()=>{let s=run('HEE12',['likeOld','likeNew','month']);assert(s.displayWindow);assert(s.works.every(w=>w.popularity===0));reject(s,'likeOld');s=step(s,'fourth');assert(!s.displayWindow);});
+boundary('HEE13','赢1输3平0、每票结果去重、无票拒绝',()=>{let s=run('HEE13',['use','win']);assert.equal(s.luckyPoints,1);reject(s,'win');s=step(step(s,'use'),'loss');assert.equal(s.luckyPoints,4);s=step(step(s,'use'),'draw');assert.equal(s.luckyPoints,4);reject(s,'use');});
+boundary('HEE14','第1槽房间+主页、最多6槽与顺序变化',()=>{let s=initialState('HEE14');for(let i=0;i<6;i++)s=step(s,'equip');assert.equal(s.homeBadges.length,6);assert.equal(s.roomBadge,'星星');reject(s,'equip');s=step(s,'reorder');assert.equal(s.roomBadge,'云');assert.equal(s.homeBadges[0],'云');});
+
+boundary('YPH09','明确统计窗口与离团延迟清榜',()=>{let s=run('YPH09',['join','task']);assert(s.dynamicEmojis);reject(s,'sync');s=step(step(s,'window1'),'sync');assert.equal(s.rankContribution,10);s=step(s,'leave');assert.equal(s.rankContribution,10);s=step(step(s,'window12'),'sync');assert.equal(s.rankContribution,0);});
+
+boundary('HEE01','到期取消旧榜待同步身份，乱序sync不能复活过期Couple',()=>{
+ let s=run('HEE01',['giftA','expiry']);assert.equal(s.day,8);assert.deepEqual(s.scores,{阿澄:0,米拉:0});assert.equal(s.couple,null);assert.equal(s.pending,null);
+ const n=reject(s,'sync');assert.equal(n.couple,null);assert.equal(n.pending,null);assert.deepEqual(n.scores,s.scores);
+ s=step(s,'giftB');assert.equal(s.pending,'米拉');s=step(s,'sync');assert.equal(s.couple,'米拉');
+});

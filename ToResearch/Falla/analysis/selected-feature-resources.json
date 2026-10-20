@@ -1,0 +1,32 @@
+[
+  {
+    "member": "resources.arsc",
+    "index": 7024,
+    "offset": 501282,
+    "value": "1. In Quick Mode, you can enter the finish track only after killing 1 piece of any other player\n\n2. A player who throws 6 can move, and gets another chance to throw the dice. If a player throws 6 three consecutive times, the round ends. \n\n3. Players who steps on an opponent can eliminate the opponent, forcing them back to base, while the player gets another chance to throw the dice. \n\n4. Player can reach the finish only when they throw the number for the fixed point, and get another chance to throw the dice. \n\n5. Players who earn 'gold dice' must throw 6. \n\n6. Players who earn the 'magnet' can advance 8 steps until others block them \n\n7. Players who earn the 'bomb' can bomb 8 steps, eliminating the opponent back to the base \n\n8. All pieces should reach the finish in a classic competition, and only one piece should reach the finish in a quick competition. \n9. When the game is over, the more pieces that reach the finish, and \nthe farther the pieces that haven't reached the finish are, the higher the rank."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 7926,
+    "offset": 527792,
+    "value": "Gift lucky bag ticket"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 9059,
+    "offset": 562932,
+    "value": "Sent a gift lucky bag, come and open it"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 9062,
+    "offset": 563042,
+    "value": "Sent gift lucky bag worth [Holder]"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 9258,
+    "offset": 567234,
+    "value": "The Queen can't send a lucky bag gift"
+  }
+]

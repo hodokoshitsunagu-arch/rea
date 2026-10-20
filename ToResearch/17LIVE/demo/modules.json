@@ -1,0 +1,501 @@
+{
+  "app": "17LIVE",
+  "modules": [
+    {
+      "id": "L1701",
+      "title": "PK竞争+双边共斗任务",
+      "implemented_scope": "组队设题/时长→礼物竞争→双方共同做随机任务→双边奖励；双方开始PK / 观众送礼 / 评论赞合作任务 / 一方投降 / 倒计时结束",
+      "limitations": [
+        "匹配、任务随机、真实奖励",
+        "胜负结算",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "双方开始PK"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"mission-side\"]",
+          "value": "A"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"mission\"]",
+          "expected_text": "评论赞合作任务"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"mission-side\"]",
+          "value": "B"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"mission\"]",
+          "expected_text": "评论赞合作任务"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"mission-side\"]",
+          "value": "A"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"mission\"]",
+          "expected_text": "评论赞合作任务"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"gift-side\"]",
+          "value": "A"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"gift-points\"]",
+          "value": "10"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "观众送礼"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "倒计时结束"
+        }
+      ]
+    },
+    {
+      "id": "L1702",
+      "title": "Army分级订阅与专属直播",
+      "implemented_scope": "订某主播Army→按阶级进入专属场→失效即停权益；订阅指定主播Army / 切换当前主播 / 进入Army专属直播 / 订阅到期",
+      "limitations": [
+        "各地区/阶级矩阵、价格",
+        "4级与配置适用",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"subscribe-rank\"]",
+          "value": "4"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"subscribe\"]",
+          "expected_text": "订阅指定主播Army"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]",
+          "expected_text": "进入Army专属直播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "订阅到期"
+        }
+      ]
+    },
+    {
+      "id": "L1703",
+      "title": "赠送Army30天与限制",
+      "implemented_scope": "用户赠朋友Army→30天固定身份→到期结束；赠送朋友30天Army / 尝试升级赠订 / 前进30天 / 检查自动续费",
+      "limitations": [
+        "赠送资格、重复赠送与叠加",
+        "退款",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "赠送朋友30天Army"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "前进30天"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"renew\"]",
+          "expected_text": "检查自动续费"
+        }
+      ]
+    },
+    {
+      "id": "L1704",
+      "title": "Army自定义身份与表情",
+      "implemented_scope": "主播自定义Army/rank命名→审核后生效→成员使用专属emoji；主播编辑Army名称 / 模拟名称审核通过 / 观众成为Army成员 / 在对应频道发送专属表情 / 切换频道",
+      "limitations": [
+        "emoji数量/审核",
+        "改名频率",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"edit-name\"]",
+          "value": "星光军团"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"edit\"]",
+          "expected_text": "主播编辑Army名称"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]",
+          "expected_text": "模拟名称审核通过"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]",
+          "expected_text": "观众成为Army成员"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"emoji\"]",
+          "expected_text": "在对应频道发送专属表情"
+        }
+      ]
+    },
+    {
+      "id": "L1705",
+      "title": "Army Call-in专属连线",
+      "implemented_scope": "Army专属直播内→实时语音/视频Call-in→选择摄像头；模拟有效Army资格 / 模拟授权麦克风 / 申请Call-in / 主播接入 / 离开连线 / 尝试Group Call",
+      "limitations": [
+        "Call-in与Group Call协议差异",
+        "等级、人数、主持控制",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"member\"]",
+          "expected_text": "模拟有效Army资格"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"permission\"]",
+          "expected_text": "模拟授权麦克风"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"request-camera\"]",
+          "value": "false"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"request\"]",
+          "expected_text": "申请Call-in"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "主播接入"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"leave\"]",
+          "expected_text": "离开连线"
+        }
+      ]
+    },
+    {
+      "id": "L1706",
+      "title": "Guardian独占七日竞价守护",
+      "implemented_scope": "观众出价→最高价成唯一Guardian→他人加价抢位/本人续时；竞标Guardian / 前进七天",
+      "limitations": [
+        "被抢退款、续期叠加",
+        "竞价最小增幅",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"bid-user\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"bid-amount\"]",
+          "value": "100"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bid\"]",
+          "expected_text": "竞标Guardian"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"bid-user\"]",
+          "value": "小海"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"bid-amount\"]",
+          "value": "120"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bid\"]",
+          "expected_text": "竞标Guardian"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "前进七天"
+        }
+      ]
+    },
+    {
+      "id": "L1707",
+      "title": "入场动画按身份优先级择一",
+      "implemented_scope": "用户排序Army/Guardian/Premium动画→进房→播放最高适用者；调整最高动画 / 开关动画 / 设置当前房间身份 / 进入房间择一播放",
+      "limitations": [
+        "去重/冷却及动画资源",
+        "权限失效即时性",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"priority-type\"]",
+          "value": "Guardian"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"priority\"]",
+          "expected_text": "调整最高动画"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]",
+          "expected_text": "进入房间择一播放"
+        }
+      ]
+    },
+    {
+      "id": "L1708",
+      "title": "Lucky Bag共享保底",
+      "implemented_scope": "多人抽同一随机袋→共享累计次数→触发GP大奖；观众抽共享袋；parametersFor统一校验模拟袋成本为有限正数、保底次数为正安全整数、普通奖励为有限非负数；首次抽取绑定本袋保底配置，修改次数需重置。",
+      "limitations": [
+        "袋scope/重置、阈值、权重",
+        "概率动态配置",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "Node owner-boundary regression passed; browser revalidation pending",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"draw-user\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"draw\"]",
+          "expected_text": "观众抽共享袋"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"draw-user\"]",
+          "value": "小海"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"draw\"]",
+          "expected_text": "观众抽共享袋"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"draw-user\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"draw\"]",
+          "expected_text": "观众抽共享袋"
+        }
+      ]
+    },
+    {
+      "id": "L1709",
+      "title": "Random Rush集物开箱活动",
+      "implemented_scope": "观众买Lucky Bag获物件→满足箱内物件清单→主播领奖；观众购买模拟袋获物件 / 主播领取共集终极奖 / 切换活动等级；parametersFor统一校验模拟袋成本为有限正数、活动等级1–5整数、非空物件清单需求为正安全整数。原物件需求/价格/概率未知仍保留。",
+      "limitations": [
+        "各level清单、物件重复处理",
+        "结算时机",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "Node owner-boundary regression passed; browser revalidation pending",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"bag-item\"]",
+          "value": "星"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bag\"]",
+          "expected_text": "观众购买模拟袋获物件"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"bag-item\"]",
+          "value": "星"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bag\"]",
+          "expected_text": "观众购买模拟袋获物件"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"bag-item\"]",
+          "value": "月"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bag\"]",
+          "expected_text": "观众购买模拟袋获物件"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "主播领取共集终极奖"
+        }
+      ]
+    },
+    {
+      "id": "L1710",
+      "title": "Draw & Guess直播互动",
+      "implemented_scope": "主播开画猜→观众猜→AI给规则提示答案；主播开画猜局 / 主播添加画笔线条 / 本地主持给提示 / 观众提交猜题 / 回合到期",
+      "limitations": [
+        "输入渠道、回合、计分、AI/题库",
+        "画布同步",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "主播开画猜局"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-x\"]",
+          "value": "90"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-y\"]",
+          "value": "90"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stroke\"]",
+          "expected_text": "主播添加画笔线条"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"guess-user\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"guess-answer\"]",
+          "value": "太阳"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"guess\"]",
+          "expected_text": "观众提交猜题"
+        }
+      ]
+    },
+    {
+      "id": "L1711",
+      "title": "Quiz Game主题直播问答",
+      "implemented_scope": "选问题theme→开Quiz→观众参与→提示/答案；主播选择题目主题 / 开始主题Quiz / 本地主持给提示 / 观众答题 / 答题到期",
+      "limitations": [
+        "判题、参与资格、分数、超时",
+        "是否实际AI",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"theme-theme\"]",
+          "value": "地理"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"theme\"]",
+          "expected_text": "主播选择题目主题"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "开始主题Quiz"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"answer-user\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"answer-answer\"]",
+          "value": "东京"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"answer\"]",
+          "expected_text": "观众答题"
+        }
+      ]
+    },
+    {
+      "id": "L1712",
+      "title": "Army贡献榜按订阅天摊分",
+      "implemented_scope": "买Army订阅→按总价/天数日摊→纳入收/送礼榜；购买90日Army订阅 / 日摊分入收送榜 / 摊分至到期尾差",
+      "limitations": [
+        "赠订/跨日取消、尾差精度",
+        "榜计时区",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"subscribe\"]",
+          "expected_text": "购买90日Army订阅"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "日摊分入收送榜"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "摊分至到期尾差"
+        }
+      ]
+    }
+  ]
+}

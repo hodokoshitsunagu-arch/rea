@@ -1,0 +1,412 @@
+TAP version 13
+# Subtest: WJP01 BFF门槛、竞拍旁路与关系展示槽位 正常闭环与重置
+ok 1 - WJP01 BFF门槛、竞拍旁路与关系展示槽位 正常闭环与重置
+  ---
+  duration_ms: 1.506125
+  type: 'test'
+  ...
+# Subtest: WJP01 关键资格/阶段拒绝且业务原子回退
+ok 2 - WJP01 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.086541
+  type: 'test'
+  ...
+# Subtest: WJP02 BFF关系进阶：亲密进度、宝箱与专属关系卡 正常闭环与重置
+ok 3 - WJP02 BFF关系进阶：亲密进度、宝箱与专属关系卡 正常闭环与重置
+  ---
+  duration_ms: 0.158875
+  type: 'test'
+  ...
+# Subtest: WJP02 关键资格/阶段拒绝且业务原子回退
+ok 4 - WJP02 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.052708
+  type: 'test'
+  ...
+# Subtest: WJP03 戒指替换保留旧物与关系年龄 正常闭环与重置
+ok 5 - WJP03 戒指替换保留旧物与关系年龄 正常闭环与重置
+  ---
+  duration_ms: 0.128167
+  type: 'test'
+  ...
+# Subtest: WJP03 关键资格/阶段拒绝且业务原子回退
+ok 6 - WJP03 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.041625
+  type: 'test'
+  ...
+# Subtest: WJP04 高级房容量扩张与到期回收 正常闭环与重置
+ok 7 - WJP04 高级房容量扩张与到期回收 正常闭环与重置
+  ---
+  duration_ms: 0.075709
+  type: 'test'
+  ...
+# Subtest: WJP04 关键资格/阶段拒绝且业务原子回退
+ok 8 - WJP04 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.03575
+  type: 'test'
+  ...
+# Subtest: WJP05 高级房三管理员与到期权限撤销 正常闭环与重置
+ok 9 - WJP05 高级房三管理员与到期权限撤销 正常闭环与重置
+  ---
+  duration_ms: 0.125958
+  type: 'test'
+  ...
+# Subtest: WJP05 关键资格/阶段拒绝且业务原子回退
+ok 10 - WJP05 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.095209
+  type: 'test'
+  ...
+# Subtest: WJP06 语音房宝箱倒计时与任务减时 正常闭环与重置
+ok 11 - WJP06 语音房宝箱倒计时与任务减时 正常闭环与重置
+  ---
+  duration_ms: 0.099292
+  type: 'test'
+  ...
+# Subtest: WJP06 关键资格/阶段拒绝且业务原子回退
+ok 12 - WJP06 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.056291
+  type: 'test'
+  ...
+# Subtest: WJP07 签约歌手出题与审核回报 正常闭环与重置
+ok 13 - WJP07 签约歌手出题与审核回报 正常闭环与重置
+  ---
+  duration_ms: 0.084708
+  type: 'test'
+  ...
+# Subtest: WJP07 关键资格/阶段拒绝且业务原子回退
+ok 14 - WJP07 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.055167
+  type: 'test'
+  ...
+# Subtest: WJP08 玩家词题投稿与延后奖励 正常闭环与重置
+ok 15 - WJP08 玩家词题投稿与延后奖励 正常闭环与重置
+  ---
+  duration_ms: 0.069125
+  type: 'test'
+  ...
+# Subtest: WJP08 关键资格/阶段拒绝且业务原子回退
+ok 16 - WJP08 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.048458
+  type: 'test'
+  ...
+# Subtest: WJP09 绘画道具：付费延时与成长解锁颜色 正常闭环与重置
+ok 17 - WJP09 绘画道具：付费延时与成长解锁颜色 正常闭环与重置
+  ---
+  duration_ms: 0.201084
+  type: 'test'
+  ...
+# Subtest: WJP09 关键资格/阶段拒绝且业务原子回退
+ok 18 - WJP09 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.07525
+  type: 'test'
+  ...
+# Subtest: WJP10 VIP全站广播、礼物隐私与成长转换 正常闭环与重置
+ok 19 - WJP10 VIP全站广播、礼物隐私与成长转换 正常闭环与重置
+  ---
+  duration_ms: 0.094292
+  type: 'test'
+  ...
+# Subtest: WJP10 关键资格/阶段拒绝且业务原子回退
+ok 20 - WJP10 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.072
+  type: 'test'
+  ...
+# Subtest: WJP11 家族人气徽章触发房间奖励 正常闭环与重置
+ok 21 - WJP11 家族人气徽章触发房间奖励 正常闭环与重置
+  ---
+  duration_ms: 0.079208
+  type: 'test'
+  ...
+# Subtest: WJP11 关键资格/阶段拒绝且业务原子回退
+ok 22 - WJP11 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.055458
+  type: 'test'
+  ...
+# Subtest: WJP12 卧底语音描述、不可撤销猜词与同投票结算交友 正常闭环与重置
+ok 23 - WJP12 卧底语音描述、不可撤销猜词与同投票结算交友 正常闭环与重置
+  ---
+  duration_ms: 0.2475
+  type: 'test'
+  ...
+# Subtest: WJP12 关键资格/阶段拒绝且业务原子回退
+ok 24 - WJP12 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.06425
+  type: 'test'
+  ...
+# Subtest: WJP13 家族宝箱：锁定名单与领取时动态校验 正常闭环与重置
+ok 25 - WJP13 家族宝箱：锁定名单与领取时动态校验 正常闭环与重置
+  ---
+  duration_ms: 0.160792
+  type: 'test'
+  ...
+# Subtest: WJP13 关键资格/阶段拒绝且业务原子回退
+ok 26 - WJP13 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.059917
+  type: 'test'
+  ...
+# Subtest: WJP14 绘画接力：上一棒、展示确认与赞踩 正常闭环与重置
+ok 27 - WJP14 绘画接力：上一棒、展示确认与赞踩 正常闭环与重置
+  ---
+  duration_ms: 0.487083
+  type: 'test'
+  ...
+# Subtest: WJP14 关键资格/阶段拒绝且业务原子回退
+ok 28 - WJP14 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.087458
+  type: 'test'
+  ...
+# Subtest: WJP15 抢麦：练习局转正式的下一题生效 正常闭环与重置
+ok 29 - WJP15 抢麦：练习局转正式的下一题生效 正常闭环与重置
+  ---
+  duration_ms: 0.129375
+  type: 'test'
+  ...
+# Subtest: WJP15 关键资格/阶段拒绝且业务原子回退
+ok 30 - WJP15 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.070166
+  type: 'test'
+  ...
+# Subtest: WJP16 次日婚礼堂竞拍与固定婚礼时段 正常闭环与重置
+ok 31 - WJP16 次日婚礼堂竞拍与固定婚礼时段 正常闭环与重置
+  ---
+  duration_ms: 0.124084
+  type: 'test'
+  ...
+# Subtest: WJP16 关键资格/阶段拒绝且业务原子回退
+ok 32 - WJP16 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.081292
+  type: 'test'
+  ...
+# Subtest: WJP17 关系退出：未回复三天自动拒绝 正常闭环与重置
+ok 33 - WJP17 关系退出：未回复三天自动拒绝 正常闭环与重置
+  ---
+  duration_ms: 0.056333
+  type: 'test'
+  ...
+# Subtest: WJP17 关键资格/阶段拒绝且业务原子回退
+ok 34 - WJP17 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.063958
+  type: 'test'
+  ...
+# Subtest: WJP18 双人画布协作入口 正常闭环与重置
+ok 35 - WJP18 双人画布协作入口 正常闭环与重置
+  ---
+  duration_ms: 0.091584
+  type: 'test'
+  ...
+# Subtest: WJP18 关键资格/阶段拒绝且业务原子回退
+ok 36 - WJP18 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.065417
+  type: 'test'
+  ...
+# Subtest: WJP19 Puppet/Mind：四槽装配与遗迹一轮一次 正常闭环与重置
+ok 37 - WJP19 Puppet/Mind：四槽装配与遗迹一轮一次 正常闭环与重置
+  ---
+  duration_ms: 0.124583
+  type: 'test'
+  ...
+# Subtest: WJP19 关键资格/阶段拒绝且业务原子回退
+ok 38 - WJP19 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.071833
+  type: 'test'
+  ...
+# Subtest: BFF旁路/房主进阶禁止/唯一卡/戒指年龄/容量到期
+ok 39 - BFF旁路/房主进阶禁止/唯一卡/戒指年龄/容量到期
+  ---
+  duration_ms: 0.402584
+  type: 'test'
+  ...
+# Subtest: 管理员3人/到期撤权、宝箱任务去重、歌手日额、词稿延后奖
+ok 40 - 管理员3人/到期撤权、宝箱任务去重、歌手日额、词稿延后奖
+  ---
+  duration_ms: 0.349709
+  type: 'test'
+  ...
+# Subtest: 绘画两次取消/VIP广播覆盖五分钟/地域隐私与徽章日额度
+ok 41 - 绘画两次取消/VIP广播覆盖五分钟/地域隐私与徽章日额度
+  ---
+  duration_ms: 0.257666
+  type: 'test'
+  ...
+# Subtest: 卧底猜词确认不可撤销及人数重分词
+ok 42 - 卧底猜词确认不可撤销及人数重分词
+  ---
+  duration_ms: 0.134042
+  type: 'test'
+  ...
+# Subtest: Limited发放名单锁定/不复核；Normal后来达标/领取动态复核
+ok 43 - Limited发放名单锁定/不复核；Normal后来达标/领取动态复核
+  ---
+  duration_ms: 0.31525
+  type: 'test'
+  ...
+# Subtest: 接力禁止中途换房/观众猜题；抢麦下一题转正式与独占麦
+ok 44 - 接力禁止中途换房/观众猜题；抢麦下一题转正式与独占麦
+  ---
+  duration_ms: 0.266709
+  type: 'test'
+  ...
+# Subtest: 婚礼时段界限与锁定/关系三天自动拒绝/Mind四槽一轮一次/候选双画布
+ok 45 - 婚礼时段界限与锁定/关系三天自动拒绝/Mind四槽一轮一次/候选双画布
+  ---
+  duration_ms: 0.532125
+  type: 'test'
+  ...
+# Subtest: 词卡和护盾模型拥有公共角色投影
+ok 46 - 词卡和护盾模型拥有公共角色投影
+  ---
+  duration_ms: 0.07625
+  type: 'test'
+  ...
+# Subtest: WJP01 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 47 - WJP01 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.757875
+  type: 'test'
+  ...
+# Subtest: WJP02 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 48 - WJP02 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.904125
+  type: 'test'
+  ...
+# Subtest: WJP03 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 49 - WJP03 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.129959
+  type: 'test'
+  ...
+# Subtest: WJP04 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 50 - WJP04 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.056583
+  type: 'test'
+  ...
+# Subtest: WJP05 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 51 - WJP05 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.059625
+  type: 'test'
+  ...
+# Subtest: WJP06 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 52 - WJP06 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.481708
+  type: 'test'
+  ...
+# Subtest: WJP07 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 53 - WJP07 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.061625
+  type: 'test'
+  ...
+# Subtest: WJP08 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 54 - WJP08 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.24375
+  type: 'test'
+  ...
+# Subtest: WJP09 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 55 - WJP09 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 1.07
+  type: 'test'
+  ...
+# Subtest: WJP10 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 56 - WJP10 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.622292
+  type: 'test'
+  ...
+# Subtest: WJP11 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 57 - WJP11 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.822084
+  type: 'test'
+  ...
+# Subtest: WJP12 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 58 - WJP12 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.551125
+  type: 'test'
+  ...
+# Subtest: WJP13 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 59 - WJP13 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 1.061
+  type: 'test'
+  ...
+# Subtest: WJP14 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 60 - WJP14 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.493209
+  type: 'test'
+  ...
+# Subtest: WJP15 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 61 - WJP15 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.491709
+  type: 'test'
+  ...
+# Subtest: WJP16 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 62 - WJP16 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.256208
+  type: 'test'
+  ...
+# Subtest: WJP17 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 63 - WJP17 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.291125
+  type: 'test'
+  ...
+# Subtest: WJP18 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 64 - WJP18 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.302625
+  type: 'test'
+  ...
+# Subtest: WJP19 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 65 - WJP19 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.671583
+  type: 'test'
+  ...
+# Subtest: 资源费用负值/NaN/Infinity不改钱包；显式零成本可免费实验
+ok 66 - 资源费用负值/NaN/Infinity不改钱包；显式零成本可免费实验
+  ---
+  duration_ms: 0.479583
+  type: 'test'
+  ...
+# Subtest: 次数/时限须整数，动作字段亦不能把非有限资源写入业务模型
+ok 67 - 次数/时限须整数，动作字段亦不能把非有限资源写入业务模型
+  ---
+  duration_ms: 0.610458
+  type: 'test'
+  ...
+1..67
+# tests 67
+# suites 0
+# pass 67
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 57.6935

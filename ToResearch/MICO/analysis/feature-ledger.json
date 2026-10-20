@@ -1,0 +1,301 @@
+{
+  "target_sha256": "305aa51527f6e73b298a6bf17c554ea96b9a0514a7e33a36e629bdee9a539181",
+  "rea_package_evidence_id": "ev_c0beb4b9f51620bf8cffb7f4d5143b8bf8d91e73dc379bcdc034167e12859275",
+  "findings": [
+    {
+      "id": "S01",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 8259
+      },
+      "text": "Administrators can invite viewers to the mic seat",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S02",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9442
+      },
+      "text": "If you leave the mic when elimination is triggered, you cannot take the mic again in this team battle. Are you sure you want to leave the mic?",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S03",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9742
+      },
+      "text": "Mic seat mode",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S04",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 10051
+      },
+      "text": "PK is not supported by the current mic seat mode",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S05",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 10763
+      },
+      "text": "Switching the mic seat mode may remove some users from mic seats. Are you sure you want to switch the mode?",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S06",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 10977
+      },
+      "text": "The room owner has switched the mic seat mode. The mic seat status has changed.",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S07",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 11046
+      },
+      "text": "This mic seat mode is not supported when the Room Owner Couple Seat is enabled.",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S08",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 11047
+      },
+      "text": "This mic seat mode is not supported when the User Couple Seat is enabled.",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S09",
+      "axis": "social",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 8495
+      },
+      "text": "By blacklisting this user, you will automatically unfollow them and terminate your Couple relationship. You will no longer receive their messages and they can no longer follow you or comment or like your posts. Are you sure you want to block this user?",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S10",
+      "axis": "social",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 8764
+      },
+      "text": "Couple Leaderboard",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S11",
+      "axis": "social",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 8883
+      },
+      "text": "Do you confirm to leave this family? Your contribution points for this family will be cleared after you leave.",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S12",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 7725
+      },
+      "text": "%s has been eliminated! Send a Revival Gift to revive them instantly so that they can continue earning PK points.",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S13",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 8362
+      },
+      "text": "Are you sure you want to quit? If you quit, your individual PK points earned in the team battle will be reset",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S14",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 8467
+      },
+      "text": "Blue Team has upgraded their weapon to Lv. 5, during which sending gifts will increase 2x PK points",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S15",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9320
+      },
+      "text": "Guess the vehicle",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S16",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9445
+      },
+      "text": "If you switch teams during a team battle, your points will be recalculated. Are you sure you want to switch teams?",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S17",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9568
+      },
+      "text": "LUDO game",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S18",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 10312
+      },
+      "text": "Red Team has upgraded their weapon to Lv. 5, during which sending gifts will increase 2x PK points",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S19",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 10535
+      },
+      "text": "Send this to an eliminated player in PK team battle to revive them instantly",
+      "remaining": "是否已启用及实际服务端执行未知"
+    }
+  ],
+  "class_descriptor_candidates": [
+    "Lcom/biz/live/linkgame/multipk/ui/MultiPkContainer;",
+    "Lcom/biz/live/linkgame/multipk/ui/view/LiveMultiPKRankingContainer;",
+    "Lcom/biz/live/linkgame/multipk/ui/view/MultiPKConnectingView;",
+    "Lcom/biz/live/linkgame/multipk/ui/view/MultiPKProgressView;",
+    "Lcom/biz/live/linkgame/multipk/ui/view/MultiPKTimerView;",
+    "Lcom/biz/live/linkgame/multipk/ui/view/MultiPkContributorContainer;",
+    "Lcom/biz/live/linkgame/multipk/ui/view/MultiPkProgressContainer;",
+    "Lcom/biz/live/linkgame/multipk/ui/view/TeamWorkRankingView;",
+    "Lcom/biz/live/linkgame/multipk/ui/view/progress/TeamWorkCountdownView;",
+    "Lcom/biz/live/linkgame/multipk/ui/view/progress/TeamWorkProgressBgView;",
+    "Lcom/biz/live/linkgame/multipk/ui/view/progress/TeamWorkProgressUpperView;",
+    "Lcom/biz/live/linkgame/multipk/ui/view/progress/TeamWorkProgressView;",
+    "Lcom/biz/live/linkgame/multipk/ui/view/progress/TeamWorkStageEffectView;",
+    "Lcom/biz/live/linkgame/multipk/model/LiveMultiPkRepo;",
+    "Lcom/biz/live/linkgame/multipk/model/a;",
+    "Lcom/biz/live/linkgame/multipk/model/b;",
+    "Lcom/biz/live/linkgame/multipk/model/c;",
+    "Lcom/biz/live/linkgame/multipk/model/d;",
+    "Lcom/biz/live/linkgame/multipk/model/e;",
+    "Lcom/biz/live/linkgame/multipk/model/f;",
+    "Lcom/biz/live/linkgame/multipk/model/g;",
+    "Lcom/biz/live/linkgame/multipk/model/h;",
+    "Lcom/biz/live/linkgame/multipk/model/net/ConfirmMultiPKInviteResult;",
+    "Lcom/biz/live/linkgame/multipk/model/net/InviteOrJoinMultiPkResult;",
+    "Lcom/biz/live/linkgame/multipk/model/net/LoadMultiPKContributionListResult;",
+    "Lcom/biz/live/linkgame/multipk/model/net/RequestMultiPkFriendListResult;",
+    "Lcom/biz/live/linkgame/multipk/model/net/RequestMultiPkInfoResult;",
+    "Lcom/biz/live/linkgame/multipk/model/net/RequestMultiPkMatchInfoResult;",
+    "Lcom/biz/live/linkgame/multipk/model/net/SearchMultiPkUserResult;",
+    "Lcom/biz/live/linkgame/multipk/model/vo/MultiPKInviteNty;",
+    "Lcom/biz/live/linkgame/multipk/model/vo/MultiPkMatchAnchorInfo;",
+    "Lcom/biz/live/linkgame/multipk/model/vo/MultiPkSourceType;",
+    "Lcom/biz/live/linkgame/multipk/model/vo/MultiPkViewType;",
+    "Lcom/biz/live/linkgame/multipk/ui/MultiPkUserInfoView;",
+    "Lcom/biz/live/linkgame/multipk/ui/MultiPkUserVideoView;",
+    "Lcom/biz/live/linkgame/multipk/ui/MultiPkkComp;",
+    "Lcom/biz/live/linkgame/multipk/ui/a;",
+    "Lcom/biz/live/linkgame/multipk/ui/adapter/LiveMultiPKContributionBoardAdapter;",
+    "Lcom/biz/live/linkgame/multipk/ui/b;",
+    "Lcom/biz/live/linkgame/multipk/ui/c;"
+  ],
+  "coverage": {
+    "voice": "partial",
+    "social": "partial",
+    "games": "partial",
+    "runtime": "not examined"
+  }
+}

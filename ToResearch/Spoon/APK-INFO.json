@@ -1,0 +1,77 @@
+{
+  "app": "Spoon",
+  "regions": "Japan; Korea",
+  "package": "co.spoonme",
+  "version": "11.20.0",
+  "version_code": 738,
+  "selected_file": "Spoon-11.20.0.xapk",
+  "source": "APKPure mirror",
+  "source_page": "https://apkpure.net/spoon/co.spoonme/download",
+  "retrieved_at": "2026-10-13T07:53:28.730059+00:00",
+  "checks": {
+    "zip_crc": "passed",
+    "manifest_package_match": true,
+    "manifest_version": "read from downloaded APK",
+    "android_runtime": "not tested",
+    "publisher_signature": "not cryptographically verified"
+  },
+  "files": [
+    {
+      "path": "Spoon-11.20.0.xapk",
+      "bytes": 113425916,
+      "sha256": "4bae89eb2cddc0bf21993d813c0f8045e34dd860a83e6151fd9da8de0971a58d",
+      "sha1": "241a8c8fa9fde26644f50d3dbc6ea77f223ee436",
+      "manifest": null
+    },
+    {
+      "path": "apks/co.spoonme.apk",
+      "bytes": 81673142,
+      "sha256": "3af6243d07193bd4a8441cfd2b19215c2c5cd46978534f617badbd174a3aa592",
+      "sha1": "fda34b804dc4bd2ac25d2f11bda2d61673df70db",
+      "manifest": {
+        "package": "co.spoonme",
+        "versionName": "11.20.0",
+        "versionCode": 738,
+        "split": null
+      }
+    },
+    {
+      "path": "apks/config.arm64_v8a.apk",
+      "bytes": 31613656,
+      "sha256": "54f1dff322ec8bf99b882e0c9dc55992e532c6224d3d7666cf8d2f523e645251",
+      "sha1": "5a5c77ccb695bef4dd5531141ba6c3615bbbce96",
+      "manifest": {
+        "package": "co.spoonme",
+        "versionName": null,
+        "versionCode": 738,
+        "split": "config.arm64_v8a"
+      }
+    },
+    {
+      "path": "apks/config.mdpi.apk",
+      "bytes": 126484,
+      "sha256": "76f7ad90e95335bbd7fc54e1e7165ee2cd01327d253fbada340e103b2f3fa079",
+      "sha1": "577b68ec569019d2cca738baaf27b4143dc9782c",
+      "manifest": {
+        "package": "co.spoonme",
+        "versionName": null,
+        "versionCode": 738,
+        "split": "config.mdpi"
+      }
+    }
+  ],
+  "compared_sources": [
+    {
+      "source_page": "https://apkpure.net/spoon/co.spoonme/download",
+      "file": "Spoon-11.20.0.xapk",
+      "identity": {
+        "package": "co.spoonme",
+        "versionName": "11.20.0",
+        "versionCode": 738,
+        "split": null
+      }
+    }
+  ],
+  "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+  "mirror_advertised_date": "Oct 6, 2026"
+}

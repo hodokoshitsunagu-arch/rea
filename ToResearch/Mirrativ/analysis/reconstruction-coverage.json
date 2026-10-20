@@ -1,0 +1,632 @@
+{
+  "app": "Mirrativ",
+  "count": 8,
+  "items": [
+    {
+      "id": "MIR01",
+      "source_rules": {
+        "门槛": "主播需开LiveParty；部分用户没有主持开关",
+        "时序": "联合者须在%s秒内开播，具体值动态",
+        "资源": "人数上限存在但值未知"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140727",
+          "resource_name": "text_collab_request_type_streaming",
+          "string_index": 2404,
+          "offset": 130676,
+          "quote": "%1$sさんから『コラボ配信』のリクエストが届いています"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140729",
+          "resource_name": "text_collab_request_type_talk",
+          "string_index": 2403,
+          "offset": 130597,
+          "quote": "%1$sさんから『コラボ通話』のリクエストが届いています"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1406fa",
+          "resource_name": "text_collab_error_4",
+          "string_index": 3255,
+          "offset": 157107,
+          "quote": "This Streamer has LiveParty turned off so you can't start a LiveParty :("
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140fe9",
+          "resource_name": "text_ios_collab_timeout_for_caster",
+          "string_index": 3873,
+          "offset": 185371,
+          "quote": "コラボ者が%1$s秒以内に配信を始められなかったか通信に問題があり、コラボ配信を開始できませんでした"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "timeout": 30,
+          "capacity": 2
+        },
+        "actions": [
+          {
+            "action": "enable",
+            "participant_action": "主播开启LiveParty"
+          },
+          {
+            "action": "request",
+            "participant_action": "观众申请Collab"
+          },
+          {
+            "action": "accept",
+            "participant_action": "主播接受请求"
+          },
+          {
+            "action": "start",
+            "participant_action": "联合者开始直播"
+          },
+          {
+            "action": "timeout",
+            "participant_action": "超过邀请期限"
+          },
+          {
+            "action": "leave",
+            "participant_action": "联合者退出"
+          },
+          {
+            "action": "disconnect",
+            "participant_action": "模拟断线"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: MIR01 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "人数、重试、竞态",
+        "媒体路由"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "MIR02",
+      "source_rules": {
+        "门槛": "指定Cheerleader gift",
+        "回报": "支持者身份；另有Cheer level门控"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140426",
+          "resource_name": "text_became_cheerleader_description",
+          "string_index": 3925,
+          "offset": 187191,
+          "quote": "チアリーダーギフトを贈って\nあなたの配信を応援してくれた\n視聴者さんだよ！"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140b9d",
+          "resource_name": "text_epos_card_issue_card_empty_streamers_v2",
+          "string_index": 3931,
+          "offset": 187410,
+          "quote": "チアレベル1以上の配信者さんがいないため\n発行できるカードがありません"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "levelThreshold": 100
+        },
+        "actions": [
+          {
+            "action": "gift",
+            "participant_action": "赠送Cheerleader礼物"
+          },
+          {
+            "action": "ordinary",
+            "participant_action": "赠送普通礼物"
+          },
+          {
+            "action": "gate",
+            "participant_action": "检查Cheer level资格"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: MIR02 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "应援等级计分、周期及完整权益"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "MIR03",
+      "source_rules": {
+        "资源": "LiveGameMission携带condition/player/viewer/coinBoost",
+        "时序": "Connected/Playing/Ended事件候选"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/package-string-evidence.json",
+          "id": "com.dena.mirrativ.apk:classes.dex:string:28854",
+          "offset": 3038056,
+          "quote": "LiveGameMission(condition="
+        },
+        {
+          "file": "analysis/rea-livegame-mission.json",
+          "evidence_id": "ev_52515f86ca7754591784595cbb06e8d42d3fda904270055c6b435fb8706a51b2",
+          "location": "raw_result / parsed class members",
+          "derived_note": "REA解析LiveGameMission成员condition、player、viewer、coinBoost。未追踪具体游戏条件与奖励公式。",
+          "parsed_fields": [
+            {
+              "type": "android.os.Parcelable$Creator<com.dena.mirrativ.mirrativapi.livegame.LiveGameMission>",
+              "def_pos": 0,
+              "name": "CREATOR"
+            },
+            {
+              "type": "com.dena.mirrativ.mirrativapi.livegame.CoinBoost",
+              "def_pos": 0,
+              "name": "coinBoost"
+            },
+            {
+              "type": "java.lang.String",
+              "def_pos": 0,
+              "name": "condition"
+            },
+            {
+              "type": "com.dena.mirrativ.mirrativapi.livegame.LiveGameMissionStatus",
+              "def_pos": 0,
+              "name": "player"
+            },
+            {
+              "type": "com.dena.mirrativ.mirrativapi.livegame.LiveGameMissionStatus",
+              "def_pos": 0,
+              "name": "viewer"
+            }
+          ]
+        }
+      ],
+      "evidence_strength": "C",
+      "local_choices": {
+        "parameters": {
+          "playerTarget": 2,
+          "viewerTarget": 3,
+          "coinReward": 10,
+          "boost": 2
+        },
+        "actions": [
+          {
+            "action": "connect",
+            "participant_action": "Connected契约事件"
+          },
+          {
+            "action": "play",
+            "participant_action": "Playing契约事件"
+          },
+          {
+            "action": "player",
+            "participant_action": "主播完成一次条件"
+          },
+          {
+            "action": "viewer",
+            "participant_action": "观众完成一次条件"
+          },
+          {
+            "action": "claim",
+            "participant_action": "领取局部契约奖励"
+          },
+          {
+            "action": "end",
+            "participant_action": "Ended契约事件"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: MIR03 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "触发条件、奖励公式",
+        "哪些观众可参与"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "MIR04",
+      "source_rules": {
+        "门槛": "已邀请2人，NPC亦可",
+        "资源": "Emomo麻将avatar模型和邀请文案"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140a0f",
+          "resource_name": "text_emomo_mahjong_select_users_notice_v2",
+          "string_index": 3511,
+          "offset": 165020,
+          "quote": "※2人（NPCも可）の友だちが招待できていると、プレイ開始できます"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140a0a",
+          "resource_name": "text_emomo_mahjong_member_invited_title",
+          "string_index": 2489,
+          "offset": 133816,
+          "quote": "%sさんから\nエモ雀の招待が届いたよ!\n一緒にプレイしよう!!"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "seats": 3
+        },
+        "actions": [
+          {
+            "action": "invite",
+            "participant_action": "邀请朋友"
+          },
+          {
+            "action": "join",
+            "participant_action": "朋友接受邀请"
+          },
+          {
+            "action": "npc",
+            "participant_action": "NPC补位"
+          },
+          {
+            "action": "start",
+            "participant_action": "进入麻将共场"
+          },
+          {
+            "action": "finish",
+            "participant_action": "结束本地共场"
+          },
+          {
+            "action": "leave",
+            "participant_action": "朋友离场"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: MIR04 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "具体麻将规则、席位总数",
+        "匹配与结算"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "MIR05",
+      "source_rules": {
+        "资源": "gacha券从Emomoランあーるぴーじー奖励等获取"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140aa5",
+          "resource_name": "text_emomo_quest_gift_gacha_ticket_error_message",
+          "string_index": 3797,
+          "offset": 181413,
+          "quote": "ガチャチケットはエモモランあーるぴーじーの報酬などで獲得できます。"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "ticketsPerReward": 1,
+          "pool": "原创装饰帽"
+        },
+        "actions": [
+          {
+            "action": "start",
+            "participant_action": "启动本地RPG任务"
+          },
+          {
+            "action": "complete",
+            "participant_action": "完成本地关卡"
+          },
+          {
+            "action": "reward",
+            "participant_action": "领取RPG抽卡券"
+          },
+          {
+            "action": "draw",
+            "participant_action": "消耗券抽本地装饰"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: MIR05 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "RPG战斗/跑酷规则",
+        "票来源和掉率",
+        "奖池"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "MIR06",
+      "source_rules": {
+        "时序": "任务奖励说明为04:00/12:00/20:00重置且每次可挑战一次",
+        "回报": "观看任务每日coin",
+        "门槛": "资源称部分任务需广告；近30天未购coin显示广告"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f14121d",
+          "resource_name": "text_mission_reward_description_popup",
+          "string_index": 4356,
+          "offset": 206901,
+          "quote": "朝4時、昼12時、夜20時にリセットされて\n1回ずつチャレンジできるよ!"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1419af",
+          "resource_name": "text_tutorial_mission_achievement_dialog_description",
+          "string_index": 4469,
+          "offset": 211694,
+          "quote": "素敵な配信に出会えたかな？次回の入室から「視聴ミッション」が表示されるよ！ミッションクリアで毎日コインをGETしよう！"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1411e3",
+          "resource_name": "text_mission_cm_required_detail",
+          "string_index": 2636,
+          "offset": 137511,
+          "quote": "CMは直近30日間コイン購入が無い方に表示されます\n（一部ミッションを除く）"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "watchMinutes": 3,
+          "coins": 10,
+          "adRequired": true
+        },
+        "actions": [
+          {
+            "action": "watch",
+            "participant_action": "观看一分钟"
+          },
+          {
+            "action": "ad",
+            "participant_action": "观看模拟广告"
+          },
+          {
+            "action": "claim",
+            "participant_action": "领取本时段任务币"
+          },
+          {
+            "action": "next",
+            "participant_action": "进入下一重置时段"
+          },
+          {
+            "action": "purchase",
+            "participant_action": "模拟近30天购买资格"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: MIR06 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "各文案是否同任务",
+        "观看时长及coin数量",
+        "时区"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "MIR07",
+      "source_rules": {
+        "资源": "文字最多8字；姿势在Emomo拍摄界面改",
+        "时序": "关闭制作页会丢弃正在创建的gift"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f141a13",
+          "resource_name": "text_unique_emomo_gift_stamp_input_text_note",
+          "string_index": 3530,
+          "offset": 167265,
+          "quote": "※テキストは最大8文字まで入力できます\n※ポーズはエモモ撮影画面から変更できます"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f1419fa",
+          "resource_name": "text_unique_emomo_close_alert_title",
+          "string_index": 4665,
+          "offset": 219225,
+          "quote": "閉じると作成中のギフトが\n破棄されます\nよろしいですか？"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "maxChars": 8
+        },
+        "actions": [
+          {
+            "action": "open",
+            "participant_action": "打开Emomo制作页"
+          },
+          {
+            "action": "edit",
+            "participant_action": "编辑文字与姿势"
+          },
+          {
+            "action": "publish",
+            "participant_action": "发布本地礼物"
+          },
+          {
+            "action": "send",
+            "participant_action": "发送已发布礼物"
+          },
+          {
+            "action": "close",
+            "participant_action": "关闭并丢弃草稿"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: MIR07 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "审核、发布权限、价格",
+        "图像净化与发送流程"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    },
+    {
+      "id": "MIR08",
+      "source_rules": {
+        "门槛": "无Cheer level 1以上主播则无可发行卡",
+        "资源": "Emomo可拖动缩放；制作需同意PR规范",
+        "回报": "EPOS发行的卡，需审批"
+      },
+      "source_evidence": [
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140b9d",
+          "resource_name": "text_epos_card_issue_card_empty_streamers_v2",
+          "string_index": 3931,
+          "offset": 187410,
+          "quote": "チアレベル1以上の配信者さんがいないため\n発行できるカードがありません"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140b8f",
+          "resource_name": "text_epos_card_creation_edit_hint_v2",
+          "string_index": 3965,
+          "offset": 188879,
+          "quote": "ピンチイン・ピンチアウトやドラッグで\nエモモの大きさや位置を調整できるよ！"
+        },
+        {
+          "file": "analysis/feature-resource-rules.json",
+          "apk": "apks/com.dena.mirrativ.apk",
+          "member": "resources.arsc",
+          "resource_id": "0x7f140ba8",
+          "resource_name": "text_epos_card_issued_by_epos_v2",
+          "string_index": 4685,
+          "offset": 219872,
+          "quote": "［PR］エポスカードは株式会社エポスカードから発行されます。"
+        }
+      ],
+      "evidence_strength": "B",
+      "local_choices": {
+        "parameters": {
+          "minimumLevel": 1
+        },
+        "actions": [
+          {
+            "action": "qualify",
+            "participant_action": "模拟Cheer level 1资格"
+          },
+          {
+            "action": "agree",
+            "participant_action": "同意PR规范预览"
+          },
+          {
+            "action": "design",
+            "participant_action": "设计Emomo头像预览"
+          },
+          {
+            "action": "preview",
+            "participant_action": "查看卡面资格预览"
+          }
+        ],
+        "reconstruction": "专属状态模型；未知算法由显式本地参数驱动"
+      },
+      "implemented_fragments": [
+        "demo/model.mjs: MIR08 专属状态与动作",
+        "demo/ui.mjs: 字段动作、状态与轨迹"
+      ],
+      "not_recovered": [
+        "原金融合作合同、审核",
+        "关联利益和权限"
+      ],
+      "validation": {
+        "node": "passed normal-loop + guard + reset; npm dependencies not installed",
+        "browser": "根代理串行验证待完成"
+      }
+    }
+  ],
+  "validation_summary": {
+    "node_tests": 17,
+    "passed": 17,
+    "legacy_tests": "passed",
+    "browser": "delegated to root sequential validation",
+    "original_runtime": "not executed"
+  }
+}

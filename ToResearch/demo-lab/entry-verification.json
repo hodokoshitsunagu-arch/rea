@@ -1,0 +1,104 @@
+{
+  "checks": [
+    {
+      "kind": "lab index",
+      "pass": true
+    },
+    {
+      "app": "Yalla",
+      "kind": "legacy load",
+      "pass": true
+    },
+    {
+      "app": "YoHo",
+      "kind": "legacy load",
+      "pass": true
+    },
+    {
+      "app": "MICO",
+      "kind": "legacy load",
+      "pass": true
+    },
+    {
+      "app": "TopTop",
+      "kind": "legacy load",
+      "pass": true
+    },
+    {
+      "app": "WePlay-AR",
+      "kind": "legacy load",
+      "pass": true
+    },
+    {
+      "app": "Spoon",
+      "kind": "legacy load",
+      "pass": true
+    },
+    {
+      "app": "WePlay-JP",
+      "kind": "legacy load",
+      "pass": true
+    },
+    {
+      "app": "WePlay-KR",
+      "kind": "legacy load",
+      "pass": true
+    },
+    {
+      "app": "Mirrativ",
+      "kind": "legacy load",
+      "pass": true
+    },
+    {
+      "app": "Pococha",
+      "kind": "legacy load",
+      "pass": true
+    },
+    {
+      "app": "17LIVE",
+      "kind": "legacy load",
+      "pass": true
+    },
+    {
+      "app": "SUGO",
+      "kind": "legacy load",
+      "pass": true
+    },
+    {
+      "app": "Yalla-Parchis",
+      "kind": "legacy load",
+      "pass": true
+    },
+    {
+      "app": "Falla",
+      "kind": "legacy load",
+      "pass": true
+    },
+    {
+      "app": "HeeSay",
+      "kind": "legacy load",
+      "pass": true
+    },
+    {
+      "path": "/package.json",
+      "kind": "outside demo rejected",
+      "pass": true
+    },
+    {
+      "path": "/Yalla/ANALYSIS.md",
+      "kind": "outside demo rejected",
+      "pass": true
+    },
+    {
+      "path": "/Yalla/analysis/resource-evidence.json",
+      "kind": "outside demo rejected",
+      "pass": true
+    },
+    {
+      "path": "/Yalla/../../package.json",
+      "kind": "outside demo rejected",
+      "pass": true
+    }
+  ],
+  "passed": true
+}

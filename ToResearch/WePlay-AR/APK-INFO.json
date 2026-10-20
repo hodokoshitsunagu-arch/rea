@@ -1,0 +1,149 @@
+{
+  "app": "WePlay-AR",
+  "regions": "MENA / Arabic",
+  "package": "com.wejoy.weplay.ar",
+  "version": "6.8.5",
+  "version_code": 60851,
+  "selected_file": "WePlay-AR-6.8.5.xapk",
+  "source": "APKPure mirror",
+  "source_page": "https://apkpure.net/weplay-ar/com.wejoy.weplay.ar/download",
+  "retrieved_at": "2026-10-13T07:54:31.910008+00:00",
+  "checks": {
+    "zip_crc": "passed",
+    "manifest_package_match": true,
+    "manifest_version": "read from downloaded APK",
+    "android_runtime": "not tested",
+    "publisher_signature": "not cryptographically verified"
+  },
+  "files": [
+    {
+      "path": "WePlay-AR-6.8.5.xapk",
+      "bytes": 214318467,
+      "sha256": "5cc9230034cf20479a4a380f57b7546f4e6bfe5e9dd1ba15c5565eb71d9161dd",
+      "sha1": "ca8a7018e1c121b96bc859069198847ae10f6d82",
+      "manifest": null
+    },
+    {
+      "path": "apks/com.wejoy.weplay.ar.apk",
+      "bytes": 63281854,
+      "sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+      "sha1": "64fc62d2604343df15c22c30b1f133058af07341",
+      "manifest": {
+        "package": "com.wejoy.weplay.ar",
+        "versionName": "6.8.5",
+        "versionCode": 60851,
+        "split": null
+      }
+    },
+    {
+      "path": "apks/config.ar.apk",
+      "bytes": 3225675,
+      "sha256": "177c9157387598f7f1e3a550268b40b6a07cb8664f724725edc2dfd753a7272a",
+      "sha1": "db548976b355191d10e159a84259d5a7a9135141",
+      "manifest": {
+        "package": "com.wejoy.weplay.ar",
+        "versionName": null,
+        "versionCode": 60851,
+        "split": "config.ar"
+      }
+    },
+    {
+      "path": "apks/config.arm64_v8a.apk",
+      "bytes": 72560071,
+      "sha256": "6e18997c2e91fea6546d491d6e263effb3316fcfe876cc05985cc3c87a533222",
+      "sha1": "4017b23f3b1388cf926ce72d597b6b91156281c9",
+      "manifest": {
+        "package": "com.wejoy.weplay.ar",
+        "versionName": null,
+        "versionCode": 60851,
+        "split": "config.arm64_v8a"
+      }
+    },
+    {
+      "path": "apks/config.en.apk",
+      "bytes": 569554,
+      "sha256": "a875a0860e4ce558500c8cb6f47306876d044933aabfdefc18384e335cd63971",
+      "sha1": "41a0d78f3414f215f7ebfee0d5eb4a1522463eb7",
+      "manifest": {
+        "package": "com.wejoy.weplay.ar",
+        "versionName": null,
+        "versionCode": 60851,
+        "split": "config.en"
+      }
+    },
+    {
+      "path": "apks/config.hi.apk",
+      "bytes": 3793193,
+      "sha256": "c460aa786c374c9294830656744e8936e36114fe9022befc35728a0b514fcbe6",
+      "sha1": "d89b907d0566730936d6bf988aa52602e92f20af",
+      "manifest": {
+        "package": "com.wejoy.weplay.ar",
+        "versionName": null,
+        "versionCode": 60851,
+        "split": "config.hi"
+      }
+    },
+    {
+      "path": "apks/config.tr.apk",
+      "bytes": 5002772,
+      "sha256": "22a96186595f676e59eaa8367d5df6e5a29bf205a8bf89c7d29e65ea1db9875c",
+      "sha1": "2e28cbe7ede92779d5f11b925a7348d733253212",
+      "manifest": {
+        "package": "com.wejoy.weplay.ar",
+        "versionName": null,
+        "versionCode": 60851,
+        "split": "config.tr"
+      }
+    },
+    {
+      "path": "apks/config.xxhdpi.apk",
+      "bytes": 497284,
+      "sha256": "f9857897947e9620dfc28cc9645bfaba5df31a7aa70c51a1da63cddf559fa7df",
+      "sha1": "d7225131427c374c7b228e658d5bb8afcad2eec3",
+      "manifest": {
+        "package": "com.wejoy.weplay.ar",
+        "versionName": null,
+        "versionCode": 60851,
+        "split": "config.xxhdpi"
+      }
+    },
+    {
+      "path": "apks/config.zh.apk",
+      "bytes": 41841,
+      "sha256": "8c4749da80955cf16ac86b3ceb49d18b24df5844b1c489c110bc655e9762386f",
+      "sha1": "85990022b57701eb10774c7d822d17761200ac18",
+      "manifest": {
+        "package": "com.wejoy.weplay.ar",
+        "versionName": null,
+        "versionCode": 60851,
+        "split": "config.zh"
+      }
+    },
+    {
+      "path": "apks/wepie_asset_pack.apk",
+      "bytes": 65228677,
+      "sha256": "8bd14a52e70fa34978f4113b0f7dc0be235b5a5e1e675a3b9fbfe5bbb2cb37a2",
+      "sha1": "5baae58bc301cf0b1ea51ea3934ae8708daad0b1",
+      "manifest": {
+        "package": "com.wejoy.weplay.ar",
+        "versionName": null,
+        "versionCode": 60851,
+        "split": "wepie_asset_pack"
+      }
+    }
+  ],
+  "compared_sources": [
+    {
+      "source_page": "https://apkpure.net/weplay-ar/com.wejoy.weplay.ar/download",
+      "file": "WePlay-AR-6.8.5.xapk",
+      "identity": {
+        "package": "com.wejoy.weplay.ar",
+        "versionName": "6.8.5",
+        "versionCode": 60851,
+        "split": null
+      }
+    }
+  ],
+  "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+  "mirror_advertised_date": "Oct 13, 2026"
+}

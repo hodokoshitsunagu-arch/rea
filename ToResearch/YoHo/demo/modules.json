@@ -1,0 +1,421 @@
+{
+  "app": "YoHo",
+  "modules": [
+    {
+      "id": "YOH01",
+      "title": "家族周排名挑战与20%贡献转移",
+      "implemented_scope": "保留现有单机demo；扩展拒绝冷却，公开自定排名算法。；2小时挑战、贡献即排名、向下取整、同分蓝队胜为本地规则。",
+      "limitations": [
+        "排名算法、取整、并列、超时和上限未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    },
+    {
+      "id": "YOH02",
+      "title": "家族召集与成长任务",
+      "implemented_scope": "家族申请/任务及一日一次召集；不实现普通群聊。；财富10、提醒每日2、任务10族EXP为自定；管理员每日召集一次保留文案。",
+      "limitations": [
+        "具体门槛、族等级、人数和提醒数未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    },
+    {
+      "id": "YOH03",
+      "title": "礼物竞拍守护关系",
+      "implemented_scope": "关系竞拍状态机与模拟守护值/宝箱。；按累计赠礼比价、宝箱300、同分先蓝；未恢复分成退款，全部虚拟。",
+      "limitations": [
+        "竞价比较、最高价还是累计价、分成、退款、平局未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    },
+    {
+      "id": "YOH04",
+      "title": "守护代币与限期关系升级",
+      "implemented_scope": "代币同意、续期/覆盖、权益判定；数值可配。；100代币=100守护值；同类型续期累加、异类型覆盖从今日30天；替换价格未知未扣款。",
+      "limitations": [
+        "关系名称全集、等级阈值、续期定价、通话计价未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        }
+      ]
+    },
+    {
+      "id": "YOH05",
+      "title": "双向亮心配对回合",
+      "implemented_scope": "互选与配对后小游戏引导；概率提示单独保留为未决，不随机制造同意。；两人互选；礼物只显示未恢复的概率提示，不产生同意；未匹配留席。",
+      "limitations": [
+        "礼物如何影响互选概率、角色人数、性别与隐私呈现未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    },
+    {
+      "id": "YOH06",
+      "title": "最低钻石狙击的大逃杀",
+      "implemented_scope": "多轮淘汰状态机，公开多人瞄准裁决补齐。；最低同分同步淘汰、全员同分无胜者；每回合10秒；换座保持玩家身份计分。",
+      "limitations": [
+        "同轮瞄准多人时射击次序、最终胜者/奖池、积分折算未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ]
+    },
+    {
+      "id": "YOH07",
+      "title": "团队武器PK与火箭升级",
+      "implemented_scope": "团队收钻与武器成长；火箭作为独立奖励支线。；5币=1钻；50钻升级；本样本单贡献者为MVP；火箭2燃料领奖独立，未关联武器。",
+      "limitations": [
+        "火箭和武器是否同一进度、升级阈值、时长、奖池未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    },
+    {
+      "id": "YOH08",
+      "title": "游戏币与通用币双钱包",
+      "implemented_scope": "双钱包与9个占位游戏入口的消费规则；不复刻随机博彩。；9类游戏名未作玩法恢复；消费20、游戏币优先，纯资格/账本实验无博彩。",
+      "limitations": [
+        "兑换方向、过期/退款、中奖产出类型、地区开放未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ]
+    },
+    {
+      "id": "YOH09",
+      "title": "Room Club等级与成员权益",
+      "implemented_scope": "房Club等级门禁与成员席位/红包资格，不接真实金额。；LV3为动态门槛补齐；会员席位1、红包一次；退出保留等级是本地选择。",
+      "limitations": [
+        "费用、亲密/等级增长、退组数据、席位数量未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    },
+    {
+      "id": "YOH10",
+      "title": "Mystery匿名身份与贵族隐私",
+      "implemented_scope": "匿名展示策略与操作互斥模拟；不宣称匿名安全保证。；VIP3解锁、匿名固定ID #7为本地参数；只展示视图，不承诺原隐私保护。",
+      "limitations": [
+        "具体解锁等级、匿名ID稳定性、哪些日志与他人视图仍可见未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ]
+    },
+    {
+      "id": "YOH11",
+      "title": "贵族礼物授权与高阶动态名片",
+      "implemented_scope": "分级能力矩阵与展示，门槛按文本保留。；示例礼物门槛Noble3；其他等级按文案；售价/周期未模拟。",
+      "limitations": [
+        "各爵位售价、周期、欢迎图可定制度、地区版本未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ]
+    },
+    {
+      "id": "YOH12",
+      "title": "生日与关系周年派对奖励",
+      "implemented_scope": "日历提醒和派对流程概念原型；任务不能当恢复规则。；2日提醒、双人响应与庆祝任务全部设计补齐；仅徽章/头像框/车辆候选类别有文案。",
+      "limitations": [
+        "活动触发条件、奖励任务、邀请权限、时间窗未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    }
+  ]
+}

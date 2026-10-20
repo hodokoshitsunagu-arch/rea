@@ -1,0 +1,42 @@
+[
+  {
+    "question": "语音房如何承载小游戏",
+    "direct_evidence": "`assets/game/gameConfig.json`直接列出PK、幸运袋、骰子、猜拳/数字面板；`show`与gameType为静态默认配置；Ludo/UNO/Domino/Okey/Crush/Carrom/Jackaroo条目带独立gameId。",
+    "derivation_or_inference": "推导：房间菜单编排原生互动和外部游戏入口，不是一个单独的Ludo应用。",
+    "unknown": "服务端覆盖静态配置的方式、哪些地区开放、动态下载规则与真实SDK运行未知。`show:true`不证明线上用户可见。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "Ludo匹配怎样回到房间",
+    "direct_evidence": "REA反编译 `LudoMatchHelper.a`：默认gameId `1468180338417074177`，默认gamePlatform=1；WebRequest送gameId/gamePlatform，经RoomApi得到GroupInfo；gid≤0显示未匹配提示；成功组装`room_match_extra`/MatchModel。",
+    "derivation_or_inference": "推导：游戏匹配的返回身份是房间gid，并把游戏信息带入房间上下文。",
+    "unknown": "服务端路由、超时重试、安全性、组队分配与房间进入后的真实行为未知；JADX有type inference警告保留。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "Quick Ludo独特规则",
+    "direct_evidence": "resources.arsc全局字符串7024：先吃掉对手至少一子才能进入终点轨道；掷6/吃子/精确到终点获得再次掷骰；三次连续6结束回合；快速模式一枚到终点即可，经典需全部。",
+    "derivation_or_inference": "推导：快速局把捕获与冲刺绑定，适合短局重复参与。",
+    "unknown": "安全格坐标、完整棋盘映射、不同玩家偏移、服务器骰子公平性未知。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "特殊道具",
+    "direct_evidence": "同一规则7024说明金骰必出6、磁铁前进8步直到阻挡、炸弹炸8步并把对手送回基地。",
+    "derivation_or_inference": "推断：道具改变骰子与占位风险，可能影响局内协作/对抗。",
+    "unknown": "付费与获取概率、使用窗口、爆炸路径、安全格例外未知，demo没有硬造这些例外。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "房间社交的特殊对象",
+    "direct_evidence": "资源9258明确Queen不能送幸运袋礼物；7926、9059、9062明确礼物幸运袋票与房间发送提示。",
+    "derivation_or_inference": "推断：Queen身份与礼物分发存在权限边界。",
+    "unknown": "Queen产生/失效、奖池规则、唯一性、抢袋公平分配未知；未把字符串扩写成完整女王玩法。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  }
+]

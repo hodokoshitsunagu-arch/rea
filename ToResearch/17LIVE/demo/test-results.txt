@@ -1,0 +1,178 @@
+TAP version 13
+# Subtest: L1701 正常核心闭环、资源结果与纯函数重置
+ok 1 - L1701 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.92225
+  type: 'test'
+  ...
+# Subtest: L1701 关键资格、重复或异常边界
+ok 2 - L1701 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.067208
+  type: 'test'
+  ...
+# Subtest: L1702 正常核心闭环、资源结果与纯函数重置
+ok 3 - L1702 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.109208
+  type: 'test'
+  ...
+# Subtest: L1702 关键资格、重复或异常边界
+ok 4 - L1702 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.048958
+  type: 'test'
+  ...
+# Subtest: L1703 正常核心闭环、资源结果与纯函数重置
+ok 5 - L1703 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.076875
+  type: 'test'
+  ...
+# Subtest: L1703 关键资格、重复或异常边界
+ok 6 - L1703 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.04725
+  type: 'test'
+  ...
+# Subtest: L1704 正常核心闭环、资源结果与纯函数重置
+ok 7 - L1704 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.398542
+  type: 'test'
+  ...
+# Subtest: L1704 关键资格、重复或异常边界
+ok 8 - L1704 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.061792
+  type: 'test'
+  ...
+# Subtest: L1705 正常核心闭环、资源结果与纯函数重置
+ok 9 - L1705 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.130042
+  type: 'test'
+  ...
+# Subtest: L1705 关键资格、重复或异常边界
+ok 10 - L1705 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.086666
+  type: 'test'
+  ...
+# Subtest: L1706 正常核心闭环、资源结果与纯函数重置
+ok 11 - L1706 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.136542
+  type: 'test'
+  ...
+# Subtest: L1706 关键资格、重复或异常边界
+ok 12 - L1706 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.055333
+  type: 'test'
+  ...
+# Subtest: L1707 正常核心闭环、资源结果与纯函数重置
+ok 13 - L1707 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.086375
+  type: 'test'
+  ...
+# Subtest: L1707 关键资格、重复或异常边界
+ok 14 - L1707 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.043916
+  type: 'test'
+  ...
+# Subtest: L1708 正常核心闭环、资源结果与纯函数重置
+ok 15 - L1708 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.075792
+  type: 'test'
+  ...
+# Subtest: L1708 关键资格、重复或异常边界
+ok 16 - L1708 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.044083
+  type: 'test'
+  ...
+# Subtest: L1709 正常核心闭环、资源结果与纯函数重置
+ok 17 - L1709 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.075417
+  type: 'test'
+  ...
+# Subtest: L1709 关键资格、重复或异常边界
+ok 18 - L1709 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.039041
+  type: 'test'
+  ...
+# Subtest: L1710 正常核心闭环、资源结果与纯函数重置
+ok 19 - L1710 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.054042
+  type: 'test'
+  ...
+# Subtest: L1710 关键资格、重复或异常边界
+ok 20 - L1710 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.034958
+  type: 'test'
+  ...
+# Subtest: L1711 正常核心闭环、资源结果与纯函数重置
+ok 21 - L1711 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.050542
+  type: 'test'
+  ...
+# Subtest: L1711 关键资格、重复或异常边界
+ok 22 - L1711 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.047542
+  type: 'test'
+  ...
+# Subtest: L1712 正常核心闭环、资源结果与纯函数重置
+ok 23 - L1712 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.153833
+  type: 'test'
+  ...
+# Subtest: L1712 关键资格、重复或异常边界
+ok 24 - L1712 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.035708
+  type: 'test'
+  ...
+# Subtest: 17LIVE 赠订限制、唯一守护、共享保底与账本守恒
+ok 25 - 17LIVE 赠订限制、唯一守护、共享保底与账本守恒
+  ---
+  duration_ms: 0.177875
+  type: 'test'
+  ...
+# Subtest: L1708/L1709 UI成本解释拒绝负数、零、NaN、Infinity且余额不变
+ok 26 - L1708/L1709 UI成本解释拒绝负数、零、NaN、Infinity且余额不变
+  ---
+  duration_ms: 0.253875
+  type: 'test'
+  ...
+# Subtest: L1708保底次数为整数并在本袋开始时拥有配置
+ok 27 - L1708保底次数为整数并在本袋开始时拥有配置
+  ---
+  duration_ms: 0.171375
+  type: 'test'
+  ...
+# Subtest: L1709活动需求数量和等级拒绝非整数或空清单，合法参数仍可完整共集
+ok 28 - L1709活动需求数量和等级拒绝非整数或空清单，合法参数仍可完整共集
+  ---
+  duration_ms: 0.251709
+  type: 'test'
+  ...
+1..28
+# tests 28
+# suites 0
+# pass 28
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 39.412459

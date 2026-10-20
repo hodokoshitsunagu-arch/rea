@@ -1,0 +1,176 @@
+{
+  "app": "WePlay-AR",
+  "package": "com.wejoy.weplay.ar",
+  "version": "6.8.5",
+  "target_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+  "scope": "static APK/split inventory and focused REA operations; partial",
+  "questions": [
+    {
+      "category": "语音房",
+      "status": "partially_answered",
+      "facts": "Manifest权限、MusicHum/VoiceRoom客户端资源与模型；不能证明真实RTC",
+      "unknown": "权限授予、麦位服务端状态、线上音频质量和房间开关"
+    },
+    {
+      "category": "小游戏",
+      "status": "partially_answered",
+      "facts": "REA Spy 搜索完整返回9个候选，包括 SpySeatView、SpyQASeatView、SpyGameBottomFragment、PartySpySeatView 和 SpyGameEndAddFriendAnim。后者的真实类成员有 Context、ImageView、ObjectAnimator 和动画/窗口清理方法；只支持“结算交友动画”候选，不证明后端加好友成功或权限。DEX/资源另有MusicHum、Draw和语音房候选，asset split含Baloot卡面/动画及Unity内容，均不能替代原游戏算法。",
+      "unknown": "卧底数量与“双词”语义、实际长度占位符、角色配比、词库、空白卧底/炸词/投票平票规则、服务器权限、真实社交关系提交；Baloot完整叫牌与得分、Unity狼人和动态游戏。日韩绘画接力/Mic练习资格规则不得移植为本包事实。"
+    },
+    {
+      "category": "社交",
+      "status": "partially_answered",
+      "facts": "结算点赞/交友/家庭或CP资源和本地SQLite架构；并非后台执行",
+      "unknown": "真实关系写入、成长公式、服务器授权"
+    }
+  ],
+  "observations": [
+    {
+      "id": "R01",
+      "kind": "direct_package_resource",
+      "claim": "包体包含此资源文本，不代表在线启用或业务执行",
+      "apk": "apks/com.wejoy.weplay.ar.apk",
+      "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+      "member": "resources.arsc",
+      "resource_id": "0x7f130797",
+      "resource_type": "string",
+      "name": "double_spies_spy_words_not_exceed_x_characters",
+      "configuration_hex": "40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "locale_bytes_hex": "00000000",
+      "entry_offset": 3195924,
+      "value_offset": 3195932,
+      "string_index": 13401,
+      "string_offset": 591342,
+      "text": "When there are 2 spies, the spy words must not exceed %s characters"
+    },
+    {
+      "id": "R02",
+      "kind": "direct_package_resource",
+      "claim": "包体包含此资源文本，不代表在线启用或业务执行",
+      "apk": "apks/config.ar.apk",
+      "apk_sha256": "177c9157387598f7f1e3a550268b40b6a07cb8664f724725edc2dfd753a7272a",
+      "member": "resources.arsc",
+      "resource_id": "0x7f130797",
+      "resource_type": "string",
+      "name": "double_spies_spy_words_not_exceed_x_characters",
+      "configuration_hex": "40000000000000006172000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "locale_bytes_hex": "61720000",
+      "entry_offset": 730532,
+      "value_offset": 730540,
+      "string_index": 4102,
+      "string_offset": 228150,
+      "text": "لا يمكن أن تكون كلمات الجاسوس اكثر من %s كلمات"
+    },
+    {
+      "id": "R03",
+      "kind": "direct_package_resource",
+      "claim": "包体包含此资源文本，不代表在线启用或业务执行",
+      "apk": "apks/com.wejoy.weplay.ar.apk",
+      "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+      "member": "resources.arsc",
+      "resource_id": "0x7f1315e9",
+      "resource_type": "string",
+      "name": "snatch_song_result_view_5",
+      "configuration_hex": "40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "locale_bytes_hex": "00000000",
+      "entry_offset": 3250980,
+      "value_offset": 3250988,
+      "string_index": 10489,
+      "string_offset": 500537,
+      "text": "Grabbed"
+    },
+    {
+      "id": "R04",
+      "kind": "direct_package_resource",
+      "claim": "包体包含此资源文本，不代表在线启用或业务执行",
+      "apk": "apks/config.ar.apk",
+      "apk_sha256": "177c9157387598f7f1e3a550268b40b6a07cb8664f724725edc2dfd753a7272a",
+      "member": "resources.arsc",
+      "resource_id": "0x7f1315e9",
+      "resource_type": "string",
+      "name": "snatch_song_result_view_5",
+      "configuration_hex": "40000000000000006172000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "locale_bytes_hex": "61720000",
+      "entry_offset": 782916,
+      "value_offset": 782924,
+      "string_index": 1735,
+      "string_offset": 104483,
+      "text": "الغناء"
+    },
+    {
+      "id": "R05",
+      "kind": "direct_package_resource",
+      "claim": "包体包含此资源文本，不代表在线启用或业务执行",
+      "apk": "apks/com.wejoy.weplay.ar.apk",
+      "apk_sha256": "d0c169358df88039a0b98db9879d1e4908aa3cd2a17d64c81f89d96ee21bfaf1",
+      "member": "resources.arsc",
+      "resource_id": "0x7f1315ea",
+      "resource_type": "string",
+      "name": "snatch_song_result_view_7",
+      "configuration_hex": "40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "locale_bytes_hex": "00000000",
+      "entry_offset": 3250996,
+      "value_offset": 3251004,
+      "string_index": 12550,
+      "string_offset": 559214,
+      "text": "Success Rate"
+    },
+    {
+      "id": "R06",
+      "kind": "direct_package_resource",
+      "claim": "包体包含此资源文本，不代表在线启用或业务执行",
+      "apk": "apks/config.ar.apk",
+      "apk_sha256": "177c9157387598f7f1e3a550268b40b6a07cb8664f724725edc2dfd753a7272a",
+      "member": "resources.arsc",
+      "resource_id": "0x7f1315ea",
+      "resource_type": "string",
+      "name": "snatch_song_result_view_7",
+      "configuration_hex": "40000000000000006172000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "locale_bytes_hex": "61720000",
+      "entry_offset": 782932,
+      "value_offset": 782940,
+      "string_index": 4763,
+      "string_offset": 271455,
+      "text": "معدل نجاح الغناء"
+    }
+  ],
+  "derived_representation": "REA Spy 搜索完整返回9个候选，包括 SpySeatView、SpyQASeatView、SpyGameBottomFragment、PartySpySeatView 和 SpyGameEndAddFriendAnim。后者的真实类成员有 Context、ImageView、ObjectAnimator 和动画/窗口清理方法；只支持“结算交友动画”候选，不证明后端加好友成功或权限。DEX/资源另有MusicHum、Draw和语音房候选，asset split含Baloot卡面/动画及Unity内容，均不能替代原游戏算法。",
+  "inferences": [
+    "这些机制可能将语音参与、游戏结果与社交反馈关联；产品目标与效果未经实测"
+  ],
+  "demo_reconstruction_choices": "双词/双卧底的字面含义跨语言存在歧义：英文说2 spies，阿语文案说单词长度/数量，占位符的实际数值未知。Demo明确选择“一位卧底持双词、其余持同词”，六人、12个Unicode码点、票数唯一最大淘汰/平票不淘汰、结算后的单向交友候选选择为本地重构。不是原版角色配置、Unicode计数或判胜算法。",
+  "unknowns": "卧底数量与“双词”语义、实际长度占位符、角色配比、词库、空白卧底/炸词/投票平票规则、服务器权限、真实社交关系提交；Baloot完整叫牌与得分、Unity狼人和动态游戏。日韩绘画接力/Mic练习资格规则不得移植为本包事实。",
+  "rea_calls": [
+    {
+      "file": "analysis/rea-package.json",
+      "operation": "inspect_android_package",
+      "evidence_id": "ev_2cb81149b361a8b4ea14049e593412ebaf72608aeea074a7ce0096d4145dd787",
+      "status": "success",
+      "code": null,
+      "message": null,
+      "sha256": "4d04e5485b283660942f7fd0a5d2d367d19ec8020a7597df1bd8baf4ea7d43c6"
+    },
+    {
+      "file": "analysis/rea-spy-search.json",
+      "operation": "search_android_classes",
+      "evidence_id": "ev_0c6eaadc42d4114e9f82c3d7f4434a2fea83af8effcade95699a227b42e7453f",
+      "status": "success",
+      "code": null,
+      "message": null,
+      "sha256": "306dad3eb22347f6b8268459de2388ee186635ae8306fa27155ad8f83287b509"
+    },
+    {
+      "file": "analysis/rea-spy-social-class.json",
+      "operation": "inspect_android_class",
+      "evidence_id": "ev_3dcb029c0d6cbd8184d2d24a04f5f96e55bfc693d8dc12784994fc6e85824ff2",
+      "status": "success",
+      "code": null,
+      "message": null,
+      "sha256": "9288ed529cd6b57b27b760b1e1831e1da157beb06454c37b1024b317de5f2131"
+    }
+  ],
+  "validation": {
+    "model": "node demo/test.mjs passed",
+    "browser": "passed: 1280x900 and 390x844 complete journey/reset; zero errors or horizontal overflow"
+  }
+}

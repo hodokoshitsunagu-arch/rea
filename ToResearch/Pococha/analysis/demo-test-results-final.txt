@@ -1,0 +1,1 @@
+Pococha: state invariants / repeat settlement / deterministic reset PASS

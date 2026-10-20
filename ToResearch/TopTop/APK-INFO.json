@@ -1,0 +1,78 @@
+{
+  "app": "TopTop",
+  "regions": "MENA",
+  "package": "com.game.friends.android",
+  "version": "3.27.3",
+  "version_code": 3027003,
+  "selected_file": "TopTop-3.27.3.xapk",
+  "source": "APKPure mirror",
+  "source_page": "https://apkpure.net/toptop/com.game.friends.android/download",
+  "retrieved_at": "2026-10-13T07:53:30.477177+00:00",
+  "checks": {
+    "zip_crc": "passed",
+    "manifest_package_match": true,
+    "manifest_version": "read from downloaded APK",
+    "android_runtime": "not tested",
+    "publisher_signature": "not cryptographically verified",
+    "published_archive_sha1_match": true
+  },
+  "files": [
+    {
+      "path": "TopTop-3.27.3.xapk",
+      "bytes": 242311437,
+      "sha256": "a5f9e540433efe408767ecbf00c86f623120b6001cfbdb33f29450de600a9a9c",
+      "sha1": "d355f4888cc107d85fea3f80fe7abcd5b4c81099",
+      "manifest": null
+    },
+    {
+      "path": "apks/com.game.friends.android.apk",
+      "bytes": 151020582,
+      "sha256": "554cd034d0302ae99de4bce341588e821fa0ea4ad7019579bba2839536bb2f62",
+      "sha1": "9a22e391b582cd7188cefedfc24e8dab0c4c8012",
+      "manifest": {
+        "package": "com.game.friends.android",
+        "versionName": "3.27.3",
+        "versionCode": 3027003,
+        "split": null
+      }
+    },
+    {
+      "path": "apks/config.armeabi_v7a.apk",
+      "bytes": 61590261,
+      "sha256": "9398e0b2967ada3a934fc33d88c0d83e4c3da080795f9be79ff3a8c17df2cdd0",
+      "sha1": "163be8ce1997da898775dee8d622df0de5318e47",
+      "manifest": {
+        "package": "com.game.friends.android",
+        "versionName": null,
+        "versionCode": 3027003,
+        "split": "config.armeabi_v7a"
+      }
+    },
+    {
+      "path": "apks/topinnergame.apk",
+      "bytes": 29690003,
+      "sha256": "5c6d549162f586a04757af535fd4a7329073a160d64c5375adf751b7afbb80e9",
+      "sha1": "f28bbecaa96645a5337a9908517082e7a8e790b8",
+      "manifest": {
+        "package": "com.game.friends.android",
+        "versionName": null,
+        "versionCode": 3027003,
+        "split": "topinnergame"
+      }
+    }
+  ],
+  "compared_sources": [
+    {
+      "source_page": "https://apkpure.net/toptop/com.game.friends.android/download",
+      "file": "TopTop-3.27.3.xapk",
+      "identity": {
+        "package": "com.game.friends.android",
+        "versionName": "3.27.3",
+        "versionCode": 3027003,
+        "split": null
+      }
+    }
+  ],
+  "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ.",
+  "mirror_advertised_date": "Last updated on Sep 24, 2026"
+}

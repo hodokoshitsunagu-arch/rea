@@ -1,0 +1,29 @@
+[
+  {
+    "file": "analysis/rea-mic-exit-method.json",
+    "operation": "inspect_android_method",
+    "evidence_id": "ev_6034795de7a17e5071da2a172b6fc2bce786928669dcf4c9824ec6cbb91a72ff",
+    "status": "success",
+    "code": null,
+    "message": null,
+    "sha256": "b1e14ffcb20285f6a79e88a15e2a2560e41b469e50847c898a4c6503335b6721"
+  },
+  {
+    "file": "analysis/rea-mic-state-class.json",
+    "operation": "inspect_android_class",
+    "evidence_id": "ev_c0285c43494f831398d5739c2d92ea61ea794a42ae599910cd54a2f12ac771bd",
+    "status": "success",
+    "code": null,
+    "message": null,
+    "sha256": "05bbd4a5ce87a61ce75f58e7254c99c2ebe3546a51397e2605e97691ab35fd14"
+  },
+  {
+    "file": "analysis/rea-package.json",
+    "operation": "inspect_android_package",
+    "evidence_id": "ev_d2cd728bed450f182352b84c6be8213c43a75b29e81260b5d93ca981009054f2",
+    "status": "success",
+    "code": null,
+    "message": null,
+    "sha256": "7de71a3f6fe8002d98d6af150c544b1b298695fd5f255759313d60faaf15f3b0"
+  }
+]

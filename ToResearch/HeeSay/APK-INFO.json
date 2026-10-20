@@ -1,0 +1,45 @@
+{
+  "app": "HeeSay",
+  "regions": "SEA",
+  "package": "com.blued.international",
+  "version": "5.14.5",
+  "version_code": 514052,
+  "selected_file": "HeeSay-5.14.5.apk",
+  "source": "Official website",
+  "source_page": "https://common.heesay.com/",
+  "retrieved_at": "2026-10-13T07:48:45.911816+00:00",
+  "checks": {
+    "zip_crc": "passed",
+    "manifest_package_match": true,
+    "manifest_version": "read from downloaded APK",
+    "android_runtime": "not tested",
+    "publisher_signature": "not cryptographically verified"
+  },
+  "files": [
+    {
+      "path": "HeeSay-5.14.5.apk",
+      "bytes": 149796234,
+      "sha256": "fa23b9e0bee7d646a10689d3289a84224f6c174def4a59ccb63a71e457ff2d48",
+      "sha1": "47438ebba74d04511a60a5bdc344eaf6235e3930",
+      "manifest": {
+        "package": "com.blued.international",
+        "versionName": "5.14.5",
+        "versionCode": 514052,
+        "split": null
+      }
+    }
+  ],
+  "compared_sources": [
+    {
+      "source_page": "https://common.heesay.com/",
+      "file": "HeeSay-5.14.5.apk",
+      "identity": {
+        "package": "com.blued.international",
+        "versionName": "5.14.5",
+        "versionCode": 514052,
+        "split": null
+      }
+    }
+  ],
+  "latest_scope": "Latest publicly downloadable version located in the checked official and APKPure sources as of 2026-10-13. Google Play region/device/staged rollouts may differ."
+}

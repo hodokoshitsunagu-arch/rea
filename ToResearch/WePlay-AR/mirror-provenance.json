@@ -1,0 +1,138 @@
+{
+  "app": "WePlay-AR",
+  "requested_regions": "MENA / Arabic",
+  "expected_package": "com.wejoy.weplay.ar",
+  "source_kind": "third-party mirror APKPure",
+  "source_page": "https://apkpure.net/weplay-ar/com.wejoy.weplay.ar/download",
+  "page_title": "Download WePlay(ويبلاي) - Game &amp; Chat 6.8.5 APK for Android - Free and Safe Download",
+  "download_url": "https://d.apkpure.net/b/XAPK/com.wejoy.weplay.ar?version=latest",
+  "final_url": "https://data.winudf.com/XAPK/Y29tLndlam95LndlcGxheS5hcl82MDg1MV9lODQxZTg2ZQ?_p=Y29tLndlam95LndlcGxheS5hcg%3D%3D&filename=WePlay%28%D9%88%D9%8A%D8%A8%D9%84%D8%A7%D9%8A%29+-+Game+%26+Chat_6.8.5_APKPure.xapk&full_size=214318467&is_hot=false&k=REDACTED&package_name=com.wejoy.weplay.ar&source=web&token=REDACTED",
+  "retrieved_at": "2026-10-13T07:54:31.910008+00:00",
+  "file": "WePlay-AR-6.8.5.xapk",
+  "bytes": 214318467,
+  "sha256": "5cc9230034cf20479a4a380f57b7546f4e6bfe5e9dd1ba15c5565eb71d9161dd",
+  "zip_crc": "passed",
+  "archive_manifest": {
+    "xapk_version": 2,
+    "package_name": "com.wejoy.weplay.ar",
+    "name": "WePlay",
+    "version_code": "60851",
+    "version_name": "6.8.5",
+    "min_sdk_version": "29",
+    "target_sdk_version": "36",
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.CHANGE_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.VIBRATE",
+      "android.permission.VIBRATE",
+      "android.permission.MODIFY_AUDIO_SETTINGS",
+      "android.permission.SYSTEM_ALERT_WINDOW",
+      "android.permission.VIBRATE",
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.CHANGE_WIFI_STATE",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.INTERNET",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.READ_MEDIA_AUDIO",
+      "android.permission.POST_NOTIFICATIONS",
+      "com.google.android.gms.permission.AD_ID",
+      "android.permission.INTERNET",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.WAKE_LOCK",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.ACCESS_WIFI_STATE",
+      "android.permission.BLUETOOTH",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+      "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+      "android.permission.REORDER_TASKS",
+      "android.permission.CAMERA",
+      "android.permission.FLASHLIGHT",
+      "com.android.vending.BILLING",
+      "wp_ipc",
+      "com.google.android.apps.photos.permission.GOOGLE_PHOTOS",
+      "android.permission.USE_BIOMETRIC",
+      "android.permission.USE_FINGERPRINT",
+      "com.google.android.c2dm.permission.RECEIVE",
+      "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+      "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+      "android.permission.ACCESS_ADSERVICES_AD_ID",
+      "com.wejoy.weplay.ar.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"
+    ],
+    "split_configs": [
+      "config.ar",
+      "config.arm64_v8a",
+      "config.en",
+      "config.hi",
+      "config.tr",
+      "config.xxhdpi",
+      "config.zh",
+      "wepie_asset_pack"
+    ],
+    "total_size": 214200921,
+    "icon": "icon.png",
+    "split_apks": [
+      {
+        "file": "com.wejoy.weplay.ar.apk",
+        "id": "base"
+      },
+      {
+        "file": "config.ar.apk",
+        "id": "config.ar"
+      },
+      {
+        "file": "config.arm64_v8a.apk",
+        "id": "config.arm64_v8a"
+      },
+      {
+        "file": "config.en.apk",
+        "id": "config.en"
+      },
+      {
+        "file": "config.hi.apk",
+        "id": "config.hi"
+      },
+      {
+        "file": "config.tr.apk",
+        "id": "config.tr"
+      },
+      {
+        "file": "config.xxhdpi.apk",
+        "id": "config.xxhdpi"
+      },
+      {
+        "file": "config.zh.apk",
+        "id": "config.zh"
+      },
+      {
+        "file": "wepie_asset_pack.apk",
+        "id": "wepie_asset_pack"
+      }
+    ]
+  },
+  "extracted_apks": [
+    "com.wejoy.weplay.ar.apk",
+    "config.ar.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.hi.apk",
+    "config.tr.apk",
+    "config.xxhdpi.apk",
+    "config.zh.apk",
+    "wepie_asset_pack.apk"
+  ],
+  "latest_scope": "Newest version advertised by live APKPure download page on retrieval date; staged Google Play release not verified",
+  "final_url_redacted_transport_credentials": [
+    "k",
+    "token"
+  ]
+}

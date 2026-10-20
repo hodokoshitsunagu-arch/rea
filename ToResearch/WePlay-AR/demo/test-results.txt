@@ -1,0 +1,346 @@
+TAP version 13
+# Subtest: WAR01 BFF门槛、竞拍旁路与关系展示槽位 正常闭环与重置
+ok 1 - WAR01 BFF门槛、竞拍旁路与关系展示槽位 正常闭环与重置
+  ---
+  duration_ms: 1.5185
+  type: 'test'
+  ...
+# Subtest: WAR01 关键资格/阶段拒绝且业务原子回退
+ok 2 - WAR01 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.090625
+  type: 'test'
+  ...
+# Subtest: WAR02 BFF关系进阶：亲密进度、宝箱与专属关系卡 正常闭环与重置
+ok 3 - WAR02 BFF关系进阶：亲密进度、宝箱与专属关系卡 正常闭环与重置
+  ---
+  duration_ms: 0.171125
+  type: 'test'
+  ...
+# Subtest: WAR02 关键资格/阶段拒绝且业务原子回退
+ok 4 - WAR02 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.047958
+  type: 'test'
+  ...
+# Subtest: WAR03 戒指替换保留旧物与关系年龄 正常闭环与重置
+ok 5 - WAR03 戒指替换保留旧物与关系年龄 正常闭环与重置
+  ---
+  duration_ms: 0.117042
+  type: 'test'
+  ...
+# Subtest: WAR03 关键资格/阶段拒绝且业务原子回退
+ok 6 - WAR03 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.058666
+  type: 'test'
+  ...
+# Subtest: WAR04 高级房容量扩张与到期回收 正常闭环与重置
+ok 7 - WAR04 高级房容量扩张与到期回收 正常闭环与重置
+  ---
+  duration_ms: 0.0815
+  type: 'test'
+  ...
+# Subtest: WAR04 关键资格/阶段拒绝且业务原子回退
+ok 8 - WAR04 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.066083
+  type: 'test'
+  ...
+# Subtest: WAR05 高级房三管理员与到期权限撤销 正常闭环与重置
+ok 9 - WAR05 高级房三管理员与到期权限撤销 正常闭环与重置
+  ---
+  duration_ms: 0.125334
+  type: 'test'
+  ...
+# Subtest: WAR05 关键资格/阶段拒绝且业务原子回退
+ok 10 - WAR05 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.0805
+  type: 'test'
+  ...
+# Subtest: WAR06 语音房宝箱倒计时与任务减时 正常闭环与重置
+ok 11 - WAR06 语音房宝箱倒计时与任务减时 正常闭环与重置
+  ---
+  duration_ms: 0.094375
+  type: 'test'
+  ...
+# Subtest: WAR06 关键资格/阶段拒绝且业务原子回退
+ok 12 - WAR06 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.045917
+  type: 'test'
+  ...
+# Subtest: WAR07 签约歌手出题与审核回报 正常闭环与重置
+ok 13 - WAR07 签约歌手出题与审核回报 正常闭环与重置
+  ---
+  duration_ms: 0.095583
+  type: 'test'
+  ...
+# Subtest: WAR07 关键资格/阶段拒绝且业务原子回退
+ok 14 - WAR07 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.049875
+  type: 'test'
+  ...
+# Subtest: WAR08 玩家词题投稿与延后奖励 正常闭环与重置
+ok 15 - WAR08 玩家词题投稿与延后奖励 正常闭环与重置
+  ---
+  duration_ms: 0.063125
+  type: 'test'
+  ...
+# Subtest: WAR08 关键资格/阶段拒绝且业务原子回退
+ok 16 - WAR08 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.099209
+  type: 'test'
+  ...
+# Subtest: WAR09 绘画道具：付费延时与成长解锁颜色 正常闭环与重置
+ok 17 - WAR09 绘画道具：付费延时与成长解锁颜色 正常闭环与重置
+  ---
+  duration_ms: 0.161875
+  type: 'test'
+  ...
+# Subtest: WAR09 关键资格/阶段拒绝且业务原子回退
+ok 18 - WAR09 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.0545
+  type: 'test'
+  ...
+# Subtest: WAR10 VIP全站广播、礼物隐私与成长转换 正常闭环与重置
+ok 19 - WAR10 VIP全站广播、礼物隐私与成长转换 正常闭环与重置
+  ---
+  duration_ms: 0.084292
+  type: 'test'
+  ...
+# Subtest: WAR10 关键资格/阶段拒绝且业务原子回退
+ok 20 - WAR10 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.048667
+  type: 'test'
+  ...
+# Subtest: WAR11 家族人气徽章触发房间奖励 正常闭环与重置
+ok 21 - WAR11 家族人气徽章触发房间奖励 正常闭环与重置
+  ---
+  duration_ms: 0.070167
+  type: 'test'
+  ...
+# Subtest: WAR11 关键资格/阶段拒绝且业务原子回退
+ok 22 - WAR11 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.049791
+  type: 'test'
+  ...
+# Subtest: WAR12 卧底语音描述、不可撤销猜词与同投票结算交友 正常闭环与重置
+ok 23 - WAR12 卧底语音描述、不可撤销猜词与同投票结算交友 正常闭环与重置
+  ---
+  duration_ms: 0.249375
+  type: 'test'
+  ...
+# Subtest: WAR12 关键资格/阶段拒绝且业务原子回退
+ok 24 - WAR12 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.053833
+  type: 'test'
+  ...
+# Subtest: WAR13 家族宝箱：职位发放、周活门槛与解锁占用 正常闭环与重置
+ok 25 - WAR13 家族宝箱：职位发放、周活门槛与解锁占用 正常闭环与重置
+  ---
+  duration_ms: 0.10425
+  type: 'test'
+  ...
+# Subtest: WAR13 关键资格/阶段拒绝且业务原子回退
+ok 26 - WAR13 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.049083
+  type: 'test'
+  ...
+# Subtest: WAR14 Baloot金币房、系统接管与离局匹配冷却 正常闭环与重置
+ok 27 - WAR14 Baloot金币房、系统接管与离局匹配冷却 正常闭环与重置
+  ---
+  duration_ms: 0.074209
+  type: 'test'
+  ...
+# Subtest: WAR14 关键资格/阶段拒绝且业务原子回退
+ok 28 - WAR14 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.049875
+  type: 'test'
+  ...
+# Subtest: WAR15 家族护盾库存的职位可见性 正常闭环与重置
+ok 29 - WAR15 家族护盾库存的职位可见性 正常闭环与重置
+  ---
+  duration_ms: 0.064125
+  type: 'test'
+  ...
+# Subtest: WAR15 关键资格/阶段拒绝且业务原子回退
+ok 30 - WAR15 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.055167
+  type: 'test'
+  ...
+# Subtest: WAR16 Bingo满卡后道具禁用 正常闭环与重置
+ok 31 - WAR16 Bingo满卡后道具禁用 正常闭环与重置
+  ---
+  duration_ms: 0.328833
+  type: 'test'
+  ...
+# Subtest: WAR16 关键资格/阶段拒绝且业务原子回退
+ok 32 - WAR16 关键资格/阶段拒绝且业务原子回退
+  ---
+  duration_ms: 0.071917
+  type: 'test'
+  ...
+# Subtest: BFF旁路/房主进阶禁止/唯一卡/戒指年龄/容量到期
+ok 33 - BFF旁路/房主进阶禁止/唯一卡/戒指年龄/容量到期
+  ---
+  duration_ms: 0.340333
+  type: 'test'
+  ...
+# Subtest: 管理员3人/到期撤权、宝箱任务去重、歌手日额、词稿延后奖
+ok 34 - 管理员3人/到期撤权、宝箱任务去重、歌手日额、词稿延后奖
+  ---
+  duration_ms: 0.301833
+  type: 'test'
+  ...
+# Subtest: 绘画两次取消/VIP广播覆盖五分钟/地域隐私与徽章日额度
+ok 35 - 绘画两次取消/VIP广播覆盖五分钟/地域隐私与徽章日额度
+  ---
+  duration_ms: 0.191041
+  type: 'test'
+  ...
+# Subtest: 卧底猜词确认不可撤销及人数重分词
+ok 36 - 卧底猜词确认不可撤销及人数重分词
+  ---
+  duration_ms: 0.148917
+  type: 'test'
+  ...
+# Subtest: AR职位发箱/解锁占用/停止禁止/Baloot冷却/护盾可见/Bingo禁道具
+ok 37 - AR职位发箱/解锁占用/停止禁止/Baloot冷却/护盾可见/Bingo禁道具
+  ---
+  duration_ms: 0.416875
+  type: 'test'
+  ...
+# Subtest: 词卡和护盾模型拥有公共角色投影
+ok 38 - 词卡和护盾模型拥有公共角色投影
+  ---
+  duration_ms: 0.108167
+  type: 'test'
+  ...
+# Subtest: WAR01 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 39 - WAR01 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.514083
+  type: 'test'
+  ...
+# Subtest: WAR02 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 40 - WAR02 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.798084
+  type: 'test'
+  ...
+# Subtest: WAR03 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 41 - WAR03 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.121917
+  type: 'test'
+  ...
+# Subtest: WAR04 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 42 - WAR04 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.052333
+  type: 'test'
+  ...
+# Subtest: WAR05 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 43 - WAR05 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.0585
+  type: 'test'
+  ...
+# Subtest: WAR06 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 44 - WAR06 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.399834
+  type: 'test'
+  ...
+# Subtest: WAR07 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 45 - WAR07 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.065125
+  type: 'test'
+  ...
+# Subtest: WAR08 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 46 - WAR08 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.223542
+  type: 'test'
+  ...
+# Subtest: WAR09 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 47 - WAR09 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 1.091417
+  type: 'test'
+  ...
+# Subtest: WAR10 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 48 - WAR10 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.541125
+  type: 'test'
+  ...
+# Subtest: WAR11 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 49 - WAR11 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.689417
+  type: 'test'
+  ...
+# Subtest: WAR12 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 50 - WAR12 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.520708
+  type: 'test'
+  ...
+# Subtest: WAR13 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 51 - WAR13 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.525584
+  type: 'test'
+  ...
+# Subtest: WAR14 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 52 - WAR14 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.523291
+  type: 'test'
+  ...
+# Subtest: WAR15 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 53 - WAR15 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.220625
+  type: 'test'
+  ...
+# Subtest: WAR16 参数owner拒绝非有限/负数/错误类型并原子回退
+ok 54 - WAR16 参数owner拒绝非有限/负数/错误类型并原子回退
+  ---
+  duration_ms: 0.280667
+  type: 'test'
+  ...
+# Subtest: 资源费用负值/NaN/Infinity不改钱包；显式零成本可免费实验
+ok 55 - 资源费用负值/NaN/Infinity不改钱包；显式零成本可免费实验
+  ---
+  duration_ms: 0.487292
+  type: 'test'
+  ...
+# Subtest: 次数/时限须整数，动作字段亦不能把非有限资源写入业务模型
+ok 56 - 次数/时限须整数，动作字段亦不能把非有限资源写入业务模型
+  ---
+  duration_ms: 0.549417
+  type: 'test'
+  ...
+1..56
+# tests 56
+# suites 0
+# pass 56
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 52.287292

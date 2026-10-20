@@ -1,0 +1,404 @@
+{
+  "app": "MICO",
+  "modules": [
+    {
+      "id": "MIC01",
+      "title": "武器升级双倍与淘汰复活团队PK",
+      "implemented_scope": "保留现有demo，自定淘汰条件与阈值清晰标注。；20礼物升1级、初Lv1、Lv5双分；淘汰人为裁决，不声称恢复阈值/双倍时间。",
+      "limitations": [
+        "升级/淘汰阈值、双倍时间、复活价格、服务端计分未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node正常/guard/退款与生命周期回归通过；最新浏览器复验待根任务",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        }
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ],
+      "regression_fix": "退出清本场个人分只允许PK进行中；已结算领域账本与赢家不再受退出动作修改。赛后真实离房不属于该本场计分动作，也未模拟RTC离房。"
+    },
+    {
+      "id": "MIC02",
+      "title": "Couple专属麦位与模式互斥",
+      "implemented_scope": "空间布局和模式约束；扩容模拟。；1席初始、扩容10币，无原价格上限；占位席不含RTC。",
+      "limitations": [
+        "关系数量、扩容价格/上限、具体座位布局未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        }
+      ]
+    },
+    {
+      "id": "MIC03",
+      "title": "Couple等级的优先展示与专属礼物",
+      "implemented_scope": "关系等级展示及终止规则，成长参数自定。；亲密10升级、本地专属礼物Lv3；榜用单机关系卡，终止保留成长未知选择。",
+      "limitations": [
+        "建立双方同意、亲密公式、退出清分与榜单统计未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ]
+    },
+    {
+      "id": "MIC04",
+      "title": "家族赠收礼贡献榜与退出清分",
+      "implemented_scope": "单一归属、两侧贡献榜与退族，不含普通群聊。；建族5级、送收等权展示分离源值；单人一家、离族清分保留文案。",
+      "limitations": [
+        "送收加权、防刷、榜周期、建族门槛和人数未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a7\"]"
+        }
+      ]
+    },
+    {
+      "id": "MIC05",
+      "title": "主播守护的免踢免禁言",
+      "implemented_scope": "守护权限矩阵和限期，不连接原账号。；7天守护及礼物Lv2为补齐；房管免踢/禁言按文案，不设计平台处罚。",
+      "limitations": [
+        "购买/邀请方式、续期、违规管理员 override、等级阈值未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a6\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        }
+      ]
+    },
+    {
+      "id": "MIC06",
+      "title": "贵族身份的房管免踢与称号启停",
+      "implemented_scope": "启停称号与房管操作约束；平台治理作为本地明确新规则。；活动骑士名称自定；启用才获免踢，不扩展原未知权限。",
+      "limitations": [
+        "各爵位权限差异、平台处罚覆盖、购买范围/价格未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        }
+      ]
+    },
+    {
+      "id": "MIC07",
+      "title": "Pure Supporter分场景隐藏与SVIP9双经验",
+      "implemented_scope": "分场景显示开关与2倍EXP账本，身份保护只为本地视觉演示。；基础EXP10、SVIP9×2；单个本地允许场景用于展示，原匿名场景名单未恢复。",
+      "limitations": [
+        "Pure Supporter准入、具体可匿名场景、EXP归属和隐私边界未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ]
+    },
+    {
+      "id": "MIC08",
+      "title": "跨语言VIP与访问隐身/招呼优先",
+      "implemented_scope": "模拟双语消息与权益排序/足迹策略，不复刻基础聊天。；固定词典/同级新招呼先排为重构；未恢复套餐/限额，不含真实聊天。",
+      "limitations": [
+        "套餐期限/价格、优先排序、防骚扰限制、翻译服务未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    },
+    {
+      "id": "MIC09",
+      "title": "Rocket Blast分级奖励候选",
+      "implemented_scope": "只做等级领奖概念卡；先补调用/资源绑定。；只有更高等级/已到账文案；能量2、领取流程均概念实验，不称原火箭玩法。",
+      "limitations": [
+        "火箭如何获得能量、参与者、时窗、等级和分配未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        }
+      ]
+    },
+    {
+      "id": "MIC10",
+      "title": "Ludo成长与车辆竞猜入口候选",
+      "implemented_scope": "先补游戏资源/协议；若选择仅可自定义规则版本并标重构。；仅Ludo邀请/教程/EXP+占位和车辆入口有证据；无骰子/棋盘/竞猜判奖恢复，本地教程走一格。",
+      "limitations": [
+        "具体棋盘、规则变体、车辆竞猜操作、资源奖励全部未恢复。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a5\"]"
+        }
+      ]
+    },
+    {
+      "id": "MIC11",
+      "title": "TOP10小时抽奖候选",
+      "implemented_scope": "先确认榜单与活动绑定，暂不构建原版开奖规则。；TOP10与每小时的关联未证实；只做假设资格提交/计时不开奖不发奖。",
+      "limitations": [
+        "二者调用关联、入场资格、概率、奖品和地区开关未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "test_status": "Node闭环与机制guard通过；浏览器待根代理验证",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"a0\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a1\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a2\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a3\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"a4\"]"
+        }
+      ]
+    }
+  ]
+}

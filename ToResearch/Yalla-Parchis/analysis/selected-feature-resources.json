@@ -1,0 +1,408 @@
+[
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_100",
+    "value": "Yalla Parchis include 2 modes: 1V1, 4 Player. Every modes has two variations: Classic, Spanish."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_56",
+    "value": "A can move 20 spaces after capturing token of B."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_58",
+    "value": "x is forced to break blockade."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_60",
+    "value": "Classic"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_61",
+    "value": "Spanish"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_62",
+    "value": ""
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_63",
+    "value": "Winning the game"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_64",
+    "value": "The first player to walk all four tokens across the board and reach the end is the winner."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_65",
+    "value": "Moving out of the nest"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_66",
+    "value": "A token can come out of the nest when player rolls 5 in a single dice or the sum of two dice. Two tokens can come out when player rolls double 5."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_67",
+    "value": "Punishment of rolling three consecutive double"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_68",
+    "value": "Player will get another chance of rolling the dice when they roll double. If player roll double three times in a single turn then third roll is invalid and the most advanced token will be sent back to nest (Token in ending track can't be sent back)."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_69",
+    "value": "Blockade"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_70",
+    "value": "If two tokens of the same color stay in the same box then they form a blockade. Neither the player's token or opponents' token can cross blockade. If a player can't move any token because of blockade then this turn is invalid. Note: If the player rolls double then it is forced to break blockade."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_71",
+    "value": "Safety zone"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_72",
+    "value": "All gray spaces with star are safety zones. Token in safety zones can't be captured."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_73",
+    "value": "Staying at safety zone"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_74",
+    "value": "Two tokens with different colors can't stay in one safety zone at the same time."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_75",
+    "value": "Reward of capturing"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_76",
+    "value": "Player can move a token for 20 spaces after captured a token of opponent."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_77",
+    "value": "Reward of reaching the end"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_78",
+    "value": "Player can move a token for 10 spaces after one token reached the end."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_79",
+    "value": "Staying at safety zone"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_80",
+    "value": "Two tokens with different colors can stay in one safety zone at the same time."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_classic",
+    "value": "Classic"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_classic_frame",
+    "value": "Classic profile frame"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_remove blockade",
+    "value": "Remove Blockade  "
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_spanish",
+    "value": "Spanish"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_match_tip1",
+    "value": "Tip: Get reward of 20 steps when capturing opponents' token."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_match_tip3",
+    "value": "Tip: A token can come out of the nest when you roll 5 in a single dice or the sum of two dice."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_match_tip4",
+    "value": "Tip: You can dice again when you rolled double, but blockade will be removed."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_match_tip5",
+    "value": "Tip: Your tokens can't be captured when they stay at safety zone (the dark square of chessboard)."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_match_tip6",
+    "value": "Tip: In Spanish rule, the last moved token will be sent back to nest when player rolled double three times continuously."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_match_tip7",
+    "value": "Tip: In Classic rule, the most advanced token will be sent back to nest when player rolled double three times continuously."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_matchtip0",
+    "value": "Tip: Get reward of 20 steps when capturing opponents' token."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_matchtip2",
+    "value": "Tip: A token can come out of the nest when you roll 5 in a single dice or the sum of two dice."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_matchtip4",
+    "value": "Tip: Blockade will be removed when you rolled double."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_matchtip5",
+    "value": "Tip: Your tokens can't be captured when they stay at safety zone (the dark square of chessboard)."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_matchtip6",
+    "value": "Tip: In Spanish mode, the last moved token will be sent back to nest when player rolled double three times continuously."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_matchtip7",
+    "value": "Tip: In Classic mode, the most advanced token will be sent back to nest when player rolled double three times continuously."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_viproom16",
+    "value": "Invite you to join Elite Room-Classic/Spanish-xx "
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_pcmsg7",
+    "value": "Classic"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_pcmsg8",
+    "value": "Spanish"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_roommode_2",
+    "value": "Video for six people"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_dice_game1",
+    "value": "At the betting stage you can bet on the sum of the two dice. You can select one or more options at the same time."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_rm_six_main_video",
+    "value": "Video chat for six people(Highlighted)"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_rm_six_main_video_no",
+    "value": "Video chat for six people(Highlighted) - Currently unavailable"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_broadcast_spanish",
+    "value": "Spanish"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_broadcast_classic",
+    "value": "Classic"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_mode_master",
+    "value": "Spanish"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_mode_normal",
+    "value": "Classic"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_mode1",
+    "value": "Video for 6 people (Classic)"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_mode3",
+    "value": "Audio for 8 people (Classic)"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_travel_click_shield",
+    "value": "Collect to shield yourself against potential attacks."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_ludo_guide_step_4_title",
+    "value": "Capturing Reward"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_ludo_guide_step_4_content",
+    "value": "Capture a token to gain a bonus of 20 more steps forward."
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_royal_privilege_10",
+    "value": "Capturing Effect"
+  },
+  {
+    "member": "assets/bin/Data/data.unity3d",
+    "name": "englishlocalization",
+    "path_id": 77,
+    "key": "ids_ui_new_team_rule_info",
+    "value": "Team wins when 2 players have 4 pieces in the end"
+  }
+]

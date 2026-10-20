@@ -1,0 +1,160 @@
+TAP version 13
+# Subtest: POC01 正常核心闭环、资源结果与纯函数重置
+ok 1 - POC01 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.844209
+  type: 'test'
+  ...
+# Subtest: POC01 关键资格、重复或异常边界
+ok 2 - POC01 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.068125
+  type: 'test'
+  ...
+# Subtest: POC02 正常核心闭环、资源结果与纯函数重置
+ok 3 - POC02 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.10025
+  type: 'test'
+  ...
+# Subtest: POC02 关键资格、重复或异常边界
+ok 4 - POC02 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.056875
+  type: 'test'
+  ...
+# Subtest: POC03 正常核心闭环、资源结果与纯函数重置
+ok 5 - POC03 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.115167
+  type: 'test'
+  ...
+# Subtest: POC03 关键资格、重复或异常边界
+ok 6 - POC03 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.048
+  type: 'test'
+  ...
+# Subtest: POC04 正常核心闭环、资源结果与纯函数重置
+ok 7 - POC04 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.090542
+  type: 'test'
+  ...
+# Subtest: POC04 关键资格、重复或异常边界
+ok 8 - POC04 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.068875
+  type: 'test'
+  ...
+# Subtest: POC05 正常核心闭环、资源结果与纯函数重置
+ok 9 - POC05 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.092875
+  type: 'test'
+  ...
+# Subtest: POC05 关键资格、重复或异常边界
+ok 10 - POC05 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.085875
+  type: 'test'
+  ...
+# Subtest: POC06 正常核心闭环、资源结果与纯函数重置
+ok 11 - POC06 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.083667
+  type: 'test'
+  ...
+# Subtest: POC06 关键资格、重复或异常边界
+ok 12 - POC06 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.047167
+  type: 'test'
+  ...
+# Subtest: POC07 正常核心闭环、资源结果与纯函数重置
+ok 13 - POC07 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.075792
+  type: 'test'
+  ...
+# Subtest: POC07 关键资格、重复或异常边界
+ok 14 - POC07 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.04175
+  type: 'test'
+  ...
+# Subtest: POC08 正常核心闭环、资源结果与纯函数重置
+ok 15 - POC08 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.082959
+  type: 'test'
+  ...
+# Subtest: POC08 关键资格、重复或异常边界
+ok 16 - POC08 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.033291
+  type: 'test'
+  ...
+# Subtest: POC09 正常核心闭环、资源结果与纯函数重置
+ok 17 - POC09 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.072417
+  type: 'test'
+  ...
+# Subtest: POC09 关键资格、重复或异常边界
+ok 18 - POC09 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.059875
+  type: 'test'
+  ...
+# Subtest: POC10 正常核心闭环、资源结果与纯函数重置
+ok 19 - POC10 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.080917
+  type: 'test'
+  ...
+# Subtest: POC10 关键资格、重复或异常边界
+ok 20 - POC10 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.033125
+  type: 'test'
+  ...
+# Subtest: POC11 正常核心闭环、资源结果与纯函数重置
+ok 21 - POC11 正常核心闭环、资源结果与纯函数重置
+  ---
+  duration_ms: 0.049667
+  type: 'test'
+  ...
+# Subtest: POC11 关键资格、重复或异常边界
+ok 22 - POC11 关键资格、重复或异常边界
+  ---
+  duration_ms: 0.036333
+  type: 'test'
+  ...
+# Subtest: Pococha 十天失格、互斥保护与35小时上限
+ok 23 - Pococha 十天失格、互斥保护与35小时上限
+  ---
+  duration_ms: 0.346875
+  type: 'test'
+  ...
+# Subtest: POC03 UI角色投影在Owner切换后收回记录和治理轨迹
+ok 24 - POC03 UI角色投影在Owner切换后收回记录和治理轨迹
+  ---
+  duration_ms: 0.138834
+  type: 'test'
+  ...
+# Subtest: POC09 UI JSON价格参数拒绝负数、非有限值、空档与错误类型
+ok 25 - POC09 UI JSON价格参数拒绝负数、非有限值、空档与错误类型
+  ---
+  duration_ms: 0.149666
+  type: 'test'
+  ...
+1..25
+# tests 25
+# suites 0
+# pass 25
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 38.45125

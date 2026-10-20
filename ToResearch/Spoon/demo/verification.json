@@ -1,0 +1,694 @@
+{
+  "input_hashes": {
+    "features.test.mjs": "fad89fe6937261c2913f622ce854c49f00d2cb2ff141fcc3b04ce3dd56c51598",
+    "index.html": "d89c599133404bb092c9c81b0e3eb7d885e56762041ecb6895bcde790cd85be4",
+    "model.mjs": "e49479799e8a325c03b82b20fd97e8cad9549df574fc650151ef40dc92a662dc",
+    "modules.json": "f7920e7e91041865dc5eb26eb2f7ace6577d9f572f934ed284f8541d3fc37178",
+    "ui.mjs": "092f425fa8169555e9cbd61cbf590f96b9504238548eff9c1d26d69b0e83df51"
+  },
+  "app": "Spoon",
+  "module_count": 9,
+  "checks": [
+    {
+      "app": "Spoon",
+      "id": "SPO01",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]",
+          "expected_text": "听众创建挑战"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "主播接受"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"choose-box\"]",
+          "value": "2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"choose\"]",
+          "expected_text": "选择盒子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reveal\"]",
+          "expected_text": "揭晓奖励"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO02",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]",
+          "expected_text": "听众赠问答"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "主播接受"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"answer-answer\"]",
+          "value": "东京"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"answer\"]",
+          "expected_text": "主播提交答案"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO03",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"listen\"]",
+          "expected_text": "首次听众收听3分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "DJ结束直播"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO04",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]",
+          "expected_text": "DJ提交Tier审核"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]",
+          "expected_text": "模拟审核通过"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"subscribe\"]",
+          "expected_text": "粉丝订阅Tier"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"view\"]",
+          "expected_text": "粉丝阅读专属帖"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"image\"]",
+          "expected_text": "粉丝上传模拟图片"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO05",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"premium\"]",
+          "expected_text": "DJ开通Premium"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"create-type\"]",
+          "value": "Podcast"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]",
+          "expected_text": "DJ创建专属内容"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"subscribe\"]",
+          "expected_text": "听众订阅"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]",
+          "expected_text": "听众进入内容"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO06",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"plan-plan\"]",
+          "value": "Premium"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"plan\"]",
+          "expected_text": "DJ选择会员"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "DJ开始直播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"call\"]",
+          "expected_text": "发起Live Call"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"advance\"]",
+          "expected_text": "播满4小时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"feature\"]",
+          "expected_text": "设置精选CAST"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO07",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"host\"]",
+          "expected_text": "主播收100 Spoons"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"active\"]",
+          "expected_text": "记录直播活跃"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]",
+          "expected_text": "本地候选评选"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO08",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"support-fan\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"support-amount\"]",
+          "value": "60"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]",
+          "expected_text": "听众应援"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rank\"]",
+          "expected_text": "更新榜与徽章"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"hide-fan\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hide\"]",
+          "expected_text": "DJ隐藏听众"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO09",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"nudge\"]",
+          "expected_text": "粉丝催开播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"twoDays\"]",
+          "expected_text": "前进两天"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"nudge\"]",
+          "expected_text": "粉丝催开播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "DJ开播重置催播"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO01",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]",
+          "expected_text": "听众创建挑战"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "主播接受"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"choose-box\"]",
+          "value": "2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"choose\"]",
+          "expected_text": "选择盒子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reveal\"]",
+          "expected_text": "揭晓奖励"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SPO01-mobile.png"
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO02",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]",
+          "expected_text": "听众赠问答"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "主播接受"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"answer-answer\"]",
+          "value": "东京"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"answer\"]",
+          "expected_text": "主播提交答案"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SPO02-mobile.png"
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO03",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"listen\"]",
+          "expected_text": "首次听众收听3分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "DJ结束直播"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SPO03-mobile.png"
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO04",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]",
+          "expected_text": "DJ提交Tier审核"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]",
+          "expected_text": "模拟审核通过"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"subscribe\"]",
+          "expected_text": "粉丝订阅Tier"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"view\"]",
+          "expected_text": "粉丝阅读专属帖"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"image\"]",
+          "expected_text": "粉丝上传模拟图片"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SPO04-mobile.png"
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO05",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"premium\"]",
+          "expected_text": "DJ开通Premium"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"create-type\"]",
+          "value": "Podcast"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]",
+          "expected_text": "DJ创建专属内容"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"subscribe\"]",
+          "expected_text": "听众订阅"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]",
+          "expected_text": "听众进入内容"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SPO05-mobile.png"
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO06",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"plan-plan\"]",
+          "value": "Premium"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"plan\"]",
+          "expected_text": "DJ选择会员"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "DJ开始直播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"call\"]",
+          "expected_text": "发起Live Call"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"advance\"]",
+          "expected_text": "播满4小时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"feature\"]",
+          "expected_text": "设置精选CAST"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SPO06-mobile.png"
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"host\"]",
+          "expected_text": "主播收100 Spoons"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"active\"]",
+          "expected_text": "记录直播活跃"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]",
+          "expected_text": "本地候选评选"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SPO07-mobile.png"
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO08",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"support-fan\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"support-amount\"]",
+          "value": "60"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]",
+          "expected_text": "听众应援"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rank\"]",
+          "expected_text": "更新榜与徽章"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"hide-fan\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hide\"]",
+          "expected_text": "DJ隐藏听众"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SPO08-mobile.png"
+    },
+    {
+      "app": "Spoon",
+      "id": "SPO09",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"nudge\"]",
+          "expected_text": "粉丝催开播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"twoDays\"]",
+          "expected_text": "前进两天"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"nudge\"]",
+          "expected_text": "粉丝催开播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "DJ开播重置催播"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/SPO09-mobile.png"
+    }
+  ],
+  "passed": true,
+  "scope": "Local core-loop UI verification; no original APK/RTC/backend/payment/human verification."
+}

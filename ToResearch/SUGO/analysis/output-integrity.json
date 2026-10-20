@@ -1,0 +1,62 @@
+[
+  {
+    "file": "AndroidManifest.decoded.xml",
+    "bytes": 107451,
+    "sha256": "5a5573c1f9a47b1eb25df8a875c8482e05308a56d3f20c145b5680e85d8a35f9"
+  },
+  {
+    "file": "archive-members.json",
+    "bytes": 511518,
+    "sha256": "57b8020a8cfaadbb86d3ee338c40676c38cefa2ae665bb3257791957cc861716"
+  },
+  {
+    "file": "class-descriptors.json",
+    "bytes": 10044733,
+    "sha256": "f47d2ed3a311a37b13b5d44405ed07595906809c261ddcb5750a9dea0f864f78"
+  },
+  {
+    "file": "evidence-index.json",
+    "bytes": 1336,
+    "sha256": "1db7e8d89a71418fe2b0f977a5e0920cee0955c5631239ad28683607c320cba5"
+  },
+  {
+    "file": "extract-dex-resource-candidates.py",
+    "bytes": 2584,
+    "sha256": "b6e926a4ef44129ff3c1c638febe38a2ec24ae6891f955faaeeb204a9af43e84"
+  },
+  {
+    "file": "feature-ledger.json",
+    "bytes": 3080,
+    "sha256": "fa9fe902a4824a10b4f6f9a85da2514e0f122b133e4949febf466830455aa0c4"
+  },
+  {
+    "file": "package-candidates.json",
+    "bytes": 9383003,
+    "sha256": "62579a9944a6a3e9069201c74f2b427b92841369ac1daf3ffa79df3b9c715cec"
+  },
+  {
+    "file": "rea-micpk-classes.json",
+    "bytes": 1269,
+    "sha256": "529c2b32918b09e92e4e8a2f96cb7ef0f7848d042f4cb9e48ad21e54844b58bc"
+  },
+  {
+    "file": "rea-package.json",
+    "bytes": 233055,
+    "sha256": "aa1133ba9750ea607f5e1e97eea972992428fa4037a0464b5f4bae36aa4236a8"
+  },
+  {
+    "file": "rea-pk-api-class.json",
+    "bytes": 9121,
+    "sha256": "652ddc47ede7948fdedbf99ed4057db5011d8a6d4e0c2aaf34cc62cd3aa19ae8"
+  },
+  {
+    "file": "rea-pk-method.json",
+    "bytes": 8755,
+    "sha256": "330d513e840b86930f70a2801a46e0b2aaabee11757bc6943960495bcb908cd4"
+  },
+  {
+    "file": "selected-feature-resources.json",
+    "bytes": 1939,
+    "sha256": "9576f8a8f8b0d6b16197cd998d9efa0843811210c040e2c813b20c7585bde261"
+  }
+]

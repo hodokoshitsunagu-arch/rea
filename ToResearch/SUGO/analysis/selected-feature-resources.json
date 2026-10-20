@@ -1,0 +1,44 @@
+[
+  {
+    "member": "resources.arsc",
+    "index": 8571,
+    "offset": 540364,
+    "value": "1. Game Description: Super winner is a multiplayer interactive game, started by room owners. Players can participate in the game by paying a entrance fee, and the game will start automatically when there are more than 2 players after the countdown"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 10380,
+    "offset": 599994,
+    "value": "Each mic seat displays the total number of%sreceived by the user during the PK; if the user on the mic seat changes during the PK, the points will be recalculated"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 11331,
+    "offset": 627451,
+    "value": "In %s seconds, the PK KING/QUEEN system will start matching for you again"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 12521,
+    "offset": 659717,
+    "value": "PK KING/QUEEN is a brand new way of playing. The system matches a random opponent with the host. Every PK lasts 5 minutes. After a PK, the system will have a 5-min cool-down. After the cool-down, a random opponent will be matched with the host again and so on, until the user chooses to stop the PK KING/QUEEN."
+  },
+  {
+    "member": "resources.arsc",
+    "index": 13936,
+    "offset": 699295,
+    "value": "The Theme label indicates special modes in this setting, such as Couple seats, stage seats, etc. %s"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 14051,
+    "offset": 706547,
+    "value": "The host %s has launched a PK KING/QUEEN against you. Come and accept the challenge~"
+  },
+  {
+    "member": "resources.arsc",
+    "index": 14179,
+    "offset": 715414,
+    "value": "The two sets of PK values show the sum of the%sreceived by each group of mics positions during the PK period. During the PK period, the user's up and down mics will not affect the calculation of the PK value, and the PK value of the mic's position will be reset to zero."
+  }
+]

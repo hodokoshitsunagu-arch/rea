@@ -1,0 +1,1549 @@
+{
+  "input_hashes": {
+    "features.test.mjs": "776e69fcb2ae7b57bd09f972d4ccd9d7c47316318b05ba5aa256e971b66b9c1a",
+    "index.html": "f05b7c8f4bb37c495a85985b0ca5cb66eb3f354d7afec7bdd986434ec3e5ab5c",
+    "model.mjs": "b660e936535e11c1bca56b929a561f087eaa7a59f27a9604b1cbef07e9836e6d",
+    "modules.json": "8fd53c9e3c7548fe0734e469657ea04d605f821f6f74123574029e960436e980",
+    "ui.mjs": "5a7a50b82ac4f6cc252016cc674ed92ba304b9fa7759265fff5ff88362724226"
+  },
+  "app": "WePlay-AR",
+  "module_count": 16,
+  "checks": [
+    {
+      "app": "WePlay-AR",
+      "id": "WAR01",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"slot\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"display\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR02",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"bff\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"box\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"select-card\"]",
+          "value": "永恒知己"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR03",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"relate\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"replace-ring\"]",
+          "value": "月环"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"replace\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"age\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR04",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"premium\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"join-name\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR05",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"premium\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"appoint-name\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"appoint\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-admin\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-mode\"]",
+          "value": "绘画"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-capacity\"]",
+          "value": "60"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-strangers\"]",
+          "value": "false"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-minLevel\"]",
+          "value": "3"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"manage\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"kick-admin\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"kick-target\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"kick\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR06",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stay\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"task-task\"]",
+          "value": "发送问候"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stay\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR07",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"sign\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rights\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-song\"]",
+          "value": "原创夜曲"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR08",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-game\"]",
+          "value": "卧底"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-villager\"]",
+          "value": "苹果"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-undercover\"]",
+          "value": "梨"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR09",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"extend\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"color-color\"]",
+          "value": "蓝"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"color\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"practice\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"free-color\"]",
+          "value": "红"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"free\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-color\"]",
+          "value": "蓝"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-x\"]",
+          "value": "80"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-y\"]",
+          "value": "60"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stroke\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"timeout\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR10",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"card\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"convert-amount\"]",
+          "value": "20"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"convert\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"broadcast-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"broadcast-text\"]",
+          "value": "今天一起玩绘画！"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"broadcast\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hide\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR11",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"confirm\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR12",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"describe-text\"]",
+          "value": "圆圆的水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"describe\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"skip\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"describe-text\"]",
+          "value": "好吃的水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"describe\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"skip\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-target\"]",
+          "value": "小雨"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"vote\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-target\"]",
+          "value": "小雨"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"vote\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reveal\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR13",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "Leader"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"send\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "member"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"active-points\"]",
+          "value": "100"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"active\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"unlock\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"wait\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR14",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"configure-playSeconds\"]",
+          "value": "20"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"configure-bidSeconds\"]",
+          "value": "15"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"configure-goldSettlement\"]",
+          "value": "10"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"configure\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"leave\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"wait\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"match\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR15",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "Leader"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hide\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "member"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"view\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR16",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"mark-number\"]",
+          "value": "1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"mark\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"item\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"complete\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR01",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"interact\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"slot\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"display\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR01-mobile.png"
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR02",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"bff\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"box\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"select-card\"]",
+          "value": "永恒知己"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR02-mobile.png"
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR03",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"relate\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"replace-ring\"]",
+          "value": "月环"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"replace\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"age\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR03-mobile.png"
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR04",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"premium\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"join-name\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"join\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR04-mobile.png"
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR05",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"premium\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"appoint-name\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"appoint\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-admin\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-mode\"]",
+          "value": "绘画"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-capacity\"]",
+          "value": "60"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-strangers\"]",
+          "value": "false"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"manage-minLevel\"]",
+          "value": "3"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"manage\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"kick-admin\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"kick-target\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"kick\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR05-mobile.png"
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR06",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stay\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"task-task\"]",
+          "value": "发送问候"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stay\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR06-mobile.png"
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"sign\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rights\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-song\"]",
+          "value": "原创夜曲"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR07-mobile.png"
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR08",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-game\"]",
+          "value": "卧底"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-villager\"]",
+          "value": "苹果"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"submit-undercover\"]",
+          "value": "梨"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR08-mobile.png"
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR09",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"extend\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"color-color\"]",
+          "value": "蓝"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"color\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"practice\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"free-color\"]",
+          "value": "红"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"free\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-color\"]",
+          "value": "蓝"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-x\"]",
+          "value": "80"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"stroke-y\"]",
+          "value": "60"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stroke\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"timeout\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR09-mobile.png"
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR10",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"card\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"convert-amount\"]",
+          "value": "20"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"convert\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"broadcast-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"broadcast-text\"]",
+          "value": "今天一起玩绘画！"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"broadcast\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hide\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR10-mobile.png"
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR11",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"confirm\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR11-mobile.png"
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR12",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"describe-text\"]",
+          "value": "圆圆的水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"describe\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"skip\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"describe-text\"]",
+          "value": "好吃的水果"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"describe\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"skip\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-user\"]",
+          "value": "小夏"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-target\"]",
+          "value": "小雨"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"vote\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-user\"]",
+          "value": "阿辰"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"vote-target\"]",
+          "value": "小雨"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"vote\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reveal\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR12-mobile.png"
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR13",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "Leader"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"send\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "member"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"active-points\"]",
+          "value": "100"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"active\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"unlock\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"wait\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR13-mobile.png"
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR14",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"configure-playSeconds\"]",
+          "value": "20"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"configure-bidSeconds\"]",
+          "value": "15"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"configure-goldSettlement\"]",
+          "value": "10"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"configure\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"leave\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"wait\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"match\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR14-mobile.png"
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR15",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "Leader"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hide\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "member"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"view\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR15-mobile.png"
+    },
+    {
+      "app": "WePlay-AR",
+      "id": "WAR16",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"mark-number\"]",
+          "value": "1"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"mark\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"item\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"complete\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/WAR16-mobile.png"
+    }
+  ],
+  "passed": true,
+  "scope": "Local core-loop UI verification; no original APK/RTC/backend/payment/human verification."
+}

@@ -1,0 +1,202 @@
+{
+  "target_sha256": "f14f498c00d06367e92cb3b54a830f6986601d2f89a71105887e752bb7623303",
+  "rea_package_evidence_id": "ev_dc7ee38426bf6f05688eb7278920e380c10713d920f713a22133dfd5a3472338",
+  "findings": [
+    {
+      "id": "S01",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 5990
+      },
+      "text": "Allow Admins to Manage Speed Battle",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S02",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 7988
+      },
+      "text": "Room PK Ended",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S03",
+      "axis": "voice",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 7989
+      },
+      "text": "Room PK Started",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S04",
+      "axis": "social",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 6722
+      },
+      "text": "First Crush",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S05",
+      "axis": "social",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 7328
+      },
+      "text": "Mystery Couple",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S06",
+      "axis": "social",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 7329
+      },
+      "text": "Mystery Couple (You)",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S07",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 5672
+      },
+      "text": "1. Only the rooms that reach Level 10 have treasure chests.",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S08",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 5777
+      },
+      "text": "3. When the progress bar of the chest key is filled up, the treasure chest will be opened.",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S09",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 6199
+      },
+      "text": "Carrom",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S10",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 6984
+      },
+      "text": "If you win the game, you will have a chance to share the following treasure chest rewards. The more game gifts you give, the more abundant the treasure chest rewards will be.",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S11",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 7196
+      },
+      "text": "Ludo",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S12",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9209
+      },
+      "text": "You can earn points by giving game gifts, and accumulate points for the treasure chest. The more intense the game, the more points you will get.",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S13",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 12,
+        "string_index": 9212
+      },
+      "text": "You can get points and add points to the treasure chest by giving game gifts. The treasure chest has a probability of increasing the points every certain time, and the TOP 1-4 in the winning team can share the points.",
+      "remaining": "是否已启用及实际服务端执行未知"
+    },
+    {
+      "id": "S14",
+      "axis": "game",
+      "evidence_type": "package-direct",
+      "claim": "包体包含以下UI/规则文案；不是运行验证",
+      "location": {
+        "source": "resources.arsc",
+        "pool_offset": 2075652,
+        "string_index": 5162
+      },
+      "text": "game_dialog_common_bg_carrom",
+      "remaining": "是否已启用及实际服务端执行未知"
+    }
+  ],
+  "class_descriptor_candidates": [
+    "Lcom/yalla/yalla/module/user/ui/page/SpeedBattlePageBackground;",
+    "Lcom/yalla/yalla/module/user/ui/page/SpeedBattlePageSkin;",
+    "Lcom/yalla/yalla/module/user/ui/page/SpeedBattlePageFragment;",
+    "Lcom/yalla/yalla/module/user/ui/page/SpeedBattlePageSpecialEffects;",
+    "Lcom/yalla/yalla/module/user/vm/SpeedBattleVM;",
+    "Lcom/yalla/yalla/module/user/ui/page/SpeedBattlePageKt;"
+  ],
+  "coverage": {
+    "voice": "partial",
+    "social": "partial",
+    "games": "partial",
+    "runtime": "not examined"
+  }
+}

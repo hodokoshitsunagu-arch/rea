@@ -1,0 +1,50 @@
+[
+  {
+    "question": "游戏模式的区别",
+    "direct_evidence": "`ids_ui_100`说明1V1与4 Player各有Classic和Spanish变体；`ids_ui_new_team_rule_info`说明队伍两位玩家的4枚棋子全部到终点才胜。",
+    "derivation_or_inference": "推导：模式、人数和组队胜利条件是独立维度。",
+    "unknown": "区域实际开放模式、排位配置、2V2归属与服务器裁决未知。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "双骰出巢",
+    "direct_evidence": "`ids_ui_66`：单骰5或双骰之和5可出一子，双5可出两子。",
+    "derivation_or_inference": "推导：双骰可作为独立额度，也存在和数的特殊出巢条件。",
+    "unknown": "强制出巢优先级、不能动时额度消费与动画规则未知。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "路障如何改变移动",
+    "direct_evidence": "`ids_ui_70`：同色两子同格形成路障，任何玩家都不能穿越；不能动则回合无效；掷双数强制拆自己的路障。",
+    "derivation_or_inference": "推导：同色叠子既保护占位又妨碍己方，双数将拆路障变为行动约束。",
+    "unknown": "终点轨道上的叠子、双骰分配次序、所有不能动时自动跳过实现未知。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "吃子与奖励",
+    "direct_evidence": "`ids_ui_72`：灰色星格安全不可吃；`ids_ui_76`及`ids_ui_ludo_guide_step_4_content`：吃子获得20步奖励；相邻规则给入终点奖励10步。",
+    "derivation_or_inference": "推导：吃子后需选择奖励步数给哪枚棋子，策略不只是掷骰。",
+    "unknown": "安全格具体索引、捕获多子、奖励连续触发服务器行为未知。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "三次双数的模式差异",
+    "direct_evidence": "`ids_ui_match_tip6` Spanish把最后移动棋子送回巢；`ids_ui_match_tip7` Classic把最前棋子送回巢。",
+    "derivation_or_inference": "推导：相同骰子历史在两种模式下应引用不同目标身份，不能使用同一处罚对象。",
+    "unknown": "终点棋子能否受罚、未移动过时回退对象未知。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  },
+  {
+    "question": "语音房和游戏社交",
+    "direct_evidence": "`ids_ui_mode1`6人视频Classic、`ids_ui_mode3`8人音频Classic；archive有游戏ludochat、quickchat、invitechatroom、spectator等独立prefab；englishlocalization含room相关文案。",
+    "derivation_or_inference": "推断：游戏观战/房间邀请/聊天与语音房形成入口关系。仅prefab名不能证明完整功能链。",
+    "unknown": "语音供应商运行、麦位权限、spectator同步和线上礼物效果未知。",
+    "status": "partially_answered_static",
+    "runtime_verified": false
+  }
+]

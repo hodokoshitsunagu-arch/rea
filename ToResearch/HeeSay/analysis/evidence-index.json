@@ -1,0 +1,34 @@
+[
+  {
+    "file": "rea-hotpick-class.json",
+    "operation": "inspect_android_class",
+    "evidence_id": "ev_a14fa11cd8d50d52610bff4446c5154da07d6022d7f6b61deacb213cdfc9ad08",
+    "status": "observed",
+    "error": null,
+    "parameters": {
+      "path": "/Users/mark/Projects/REA/ToResearch/HeeSay/HeeSay-5.14.5.apk",
+      "class_name": "com.heesay.live_sdk.live_ui.voice.modle.HotPickScoreConfig"
+    }
+  },
+  {
+    "file": "rea-hotpick-config.json",
+    "operation": "inspect_android_class",
+    "evidence_id": "ev_826546cf807536187f3f1343323f2d254ed74d2dc083ef65335c7120b94156da",
+    "status": "observed",
+    "error": null,
+    "parameters": {
+      "path": "/Users/mark/Projects/REA/ToResearch/HeeSay/HeeSay-5.14.5.apk",
+      "class_name": "com.heesay.live_sdk.live_ui.voice.modle.VoiceHotPickConfig"
+    }
+  },
+  {
+    "file": "rea-package.json",
+    "operation": "inspect_android_package",
+    "evidence_id": "ev_1e3bb03b049790916a92c54d4103175fcc275bb910291de87eb042cf1d76bb89",
+    "status": "observed",
+    "error": null,
+    "parameters": {
+      "path": "/Users/mark/Projects/REA/ToResearch/HeeSay/HeeSay-5.14.5.apk"
+    }
+  }
+]

@@ -1,0 +1,12 @@
+✔ 单日门槛不能跨日拼凑 (4.448ms)
+✔ 七日按批次到期与Top1切换 (0.495208ms)
+✔ 并列身份保持未知 (0.669792ms)
+✔ Top1只在已达标guardian中比较 (0.388417ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 19.757166

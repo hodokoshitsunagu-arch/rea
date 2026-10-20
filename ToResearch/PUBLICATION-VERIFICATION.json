@@ -1,0 +1,620 @@
+{
+  "scope": "Curated export verification; tests rerun against exported source before commit",
+  "node_version": "v24.17.0",
+  "repository_pinned_node": "24.18.0",
+  "rules": {
+    "tests": 698,
+    "pass": 698,
+    "fail": 0
+  },
+  "catalog_and_registry": {
+    "apps": 15,
+    "modules": 196,
+    "passed": true
+  },
+  "browser": {
+    "passed": true,
+    "checks": [
+      {
+        "kind": "catalog table/filter",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "Yalla",
+        "kind": "published demo entry",
+        "id": "YAL01",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "Yalla",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "YoHo",
+        "kind": "published demo entry",
+        "id": "YOH01",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "YoHo",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "MICO",
+        "kind": "published demo entry",
+        "id": "MIC01",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "MICO",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "TopTop",
+        "kind": "published demo entry",
+        "id": "TOP01",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "TopTop",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "WePlay-AR",
+        "kind": "published demo entry",
+        "id": "WAR01",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "WePlay-AR",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "Spoon",
+        "kind": "published demo entry",
+        "id": "SPO01",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "Spoon",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "WePlay-JP",
+        "kind": "published demo entry",
+        "id": "WJP01",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "WePlay-JP",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "WePlay-KR",
+        "kind": "published demo entry",
+        "id": "WKR01",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "WePlay-KR",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "Mirrativ",
+        "kind": "published demo entry",
+        "id": "MIR01",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "Mirrativ",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "Pococha",
+        "kind": "published demo entry",
+        "id": "POC01",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "Pococha",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "17LIVE",
+        "kind": "published demo entry",
+        "id": "L1701",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "17LIVE",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "SUGO",
+        "kind": "published demo entry",
+        "id": "SUG01",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "SUGO",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "Yalla-Parchis",
+        "kind": "published demo entry",
+        "id": "YPH01",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "Yalla-Parchis",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "Falla",
+        "kind": "published demo entry",
+        "id": "FAL01",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "Falla",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "HeeSay",
+        "kind": "published demo entry",
+        "id": "HEE01",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "app": "HeeSay",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "passed": true
+      },
+      {
+        "kind": "catalog table/filter",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "Yalla",
+        "kind": "published demo entry",
+        "id": "YAL01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "Yalla",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "YoHo",
+        "kind": "published demo entry",
+        "id": "YOH01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "YoHo",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "MICO",
+        "kind": "published demo entry",
+        "id": "MIC01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "MICO",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "TopTop",
+        "kind": "published demo entry",
+        "id": "TOP01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "TopTop",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "WePlay-AR",
+        "kind": "published demo entry",
+        "id": "WAR01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "WePlay-AR",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "Spoon",
+        "kind": "published demo entry",
+        "id": "SPO01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "Spoon",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "WePlay-JP",
+        "kind": "published demo entry",
+        "id": "WJP01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "WePlay-JP",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "WePlay-KR",
+        "kind": "published demo entry",
+        "id": "WKR01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "WePlay-KR",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "Mirrativ",
+        "kind": "published demo entry",
+        "id": "MIR01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "Mirrativ",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "Pococha",
+        "kind": "published demo entry",
+        "id": "POC01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "Pococha",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "17LIVE",
+        "kind": "published demo entry",
+        "id": "L1701",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "17LIVE",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "SUGO",
+        "kind": "published demo entry",
+        "id": "SUG01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "SUGO",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "Yalla-Parchis",
+        "kind": "published demo entry",
+        "id": "YPH01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "Yalla-Parchis",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "Falla",
+        "kind": "published demo entry",
+        "id": "FAL01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "Falla",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "HeeSay",
+        "kind": "published demo entry",
+        "id": "HEE01",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      },
+      {
+        "app": "HeeSay",
+        "kind": "legacy entry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "passed": true
+      }
+    ],
+    "port": 4194,
+    "boundary_paths_rejected": [
+      "/package.json",
+      "/Yalla/APK-INFO.json"
+    ]
+  },
+  "source_hashes_match_manifest": true,
+  "original_workspace_status_unchanged": true,
+  "limits": "Historical 392 full UI journeys are preserved. This export recheck covers the generated table and one mechanism entry plus legacy per App at desktop/mobile; no original APK/backend/RTC/payment verified.",
+  "whitespace_check": {
+    "warning_count": 1,
+    "file": "ToResearch/Pococha/FEATURE-CATALOG.md",
+    "line": 85,
+    "note": "Original trailing space in quoted report text retained to preserve source bytes and manifest hash; no executable code whitespace issue."
+  }
+}

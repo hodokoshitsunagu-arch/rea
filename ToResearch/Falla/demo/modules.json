@@ -1,0 +1,566 @@
+{
+  "app": "Falla",
+  "modules": [
+    {
+      "id": "FAL01",
+      "title": "Quick Ludo 先吃后冲线",
+      "implemented_scope": "吃子资格与终局状态机；专属操作：移动4格吃对手 → 精确走到本地12格终点",
+      "limitations": [
+        "棋盘坐标/安全格",
+        "服务器骰子",
+        "12格机制试验轨道，不是原棋盘；只完成Quick门槛，经典全子用文字边界说明",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"goal\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"capture\"]",
+          "expected_text": "移动4格吃对手"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"goal\"]",
+          "expected_text": "精确走到本地12格终点"
+        }
+      ]
+    },
+    {
+      "id": "FAL02",
+      "title": "Ludo 额外回合与三连六停局",
+      "implemented_scope": "连动规则实验；专属操作：输入骰子6 → 注入捕获事件获得再投 → 注入精确终点事件获得再投 → 输入非6点数结束序列",
+      "limitations": [
+        "连续定义",
+        "捕获后六历史是否重置",
+        "捕获/终点是测试事件；不重置6历史为本地分支，源连续定义和重置规则未知",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"capture\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"capture\"]",
+          "expected_text": "注入捕获事件获得再投"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"finish\"]",
+          "expected_text": "注入精确终点事件获得再投"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]",
+          "expected_text": "输入骰子6"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]",
+          "expected_text": "输入骰子6"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"six\"]",
+          "expected_text": "输入骰子6"
+        }
+      ]
+    },
+    {
+      "id": "FAL03",
+      "title": "Ludo 金骰磁铁炸弹",
+      "implemented_scope": "道具机制候选，先补使用窗口；专属操作：使用金骰得到6 → 磁铁前进最多8格直到阻挡 → 使用炸弹检查前8格对手",
+      "limitations": [
+        "获取成本/概率",
+        "安全格例外",
+        "炸弹路径",
+        "12格直线试验地图，道具各1、阻挡前停、炸弹扫描路径本地补齐；原安全格未知",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gold\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"magnet\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bomb\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gold\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gold\"]",
+          "expected_text": "使用金骰得到6"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"magnet\"]",
+          "expected_text": "磁铁前进最多8格直到阻挡"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"bomb\"]",
+          "expected_text": "使用炸弹检查前8格对手"
+        }
+      ]
+    },
+    {
+      "id": "FAL04",
+      "title": "房间与外部游戏匹配绑定",
+      "implemented_scope": "游戏匹配与房间关联流程；专属操作：选择外部Ludo平台样本 → 构造room_match_extra请求样本 → 注入MatchModel gid=42 → 注入MatchModel gid=0 → 携游戏信息进入样本房",
+      "limitations": [
+        "服务器路由",
+        "进房后的游戏状态",
+        "纯协议载荷实验，不连接平台；gid42本地注入，不补造房内游戏",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]",
+          "expected_text": "选择外部Ludo平台样本"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"request\"]",
+          "expected_text": "构造room_match_extra请求样本"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"success\"]",
+          "expected_text": "注入MatchModel gid=42"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"enter\"]",
+          "expected_text": "携游戏信息进入样本房"
+        }
+      ]
+    },
+    {
+      "id": "FAL05",
+      "title": "幸运袋票与Queen权限",
+      "implemented_scope": "权限闸门+袋活动骨架；专属操作：切换Queen身份 → 切换普通成员 → 消耗一张幸运袋票发送 → 阿澄领取本地分发名额 → 关闭本地袋活动",
+      "limitations": [
+        "Queen获取失效",
+        "分配概率",
+        "票成本",
+        "仅1票和样本名额，本地手动关袋；不模拟原分配概率与Queen资格",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"send\"]",
+          "expected_text": "消耗一张幸运袋票发送"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "阿澄领取本地分发名额"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"close\"]",
+          "expected_text": "关闭本地袋活动"
+        }
+      ]
+    },
+    {
+      "id": "FAL06",
+      "title": "许愿池碎片兑换和榜单",
+      "implemented_scope": "虚拟碎片合成与结算节奏；专属操作：本地许愿：保证奖励样本 → 用2礼物碎片兑样本礼物 → 用1贵族碎片兑换样本权益 → 沙特时间日0点结榜 → 沙特周一0点结周榜",
+      "limitations": [
+        "抽取概率/成本",
+        "碎片兑换率",
+        "1币抽取、固定碎片产出和兑换率都是本地样本；不仿真概率；日/周独立记录而非原榜排名",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"exchange\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"draw\"]",
+          "expected_text": "本地许愿：保证奖励样本"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"exchange\"]",
+          "expected_text": "用2礼物碎片兑样本礼物"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"noble\"]",
+          "expected_text": "用1贵族碎片兑换样本权益"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "沙特时间日0点结榜"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"week\"]",
+          "expected_text": "沙特周一0点结周榜"
+        }
+      ]
+    },
+    {
+      "id": "FAL07",
+      "title": "Soulmate/Bestie/Homie 区域关系榜",
+      "implemented_scope": "关系类别与来源排除账本；专属操作：选择Bestie关系路径 → 选择Homie关系路径 → 邀请者发当前类型关系邀请 → 对方同意关系邀请 → 普通礼物增加本地10亲密 → 活动/周星礼物排除不加亲密 → 解除关系清亲密及权益",
+      "limitations": [
+        "各类槽位/同意",
+        "具体权益",
+        "可选Soulmate/Bestie/Homie，同源区域/解除规则，不推断槽位；同意和10点是本地补齐",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]",
+          "expected_text": "邀请者发当前类型关系邀请"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "对方同意关系邀请"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"gift\"]",
+          "expected_text": "普通礼物增加本地10亲密"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"excluded\"]",
+          "expected_text": "活动/周星礼物排除不加亲密"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"terminate\"]",
+          "expected_text": "解除关系清亲密及权益"
+        }
+      ]
+    },
+    {
+      "id": "FAL08",
+      "title": "家族EXP保级周期",
+      "implemented_scope": "可配置家族维护系统；专属操作：成员完成任务（本地10EXP） → 截止前达到40EXP升级 → 推进截止并保级结算",
+      "limitations": [
+        "EXP来源",
+        "降级幅度",
+        "月周期是否统一",
+        "每任务10、升级40、保级20、周期3天及失败降一级全是本地配置；不把周期称原月制",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"upgrade\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "成员完成任务（本地10EXP）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"task\"]",
+          "expected_text": "成员完成任务（本地10EXP）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"deadline\"]",
+          "expected_text": "推进截止并保级结算"
+        }
+      ]
+    },
+    {
+      "id": "FAL09",
+      "title": "家族管理员发言特权",
+      "implemented_scope": "家族群主持权限演示；专属操作：切换管理员身份 → 切换普通成员 → 开启全员禁言 → 对自己添加单人禁言样本 → 当前角色发送活动公告",
+      "limitations": [
+        "开关操作者",
+        "角色转让",
+        "语音是否受影响",
+        "群文本权限沙盘；单人禁言高于全员豁免是本地选择，语音影响未知",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"muteAll\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"admin\"]",
+          "expected_text": "切换管理员身份"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"muteAll\"]",
+          "expected_text": "开启全员禁言"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"speak\"]",
+          "expected_text": "当前角色发送活动公告"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"member\"]",
+          "expected_text": "切换普通成员"
+        }
+      ]
+    },
+    {
+      "id": "FAL10",
+      "title": "贵族30天权益与续期折扣",
+      "implemented_scope": "权益有效期与价格窗口；专属操作：购买/续期贵族：显示折扣账单 → 推进30天使首周期到期 → 推进到期后7天边界 → 推进到期后8天",
+      "limitations": [
+        "等级权益/价格",
+        "续期叠加",
+        "基价100和续期从旧到期叠加为本地选择；30天与20%折扣、7天窗口为源规则",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]",
+          "expected_text": "购买/续期贵族：显示折扣账单"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"expire\"]",
+          "expected_text": "推进30天使首周期到期"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"seven\"]",
+          "expected_text": "推进到期后7天边界"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"buy\"]",
+          "expected_text": "购买/续期贵族：显示折扣账单"
+        }
+      ]
+    },
+    {
+      "id": "FAL11",
+      "title": "神秘身份体验卡与自动恢复",
+      "implemented_scope": "匿名身份生命周期；专属操作：消耗神秘体验卡（本地2天） → 推进1天并检查自动恢复",
+      "limitations": [
+        "可见对象",
+        "真ID泄露范围",
+        "2天为Holder占位本地参数；只显示观众视图，原主播可见性未知",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]",
+          "expected_text": "消耗神秘体验卡（本地2天）"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进1天并检查自动恢复"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"day\"]",
+          "expected_text": "推进1天并检查自动恢复"
+        }
+      ]
+    },
+    {
+      "id": "FAL12",
+      "title": "SVIP周期重算与充值加成",
+      "implemented_scope": "周期权益账本；专属操作：注入100金币充值与10SVIP点 → 有效期到期重算等级并清点",
+      "limitations": [
+        "等级阈值",
+        "点生产",
+        "返还数值",
+        "10点一级、100基础币、每级5%为本地参数；源只明确周期重算清点与百分比加成",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"recalc\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"topup\"]",
+          "expected_text": "注入100金币充值与10SVIP点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"recalc\"]",
+          "expected_text": "有效期到期重算等级并清点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"topup\"]",
+          "expected_text": "注入100金币充值与10SVIP点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"recalc\"]",
+          "expected_text": "有效期到期重算等级并清点"
+        }
+      ]
+    },
+    {
+      "id": "FAL13",
+      "title": "跨语区迁移的一次性身份代价",
+      "implemented_scope": "只做沙盘，不操作真实账户；专属操作：选择新英语地区 → 查看迁移代价并明确确认 → 执行已确认的一次性迁移 → 尝试进入旧国房",
+      "limitations": [
+        "当前服务地区定义",
+        "迁移可恢复性",
+        "本地两个地区；迁移确认与模拟资产清除，无原账号迁移或恢复能力",
+        "静态包体证据不是原应用运行；本地实验不连接原API/支付/RTC"
+      ],
+      "guard_smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"migrate\"]"
+        }
+      ],
+      "test_status": "passed: 4 Node tests per ID (normal loop, mechanism guard, reset, focused boundary); browser pending root verification",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"choose\"]",
+          "expected_text": "选择新英语地区"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"preview\"]",
+          "expected_text": "查看迁移代价并明确确认"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"migrate\"]",
+          "expected_text": "执行已确认的一次性迁移"
+        }
+      ]
+    }
+  ]
+}

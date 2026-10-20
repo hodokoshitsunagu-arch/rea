@@ -1,0 +1,292 @@
+TAP version 13
+# Subtest: YOH01 正常闭环
+ok 1 - YOH01 正常闭环
+  ---
+  duration_ms: 0.833167
+  type: 'test'
+  ...
+# Subtest: YOH01 核心边界
+ok 2 - YOH01 核心边界
+  ---
+  duration_ms: 0.291334
+  type: 'test'
+  ...
+# Subtest: YOH01 不重复结算或消费资格
+ok 3 - YOH01 不重复结算或消费资格
+  ---
+  duration_ms: 0.102
+  type: 'test'
+  ...
+# Subtest: YOH01 重置独立与不可未知操作
+ok 4 - YOH01 重置独立与不可未知操作
+  ---
+  duration_ms: 0.144708
+  type: 'test'
+  ...
+# Subtest: YOH02 正常闭环
+ok 5 - YOH02 正常闭环
+  ---
+  duration_ms: 0.084625
+  type: 'test'
+  ...
+# Subtest: YOH02 核心边界
+ok 6 - YOH02 核心边界
+  ---
+  duration_ms: 0.061875
+  type: 'test'
+  ...
+# Subtest: YOH02 重置独立与不可未知操作
+ok 7 - YOH02 重置独立与不可未知操作
+  ---
+  duration_ms: 0.100916
+  type: 'test'
+  ...
+# Subtest: YOH03 正常闭环
+ok 8 - YOH03 正常闭环
+  ---
+  duration_ms: 0.074917
+  type: 'test'
+  ...
+# Subtest: YOH03 核心边界
+ok 9 - YOH03 核心边界
+  ---
+  duration_ms: 0.062
+  type: 'test'
+  ...
+# Subtest: YOH03 不重复结算或消费资格
+ok 10 - YOH03 不重复结算或消费资格
+  ---
+  duration_ms: 0.102167
+  type: 'test'
+  ...
+# Subtest: YOH03 重置独立与不可未知操作
+ok 11 - YOH03 重置独立与不可未知操作
+  ---
+  duration_ms: 0.105875
+  type: 'test'
+  ...
+# Subtest: YOH04 正常闭环
+ok 12 - YOH04 正常闭环
+  ---
+  duration_ms: 0.082333
+  type: 'test'
+  ...
+# Subtest: YOH04 核心边界
+ok 13 - YOH04 核心边界
+  ---
+  duration_ms: 0.037542
+  type: 'test'
+  ...
+# Subtest: YOH04 补充分支 1
+ok 14 - YOH04 补充分支 1
+  ---
+  duration_ms: 0.034333
+  type: 'test'
+  ...
+# Subtest: YOH04 重置独立与不可未知操作
+ok 15 - YOH04 重置独立与不可未知操作
+  ---
+  duration_ms: 0.092375
+  type: 'test'
+  ...
+# Subtest: YOH05 正常闭环
+ok 16 - YOH05 正常闭环
+  ---
+  duration_ms: 0.057084
+  type: 'test'
+  ...
+# Subtest: YOH05 核心边界
+ok 17 - YOH05 核心边界
+  ---
+  duration_ms: 0.036375
+  type: 'test'
+  ...
+# Subtest: YOH05 不重复结算或消费资格
+ok 18 - YOH05 不重复结算或消费资格
+  ---
+  duration_ms: 0.038375
+  type: 'test'
+  ...
+# Subtest: YOH05 重置独立与不可未知操作
+ok 19 - YOH05 重置独立与不可未知操作
+  ---
+  duration_ms: 0.079917
+  type: 'test'
+  ...
+# Subtest: YOH06 正常闭环
+ok 20 - YOH06 正常闭环
+  ---
+  duration_ms: 0.096125
+  type: 'test'
+  ...
+# Subtest: YOH06 核心边界
+ok 21 - YOH06 核心边界
+  ---
+  duration_ms: 0.093583
+  type: 'test'
+  ...
+# Subtest: YOH06 补充分支 1
+ok 22 - YOH06 补充分支 1
+  ---
+  duration_ms: 0.043209
+  type: 'test'
+  ...
+# Subtest: YOH06 补充分支 2
+ok 23 - YOH06 补充分支 2
+  ---
+  duration_ms: 0.047917
+  type: 'test'
+  ...
+# Subtest: YOH06 不重复结算或消费资格
+ok 24 - YOH06 不重复结算或消费资格
+  ---
+  duration_ms: 0.057958
+  type: 'test'
+  ...
+# Subtest: YOH06 重置独立与不可未知操作
+ok 25 - YOH06 重置独立与不可未知操作
+  ---
+  duration_ms: 0.114875
+  type: 'test'
+  ...
+# Subtest: YOH07 正常闭环
+ok 26 - YOH07 正常闭环
+  ---
+  duration_ms: 0.067708
+  type: 'test'
+  ...
+# Subtest: YOH07 核心边界
+ok 27 - YOH07 核心边界
+  ---
+  duration_ms: 0.039042
+  type: 'test'
+  ...
+# Subtest: YOH07 补充分支 1
+ok 28 - YOH07 补充分支 1
+  ---
+  duration_ms: 0.037209
+  type: 'test'
+  ...
+# Subtest: YOH07 不重复结算或消费资格
+ok 29 - YOH07 不重复结算或消费资格
+  ---
+  duration_ms: 0.05
+  type: 'test'
+  ...
+# Subtest: YOH07 重置独立与不可未知操作
+ok 30 - YOH07 重置独立与不可未知操作
+  ---
+  duration_ms: 0.090042
+  type: 'test'
+  ...
+# Subtest: YOH08 正常闭环
+ok 31 - YOH08 正常闭环
+  ---
+  duration_ms: 0.054833
+  type: 'test'
+  ...
+# Subtest: YOH08 核心边界
+ok 32 - YOH08 核心边界
+  ---
+  duration_ms: 0.042416
+  type: 'test'
+  ...
+# Subtest: YOH08 不重复结算或消费资格
+ok 33 - YOH08 不重复结算或消费资格
+  ---
+  duration_ms: 0.036667
+  type: 'test'
+  ...
+# Subtest: YOH08 重置独立与不可未知操作
+ok 34 - YOH08 重置独立与不可未知操作
+  ---
+  duration_ms: 0.084125
+  type: 'test'
+  ...
+# Subtest: YOH09 正常闭环
+ok 35 - YOH09 正常闭环
+  ---
+  duration_ms: 0.057417
+  type: 'test'
+  ...
+# Subtest: YOH09 核心边界
+ok 36 - YOH09 核心边界
+  ---
+  duration_ms: 0.042625
+  type: 'test'
+  ...
+# Subtest: YOH09 重置独立与不可未知操作
+ok 37 - YOH09 重置独立与不可未知操作
+  ---
+  duration_ms: 0.080708
+  type: 'test'
+  ...
+# Subtest: YOH10 正常闭环
+ok 38 - YOH10 正常闭环
+  ---
+  duration_ms: 0.049292
+  type: 'test'
+  ...
+# Subtest: YOH10 核心边界
+ok 39 - YOH10 核心边界
+  ---
+  duration_ms: 0.036333
+  type: 'test'
+  ...
+# Subtest: YOH10 重置独立与不可未知操作
+ok 40 - YOH10 重置独立与不可未知操作
+  ---
+  duration_ms: 0.086375
+  type: 'test'
+  ...
+# Subtest: YOH11 正常闭环
+ok 41 - YOH11 正常闭环
+  ---
+  duration_ms: 0.0635
+  type: 'test'
+  ...
+# Subtest: YOH11 核心边界
+ok 42 - YOH11 核心边界
+  ---
+  duration_ms: 0.02875
+  type: 'test'
+  ...
+# Subtest: YOH11 重置独立与不可未知操作
+ok 43 - YOH11 重置独立与不可未知操作
+  ---
+  duration_ms: 0.091958
+  type: 'test'
+  ...
+# Subtest: YOH12 正常闭环
+ok 44 - YOH12 正常闭环
+  ---
+  duration_ms: 0.047958
+  type: 'test'
+  ...
+# Subtest: YOH12 核心边界
+ok 45 - YOH12 核心边界
+  ---
+  duration_ms: 0.028333
+  type: 'test'
+  ...
+# Subtest: YOH12 不重复结算或消费资格
+ok 46 - YOH12 不重复结算或消费资格
+  ---
+  duration_ms: 0.0535
+  type: 'test'
+  ...
+# Subtest: YOH12 重置独立与不可未知操作
+ok 47 - YOH12 重置独立与不可未知操作
+  ---
+  duration_ms: 0.283
+  type: 'test'
+  ...
+1..47
+# tests 47
+# suites 0
+# pass 47
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 44.655375

@@ -1,0 +1,952 @@
+{
+  "input_hashes": {
+    "features.test.mjs": "e5a4bf0add677eeaf41e5335ba452b3b74596ef36c12997db5d5a00a0e677fd2",
+    "index.html": "0ce7182fe42a1d78b4966361b3985648b66ff3c6de6f658cedb4e9c4f42b4ea7",
+    "model.mjs": "1ca81fab84e25cf25e7ed819f774b8d5a36efe24a9bb1f466693ed69ce0d11e9",
+    "modules.json": "23331b5b6d539d9907a9f0114e301005b62d51542cba4f695301dea4dd9db450",
+    "ui.mjs": "a7b09213cd30defb9c2449b333638dfd823affab66d337c56ae2693495fdb127"
+  },
+  "app": "Pococha",
+  "module_count": 11,
+  "checks": [
+    {
+      "app": "Pococha",
+      "id": "POC01",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"core\"]",
+          "expected_text": "模拟成为Core Fan"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"apply-type\"]",
+          "value": "Core"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"apply\"]",
+          "expected_text": "申请Family"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "观看重置连续未看天数"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"tenDays\"]",
+          "expected_text": "连续10天未观看"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Pococha",
+      "id": "POC02",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "assistant"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]",
+          "expected_text": "选择模拟角色"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"invite-name\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]",
+          "expected_text": "邀请Family成员"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"post-channel\"]",
+          "value": "assistant"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"post-text\"]",
+          "value": "请管理应援秩序"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"post\"]",
+          "expected_text": "发送频道消息"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Pococha",
+      "id": "POC03",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"agree\"]",
+          "expected_text": "助手同意操作日志"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"operate-target\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"operate\"]",
+          "expected_text": "助手治理操作"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "owner"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]",
+          "expected_text": "选择查看角色"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"logs\"]",
+          "expected_text": "查看操作日志"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "fan"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Pococha",
+      "id": "POC04",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"core\"]",
+          "expected_text": "模拟Core Fan资格"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"write-text\"]",
+          "value": "这季度感谢大家的陪伴"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"write\"]",
+          "expected_text": "写季度留言"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]",
+          "expected_text": "提交季度留言"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reveal\"]",
+          "expected_text": "达到公开日期"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Pococha",
+      "id": "POC05",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"support-points\"]",
+          "value": "200"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]",
+          "expected_text": "写入本地应援点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"settle\"]",
+          "expected_text": "周期结算契约"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"period\"]",
+          "expected_text": "开始新周期"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Pococha",
+      "id": "POC06",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"schedule\"]",
+          "expected_text": "设置月休息日"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "主播开播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"advance\"]",
+          "expected_text": "推进到休息日"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"delay\"]",
+          "expected_text": "推进自动结束延迟"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Pococha",
+      "id": "POC07",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"freeze\"]",
+          "expected_text": "使用Freeze Pass"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]",
+          "expected_text": "应援尝试改变Meter"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "结束冻结周期"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Pococha",
+      "id": "POC08",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "进入连续观看"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "持续观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"pause\"]",
+          "expected_text": "计时停止"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"comment\"]",
+          "expected_text": "发送评论续计时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "持续观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "持续观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "开启PocoBox"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Pococha",
+      "id": "POC09",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"upgrade-level\"]",
+          "value": "0"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"upgrade\"]",
+          "expected_text": "升级Knight"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"upgradeNext\"]",
+          "expected_text": "升级到下一档"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]",
+          "expected_text": "使用限定应援道具"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Pococha",
+      "id": "POC10",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"age\"]",
+          "expected_text": "首次直播满21日"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"apply-mode\"]",
+          "value": "Flexi"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"apply\"]",
+          "expected_text": "申请模式"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]",
+          "expected_text": "模拟审核通过"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stream\"]",
+          "expected_text": "直播一小时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"switch\"]",
+          "expected_text": "Flexi改Premier"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Pococha",
+      "id": "POC11",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"mode-mode\"]",
+          "value": "audition"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"mode\"]",
+          "expected_text": "切换收益模式"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"support-points\"]",
+          "value": "20"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]",
+          "expected_text": "观众应援"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hour\"]",
+          "expected_text": "直播一小时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "结束活动模式"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Pococha",
+      "id": "POC01",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"core\"]",
+          "expected_text": "模拟成为Core Fan"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"apply-type\"]",
+          "value": "Core"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"apply\"]",
+          "expected_text": "申请Family"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "观看重置连续未看天数"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"tenDays\"]",
+          "expected_text": "连续10天未观看"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/POC01-mobile.png"
+    },
+    {
+      "app": "Pococha",
+      "id": "POC02",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "assistant"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]",
+          "expected_text": "选择模拟角色"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"invite-name\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"invite\"]",
+          "expected_text": "邀请Family成员"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"post-channel\"]",
+          "value": "assistant"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"post-text\"]",
+          "value": "请管理应援秩序"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"post\"]",
+          "expected_text": "发送频道消息"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/POC02-mobile.png"
+    },
+    {
+      "app": "Pococha",
+      "id": "POC03",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"agree\"]",
+          "expected_text": "助手同意操作日志"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"operate-target\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"operate\"]",
+          "expected_text": "助手治理操作"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "owner"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]",
+          "expected_text": "选择查看角色"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"logs\"]",
+          "expected_text": "查看操作日志"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"role-role\"]",
+          "value": "fan"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"role\"]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/POC03-mobile.png"
+    },
+    {
+      "app": "Pococha",
+      "id": "POC04",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"core\"]",
+          "expected_text": "模拟Core Fan资格"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"write-text\"]",
+          "value": "这季度感谢大家的陪伴"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"write\"]",
+          "expected_text": "写季度留言"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]",
+          "expected_text": "提交季度留言"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reveal\"]",
+          "expected_text": "达到公开日期"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/POC04-mobile.png"
+    },
+    {
+      "app": "Pococha",
+      "id": "POC05",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"support-points\"]",
+          "value": "200"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]",
+          "expected_text": "写入本地应援点"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"settle\"]",
+          "expected_text": "周期结算契约"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"period\"]",
+          "expected_text": "开始新周期"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/POC05-mobile.png"
+    },
+    {
+      "app": "Pococha",
+      "id": "POC06",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"schedule\"]",
+          "expected_text": "设置月休息日"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "主播开播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"advance\"]",
+          "expected_text": "推进到休息日"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"delay\"]",
+          "expected_text": "推进自动结束延迟"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/POC06-mobile.png"
+    },
+    {
+      "app": "Pococha",
+      "id": "POC07",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"freeze\"]",
+          "expected_text": "使用Freeze Pass"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]",
+          "expected_text": "应援尝试改变Meter"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "结束冻结周期"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/POC07-mobile.png"
+    },
+    {
+      "app": "Pococha",
+      "id": "POC08",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "进入连续观看"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "持续观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"pause\"]",
+          "expected_text": "计时停止"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"comment\"]",
+          "expected_text": "发送评论续计时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "持续观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"watch\"]",
+          "expected_text": "持续观看一分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"claim\"]",
+          "expected_text": "开启PocoBox"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/POC08-mobile.png"
+    },
+    {
+      "app": "Pococha",
+      "id": "POC09",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"upgrade-level\"]",
+          "value": "0"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"upgrade\"]",
+          "expected_text": "升级Knight"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"upgradeNext\"]",
+          "expected_text": "升级到下一档"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"use\"]",
+          "expected_text": "使用限定应援道具"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/POC09-mobile.png"
+    },
+    {
+      "app": "Pococha",
+      "id": "POC10",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"age\"]",
+          "expected_text": "首次直播满21日"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"apply-mode\"]",
+          "value": "Flexi"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"apply\"]",
+          "expected_text": "申请模式"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]",
+          "expected_text": "模拟审核通过"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"stream\"]",
+          "expected_text": "直播一小时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"switch\"]",
+          "expected_text": "Flexi改Premier"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/POC10-mobile.png"
+    },
+    {
+      "app": "Pococha",
+      "id": "POC11",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"mode-mode\"]",
+          "value": "audition"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"mode\"]",
+          "expected_text": "切换收益模式"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"support-points\"]",
+          "value": "20"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]",
+          "expected_text": "观众应援"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hour\"]",
+          "expected_text": "直播一小时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "结束活动模式"
+        }
+      ],
+      "errors": [],
+      "pass": true,
+      "state_changed": true,
+      "reset": true,
+      "horizontal_overflow": false,
+      "screenshot": "verification/POC11-mobile.png"
+    }
+  ],
+  "passed": true,
+  "scope": "Local core-loop UI verification; no original APK/RTC/backend/payment/human verification."
+}

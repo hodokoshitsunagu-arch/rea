@@ -1,0 +1,241 @@
+{
+  "weplay_journeys": [
+    {
+      "app": "WePlay-JP",
+      "checks": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "errors": [],
+          "horizontal_overflow": false,
+          "complete_journey": true,
+          "reset": true,
+          "screenshot": "demo-desktop.png"
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "errors": [],
+          "horizontal_overflow": false,
+          "complete_journey": true,
+          "reset": true,
+          "screenshot": "demo-mobile.png"
+        }
+      ],
+      "scope": "controlled local demo; no Android APK, original service or human audio verification"
+    },
+    {
+      "app": "WePlay-KR",
+      "checks": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "errors": [],
+          "horizontal_overflow": false,
+          "complete_journey": true,
+          "reset": true,
+          "screenshot": "demo-desktop.png"
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "errors": [],
+          "horizontal_overflow": false,
+          "complete_journey": true,
+          "reset": true,
+          "screenshot": "demo-mobile.png"
+        }
+      ],
+      "scope": "controlled local demo; no Android APK, original service or human audio verification"
+    },
+    {
+      "app": "WePlay-AR",
+      "checks": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "errors": [],
+          "horizontal_overflow": false,
+          "complete_journey": true,
+          "reset": true,
+          "screenshot": "demo-desktop.png"
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "errors": [],
+          "horizontal_overflow": false,
+          "complete_journey": true,
+          "reset": true,
+          "screenshot": "demo-mobile.png"
+        }
+      ],
+      "scope": "controlled local demo; no Android APK, original service or human audio verification"
+    }
+  ],
+  "all_demo_smoke": [
+    {
+      "app": "Yalla",
+      "status": 200,
+      "page_errors": [],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "app": "YoHo",
+      "status": 200,
+      "page_errors": [],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "app": "MICO",
+      "status": 200,
+      "page_errors": [],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "app": "TopTop",
+      "status": 200,
+      "page_errors": [],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-AR",
+      "status": 200,
+      "page_errors": [],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Spoon",
+      "status": 200,
+      "page_errors": [],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-JP",
+      "status": 200,
+      "page_errors": [],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "app": "WePlay-KR",
+      "status": 200,
+      "page_errors": [],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Mirrativ",
+      "status": 200,
+      "page_errors": [],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Pococha",
+      "status": 200,
+      "page_errors": [],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "app": "17LIVE",
+      "status": 200,
+      "page_errors": [],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "app": "SUGO",
+      "status": 200,
+      "page_errors": [],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Yalla-Parchis",
+      "status": 200,
+      "page_errors": [],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "app": "Falla",
+      "status": 200,
+      "page_errors": [],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "app": "HeeSay",
+      "status": 200,
+      "page_errors": [],
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false
+    }
+  ],
+  "denied_non_demo_routes": true
+}

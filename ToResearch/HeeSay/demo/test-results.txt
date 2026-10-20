@@ -1,0 +1,352 @@
+TAP version 13
+# Subtest: HEE01 完整专属闭环与纯函数
+ok 1 - HEE01 完整专属闭环与纯函数
+  ---
+  duration_ms: 1.294792
+  type: 'test'
+  ...
+# Subtest: HEE01 拒绝边界不改变业务状态
+ok 2 - HEE01 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.124958
+  type: 'test'
+  ...
+# Subtest: HEE01 重置与未知操作
+ok 3 - HEE01 重置与未知操作
+  ---
+  duration_ms: 0.089958
+  type: 'test'
+  ...
+# Subtest: HEE02 完整专属闭环与纯函数
+ok 4 - HEE02 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.127292
+  type: 'test'
+  ...
+# Subtest: HEE02 拒绝边界不改变业务状态
+ok 5 - HEE02 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.047334
+  type: 'test'
+  ...
+# Subtest: HEE02 重置与未知操作
+ok 6 - HEE02 重置与未知操作
+  ---
+  duration_ms: 0.058209
+  type: 'test'
+  ...
+# Subtest: HEE03 完整专属闭环与纯函数
+ok 7 - HEE03 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.145292
+  type: 'test'
+  ...
+# Subtest: HEE03 拒绝边界不改变业务状态
+ok 8 - HEE03 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.043875
+  type: 'test'
+  ...
+# Subtest: HEE03 重置与未知操作
+ok 9 - HEE03 重置与未知操作
+  ---
+  duration_ms: 0.051167
+  type: 'test'
+  ...
+# Subtest: HEE04 完整专属闭环与纯函数
+ok 10 - HEE04 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.126333
+  type: 'test'
+  ...
+# Subtest: HEE04 拒绝边界不改变业务状态
+ok 11 - HEE04 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.04425
+  type: 'test'
+  ...
+# Subtest: HEE04 重置与未知操作
+ok 12 - HEE04 重置与未知操作
+  ---
+  duration_ms: 0.032834
+  type: 'test'
+  ...
+# Subtest: HEE05 完整专属闭环与纯函数
+ok 13 - HEE05 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.142375
+  type: 'test'
+  ...
+# Subtest: HEE05 拒绝边界不改变业务状态
+ok 14 - HEE05 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.032625
+  type: 'test'
+  ...
+# Subtest: HEE05 重置与未知操作
+ok 15 - HEE05 重置与未知操作
+  ---
+  duration_ms: 0.027958
+  type: 'test'
+  ...
+# Subtest: HEE06 完整专属闭环与纯函数
+ok 16 - HEE06 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.058125
+  type: 'test'
+  ...
+# Subtest: HEE06 拒绝边界不改变业务状态
+ok 17 - HEE06 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.023792
+  type: 'test'
+  ...
+# Subtest: HEE06 重置与未知操作
+ok 18 - HEE06 重置与未知操作
+  ---
+  duration_ms: 0.033208
+  type: 'test'
+  ...
+# Subtest: HEE07 完整专属闭环与纯函数
+ok 19 - HEE07 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.069
+  type: 'test'
+  ...
+# Subtest: HEE07 拒绝边界不改变业务状态
+ok 20 - HEE07 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.02575
+  type: 'test'
+  ...
+# Subtest: HEE07 重置与未知操作
+ok 21 - HEE07 重置与未知操作
+  ---
+  duration_ms: 0.02625
+  type: 'test'
+  ...
+# Subtest: HEE08 完整专属闭环与纯函数
+ok 22 - HEE08 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.046375
+  type: 'test'
+  ...
+# Subtest: HEE08 拒绝边界不改变业务状态
+ok 23 - HEE08 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.023666
+  type: 'test'
+  ...
+# Subtest: HEE08 重置与未知操作
+ok 24 - HEE08 重置与未知操作
+  ---
+  duration_ms: 0.026375
+  type: 'test'
+  ...
+# Subtest: HEE09 完整专属闭环与纯函数
+ok 25 - HEE09 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.11225
+  type: 'test'
+  ...
+# Subtest: HEE09 拒绝边界不改变业务状态
+ok 26 - HEE09 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.029916
+  type: 'test'
+  ...
+# Subtest: HEE09 重置与未知操作
+ok 27 - HEE09 重置与未知操作
+  ---
+  duration_ms: 0.034167
+  type: 'test'
+  ...
+# Subtest: HEE10 完整专属闭环与纯函数
+ok 28 - HEE10 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.228042
+  type: 'test'
+  ...
+# Subtest: HEE10 拒绝边界不改变业务状态
+ok 29 - HEE10 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.054541
+  type: 'test'
+  ...
+# Subtest: HEE10 重置与未知操作
+ok 30 - HEE10 重置与未知操作
+  ---
+  duration_ms: 0.042125
+  type: 'test'
+  ...
+# Subtest: HEE11 完整专属闭环与纯函数
+ok 31 - HEE11 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.06325
+  type: 'test'
+  ...
+# Subtest: HEE11 拒绝边界不改变业务状态
+ok 32 - HEE11 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.028375
+  type: 'test'
+  ...
+# Subtest: HEE11 重置与未知操作
+ok 33 - HEE11 重置与未知操作
+  ---
+  duration_ms: 0.034167
+  type: 'test'
+  ...
+# Subtest: HEE12 完整专属闭环与纯函数
+ok 34 - HEE12 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.127667
+  type: 'test'
+  ...
+# Subtest: HEE12 拒绝边界不改变业务状态
+ok 35 - HEE12 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.053459
+  type: 'test'
+  ...
+# Subtest: HEE12 重置与未知操作
+ok 36 - HEE12 重置与未知操作
+  ---
+  duration_ms: 0.03575
+  type: 'test'
+  ...
+# Subtest: HEE13 完整专属闭环与纯函数
+ok 37 - HEE13 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.092709
+  type: 'test'
+  ...
+# Subtest: HEE13 拒绝边界不改变业务状态
+ok 38 - HEE13 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.025375
+  type: 'test'
+  ...
+# Subtest: HEE13 重置与未知操作
+ok 39 - HEE13 重置与未知操作
+  ---
+  duration_ms: 0.027708
+  type: 'test'
+  ...
+# Subtest: HEE14 完整专属闭环与纯函数
+ok 40 - HEE14 完整专属闭环与纯函数
+  ---
+  duration_ms: 0.136667
+  type: 'test'
+  ...
+# Subtest: HEE14 拒绝边界不改变业务状态
+ok 41 - HEE14 拒绝边界不改变业务状态
+  ---
+  duration_ms: 0.032125
+  type: 'test'
+  ...
+# Subtest: HEE14 重置与未知操作
+ok 42 - HEE14 重置与未知操作
+  ---
+  duration_ms: 0.035292
+  type: 'test'
+  ...
+# Subtest: HEE01 2500单日守护、1Bean1点、逐笔第8日到期
+ok 43 - HEE01 2500单日守护、1Bean1点、逐笔第8日到期
+  ---
+  duration_ms: 0.053917
+  type: 'test'
+  ...
+# Subtest: HEE02 >10严格门槛与同日互赠
+ok 44 - HEE02 >10严格门槛与同日互赠
+  ---
+  duration_ms: 0.317583
+  type: 'test'
+  ...
+# Subtest: HEE03 多团只领奖最高、重复日奖励拒绝和所属房展示
+ok 45 - HEE03 多团只领奖最高、重复日奖励拒绝和所属房展示
+  ---
+  duration_ms: 0.088333
+  type: 'test'
+  ...
+# Subtest: HEE04 升级当月旧门槛、下一月提高与月值清零
+ok 46 - HEE04 升级当月旧门槛、下一月提高与月值清零
+  ---
+  duration_ms: 0.037208
+  type: 'test'
+  ...
+# Subtest: HEE05 财富Lv9门槛、群管理与族務独立、招募>10
+ok 47 - HEE05 财富Lv9门槛、群管理与族務独立、招募>10
+  ---
+  duration_ms: 0.062792
+  type: 'test'
+  ...
+# Subtest: HEE06 冻结不降级不重复扣除、补EXP即时解冻
+ok 48 - HEE06 冻结不降级不重复扣除、补EXP即时解冻
+  ---
+  duration_ms: 0.03775
+  type: 'test'
+  ...
+# Subtest: HEE07 匿名观众看不到真身份主页、主播能识别
+ok 49 - HEE07 匿名观众看不到真身份主页、主播能识别
+  ---
+  duration_ms: 0.036042
+  type: 'test'
+  ...
+# Subtest: HEE08 实际收币榜分与赠礼成本分账、结算去重
+ok 50 - HEE08 实际收币榜分与赠礼成本分账、结算去重
+  ---
+  duration_ms: 0.041375
+  type: 'test'
+  ...
+# Subtest: HEE09 来源排除、地图上限与任务领奖去重
+ok 51 - HEE09 来源排除、地图上限与任务领奖去重
+  ---
+  duration_ms: 0.052333
+  type: 'test'
+  ...
+# Subtest: HEE10 参与次数>10、双队资格、分阶段秘密不可见、重复结算
+ok 52 - HEE10 参与次数>10、双队资格、分阶段秘密不可见、重复结算
+  ---
+  duration_ms: 0.159042
+  type: 'test'
+  ...
+# Subtest: HEE11 开放显示按钮分离、PK和Hot Pick双向互斥
+ok 53 - HEE11 开放显示按钮分离、PK和Hot Pick双向互斥
+  ---
+  duration_ms: 0.064708
+  type: 'test'
+  ...
+# Subtest: HEE12 上月Top10下月排除、月人气清零与1–3日展示
+ok 54 - HEE12 上月Top10下月排除、月人气清零与1–3日展示
+  ---
+  duration_ms: 0.058458
+  type: 'test'
+  ...
+# Subtest: HEE13 赢1输3平0、每票结果去重、无票拒绝
+ok 55 - HEE13 赢1输3平0、每票结果去重、无票拒绝
+  ---
+  duration_ms: 0.054125
+  type: 'test'
+  ...
+# Subtest: HEE14 第1槽房间+主页、最多6槽与顺序变化
+ok 56 - HEE14 第1槽房间+主页、最多6槽与顺序变化
+  ---
+  duration_ms: 0.064709
+  type: 'test'
+  ...
+# Subtest: HEE01 到期取消旧榜待同步身份，乱序sync不能复活过期Couple
+ok 57 - HEE01 到期取消旧榜待同步身份，乱序sync不能复活过期Couple
+  ---
+  duration_ms: 0.059167
+  type: 'test'
+  ...
+1..57
+# tests 57
+# suites 0
+# pass 57
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 45.356666

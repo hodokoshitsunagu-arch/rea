@@ -1,0 +1,613 @@
+{
+  "app": "Yalla",
+  "package": "com.weieyu.yalla",
+  "version": "3.7.0",
+  "scope": "partial static",
+  "items": [
+    {
+      "id": "YAL01",
+      "categories": [
+        "游戏",
+        "玩法"
+      ],
+      "name": "观众干预的速度赛",
+      "core_loop": "玩家参赛→观众点赞或送技能礼物→加速自己/干扰对手→终点排名领奖",
+      "distinctive": "把观众互动变成竞速控制输入。",
+      "rules": "点赞或带[$0]礼物可影响速度；高终点排名奖励更多；管理员可被授权管理速度赛。",
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5667,
+          "text": "1. During the game, players can like or give any player gifts with [$0] to use skills to increase their own speed or affect others' speed, and there will be different effects."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 6996,
+          "text": "In each game, players have the opportunity to get the following rewards. Players who reach the finish line and rank high will receive more abundant rewards."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5990,
+          "text": "Allow Admins to Manage Speed Battle"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8244,
+          "text": "Speed Battle"
+        }
+      ],
+      "unknowns": [
+        "[$0]含义、技能表、轨道与速度公式、人数和时间未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "replica_scope": "固定轨道、技能按钮、排名结算，技能数值标为自定。",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "YAL02",
+      "categories": [
+        "游戏",
+        "玩法"
+      ],
+      "name": "足球/团队礼物积分奖池",
+      "core_loop": "送游戏专属礼物→积累奖池→获胜方分奖",
+      "distinctive": "竞技结果与礼物奖池绑定，存在定时概率增益文案。",
+      "rules": "有Crazy Football专属礼物；另一条团队奖池文案写胜队TOP1–4分享积分、定时概率增益。",
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 6792,
+          "text": "Game gifts can only be sent in the Crazy Football game."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8491,
+          "text": "The room owner who gets the corresponding ranking in the Crazy Football room list can get the following rewards:"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9212,
+          "text": "You can get points and add points to the treasure chest by giving game gifts. The treasure chest has a probability of increasing the points every certain time, and the TOP 1-4 in the winning team can share the points."
+        }
+      ],
+      "unknowns": [
+        "团队奖池文字是否专属于足球未完成资源调用映射；比分算法、概率、奖励比例未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "replica_scope": "现demo只有通用团队奖池，虽标题含Speed Battle但未实现速度技能；足球与奖池调用未证实前不合并。",
+      "replica_effort": "中",
+      "readiness": "需补证据",
+      "demo_status": "已有"
+    },
+    {
+      "id": "YAL03",
+      "categories": [
+        "玩法",
+        "权益"
+      ],
+      "name": "10级房间共同开宝箱",
+      "core_loop": "房内赠金礼物→钥匙进度满→全房有机会得奖励→每日进度重置",
+      "distinctive": "房间等级门槛与全房共享奖励，含排除型礼物规则。",
+      "rules": "房Level10解锁；赠金礼物获得钥匙，排除golds-winning gift；GMT+2零点重置；全房均有机会获奖。",
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5672,
+          "text": "1. Only the rooms that reach Level 10 have treasure chests."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5736,
+          "text": "2. The chest key is obtained by sending gold gifts in the room (excluding golds-winning gift)."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5777,
+          "text": "3. When the progress bar of the chest key is filled up, the treasure chest will be opened."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5798,
+          "text": "4. Everyone in the room has a chance to get the rewards in the treasure chest."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5838,
+          "text": "7. The progress bar of the chest key will be reset at 00:00 (GMT+2) everyday."
+        }
+      ],
+      "unknowns": [
+        "钥匙兑换率、宝箱各级阈值、抽取分配与概率未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "replica_scope": "共享进度、开箱和模拟分配，阈值/随机率自定。",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "YAL04",
+      "categories": [
+        "游戏",
+        "玩法"
+      ],
+      "name": "押金式房内猜拳",
+      "core_loop": "发起者选手势/胜者礼物并交押金→房消息邀人选手势→结算或过期返押金",
+      "distinctive": "轻量手势小游戏绑定礼物押金和参与/胜者排行榜。",
+      "rules": "押金为礼物对应金币；结束/到期退押金；2小时无人参与关闭；胜者榜按获得礼物数、参与榜按次数。",
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5665,
+          "text": "1. Choose a gesture and the gifts for the winner, then start the game. You need to pay golds for the gifts as a deposit, which will be returned to you when the game ends or expires."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5732,
+          "text": "2. Tap the Roshambo game messages in the room and choose a gesture to participate in the game."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5734,
+          "text": "2. The Top Winners rankings are based on the number of gifts won by playing Roshambo."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5772,
+          "text": "3. The Top Participants ranking is based on the times of playing Roshambo."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5801,
+          "text": "4. If no one participates in the game within 2 hours, the game will be closed and the deposit will be returned to the starter."
+        }
+      ],
+      "unknowns": [
+        "一对多手势比对、开奖时点、赠礼扣款和退款先后未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "replica_scope": "发起/响应/到期状态机与两个榜，不接支付。",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "YAL05",
+      "categories": [
+        "玩法",
+        "权益"
+      ],
+      "name": "变声整蛊与防护牌",
+      "core_loop": "对他人施变声→对方移除或加护盾→免疫时窗结束",
+      "distinctive": "语音互动可被道具干预，并有可见反制。",
+      "rules": "Protective Shield移除变声并防止再次施加10分钟；Remove Effects单次移除。",
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5861,
+          "text": "A \"Protective Shield\" card can eliminate the effect of a \"Voice Changer\" card and prevent someone from being applied a “Voice Changer” card in 10 mins."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5871,
+          "text": "A “Remove Effects” card can eliminate the effect of a \"Voice Changer\" card."
+        }
+      ],
+      "unknowns": [
+        "变声音效列表、目标同意与适用房模式、卡片获取/价格未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "replica_scope": "道具状态与10分钟免疫倒计时；真实变声另立技术任务。",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "YAL06",
+      "categories": [
+        "社交",
+        "权益"
+      ],
+      "name": "CP绑定与专属礼物亲密",
+      "core_loop": "双方绑定CP→送专属礼物增亲密→榜单展示→解绑失去权益",
+      "distinctive": "包内有异性绑定门槛和CP礼物加成，不能泛化成全部关系系统。",
+      "rules": "绑定要求不同性别；给CP专属礼物增加额外亲密；解绑后相关权益丧失。",
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 6115,
+          "text": "Binding a CP relationship requires both parties to be of different genders. Please confirm your gender information before proceeding."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 6168,
+          "text": "CP Rankings"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8121,
+          "text": "Sending this gift to your CP will grant extra intimacy."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8529,
+          "text": "This action cannot be undone. Once the CP relationship is unbound, all associated benefits will be lost."
+        }
+      ],
+      "unknowns": [
+        "邀请同意流程、等级、加成倍率、解绑亲密处理未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "replica_scope": "双向邀请、模拟亲密及权益开关；门槛作为可配置策略。",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "YAL07",
+      "categories": [
+        "社交",
+        "权益"
+      ],
+      "name": "房会员亲密与徽章熄亮",
+      "core_loop": "支付房会员费→做任务/赠会员礼物→亲密成长与徽章→退组锁定、重入解锁",
+      "distinctive": "房主收费会员组织与可恢复亲密绑定；不同于普通关注。",
+      "rules": "房主设置会费且收益有日上限；会员礼物1.2倍亲密；退组锁亲密/权益、重入解锁；任务可重新点亮灰徽章。",
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 7689,
+          "text": "Please set the membership fee for your room. Users can join your room by paying the fee. You will get the reward no more than a daily limit."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8105,
+          "text": "Send exclusive member gifts to get 1.2 times intimacy points."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 7027,
+          "text": "Intimacy points and privileges will be locked when removed. The intimacy points will be unlocked by re-joining the member group."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 9433,
+          "text": "Your member badge is greyed out. Complete the member tasks to light it up."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 6356,
+          "text": "Congratulations! Your room member group is in TOP10 weekly ranking. You obtained an exclusive room theme."
+        }
+      ],
+      "unknowns": [
+        "会费范围、会员有效期、日上限、徽章变灰周期未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "replica_scope": "会员组、任务、徽章状态与1.2倍计分；费用为模拟。",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "YAL08",
+      "categories": [
+        "权益"
+      ],
+      "name": "90天VIP升降与退款冻结",
+      "core_loop": "购买得VIP积分→升级清零开启90天→维护/降级→退款欠积分冻结",
+      "distinctive": "积分周期、跳级、重新评定及冻结组成完整权益状态机。",
+      "rules": "90天内升高等级即积分清零；周期末重新评定；退款造成积分不足冻结；180天未解冻则剩余有效期清零。",
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 6973,
+          "text": "If you are not VIP yet, when your VIP Points meet the requirements of a certain VIP level during a 90-day period, you will reach this VIP level and your VIP Points will be reset to 0. If you fail to reach any VIP level during the 90-day period, your accumulated VIP Points will be reset to 0 when the period ends."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 6985,
+          "text": "If your VIP level is not upgraded during the period, when the period is over, your VIP level will be reset according to the VIP Points you earned within the period, and your VIP Points will be reset to 0. To maintain your current VIP level, you need to accumulate the VIP Points needed from the previous level during the period. Otherwise, your VIP level will be downgraded."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8477,
+          "text": "The period of validity for each VIP level is 90 days. During the 90-day period, if your VIP Points meet the requirement for a higher level, your VIP level will be immediately upgraded and your VIP Points will be reset to 0. Upgrading by skipping a certain level is supported."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 6979,
+          "text": "If you don't have enough VIP Points to be deducted for a refund, your VIP membership will be frozen until you pay off the VIP Points you owe."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 7680,
+          "text": "Please note that if your VIP membership is not unfrozen within 180 days of freeze, your remaining VIP validity period will be reset to 0 days, but your VIP Points will not be reset to 0."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8410,
+          "text": "The VIP program is different from Yalla Premium. Generally speaking, VIP membership is acquired by earning VIP Points through your in-app purchases, while Yalla Premium membership is acquired through direct purchase."
+        }
+      ],
+      "unknowns": [
+        "逐级点数阈值、宽限期时长、不同新旧文案配置是否同版生效未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "replica_scope": "参数化周期/升降/冻结模拟器，阈值自行定义。",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "YAL09",
+      "categories": [
+        "权益"
+      ],
+      "name": "Premium爵位返金与成长倍率",
+      "core_loop": "直接购买爵位→得到徽章/车/倍率/返金→使用权益",
+      "distinctive": "直接购买Premium与积分VIP双轨，伯爵/侯爵有不同增长和送礼返金。",
+      "rules": "Count文案1.2倍升级、5%送礼返金；Marquis 1.3倍、10%；Baron1.1倍；可选择VIP/Premium显示徽章。",
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8386,
+          "text": "Thank you for being a Yalla Premium member. Your membership includes the following privileges:\n1. Premium badge for Count\n2. Exclusive luxury car for Count\n3. Level up at 1.2x speed\n4. 5% gold rebate on sending gifts\n5. Customize your profile cover\n6. Exclusive room theme\n7. Some other privileges"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8387,
+          "text": "Thank you for being a Yalla Premium member. Your membership includes the following privileges:\n1. Premium badge for Marquis\n2. Exclusive luxury car for Marquis\n3. Level up at 1.3x speed\n4. 10% gold rebate on sending gifts\n5. Customize your profile cover\n6. 10 whole-platform broadcasts\n7. Some other privileges"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8388,
+          "text": "Thank you for being a Yalla Premium member. Your membership includes the following privileges:\n1. Receive golds for logging in every day\n2. Premium badge for Baron\n3. Exclusive luxury car for Baron\n4. Level up at 1.1x speed\n5. Exclusive name card for Baron\n6. Some other privileges"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 6972,
+          "text": "If you are both a VIP member and a Yalla Premium member, you can choose which membership privilege to use to control your identity badge displayed on mic and the color of your username in chatroom messages."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8410,
+          "text": "The VIP program is different from Yalla Premium. Generally speaking, VIP membership is acquired by earning VIP Points through your in-app purchases, while Yalla Premium membership is acquired through direct purchase."
+        }
+      ],
+      "unknowns": [
+        "售价、订阅周期、返金适用礼物、实际配置未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "replica_scope": "双轨权益表与倍率/返金账本，模拟余额。",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "YAL10",
+      "categories": [
+        "权益",
+        "玩法"
+      ],
+      "name": "自定义房主题的时效与冻结",
+      "core_loop": "有资格上传→审核→7/30天使用续期→会员失效冻结→恢复",
+      "distinctive": "房装扮包含购买、审核退还、使用资格冻结多个独立状态。",
+      "rules": "Premium/VIP可上传；7天799金币、30天1999；会员失效冻结；被拒退币或退VIP3+免费次数。",
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5670,
+          "text": "1. Only Yalla Premium members and VIP users can upload and use custom room themes."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5762,
+          "text": "3. A custom room theme is valid for 7 or 30 days. You can renew it with 799 golds for 7 days or 1999 golds for 30 days. When your premium membership or VIP membership expires, your custom room themes will be frozen."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5828,
+          "text": "6. If the custom room theme is rejected, golds you paid will be refunded. If the custom theme is obtained by the privilege for VIP 3 and above users, the times to have free custom theme will be refunded."
+        }
+      ],
+      "unknowns": [
+        "审核规则、VIP免费额度、冻结期间时长是否继续流逝未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "replica_scope": "上传占位、审核模拟、有效期与冻结，不复刻素材商店。",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "YAL11",
+      "categories": [
+        "权益",
+        "玩法"
+      ],
+      "name": "房间置顶卡拍卖",
+      "core_loop": "2小时拍卖置顶卡→赢家房间自动置顶→无人出价时转直接购买",
+      "distinctive": "流量位置按时段竞拍，未售可立即买。",
+      "rules": "每卡拍卖2小时；拍得后自动置顶；无人出价结束后可直接买并立即生效。",
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 6566,
+          "text": "Each Pin on Top card is sold by an auction lasting for 2 hours. If you successfully purchase one, your room will be pinned on top automatically. If no bid is made by the end of the auction, the Pin on Top Card can be purchased and be effective immediately after purchase."
+        }
+      ],
+      "unknowns": [
+        "出价步长、押金返还、置顶时长和同分处理未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "replica_scope": "时段拍卖及榜首页位置模拟。",
+      "replica_effort": "中",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    },
+    {
+      "id": "YAL12",
+      "categories": [
+        "权益",
+        "玩法"
+      ],
+      "name": "徽章星级与限时荣誉榜",
+      "core_loop": "达成成就→得铜银金徽章星→累计星排名→按周期授荣誉",
+      "distinctive": "可长期积累成就和短期荣誉形成两层身份系统。",
+      "rules": "一条规则铜1/银3/金11星；相同星先获得者优先；通常周日发荣誉一周，Billionaire每月首个周日发约一月。",
+      "evidence_strength": "B",
+      "evidence_refs": [
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5896,
+          "text": "Achievement Badge Rankings are based on the number of stars of badge holders. For an Achievement Badge, the stars you can get at each level are as follows: \nBronze - 1 star \nSilver - 3 stars \nGold - 11 stars"
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 5680,
+          "text": "1. The rankings are based on the number of stars of badge holders.\n2. In case two or more users have equal number of stars, the user who first obtained these stars will be ranked higher."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 6564,
+          "text": "Each Achievement Badge has four levels from low to high: Bronze - Silver - Gold - Diamond."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 6565,
+          "text": "Each Achievement Badge has three levels from low to high: Bronze - Silver - Gold."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 7572,
+          "text": "Other Honor Badges are awarded to eligible users every Sunday and are valid for one week."
+        },
+        {
+          "file": "analysis/feature-expanded-resources.json",
+          "source": "resources.arsc",
+          "pool_offset": 12,
+          "string_index": 8402,
+          "text": "The \"Yalla Billionaire\" Honor Badges are awarded to eligible users on the first Sunday of every month and is valid for about one month."
+        }
+      ],
+      "unknowns": [
+        "同时有四级含Diamond与三级版本文案；钻石星数、具体成就任务、版本配置未知。",
+        "是否在目标地区/账号开启、真实后台裁决与付费权限未经运行验证。"
+      ],
+      "replica_scope": "采用明确三级星规则演示；四级作为未决配置。",
+      "replica_effort": "低",
+      "readiness": "可先复刻",
+      "demo_status": "未实现"
+    }
+  ]
+}

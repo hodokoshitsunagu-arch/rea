@@ -1,0 +1,324 @@
+{
+  "app": "Spoon",
+  "modules": [
+    {
+      "id": "SPO01",
+      "title": "Lucky Box 条件打赏",
+      "implemented_scope": "听众设置盒子与Spoons→接收人接受挑战→选盒→揭晓打赏结果；听众创建挑战 / 主播接受 / 选择盒子 / 揭晓奖励",
+      "limitations": [
+        "真实概率与总盒数",
+        "超时/退款/取消",
+        "服务端结算",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]",
+          "expected_text": "听众创建挑战"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "主播接受"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"choose-box\"]",
+          "value": "2"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"choose\"]",
+          "expected_text": "选择盒子"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"reveal\"]",
+          "expected_text": "揭晓奖励"
+        }
+      ]
+    },
+    {
+      "id": "SPO02",
+      "title": "Quiz Gift 答题打赏",
+      "implemented_scope": "听众赠问答→主播答题→按成功与否分配Spoons；听众赠问答 / 主播接受 / 主播提交答案",
+      "limitations": [
+        "判题、题型、时间限制",
+        "成功比例完整规则",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]",
+          "expected_text": "听众赠问答"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"accept\"]",
+          "expected_text": "主播接受"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"answer-answer\"]",
+          "value": "东京"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"answer\"]",
+          "expected_text": "主播提交答案"
+        }
+      ]
+    },
+    {
+      "id": "SPO03",
+      "title": "首访3分钟欢迎贴",
+      "implemented_scope": "新听众听满3分钟→直播结束→向其Space自动发欢迎贴；DJ设置欢迎贴 / 首次听众收听3分钟 / DJ结束直播 / 前进366天",
+      "limitations": [
+        "收听累计及离线判定",
+        "去重/封禁处理",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"listen\"]",
+          "expected_text": "首次听众收听3分钟"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"end\"]",
+          "expected_text": "DJ结束直播"
+        }
+      ]
+    },
+    {
+      "id": "SPO04",
+      "title": "频道Tier付费内容社区",
+      "implemented_scope": "DJ开Tier→审核→粉丝订阅→访问专属内容/贴文；DJ提交Tier审核 / 模拟审核通过 / 模拟审核拒绝 / 粉丝订阅Tier / 粉丝阅读专属帖 / 粉丝上传模拟图片 / 订阅到期",
+      "limitations": [
+        "订价、退款、审核细則",
+        "各Tier权益分配",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"submit\"]",
+          "expected_text": "DJ提交Tier审核"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"approve\"]",
+          "expected_text": "模拟审核通过"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"subscribe\"]",
+          "expected_text": "粉丝订阅Tier"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"view\"]",
+          "expected_text": "粉丝阅读专属帖"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"image\"]",
+          "expected_text": "粉丝上传模拟图片"
+        }
+      ]
+    },
+    {
+      "id": "SPO05",
+      "title": "Premium专属直播与Podcasts",
+      "implemented_scope": "DJ获Premium→创建专属直播/播客→订阅者进入；DJ开通Premium / DJ创建专属内容 / 听众订阅 / 听众进入内容 / 计划到期",
+      "limitations": [
+        "接收端Tier映射",
+        "失效后的访问策略",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"premium\"]",
+          "expected_text": "DJ开通Premium"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"create-type\"]",
+          "value": "Podcast"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"create\"]",
+          "expected_text": "DJ创建专属内容"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"subscribe\"]",
+          "expected_text": "听众订阅"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"open\"]",
+          "expected_text": "听众进入内容"
+        }
+      ]
+    },
+    {
+      "id": "SPO06",
+      "title": "DJ会员制作工具权益",
+      "implemented_scope": "DJ开会员→4小时直播/Live Call；Premium自动保存回放与精选CAST；DJ选择会员 / DJ开始直播 / 发起Live Call / 播满4小时 / 设置精选CAST / 会员失效",
+      "limitations": [
+        "非会员时长",
+        "保存周期及存储限额",
+        "Live Call人数",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"plan-plan\"]",
+          "value": "Premium"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"plan\"]",
+          "expected_text": "DJ选择会员"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "DJ开始直播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"call\"]",
+          "expected_text": "发起Live Call"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"advance\"]",
+          "expected_text": "播满4小时"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"feature\"]",
+          "expected_text": "设置精选CAST"
+        }
+      ]
+    },
+    {
+      "id": "SPO07",
+      "title": "Choice DJ评选徽章",
+      "implemented_scope": "DJ积累直播应援→平台结合历史/活跃选择→月徽章；主播收100 Spoons / 嘉宾收100 Spoons / 听众点赞 / 记录直播活跃 / 记录违规 / 本地候选评选 / 进入下个月",
+      "limitations": [
+        "加权、评选门槛及权益",
+        "月徽章续期",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"host\"]",
+          "expected_text": "主播收100 Spoons"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"active\"]",
+          "expected_text": "记录直播活跃"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"select\"]",
+          "expected_text": "本地候选评选"
+        }
+      ]
+    },
+    {
+      "id": "SPO08",
+      "title": "粉丝贡献排行与忠诚徽章",
+      "implemented_scope": "听众应援→当前场/周/月/历史榜→DJ可隐藏听众→移出榜和徽章；听众应援 / 切换榜单窗口 / 更新榜与徽章 / DJ隐藏听众 / 前进日历并开启新直播",
+      "limitations": [
+        "忠诚计分及徽章门槛",
+        "贡献与忠诚两榜是否共公式",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "fill",
+          "selector": "[data-field=\"support-fan\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"support-amount\"]",
+          "value": "60"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"support\"]",
+          "expected_text": "听众应援"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"rank\"]",
+          "expected_text": "更新榜与徽章"
+        },
+        {
+          "type": "fill",
+          "selector": "[data-field=\"hide-fan\"]",
+          "value": "小葵"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"hide\"]",
+          "expected_text": "DJ隐藏听众"
+        }
+      ]
+    },
+    {
+      "id": "SPO09",
+      "title": "Nudge催开播与重置",
+      "implemented_scope": "粉丝催DJ直播→等待开播→两天或开播时重置；粉丝催开播 / 前进两天 / DJ开播重置催播",
+      "limitations": [
+        "次数限制、通知合并",
+        "是否需先关注",
+        "仅本地重构；不调用原账号、音视频、支付或服务端"
+      ],
+      "test_status": "passed: normal core loop + guard + reset + pure input; Node only",
+      "smoke_actions": [
+        {
+          "type": "click",
+          "selector": "[data-action=\"nudge\"]",
+          "expected_text": "粉丝催开播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"twoDays\"]",
+          "expected_text": "前进两天"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"nudge\"]",
+          "expected_text": "粉丝催开播"
+        },
+        {
+          "type": "click",
+          "selector": "[data-action=\"start\"]",
+          "expected_text": "DJ开播重置催播"
+        }
+      ]
+    }
+  ]
+}

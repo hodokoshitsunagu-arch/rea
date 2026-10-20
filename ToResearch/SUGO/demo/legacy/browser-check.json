@@ -1,0 +1,15 @@
+{
+  "app": "SUGO",
+  "desktop": [
+    1280,
+    850
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "pageErrors": [],
+  "horizontalOverflow": false,
+  "interaction": "app-specific boundary scenario plus reset",
+  "scope": "controlled local browser only; no APK/RTC/real server validation"
+}
